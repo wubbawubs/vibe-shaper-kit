@@ -71,21 +71,21 @@ export default function Login() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10" />
       
       {/* Login Preview Card */}
-      <Card className="w-full max-w-md relative z-10 shadow-xl border-border/50">
-        <CardHeader className="text-center pb-2">
-          <div className="flex justify-center mb-4">
+      <Card className="w-full max-w-sm sm:max-w-md relative z-10 shadow-xl border-border/50">
+        <CardHeader className="text-center pb-2 px-4 sm:px-6">
+          <div className="flex justify-center mb-3 sm:mb-4">
             <img 
               src={onerootedLogo} 
               alt="One Rooted" 
-              className="h-16 w-auto"
+              className="h-12 sm:h-16 w-auto"
             />
           </div>
-          <CardTitle className="text-2xl font-semibold">Welcome back</CardTitle>
-          <CardDescription>
+          <CardTitle className="text-xl sm:text-2xl font-semibold">Welcome back</CardTitle>
+          <CardDescription className="text-sm">
             Log in to your One Rooted account
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="px-4 sm:px-6">
           <form onSubmit={handleLoginClick} className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email address</Label>
@@ -136,43 +136,41 @@ export default function Login() {
 
       {/* Lead Capture Popup */}
       <Dialog open={showPopup} onOpenChange={setShowPopup}>
-        <DialogContent className="sm:max-w-xl p-8 animate-scale-in">
-          <DialogHeader className="space-y-2">
-            <DialogTitle className="text-2xl font-bold leading-tight">
+        <DialogContent className="sm:max-w-md p-5 sm:p-6 mx-4 sm:mx-auto animate-fade-in">
+          <DialogHeader>
+            <DialogTitle className="text-lg sm:text-xl font-semibold leading-snug">
               Ready to transform your hiring strategy?
             </DialogTitle>
           </DialogHeader>
           
           <DialogDescription asChild>
-            <div className="space-y-5 pt-4">
-              <p className="text-base text-foreground/80 leading-relaxed">
-                We are building a platform set to redefine the future of talent acquisition.
+            <div className="space-y-3 pt-2">
+              <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+                We're building a platform to redefine talent acquisition.
               </p>
               
-              <p className="text-lg font-semibold text-foreground">
-                Want to be the first to receive updates?
+              <p className="text-sm sm:text-base font-medium text-foreground">
+                Want early access?
               </p>
               
-              <p className="text-sm text-muted-foreground">
-                Leave your email below to stay informed on our progress and launch.
+              <p className="text-xs sm:text-sm text-muted-foreground">
+                Leave your email to stay informed.
               </p>
             </div>
           </DialogDescription>
           
-          <div className="my-4 border-t border-border" />
-          
           {isSubmitted ? (
-            <div className="flex flex-col items-center justify-center py-8 space-y-3 animate-fade-in">
-              <CheckCircle className="h-14 w-14 text-primary" />
-              <p className="text-xl font-semibold">Thank you for your interest!</p>
-              <p className="text-muted-foreground text-center">
-                You'll receive updates on our progress soon.
+            <div className="flex flex-col items-center justify-center py-6 space-y-2 animate-fade-in">
+              <CheckCircle className="h-10 w-10 text-primary" />
+              <p className="text-base sm:text-lg font-medium">Thank you!</p>
+              <p className="text-sm text-muted-foreground text-center">
+                We'll keep you updated.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleEmailSubmit} className="space-y-4 animate-fade-in">
-              <div className="space-y-2">
-                <Label htmlFor="lead-email" className="text-sm font-medium">Email address</Label>
+            <form onSubmit={handleEmailSubmit} className="space-y-3 pt-2 animate-fade-in">
+              <div className="space-y-1.5">
+                <Label htmlFor="lead-email" className="text-sm">Email address</Label>
                 <Input
                   id="lead-email"
                   type="email"
@@ -180,12 +178,12 @@ export default function Login() {
                   value={leadEmail}
                   onChange={(e) => setLeadEmail(e.target.value)}
                   required
-                  className="input-glow h-11"
+                  className="h-10"
                 />
               </div>
               <Button 
                 type="submit" 
-                className="w-full btn-glow h-11 text-base font-medium"
+                className="w-full h-10"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
