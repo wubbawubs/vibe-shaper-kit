@@ -136,13 +136,13 @@ export default function Login() {
 
       {/* Lead Capture Popup */}
       <Dialog open={showPopup} onOpenChange={setShowPopup}>
-        <DialogContent className="w-[calc(100%-2.5rem)] max-w-[340px] sm:max-w-sm p-6 sm:p-7 rounded-3xl shadow-2xl border-0 bg-background/98 backdrop-blur-xl animate-fade-in">
-          {/* Logo - using mix-blend to remove white background */}
+        <DialogContent className="w-[calc(100%-2.5rem)] max-w-[340px] sm:max-w-sm p-6 sm:p-7 rounded-3xl shadow-2xl border-0 bg-background animate-fade-in">
+          {/* Logo */}
           <div className="flex justify-center mb-2">
             <img 
               src={onerootedLogo} 
               alt="One Rooted" 
-              className="h-8 w-auto mix-blend-multiply dark:mix-blend-screen"
+              className="h-8 w-auto"
             />
           </div>
           
