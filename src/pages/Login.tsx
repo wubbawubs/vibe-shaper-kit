@@ -66,9 +66,9 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
+    <div className="min-h-screen bg-background flex items-center justify-center p-4 overflow-hidden">
       {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10 pointer-events-none" />
       
       {/* Login Preview Card */}
       <Card className="w-full max-w-sm sm:max-w-md relative z-10 shadow-xl border-border/50">
@@ -136,7 +136,7 @@ export default function Login() {
 
       {/* Lead Capture Popup */}
       <Dialog open={showPopup} onOpenChange={setShowPopup}>
-        <DialogContent className="w-[calc(100%-2.5rem)] max-w-[340px] sm:max-w-sm p-6 sm:p-7 rounded-3xl shadow-2xl border-0 bg-background animate-fade-in">
+        <DialogContent className="w-[calc(100%-2.5rem)] max-w-[340px] sm:max-w-sm p-6 sm:p-7 rounded-3xl shadow-2xl border-0 bg-background animate-fade-in top-[30%] sm:top-[50%] translate-y-[-30%] sm:translate-y-[-50%]">
           {/* Logo */}
           <div className="flex justify-center mb-2">
             <img 
