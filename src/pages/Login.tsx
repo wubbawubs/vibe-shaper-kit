@@ -136,38 +136,43 @@ export default function Login() {
 
       {/* Lead Capture Popup */}
       <Dialog open={showPopup} onOpenChange={setShowPopup}>
-        <DialogContent className="sm:max-w-lg">
-          <DialogHeader>
-            <DialogTitle className="text-xl font-semibold leading-relaxed">
+        <DialogContent className="sm:max-w-xl p-8 animate-scale-in">
+          <DialogHeader className="space-y-2">
+            <DialogTitle className="text-2xl font-bold leading-tight">
               Ready to transform your hiring strategy?
             </DialogTitle>
-            <DialogDescription asChild>
-              <div className="space-y-4 pt-4 text-base text-foreground/80">
-                <p>
-                  We are building a platform set to redefine the future of talent acquisition.
-                </p>
-                <p className="font-medium text-foreground">
-                  Want to be the first to receive updates?
-                </p>
-                <p className="text-muted-foreground">
-                  Leave your email below to stay informed on our progress and launch.
-                </p>
-              </div>
-            </DialogDescription>
           </DialogHeader>
           
+          <DialogDescription asChild>
+            <div className="space-y-5 pt-4">
+              <p className="text-base text-foreground/80 leading-relaxed">
+                We are building a platform set to redefine the future of talent acquisition.
+              </p>
+              
+              <p className="text-lg font-semibold text-foreground">
+                Want to be the first to receive updates?
+              </p>
+              
+              <p className="text-sm text-muted-foreground">
+                Leave your email below to stay informed on our progress and launch.
+              </p>
+            </div>
+          </DialogDescription>
+          
+          <div className="my-4 border-t border-border" />
+          
           {isSubmitted ? (
-            <div className="flex flex-col items-center justify-center py-8 space-y-3">
-              <CheckCircle className="h-12 w-12 text-primary" />
-              <p className="text-lg font-medium">Thank you for your interest!</p>
+            <div className="flex flex-col items-center justify-center py-8 space-y-3 animate-fade-in">
+              <CheckCircle className="h-14 w-14 text-primary" />
+              <p className="text-xl font-semibold">Thank you for your interest!</p>
               <p className="text-muted-foreground text-center">
                 You'll receive updates on our progress soon.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleEmailSubmit} className="mt-4 space-y-4">
+            <form onSubmit={handleEmailSubmit} className="space-y-4 animate-fade-in">
               <div className="space-y-2">
-                <Label htmlFor="lead-email">Email address</Label>
+                <Label htmlFor="lead-email" className="text-sm font-medium">Email address</Label>
                 <Input
                   id="lead-email"
                   type="email"
@@ -175,12 +180,12 @@ export default function Login() {
                   value={leadEmail}
                   onChange={(e) => setLeadEmail(e.target.value)}
                   required
-                  className="input-glow"
+                  className="input-glow h-11"
                 />
               </div>
               <Button 
                 type="submit" 
-                className="w-full btn-glow"
+                className="w-full btn-glow h-11 text-base font-medium"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
