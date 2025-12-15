@@ -66,9 +66,9 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4 overflow-hidden">
+    <div className="min-h-[100dvh] h-[100dvh] bg-background flex items-center justify-center p-4 overflow-hidden">
       {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10 pointer-events-none" />
+      <div className="fixed inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10 pointer-events-none" />
       
       {/* Login Preview Card */}
       <Card className="w-full max-w-sm sm:max-w-md relative z-10 shadow-xl border-border/50">
