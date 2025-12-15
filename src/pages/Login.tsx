@@ -136,60 +136,58 @@ export default function Login() {
 
       {/* Lead Capture Popup */}
       <Dialog open={showPopup} onOpenChange={setShowPopup}>
-        <DialogContent className="w-[calc(100%-2.5rem)] max-w-[340px] sm:max-w-sm p-6 sm:p-8 rounded-3xl shadow-2xl border-0 bg-background/95 backdrop-blur-xl animate-fade-in">
-          {/* Logo */}
-          <div className="flex justify-center -mt-2 mb-1">
+        <DialogContent className="w-[calc(100%-2.5rem)] max-w-[340px] sm:max-w-sm p-6 sm:p-7 rounded-3xl shadow-2xl border-0 bg-background/98 backdrop-blur-xl animate-fade-in">
+          {/* Logo - using mix-blend to remove white background */}
+          <div className="flex justify-center mb-2">
             <img 
               src={onerootedLogo} 
               alt="One Rooted" 
-              className="h-10 w-auto opacity-90"
+              className="h-8 w-auto mix-blend-multiply dark:mix-blend-screen"
             />
           </div>
           
           <DialogHeader>
-            <DialogTitle className="text-xl font-semibold leading-tight tracking-tight">
+            <DialogTitle className="text-lg font-semibold leading-tight tracking-tight">
               Ready to transform your hiring?
             </DialogTitle>
           </DialogHeader>
           
           <DialogDescription asChild>
-            <div className="space-y-3 text-center">
-              <p className="text-sm text-foreground/70 leading-relaxed">
+            <div className="space-y-2 text-center">
+              <p className="text-sm text-foreground/65 leading-relaxed">
                 We're building a platform to redefine talent acquisition.
               </p>
               
-              <p className="text-sm font-medium text-foreground/90">
+              <p className="text-sm font-medium text-foreground/85">
                 Want early access?
               </p>
             </div>
           </DialogDescription>
           
           {isSubmitted ? (
-            <div className="flex flex-col items-center justify-center py-6 space-y-3 animate-fade-in">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <CheckCircle className="h-6 w-6 text-primary" />
+            <div className="flex flex-col items-center justify-center py-5 space-y-2 animate-fade-in">
+              <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <CheckCircle className="h-5 w-5 text-primary" />
               </div>
-              <p className="text-base font-semibold">Thank you!</p>
-              <p className="text-sm text-muted-foreground text-center">
+              <p className="text-sm font-semibold">Thank you!</p>
+              <p className="text-xs text-muted-foreground text-center">
                 We'll keep you updated.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleEmailSubmit} className="space-y-4 pt-2 animate-fade-in">
-              <div className="space-y-2">
-                <Input
-                  id="lead-email"
-                  type="email"
-                  placeholder="your@email.com"
-                  value={leadEmail}
-                  onChange={(e) => setLeadEmail(e.target.value)}
-                  required
-                  className="h-12 text-center text-base bg-muted/50 border-border/50 rounded-xl shadow-sm focus:shadow-md transition-shadow placeholder:text-muted-foreground/60"
-                />
-              </div>
+            <form onSubmit={handleEmailSubmit} className="space-y-3 pt-1 animate-fade-in">
+              <Input
+                id="lead-email"
+                type="email"
+                placeholder="your@email.com"
+                value={leadEmail}
+                onChange={(e) => setLeadEmail(e.target.value)}
+                required
+                className="h-10 text-center text-sm bg-muted/40 border-border/40 rounded-lg focus:ring-1 focus:ring-primary/20 transition-all placeholder:text-muted-foreground/50"
+              />
               <Button 
                 type="submit" 
-                className="w-full h-12 text-base font-medium rounded-xl shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all"
+                className="w-full h-10 text-sm font-medium rounded-lg shadow-md shadow-primary/15 hover:shadow-lg hover:shadow-primary/20 transition-all"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
@@ -201,7 +199,7 @@ export default function Login() {
                   "Get updates"
                 )}
               </Button>
-              <p className="text-[11px] text-muted-foreground/60 text-center pt-1">
+              <p className="text-[10px] text-muted-foreground/50 text-center">
                 No spam, just updates on our launch.
               </p>
             </form>
