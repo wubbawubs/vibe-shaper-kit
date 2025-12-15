@@ -136,41 +136,47 @@ export default function Login() {
 
       {/* Lead Capture Popup */}
       <Dialog open={showPopup} onOpenChange={setShowPopup}>
-        <DialogContent className="w-[calc(100%-2rem)] max-w-sm sm:max-w-md p-5 sm:p-6 rounded-2xl animate-fade-in">
+        <DialogContent className="w-[calc(100%-2.5rem)] max-w-[340px] sm:max-w-sm p-6 sm:p-8 rounded-3xl shadow-2xl border-0 bg-background/95 backdrop-blur-xl animate-fade-in">
+          {/* Logo */}
+          <div className="flex justify-center -mt-2 mb-1">
+            <img 
+              src={onerootedLogo} 
+              alt="One Rooted" 
+              className="h-10 w-auto opacity-90"
+            />
+          </div>
+          
           <DialogHeader>
-            <DialogTitle className="text-lg sm:text-xl font-semibold leading-snug">
-              Ready to transform your hiring strategy?
+            <DialogTitle className="text-xl font-semibold leading-tight tracking-tight">
+              Ready to transform your hiring?
             </DialogTitle>
           </DialogHeader>
           
           <DialogDescription asChild>
-            <div className="space-y-2 pt-1 text-center">
-              <p className="text-sm text-foreground/80 leading-relaxed">
+            <div className="space-y-3 text-center">
+              <p className="text-sm text-foreground/70 leading-relaxed">
                 We're building a platform to redefine talent acquisition.
               </p>
               
-              <p className="text-sm font-medium text-foreground">
+              <p className="text-sm font-medium text-foreground/90">
                 Want early access?
-              </p>
-              
-              <p className="text-xs text-muted-foreground">
-                Leave your email to stay informed.
               </p>
             </div>
           </DialogDescription>
           
           {isSubmitted ? (
-            <div className="flex flex-col items-center justify-center py-5 space-y-2 animate-fade-in">
-              <CheckCircle className="h-9 w-9 text-primary" />
-              <p className="text-base font-medium">Thank you!</p>
+            <div className="flex flex-col items-center justify-center py-6 space-y-3 animate-fade-in">
+              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <CheckCircle className="h-6 w-6 text-primary" />
+              </div>
+              <p className="text-base font-semibold">Thank you!</p>
               <p className="text-sm text-muted-foreground text-center">
                 We'll keep you updated.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleEmailSubmit} className="space-y-3 pt-1 animate-fade-in">
-              <div className="space-y-1.5 text-center">
-                <Label htmlFor="lead-email" className="text-sm">Email address</Label>
+            <form onSubmit={handleEmailSubmit} className="space-y-4 pt-2 animate-fade-in">
+              <div className="space-y-2">
                 <Input
                   id="lead-email"
                   type="email"
@@ -178,12 +184,12 @@ export default function Login() {
                   value={leadEmail}
                   onChange={(e) => setLeadEmail(e.target.value)}
                   required
-                  className="h-10 text-center"
+                  className="h-12 text-center text-base bg-muted/50 border-border/50 rounded-xl shadow-sm focus:shadow-md transition-shadow placeholder:text-muted-foreground/60"
                 />
               </div>
               <Button 
                 type="submit" 
-                className="w-full h-10"
+                className="w-full h-12 text-base font-medium rounded-xl shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
@@ -195,6 +201,9 @@ export default function Login() {
                   "Get updates"
                 )}
               </Button>
+              <p className="text-[11px] text-muted-foreground/60 text-center pt-1">
+                No spam, just updates on our launch.
+              </p>
             </form>
           )}
         </DialogContent>
