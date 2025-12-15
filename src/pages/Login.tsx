@@ -136,7 +136,7 @@ export default function Login() {
 
       {/* Lead Capture Popup */}
       <Dialog open={showPopup} onOpenChange={setShowPopup}>
-        <DialogContent className="sm:max-w-md p-5 sm:p-6 mx-4 sm:mx-auto animate-fade-in">
+        <DialogContent className="w-[calc(100%-2rem)] max-w-sm sm:max-w-md p-5 sm:p-6 rounded-2xl animate-fade-in">
           <DialogHeader>
             <DialogTitle className="text-lg sm:text-xl font-semibold leading-snug">
               Ready to transform your hiring strategy?
@@ -144,32 +144,32 @@ export default function Login() {
           </DialogHeader>
           
           <DialogDescription asChild>
-            <div className="space-y-3 pt-2">
-              <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+            <div className="space-y-2 pt-1 text-center">
+              <p className="text-sm text-foreground/80 leading-relaxed">
                 We're building a platform to redefine talent acquisition.
               </p>
               
-              <p className="text-sm sm:text-base font-medium text-foreground">
+              <p className="text-sm font-medium text-foreground">
                 Want early access?
               </p>
               
-              <p className="text-xs sm:text-sm text-muted-foreground">
+              <p className="text-xs text-muted-foreground">
                 Leave your email to stay informed.
               </p>
             </div>
           </DialogDescription>
           
           {isSubmitted ? (
-            <div className="flex flex-col items-center justify-center py-6 space-y-2 animate-fade-in">
-              <CheckCircle className="h-10 w-10 text-primary" />
-              <p className="text-base sm:text-lg font-medium">Thank you!</p>
+            <div className="flex flex-col items-center justify-center py-5 space-y-2 animate-fade-in">
+              <CheckCircle className="h-9 w-9 text-primary" />
+              <p className="text-base font-medium">Thank you!</p>
               <p className="text-sm text-muted-foreground text-center">
                 We'll keep you updated.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleEmailSubmit} className="space-y-3 pt-2 animate-fade-in">
-              <div className="space-y-1.5">
+            <form onSubmit={handleEmailSubmit} className="space-y-3 pt-1 animate-fade-in">
+              <div className="space-y-1.5 text-center">
                 <Label htmlFor="lead-email" className="text-sm">Email address</Label>
                 <Input
                   id="lead-email"
@@ -178,7 +178,7 @@ export default function Login() {
                   value={leadEmail}
                   onChange={(e) => setLeadEmail(e.target.value)}
                   required
-                  className="h-10"
+                  className="h-10 text-center"
                 />
               </div>
               <Button 
