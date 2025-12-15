@@ -121,7 +121,7 @@ export default function Login() {
               type="submit" 
               className="w-full"
             >
-              Inloggen
+              Blijf op de hoogte
             </Button>
           </form>
 
