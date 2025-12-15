@@ -44,21 +44,21 @@ export default function Login() {
     if (error) {
       if (error.code === '23505') {
         toast({
-          title: "Al geregistreerd",
-          description: "Dit e-mailadres staat al op onze lijst.",
+          title: "Already registered",
+          description: "This email address is already on our list.",
         });
       } else {
         toast({
-          title: "Er ging iets mis",
-          description: "Probeer het later opnieuw.",
+          title: "Something went wrong",
+          description: "Please try again later.",
           variant: "destructive",
         });
       }
     } else {
       setIsSubmitted(true);
       toast({
-        title: "Bedankt!",
-        description: "Je ontvangt binnenkort de eerste updates.",
+        title: "Thank you!",
+        description: "You'll receive updates soon.",
       });
     }
     
@@ -80,21 +80,21 @@ export default function Login() {
               className="h-16 w-auto"
             />
           </div>
-          <CardTitle className="text-2xl font-semibold">Welkom terug</CardTitle>
+          <CardTitle className="text-2xl font-semibold">Welcome back</CardTitle>
           <CardDescription>
-            Log in op je One Rooted account
+            Log in to your One Rooted account
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleLoginClick} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">E-mailadres</Label>
+              <Label htmlFor="email">Email address</Label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
                   id="email"
                   type="email"
-                  placeholder="naam@bedrijf.nl"
+                  placeholder="name@company.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="pl-10"
@@ -103,7 +103,7 @@ export default function Login() {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="password">Wachtwoord</Label>
+              <Label htmlFor="password">Password</Label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
@@ -121,14 +121,14 @@ export default function Login() {
               type="submit" 
               className="w-full"
             >
-              Blijf op de hoogte
+              Stay informed
             </Button>
           </form>
 
           {/* Marketing tagline */}
           <div className="mt-6 text-center">
             <p className="text-sm text-muted-foreground italic">
-              Een nieuwe standaard
+              A new standard
             </p>
           </div>
         </CardContent>
@@ -139,18 +139,18 @@ export default function Login() {
         <DialogContent className="sm:max-w-lg">
           <DialogHeader>
             <DialogTitle className="text-xl font-semibold leading-relaxed">
-              Dit is de toekomst van Talent Acquisition.
+              Ready to transform your hiring strategy?
             </DialogTitle>
             <DialogDescription asChild>
               <div className="space-y-4 pt-4 text-base text-foreground/80">
                 <p>
-                  Wij lanceren het enige platform dat de wrijving uit het end-to-end hiring-proces elimineert. Dit is geen ATS-upgrade; dit is een strategische asset die uw tijd tot hire meetbaar reduceert en de kwaliteit van aannames garandeert.
+                  We are building a platform set to redefine the future of talent acquisition.
                 </p>
                 <p className="font-medium text-foreground">
-                  Wilt u toegang tot de meest geavanceerde wervingsarchitectuur in de markt?
+                  Want to be the first to receive updates?
                 </p>
                 <p className="text-muted-foreground">
-                  Laat uw e-mailadres achter. Ontvang de eerste strategische updates.
+                  Leave your email below to stay informed on our progress and launch.
                 </p>
               </div>
             </DialogDescription>
@@ -159,19 +159,19 @@ export default function Login() {
           {isSubmitted ? (
             <div className="flex flex-col items-center justify-center py-8 space-y-3">
               <CheckCircle className="h-12 w-12 text-primary" />
-              <p className="text-lg font-medium">Bedankt voor uw interesse!</p>
+              <p className="text-lg font-medium">Thank you for your interest!</p>
               <p className="text-muted-foreground text-center">
-                U ontvangt binnenkort de eerste strategische updates.
+                You'll receive updates on our progress soon.
               </p>
             </div>
           ) : (
             <form onSubmit={handleEmailSubmit} className="mt-4 space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="lead-email">E-mailadres</Label>
+                <Label htmlFor="lead-email">Email address</Label>
                 <Input
                   id="lead-email"
                   type="email"
-                  placeholder="uw@email.nl"
+                  placeholder="your@email.com"
                   value={leadEmail}
                   onChange={(e) => setLeadEmail(e.target.value)}
                   required
@@ -186,10 +186,10 @@ export default function Login() {
                 {isSubmitting ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Verzenden...
+                    Submitting...
                   </>
                 ) : (
-                  "Ontvang updates"
+                  "Get updates"
                 )}
               </Button>
             </form>
