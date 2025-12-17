@@ -19,12 +19,12 @@ export function ProblemSection() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-12">
-            Hiring isn't broken.
-            <br />
-            <span className="text-background/60">Your current tools are outdated.</span>
+          {/* Headline */}
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight mb-16">
+            Your current tools are outdated.
           </h2>
 
+          {/* Tool cards */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
               { tool: "ATS", purpose: "Built to store candidates, not to hire them" },
@@ -45,39 +45,15 @@ export function ProblemSection() {
             ))}
           </div>
 
+          {/* One consequence line - facts only */}
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-background/60 text-lg mb-12"
+            className="text-background/50 text-lg"
           >
-            The result? Chaos. No single source of truth. No accountability. No insight.
-          </motion.p>
-
-          <motion.blockquote
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative"
-          >
-            <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-6xl text-accent/30">"</div>
-            <p className="text-2xl md:text-3xl font-medium leading-relaxed mb-8">
-              Hiring didn't get more complex.
-              <br />
-              <span className="text-accent">Your tools just never evolved.</span>
-            </p>
-          </motion.blockquote>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-3xl md:text-4xl font-semibold text-accent"
-          >
-            Now there is OneRooted.
+            No single source of truth. No ownership. No insight.
           </motion.p>
         </motion.div>
       </div>
