@@ -1,321 +1,204 @@
-import { useEffect, useRef, useState, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Check, ChevronRight } from 'lucide-react';
 
 interface Candidate {
   id: number;
   name: string;
+  source: string;
+  days: number;
   score: number;
   stage: number;
-  x: number;
-  y: number;
-  avatar: string;
-  status: "entering" | "evaluating" | "moving" | "rejected" | "hired";
+  status: 'active' | 'hired' | 'rejected';
+  colorIndex: number;
 }
 
-const stages = [
-  { name: "Applied", x: 12 },
-  { name: "Screening", x: 32 },
-  { name: "Interview", x: 52 },
-  { name: "Offer", x: 72 },
-  { name: "Hired", x: 90 },
+const stages = ['Nieuw', 'Screening', 'Interview', 'Aanbieding', 'Hired'];
+
+const names = ['Emma V.', 'Daan M.', 'Sophie B.', 'Lucas K.', 'Julia R.', 'Max W.', 'Lisa D.', 'Tom H.'];
+const sources = ['LinkedIn', 'Indeed', 'Referral', 'Website'];
+const avatarColors = [
+  'bg-primary/15 text-primary',
+  'bg-emerald-100 text-emerald-700',
+  'bg-amber-100 text-amber-700',
+  'bg-sky-100 text-sky-700',
+  'bg-violet-100 text-violet-700',
 ];
 
-const avatarColors = ["#168A7A", "#1A9D8B", "#D4A84B", "#C49A3C", "#2A7A6B", "#E8B84A"];
-const firstNames = ["Alex", "Sam", "Jordan", "Taylor", "Morgan", "Casey", "Riley", "Quinn", "Avery", "Blake"];
-const lastInitials = ["M.", "K.", "S.", "R.", "T.", "B.", "L.", "W.", "P.", "N."];
+const getInitials = (name: string) => {
+  return name.split(' ').map(n => n[0]).join('').toUpperCase();
+};
 
 export function HiringFunnelAnimation() {
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [stats, setStats] = useState({ total: 0, screened: 0, interviewed: 0, hired: 0 });
-  const candidateIdRef = useRef(0);
 
   const addCandidate = useCallback(() => {
-    const id = candidateIdRef.current++;
-    const score = Math.floor(Math.random() * 30) + 70; // 70-100 score
-    
-    // Position candidates in rows
-    const yPositions = [25, 42, 58, 75];
-    const yIndex = id % yPositions.length;
-    
     const newCandidate: Candidate = {
-      id,
-      name: `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastInitials[Math.floor(Math.random() * lastInitials.length)]}`,
-      score,
+      id: Date.now() + Math.random(),
+      name: names[Math.floor(Math.random() * names.length)],
+      source: sources[Math.floor(Math.random() * sources.length)],
+      days: Math.floor(Math.random() * 5) + 1,
+      score: Math.round((7 + Math.random() * 3) * 10) / 10,
       stage: 0,
-      x: stages[0].x,
-      y: yPositions[yIndex],
-      avatar: avatarColors[Math.floor(Math.random() * avatarColors.length)],
-      status: "entering",
+      status: 'active',
+      colorIndex: Math.floor(Math.random() * avatarColors.length),
     };
-
-    setCandidates(prev => {
-      // Remove old candidates to keep performance
-      const active = prev.filter(c => c.status !== "rejected" && c.stage < 5);
-      return [...active.slice(-8), newCandidate];
-    });
+    setCandidates(prev => [...prev.slice(-11), newCandidate]);
     setStats(prev => ({ ...prev, total: prev.total + 1 }));
   }, []);
 
   const moveCandidates = useCallback(() => {
-    setCandidates(prev => prev.map(candidate => {
-      if (candidate.status === "rejected" || candidate.status === "hired") {
-        return candidate;
-      }
-
-      // Move to evaluating after entering
-      if (candidate.status === "entering") {
-        return { ...candidate, status: "evaluating" as const };
-      }
-
-      // Random chance to advance
-      const shouldMove = Math.random() < 0.12;
-      
-      if (shouldMove && candidate.stage < stages.length - 1) {
-        const nextStage = candidate.stage + 1;
-        const passThreshold = 72 + (nextStage * 4);
+    setCandidates(prev => {
+      return prev.map(candidate => {
+        if (candidate.status !== 'active') return candidate;
         
-        if (candidate.score >= passThreshold || Math.random() < 0.35) {
-          // Advance to next stage
-          if (nextStage === 1) setStats(prev => ({ ...prev, screened: prev.screened + 1 }));
-          if (nextStage === 2) setStats(prev => ({ ...prev, interviewed: prev.interviewed + 1 }));
-          if (nextStage === 4) setStats(prev => ({ ...prev, hired: prev.hired + 1 }));
-
-          return {
-            ...candidate,
-            stage: nextStage,
-            x: stages[nextStage].x,
-            status: (nextStage === 4 ? "hired" : "moving") as Candidate["status"],
-          };
-        } else if (Math.random() < 0.15 && candidate.stage > 0) {
-          // Rejected (fade out)
-          return { ...candidate, status: "rejected" as const };
+        const advanceChance = candidate.score > 8 ? 0.35 : 0.2;
+        const rejectChance = candidate.score < 7.5 ? 0.12 : 0.04;
+        
+        if (Math.random() < rejectChance && candidate.stage > 0) {
+          return { ...candidate, status: 'rejected' as const };
         }
-      }
-
-      return { ...candidate, status: "evaluating" as const };
-    }).filter(c => c.status !== "rejected" || Math.random() > 0.1));
+        
+        if (Math.random() < advanceChance && candidate.stage < 4) {
+          const newStage = candidate.stage + 1;
+          
+          if (newStage === 1) setStats(s => ({ ...s, screened: s.screened + 1 }));
+          if (newStage === 2) setStats(s => ({ ...s, interviewed: s.interviewed + 1 }));
+          if (newStage === 4) {
+            setStats(s => ({ ...s, hired: s.hired + 1 }));
+            return { ...candidate, stage: newStage, status: 'hired' as const };
+          }
+          
+          return { ...candidate, stage: newStage, days: Math.floor(Math.random() * 3) + 1 };
+        }
+        
+        return candidate;
+      }).filter(c => c.status !== 'rejected');
+    });
   }, []);
 
   useEffect(() => {
-    // Start with some candidates
-    const initTimeout = setTimeout(() => {
-      addCandidate();
-      setTimeout(addCandidate, 400);
-      setTimeout(addCandidate, 800);
-    }, 300);
-
-    const addInterval = setInterval(addCandidate, 2500);
-    const moveInterval = setInterval(moveCandidates, 900);
-
+    for (let i = 0; i < 4; i++) {
+      setTimeout(() => addCandidate(), i * 200);
+    }
+    
+    const addInterval = setInterval(addCandidate, 2800);
+    const moveInterval = setInterval(moveCandidates, 2000);
+    
     return () => {
-      clearTimeout(initTimeout);
       clearInterval(addInterval);
       clearInterval(moveInterval);
     };
   }, [addCandidate, moveCandidates]);
 
+  const getCandidatesInStage = (stageIndex: number) => {
+    return candidates.filter(c => c.stage === stageIndex).slice(0, 3);
+  };
+
   return (
-    <div className="relative w-full h-full min-h-[350px]">
-      {/* Background subtle grid */}
-      <div className="absolute inset-0 opacity-[0.04]">
-        <div className="w-full h-full" style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)',
-          backgroundSize: '24px 24px'
-        }} />
-      </div>
-
-      {/* Stage Labels & Lines */}
-      {stages.map((stage, index) => (
-        <div
-          key={stage.name}
-          className="absolute top-4"
-          style={{ left: `${stage.x}%`, transform: 'translateX(-50%)' }}
-        >
-          {/* Stage label */}
-          <div className={`px-3 py-1.5 rounded-full text-[11px] font-semibold whitespace-nowrap ${
-            index === stages.length - 1 
-              ? 'bg-accent/20 text-accent border border-accent/30' 
-              : 'bg-muted text-muted-foreground border border-border/50'
-          }`}>
-            {stage.name}
-          </div>
-          
-          {/* Vertical guide line */}
-          <div 
-            className="absolute left-1/2 -translate-x-1/2 w-px top-10 opacity-20"
-            style={{ 
-              height: 'calc(100vh * 0.25)',
-              background: index === stages.length - 1 
-                ? 'linear-gradient(to bottom, hsl(var(--accent)), transparent)' 
-                : 'linear-gradient(to bottom, hsl(var(--border)), transparent)'
-            }}
-          />
-        </div>
-      ))}
-
-      {/* Flow arrows between stages */}
-      {stages.slice(0, -1).map((stage, index) => (
-        <motion.div
-          key={`arrow-${index}`}
-          className="absolute top-6"
-          style={{ left: `${(stage.x + stages[index + 1].x) / 2}%`, transform: 'translateX(-50%)' }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.3 }}
-          transition={{ delay: index * 0.2 }}
-        >
-          <svg width="24" height="12" viewBox="0 0 24 12" className="text-primary">
-            <path d="M0 6 L18 6 M14 2 L20 6 L14 10" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          </svg>
-        </motion.div>
-      ))}
-
-      {/* Candidate Cards */}
-      <AnimatePresence mode="popLayout">
-        {candidates.map((candidate) => (
-          <motion.div
-            key={candidate.id}
-            layout
-            initial={{ opacity: 0, scale: 0.8, x: '-50%', y: '-50%' }}
-            animate={{ 
-              opacity: candidate.status === "rejected" ? 0 : 1,
-              scale: candidate.status === "rejected" ? 0.6 : 1,
-              x: '-50%',
-              y: '-50%',
-            }}
-            exit={{ opacity: 0, scale: 0.5 }}
-            transition={{ 
-              type: "spring",
-              stiffness: 200,
-              damping: 25,
-            }}
-            className="absolute z-10"
-            style={{ 
-              left: `${candidate.x}%`,
-              top: `${candidate.y}%`,
-            }}
-          >
-            <div 
-              className={`relative bg-card rounded-xl shadow-lg border overflow-hidden transition-all duration-300 ${
-                candidate.status === "hired" 
-                  ? "border-accent shadow-xl shadow-accent/30 ring-2 ring-accent/40" 
-                  : "border-border/60 hover:border-border"
-              }`}
-              style={{ width: '130px' }}
-            >
-              {/* Color bar */}
-              <div 
-                className="h-1.5 w-full"
-                style={{ 
-                  background: candidate.status === "hired" 
-                    ? 'linear-gradient(90deg, hsl(var(--accent)), hsl(var(--accent) / 0.7))' 
-                    : candidate.avatar 
-                }}
-              />
-              
-              <div className="p-3">
-                {/* Avatar + Name */}
-                <div className="flex items-center gap-2.5 mb-3">
-                  <div 
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-semibold shrink-0 shadow-sm"
-                    style={{ backgroundColor: candidate.avatar }}
-                  >
-                    {candidate.name.charAt(0)}
-                  </div>
-                  <div className="overflow-hidden">
-                    <div className="text-sm font-medium text-foreground truncate">{candidate.name}</div>
-                    <div className="text-[10px] text-muted-foreground">Candidate</div>
-                  </div>
-                </div>
-
-                {/* Match Score */}
-                <div className="space-y-1.5">
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] text-muted-foreground uppercase tracking-wide">Match</span>
-                    <span className={`text-xs font-bold ${
-                      candidate.score >= 90 ? 'text-accent' : 
-                      candidate.score >= 80 ? 'text-success' : 'text-primary'
-                    }`}>
-                      {candidate.score}%
-                    </span>
-                  </div>
-                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={{ width: `${candidate.score}%` }}
-                      transition={{ duration: 0.6, ease: "easeOut" }}
-                      className="h-full rounded-full"
-                      style={{
-                        background: candidate.score >= 90 
-                          ? 'linear-gradient(90deg, hsl(var(--accent)), hsl(var(--accent) / 0.8))' 
-                          : candidate.score >= 80 
-                            ? 'linear-gradient(90deg, hsl(var(--success)), hsl(var(--success) / 0.8))' 
-                            : 'linear-gradient(90deg, hsl(var(--primary)), hsl(var(--primary) / 0.8))'
-                      }}
-                    />
-                  </div>
-                </div>
-
-                {/* Hired Badge */}
-                {candidate.status === "hired" && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
-                    className="mt-3 flex items-center justify-center gap-1.5 bg-accent/15 rounded-lg py-1.5"
-                  >
-                    <svg className="w-3.5 h-3.5 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                    </svg>
-                    <span className="text-[11px] font-bold text-accent tracking-wide">HIRED</span>
-                  </motion.div>
-                )}
+    <div className="w-full h-full flex flex-col p-5 gap-4">
+      {/* Stage Headers */}
+      <div className="flex items-center">
+        {stages.map((stage, index) => (
+          <React.Fragment key={stage}>
+            <div className="flex-1">
+              <div className={`text-xs font-medium px-2.5 py-1 rounded-md inline-flex items-center gap-1.5 ${
+                index === stages.length - 1 
+                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200/60'
+                  : 'bg-muted/60 text-muted-foreground border border-border/40'
+              }`}>
+                <span>{stage}</span>
+                <span className="text-[10px] opacity-70">({getCandidatesInStage(index).length})</span>
               </div>
-
-              {/* Evaluating indicator */}
-              {candidate.status === "evaluating" && candidate.stage < 2 && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className="absolute -top-1 -right-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center shadow-lg"
-                >
-                  <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 1.2, repeat: Infinity, ease: "linear" }}
-                    className="w-3 h-3 border-2 border-primary-foreground border-t-transparent rounded-full"
-                  />
-                </motion.div>
-              )}
             </div>
-          </motion.div>
+            {index < stages.length - 1 && (
+              <ChevronRight className="w-3.5 h-3.5 text-border mx-1 flex-shrink-0" />
+            )}
+          </React.Fragment>
         ))}
-      </AnimatePresence>
-
-      {/* Live Stats Panel */}
-      <div className="absolute bottom-4 right-4 bg-card/95 backdrop-blur-sm rounded-xl border border-border/60 p-4 shadow-xl">
-        <div className="flex items-center gap-2 mb-3">
-          <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
-          <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold">Live Pipeline</span>
-        </div>
-        <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
-          <span className="text-muted-foreground">Applied</span>
-          <span className="text-right font-bold tabular-nums">{stats.total}</span>
-          <span className="text-muted-foreground">Screened</span>
-          <span className="text-right font-bold text-primary tabular-nums">{stats.screened}</span>
-          <span className="text-muted-foreground">Interviewed</span>
-          <span className="text-right font-bold text-success tabular-nums">{stats.interviewed}</span>
-          <span className="text-muted-foreground">Hired</span>
-          <span className="text-right font-bold text-accent tabular-nums">{stats.hired}</span>
-        </div>
       </div>
 
-      {/* AI Indicator */}
-      <div className="absolute top-4 right-4 flex items-center gap-2 bg-card/90 backdrop-blur-sm rounded-full px-3 py-1.5 border border-border/50 shadow-md">
-        <span className="relative flex h-2 w-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-success"></span>
-        </span>
-        <span className="text-[11px] font-semibold text-muted-foreground">AI Ranking Active</span>
+      {/* Pipeline Grid */}
+      <div className="flex-1 flex gap-3 min-h-0">
+        {stages.map((stage, stageIndex) => (
+          <div key={stage} className="flex-1 flex flex-col gap-2">
+            <AnimatePresence mode="popLayout">
+              {getCandidatesInStage(stageIndex).map((candidate) => (
+                <motion.div
+                  key={candidate.id}
+                  layout
+                  initial={{ opacity: 0, y: -8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, x: 16 }}
+                  transition={{ duration: 0.35, ease: 'easeOut' }}
+                  className={`bg-card border rounded-lg p-2.5 shadow-sm ${
+                    candidate.status === 'hired'
+                      ? 'border-emerald-300 bg-emerald-50/30'
+                      : 'border-border/50'
+                  }`}
+                >
+                  <div className="flex items-start gap-2">
+                    {/* Avatar */}
+                    <div className={`w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-semibold flex-shrink-0 ${avatarColors[candidate.colorIndex]}`}>
+                      {getInitials(candidate.name)}
+                    </div>
+                    
+                    <div className="flex-1 min-w-0 space-y-0.5">
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-[11px] font-medium text-foreground truncate">
+                          {candidate.name}
+                        </span>
+                        {candidate.status === 'hired' && (
+                          <span className="flex items-center gap-0.5 text-[9px] font-semibold text-emerald-600 bg-emerald-100 px-1.5 py-0.5 rounded-full">
+                            <Check className="w-2.5 h-2.5" />
+                          </span>
+                        )}
+                      </div>
+                      <div className="text-[9px] text-muted-foreground">
+                        {candidate.source} · {candidate.days}d
+                      </div>
+                      <div className="text-[9px] text-muted-foreground">
+                        Score: <span className={candidate.score >= 8.5 ? 'text-emerald-600 font-medium' : candidate.score >= 7.5 ? 'text-foreground font-medium' : 'text-muted-foreground'}>{candidate.score}</span>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+            
+            {/* Empty state placeholder */}
+            {getCandidatesInStage(stageIndex).length === 0 && (
+              <div className="flex-1 border border-dashed border-border/30 rounded-lg" />
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Bottom Stats Bar */}
+      <div className="flex items-center justify-between pt-3 border-t border-border/30">
+        {/* Mini Funnel */}
+        <div className="flex items-center gap-2 text-[11px] text-muted-foreground">
+          <span className="font-semibold text-foreground">{stats.total}</span>
+          <ChevronRight className="w-3 h-3 opacity-40" />
+          <span>{stats.screened}</span>
+          <ChevronRight className="w-3 h-3 opacity-40" />
+          <span>{stats.interviewed}</span>
+          <ChevronRight className="w-3 h-3 opacity-40" />
+          <span className="font-semibold text-emerald-600">{stats.hired}</span>
+        </div>
+        
+        {/* Live Indicator */}
+        <div className="flex items-center gap-1.5">
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+          </span>
+          <span className="text-[10px] text-muted-foreground">Live</span>
+        </div>
       </div>
     </div>
   );
 }
+
+export default HiringFunnelAnimation;
