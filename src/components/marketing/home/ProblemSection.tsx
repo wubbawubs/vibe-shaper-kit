@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function ProblemSection() {
   return (
-    <section className="py-20 md:py-28 bg-foreground text-background relative overflow-hidden">
+    <section className="py-16 md:py-20 bg-foreground text-background relative overflow-hidden">
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
