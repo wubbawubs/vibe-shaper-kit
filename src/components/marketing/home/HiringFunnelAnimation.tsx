@@ -169,17 +169,16 @@ export function HiringFunnelAnimation() {
         {/* Pipeline Grid */}
         <div className="flex-1 flex gap-2 min-h-0">
           {stages.map((stage, stageIndex) => (
-            <div key={stage} className="flex-1 flex flex-col gap-1.5">
-              <AnimatePresence mode="popLayout">
+            <div key={stage} className="flex-1 flex flex-col gap-2 min-h-[180px] pt-3 overflow-hidden">
+              <AnimatePresence mode="sync">
                 {getCandidatesInStage(stageIndex).map((candidate) => (
                   <motion.div
                     key={candidate.id}
-                    layout
                     initial={{ opacity: 0, y: -6 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, x: 12 }}
-                    transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-                    className={`bg-card border rounded-md p-2 shadow-sm relative ${
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+                    className={`bg-card border rounded-md p-2 shadow-sm relative flex-shrink-0 ${
                       candidate.status === 'hired'
                         ? 'border-emerald-300 bg-emerald-50/30'
                         : 'border-border/40'
