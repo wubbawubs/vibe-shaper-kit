@@ -8,7 +8,7 @@ const plans = [
     name: "Base",
     price: "250",
     description: "Essential recruitment support",
-    features: ["Recruitment support", "Up-to-date talent pool", "Access to E-Academy"],
+    features: ["OneRooted system", "Up-to-date talent pool", "Access to E-Academy"],
   },
   {
     name: "Plus",
