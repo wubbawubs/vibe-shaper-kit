@@ -9,8 +9,8 @@ const audiences = [
     title: "Leadership",
     subtitle: "Founders & Executives",
     points: [
-      "Complete visibility without micromanagement",
-      "Data-driven hiring decisions at scale",
+      "Full visibility without getting involved in every hire",
+      "Confident hiring decisions, backed by real data",
     ],
   },
   {
@@ -18,8 +18,8 @@ const audiences = [
     title: "Talent Teams",
     subtitle: "Recruiters & Hiring Managers",
     points: [
-      "One workflow, one source of truth",
-      "Less admin, more strategic hiring",
+      "One shared workflow from intake to hire",
+      "Less admin work, more focus on hiring quality",
     ],
   },
   {
@@ -27,8 +27,8 @@ const audiences = [
     title: "Partners",
     subtitle: "Agencies & RPO",
     points: [
-      "Seamless collaboration per client",
-      "Full transparency, zero friction",
+      "A clear, shared hiring process per client",
+      "Transparency without endless back-and-forth",
     ],
   },
 ];
@@ -49,7 +49,7 @@ export function WhoItsForSection() {
         >
           <p className="text-sm uppercase tracking-widest text-accent mb-4">Who it's for</p>
           <h2 className="text-4xl md:text-5xl font-semibold">
-            Built for everyone involved in hiring
+            One shared system for everyone involved in hiring
           </h2>
         </motion.div>
 
@@ -95,7 +95,7 @@ export function WhoItsForSection() {
         >
           <Button asChild variant="outline" size="lg" className="h-12 px-6 border-border/50 hover:border-primary/50">
             <Link to="/product" className="flex items-center gap-2">
-              See how this works
+              See how this works in practice
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
