@@ -75,7 +75,7 @@ export function ProblemSection() {
               <span className="text-accent">Your tools just never evolved.</span>
             </p>
 
-            <p className="text-base md:text-lg text-background/40 font-medium">
+            <p className="text-base md:text-lg text-accent font-medium">
               Now there is OneRooted.
             </p>
           </motion.div>
