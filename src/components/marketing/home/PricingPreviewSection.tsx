@@ -67,7 +67,7 @@ export function PricingPreviewSection() {
                 </div>
               )}
 
-              <h3 className="text-lg font-semibold mb-1">{plan.name}</h3>
+              <h3 className={`text-lg font-semibold mb-1 ${plan.featured ? 'text-emerald-400' : ''}`}>{plan.name}</h3>
               <p className={`text-sm mb-4 ${plan.featured ? 'text-primary-foreground/70' : 'text-muted-foreground'}`}>
                 {plan.description}
               </p>
