@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export function RealizationSection() {
   return (
-    <section className="py-16 md:py-24 bg-foreground/95 text-background relative overflow-hidden">
-      {/* Subtle gradient overlay for visual separation */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/5 to-transparent" />
+    <section className="py-16 md:py-24 bg-foreground text-background relative overflow-hidden">
+      {/* Horizontal divider line */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-background/20" />
       
       <div className="container relative">
         <motion.div 
