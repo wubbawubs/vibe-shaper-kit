@@ -14,18 +14,6 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left - Copy */}
           <div className="lg:col-span-5 space-y-8">
-            {/* Overline */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary">
-                <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                The future of talent acquisition
-              </span>
-            </motion.div>
-
             {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -72,7 +60,7 @@ export function HeroSection() {
               </Button>
               <Button asChild variant="ghost" size="lg" className="h-14 px-8 text-base text-muted-foreground hover:text-foreground">
                 <Link to="/pricing">
-                  View pricing
+                  View plans
                 </Link>
               </Button>
             </motion.div>

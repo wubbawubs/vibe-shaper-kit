@@ -22,14 +22,14 @@ export function ProblemSection() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-12">
             Hiring isn't broken.
             <br />
-            <span className="text-background/60">Your tools are.</span>
+            <span className="text-background/60">Your current tools are outdated.</span>
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { tool: "ATS", purpose: "storage" },
-              { tool: "Slack", purpose: "discussion" },
-              { tool: "Excel", purpose: "decisions" },
+              { tool: "ATS", purpose: "Built to store candidates, not to hire them" },
+              { tool: "Slack", purpose: "Decisions lost in endless conversations" },
+              { tool: "Excel", purpose: "Critical choices without context" },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -39,8 +39,8 @@ export function ProblemSection() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="p-6 border border-background/10 rounded-xl"
               >
-                <p className="text-lg font-medium mb-1">{item.tool}</p>
-                <p className="text-background/50 text-sm">for {item.purpose}</p>
+                <p className="text-lg font-medium mb-2">{item.tool}</p>
+                <p className="text-background/50 text-sm">{item.purpose}</p>
               </motion.div>
             ))}
           </div>
@@ -63,12 +63,22 @@ export function ProblemSection() {
             className="relative"
           >
             <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-6xl text-accent/30">"</div>
-            <p className="text-2xl md:text-3xl font-medium leading-relaxed">
+            <p className="text-2xl md:text-3xl font-medium leading-relaxed mb-8">
               Hiring didn't get more complex.
               <br />
               <span className="text-accent">Your tools just never evolved.</span>
             </p>
           </motion.blockquote>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-3xl md:text-4xl font-semibold text-accent"
+          >
+            Now there is OneRooted.
+          </motion.p>
         </motion.div>
       </div>
     </section>
