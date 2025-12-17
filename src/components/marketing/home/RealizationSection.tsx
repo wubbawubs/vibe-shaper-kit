@@ -2,19 +2,22 @@ import { motion } from "framer-motion";
 
 export function RealizationSection() {
   return (
-    <section className="py-20 md:py-28 bg-foreground text-background relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-foreground/95 text-background relative overflow-hidden">
+      {/* Subtle gradient overlay for visual separation */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/5 to-transparent" />
+      
       <div className="container relative">
         <motion.div 
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
           {/* Quote */}
-          <blockquote className="relative mb-10">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-7xl text-accent/20">"</div>
-            <p className="text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+          <blockquote className="relative mb-8">
+            <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-6xl text-accent/20">"</div>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-medium leading-tight">
               Hiring didn't get more complex.
               <br />
               <span className="text-accent">Your tools just never evolved.</span>
@@ -27,7 +30,7 @@ export function RealizationSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-lg md:text-xl text-background/50 font-medium"
+            className="text-base md:text-lg text-background/40 font-medium"
           >
             Now there is OneRooted.
           </motion.p>
