@@ -4,7 +4,7 @@ export function RealizationSection() {
   return (
     <section className="py-16 md:py-24 bg-foreground text-background relative overflow-hidden">
       {/* Horizontal divider line */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-background/30" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[430px] h-px bg-background/30" />
       
       <div className="container relative">
         <motion.div 
