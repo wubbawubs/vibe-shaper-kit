@@ -19,16 +19,13 @@ export function ProblemSection() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
-          {/* Headline */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-3">
-            Hiring isn't broken.
-          </h2>
-          <p className="text-2xl md:text-3xl lg:text-4xl font-normal text-background/60 mb-12">
+          {/* Setup line - demoted, chapter label feel */}
+          <p className="text-lg md:text-xl lg:text-2xl font-normal text-background/40 tracking-wide mb-10">
             Your current tools are outdated.
           </p>
 
-          {/* Tool cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {/* Tool cards - unified diagnostic block */}
+          <div className="grid md:grid-cols-3 gap-4 mb-6 py-8 px-4">
             {[
               { tool: "ATS", purpose: <>Built to store candidates,<br />not to hire them</> },
               { tool: "Slack", purpose: "Decisions lost in endless conversations" },
@@ -40,21 +37,21 @@ export function ProblemSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="p-6 border border-background/10 rounded-xl"
+                className="p-5 border border-background/8 rounded-lg"
               >
-                <p className="text-lg font-medium mb-2">{item.tool}</p>
-                <p className="text-background/50 text-sm">{item.purpose}</p>
+                <p className="text-base font-medium mb-1.5 text-background/80">{item.tool}</p>
+                <p className="text-background/40 text-sm leading-snug">{item.purpose}</p>
               </motion.div>
             ))}
           </div>
 
-          {/* One consequence line - facts only */}
+          {/* Whisper line - footnote to the cards */}
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-background/50 text-lg"
+            className="text-background/30 text-xs tracking-wide"
           >
             No single source of truth. No ownership. No insight.
           </motion.p>
