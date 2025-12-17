@@ -170,65 +170,59 @@ export function HiringFunnelAnimation() {
         <div className="flex-1 flex gap-2 overflow-hidden">
           {stages.map((stage, stageIndex) => (
             <div key={stage} className="flex-1 min-w-0 flex flex-col gap-2 pt-2 overflow-hidden">
-              <AnimatePresence mode="wait">
-                {getCandidatesInStage(stageIndex).map((candidate, cardIndex) => (
-                  <motion.div
-                    key={candidate.id}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    transition={{ 
-                      duration: 0.2, 
-                      delay: cardIndex * 0.05,
-                      ease: "easeOut"
-                    }}
-                    className={`bg-card border rounded-md p-2 shadow-sm relative flex-shrink-0 ${
-                      candidate.status === 'hired'
-                        ? 'border-emerald-300 bg-emerald-50/30'
-                        : 'border-border/40'
-                    }`}
-                  >
-                    {/* AI Annotation */}
-                    {candidate.annotation && (
-                      <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[8px] px-1.5 py-0.5 rounded whitespace-nowrap shadow-sm z-10">
-                        {candidate.annotation}
-                      </div>
-                    )}
+              {getCandidatesInStage(stageIndex).map((candidate) => (
+                <motion.div
+                  key={candidate.id}
+                  initial={{ opacity: 0, y: -6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className={`bg-card border rounded-md p-2 shadow-sm relative ${
+                    candidate.status === 'hired'
+                      ? 'border-emerald-300 bg-emerald-50/30'
+                      : 'border-border/40'
+                  }`}
+                >
+                  {/* AI Annotation */}
+                  {candidate.annotation && (
+                    <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[8px] px-1.5 py-0.5 rounded whitespace-nowrap shadow-sm z-10">
+                      {candidate.annotation}
+                    </div>
+                  )}
 
-                    <div className="flex items-start gap-1.5">
-                      {/* Avatar with indicator */}
-                      <div className="relative">
-                        <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[9px] font-semibold ${avatarColors[candidate.colorIndex]}`}>
-                          {getInitials(candidate.name)}
-                        </div>
-                        {candidate.indicator === 'high-potential' && (
-                          <Star className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-amber-500 fill-amber-500" />
-                        )}
-                        {candidate.indicator === 'at-risk' && (
-                          <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-amber-500 rounded-full" />
-                        )}
-                        {candidate.indicator === 'needs-attention' && (
-                          <Clock className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-muted-foreground" />
+                  <div className="flex items-start gap-1.5">
+                    {/* Avatar with indicator */}
+                    <div className="relative">
+                      <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[9px] font-semibold ${avatarColors[candidate.colorIndex]}`}>
+                        {getInitials(candidate.name)}
+                      </div>
+                      {candidate.indicator === 'high-potential' && (
+                        <Star className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-amber-500 fill-amber-500" />
+                      )}
+                      {candidate.indicator === 'at-risk' && (
+                        <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-amber-500 rounded-full" />
+                      )}
+                      {candidate.indicator === 'needs-attention' && (
+                        <Clock className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-muted-foreground" />
+                      )}
+                    </div>
+                    
+                    <div className="flex-1 min-w-0 space-y-0.5">
+                      <div className="flex items-center gap-1">
+                        <span className="text-[10px] font-medium text-foreground truncate">
+                          {candidate.name}
+                        </span>
+                        {candidate.status === 'hired' && (
+                          <Check className="w-2.5 h-2.5 text-emerald-600" />
                         )}
                       </div>
-                      
-                      <div className="flex-1 min-w-0 space-y-0.5">
-                        <div className="flex items-center gap-1">
-                          <span className="text-[10px] font-medium text-foreground truncate">
-                            {candidate.name}
-                          </span>
-                          {candidate.status === 'hired' && (
-                            <Check className="w-2.5 h-2.5 text-emerald-600" />
-                          )}
-                        </div>
-                        <div className="text-[8px] text-muted-foreground">
-                          {candidate.source} · {candidate.days}d · <span className={candidate.score >= 8.5 ? 'text-emerald-600 font-medium' : ''}>{candidate.score}</span>
-                        </div>
+                      <div className="text-[8px] text-muted-foreground">
+                        {candidate.source} · {candidate.days}d · <span className={candidate.score >= 8.5 ? 'text-emerald-600 font-medium' : ''}>{candidate.score}</span>
                       </div>
                     </div>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           ))}
         </div>
