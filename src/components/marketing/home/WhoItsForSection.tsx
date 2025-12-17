@@ -49,7 +49,7 @@ export function WhoItsForSection() {
         >
           <p className="text-sm md:text-base text-accent/70 mb-4">Hiring breaks when teams don't share a system.</p>
           <h2 className="text-4xl md:text-5xl font-semibold">
-            One <span className="text-accent">shared</span> system for everyone involved in hiring
+            One shared system for everyone involved in hiring
           </h2>
         </motion.div>
 
