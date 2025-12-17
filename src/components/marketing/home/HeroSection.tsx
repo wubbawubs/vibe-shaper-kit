@@ -25,13 +25,13 @@ export function HeroSection() {
               <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
                 take hiring{" "}
               </span>
-              <span className="relative inline-block bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
+              <span className="relative inline-block bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent pb-2">
                 seriously
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.5 }}
-                  className="absolute bottom-1 left-0 w-full h-3 bg-accent/20 -z-10 origin-left"
+                  className="absolute bottom-0 left-0 w-full h-3 bg-accent/20 origin-left"
                 />
               </span>
             </motion.h1>
