@@ -5,23 +5,23 @@ import { ArrowRight, Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    price: "299",
-    description: "For small teams",
-    features: ["Up to 5 users", "Core Hiring OS"],
+    name: "Base",
+    price: "250",
+    description: "Essential recruitment support",
+    features: ["Recruitment support", "Up-to-date talent pool", "Access to E-Academy"],
   },
   {
-    name: "Growth",
-    price: "599",
-    description: "For scaling teams",
-    features: ["Up to 25 users", "Advanced workflows", "Partner portal"],
+    name: "Plus",
+    price: "350",
+    description: "Move faster, hire smarter",
+    features: ["Everything in Base", "Retention search", "Proactive sourcing"],
     featured: true,
   },
   {
-    name: "Scale",
-    price: "Custom",
-    description: "For enterprises",
-    features: ["Unlimited users", "Custom integrations"],
+    name: "Premium",
+    price: "500",
+    description: "Hiring fully organized",
+    features: ["Everything in Plus", "Candidate interviews", "Scheduling & coordination"],
   },
 ];
 
