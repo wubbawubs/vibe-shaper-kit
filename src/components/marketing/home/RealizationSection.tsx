@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function RealizationSection() {
   return (
-    <section className="py-32 md:py-44 bg-foreground text-background relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-foreground text-background relative overflow-hidden">
       <div className="container relative">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
@@ -12,7 +12,7 @@ export function RealizationSection() {
           className="max-w-3xl mx-auto text-center"
         >
           {/* Quote */}
-          <blockquote className="relative mb-16">
+          <blockquote className="relative mb-10">
             <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-7xl text-accent/20">"</div>
             <p className="text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
               Hiring didn't get more complex.

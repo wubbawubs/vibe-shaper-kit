@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function ProblemSection() {
   return (
-    <section className="py-28 md:py-40 bg-foreground text-background relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-foreground text-background relative overflow-hidden">
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -20,14 +20,17 @@ export function ProblemSection() {
           className="max-w-4xl mx-auto text-center"
         >
           {/* Headline */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight mb-16">
-            Your current tools are outdated.
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-3">
+            Hiring isn't broken.
           </h2>
+          <p className="text-2xl md:text-3xl lg:text-4xl font-normal text-background/60 mb-12">
+            Your current tools are outdated.
+          </p>
 
           {/* Tool cards */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
-              { tool: "ATS", purpose: "Built to store candidates, not to hire them" },
+              { tool: "ATS", purpose: <>Built to store candidates,<br />not to hire them</> },
               { tool: "Slack", purpose: "Decisions lost in endless conversations" },
               { tool: "Excel", purpose: "Critical choices without context" },
             ].map((item, i) => (
