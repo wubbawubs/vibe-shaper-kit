@@ -144,12 +144,12 @@ export function HiringFunnelAnimation() {
   return (
     <div className="w-full h-full flex gap-4 p-4">
       {/* Pipeline Section - 65% */}
-      <div className="flex-[0.65] flex flex-col gap-3 min-w-0">
+      <div className="flex-[0.65] flex flex-col gap-3 min-w-0 overflow-hidden">
         {/* Stage Headers */}
         <div className="flex items-center">
           {stages.map((stage, index) => (
             <React.Fragment key={stage}>
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <div className={`text-[10px] font-medium px-2 py-1 rounded inline-flex items-center gap-1 ${
                   index === stages.length - 1 
                     ? 'bg-emerald-50 text-emerald-700 border border-emerald-200/60'
@@ -167,9 +167,9 @@ export function HiringFunnelAnimation() {
         </div>
 
         {/* Pipeline Grid */}
-        <div className="flex-1 flex gap-2">
+        <div className="flex-1 flex gap-2 overflow-hidden">
           {stages.map((stage, stageIndex) => (
-            <div key={stage} className="flex-1 flex flex-col items-stretch gap-2 pt-2">
+            <div key={stage} className="flex-1 min-w-0 flex flex-col gap-2 pt-2 overflow-hidden">
               {getCandidatesInStage(stageIndex).map((candidate) => (
                 <motion.div
                   key={candidate.id}
