@@ -4,7 +4,16 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
-import Login from "./pages/Login";
+
+// Marketing pages
+import Home from "./pages/Home";
+import Product from "./pages/Product";
+import UseCases from "./pages/UseCases";
+import Partners from "./pages/Partners";
+import Pricing from "./pages/Pricing";
+import WhyOneRooted from "./pages/WhyOneRooted";
+import Demo from "./pages/Demo";
+import BrandGuide from "./pages/BrandGuide";
 
 const queryClient = new QueryClient();
 
@@ -16,8 +25,19 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/login" element={<Login />} />
+            {/* Marketing Routes */}
+            <Route path="/" element={<Home />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/use-cases" element={<UseCases />} />
+            <Route path="/partners" element={<Partners />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/why-onerooted" element={<WhyOneRooted />} />
+            <Route path="/demo" element={<Demo />} />
+            
+            {/* Utility Routes */}
+            <Route path="/brand-guide" element={<BrandGuide />} />
+            
+            {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </BrowserRouter>
