@@ -47,9 +47,9 @@ export function WhoItsForSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-20"
         >
-          <p className="text-base md:text-lg text-muted-foreground mb-4">Hiring breaks when teams don't share a system.</p>
+          <p className="text-sm md:text-base text-accent/70 mb-4">Hiring breaks when teams don't share a system.</p>
           <h2 className="text-4xl md:text-5xl font-semibold">
-            One shared system for everyone involved in hiring
+            One <span className="text-accent">shared</span> system for everyone involved in hiring
           </h2>
         </motion.div>
 
@@ -67,7 +67,7 @@ export function WhoItsForSection() {
               
               <div className="relative p-8 md:p-10">
                 <div className="w-16 h-16 rounded-2xl bg-background border border-border/50 flex items-center justify-center mb-6 shadow-sm">
-                  <audience.icon className="h-8 w-8 text-primary" />
+                  <audience.icon className="h-8 w-8 text-accent" />
                 </div>
 
                 <h3 className="text-2xl font-semibold mb-1">{audience.title}</h3>
@@ -76,7 +76,7 @@ export function WhoItsForSection() {
                 <ul className="space-y-3">
                   {audience.points.map((point, pointIndex) => (
                     <li key={pointIndex} className="flex items-start gap-3 text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/40 mt-2.5 shrink-0" />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -93,10 +93,10 @@ export function WhoItsForSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-center"
         >
-          <Button asChild variant="outline" size="lg" className="h-12 px-6 border-border/50 hover:border-primary/50">
+          <Button asChild variant="outline" size="lg" className="h-12 px-6 border-border/50 hover:border-accent/50 group">
             <Link to="/product" className="flex items-center gap-2">
               See how this works in practice
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4 text-accent group-hover:translate-x-0.5 transition-transform" />
             </Link>
           </Button>
         </motion.div>
