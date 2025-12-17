@@ -21,11 +21,11 @@ export function FinalCTASection() {
           className="max-w-3xl mx-auto text-center text-primary-foreground"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-8">
-            See your hiring process the way it actually works
+            Hiring works better when you can see it clearly.
           </h2>
 
           <p className="text-xl text-primary-foreground/70 mb-12 max-w-xl mx-auto">
-            No sales theatrics. Just clarity.
+            That's what the OneRooted demo is for.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
