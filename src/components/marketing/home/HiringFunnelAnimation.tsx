@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, ChevronRight } from 'lucide-react';
+import { Check, ChevronRight, Sparkles, Clock, TrendingUp, Zap } from 'lucide-react';
 
 interface Candidate {
   id: number;
@@ -11,6 +11,13 @@ interface Candidate {
   stage: number;
   status: 'active' | 'hired' | 'rejected';
   colorIndex: number;
+}
+
+interface Insight {
+  id: number;
+  icon: React.ReactNode;
+  text: string;
+  color: string;
 }
 
 const stages = ['Nieuw', 'Screening', 'Interview', 'Aanbieding', 'Hired'];
@@ -25,6 +32,13 @@ const avatarColors = [
   'bg-violet-100 text-violet-700',
 ];
 
+const uspMessages = [
+  { icon: <Sparkles className="w-3 h-3" />, text: 'AI rankt kandidaten automatisch', color: 'bg-primary/10 text-primary border-primary/20' },
+  { icon: <Clock className="w-3 h-3" />, text: '3x sneller door automatisering', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  { icon: <TrendingUp className="w-3 h-3" />, text: 'Betere matches door data', color: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { icon: <Zap className="w-3 h-3" />, text: 'Directe actie-suggesties', color: 'bg-violet-50 text-violet-700 border-violet-200' },
+];
+
 const getInitials = (name: string) => {
   return name.split(' ').map(n => n[0]).join('').toUpperCase();
 };
@@ -32,6 +46,19 @@ const getInitials = (name: string) => {
 export function HiringFunnelAnimation() {
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [stats, setStats] = useState({ total: 0, screened: 0, interviewed: 0, hired: 0 });
+  const [currentInsight, setCurrentInsight] = useState<Insight | null>(null);
+
+  const showInsight = useCallback(() => {
+    const usp = uspMessages[Math.floor(Math.random() * uspMessages.length)];
+    const insight: Insight = {
+      id: Date.now(),
+      icon: usp.icon,
+      text: usp.text,
+      color: usp.color,
+    };
+    setCurrentInsight(insight);
+    setTimeout(() => setCurrentInsight(null), 3500);
+  }, []);
 
   const addCandidate = useCallback(() => {
     const newCandidate: Candidate = {
@@ -85,21 +112,43 @@ export function HiringFunnelAnimation() {
     
     const addInterval = setInterval(addCandidate, 2800);
     const moveInterval = setInterval(moveCandidates, 2000);
+    const insightInterval = setInterval(showInsight, 4500);
+    
+    // Show first insight after 2 seconds
+    setTimeout(showInsight, 2000);
     
     return () => {
       clearInterval(addInterval);
       clearInterval(moveInterval);
+      clearInterval(insightInterval);
     };
-  }, [addCandidate, moveCandidates]);
+  }, [addCandidate, moveCandidates, showInsight]);
 
   const getCandidatesInStage = (stageIndex: number) => {
     return candidates.filter(c => c.stage === stageIndex).slice(0, 3);
   };
 
   return (
-    <div className="w-full h-full flex flex-col p-5 gap-4">
+    <div className="w-full h-full flex flex-col p-5 gap-4 relative">
+      {/* Floating USP Insight */}
+      <AnimatePresence>
+        {currentInsight && (
+          <motion.div
+            key={currentInsight.id}
+            initial={{ opacity: 0, y: -10, x: '-50%' }}
+            animate={{ opacity: 1, y: 0, x: '-50%' }}
+            exit={{ opacity: 0, y: -10, x: '-50%' }}
+            transition={{ duration: 0.3 }}
+            className={`absolute top-3 left-1/2 z-20 flex items-center gap-2 px-3 py-2 rounded-full border text-[11px] font-medium shadow-sm ${currentInsight.color}`}
+          >
+            {currentInsight.icon}
+            <span>{currentInsight.text}</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Stage Headers */}
-      <div className="flex items-center">
+      <div className="flex items-center mt-6">
         {stages.map((stage, index) => (
           <React.Fragment key={stage}>
             <div className="flex-1">
