@@ -73,11 +73,11 @@ export function PricingPreviewSection() {
               </p>
 
               <div className="mb-6">
-                <span className="text-4xl font-semibold">
+                <span className={`text-4xl font-semibold ${plan.featured ? 'text-accent' : ''}`}>
                   {plan.price === "Custom" ? "Custom" : `€${plan.price}`}
                 </span>
                 {plan.price !== "Custom" && (
-                  <span className={`text-sm ${plan.featured ? 'text-primary-foreground/70' : 'text-muted-foreground'}`}> /mo</span>
+                  <span className={`text-sm ${plan.featured ? 'text-accent/70' : 'text-muted-foreground'}`}> /mo</span>
                 )}
               </div>
 
