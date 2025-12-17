@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 
 const comparisons = [
-  { ats: "Stores candidates", onerooted: "Connects hiring decisions", key: "focus" },
+  { ats: "Stores candidates", onerooted: "Tracks hiring decisions", key: "focus" },
   { ats: "Static pipelines", onerooted: "Adaptive workflows", key: "flex" },
   { ats: "Admin-first design", onerooted: "Decision-first design", key: "priority" },
   { ats: "Siloed data", onerooted: "Unified intelligence", key: "data" },
