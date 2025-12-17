@@ -22,16 +22,17 @@ export function HeroSection() {
               className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight"
             >
               The Hiring OS for teams that{" "}
-              <span className="relative">
-                <span className="relative z-10 bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
-                  take hiring seriously
+              <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
+                take hiring{" "}
+                <span className="relative inline-block">
+                  seriously
+                  <motion.span
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
+                    className="absolute bottom-1 left-0 w-full h-3 bg-accent/20 -z-10 origin-left"
+                  />
                 </span>
-                <motion.span
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ duration: 0.8, delay: 0.5 }}
-                  className="absolute bottom-1 left-0 right-0 h-3 bg-accent/20 -z-10 origin-left"
-                />
               </span>
             </motion.h1>
 
