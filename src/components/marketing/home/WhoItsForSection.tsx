@@ -47,7 +47,7 @@ export function WhoItsForSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-20"
         >
-          <p className="text-sm uppercase tracking-widest text-accent mb-4">Who it's for</p>
+          <p className="text-base md:text-lg text-muted-foreground mb-4">Hiring breaks when teams don't share a system.</p>
           <h2 className="text-4xl md:text-5xl font-semibold">
             One shared system for everyone involved in hiring
           </h2>
