@@ -75,7 +75,7 @@ const UseCases = () => {
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
               Real scenarios where{" "}
-              <span className="text-primary">OneRooted shines</span>
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">OneRooted shines</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               See how teams like yours are transforming their hiring process.

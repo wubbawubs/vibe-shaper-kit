@@ -90,7 +90,7 @@ const Team = () => {
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
               Building the future of{" "}
-              <span className="text-primary">hiring together</span>
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">hiring together</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               A passionate team of recruiters, dreamers and builders on a mission to make hiring change forever.

@@ -50,7 +50,7 @@ const WhyOneRooted = () => {
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
               The story behind{" "}
-              <span className="text-primary">building a Hiring OS</span>
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">building a Hiring OS</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               Why we set out to fundamentally rethink how hiring software should work.
