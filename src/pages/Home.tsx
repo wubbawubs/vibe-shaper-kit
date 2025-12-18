@@ -7,10 +7,12 @@ import { ComparisonSection } from "@/components/marketing/home/ComparisonSection
 import { PricingPreviewSection } from "@/components/marketing/home/PricingPreviewSection";
 import { SocialProofSection } from "@/components/marketing/home/SocialProofSection";
 import { FinalCTASection } from "@/components/marketing/home/FinalCTASection";
+import { SEO } from "@/components/SEO";
 
 const Home = () => {
   return (
     <MarketingLayout>
+      <SEO />
       <HeroSection />
       <ProblemSection />
       <WhatIsSection />

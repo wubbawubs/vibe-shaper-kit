@@ -10,6 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { SEO } from "@/components/SEO";
 
 const plans = [
   {
@@ -94,6 +95,11 @@ const trustBadges = [
 const Pricing = () => {
   return (
     <MarketingLayout>
+      <SEO 
+        title="Pricing"
+        description="Clear, transparent pricing for OneRooted. Choose Base, Plus, or Premium plans starting at €299/month. No hidden fees, cancel anytime."
+        url="https://onerooted.com/pricing"
+      />
       {/* Hero */}
       <section className="py-20 md:py-28 relative overflow-hidden">
         {/* Background glow */}

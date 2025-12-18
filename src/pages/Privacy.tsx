@@ -1,9 +1,15 @@
 import { MarketingLayout } from "@/components/marketing/MarketingLayout";
 import { motion } from "framer-motion";
+import { SEO } from "@/components/SEO";
 
 const Privacy = () => {
   return (
     <MarketingLayout>
+      <SEO 
+        title="Privacy Policy"
+        description="OneRooted Privacy Policy. Learn how we collect, use, and protect your personal data."
+        url="https://onerooted.com/privacy"
+      />
       <section className="py-20 md:py-28">
         <div className="container">
           <motion.div 
