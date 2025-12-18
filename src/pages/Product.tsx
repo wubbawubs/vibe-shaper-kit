@@ -320,10 +320,6 @@ const Product = () => {
                 <Link to="/pricing">View pricing</Link>
               </Button>
             </div>
-            
-            <p className="text-xs text-muted-foreground/60 mt-6">
-              No credit card required · 14-day free trial
-            </p>
           </motion.div>
         </div>
       </section>
