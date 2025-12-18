@@ -173,6 +173,16 @@
     }
   }
 
+  /* Shimmer animation for premium cards */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
   /* Stagger children */
   .animate-stagger > * {
     opacity: 0;

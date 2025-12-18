@@ -8,6 +8,7 @@ import { RankingSystemVisualization } from "@/components/marketing/product/Ranki
 import { ProcessFlowAnimation } from "@/components/marketing/product/ProcessFlowAnimation";
 import { MetricsDashboardAnimation } from "@/components/marketing/product/MetricsDashboardAnimation";
 import { CollaborationAnimation } from "@/components/marketing/product/CollaborationAnimation";
+import { Check, Minus, Users, Sparkles } from "lucide-react";
 
 const Product = () => {
   return (
@@ -199,26 +200,28 @@ const Product = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                <Card className="card-refined border-border/30 bg-muted/50 h-full opacity-80">
+                <Card className="card-refined border-border/30 bg-muted/30 h-full opacity-70">
                   <CardContent className="py-6 px-6">
-                    <h3 className="font-medium mb-4 text-muted-foreground/70">Traditional ATS</h3>
-                    <ul className="space-y-3 text-sm text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <span className="text-muted-foreground/50">—</span>
-                        <span>Stores resumes in a database</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-muted-foreground/50">—</span>
-                        <span>Manual status updates</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-muted-foreground/50">—</span>
-                        <span>Admin-focused data entry</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-muted-foreground/50">—</span>
-                        <span>Reports you have to build</span>
-                      </li>
+                    <h3 className="font-medium mb-5 text-muted-foreground/70">Traditional ATS</h3>
+                    <ul className="space-y-4 text-sm text-muted-foreground">
+                      {[
+                        "Stores resumes in a database",
+                        "Manual status updates",
+                        "Admin-focused data entry",
+                        "Reports you have to build"
+                      ].map((item, i) => (
+                        <motion.li
+                          key={item}
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.2 + i * 0.1 }}
+                          className="flex items-start gap-3"
+                        >
+                          <Minus className="w-4 h-4 text-muted-foreground/40 mt-0.5 flex-shrink-0" />
+                          <span>{item}</span>
+                        </motion.li>
+                      ))}
                     </ul>
                   </CardContent>
                 </Card>
@@ -230,26 +233,42 @@ const Product = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <Card className="card-refined border-accent/20 bg-accent/3 h-full">
-                  <CardContent className="py-6 px-6">
-                    <h3 className="font-medium mb-4 text-accent/90">OneRooted</h3>
-                    <ul className="space-y-3 text-sm">
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent/70">✓</span>
-                        <span>Connects all hiring data intelligently</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent/70">✓</span>
-                        <span>Automated workflows and triggers</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent/70">✓</span>
-                        <span>Decision-focused intelligence</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent/70">✓</span>
-                        <span>Insights that surface automatically</span>
-                      </li>
+                <Card className="card-refined h-full relative overflow-hidden border-accent/30 bg-gradient-to-br from-accent/5 via-background to-primary/5">
+                  {/* Premium shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/10 to-transparent -translate-x-full animate-[shimmer_3s_ease-in-out_infinite]" />
+                  
+                  <CardContent className="py-6 px-6 relative">
+                    <div className="flex items-center gap-2 mb-5">
+                      <Sparkles className="w-4 h-4 text-accent" />
+                      <h3 className="font-medium text-accent">OneRooted</h3>
+                    </div>
+                    <ul className="space-y-4 text-sm">
+                      {[
+                        "Connects all hiring data intelligently",
+                        "Automated workflows and triggers",
+                        "Decision-focused intelligence",
+                        "Insights that surface automatically"
+                      ].map((item, i) => (
+                        <motion.li
+                          key={item}
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.3 + i * 0.12 }}
+                          className="flex items-start gap-3"
+                        >
+                          <motion.div
+                            initial={{ scale: 0 }}
+                            whileInView={{ scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4 + i * 0.12, type: "spring", stiffness: 300 }}
+                            className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-0.5"
+                          >
+                            <Check className="w-3 h-3 text-accent" />
+                          </motion.div>
+                          <span className="text-foreground">{item}</span>
+                        </motion.li>
+                      ))}
                     </ul>
                   </CardContent>
                 </Card>
@@ -260,8 +279,13 @@ const Product = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28">
-        <div className="container">
+      <section className="py-20 md:py-28 relative overflow-hidden">
+        {/* Background glow */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
+        </div>
+        
+        <div className="container relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -269,15 +293,37 @@ const Product = () => {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
+            {/* Trust badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="inline-flex items-center gap-2 bg-muted/50 border border-border/50 rounded-full px-4 py-2 mb-6"
+            >
+              <Users className="w-4 h-4 text-primary" />
+              <span className="text-sm text-muted-foreground">Trusted by 100+ hiring teams</span>
+            </motion.div>
+            
             <h2 className="text-3xl md:text-4xl font-medium mb-4">
               See what happens when hiring has structure.
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
               We'll walk you through how OneRooted brings structure to your hiring process.
             </p>
-            <Button asChild size="lg" className="btn-accent">
-              <Link to="/demo">Request a demo</Link>
-            </Button>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button asChild size="lg" className="btn-accent btn-premium">
+                <Link to="/demo">Request a demo</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link to="/pricing">View pricing</Link>
+              </Button>
+            </div>
+            
+            <p className="text-xs text-muted-foreground/60 mt-6">
+              No credit card required · 14-day free trial
+            </p>
           </motion.div>
         </div>
       </section>

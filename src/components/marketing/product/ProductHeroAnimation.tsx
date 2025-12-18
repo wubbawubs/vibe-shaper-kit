@@ -49,7 +49,11 @@ export const ProductHeroAnimation = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[420px] md:h-[480px] bg-gradient-to-br from-muted/40 to-muted/20 rounded-2xl border border-border/50 overflow-hidden">
+    <div className="relative w-full h-[420px] md:h-[480px] bg-gradient-to-br from-muted/40 via-background to-muted/20 rounded-2xl border border-border/50 overflow-hidden shadow-xl">
+      {/* Premium glow orbs */}
+      <div className="absolute -top-20 -right-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+      
       <div className="absolute inset-0 p-6 md:p-8">
         {/* Pipeline flow header */}
         <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
