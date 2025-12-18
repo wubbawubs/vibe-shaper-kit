@@ -242,23 +242,18 @@ const Team = () => {
               
               <CardContent className="relative py-12 px-8 md:px-12 text-center">
                 <h2 className="text-2xl md:text-3xl font-medium mb-4">
-                  Want to join us?
+                  Interested in working together?
                 </h2>
                 <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-                  We're always looking for talented people who share our mission. Check out our 
-                  open positions or reach out directly.
+                  We're always looking for talented people who share our mission. 
+                  Reach out and let's have a conversation.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="btn-accent">
-                    <Link to="/demo" className="flex items-center gap-2">
-                      View open positions
-                      <ArrowRight className="h-4 w-4" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <Link to="/demo">Get in touch</Link>
-                  </Button>
-                </div>
+                <Button asChild size="lg" className="btn-accent">
+                  <Link to="/demo" className="flex items-center gap-2">
+                    Get in touch
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </motion.div>
@@ -281,7 +276,7 @@ const Team = () => {
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-8">
               <Users className="h-4 w-4" />
-              <span>Trusted by 100+ hiring teams</span>
+              <span>Part of the One-Time Group</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-medium mb-6">

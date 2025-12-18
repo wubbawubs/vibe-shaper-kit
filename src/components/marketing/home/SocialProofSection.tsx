@@ -5,12 +5,12 @@ const testimonials = [
   {
     quote: "Finally, a system that matches how modern hiring actually works.",
     author: "Head of Talent",
-    company: "Series B Tech",
+    company: "Dutch Scale-up, 200+ employees",
   },
   {
     quote: "Our partner relationships improved overnight. Full transparency changes everything.",
     author: "VP People",
-    company: "Scale-up",
+    company: "Tech Company, Series B",
   },
 ];
 

@@ -268,7 +268,7 @@ const Partners = () => {
               against their existing tools."
             </blockquote>
             <p className="text-muted-foreground">
-              — Senior Partner, Leading Recruitment Agency
+              — Managing Partner, Executive Search Firm
             </p>
           </motion.div>
         </div>
