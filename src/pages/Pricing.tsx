@@ -125,7 +125,7 @@ const Pricing = () => {
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
               Clear pricing.{" "}
-              <span className="text-primary">No surprises.</span>
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">No surprises.</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Choose the plan that fits your hiring needs. Scale as you grow.

@@ -57,7 +57,7 @@ const Partners = () => {
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
               We make you{" "}
-              <span className="text-primary">stronger</span>, not obsolete
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">stronger</span>, not obsolete
             </h1>
             <p className="text-xl text-muted-foreground">
               OneRooted is infrastructure, not competition. Better tools mean better outcomes for everyone.

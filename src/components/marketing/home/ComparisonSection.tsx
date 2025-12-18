@@ -84,7 +84,7 @@ export function ComparisonSection() {
             </p>
             <p className="text-xl md:text-2xl mt-2">
               OneRooted helps you{" "}
-              <span className="text-primary font-medium">hire better people</span>.
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-medium">hire better people</span>.
             </p>
           </motion.div>
         </div>

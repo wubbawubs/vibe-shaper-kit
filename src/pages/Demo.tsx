@@ -57,7 +57,7 @@ const Demo = () => {
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
               Request a{" "}
-              <span className="text-primary">demo</span>
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">demo</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               See OneRooted in action. No sales theatrics. Just clarity.
