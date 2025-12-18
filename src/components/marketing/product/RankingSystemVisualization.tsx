@@ -1,25 +1,35 @@
 import { motion } from "framer-motion";
-import { Award } from "lucide-react";
+import { Award, TrendingUp } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 const initialCandidates = [
-  { id: 1, name: "David R.", initials: "DR", color: "bg-amber-500", skills: 72, experience: 65, fit: 70, total: 0 },
-  { id: 2, name: "Sarah M.", initials: "SM", color: "bg-blue-500", skills: 94, experience: 88, fit: 96, total: 0 },
+  { id: 1, name: "Sarah M.", initials: "SM", color: "bg-blue-500", skills: 94, experience: 88, fit: 96, total: 0 },
+  { id: 2, name: "Emma L.", initials: "EL", color: "bg-purple-500", skills: 91, experience: 92, fit: 89, total: 0 },
   { id: 3, name: "James K.", initials: "JK", color: "bg-emerald-500", skills: 85, experience: 79, fit: 82, total: 0 },
-  { id: 4, name: "Emma L.", initials: "EL", color: "bg-purple-500", skills: 91, experience: 92, fit: 89, total: 0 },
+  { id: 4, name: "David R.", initials: "DR", color: "bg-amber-500", skills: 72, experience: 65, fit: 70, total: 0 },
 ];
 
 export const RankingSystemVisualization = () => {
   const [candidates, setCandidates] = useState(initialCandidates);
   const [phase, setPhase] = useState<"initial" | "scoring" | "ranked">("initial");
-  const [cycleCount, setCycleCount] = useState(0);
-  const [topCandidateGlow, setTopCandidateGlow] = useState(false);
+  const [activeCandidate, setActiveCandidate] = useState(0);
 
   const runScoringAnimation = useCallback(() => {
     setCandidates(initialCandidates);
     setPhase("initial");
+    setActiveCandidate(0);
     
-    setTimeout(() => setPhase("scoring"), 800);
+    // Phase 1: Start scoring (slower)
+    setTimeout(() => setPhase("scoring"), 1200);
+    
+    // Phase 2: Score each candidate one by one (much slower)
+    initialCandidates.forEach((_, index) => {
+      setTimeout(() => {
+        setActiveCandidate(index);
+      }, 1200 + index * 1500);
+    });
+    
+    // Phase 3: Show ranked results
     setTimeout(() => {
       setCandidates(prev => {
         const scored = prev.map(c => ({
@@ -29,108 +39,120 @@ export const RankingSystemVisualization = () => {
         return scored.sort((a, b) => b.total - a.total);
       });
       setPhase("ranked");
-    }, 2500);
+    }, 1200 + initialCandidates.length * 1500 + 800);
   }, []);
 
-  // Initial run and loop
   useEffect(() => {
     runScoringAnimation();
     
+    // Loop every 15 seconds
     const loopInterval = setInterval(() => {
-      setCycleCount(prev => prev + 1);
       runScoringAnimation();
-    }, 8000);
+    }, 15000);
 
     return () => clearInterval(loopInterval);
   }, [runScoringAnimation]);
 
-  // Top candidate glow effect
-  useEffect(() => {
-    if (phase === "ranked") {
-      const glowInterval = setInterval(() => {
-        setTopCandidateGlow(prev => !prev);
-      }, 1500);
-      return () => clearInterval(glowInterval);
-    }
-  }, [phase]);
-
   return (
-    <div className="relative w-full bg-muted/30 rounded-2xl border border-border/50 overflow-hidden p-6">
-      <div className="grid md:grid-cols-2 gap-6">
-        {/* Candidate cards */}
-        <div className="space-y-3">
+    <div className="relative w-full bg-muted/30 rounded-2xl border border-border/50 overflow-hidden p-8">
+      <div className="grid lg:grid-cols-5 gap-8">
+        {/* Candidate list - 3 columns */}
+        <div className="lg:col-span-3 space-y-4">
           {candidates.map((candidate, index) => {
-            const isTopCandidate = phase === "ranked" && index === 0;
+            const isActive = phase === "scoring" && activeCandidate === index;
+            const isScored = phase === "scoring" && activeCandidate > index;
+            const isRanked = phase === "ranked";
+            const showScore = isScored || isRanked;
+            const isTopCandidate = isRanked && index === 0;
             
             return (
               <motion.div
                 key={candidate.id}
                 layout
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className={`bg-background/80 backdrop-blur-sm rounded-lg border p-4 transition-all duration-300 ${
-                  isTopCandidate && topCandidateGlow 
-                    ? 'border-accent/50 shadow-[0_0_15px_rgba(var(--accent),0.15)]' 
-                    : 'border-border/50'
+                transition={{ duration: 0.6, ease: "easeInOut" }}
+                className={`relative bg-background rounded-xl border-2 p-5 transition-all duration-500 ${
+                  isActive 
+                    ? 'border-primary/50 shadow-lg shadow-primary/10' 
+                    : isTopCandidate 
+                      ? 'border-accent/40 shadow-md'
+                      : 'border-border/30'
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    {phase === "ranked" && index === 0 && (
+                  <div className="flex items-center gap-4">
+                    {/* Rank badge */}
+                    {isRanked && (
                       <motion.div
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{ delay: 0.3 }}
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ delay: 0.2, duration: 0.4 }}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+                          index === 0 
+                            ? 'bg-accent text-accent-foreground' 
+                            : 'bg-muted text-muted-foreground'
+                        }`}
                       >
-                        <Award className="w-5 h-5 text-accent" />
+                        {index === 0 ? <Award className="w-4 h-4" /> : index + 1}
                       </motion.div>
                     )}
-                    {/* Initials avatar */}
-                    <div className={`w-10 h-10 rounded-full ${candidate.color} flex items-center justify-center`}>
-                      <span className="text-white text-sm font-medium">{candidate.initials}</span>
+                    
+                    {/* Avatar */}
+                    <div className={`w-12 h-12 rounded-full ${candidate.color} flex items-center justify-center`}>
+                      <span className="text-white font-semibold">{candidate.initials}</span>
                     </div>
+                    
+                    {/* Name and status */}
                     <div>
-                      <p className="font-medium text-sm">{candidate.name}</p>
-                      {phase === "ranked" && (
-                        <motion.p 
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          className="text-xs text-muted-foreground"
-                        >
-                          Rank #{index + 1}
-                        </motion.p>
-                      )}
+                      <p className="font-semibold text-foreground">{candidate.name}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {isActive && "Evaluating..."}
+                        {isScored && !isRanked && "Scored"}
+                        {isRanked && (index === 0 ? "Top Match" : `Rank #${index + 1}`)}
+                        {!isActive && !isScored && !isRanked && "Pending"}
+                      </p>
                     </div>
                   </div>
 
-                  {phase !== "initial" && (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.2 }}
-                    >
-                      <motion.p 
-                        className="text-lg font-semibold"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.5 + index * 0.2 }}
+                  {/* Score */}
+                  <div className="text-right">
+                    {showScore && (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                        className="flex items-center gap-2"
                       >
-                        {phase === "ranked" ? `${candidate.total}%` : "..."}
-                      </motion.p>
-                    </motion.div>
-                  )}
+                        <TrendingUp className={`w-4 h-4 ${isTopCandidate ? 'text-accent' : 'text-muted-foreground'}`} />
+                        <span className={`text-2xl font-bold ${isTopCandidate ? 'text-accent' : 'text-foreground'}`}>
+                          {candidate.total || Math.round((candidate.skills * 0.4 + candidate.experience * 0.3 + candidate.fit * 0.3))}%
+                        </span>
+                      </motion.div>
+                    )}
+                    {isActive && (
+                      <motion.div
+                        animate={{ opacity: [0.5, 1, 0.5] }}
+                        transition={{ repeat: Infinity, duration: 1.5 }}
+                        className="text-xl font-bold text-primary"
+                      >
+                        ...
+                      </motion.div>
+                    )}
+                  </div>
                 </div>
 
-                {/* Score breakdown - subtler */}
-                {phase === "scoring" && (
+                {/* Score breakdown - only show for active candidate */}
+                {isActive && (
                   <motion.div 
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    className="mt-3 grid grid-cols-3 gap-2"
+                    transition={{ duration: 0.4 }}
+                    className="mt-5 pt-4 border-t border-border/30"
                   >
-                    <ScoreBar label="Skills" value={candidate.skills} delay={0.4} />
-                    <ScoreBar label="Ervaring" value={candidate.experience} delay={0.6} />
-                    <ScoreBar label="Fit" value={candidate.fit} delay={0.8} />
+                    <div className="grid grid-cols-3 gap-6">
+                      <ScoreBar label="Skills" value={candidate.skills} delay={0} />
+                      <ScoreBar label="Experience" value={candidate.experience} delay={0.3} />
+                      <ScoreBar label="Culture Fit" value={candidate.fit} delay={0.6} />
+                    </div>
                   </motion.div>
                 )}
               </motion.div>
@@ -138,34 +160,39 @@ export const RankingSystemVisualization = () => {
           })}
         </div>
 
-        {/* Scoring explanation */}
-        <div className="flex flex-col justify-center">
+        {/* Scoring criteria - 2 columns */}
+        <div className="lg:col-span-2 flex flex-col justify-center">
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="space-y-6"
+            className="bg-background/60 rounded-xl border border-border/30 p-6"
           >
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Dezelfde criteria. Elke kandidaat. Consistente evaluatie 
-              verwijdert giswerk uit beslissingen.
+            <h4 className="font-semibold text-foreground mb-4">Scoring Criteria</h4>
+            
+            <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+              Same criteria. Every candidate. Consistent evaluation 
+              removes guesswork from decisions.
             </p>
 
-            <div className="space-y-3">
+            <div className="space-y-4">
               {[
-                { label: "Skills", weight: "40%" },
-                { label: "Ervaring", weight: "30%" },
-                { label: "Fit", weight: "30%" },
+                { label: "Skills Match", weight: "40%", desc: "Technical requirements" },
+                { label: "Experience", weight: "30%", desc: "Relevant background" },
+                { label: "Culture Fit", weight: "30%", desc: "Team alignment" },
               ].map((item, i) => (
                 <motion.div
                   key={item.label}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.7 + i * 0.1 }}
-                  className="flex items-center justify-between text-xs text-muted-foreground"
+                  initial={{ opacity: 0, x: 10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.7 + i * 0.15 }}
+                  className="flex items-center justify-between p-3 bg-muted/30 rounded-lg"
                 >
-                  <span>{item.label}</span>
-                  <span>{item.weight}</span>
+                  <div>
+                    <p className="text-sm font-medium text-foreground">{item.label}</p>
+                    <p className="text-xs text-muted-foreground">{item.desc}</p>
+                  </div>
+                  <span className="text-lg font-bold text-primary">{item.weight}</span>
                 </motion.div>
               ))}
             </div>
@@ -177,17 +204,24 @@ export const RankingSystemVisualization = () => {
 };
 
 const ScoreBar = ({ label, value, delay }: { label: string; value: number; delay: number }) => (
-  <div className="space-y-1">
-    <div className="flex justify-between text-xs text-muted-foreground/70">
-      <span>{label}</span>
-      <span className="opacity-60">{value}</span>
+  <div className="space-y-2">
+    <div className="flex justify-between text-sm">
+      <span className="text-muted-foreground">{label}</span>
+      <motion.span 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: delay + 0.5 }}
+        className="font-semibold text-foreground"
+      >
+        {value}
+      </motion.span>
     </div>
-    <div className="h-1 bg-muted rounded-full overflow-hidden">
+    <div className="h-2 bg-muted rounded-full overflow-hidden">
       <motion.div
         initial={{ width: 0 }}
         animate={{ width: `${value}%` }}
-        transition={{ delay, duration: 0.5, ease: "easeOut" }}
-        className="h-full bg-foreground/15 rounded-full"
+        transition={{ delay, duration: 0.8, ease: "easeOut" }}
+        className="h-full bg-primary/40 rounded-full"
       />
     </div>
   </div>

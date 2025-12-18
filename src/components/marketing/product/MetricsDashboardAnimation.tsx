@@ -13,16 +13,16 @@ const baseMetrics = [
     color: "text-emerald-500"
   },
   { 
-    label: "Gem. Time-to-Hire", 
+    label: "Avg. Time-to-Hire", 
     baseValue: 21, 
-    suffix: " dagen", 
-    trend: "vs 45 gem",
+    suffix: " days", 
+    trend: "vs 45 avg",
     trendUp: true,
     icon: Clock,
     color: "text-primary"
   },
   { 
-    label: "Kwaliteit Score", 
+    label: "Quality Score", 
     baseValue: 8.4, 
     suffix: "/10", 
     trend: "+0.6",
@@ -31,10 +31,10 @@ const baseMetrics = [
     color: "text-accent"
   },
   { 
-    label: "Actieve Kandidaten", 
+    label: "Active Candidates", 
     baseValue: 156, 
     suffix: "", 
-    trend: "+23 deze week",
+    trend: "+23 this week",
     trendUp: true,
     icon: Users,
     color: "text-purple-500"
@@ -109,14 +109,13 @@ export const MetricsDashboardAnimation = () => {
     return () => clearInterval(sourceInterval);
   }, [initialized]);
 
-  // Chart animation (flowing wave effect)
+  // Chart animation
   useEffect(() => {
     if (!initialized) return;
 
     const chartInterval = setInterval(() => {
       setChartHeights(prev => {
         const newHeights = [...prev];
-        // Shift values left and add new value at end
         newHeights.shift();
         const lastVal = newHeights[newHeights.length - 1];
         const newVal = Math.max(30, Math.min(95, lastVal + (Math.random() - 0.5) * 15));
@@ -182,7 +181,7 @@ export const MetricsDashboardAnimation = () => {
         })}
       </div>
 
-      {/* Source breakdown with animated bars */}
+      {/* Source breakdown */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -190,8 +189,8 @@ export const MetricsDashboardAnimation = () => {
         className="bg-background/60 rounded-lg border border-border/50 p-4"
       >
         <div className="flex items-center justify-between mb-4">
-          <span className="text-sm font-medium">Bron Effectiviteit</span>
-          <span className="text-xs text-muted-foreground">Laatste 30 dagen</span>
+          <span className="text-sm font-medium">Source Effectiveness</span>
+          <span className="text-xs text-muted-foreground">Last 30 days</span>
         </div>
 
         <div className="space-y-3">
@@ -218,7 +217,7 @@ export const MetricsDashboardAnimation = () => {
         </div>
       </motion.div>
 
-      {/* Animated mini chart */}
+      {/* Mini chart */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -234,7 +233,7 @@ export const MetricsDashboardAnimation = () => {
           />
         ))}
       </motion.div>
-      <p className="text-xs text-center text-muted-foreground mt-2">Process efficiency trend (12 maanden)</p>
+      <p className="text-xs text-center text-muted-foreground mt-2">Process efficiency trend (12 months)</p>
     </div>
   );
 };
