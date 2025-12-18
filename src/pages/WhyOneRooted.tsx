@@ -145,52 +145,108 @@ const WhyOneRooted = () => {
             </motion.div>
 
             <motion.div 
-              className="grid md:grid-cols-2 gap-12 items-center"
+              className="grid md:grid-cols-2 gap-12 items-start"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="prose prose-lg max-w-none text-muted-foreground">
-                <p>
+              {/* Structured text */}
+              <div className="space-y-6">
+                <p className="text-lg text-muted-foreground">
                   Hiring is no longer a linear process managed by one recruiter. It's a complex operation 
                   involving multiple stakeholders, external partners, and critical business decisions.
                 </p>
-                <p>
-                  You need a system that understands this complexity. One that connects data, enables collaboration, 
-                  and actively helps you make better decisions.
-                </p>
-                <p className="text-foreground font-medium">
-                  That's what a Hiring OS does. It's not a feature upgrade to an ATS. It's a fundamental rethink 
-                  of how hiring software should work.
+                
+                <div className="space-y-4">
+                  <p className="text-sm font-medium text-foreground uppercase tracking-wide">What you actually need:</p>
+                  <ul className="space-y-3">
+                    {[
+                      "A system that understands complexity",
+                      "Connected data across all touchpoints",
+                      "Real collaboration, not just handoffs",
+                      "Decision support, not just storage"
+                    ].map((item, index) => (
+                      <motion.li 
+                        key={index}
+                        className="flex items-center gap-3 text-muted-foreground"
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 * index }}
+                      >
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                        <span>{item}</span>
+                      </motion.li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p className="text-foreground font-medium pt-2">
+                  That's what a Hiring OS does. Not a feature upgrade—a fundamental rethink.
                 </p>
               </div>
               
-              {/* Visual comparison */}
-              <div className="space-y-4">
+              {/* Visual comparison - improved */}
+              <div className="space-y-6">
+                {/* Traditional ATS */}
                 <motion.div 
-                  className="p-6 rounded-xl border border-border/50 bg-card"
+                  className="p-6 rounded-2xl border border-border/50 bg-muted/30 relative overflow-hidden"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <p className="text-sm text-muted-foreground mb-2">Traditional ATS</p>
-                  <p className="font-medium">Store → Track → Report</p>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center">
+                      <AlertTriangle className="h-4 w-4 text-muted-foreground" />
+                    </div>
+                    <p className="text-sm font-medium text-muted-foreground">Traditional ATS</p>
+                  </div>
+                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <span className="font-medium">Store</span>
+                    <ArrowRight className="h-4 w-4" />
+                    <span className="font-medium">Track</span>
+                    <ArrowRight className="h-4 w-4" />
+                    <span className="font-medium">Report</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground/60 mt-3">Data sits. Decisions happen elsewhere.</p>
                 </motion.div>
+
+                {/* Arrow */}
                 <div className="flex justify-center">
                   <motion.div
                     animate={{ y: [0, 5, 0] }}
                     transition={{ repeat: Infinity, duration: 1.5 }}
+                    className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg"
                   >
-                    <ArrowRight className="h-6 w-6 text-primary rotate-90" />
+                    <ArrowRight className="h-5 w-5 text-primary-foreground rotate-90" />
                   </motion.div>
                 </div>
+
+                {/* Hiring OS */}
                 <motion.div 
-                  className="p-6 rounded-xl border-2 border-primary/30 bg-primary/5"
+                  className="p-6 rounded-2xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-primary/5 to-accent/5 relative overflow-hidden"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <p className="text-sm text-primary mb-2">Hiring OS</p>
-                  <p className="font-medium">Collaborate → Decide → Improve</p>
+                  {/* Subtle glow */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/20 to-transparent rounded-full blur-2xl" />
+                  
+                  <div className="relative">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                        <Lightbulb className="h-4 w-4 text-primary-foreground" />
+                      </div>
+                      <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Hiring OS</p>
+                    </div>
+                    <div className="flex items-center gap-3 text-foreground">
+                      <span className="font-medium">Collaborate</span>
+                      <ArrowRight className="h-4 w-4 text-primary" />
+                      <span className="font-medium">Decide</span>
+                      <ArrowRight className="h-4 w-4 text-primary" />
+                      <span className="font-medium">Improve</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-3">Every action drives better outcomes.</p>
+                  </div>
                 </motion.div>
               </div>
             </motion.div>
