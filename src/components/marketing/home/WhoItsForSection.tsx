@@ -47,10 +47,12 @@ export function WhoItsForSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-20"
         >
-          <p className="text-sm md:text-base text-accent/70 mb-4">Hiring breaks when teams don't share a system.</p>
-          <h2 className="text-4xl md:text-5xl font-semibold">
-            One shared system for everyone involved in hiring
+          <h2 className="text-4xl md:text-5xl font-semibold mb-4">
+            Hiring breaks without a shared system.
           </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            OneRooted aligns leadership, talent teams and partners in one operational truth.
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">

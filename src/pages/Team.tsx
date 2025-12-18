@@ -102,6 +102,16 @@ const Team = () => {
       {/* Team Grid */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="container">
+          {/* Collective Frame */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12"
+          >
+            OneRooted wasn't built by product managers guessing at hiring problems. It was built by operators who lived them for decades.
+          </motion.p>
           <motion.div 
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
             initial="hidden"
@@ -294,8 +304,8 @@ const Team = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="btn-accent">
-                <Link to="/demo" className="flex items-center gap-2">
-                  Request a demo
+                <Link to="/why-onerooted" className="flex items-center gap-2">
+                  Why we built this
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
