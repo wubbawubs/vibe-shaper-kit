@@ -93,7 +93,7 @@ const Team = () => {
               <span className="text-primary">hiring together</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              A passionate team of builders, recruiters, and dreamers on a mission to make hiring work for everyone.
+              A passionate team of recruiters, dreamers and builders on a mission to make hiring change forever.
             </p>
           </motion.div>
         </div>
