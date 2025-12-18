@@ -19,17 +19,17 @@ export const RankingSystemVisualization = () => {
     setPhase("initial");
     setActiveCandidate(0);
     
-    // Phase 1: Start scoring (slower)
-    setTimeout(() => setPhase("scoring"), 1200);
+    // Phase 1: Start scoring (much slower - 2s)
+    setTimeout(() => setPhase("scoring"), 2000);
     
-    // Phase 2: Score each candidate one by one (much slower)
+    // Phase 2: Score each candidate one by one (3s per candidate)
     initialCandidates.forEach((_, index) => {
       setTimeout(() => {
         setActiveCandidate(index);
-      }, 1200 + index * 1500);
+      }, 2000 + index * 3000);
     });
     
-    // Phase 3: Show ranked results
+    // Phase 3: Show ranked results (wait 2s after last candidate)
     setTimeout(() => {
       setCandidates(prev => {
         const scored = prev.map(c => ({
@@ -39,16 +39,16 @@ export const RankingSystemVisualization = () => {
         return scored.sort((a, b) => b.total - a.total);
       });
       setPhase("ranked");
-    }, 1200 + initialCandidates.length * 1500 + 800);
+    }, 2000 + initialCandidates.length * 3000 + 2000);
   }, []);
 
   useEffect(() => {
     runScoringAnimation();
     
-    // Loop every 15 seconds
+    // Loop every 25 seconds (much slower loop)
     const loopInterval = setInterval(() => {
       runScoringAnimation();
-    }, 15000);
+    }, 25000);
 
     return () => clearInterval(loopInterval);
   }, [runScoringAnimation]);
