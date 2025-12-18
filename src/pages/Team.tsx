@@ -7,39 +7,31 @@ import { Linkedin, Heart, Target, Zap, Users, ArrowRight } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Thomas van der Berg",
-    role: "Co-Founder & CEO",
-    bio: "Former Head of Talent at scale-ups. Obsessed with fixing broken hiring processes.",
+    name: "Robin Dennie",
+    role: "Founder & CEO",
+    tagline: "Creates",
+    bio: "25 years of agency experience. Recruitment innovator who transforms how companies hire.",
     linkedin: "#",
   },
   {
-    name: "Lisa de Vries",
-    role: "Co-Founder & CPO",
-    bio: "Product leader with 10+ years building HR tech. Believes hiring should feel human.",
+    name: "Erik Dijkshoorn",
+    role: "Strategic Advisor",
+    tagline: "Advises",
+    bio: "Extensive experience in multiple C-level roles. Leadership coach and strategic thinker.",
     linkedin: "#",
   },
   {
-    name: "Mark Janssen",
+    name: "Juliëtte Welten",
+    role: "Operations Director",
+    tagline: "Directs",
+    bio: "Bureau manager and BI specialist. The financial and operational conscience of OneRooted.",
+    linkedin: "#",
+  },
+  {
+    name: "Luuk Wubs",
     role: "CTO",
-    bio: "Engineering veteran. Previously built infrastructure at multiple unicorns.",
-    linkedin: "#",
-  },
-  {
-    name: "Sophie Bakker",
-    role: "Head of Customer Success",
-    bio: "Passionate about helping teams achieve hiring excellence. Always one step ahead.",
-    linkedin: "#",
-  },
-  {
-    name: "David Chen",
-    role: "Lead Engineer",
-    bio: "Full-stack wizard. Turns complex problems into elegant solutions.",
-    linkedin: "#",
-  },
-  {
-    name: "Anna Müller",
-    role: "Head of Design",
-    bio: "Design thinking advocate. Makes the complex feel simple and beautiful.",
+    tagline: "Builds",
+    bio: "Young, driven tech leader. Passionate about building scalable solutions that make hiring better.",
     linkedin: "#",
   },
 ];
@@ -105,7 +97,7 @@ const Team = () => {
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="container">
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -138,6 +130,7 @@ const Team = () => {
                     
                     <div className="flex items-start justify-between gap-4">
                       <div>
+                        <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-1">{member.tagline}</p>
                         <h3 className="font-medium text-lg mb-1">{member.name}</h3>
                         <p className="text-sm text-primary mb-3">{member.role}</p>
                         <p className="text-sm text-muted-foreground">{member.bio}</p>
