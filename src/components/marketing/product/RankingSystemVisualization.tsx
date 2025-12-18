@@ -19,17 +19,17 @@ export const RankingSystemVisualization = () => {
     setPhase("initial");
     setActiveCandidate(0);
     
-    // Phase 1: Start scoring (slower)
-    setTimeout(() => setPhase("scoring"), 1200);
+    // Phase 1: Start scoring - wait 2 seconds
+    setTimeout(() => setPhase("scoring"), 2000);
     
-    // Phase 2: Score each candidate one by one (much slower)
+    // Phase 2: Score each candidate one by one - 4 seconds per candidate (MUCH slower)
     initialCandidates.forEach((_, index) => {
       setTimeout(() => {
         setActiveCandidate(index);
-      }, 1200 + index * 1500);
+      }, 2000 + index * 4000);
     });
     
-    // Phase 3: Show ranked results
+    // Phase 3: Show ranked results after all candidates scored
     setTimeout(() => {
       setCandidates(prev => {
         const scored = prev.map(c => ({
@@ -39,16 +39,16 @@ export const RankingSystemVisualization = () => {
         return scored.sort((a, b) => b.total - a.total);
       });
       setPhase("ranked");
-    }, 1200 + initialCandidates.length * 1500 + 800);
+    }, 2000 + initialCandidates.length * 4000 + 1500);
   }, []);
 
   useEffect(() => {
     runScoringAnimation();
     
-    // Loop every 15 seconds
+    // Loop every 30 seconds (much longer pause between cycles)
     const loopInterval = setInterval(() => {
       runScoringAnimation();
-    }, 15000);
+    }, 30000);
 
     return () => clearInterval(loopInterval);
   }, [runScoringAnimation]);
@@ -210,7 +210,7 @@ const ScoreBar = ({ label, value, delay }: { label: string; value: number; delay
       <motion.span 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: delay + 0.5 }}
+        transition={{ delay: delay + 1.2 }}
         className="font-semibold text-foreground"
       >
         {value}
@@ -220,7 +220,7 @@ const ScoreBar = ({ label, value, delay }: { label: string; value: number; delay
       <motion.div
         initial={{ width: 0 }}
         animate={{ width: `${value}%` }}
-        transition={{ delay, duration: 0.8, ease: "easeOut" }}
+        transition={{ delay, duration: 1.8, ease: "easeOut" }}
         className="h-full bg-primary/40 rounded-full"
       />
     </div>
