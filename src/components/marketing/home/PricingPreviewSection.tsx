@@ -6,20 +6,20 @@ import { ArrowRight, Check } from "lucide-react";
 const plans = [
   {
     name: "Base",
-    price: "250",
+    price: "299",
     description: "Essential recruitment support",
     features: ["OneRooted system", "Up-to-date talent pool", "Access to E-Academy"],
   },
   {
     name: "Plus",
-    price: "350",
+    price: "399",
     description: "Move faster, hire smarter",
     features: ["Everything in Base", "Retention search", "Proactive sourcing"],
     featured: true,
   },
   {
     name: "Premium",
-    price: "500",
+    price: "599",
     description: "Hiring fully organized",
     features: ["Everything in Plus", "Candidate interviews", "Scheduling & coordination"],
   },

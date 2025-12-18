@@ -189,7 +189,7 @@ const UseCases = () => {
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-8">
               <Users className="h-4 w-4" />
-              <span>Trusted by 100+ hiring teams</span>
+              <span>Built for real hiring challenges</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-medium mb-6">

@@ -14,6 +14,8 @@ import Pricing from "./pages/Pricing";
 import WhyOneRooted from "./pages/WhyOneRooted";
 import Team from "./pages/Team";
 import Demo from "./pages/Demo";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import BrandGuide from "./pages/BrandGuide";
 
 const queryClient = new QueryClient();
@@ -35,6 +37,8 @@ const App = () => (
             <Route path="/why-onerooted" element={<WhyOneRooted />} />
             <Route path="/team" element={<Team />} />
             <Route path="/demo" element={<Demo />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
             
             {/* Utility Routes */}
             <Route path="/brand-guide" element={<BrandGuide />} />
