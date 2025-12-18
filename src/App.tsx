@@ -12,6 +12,7 @@ import UseCases from "./pages/UseCases";
 import Partners from "./pages/Partners";
 import Pricing from "./pages/Pricing";
 import WhyOneRooted from "./pages/WhyOneRooted";
+import Team from "./pages/Team";
 import Demo from "./pages/Demo";
 import BrandGuide from "./pages/BrandGuide";
 
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/partners" element={<Partners />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/why-onerooted" element={<WhyOneRooted />} />
+            <Route path="/team" element={<Team />} />
             <Route path="/demo" element={<Demo />} />
             
             {/* Utility Routes */}
