@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { User, MessageSquare, CheckCircle, Star, Eye } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const users = [
@@ -9,11 +8,11 @@ const users = [
 ];
 
 const activities = [
-  { user: 0, action: "moved", target: "Sarah M.", detail: "to Interview stage", icon: CheckCircle, time: "2m ago" },
-  { user: 1, action: "rated", target: "James K.", detail: "★★★★☆", icon: Star, time: "5m ago" },
-  { user: 2, action: "submitted", target: "3 new candidates", detail: "for review", icon: User, time: "12m ago" },
-  { user: 0, action: "commented", target: "on Emma L.", detail: '"Strong culture fit"', icon: MessageSquare, time: "15m ago" },
-  { user: 1, action: "approved", target: "David R.", detail: "for offer stage", icon: CheckCircle, time: "23m ago" },
+  { user: 0, action: "moved", target: "Sarah M.", time: "2m ago" },
+  { user: 1, action: "rated", target: "James K.", time: "5m ago" },
+  { user: 2, action: "submitted", target: "3 candidates", time: "12m ago" },
+  { user: 0, action: "commented on", target: "Emma L.", time: "15m ago" },
+  { user: 1, action: "approved", target: "David R.", time: "23m ago" },
 ];
 
 export const CollaborationAnimation = () => {
@@ -32,10 +31,7 @@ export const CollaborationAnimation = () => {
       <div className="grid md:grid-cols-2 gap-6">
         {/* Users online */}
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <Eye className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Currently Active</span>
-          </div>
+          <p className="text-xs text-muted-foreground mb-4">Active now</p>
           
           <div className="space-y-3">
             {users.map((user, index) => (
@@ -67,15 +63,11 @@ export const CollaborationAnimation = () => {
 
         {/* Activity feed */}
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <MessageSquare className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Live Activity</span>
-          </div>
+          <p className="text-xs text-muted-foreground mb-4">Recent activity</p>
           
           <div className="space-y-2 max-h-[250px] overflow-hidden">
             {activities.map((activity, index) => {
               const user = users[activity.user];
-              const Icon = activity.icon;
               const isVisible = visibleActivities.includes(index);
               
               return (
@@ -92,14 +84,12 @@ export const CollaborationAnimation = () => {
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-xs">
-                        <span className="font-medium">{user.name}</span>
+                        <span className="font-medium">{user.name.split(' ')[0]}</span>
                         {" "}{activity.action}{" "}
-                        <span className="font-medium">{activity.target}</span>
-                        {" "}{activity.detail}
+                        <span className="text-muted-foreground">{activity.target}</span>
                       </p>
-                      <p className="text-xs text-muted-foreground mt-0.5">{activity.time}</p>
+                      <p className="text-xs text-muted-foreground/60 mt-0.5">{activity.time}</p>
                     </div>
-                    <Icon className="w-4 h-4 text-muted-foreground flex-shrink-0" />
                   </div>
                 </motion.div>
               );
@@ -110,14 +100,13 @@ export const CollaborationAnimation = () => {
 
       {/* Shared context indicator */}
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ delay: 3.5 }}
-        className="mt-6 bg-primary/10 rounded-lg border border-primary/20 p-4 text-center"
+        className="mt-6 pt-4 border-t border-border/30 text-center"
       >
-        <p className="text-sm">
-          <span className="font-medium">One source of truth.</span>
-          {" "}Everyone sees the same data, in real-time.
+        <p className="text-xs text-muted-foreground">
+          Same data. Every stakeholder. Real-time.
         </p>
       </motion.div>
     </div>
