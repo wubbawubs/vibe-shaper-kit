@@ -195,13 +195,13 @@ const Pricing = () => {
                   
                   {plan.featured && (
                     <motion.div 
-                      className="absolute -top-3 left-1/2 -translate-x-1/2"
+                      className="absolute -top-3 left-0 right-0 flex justify-center"
                       initial={{ opacity: 0, y: -10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
                     >
-                      <span className="bg-primary text-primary-foreground text-xs px-3 py-1 rounded-full">
+                      <span className="bg-gradient-to-r from-primary to-accent text-primary-foreground text-xs px-4 py-1.5 rounded-full font-medium">
                         Most popular
                       </span>
                     </motion.div>
@@ -210,7 +210,7 @@ const Pricing = () => {
                   <CardHeader className="relative pt-8 pb-4">
                     <CardTitle className="text-xl">{plan.name}</CardTitle>
                     <div className="mt-4">
-                      <span className="text-4xl font-medium">
+                      <span className={`text-4xl font-medium ${plan.featured ? 'bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent' : ''}`}>
                         {plan.price === "Custom" ? "Custom" : `€${plan.price}`}
                       </span>
                       {plan.price !== "Custom" && (
@@ -218,7 +218,7 @@ const Pricing = () => {
                       )}
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">{plan.description}</p>
-                    <p className="text-sm font-medium text-primary mt-3">{plan.outcome}</p>
+                    <p className={`text-sm font-medium mt-3 ${plan.featured ? 'bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent' : 'text-primary'}`}>{plan.outcome}</p>
                   </CardHeader>
                   
                   <CardContent className="relative pt-4 pb-8">
