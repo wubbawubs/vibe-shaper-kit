@@ -4,24 +4,23 @@ import { useState, useEffect } from "react";
 const users = [
   { name: "Anna", role: "Recruiter", initials: "AN", color: "bg-blue-500" },
   { name: "Mark", role: "Hiring Manager", initials: "MK", color: "bg-purple-500" },
-  { name: "Partner", role: "Bureau", initials: "PA", color: "bg-amber-500" },
+  { name: "Partner", role: "Agency", initials: "PA", color: "bg-amber-500" },
 ];
 
 const allActivities = [
-  { user: 0, action: "verplaatste", target: "Sarah M.", time: "2m" },
-  { user: 1, action: "beoordeelde", target: "James K.", time: "5m" },
-  { user: 2, action: "stuurde", target: "3 kandidaten", time: "12m" },
-  { user: 0, action: "reageerde op", target: "Emma L.", time: "15m" },
-  { user: 1, action: "keurde goed", target: "David R.", time: "23m" },
-  { user: 2, action: "uploade CV", target: "Lisa B.", time: "28m" },
-  { user: 0, action: "plande gesprek", target: "Mark V.", time: "31m" },
-  { user: 1, action: "gaf feedback", target: "Anna K.", time: "35m" },
+  { user: 0, action: "moved", target: "Sarah M.", time: "2m" },
+  { user: 1, action: "reviewed", target: "James K.", time: "5m" },
+  { user: 2, action: "submitted", target: "3 candidates", time: "12m" },
+  { user: 0, action: "commented on", target: "Emma L.", time: "15m" },
+  { user: 1, action: "approved", target: "David R.", time: "23m" },
+  { user: 2, action: "uploaded CV", target: "Lisa B.", time: "28m" },
+  { user: 0, action: "scheduled", target: "Mark V.", time: "31m" },
+  { user: 1, action: "gave feedback", target: "Anna K.", time: "35m" },
 ];
 
 export const CollaborationAnimation = () => {
   const [visibleActivities, setVisibleActivities] = useState<number[]>([]);
   const [typingUser, setTypingUser] = useState<number | null>(null);
-  const [activityWindow, setActivityWindow] = useState({ start: 0, count: 5 });
 
   // Initial activity reveal
   useEffect(() => {
@@ -36,12 +35,6 @@ export const CollaborationAnimation = () => {
   // Continuous activity cycling
   useEffect(() => {
     const cycleInterval = setInterval(() => {
-      setActivityWindow(prev => {
-        const newStart = (prev.start + 1) % allActivities.length;
-        return { ...prev, start: newStart };
-      });
-      
-      // Add new activity to visible list
       setVisibleActivities(prev => {
         const newIndex = (prev[prev.length - 1] + 1) % allActivities.length;
         const updated = [...prev.slice(-4), newIndex];
@@ -75,7 +68,7 @@ export const CollaborationAnimation = () => {
       <div className="grid md:grid-cols-2 gap-6">
         {/* Users online */}
         <div>
-          <p className="text-xs text-muted-foreground/70 mb-4">Online</p>
+          <p className="text-xs text-muted-foreground/70 mb-4">Active now</p>
           
           <div className="space-y-3">
             {users.map((user, index) => (
@@ -124,7 +117,7 @@ export const CollaborationAnimation = () => {
 
         {/* Activity feed */}
         <div>
-          <p className="text-xs text-muted-foreground/70 mb-4">Activiteit</p>
+          <p className="text-xs text-muted-foreground/70 mb-4">Activity</p>
           
           <div className="space-y-2 max-h-[250px] overflow-hidden">
             <AnimatePresence mode="popLayout">
@@ -173,7 +166,7 @@ export const CollaborationAnimation = () => {
         className="mt-6 pt-4 border-t border-border/20 text-center"
       >
         <p className="text-xs text-muted-foreground/60">
-          Één systeem. Alle stakeholders. Real-time.
+          One system. Every stakeholder. Real-time.
         </p>
       </motion.div>
     </div>
