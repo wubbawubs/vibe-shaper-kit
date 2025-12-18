@@ -201,14 +201,14 @@ const WhyOneRooted = () => {
                     </div>
                     <p className="text-sm font-medium text-muted-foreground">Traditional ATS</p>
                   </div>
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <span className="font-medium">Store</span>
-                    <ArrowRight className="h-4 w-4" />
-                    <span className="font-medium">Track</span>
-                    <ArrowRight className="h-4 w-4" />
-                    <span className="font-medium">Report</span>
+                  <div className="flex items-center gap-3">
+                    <span className="text-lg font-semibold text-foreground/70">Store</span>
+                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                    <span className="text-lg font-semibold text-foreground/70">Track</span>
+                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                    <span className="text-lg font-semibold text-foreground/70">Report</span>
                   </div>
-                  <p className="text-xs text-muted-foreground/60 mt-3">Data sits. Decisions happen elsewhere.</p>
+                  <p className="text-sm text-muted-foreground mt-3">Data sits. Decisions happen elsewhere.</p>
                 </motion.div>
 
                 {/* Arrow */}
