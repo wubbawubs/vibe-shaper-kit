@@ -3,12 +3,12 @@ import { AlertTriangle, CheckCircle } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 const stages = [
-  { name: "Nieuw", borderColor: "bg-blue-500" },
-  { name: "Eerste gesprek", borderColor: "bg-cyan-500" },
-  { name: "Tweede gesprek", borderColor: "bg-purple-500" },
-  { name: "Aanbod", borderColor: "bg-amber-500" },
-  { name: "Aangenomen", borderColor: "bg-emerald-500" },
-  { name: "Afgewezen", borderColor: "bg-rose-500" },
+  { name: "New", borderColor: "bg-blue-500" },
+  { name: "Screening", borderColor: "bg-cyan-500" },
+  { name: "Interview", borderColor: "bg-purple-500" },
+  { name: "Offer", borderColor: "bg-amber-500" },
+  { name: "Hired", borderColor: "bg-emerald-500" },
+  { name: "Rejected", borderColor: "bg-rose-500" },
 ];
 
 const candidatePool = [
@@ -202,7 +202,9 @@ export const ProcessFlowAnimation = () => {
   const bottleneck = getBottleneck();
 
   return (
-    <div className="relative w-full bg-muted/30 rounded-2xl border border-border/50 overflow-hidden p-6">
+    <div className="relative w-full bg-gradient-to-br from-background via-muted/20 to-background rounded-2xl border border-border/50 overflow-hidden p-6 shadow-lg">
+      {/* Subtle glow orb */}
+      <div className="absolute top-0 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       {/* Dynamic bottleneck banner */}
       <AnimatePresence>
         {bottleneck && (
@@ -227,10 +229,10 @@ export const ProcessFlowAnimation = () => {
               </motion.div>
               <div>
                 <p className="text-sm font-medium text-amber-700 dark:text-amber-400">
-                  Bottleneck gedetecteerd
+                  Bottleneck detected
                 </p>
                 <p className="text-xs text-amber-600/80 dark:text-amber-500/80">
-                  {bottleneck.stage} fase vertraagt · {bottleneck.count} kandidaten wachtend
+                  {bottleneck.count} candidates waiting in {bottleneck.stage}
                 </p>
               </div>
             </motion.div>
@@ -330,10 +332,10 @@ export const ProcessFlowAnimation = () => {
         className="mt-6 bg-background rounded-xl border border-border/30 p-4"
       >
         <div className="flex items-center justify-between mb-3">
-          <span className="text-sm font-medium text-foreground">Conversie Funnel</span>
+          <span className="text-sm font-medium text-foreground">Conversion Funnel</span>
           <div className="flex items-center gap-2">
             <CheckCircle className="w-4 h-4 text-emerald-500" />
-            <span className="text-xs text-muted-foreground">12.5% aangenomen</span>
+            <span className="text-xs text-muted-foreground">12.5% hired</span>
           </div>
         </div>
         
