@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { AlertTriangle, Lightbulb, Target, ArrowRight, Users, Rocket, Quote } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const atsProblems = [
   { title: "They're built for storage, not decisions", desc: "Most ATS platforms are glorified databases. They track where candidates are, not why they should move forward." },
@@ -22,6 +23,11 @@ const roadmapItems = [
 const WhyOneRooted = () => {
   return (
     <MarketingLayout>
+      <SEO 
+        title="Why OneRooted"
+        description="The story behind building a Hiring OS. Why traditional ATS systems fail and how OneRooted rethinks hiring software."
+        url="https://onerooted.com/why-onerooted"
+      />
       {/* Hero */}
       <section className="py-20 md:py-28 relative overflow-hidden">
         {/* Background glow */}

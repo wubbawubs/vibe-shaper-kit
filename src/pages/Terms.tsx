@@ -1,9 +1,15 @@
 import { MarketingLayout } from "@/components/marketing/MarketingLayout";
 import { motion } from "framer-motion";
+import { SEO } from "@/components/SEO";
 
 const Terms = () => {
   return (
     <MarketingLayout>
+      <SEO 
+        title="Terms of Service"
+        description="OneRooted Terms of Service. Read about the terms and conditions for using our platform."
+        url="https://onerooted.com/terms"
+      />
       <section className="py-20 md:py-28">
         <div className="container">
           <motion.div 

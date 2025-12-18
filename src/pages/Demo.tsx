@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { toast } from "sonner";
 import { motion } from "framer-motion";
 import { Send, Calendar, MessageCircle, Users, Clock, CheckCircle } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const Demo = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -29,6 +30,11 @@ const Demo = () => {
 
   return (
     <MarketingLayout>
+      <SEO 
+        title="Request a Demo"
+        description="See OneRooted in action. Book a 30-minute demo to discover how our Hiring OS can transform your recruitment process."
+        url="https://onerooted.com/demo"
+      />
       {/* Hero */}
       <section className="py-20 md:py-28 relative overflow-hidden">
         {/* Background glow */}

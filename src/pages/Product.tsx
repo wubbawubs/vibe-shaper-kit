@@ -9,10 +9,16 @@ import { ProcessFlowAnimation } from "@/components/marketing/product/ProcessFlow
 import { MetricsDashboardAnimation } from "@/components/marketing/product/MetricsDashboardAnimation";
 import { CollaborationAnimation } from "@/components/marketing/product/CollaborationAnimation";
 import { Check, Minus, Users, Sparkles } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const Product = () => {
   return (
     <MarketingLayout>
+      <SEO 
+        title="How It Works"
+        description="See how OneRooted's intelligent ranking, visual pipeline, and unified collaboration transform your hiring process."
+        url="https://onerooted.com/product"
+      />
       {/* Hero */}
       <section className="py-20 md:py-28">
         <div className="container">

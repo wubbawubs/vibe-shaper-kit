@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Linkedin, Heart, Target, Zap, Users, ArrowRight } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const teamMembers = [
   {
@@ -62,6 +63,11 @@ const values = [
 const Team = () => {
   return (
     <MarketingLayout>
+      <SEO 
+        title="Our Team"
+        description="Meet the OneRooted team. Seasoned experts with 25+ years of recruitment experience building the future of hiring."
+        url="https://onerooted.com/team"
+      />
       {/* Hero */}
       <section className="py-20 md:py-28 relative overflow-hidden">
         {/* Background glow */}

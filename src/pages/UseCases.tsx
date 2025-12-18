@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { TrendingUp, Users, Handshake, RefreshCw, ArrowRight, Check, Sparkles } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const useCases = [
   {
@@ -47,6 +48,11 @@ const useCases = [
 const UseCases = () => {
   return (
     <MarketingLayout>
+      <SEO 
+        title="Use Cases"
+        description="Real scenarios where OneRooted shines. From scaling teams fast to working with recruitment partners."
+        url="https://onerooted.com/use-cases"
+      />
       {/* Hero */}
       <section className="py-20 md:py-28 relative overflow-hidden">
         {/* Background glow */}

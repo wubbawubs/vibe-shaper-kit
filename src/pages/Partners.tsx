@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Eye, Building2, Handshake, ArrowRight, Users, Check, MessageSquare } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const partnerFeatures = [
   "Dedicated pipelines per client",
@@ -29,6 +30,11 @@ const collaborationSteps = [
 const Partners = () => {
   return (
     <MarketingLayout>
+      <SEO 
+        title="For Recruitment Partners"
+        description="OneRooted makes recruitment partners stronger, not obsolete. Better tools for better collaboration and outcomes."
+        url="https://onerooted.com/partners"
+      />
       {/* Hero */}
       <section className="py-20 md:py-28 relative overflow-hidden">
         {/* Background glow */}
