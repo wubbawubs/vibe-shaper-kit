@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { User, Star, TrendingUp, Award } from "lucide-react";
+import { User, Award } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const initialCandidates = [
@@ -111,38 +111,33 @@ export const RankingSystemVisualization = () => {
         </div>
 
         {/* Scoring explanation */}
-        <div className="flex flex-col justify-center space-y-4">
+        <div className="flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5 }}
-            className="space-y-4"
+            className="space-y-6"
           >
-            <div className="flex items-center gap-2 text-accent">
-              <TrendingUp className="w-5 h-5" />
-              <span className="text-sm font-medium">AI-Powered Scoring</span>
-            </div>
-            
-            <p className="text-sm text-muted-foreground">
-              Each candidate is automatically analyzed across multiple dimensions—skills match, 
-              experience relevance, and cultural fit—to surface the best matches first.
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Same criteria. Every candidate. Consistent evaluation 
+              removes guesswork from decisions.
             </p>
 
-            <div className="space-y-2">
+            <div className="space-y-3">
               {[
-                { label: "Skills Match", weight: "40%" },
+                { label: "Skills", weight: "40%" },
                 { label: "Experience", weight: "30%" },
-                { label: "Culture Fit", weight: "30%" },
+                { label: "Fit", weight: "30%" },
               ].map((item, i) => (
                 <motion.div
                   key={item.label}
-                  initial={{ opacity: 0, x: 10 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
                   transition={{ delay: 0.7 + i * 0.1 }}
-                  className="flex items-center justify-between text-xs"
+                  className="flex items-center justify-between text-xs text-muted-foreground"
                 >
-                  <span className="text-muted-foreground">{item.label}</span>
-                  <span className="font-medium">{item.weight}</span>
+                  <span>{item.label}</span>
+                  <span>{item.weight}</span>
                 </motion.div>
               ))}
             </div>
@@ -155,16 +150,16 @@ export const RankingSystemVisualization = () => {
 
 const ScoreBar = ({ label, value, delay }: { label: string; value: number; delay: number }) => (
   <div className="space-y-1">
-    <div className="flex justify-between text-xs">
-      <span className="text-muted-foreground">{label}</span>
-      <span className="font-medium">{value}%</span>
+    <div className="flex justify-between text-xs text-muted-foreground">
+      <span>{label}</span>
+      <span>{value}</span>
     </div>
-    <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+    <div className="h-1 bg-muted rounded-full overflow-hidden">
       <motion.div
         initial={{ width: 0 }}
         animate={{ width: `${value}%` }}
         transition={{ delay, duration: 0.5, ease: "easeOut" }}
-        className="h-full bg-primary rounded-full"
+        className="h-full bg-foreground/20 rounded-full"
       />
     </div>
   </div>
