@@ -30,7 +30,7 @@ const Product = () => {
             >
               <p className="text-accent font-medium mb-4">How it works</p>
               <h1 className="text-4xl md:text-5xl font-medium mb-6">
-                A hiring system that adapts to how teams actually work
+                This is what an operating system for hiring looks like.
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
                 Candidates move forward. Signals surface automatically.<br />

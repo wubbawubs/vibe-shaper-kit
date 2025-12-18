@@ -41,12 +41,12 @@ const WhyOneRooted = () => {
             transition={{ duration: 0.6 }}
           >
             <motion.p 
-              className="text-sm font-medium text-primary mb-4 tracking-wide uppercase"
+              className="text-sm font-medium text-muted-foreground mb-4 italic"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              Our story
+              This page is for leaders who already tried every ATS.
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
               The story behind{" "}

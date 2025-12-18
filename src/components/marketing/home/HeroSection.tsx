@@ -21,17 +21,9 @@ export function HeroSection() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight"
             >
-              The Hiring OS for teams that take{" "}
+              Hiring doesn't need another tool.{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                hiring seriously
-              </span>
-              <span className="relative inline-block">
-                <motion.span
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ duration: 0.8, delay: 0.5 }}
-                  className="absolute -bottom-1 right-0 w-[5.5em] h-3 bg-accent/20 origin-left"
-                />
+                It needs a system.
               </span>
             </motion.h1>
 

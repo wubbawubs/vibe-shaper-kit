@@ -253,6 +253,17 @@ const Partners = () => {
                   </motion.div>
                 ))}
               </motion.div>
+              
+              {/* Punchline */}
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="text-center mt-12 text-lg font-medium text-foreground"
+              >
+                No handovers. No blind spots. No politics.
+              </motion.p>
             </div>
           </div>
         </div>

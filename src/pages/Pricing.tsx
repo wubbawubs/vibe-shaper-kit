@@ -17,6 +17,7 @@ const plans = [
     name: "Base",
     price: "299",
     description: "Essential recruitment support for small teams.",
+    outcome: "Get control over your hiring process.",
     features: [
       { text: "OneRooted system", included: true },
       { text: "Up-to-date talent pool", included: true },
@@ -26,13 +27,14 @@ const plans = [
       { text: "Proactive sourcing", included: false },
       { text: "Interview coordination", included: false },
     ],
-    cta: "Get started",
+    cta: "Talk to us",
     featured: false,
   },
   {
     name: "Plus",
     price: "399",
     description: "Move faster, hire smarter.",
+    outcome: "Turn hiring into a coordinated system.",
     features: [
       { text: "Everything in Base", included: true },
       { text: "Retention search", included: true },
@@ -42,13 +44,14 @@ const plans = [
       { text: "Interview coordination", included: false },
       { text: "Dedicated success manager", included: false },
     ],
-    cta: "Get started",
+    cta: "Talk to us",
     featured: true,
   },
   {
     name: "Premium",
     price: "599",
     description: "Hiring fully organized.",
+    outcome: "Run hiring as a strategic operation.",
     features: [
       { text: "Everything in Plus", included: true },
       { text: "Candidate interviews", included: true },
@@ -58,7 +61,7 @@ const plans = [
       { text: "Advanced analytics", included: true },
       { text: "SLA guarantee", included: true },
     ],
-    cta: "Get started",
+    cta: "Talk to us",
     featured: false,
   },
 ];
@@ -215,6 +218,7 @@ const Pricing = () => {
                       )}
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">{plan.description}</p>
+                    <p className="text-sm font-medium text-primary mt-3">{plan.outcome}</p>
                   </CardHeader>
                   
                   <CardContent className="relative pt-4 pb-8">
