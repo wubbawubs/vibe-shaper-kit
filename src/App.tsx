@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import { HelmetProvider } from "react-helmet-async";
+import { ScrollToTop } from "@/components/ScrollToTop";
+
 // Marketing pages
 import Home from "./pages/Home";
 import Product from "./pages/Product";
@@ -28,6 +30,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <ScrollToTop />
             <Routes>
               {/* Marketing Routes */}
               <Route path="/" element={<Home />} />
