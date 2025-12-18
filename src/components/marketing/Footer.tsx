@@ -32,6 +32,7 @@ export function Footer() {
             <h4 className="font-medium mb-5 text-sm uppercase tracking-wider text-background/80">Company</h4>
             <ul className="space-y-4 text-sm text-background/60">
               <li><Link to="/why-onerooted" className="hover:text-background transition-colors">Why OneRooted</Link></li>
+              <li><Link to="/team" className="hover:text-background transition-colors">Team</Link></li>
               <li><Link to="/partners" className="hover:text-background transition-colors">Partners</Link></li>
               <li><Link to="/demo" className="hover:text-background transition-colors">Contact</Link></li>
             </ul>

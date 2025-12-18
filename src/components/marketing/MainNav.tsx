@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Partners", href: "/partners" },
   { label: "Pricing", href: "/pricing" },
   { label: "Why OneRooted", href: "/why-onerooted" },
+  { label: "Team", href: "/team" },
 ];
 
 export function MainNav() {
