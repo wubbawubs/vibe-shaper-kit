@@ -187,38 +187,67 @@ const WhyOneRooted = () => {
                 </p>
               </div>
               
-              {/* Visual comparison - clean */}
-              <div className="space-y-4">
+              {/* Visual comparison - improved */}
+              <div className="space-y-6">
                 {/* Traditional ATS */}
-                <div className="p-6 rounded-xl border border-border/40 bg-card">
-                  <p className="text-xs font-medium text-muted-foreground/60 uppercase tracking-wider mb-3">Traditional ATS</p>
-                  <div className="flex items-center gap-4 text-muted-foreground/70">
-                    <span className="text-lg font-medium">Store</span>
-                    <ArrowRight className="h-4 w-4" />
-                    <span className="text-lg font-medium">Track</span>
-                    <ArrowRight className="h-4 w-4" />
-                    <span className="text-lg font-medium">Report</span>
+                <motion.div 
+                  className="p-6 rounded-2xl border border-border/50 bg-muted/30 relative overflow-hidden"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center">
+                      <AlertTriangle className="h-4 w-4 text-muted-foreground" />
+                    </div>
+                    <p className="text-sm font-medium text-muted-foreground">Traditional ATS</p>
                   </div>
-                </div>
+                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <span className="font-medium">Store</span>
+                    <ArrowRight className="h-4 w-4" />
+                    <span className="font-medium">Track</span>
+                    <ArrowRight className="h-4 w-4" />
+                    <span className="font-medium">Report</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground/60 mt-3">Data sits. Decisions happen elsewhere.</p>
+                </motion.div>
 
                 {/* Arrow */}
-                <div className="flex justify-center py-2">
-                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                    <ArrowRight className="h-4 w-4 text-primary rotate-90" />
-                  </div>
+                <div className="flex justify-center">
+                  <motion.div
+                    animate={{ y: [0, 5, 0] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                    className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg"
+                  >
+                    <ArrowRight className="h-5 w-5 text-primary-foreground rotate-90" />
+                  </motion.div>
                 </div>
 
                 {/* Hiring OS */}
-                <div className="p-6 rounded-xl border-2 border-primary/40 bg-primary/5">
-                  <p className="text-xs font-medium text-primary uppercase tracking-wider mb-3">Hiring OS</p>
-                  <div className="flex items-center gap-4 text-foreground">
-                    <span className="text-lg font-semibold">Collaborate</span>
-                    <ArrowRight className="h-4 w-4 text-primary" />
-                    <span className="text-lg font-semibold">Decide</span>
-                    <ArrowRight className="h-4 w-4 text-primary" />
-                    <span className="text-lg font-semibold">Improve</span>
+                <motion.div 
+                  className="p-6 rounded-2xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-primary/5 to-accent/5 relative overflow-hidden"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {/* Subtle glow */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/20 to-transparent rounded-full blur-2xl" />
+                  
+                  <div className="relative">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                        <Lightbulb className="h-4 w-4 text-primary-foreground" />
+                      </div>
+                      <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Hiring OS</p>
+                    </div>
+                    <div className="flex items-center gap-3 text-foreground">
+                      <span className="font-medium">Collaborate</span>
+                      <ArrowRight className="h-4 w-4 text-primary" />
+                      <span className="font-medium">Decide</span>
+                      <ArrowRight className="h-4 w-4 text-primary" />
+                      <span className="font-medium">Improve</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-3">Every action drives better outcomes.</p>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           </div>
