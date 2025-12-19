@@ -19,6 +19,7 @@ import Demo from "./pages/Demo";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import BrandGuide from "./pages/BrandGuide";
+import EmailTemplates from "./pages/EmailTemplates";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => (
               
               {/* Utility Routes */}
               <Route path="/brand-guide" element={<BrandGuide />} />
+              <Route path="/email-templates" element={<EmailTemplates />} />
               
               {/* Fallback */}
               <Route path="*" element={<Navigate to="/" replace />} />
