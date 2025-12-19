@@ -1,144 +1,157 @@
-import { ArrowRight, Shield, Clock } from "lucide-react";
+import { ArrowRight, Shield } from "lucide-react";
 import logoWhite from "@/assets/onerooted-logo-white.png";
 
 interface PasswordResetEmailTemplateProps {
   userName: string;
   resetLink: string;
+  language?: "nl" | "en";
 }
 
 export const PasswordResetEmailTemplate = ({
   userName,
   resetLink,
+  language = "nl",
 }: PasswordResetEmailTemplateProps) => {
+  const isNL = language === "nl";
+  
   return (
-    <div style={{ fontFamily: "'Inter', 'Segoe UI', sans-serif", backgroundColor: "#faf9f8", padding: "40px 20px" }}>
-      <div style={{ maxWidth: "600px", margin: "0 auto", backgroundColor: "#ffffff", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
-        {/* Header with gradient */}
+    <div style={{ fontFamily: "'Inter', 'Segoe UI', sans-serif", backgroundColor: "#f8f9fa", padding: "40px 20px" }}>
+      <div style={{ maxWidth: "600px", margin: "0 auto", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
+        
+        {/* Header - compact with security indicator */}
         <div style={{ 
           background: "linear-gradient(135deg, #1a4a42 0%, #2d6358 100%)", 
-          padding: "40px 32px",
-          textAlign: "center" as const
+          padding: "24px 32px",
         }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "16px" }}>
-            <img 
-              src={logoWhite} 
-              alt="One Rooted" 
-              style={{ height: "40px", width: "auto", filter: "brightness(0) invert(1)" }} 
-            />
-            <span style={{ fontSize: "24px", fontWeight: "700", color: "#ffffff", letterSpacing: "-0.5px" }}>
-              One Rooted
-            </span>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              <img 
+                src={logoWhite} 
+                alt="OneRooted" 
+                style={{ height: "32px", width: "auto", filter: "brightness(0) invert(1)" }} 
+              />
+              <span style={{ fontSize: "18px", fontWeight: "600", color: "#ffffff", letterSpacing: "-0.3px" }}>
+                OneRooted
+              </span>
+            </div>
+            <div style={{ 
+              display: "flex", 
+              alignItems: "center", 
+              gap: "6px", 
+              backgroundColor: "rgba(255,255,255,0.15)", 
+              padding: "6px 12px", 
+              borderRadius: "16px"
+            }}>
+              <Shield size={14} color="#ffffff" />
+              <span style={{ color: "#ffffff", fontSize: "12px", fontWeight: "500" }}>
+                {isNL ? "Beveiligd" : "Secure"}
+              </span>
+            </div>
           </div>
-          <div style={{ 
-            display: "inline-flex", 
-            alignItems: "center", 
-            justifyContent: "center",
-            backgroundColor: "rgba(255,255,255,0.15)", 
-            borderRadius: "50%",
-            width: "64px",
-            height: "64px",
-            marginBottom: "16px"
-          }}>
-            <Shield size={32} color="#ffffff" />
-          </div>
-          <h1 style={{ color: "#ffffff", fontSize: "28px", fontWeight: "600", margin: "0", letterSpacing: "-0.5px" }}>
-            Wachtwoord resetten
-          </h1>
         </div>
 
-        {/* Content */}
-        <div style={{ padding: "40px 32px" }}>
-          <p style={{ fontSize: "16px", color: "#1a2e2a", marginBottom: "24px", lineHeight: "1.6" }}>
-            Hallo <strong>{userName}</strong>,
+        {/* Body */}
+        <div style={{ padding: "40px 32px 32px" }}>
+          <p style={{ fontSize: "16px", color: "#1a2e2a", marginBottom: "24px", lineHeight: "1.7" }}>
+            {isNL ? `Hallo ${userName},` : `Hi ${userName},`}
           </p>
           
-          <p style={{ fontSize: "16px", color: "#4a5e5a", marginBottom: "24px", lineHeight: "1.6" }}>
-            We hebben een verzoek ontvangen om het wachtwoord voor je One Rooted account te resetten. Klik op de onderstaande knop om een nieuw wachtwoord in te stellen.
+          <p style={{ fontSize: "16px", color: "#3a4a46", marginBottom: "24px", lineHeight: "1.7" }}>
+            {isNL 
+              ? "We hebben een verzoek ontvangen om het wachtwoord voor je OneRooted account te resetten."
+              : "We received a request to reset the password for your OneRooted account."
+            }
           </p>
 
-          {/* Warning box */}
+          {/* Time warning - subtle */}
           <div style={{ 
-            backgroundColor: "#f5f7f6", 
-            borderRadius: "10px", 
-            padding: "20px", 
+            backgroundColor: "#fef9f0", 
+            borderRadius: "6px", 
+            padding: "14px 16px", 
             marginBottom: "32px",
-            display: "flex",
-            alignItems: "flex-start",
-            gap: "12px",
-            borderLeft: "4px solid #c9943e"
+            borderLeft: "3px solid #a17d3a"
           }}>
-            <Clock size={20} color="#c9943e" style={{ flexShrink: 0, marginTop: "2px" }} />
-            <p style={{ fontSize: "14px", color: "#4a5e5a", margin: "0", lineHeight: "1.5" }}>
-              Deze link is <strong style={{ color: "#1a2e2a" }}>30 minuten</strong> geldig. Na deze periode moet je een nieuwe aanvraag doen.
+            <p style={{ fontSize: "14px", color: "#6a5a3a", margin: "0", lineHeight: "1.5" }}>
+              {isNL 
+                ? <>Deze link is <strong>30 minuten</strong> geldig.</>
+                : <>This link is valid for <strong>30 minutes</strong>.</>
+              }
             </p>
           </div>
 
-          {/* CTA Button */}
-          <div style={{ textAlign: "center" as const, marginBottom: "32px" }}>
+          {/* CTA - breathing room */}
+          <div style={{ textAlign: "center" as const, marginBottom: "40px", paddingTop: "8px" }}>
             <a 
               href={resetLink}
               style={{ 
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "8px",
-                background: "linear-gradient(135deg, #1a4a42 0%, #2d6358 100%)", 
+                backgroundColor: "#1a4a42",
                 color: "#ffffff", 
-                padding: "16px 32px", 
-                borderRadius: "10px", 
+                padding: "14px 28px", 
+                borderRadius: "6px", 
                 textDecoration: "none",
-                fontSize: "16px",
-                fontWeight: "600",
-                boxShadow: "0 4px 14px rgba(26, 74, 66, 0.25)"
+                fontSize: "15px",
+                fontWeight: "600"
               }}
             >
-              Wachtwoord resetten
-              <ArrowRight size={18} />
+              {isNL ? "Wachtwoord resetten" : "Reset password"}
+              <ArrowRight size={16} />
             </a>
           </div>
 
-          <p style={{ fontSize: "14px", color: "#8a9a96", marginBottom: "16px", lineHeight: "1.6" }}>
-            Of kopieer deze link naar je browser:
-          </p>
-          <p style={{ 
-            fontSize: "13px", 
-            color: "#1a4a42", 
-            backgroundColor: "#f5f7f6", 
-            padding: "12px 16px", 
-            borderRadius: "8px",
-            wordBreak: "break-all" as const,
-            fontFamily: "monospace",
-            marginBottom: "32px"
-          }}>
-            {resetLink}
-          </p>
-
-          {/* Security notice */}
-          <div style={{ 
-            backgroundColor: "#fef2f2", 
-            borderRadius: "10px", 
-            padding: "20px", 
-            border: "1px solid #fecaca"
-          }}>
-            <p style={{ fontSize: "14px", color: "#7f1d1d", margin: "0 0 8px 0", fontWeight: "600" }}>
-              🔒 Beveiligingsmelding
+          {/* Fallback link */}
+          <div style={{ borderTop: "1px solid #e8ecea", paddingTop: "24px", marginBottom: "24px" }}>
+            <p style={{ fontSize: "13px", color: "#8a9a96", marginBottom: "8px" }}>
+              {isNL ? "Of kopieer deze link in je browser:" : "Or copy this link into your browser:"}
             </p>
-            <p style={{ fontSize: "13px", color: "#991b1b", margin: "0", lineHeight: "1.5" }}>
-              Heb je dit verzoek niet gedaan? Negeer deze email dan. Je wachtwoord blijft ongewijzigd. Als je je zorgen maakt over de beveiliging van je account, neem dan contact met ons op.
+            <p style={{ 
+              fontSize: "12px", 
+              color: "#5a6a66", 
+              backgroundColor: "#f5f7f6", 
+              padding: "10px 12px", 
+              borderRadius: "4px",
+              wordBreak: "break-all" as const,
+              fontFamily: "monospace"
+            }}>
+              {resetLink}
+            </p>
+          </div>
+
+          {/* Security notice - calmer */}
+          <div style={{ 
+            backgroundColor: "#f8f9fa", 
+            borderRadius: "6px", 
+            padding: "16px 20px"
+          }}>
+            <p style={{ fontSize: "12px", fontWeight: "600", color: "#6a7a76", margin: "0 0 8px 0", display: "flex", alignItems: "center", gap: "6px" }}>
+              <Shield size={14} />
+              {isNL ? "Beveiligingsmelding" : "Security notice"}
+            </p>
+            <p style={{ fontSize: "13px", color: "#5a6a66", margin: "0", lineHeight: "1.6" }}>
+              {isNL 
+                ? "Heb je dit verzoek niet gedaan? Negeer deze email dan. Je wachtwoord blijft ongewijzigd."
+                : "Didn't request this? Ignore this email. Your password will remain unchanged."
+              }
             </p>
           </div>
         </div>
 
         {/* Footer */}
         <div style={{ 
-          backgroundColor: "#f5f7f6", 
-          padding: "24px 32px",
-          borderTop: "1px solid #e5e9e8"
+          backgroundColor: "#f8f9fa", 
+          padding: "20px 32px",
+          borderTop: "1px solid #e8ecea"
         }}>
-          <p style={{ fontSize: "13px", color: "#8a9a96", margin: "0 0 8px 0", textAlign: "center" as const }}>
-            Hulp nodig? Neem contact op via support@onerooted.nl
+          <p style={{ fontSize: "13px", color: "#6a7a76", margin: "0 0 16px 0" }}>
+            {isNL 
+              ? "Heb je vragen of zorgen over je account? Neem contact op."
+              : "Have questions or concerns about your account? Get in touch."
+            }
           </p>
-          <p style={{ fontSize: "12px", color: "#aab5b2", margin: "0", textAlign: "center" as const }}>
-            © 2024 One Rooted · Het Hiring OS voor moderne teams
+          <p style={{ fontSize: "12px", color: "#9aa9a5", margin: "0" }}>
+            © 2025 OneRooted · {isNL ? "Hiring heeft geen nieuwe tool nodig. Het heeft een systeem nodig." : "Hiring doesn't need another tool. It needs a system."}
           </p>
         </div>
       </div>
