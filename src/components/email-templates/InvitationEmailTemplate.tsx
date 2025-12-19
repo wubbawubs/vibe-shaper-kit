@@ -22,7 +22,7 @@ export const InvitationEmailTemplate = ({
   
   return (
     <div style={{ fontFamily: "'Inter', 'Segoe UI', sans-serif", backgroundColor: "#f8f9fa", padding: "40px 20px" }}>
-      <div style={{ maxWidth: "600px", margin: "0 auto", backgroundColor: "#ffffff", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 20px rgba(0,0,0,0.08)" }}>
+      <div style={{ maxWidth: "600px", margin: "0 auto", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
         
         {/* Header - compact, logo left */}
         <div style={{ 
@@ -54,120 +54,113 @@ export const InvitationEmailTemplate = ({
             }
           </p>
 
-          <p style={{ fontSize: "15px", color: "#5a6a66", marginBottom: "32px", lineHeight: "1.6" }}>
+          <p style={{ fontSize: "15px", color: "#5a6a66", marginBottom: "32px", lineHeight: "1.7" }}>
             {isNL 
               ? <>Je krijgt toegang als <strong style={{ color: "#1a4a42" }}>{role}</strong>.</>
               : <>You've been granted access as a <strong style={{ color: "#1a4a42" }}>{role}</strong>.</>
             }
           </p>
 
-          {/* What you can do - card style */}
-          <div style={{ marginBottom: "32px" }}>
-            <p style={{ fontSize: "14px", fontWeight: "600", color: "#1a2e2a", marginBottom: "16px", textTransform: "uppercase", letterSpacing: "0.5px" }}>
-              {isNL ? "Wat je kunt doen in OneRooted" : "What you can do in OneRooted"}
+          {/* What you can do - card style with icons */}
+          <div style={{ marginBottom: "40px" }}>
+            <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", marginBottom: "16px" }}>
+              {isNL ? "Wat je kunt doen:" : "What you can do:"}
             </p>
             
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              {/* Card 1 */}
+            <div style={{ display: "flex", flexDirection: "column" as const, gap: "12px" }}>
+              {/* Card 1 - Kandidaten volgen */}
               <div style={{ 
-                backgroundColor: "#f8faf9", 
-                borderRadius: "8px", 
-                padding: "16px 20px",
-                borderLeft: "3px solid #1a4a42"
+                display: "flex", 
+                alignItems: "flex-start", 
+                gap: "14px",
+                backgroundColor: "#f8f9fa",
+                padding: "18px",
+                borderRadius: "10px"
               }}>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                  <div style={{ 
-                    backgroundColor: "#1a4a42", 
-                    borderRadius: "6px", 
-                    padding: "8px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0
-                  }}>
-                    <Users size={16} color="#ffffff" />
-                  </div>
-                  <div>
-                    <p style={{ fontSize: "14px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
-                      {isNL ? "Kandidaten volgen" : "Track candidates"}
-                    </p>
-                    <p style={{ fontSize: "13px", color: "#5a6a66", margin: "0", lineHeight: "1.5" }}>
-                      {isNL ? "Van intake tot hire in één systeem." : "From intake to hire in one system."}
-                    </p>
-                  </div>
+                <div style={{ 
+                  backgroundColor: "#1a4a42", 
+                  borderRadius: "10px", 
+                  padding: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0
+                }}>
+                  <Users size={20} color="#ffffff" />
+                </div>
+                <div>
+                  <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
+                    {isNL ? "Kandidaten volgen" : "Track candidates"}
+                  </p>
+                  <p style={{ fontSize: "14px", color: "#6a7a76", margin: "0", lineHeight: "1.5" }}>
+                    {isNL ? "Van intake tot hire in één systeem" : "From intake to hire in one system"}
+                  </p>
                 </div>
               </div>
-
-              {/* Card 2 */}
+              
+              {/* Card 2 - Samenwerken */}
               <div style={{ 
-                backgroundColor: "#f8faf9", 
-                borderRadius: "8px", 
-                padding: "16px 20px",
-                borderLeft: "3px solid #1a4a42"
+                display: "flex", 
+                alignItems: "flex-start", 
+                gap: "14px",
+                backgroundColor: "#f8f9fa",
+                padding: "18px",
+                borderRadius: "10px"
               }}>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                  <div style={{ 
-                    backgroundColor: "#1a4a42", 
-                    borderRadius: "6px", 
-                    padding: "8px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0
-                  }}>
-                    <Eye size={16} color="#ffffff" />
-                  </div>
-                  <div>
-                    <p style={{ fontSize: "14px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
-                      {isNL ? "Samenwerken" : "Collaborate"}
-                    </p>
-                    <p style={{ fontSize: "13px", color: "#5a6a66", margin: "0", lineHeight: "1.5" }}>
-                      {isNL ? "Met je team en externe partners in één gedeeld systeem." : "With teams and external partners in one shared system."}
-                    </p>
-                  </div>
+                <div style={{ 
+                  backgroundColor: "#c9943e", 
+                  borderRadius: "10px", 
+                  padding: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0
+                }}>
+                  <Eye size={20} color="#ffffff" />
+                </div>
+                <div>
+                  <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
+                    {isNL ? "Samenwerken" : "Collaborate"}
+                  </p>
+                  <p style={{ fontSize: "14px", color: "#6a7a76", margin: "0", lineHeight: "1.5" }}>
+                    {isNL ? "Met je team en externe partners in één gedeeld systeem" : "With teams and external partners in one shared system"}
+                  </p>
                 </div>
               </div>
-
-              {/* Card 3 */}
+              
+              {/* Card 3 - Realtime inzicht */}
               <div style={{ 
-                backgroundColor: "#f8faf9", 
-                borderRadius: "8px", 
-                padding: "16px 20px",
-                borderLeft: "3px solid #1a4a42"
+                display: "flex", 
+                alignItems: "flex-start", 
+                gap: "14px",
+                backgroundColor: "#f8f9fa",
+                padding: "18px",
+                borderRadius: "10px"
               }}>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                  <div style={{ 
-                    backgroundColor: "#1a4a42", 
-                    borderRadius: "6px", 
-                    padding: "8px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0
-                  }}>
-                    <BarChart3 size={16} color="#ffffff" />
-                  </div>
-                  <div>
-                    <p style={{ fontSize: "14px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
-                      {isNL ? "Realtime inzicht" : "Real-time visibility"}
-                    </p>
-                    <p style={{ fontSize: "13px", color: "#5a6a66", margin: "0", lineHeight: "1.5" }}>
-                      {isNL ? "In voortgang en resultaten." : "Into progress and outcomes."}
-                    </p>
-                  </div>
+                <div style={{ 
+                  backgroundColor: "#2d6358", 
+                  borderRadius: "10px", 
+                  padding: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0
+                }}>
+                  <BarChart3 size={20} color="#ffffff" />
+                </div>
+                <div>
+                  <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
+                    {isNL ? "Realtime inzicht" : "Real-time visibility"}
+                  </p>
+                  <p style={{ fontSize: "14px", color: "#6a7a76", margin: "0", lineHeight: "1.5" }}>
+                    {isNL ? "In voortgang en resultaten" : "Into progress and outcomes"}
+                  </p>
                 </div>
               </div>
             </div>
-
-            <p style={{ fontSize: "14px", color: "#6a7a76", marginTop: "16px", fontStyle: "italic" }}>
-              {isNL 
-                ? "Alles op één plek. Geen losse tools. Geen ruis."
-                : "Everything in one place. No scattered tools. No chasing updates."
-              }
-            </p>
           </div>
 
-          {/* CTA */}
+          {/* CTA - breathing room */}
           <div style={{ textAlign: "center" as const, marginBottom: "40px", paddingTop: "8px" }}>
             <a 
               href={inviteLink}
@@ -178,11 +171,10 @@ export const InvitationEmailTemplate = ({
                 backgroundColor: "#1a4a42",
                 color: "#ffffff", 
                 padding: "14px 28px", 
-                borderRadius: "8px", 
+                borderRadius: "6px", 
                 textDecoration: "none",
                 fontSize: "15px",
-                fontWeight: "600",
-                boxShadow: "0 2px 8px rgba(26, 74, 66, 0.3)"
+                fontWeight: "600"
               }}
             >
               {isNL ? "Accepteer uitnodiging" : "Accept invitation"}
@@ -191,18 +183,22 @@ export const InvitationEmailTemplate = ({
           </div>
 
           {/* Fallback link */}
-          <div style={{ borderTop: "1px solid #e8ecea", paddingTop: "24px" }}>
-            <p style={{ fontSize: "13px", color: "#8a9a96", marginBottom: "8px" }}>
-              {isNL ? "Of kopieer deze link in je browser:" : "Or copy this link into your browser:"}
+          <div style={{ 
+            backgroundColor: "#f8f9fa", 
+            borderRadius: "6px", 
+            padding: "16px 20px", 
+            borderLeft: "3px solid #a17d3a"
+          }}>
+            <p style={{ fontSize: "12px", fontWeight: "600", color: "#6a7a76", margin: "0 0 6px 0", textTransform: "uppercase", letterSpacing: "0.5px" }}>
+              {isNL ? "Of kopieer deze link" : "Or copy this link"}
             </p>
             <p style={{ 
-              fontSize: "12px", 
-              color: "#5a6a66", 
-              backgroundColor: "#f5f7f6", 
-              padding: "10px 12px", 
-              borderRadius: "6px",
+              fontSize: "13px", 
+              color: "#3a4a46", 
+              margin: "0",
               wordBreak: "break-all" as const,
-              fontFamily: "monospace"
+              fontFamily: "monospace",
+              lineHeight: "1.6"
             }}>
               {inviteLink}
             </p>
