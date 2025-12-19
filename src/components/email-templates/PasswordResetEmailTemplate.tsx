@@ -1,5 +1,5 @@
 import { ArrowRight, Shield, Clock } from "lucide-react";
-import logoImage from "@/assets/onerooted-logo.png";
+import { OneRootedLogoWhite } from "./OneRootedLogoWhite";
 
 interface PasswordResetEmailTemplateProps {
   userName: string;
@@ -20,11 +20,7 @@ export const PasswordResetEmailTemplate = ({
           textAlign: "center" as const
         }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "16px" }}>
-            <img 
-              src={logoImage} 
-              alt="One Rooted" 
-              style={{ height: "48px", width: "auto", filter: "brightness(0) invert(1)" }} 
-            />
+            <OneRootedLogoWhite size={48} />
             <span style={{ fontSize: "24px", fontWeight: "700", color: "#ffffff", letterSpacing: "-0.5px" }}>
               One Rooted
             </span>
