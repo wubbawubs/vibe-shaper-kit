@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { OneRootedLogoWhite } from "./OneRootedLogoWhite";
+import logoWhite from "@/assets/onerooted-logo-white.png";
 
 interface InvitationEmailTemplateProps {
   recipientName: string;
@@ -26,7 +26,11 @@ export const InvitationEmailTemplate = ({
           textAlign: "center" as const
         }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "16px" }}>
-            <OneRootedLogoWhite size={48} />
+            <img 
+              src={logoWhite} 
+              alt="One Rooted" 
+              style={{ height: "40px", width: "auto", filter: "brightness(0) invert(1)" }} 
+            />
             <span style={{ fontSize: "24px", fontWeight: "700", color: "#ffffff", letterSpacing: "-0.5px" }}>
               One Rooted
             </span>
