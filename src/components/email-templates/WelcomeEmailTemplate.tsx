@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2, Users, BarChart3, Zap } from "lucide-react";
+import logoImage from "@/assets/onerooted-logo.png";
 
 interface WelcomeEmailTemplateProps {
   userName: string;
@@ -21,13 +22,11 @@ export const WelcomeEmailTemplate = ({
           textAlign: "center" as const
         }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "16px" }}>
-            <svg width="40" height="40" viewBox="0 0 100 100" fill="none">
-              <path d="M50 15 L50 50 M35 25 Q50 15 65 25 M50 50 L30 80 M50 50 L40 75 M50 50 L60 75 M50 50 L70 80" stroke="#ffffff" strokeWidth="4" strokeLinecap="round" />
-              <path d="M40 20 Q50 5 60 20" fill="none" stroke="#ffffff" strokeWidth="3" />
-              <ellipse cx="35" cy="22" rx="8" ry="12" fill="#ffffff" transform="rotate(-30 35 22)" />
-              <ellipse cx="50" cy="15" rx="6" ry="10" fill="#ffffff" />
-              <ellipse cx="65" cy="22" rx="8" ry="12" fill="#ffffff" transform="rotate(30 65 22)" />
-            </svg>
+            <img 
+              src={logoImage} 
+              alt="One Rooted" 
+              style={{ height: "48px", width: "auto", filter: "brightness(0) invert(1)" }} 
+            />
             <span style={{ fontSize: "24px", fontWeight: "700", color: "#ffffff", letterSpacing: "-0.5px" }}>
               One Rooted
             </span>
