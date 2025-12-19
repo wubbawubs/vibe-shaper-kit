@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Users, BarChart3, Zap } from "lucide-react";
 import logoWhite from "@/assets/onerooted-logo-white.png";
 
 interface WelcomeEmailTemplateProps {
@@ -72,38 +72,101 @@ export const WelcomeEmailTemplate = ({
             }
           </p>
 
-          {/* Get started with */}
+          {/* Get started with - card style with icons */}
           <div style={{ marginBottom: "40px" }}>
-            <p style={{ fontSize: "14px", fontWeight: "600", color: "#1a2e2a", marginBottom: "20px", textTransform: "uppercase", letterSpacing: "0.5px" }}>
-              {isNL ? "Waar je mee kunt starten" : "Get started with"}
+            <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", marginBottom: "16px" }}>
+              {isNL ? "Wat je kunt doen:" : "What you can do:"}
             </p>
             
-            <div style={{ display: "flex", flexDirection: "column" as const, gap: "16px" }}>
-              <div>
-                <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
-                  {isNL ? "Kandidaten beheren" : "Manage candidates"}
-                </p>
-                <p style={{ fontSize: "14px", color: "#5a6a66", margin: "0" }}>
-                  {isNL ? "Volg elke kandidaat door de volledige hiring flow." : "Track every candidate across the full hiring flow."}
-                </p>
+            <div style={{ display: "flex", flexDirection: "column" as const, gap: "12px" }}>
+              {/* Card 1 - Kandidaten beheren */}
+              <div style={{ 
+                display: "flex", 
+                alignItems: "flex-start", 
+                gap: "14px",
+                backgroundColor: "#f8f9fa",
+                padding: "18px",
+                borderRadius: "10px"
+              }}>
+                <div style={{ 
+                  backgroundColor: "#1a4a42", 
+                  borderRadius: "10px", 
+                  padding: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0
+                }}>
+                  <Users size={20} color="#ffffff" />
+                </div>
+                <div>
+                  <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
+                    {isNL ? "Kandidaten beheren" : "Manage candidates"}
+                  </p>
+                  <p style={{ fontSize: "14px", color: "#6a7a76", margin: "0", lineHeight: "1.5" }}>
+                    {isNL ? "Volg kandidaten door elke fase van je pipeline" : "Track every candidate across the full hiring flow"}
+                  </p>
+                </div>
               </div>
               
-              <div>
-                <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
-                  {isNL ? "Inzichten & rapportages" : "Insights & reporting"}
-                </p>
-                <p style={{ fontSize: "14px", color: "#5a6a66", margin: "0" }}>
-                  {isNL ? "Zie realtime wat werkt, waar vertraging ontstaat en waar je kunt bijsturen." : "See what's working, where things slow down, and where to act."}
-                </p>
+              {/* Card 2 - Inzichten & rapportages */}
+              <div style={{ 
+                display: "flex", 
+                alignItems: "flex-start", 
+                gap: "14px",
+                backgroundColor: "#f8f9fa",
+                padding: "18px",
+                borderRadius: "10px"
+              }}>
+                <div style={{ 
+                  backgroundColor: "#c9943e", 
+                  borderRadius: "10px", 
+                  padding: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0
+                }}>
+                  <BarChart3 size={20} color="#ffffff" />
+                </div>
+                <div>
+                  <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
+                    {isNL ? "Inzichten & rapportages" : "Insights & reporting"}
+                  </p>
+                  <p style={{ fontSize: "14px", color: "#6a7a76", margin: "0", lineHeight: "1.5" }}>
+                    {isNL ? "Krijg real-time data over je hiring performance" : "See what's working, where things slow down, and where to act"}
+                  </p>
+                </div>
               </div>
               
-              <div>
-                <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
-                  {isNL ? "Workflows automatiseren" : "Automated workflows"}
-                </p>
-                <p style={{ fontSize: "14px", color: "#5a6a66", margin: "0" }}>
-                  {isNL ? "Minder handmatig werk. Meer focus op beslissingen." : "Reduce manual work and focus on decisions that matter."}
-                </p>
+              {/* Card 3 - Automatiseer workflows */}
+              <div style={{ 
+                display: "flex", 
+                alignItems: "flex-start", 
+                gap: "14px",
+                backgroundColor: "#f8f9fa",
+                padding: "18px",
+                borderRadius: "10px"
+              }}>
+                <div style={{ 
+                  backgroundColor: "#2d6358", 
+                  borderRadius: "10px", 
+                  padding: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0
+                }}>
+                  <Zap size={20} color="#ffffff" />
+                </div>
+                <div>
+                  <p style={{ fontSize: "15px", fontWeight: "600", color: "#1a2e2a", margin: "0 0 4px 0" }}>
+                    {isNL ? "Automatiseer workflows" : "Automated workflows"}
+                  </p>
+                  <p style={{ fontSize: "14px", color: "#6a7a76", margin: "0", lineHeight: "1.5" }}>
+                    {isNL ? "Bespaar tijd met slimme automatiseringen" : "Reduce manual work and focus on decisions that matter"}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
