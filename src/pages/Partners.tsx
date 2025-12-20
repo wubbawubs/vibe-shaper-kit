@@ -3,7 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Building2, Handshake, ArrowRight, Check, Zap, Target, BarChart3, Eye } from "lucide-react";
+import { Building2, Handshake, ArrowRight, Check, Zap, Target, BarChart3, Eye, ChevronDown } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { SEO } from "@/components/SEO";
 
 const partnerBenefits = [
@@ -333,6 +339,89 @@ const Partners = () => {
               </div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <motion.div 
+              className="text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">FAQ</p>
+              <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+                Common questions from partners
+              </h2>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <Accordion type="single" collapsible className="w-full space-y-3">
+                <AccordionItem value="item-1" className="border border-border/50 rounded-xl px-6 bg-background">
+                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
+                    Do I need to pay for OneRooted as a partner?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5">
+                    No. Partners don't pay for OneRooted. When a client invites you to collaborate, you get full access to your dedicated pipeline at no cost. The client handles the subscription.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2" className="border border-border/50 rounded-xl px-6 bg-background">
+                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
+                    Can I work with multiple clients in OneRooted?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5">
+                    Yes. Each client has their own workspace, and you'll have a separate pipeline per client. Everything stays organized and confidential between clients.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3" className="border border-border/50 rounded-xl px-6 bg-background">
+                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
+                    What data can the client see about my work?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5">
+                    Clients see the candidates you submit, their status, and performance metrics like time-to-hire and conversion rates. They don't see your internal notes or communication with other clients.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="border border-border/50 rounded-xl px-6 bg-background">
+                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
+                    How do I get started as a partner?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5">
+                    Your client sends you an invite link. You create an account (takes 30 seconds), and you're immediately connected to their pipeline. No onboarding calls, no setup meetings.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5" className="border border-border/50 rounded-xl px-6 bg-background">
+                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
+                    Is OneRooted trying to replace recruitment agencies?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5">
+                    No. We're infrastructure, not competition. OneRooted makes the collaboration between you and your clients smoother. Better tools mean better placements, stronger relationships, and less time wasted on admin.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-6" className="border border-border/50 rounded-xl px-6 bg-background">
+                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
+                    Can I still use my own ATS alongside OneRooted?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5">
+                    Yes. Many partners use their own systems internally and submit candidates to OneRooted for client collaboration. Think of it as the shared workspace where you and your client meet.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </motion.div>
+          </div>
         </div>
       </section>
 
