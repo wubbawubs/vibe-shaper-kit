@@ -6,6 +6,7 @@ import { WhoItsForSection } from "@/components/marketing/home/WhoItsForSection";
 import { ComparisonSection } from "@/components/marketing/home/ComparisonSection";
 import { PricingPreviewSection } from "@/components/marketing/home/PricingPreviewSection";
 import { SocialProofSection } from "@/components/marketing/home/SocialProofSection";
+import { FAQSection } from "@/components/marketing/home/FAQSection";
 import { FinalCTASection } from "@/components/marketing/home/FinalCTASection";
 import { SEO } from "@/components/SEO";
 
@@ -20,6 +21,7 @@ const Home = () => {
       <ComparisonSection />
       <PricingPreviewSection />
       <SocialProofSection />
+      <FAQSection />
       <FinalCTASection />
     </MarketingLayout>
   );
