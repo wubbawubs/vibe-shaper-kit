@@ -40,8 +40,8 @@ export function WhatIsSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <p className="text-sm uppercase tracking-widest text-accent mb-4">The Hiring OS</p>
-          <h2 className="text-4xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight">
+          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">The Hiring OS</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold max-w-3xl mx-auto leading-tight">
             One system that connects every hiring decision
           </h2>
         </motion.div>
