@@ -9,8 +9,8 @@ const audiences = [
     title: "Leadership",
     subtitle: "Founders & Executives",
     points: [
-      "Full visibility without getting involved in every hire",
-      "Confident hiring decisions, backed by real data",
+      "Full visibility without micromanagement",
+      "Hiring decisions grounded in real, shared data",
     ],
   },
   {
@@ -19,7 +19,7 @@ const audiences = [
     subtitle: "Recruiters & Hiring Managers",
     points: [
       "One shared workflow from intake to hire",
-      "Less admin work, more focus on hiring quality",
+      "Less admin. More focus on hiring decisions.",
     ],
   },
   {
@@ -28,7 +28,7 @@ const audiences = [
     subtitle: "Agencies & RPO",
     points: [
       "A clear, shared hiring process per client",
-      "Transparency without endless back-and-forth",
+      "Full transparency without endless back-and-forth",
     ],
   },
 ];
@@ -51,7 +51,7 @@ export function WhoItsForSection() {
             Hiring breaks without a shared system.
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            OneRooted aligns leadership, talent teams and partners in one operational truth.
+            OneRooted replaces fragmented tools with a single operational truth for everyone involved.
           </p>
         </motion.div>
 
@@ -97,7 +97,7 @@ export function WhoItsForSection() {
         >
           <Button asChild variant="outline" size="lg" className="h-12 px-6 border-border/50 hover:border-accent/50 group">
             <Link to="/product" className="flex items-center gap-2">
-              See how this works in practice
+              See the system in action
               <ArrowRight className="h-4 w-4 text-accent group-hover:translate-x-0.5 transition-transform" />
             </Link>
           </Button>
