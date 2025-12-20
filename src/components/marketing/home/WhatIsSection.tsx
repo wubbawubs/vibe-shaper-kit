@@ -31,14 +31,14 @@ const pillars = [
 
 export function WhatIsSection() {
   return (
-    <section className="py-28 md:py-40 relative">
+    <section className="py-16 md:py-24 relative">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <p className="text-sm uppercase tracking-widest text-accent mb-4">The Hiring OS</p>
           <h2 className="text-4xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight">

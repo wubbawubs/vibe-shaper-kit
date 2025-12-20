@@ -35,7 +35,7 @@ const audiences = [
 
 export function WhoItsForSection() {
   return (
-    <section className="py-28 md:py-40 bg-muted/30 relative">
+    <section className="py-16 md:py-24 bg-muted/30 relative">
       {/* Decorative gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-accent/5 to-transparent rounded-full blur-3xl" />
 
@@ -45,7 +45,7 @@ export function WhoItsForSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-semibold mb-4">
             Hiring breaks without a shared system.

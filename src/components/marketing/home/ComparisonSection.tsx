@@ -11,7 +11,7 @@ const comparisons = [
 
 export function ComparisonSection() {
   return (
-    <section className="py-28 md:py-40 relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
 
@@ -21,7 +21,7 @@ export function ComparisonSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <p className="text-sm uppercase tracking-widest text-accent mb-4">The difference</p>
           <h2 className="text-4xl md:text-5xl font-semibold">

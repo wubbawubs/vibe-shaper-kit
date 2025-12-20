@@ -16,7 +16,7 @@ const testimonials = [
 
 export function SocialProofSection() {
   return (
-    <section className="py-28 md:py-40 relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Subtle background */}
       <div className="absolute inset-0 bg-gradient-to-b from-muted/30 via-background to-background" />
 
