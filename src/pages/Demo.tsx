@@ -36,7 +36,7 @@ const Demo = () => {
         url="https://onerooted.com/demo"
       />
       {/* Hero */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-16 md:py-24 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
@@ -55,11 +55,11 @@ const Demo = () => {
             >
               Get started
             </motion.p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
               Request a{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">demo</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               See OneRooted in action. No sales theatrics. Just clarity.
             </p>
             
@@ -79,7 +79,7 @@ const Demo = () => {
                   key={index}
                   className="flex items-center gap-2 text-sm text-muted-foreground"
                 >
-                  <item.icon className="h-4 w-4 text-success" />
+                  <item.icon className="h-4 w-4 text-primary" />
                   <span>{item.text}</span>
                 </div>
               ))}
@@ -93,13 +93,9 @@ const Demo = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Card className="card-refined relative overflow-hidden">
-                {/* Shimmer effect */}
-                <div className="absolute inset-0 shimmer opacity-20" />
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-                
+              <Card className="relative overflow-hidden border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
                 <CardHeader className="relative">
-                  <CardTitle className="text-xl">Tell us about your hiring</CardTitle>
+                  <CardTitle className="text-xl font-semibold">Tell us about your hiring</CardTitle>
                 </CardHeader>
                 <CardContent className="relative">
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -181,14 +177,15 @@ const Demo = () => {
                     >
                       <Button 
                         type="submit" 
-                        className="w-full btn-accent"
+                        size="lg"
+                        className="w-full h-14 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
                           "Sending..."
                         ) : (
                           <>
-                            <Send className="h-4 w-4 mr-2" />
+                            <Send className="h-5 w-5 mr-2" />
                             Request demo
                           </>
                         )}
@@ -207,7 +204,7 @@ const Demo = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <div>
-                <h2 className="text-2xl font-medium mb-6">What to expect</h2>
+                <h2 className="text-2xl font-semibold mb-6">What to expect</h2>
                 
                 <motion.div 
                   className="space-y-6"
@@ -256,7 +253,7 @@ const Demo = () => {
                         <item.icon className="h-5 w-5 text-primary" />
                       </motion.div>
                       <div>
-                        <h3 className="font-medium mb-1">{item.title}</h3>
+                        <h3 className="font-semibold mb-1">{item.title}</h3>
                         <p className="text-sm text-muted-foreground">{item.desc}</p>
                       </div>
                     </motion.div>
@@ -269,29 +266,30 @@ const Demo = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
               >
-                <Card className="bg-muted/50 border-border/50 relative overflow-hidden">
-                  <div className="absolute top-4 left-4 text-4xl text-primary/10">"</div>
-                  <CardContent className="pt-8 pb-6 px-8">
-                    <p className="text-muted-foreground italic relative z-10">
-                      "The demo was refreshingly direct. They understood our challenges 
-                      immediately and showed exactly how OneRooted would help."
+                <Card className="bg-muted/30 border-border/50 relative overflow-hidden">
+                  <div className="absolute top-4 left-4 text-5xl font-serif text-primary/20">"</div>
+                  <CardContent className="pt-10 pb-6 px-8">
+                    <p className="text-muted-foreground italic relative z-10 text-lg leading-relaxed">
+                      The demo was refreshingly direct. They understood our challenges 
+                      immediately and showed exactly how OneRooted would help.
                     </p>
-                    <p className="text-sm font-medium mt-4">— Head of Talent, Dutch Scale-up</p>
+                    <p className="text-sm font-semibold mt-4">— Head of Talent, Dutch Scale-up</p>
                   </CardContent>
                 </Card>
               </motion.div>
 
-              {/* Response time badge */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
-                className="flex items-center gap-3 p-4 rounded-xl bg-success/10 border border-success/20"
+                className="flex items-center gap-4 p-5 rounded-xl bg-primary/5 border border-primary/10"
               >
-                <Clock className="h-5 w-5 text-success" />
+                <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                  <Clock className="h-5 w-5 text-primary" />
+                </div>
                 <div>
-                  <p className="text-sm font-medium">Quick response</p>
-                  <p className="text-xs text-muted-foreground">We typically reply within 24 hours</p>
+                  <p className="text-sm font-semibold">Quick response</p>
+                  <p className="text-sm text-muted-foreground">We typically reply within 24 hours</p>
                 </div>
               </motion.div>
             </motion.div>
