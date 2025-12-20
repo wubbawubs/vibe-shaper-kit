@@ -104,7 +104,7 @@ const Pricing = () => {
         url="https://onerooted.com/pricing"
       />
       {/* Hero */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-16 md:py-24 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
@@ -153,7 +153,7 @@ const Pricing = () => {
       </section>
 
       {/* Pricing Cards */}
-      <section className="py-10 md:py-20">
+      <section className="py-8 md:py-16">
         <div className="container">
           <motion.div 
             className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"
@@ -271,7 +271,7 @@ const Pricing = () => {
       </section>
 
       {/* What's included / not included */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <motion.div 
             className="max-w-3xl mx-auto"
@@ -371,7 +371,7 @@ const Pricing = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <motion.div 
             className="max-w-3xl mx-auto"
@@ -415,7 +415,7 @@ const Pricing = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-muted/30 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-muted/30 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         

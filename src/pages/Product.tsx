@@ -20,7 +20,7 @@ const Product = () => {
         url="https://onerooted.com/product"
       />
       {/* Hero */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -53,7 +53,7 @@ const Product = () => {
       </section>
 
       {/* Ranking System */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <div className="max-w-2xl mb-12">
             <motion.div
@@ -85,7 +85,7 @@ const Product = () => {
       </section>
 
       {/* Process Flow */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-2xl mb-12">
             <motion.div
@@ -117,7 +117,7 @@ const Product = () => {
       </section>
 
       {/* Intelligence Layer */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <div className="max-w-2xl mb-12">
             <motion.div
@@ -149,7 +149,7 @@ const Product = () => {
       </section>
 
       {/* Collaboration */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-2xl mb-12">
             <motion.div
@@ -181,7 +181,7 @@ const Product = () => {
       </section>
 
       {/* ATS Comparison */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <motion.div
@@ -285,7 +285,7 @@ const Product = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-16 md:py-24 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
