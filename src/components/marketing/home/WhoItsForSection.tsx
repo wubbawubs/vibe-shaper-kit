@@ -47,8 +47,9 @@ export function WhoItsForSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-semibold mb-4">
-            Hiring breaks without a shared system.
+          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">Who it's for</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
+            Hiring breaks without a shared system
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             OneRooted replaces fragmented tools with a single operational truth for everyone involved.
@@ -68,8 +69,8 @@ export function WhoItsForSection() {
               <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               <div className="relative p-8 md:p-10">
-                <div className="w-16 h-16 rounded-2xl bg-background border border-border/50 flex items-center justify-center mb-6 shadow-sm">
-                  <audience.icon className="h-8 w-8 text-accent" />
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
+                  <audience.icon className="h-7 w-7 text-primary" />
                 </div>
 
                 <h3 className="text-2xl font-semibold mb-1">{audience.title}</h3>
@@ -95,10 +96,10 @@ export function WhoItsForSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-center"
         >
-          <Button asChild variant="outline" size="lg" className="h-12 px-6 border-border/50 hover:border-accent/50 group">
+          <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
             <Link to="/product" className="flex items-center gap-2">
               See the system in action
-              <ArrowRight className="h-4 w-4 text-accent group-hover:translate-x-0.5 transition-transform" />
+              <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>
         </motion.div>

@@ -23,8 +23,8 @@ export function ComparisonSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <p className="text-sm uppercase tracking-widest text-accent mb-4">The difference</p>
-          <h2 className="text-4xl md:text-5xl font-semibold">
+          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">The difference</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
             Not another ATS
           </h2>
         </motion.div>

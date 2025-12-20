@@ -28,7 +28,7 @@ export function SocialProofSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-accent mb-4">Trusted by</p>
+          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">Trusted by</p>
           <h2 className="text-3xl md:text-4xl font-semibold">
             Forward-thinking teams at scale
           </h2>
@@ -44,7 +44,7 @@ export function SocialProofSection() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="relative p-8 md:p-10 bg-card rounded-2xl border border-border/50"
             >
-              <Quote className="h-8 w-8 text-accent/30 mb-4" />
+              <Quote className="h-8 w-8 text-primary/30 mb-4" />
               <blockquote className="text-lg md:text-xl mb-6 leading-relaxed">
                 "{testimonial.quote}"
               </blockquote>
@@ -70,7 +70,7 @@ export function SocialProofSection() {
             "Designed to scale"
           ].map((item, i) => (
             <span key={i} className="text-sm text-muted-foreground flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
               {item}
             </span>
           ))}
