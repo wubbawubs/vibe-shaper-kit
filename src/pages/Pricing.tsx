@@ -69,23 +69,35 @@ const plans = [
 const faqs = [
   {
     question: "Can I switch plans later?",
-    answer: "Absolutely. You can upgrade or downgrade your plan at any time. When upgrading, you'll get immediate access to new features. When downgrading, the change takes effect at the end of your billing cycle.",
-  },
-  {
-    question: "What happens if I exceed my user limit?",
-    answer: "We'll notify you when you're approaching your limit. You can easily upgrade to accommodate more users, or we can discuss a custom arrangement for your specific needs.",
+    answer: "Yes. Upgrade anytime and get immediate access to new features. Downgrade at the end of your billing cycle. No penalties.",
   },
   {
     question: "Is there a minimum contract period?",
-    answer: "No. All plans are month-to-month with no long-term commitment required. We believe in earning your business every month.",
+    answer: "No. All plans are month-to-month with no long-term commitment. We believe in earning your business every month.",
   },
   {
     question: "Do you offer discounts for annual billing?",
-    answer: "Yes, we offer a 15% discount when you choose annual billing. Contact our sales team to learn more.",
+    answer: "Yes — 15% off when you pay annually. Contact our team to set this up.",
   },
   {
-    question: "What kind of support is included?",
-    answer: "All plans include email support with 24-hour response times. Growth and Scale plans include priority support with faster response times and dedicated channels.",
+    question: "What payment methods do you accept?",
+    answer: "We accept all major credit cards, iDEAL, and bank transfers for annual plans. Invoices are sent automatically each billing cycle.",
+  },
+  {
+    question: "What happens after my trial or demo?",
+    answer: "After your demo, you choose a plan that fits your needs. No automatic charges, no hidden conversions. You decide when to start.",
+  },
+  {
+    question: "Can I add more users to my plan?",
+    answer: "All plans include unlimited users. You only pay based on the features and support level you need — not per seat.",
+  },
+  {
+    question: "Do you offer custom enterprise pricing?",
+    answer: "Yes. For organizations with specific needs, we offer custom pricing and dedicated support. Contact us to discuss.",
+  },
+  {
+    question: "What's your refund policy?",
+    answer: "30-day money-back guarantee on all plans. If you're not satisfied within the first 30 days, we'll refund you in full — no questions asked.",
   },
 ];
 
@@ -373,44 +385,44 @@ const Pricing = () => {
       {/* FAQ Section */}
       <section className="py-16 md:py-24">
         <div className="container">
-          <motion.div 
-            className="max-w-3xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="text-center mb-12">
+          <div className="max-w-3xl mx-auto">
+            <motion.div 
+              className="text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
               <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">FAQ</p>
-              <h2 className="text-3xl md:text-4xl font-medium">
-                Common questions
+              <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+                Common pricing questions
               </h2>
-            </div>
+            </motion.div>
 
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 * index }}
-                >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <Accordion type="single" collapsible className="w-full space-y-3">
+                {faqs.map((faq, index) => (
                   <AccordionItem 
+                    key={index}
                     value={`faq-${index}`} 
-                    className="border border-border/50 rounded-xl px-6 data-[state=open]:bg-muted/30 transition-colors"
+                    className="border border-border/50 rounded-xl px-6 bg-background"
                   >
-                    <AccordionTrigger className="text-left hover:no-underline py-5">
+                    <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground pb-5">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
+                ))}
+              </Accordion>
+            </motion.div>
+          </div>
         </div>
       </section>
 
