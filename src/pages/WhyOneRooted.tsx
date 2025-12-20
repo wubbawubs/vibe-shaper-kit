@@ -29,7 +29,7 @@ const WhyOneRooted = () => {
         url="https://onerooted.com/why-onerooted"
       />
       {/* Hero */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-16 md:py-24 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
@@ -60,7 +60,7 @@ const WhyOneRooted = () => {
       </section>
 
       {/* Why ATS fail */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
@@ -122,7 +122,7 @@ const WhyOneRooted = () => {
       </section>
 
       {/* Why Hiring OS is needed */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
@@ -255,7 +255,7 @@ const WhyOneRooted = () => {
       </section>
 
       {/* How OneRooted was born */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
@@ -330,7 +330,7 @@ const WhyOneRooted = () => {
       </section>
 
       {/* Where we're going */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
@@ -394,7 +394,7 @@ const WhyOneRooted = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-muted/30 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-muted/30 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
