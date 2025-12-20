@@ -3,28 +3,44 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Eye, Building2, Handshake, ArrowRight, Users, Check, MessageSquare } from "lucide-react";
+import { Building2, Handshake, ArrowRight, Check, Zap, Target, BarChart3, Eye } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
-const partnerFeatures = [
-  "Dedicated pipelines per client",
-  "Real-time visibility on candidate progress",
-  "Clear feedback on submissions",
-  "Branded experience that feels professional",
+const partnerBenefits = [
+  "Your own pipeline per client — full ownership",
+  "Real-time status updates — no more chasing",
+  "Instant feedback on every submission",
+  "Professional interface your clients trust",
 ];
 
-const clientFeatures = [
-  "All candidates in one unified view",
-  "Clear attribution of candidate sources",
-  "Performance insights per partner",
-  "No more scattered spreadsheets",
+const clientBenefits = [
+  "All candidates in one view — zero chaos",
+  "Clear source attribution per partner",
+  "Performance data that drives decisions",
+  "One system instead of scattered spreadsheets",
 ];
 
 const collaborationSteps = [
-  { step: "1", title: "Client invites partner", desc: "Simple access granting. No complex onboarding." },
-  { step: "2", title: "Partner submits candidates", desc: "Direct into the pipeline. Instant visibility." },
-  { step: "3", title: "Real-time updates", desc: "Both sides see progress. No chasing required." },
-  { step: "4", title: "Outcome tracking", desc: "Clear metrics on what's working. Data-driven relationships." },
+  { 
+    icon: Handshake, 
+    title: "Client invites partner", 
+    desc: "One click. No onboarding friction." 
+  },
+  { 
+    icon: Zap, 
+    title: "Partner submits candidates", 
+    desc: "Direct into the pipeline. Instantly visible." 
+  },
+  { 
+    icon: Eye, 
+    title: "Both sides see progress", 
+    desc: "Real-time updates. No status meetings." 
+  },
+  { 
+    icon: BarChart3, 
+    title: "Data drives the relationship", 
+    desc: "Clear metrics on what works. No politics." 
+  },
 ];
 
 const Partners = () => {
@@ -32,12 +48,12 @@ const Partners = () => {
     <MarketingLayout>
       <SEO 
         title="For Recruitment Partners"
-        description="OneRooted makes recruitment partners stronger, not obsolete. Better tools for better collaboration and outcomes."
+        description="OneRooted makes recruitment partners stronger, not obsolete. Better infrastructure for better outcomes."
         url="https://onerooted.com/partners"
       />
+      
       {/* Hero */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
-        {/* Background glow */}
+      <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
         <div className="container relative">
@@ -55,22 +71,56 @@ const Partners = () => {
             >
               For recruitment partners
             </motion.p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
               We make you{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">stronger</span>, not obsolete
             </h1>
-            <p className="text-xl text-muted-foreground">
-              OneRooted is infrastructure, not competition. Better tools mean better outcomes for everyone.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+              OneRooted is infrastructure. Not competition. When your clients use it, you get better tools, clearer visibility, and stronger relationships.
             </p>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            >
+              <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
+                <Link to="/demo">
+                  Partner with us
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="ghost" size="lg" className="h-14 px-8 text-base text-muted-foreground hover:text-foreground">
+                <Link to="/product">
+                  See how it works
+                </Link>
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* What partners see vs what clients see */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      {/* Two perspectives */}
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <motion.div 
-            className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+              One system. Two perspectives.
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Partners and clients work in the same system — with views designed for each role.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -78,7 +128,7 @@ const Partners = () => {
               hidden: {},
               visible: {
                 transition: {
-                  staggerChildren: 0.2,
+                  staggerChildren: 0.15,
                 },
               },
             }}
@@ -86,45 +136,36 @@ const Partners = () => {
             {/* Partner Card */}
             <motion.div
               variants={{
-                hidden: { opacity: 0, x: -30 },
-                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5 }}
             >
-              <Card className="card-refined h-full group hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <Card className="h-full border-primary/20 bg-gradient-to-br from-primary/5 to-transparent hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                 <CardContent className="pt-8 pb-8">
-                  <motion.div 
-                    className="w-14 h-14 mb-6 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <Handshake className="h-7 w-7 text-primary" />
-                  </motion.div>
-                  <h3 className="text-xl font-medium mb-6">What partners see</h3>
-                  <ul className="space-y-4">
-                    {partnerFeatures.map((feature, index) => (
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <Handshake className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold">Partner view</h3>
+                      <p className="text-sm text-muted-foreground">What you work with</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-3">
+                    {partnerBenefits.map((benefit, index) => (
                       <motion.li 
                         key={index} 
-                        className="flex items-start gap-3 text-muted-foreground"
+                        className="flex items-start gap-3"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 * index }}
                       >
-                        <motion.div
-                          initial={{ scale: 0 }}
-                          whileInView={{ scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ 
-                            delay: 0.2 + 0.1 * index,
-                            type: "spring",
-                            stiffness: 400,
-                            damping: 10
-                          }}
-                          className="shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5"
-                        >
+                        <div className="shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
                           <Check className="h-3 w-3 text-primary" />
-                        </motion.div>
-                        <span>{feature}</span>
+                        </div>
+                        <span className="text-foreground">{benefit}</span>
                       </motion.li>
                     ))}
                   </ul>
@@ -135,49 +176,36 @@ const Partners = () => {
             {/* Client Card */}
             <motion.div
               variants={{
-                hidden: { opacity: 0, x: 30 },
-                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5 }}
             >
-              <Card className="card-refined h-full group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
-                {/* Shimmer effect for featured card */}
-                <div className="absolute inset-0 shimmer opacity-30" />
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent" />
-                
-                <CardContent className="relative pt-8 pb-8">
-                  <motion.div 
-                    className="w-14 h-14 mb-6 bg-accent/20 rounded-xl flex items-center justify-center group-hover:bg-accent/30 transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <Building2 className="h-7 w-7 text-accent-foreground" />
-                  </motion.div>
-                  <h3 className="text-xl font-medium mb-6">What clients see</h3>
-                  <ul className="space-y-4">
-                    {clientFeatures.map((feature, index) => (
+              <Card className="h-full border-accent/20 bg-gradient-to-br from-accent/5 to-transparent hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <CardContent className="pt-8 pb-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center">
+                      <Building2 className="h-6 w-6 text-accent-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold">Client view</h3>
+                      <p className="text-sm text-muted-foreground">What they see</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-3">
+                    {clientBenefits.map((benefit, index) => (
                       <motion.li 
                         key={index} 
-                        className="flex items-start gap-3 text-muted-foreground"
+                        className="flex items-start gap-3"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 * index }}
                       >
-                        <motion.div
-                          initial={{ scale: 0 }}
-                          whileInView={{ scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ 
-                            delay: 0.2 + 0.1 * index,
-                            type: "spring",
-                            stiffness: 400,
-                            damping: 10
-                          }}
-                          className="shrink-0 w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center mt-0.5"
-                        >
+                        <div className="shrink-0 w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center mt-0.5">
                           <Check className="h-3 w-3 text-accent-foreground" />
-                        </motion.div>
-                        <span>{feature}</span>
+                        </div>
+                        <span className="text-foreground">{benefit}</span>
                       </motion.li>
                     ))}
                   </ul>
@@ -189,7 +217,7 @@ const Partners = () => {
       </section>
 
       {/* How collaboration works */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
@@ -200,78 +228,84 @@ const Partners = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">How it works</p>
-              <h2 className="text-3xl md:text-4xl font-medium">
-                Seamless collaboration flow
+              <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+                From invite to insight in four steps
               </h2>
+              <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+                No complex onboarding. No learning curve. Just collaboration that works.
+              </p>
             </motion.div>
 
-            <div className="relative">
-              {/* Connection line */}
-              <div className="absolute left-5 top-10 bottom-10 w-0.5 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/20 hidden md:block" />
-              
-              <motion.div 
-                className="space-y-8"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={{
-                  hidden: {},
-                  visible: {
-                    transition: {
-                      staggerChildren: 0.15,
-                    },
+            <motion.div 
+              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    staggerChildren: 0.1,
                   },
-                }}
-              >
-                {collaborationSteps.map((item, index) => (
+                },
+              }}
+            >
+              {collaborationSteps.map((item, index) => (
+                <motion.div 
+                  key={index} 
+                  className="relative text-center p-6"
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {/* Step number */}
+                  <div className="absolute top-4 left-4 text-6xl font-bold text-muted/30">
+                    {index + 1}
+                  </div>
+                  
                   <motion.div 
-                    key={index} 
-                    className="flex items-start gap-6"
-                    variants={{
-                      hidden: { opacity: 0, x: -20 },
-                      visible: { opacity: 1, x: 0 },
-                    }}
-                    transition={{ duration: 0.5 }}
+                    className="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/10 flex items-center justify-center relative z-10"
+                    whileHover={{ scale: 1.1 }}
                   >
-                    <motion.div 
-                      className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 relative z-10"
-                      whileHover={{ scale: 1.1, backgroundColor: "hsl(var(--primary) / 0.2)" }}
-                      whileInView={{ 
-                        boxShadow: ["0 0 0 0 hsl(var(--primary) / 0.2)", "0 0 0 10px hsl(var(--primary) / 0)", "0 0 0 0 hsl(var(--primary) / 0)"]
-                      }}
-                      viewport={{ once: true }}
-                      transition={{ 
-                        boxShadow: { delay: 0.3 + index * 0.15, duration: 0.6 }
-                      }}
-                    >
-                      <span className="text-sm font-medium text-primary">{item.step}</span>
-                    </motion.div>
-                    <div className="pt-1.5">
-                      <h3 className="font-medium mb-1">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.desc}</p>
-                    </div>
+                    <item.icon className="h-7 w-7 text-primary" />
                   </motion.div>
-                ))}
-              </motion.div>
-              
-              {/* Punchline */}
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                className="text-center mt-12 text-lg font-medium text-foreground"
-              >
+                  <h3 className="font-semibold mb-2 relative z-10">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground relative z-10">{item.desc}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+            
+            {/* Punchline */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-center mt-12 p-6 bg-muted/30 rounded-2xl"
+            >
+              <p className="text-lg font-semibold text-foreground">
                 No handovers. No blind spots. No politics.
-              </motion.p>
-            </div>
+              </p>
+              <p className="text-muted-foreground mt-1">
+                Just transparent collaboration that makes everyone better.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Partner Quote */}
-      <section className="py-20 md:py-28 bg-muted/30">
-        <div className="container">
+      {/* Infrastructure positioning */}
+      <section className="py-16 md:py-24 bg-foreground text-background relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }} />
+        </div>
+
+        <div className="container relative">
           <motion.div 
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -279,83 +313,57 @@ const Partners = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <MessageSquare className="h-12 w-12 mx-auto mb-6 text-primary/40" />
-            <blockquote className="text-2xl md:text-3xl font-medium mb-6 leading-relaxed">
-              "Finally, a system where we can work alongside our clients instead of fighting 
-              against their existing tools."
-            </blockquote>
-            <p className="text-muted-foreground">
-              — Managing Partner, Executive Search Firm
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Infrastructure not agency-tool */}
-      <section className="py-20 md:py-28">
-        <div className="container">
-          <motion.div 
-            className="max-w-2xl mx-auto text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <motion.div
-              className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-2xl flex items-center justify-center"
-              whileHover={{ scale: 1.05 }}
-            >
-              <Eye className="h-8 w-8 text-primary" />
-            </motion.div>
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              Infrastructure, not an agency tool
+            <div className="w-16 h-16 mx-auto mb-6 bg-background/10 rounded-2xl flex items-center justify-center">
+              <Target className="h-8 w-8 text-background" />
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 leading-tight">
+              Infrastructure, not competition
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              OneRooted isn't here to replace recruitment partners. We're here to make collaboration smoother, 
-              more transparent, and more productive for everyone involved.
+            <p className="text-lg md:text-xl text-background/60 mb-8 max-w-2xl mx-auto">
+              We're not building another agency tool. We're building the operating system that makes collaboration between clients and partners seamless.
             </p>
-            <p className="text-foreground font-medium">
-              Better infrastructure means better outcomes for partners and clients alike.
-            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center text-left max-w-xl mx-auto">
+              <div className="flex-1 p-4 border border-background/10 rounded-xl">
+                <p className="font-semibold mb-1">For partners</p>
+                <p className="text-sm text-background/50">Better tools mean better placements</p>
+              </div>
+              <div className="flex-1 p-4 border border-background/10 rounded-xl">
+                <p className="font-semibold mb-1">For clients</p>
+                <p className="text-sm text-background/50">Better visibility means better decisions</p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-muted/30 relative overflow-hidden">
-        {/* Background glow */}
+      <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
         <div className="container relative">
           <motion.div 
-            className="text-center"
+            className="text-center max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            {/* Trust badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-8">
-              <Users className="h-4 w-4" />
-              <span>50+ partner agencies connected</span>
-            </div>
-            
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              Interested in partnering?
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+              Ready to work smarter?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join the network of recruitment partners who are delivering better results through better infrastructure.
+            <p className="text-lg text-muted-foreground mb-8">
+              Join the partners who are already delivering better results through better infrastructure.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="btn-accent">
+              <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
                   Let's talk
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/product">See how it works</Link>
+              <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
+                <Link to="/product">Explore the product</Link>
               </Button>
             </div>
           </motion.div>
