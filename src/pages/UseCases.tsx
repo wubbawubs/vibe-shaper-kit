@@ -54,7 +54,7 @@ const UseCases = () => {
         url="https://onerooted.com/use-cases"
       />
       {/* Hero */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-16 md:py-24 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
@@ -73,11 +73,11 @@ const UseCases = () => {
             >
               Use cases
             </motion.p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
               Real scenarios where{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">OneRooted shines</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               See how teams like yours are transforming their hiring process.
             </p>
           </motion.div>
@@ -85,7 +85,7 @@ const UseCases = () => {
       </section>
 
       {/* Use Cases */}
-      <section className="py-10 md:py-20">
+      <section className="py-8 md:py-16">
         <div className="container">
           <motion.div 
             className="space-y-8 max-w-5xl mx-auto"
@@ -110,8 +110,8 @@ const UseCases = () => {
                 }}
                 transition={{ duration: 0.5 }}
               >
-                <Card className="card-refined overflow-hidden group hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <CardHeader className="bg-muted/50 pb-6">
+                <Card className="overflow-hidden group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border-border/50">
+                  <CardHeader className="bg-muted/30 pb-6">
                     <div className="flex items-center justify-between gap-4">
                       <div className="flex items-center gap-4">
                         <motion.div 
@@ -120,34 +120,34 @@ const UseCases = () => {
                         >
                           <useCase.icon className="h-6 w-6 text-primary" />
                         </motion.div>
-                        <CardTitle className="text-xl">{useCase.title}</CardTitle>
+                        <CardTitle className="text-xl font-semibold">{useCase.title}</CardTitle>
                       </div>
                       
                       {/* Stat badge */}
-                      <div className="hidden sm:flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full">
+                      <div className="hidden sm:flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full">
                         <Sparkles className="h-4 w-4" />
-                        <span className="text-sm font-medium">{useCase.stat} {useCase.statLabel}</span>
+                        <span className="text-sm font-semibold">{useCase.stat} {useCase.statLabel}</span>
                       </div>
                     </div>
                   </CardHeader>
                   <CardContent className="pt-6">
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
-                        <h4 className="text-sm font-medium text-muted-foreground mb-2">The problem</h4>
+                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">The problem</h4>
                         <p className="text-foreground">{useCase.problem}</p>
                       </div>
                       <div>
-                        <h4 className="text-sm font-medium text-muted-foreground mb-2">How OneRooted helps</h4>
+                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">How OneRooted helps</h4>
                         <p className="text-foreground">{useCase.solution}</p>
                       </div>
                     </div>
-                    <div className="mt-6 pt-6 border-t border-border">
-                      <h4 className="text-sm font-medium text-muted-foreground mb-3">Key outcomes</h4>
+                    <div className="mt-6 pt-6 border-t border-border/50">
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-3">Key outcomes</h4>
                       <div className="flex flex-wrap gap-3">
                         {useCase.outcomes.map((outcome, outcomeIndex) => (
                           <motion.span 
                             key={outcomeIndex} 
-                            className="inline-flex items-center gap-2 text-sm bg-success/10 text-success px-4 py-2 rounded-full"
+                            className="inline-flex items-center gap-2 text-sm bg-primary/10 text-primary px-4 py-2 rounded-full"
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
@@ -180,39 +180,32 @@ const UseCases = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-muted/30 relative overflow-hidden">
-        {/* Background glow */}
+      <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
         <div className="container relative">
           <motion.div 
-            className="text-center"
+            className="text-center max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            {/* Trust badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-8">
-              <Users className="h-4 w-4" />
-              <span>Built for real hiring challenges</span>
-            </div>
-            
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
               See how it works for your team
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-8">
               Every team is unique. Let's explore how OneRooted can transform your specific hiring challenges.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="btn-accent">
+              <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
                   Request a demo
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
                 <Link to="/product">See how it works</Link>
               </Button>
             </div>
