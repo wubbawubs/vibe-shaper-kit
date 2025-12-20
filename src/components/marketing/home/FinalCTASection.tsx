@@ -5,7 +5,7 @@ import { ArrowRight, Users } from "lucide-react";
 
 export function FinalCTASection() {
   return (
-    <section className="py-24 md:py-32 bg-muted/30 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-muted/30 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
