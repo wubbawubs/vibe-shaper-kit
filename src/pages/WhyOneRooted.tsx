@@ -41,18 +41,18 @@ const WhyOneRooted = () => {
             transition={{ duration: 0.6 }}
           >
             <motion.p 
-              className="text-sm font-medium text-muted-foreground mb-4 italic"
+              className="text-sm font-medium text-primary mb-4 tracking-wide uppercase"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              This page is for leaders who already tried every ATS.
+              Our story
             </motion.p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
               The story behind{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">building a Hiring OS</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Why we set out to fundamentally rethink how hiring software should work.
             </p>
           </motion.div>
@@ -71,14 +71,14 @@ const WhyOneRooted = () => {
               transition={{ duration: 0.6 }}
             >
               <motion.div 
-                className="w-14 h-14 bg-warning/20 rounded-xl flex items-center justify-center"
+                className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
               >
-                <AlertTriangle className="h-7 w-7 text-warning" />
+                <AlertTriangle className="h-7 w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-sm font-medium text-warning mb-1">The problem</p>
-                <h2 className="text-3xl md:text-4xl font-medium">Why traditional ATS systems fail</h2>
+                <p className="text-sm font-medium text-primary mb-1 tracking-wide uppercase">The problem</p>
+                <h2 className="text-3xl md:text-4xl font-semibold">Why traditional ATS systems fail</h2>
               </div>
             </motion.div>
 
@@ -105,12 +105,12 @@ const WhyOneRooted = () => {
                   }}
                   transition={{ duration: 0.5 }}
                 >
-                  <Card className="card-refined h-full group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border-warning/20 hover:border-warning/40">
+                  <Card className="h-full group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border-border/50 hover:border-primary/30">
                     <CardContent className="py-6 px-6">
-                      <div className="w-8 h-8 rounded-lg bg-warning/10 flex items-center justify-center mb-4 group-hover:bg-warning/20 transition-colors">
-                        <AlertTriangle className="h-4 w-4 text-warning" />
+                      <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                        <AlertTriangle className="h-5 w-5 text-primary" />
                       </div>
-                      <h3 className="font-medium mb-2">{item.title}</h3>
+                      <h3 className="font-semibold mb-2">{item.title}</h3>
                       <p className="text-sm text-muted-foreground">{item.desc}</p>
                     </CardContent>
                   </Card>
@@ -139,8 +139,8 @@ const WhyOneRooted = () => {
                 <Lightbulb className="h-7 w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-sm font-medium text-primary mb-1">The insight</p>
-                <h2 className="text-3xl md:text-4xl font-medium">Why a Hiring OS is needed</h2>
+                <p className="text-sm font-medium text-primary mb-1 tracking-wide uppercase">The insight</p>
+                <h2 className="text-3xl md:text-4xl font-semibold">Why a Hiring OS is needed</h2>
               </div>
             </motion.div>
 
@@ -182,8 +182,8 @@ const WhyOneRooted = () => {
                   </ul>
                 </div>
 
-                <p className="text-foreground font-medium pt-2">
-                  That's what a Hiring OS does. Not a feature upgrade—a fundamental rethink.
+                <p className="text-foreground font-semibold pt-2">
+                  That's what a Hiring OS does. Not a feature upgrade — a fundamental rethink.
                 </p>
               </div>
               
@@ -266,14 +266,14 @@ const WhyOneRooted = () => {
               transition={{ duration: 0.6 }}
             >
               <motion.div 
-                className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center"
+                className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
               >
-                <Target className="h-7 w-7 text-accent-foreground" />
+                <Target className="h-7 w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-sm font-medium text-accent-foreground mb-1">The origin</p>
-                <h2 className="text-3xl md:text-4xl font-medium">How OneRooted was born</h2>
+                <p className="text-sm font-medium text-primary mb-1 tracking-wide uppercase">The origin</p>
+                <h2 className="text-3xl md:text-4xl font-semibold">How OneRooted was born</h2>
               </div>
             </motion.div>
 
@@ -306,7 +306,7 @@ const WhyOneRooted = () => {
                   className="relative"
                 >
                   <div className="text-6xl font-bold text-primary/10 mb-4">{item.step}</div>
-                  <h3 className="font-medium mb-2">{item.title}</h3>
+                  <h3 className="font-semibold mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.text}</p>
                 </motion.div>
               ))}
@@ -347,8 +347,8 @@ const WhyOneRooted = () => {
                 <Rocket className="h-7 w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-sm font-medium text-primary mb-1">The future</p>
-                <h2 className="text-3xl md:text-4xl font-medium">Where we're going</h2>
+                <p className="text-sm font-medium text-primary mb-1 tracking-wide uppercase">The future</p>
+                <h2 className="text-3xl md:text-4xl font-semibold">Where we're going</h2>
               </div>
             </motion.div>
 
@@ -383,7 +383,7 @@ const WhyOneRooted = () => {
                     <ArrowRight className="h-5 w-5 text-primary mt-0.5" />
                   </motion.div>
                   <div>
-                    <h3 className="font-medium mb-1">{item.title}</h3>
+                    <h3 className="font-semibold mb-1">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.desc}</p>
                   </div>
                 </motion.div>
@@ -394,39 +394,32 @@ const WhyOneRooted = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24 bg-muted/30 relative overflow-hidden">
-        {/* Background glow */}
+      <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
         <div className="container relative">
           <motion.div 
-            className="text-center"
+            className="text-center max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            {/* Trust badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-8">
-              <Users className="h-4 w-4" />
-              <span>Born from 25+ years of recruitment experience</span>
-            </div>
-            
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
               Ready to rethink how you hire?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-8">
               See how OneRooted can transform your hiring process from fragmented to unified.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="btn-accent">
+              <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
                   Request a demo
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
                 <Link to="/product">See how it works</Link>
               </Button>
             </div>
