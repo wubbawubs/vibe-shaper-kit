@@ -21,6 +21,16 @@ const allActivities = [
 export const CollaborationAnimation = () => {
   const [visibleActivities, setVisibleActivities] = useState<number[]>([]);
   const [typingUser, setTypingUser] = useState<number | null>(null);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+
+  // Check for reduced motion preference
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mediaQuery.matches);
+    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
 
   // Initial activity reveal
   useEffect(() => {
@@ -28,12 +38,14 @@ export const CollaborationAnimation = () => {
     for (let i = 0; i < initialCount; i++) {
       setTimeout(() => {
         setVisibleActivities(prev => [...prev, i]);
-      }, 500 + i * 400);
+      }, prefersReducedMotion ? 0 : 500 + i * 400);
     }
-  }, []);
+  }, [prefersReducedMotion]);
 
   // Continuous activity cycling
   useEffect(() => {
+    if (prefersReducedMotion) return;
+    
     const cycleInterval = setInterval(() => {
       setVisibleActivities(prev => {
         const newIndex = (prev[prev.length - 1] + 1) % allActivities.length;
@@ -43,28 +55,30 @@ export const CollaborationAnimation = () => {
     }, 3000);
 
     return () => clearInterval(cycleInterval);
-  }, []);
+  }, [prefersReducedMotion]);
 
-  // Typing indicator
+  // Typing indicator - smoother animation
   useEffect(() => {
+    if (prefersReducedMotion) return;
+    
     const typingInterval = setInterval(() => {
       const shouldShow = Math.random() > 0.5;
       if (shouldShow) {
         const randomUser = Math.floor(Math.random() * users.length);
         setTypingUser(randomUser);
-        setTimeout(() => setTypingUser(null), 2000);
+        setTimeout(() => setTypingUser(null), 2500);
       }
-    }, 4000);
+    }, 4500);
 
     return () => clearInterval(typingInterval);
-  }, []);
+  }, [prefersReducedMotion]);
 
   const getVisibleActivityIndices = () => {
     return visibleActivities.slice(-5);
   };
 
   return (
-    <div className="w-full bg-muted/30 rounded-2xl border border-border/50 overflow-hidden p-6">
+    <div className="w-full bg-muted/30 rounded-2xl border border-border/50 overflow-hidden p-6" aria-hidden="true">
       <div className="grid md:grid-cols-2 gap-6">
         {/* Users online */}
         <div>
@@ -76,7 +90,7 @@ export const CollaborationAnimation = () => {
                 key={user.name}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.15 }}
+                transition={{ delay: prefersReducedMotion ? 0 : index * 0.15 }}
                 className="flex items-center gap-3 bg-background/60 rounded-lg border border-border/50 p-3"
               >
                 <div className="relative">
@@ -84,7 +98,7 @@ export const CollaborationAnimation = () => {
                     <span className="text-white text-sm font-medium">{user.initials}</span>
                   </div>
                   <motion.div
-                    animate={{ scale: [1, 1.2, 1] }}
+                    animate={prefersReducedMotion ? {} : { scale: [1, 1.2, 1] }}
                     transition={{ repeat: Infinity, duration: 2, delay: index * 0.5 }}
                     className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 rounded-full border-2 border-background"
                   />
@@ -93,23 +107,34 @@ export const CollaborationAnimation = () => {
                   <p className="text-sm font-medium">{user.name}</p>
                   <p className="text-xs text-muted-foreground/70">{user.role}</p>
                 </div>
-                {typingUser === index && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="flex items-center gap-1"
-                  >
-                    <span className="text-xs text-muted-foreground">typing</span>
-                    <motion.span
-                      animate={{ opacity: [1, 0.3, 1] }}
-                      transition={{ repeat: Infinity, duration: 0.8 }}
-                      className="text-muted-foreground"
+                <AnimatePresence>
+                  {typingUser === index && (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.8 }}
+                      transition={{ duration: 0.2 }}
+                      className="flex items-center gap-1.5 bg-muted/50 px-2 py-1 rounded-full"
                     >
-                      ...
-                    </motion.span>
-                  </motion.div>
-                )}
+                      <span className="text-xs text-muted-foreground">typing</span>
+                      <div className="flex gap-0.5">
+                        {[0, 1, 2].map((dot) => (
+                          <motion.span
+                            key={dot}
+                            animate={{ opacity: [0.3, 1, 0.3] }}
+                            transition={{ 
+                              repeat: Infinity, 
+                              duration: 1.2, 
+                              delay: dot * 0.15,
+                              ease: "easeInOut"
+                            }}
+                            className="w-1 h-1 bg-muted-foreground rounded-full"
+                          />
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
             ))}
           </div>
@@ -121,38 +146,48 @@ export const CollaborationAnimation = () => {
           
           <div className="space-y-2 max-h-[250px] overflow-hidden">
             <AnimatePresence mode="popLayout">
-              {getVisibleActivityIndices().map((activityIndex) => {
-                const activity = allActivities[activityIndex];
-                const user = users[activity.user];
-                
-                return (
-                  <motion.div
-                    key={`${activityIndex}-${activity.target}`}
-                    initial={{ opacity: 0, y: -10, height: 0 }}
-                    animate={{ opacity: 1, y: 0, height: "auto" }}
-                    exit={{ opacity: 0, y: 10, height: 0 }}
-                    transition={{ duration: 0.3 }}
-                    layout
-                    className="bg-background/60 rounded-lg border border-border/50 p-3"
-                  >
-                    <div className="flex items-start gap-2">
-                      <div className={`w-6 h-6 ${user.color} rounded-full flex items-center justify-center flex-shrink-0`}>
-                        <span className="text-white text-xs font-medium">
-                          {user.initials.charAt(0)}
-                        </span>
+              {getVisibleActivityIndices().length === 0 ? (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-center py-8 text-muted-foreground/50 text-sm"
+                >
+                  Loading activity...
+                </motion.div>
+              ) : (
+                getVisibleActivityIndices().map((activityIndex) => {
+                  const activity = allActivities[activityIndex];
+                  const user = users[activity.user];
+                  
+                  return (
+                    <motion.div
+                      key={`${activityIndex}-${activity.target}`}
+                      initial={{ opacity: 0, y: -10, height: 0 }}
+                      animate={{ opacity: 1, y: 0, height: "auto" }}
+                      exit={{ opacity: 0, y: 10, height: 0 }}
+                      transition={{ duration: prefersReducedMotion ? 0 : 0.3 }}
+                      layout={!prefersReducedMotion}
+                      className="bg-background/60 rounded-lg border border-border/50 p-3"
+                    >
+                      <div className="flex items-start gap-2">
+                        <div className={`w-6 h-6 ${user.color} rounded-full flex items-center justify-center flex-shrink-0`}>
+                          <span className="text-white text-xs font-medium">
+                            {user.initials.charAt(0)}
+                          </span>
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs">
+                            <span className="font-medium">{user.name}</span>
+                            {" "}{activity.action}{" "}
+                            <span className="text-muted-foreground">{activity.target}</span>
+                          </p>
+                          <p className="text-xs text-muted-foreground/50 mt-0.5">{activity.time}</p>
+                        </div>
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-xs">
-                          <span className="font-medium">{user.name}</span>
-                          {" "}{activity.action}{" "}
-                          <span className="text-muted-foreground">{activity.target}</span>
-                        </p>
-                        <p className="text-xs text-muted-foreground/50 mt-0.5">{activity.time}</p>
-                      </div>
-                    </div>
-                  </motion.div>
-                );
-              })}
+                    </motion.div>
+                  );
+                })
+              )}
             </AnimatePresence>
           </div>
         </div>
@@ -162,7 +197,7 @@ export const CollaborationAnimation = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 3.5 }}
+        transition={{ delay: prefersReducedMotion ? 0 : 3.5 }}
         className="mt-6 pt-4 border-t border-border/20 text-center"
       >
         <p className="text-xs text-muted-foreground/60">

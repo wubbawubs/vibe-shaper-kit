@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { AlertTriangle, CheckCircle } from "lucide-react";
+import { AlertTriangle, CheckCircle, Sparkles } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 const stages = [
@@ -8,22 +8,21 @@ const stages = [
   { name: "Interview", borderColor: "bg-purple-500" },
   { name: "Offer", borderColor: "bg-amber-500" },
   { name: "Hired", borderColor: "bg-emerald-500" },
-  { name: "Rejected", borderColor: "bg-rose-500" },
 ];
 
 const candidatePool = [
-  { name: "Sophie van der Berg", initials: "SB", color: "bg-emerald-500", source: "LinkedIn" },
-  { name: "Thomas Bakker", initials: "TB", color: "bg-blue-500", source: "Indeed" },
-  { name: "Emma Jansen", initials: "EJ", color: "bg-purple-500", source: "Website" },
-  { name: "Liam de Vries", initials: "LV", color: "bg-teal-500", source: "LinkedIn" },
-  { name: "Noah Visser", initials: "NV", color: "bg-indigo-500", source: "Referral" },
-  { name: "Julia Peters", initials: "JP", color: "bg-rose-400", source: "LinkedIn" },
-  { name: "Milan Hendriks", initials: "MH", color: "bg-cyan-500", source: "Indeed" },
-  { name: "Anna Mulder", initials: "AM", color: "bg-amber-500", source: "Website" },
-  { name: "Lucas Smit", initials: "LS", color: "bg-blue-600", source: "LinkedIn" },
-  { name: "Sara de Jong", initials: "SJ", color: "bg-emerald-600", source: "Referral" },
-  { name: "Daan Bos", initials: "DB", color: "bg-violet-500", source: "Indeed" },
-  { name: "Fleur Koning", initials: "FK", color: "bg-pink-500", source: "Website" },
+  { name: "Sophie van der Berg", initials: "SB", color: "bg-emerald-500", source: "LinkedIn", score: 94 },
+  { name: "Thomas Bakker", initials: "TB", color: "bg-blue-500", source: "Indeed", score: 87 },
+  { name: "Emma Jansen", initials: "EJ", color: "bg-purple-500", source: "Website", score: 91 },
+  { name: "Liam de Vries", initials: "LV", color: "bg-teal-500", source: "LinkedIn", score: 85 },
+  { name: "Noah Visser", initials: "NV", color: "bg-indigo-500", source: "Referral", score: 92 },
+  { name: "Julia Peters", initials: "JP", color: "bg-rose-400", source: "LinkedIn", score: 78 },
+  { name: "Milan Hendriks", initials: "MH", color: "bg-cyan-500", source: "Indeed", score: 83 },
+  { name: "Anna Mulder", initials: "AM", color: "bg-amber-500", source: "Website", score: 89 },
+  { name: "Lucas Smit", initials: "LS", color: "bg-blue-600", source: "LinkedIn", score: 76 },
+  { name: "Sara de Jong", initials: "SJ", color: "bg-emerald-600", source: "Referral", score: 95 },
+  { name: "Daan Bos", initials: "DB", color: "bg-violet-500", source: "Indeed", score: 81 },
+  { name: "Fleur Koning", initials: "FK", color: "bg-pink-500", source: "Website", score: 88 },
 ];
 
 interface Candidate {
@@ -32,19 +31,30 @@ interface Candidate {
   initials: string;
   color: string;
   source: string;
+  score: number;
   stage: number;
   daysAgo: number;
 }
 
 const MAX_PER_STAGE = 3;
-const CYCLE_DURATION = 28000; // Full reset every 28 seconds
+const CYCLE_DURATION = 28000;
 
 export const ProcessFlowAnimation = () => {
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [nextId, setNextId] = useState(1);
   const [usedIndices, setUsedIndices] = useState<Set<number>>(new Set());
+  const [bottleneckVisible, setBottleneckVisible] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
-  // Get a random candidate from pool that hasn't been used recently
+  // Check for reduced motion preference
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mediaQuery.matches);
+    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
+
   const getRandomCandidate = useCallback(() => {
     const availableIndices = candidatePool
       .map((_, i) => i)
@@ -66,7 +76,6 @@ export const ProcessFlowAnimation = () => {
     return candidatePool[randomIndex];
   }, [usedIndices]);
 
-  // Initialize with a balanced set
   const initializeCandidates = useCallback(() => {
     const initial: Candidate[] = [
       { ...candidatePool[0], id: 1, stage: 0, daysAgo: 0 },
@@ -79,14 +88,13 @@ export const ProcessFlowAnimation = () => {
     setCandidates(initial);
     setNextId(7);
     setUsedIndices(new Set([0, 1, 2, 3, 4, 5]));
+    setBottleneckVisible(false);
   }, []);
 
-  // Initialize on mount
   useEffect(() => {
     initializeCandidates();
   }, [initializeCandidates]);
 
-  // Full cycle reset
   useEffect(() => {
     const resetInterval = setInterval(() => {
       initializeCandidates();
@@ -95,7 +103,6 @@ export const ProcessFlowAnimation = () => {
     return () => clearInterval(resetInterval);
   }, [initializeCandidates]);
 
-  // Add new candidates periodically (only if New stage has room)
   useEffect(() => {
     const addInterval = setInterval(() => {
       setCandidates(prev => {
@@ -117,11 +124,9 @@ export const ProcessFlowAnimation = () => {
     return () => clearInterval(addInterval);
   }, [getRandomCandidate, nextId]);
 
-  // Move candidates through pipeline
   useEffect(() => {
     const moveInterval = setInterval(() => {
       setCandidates(prev => {
-        // Find candidates that can move (not in Hired/Rejected, and next stage has room)
         const movable = prev.filter(c => {
           if (c.stage >= 4) return false;
           const nextStage = c.stage + 1;
@@ -131,20 +136,16 @@ export const ProcessFlowAnimation = () => {
 
         if (movable.length === 0) return prev;
 
-        // Prefer moving from fuller stages
         const stageCount = [0, 1, 2, 3].map(s => prev.filter(c => c.stage === s).length);
         const prioritized = movable.sort((a, b) => stageCount[b.stage] - stageCount[a.stage]);
         
         const toMove = prioritized[0];
         
-        // Small chance to reject instead of moving forward
-        const shouldReject = toMove.stage >= 1 && Math.random() < 0.15;
-        
         return prev.map(c => {
           if (c.id !== toMove.id) return c;
           return {
             ...c,
-            stage: shouldReject ? 5 : c.stage + 1,
+            stage: c.stage + 1,
             daysAgo: c.daysAgo + Math.floor(Math.random() * 3) + 1,
           };
         });
@@ -154,25 +155,14 @@ export const ProcessFlowAnimation = () => {
     return () => clearInterval(moveInterval);
   }, []);
 
-  // Remove old rejected/hired candidates to keep it clean
   useEffect(() => {
     const cleanupInterval = setInterval(() => {
       setCandidates(prev => {
         const hired = prev.filter(c => c.stage === 4);
-        const rejected = prev.filter(c => c.stage === 5);
-        
-        // Remove oldest hired if more than 2
         if (hired.length > 2) {
           const oldestHired = hired.sort((a, b) => a.id - b.id)[0];
           return prev.filter(c => c.id !== oldestHired.id);
         }
-        
-        // Remove oldest rejected if more than 1
-        if (rejected.length > 1) {
-          const oldestRejected = rejected.sort((a, b) => a.id - b.id)[0];
-          return prev.filter(c => c.id !== oldestRejected.id);
-        }
-        
         return prev;
       });
     }, 3500);
@@ -183,7 +173,6 @@ export const ProcessFlowAnimation = () => {
   const getCandidatesInStage = (stageIndex: number) => 
     candidates.filter(c => c.stage === stageIndex);
 
-  // Dynamic bottleneck detection
   const getBottleneck = () => {
     const counts = [0, 1, 2, 3].map(i => ({
       index: i,
@@ -201,28 +190,52 @@ export const ProcessFlowAnimation = () => {
 
   const bottleneck = getBottleneck();
 
+  // Delayed bottleneck visibility to prevent jarring transitions
+  useEffect(() => {
+    if (bottleneck) {
+      const timer = setTimeout(() => setBottleneckVisible(true), 800);
+      return () => clearTimeout(timer);
+    } else {
+      setBottleneckVisible(false);
+    }
+  }, [bottleneck?.stage]);
+
+  // Funnel data calculation
+  const funnelData = [
+    { stage: "Applied", value: 100, color: "bg-blue-500" },
+    { stage: "Screened", value: 58, color: "bg-cyan-500" },
+    { stage: "Interview", value: 35, color: "bg-purple-500" },
+    { stage: "Offer", value: 18, color: "bg-amber-500" },
+    { stage: "Hired", value: 12.5, color: "bg-emerald-500" },
+  ];
+
   return (
-    <div className="relative w-full bg-gradient-to-br from-background via-muted/20 to-background rounded-2xl border border-border/50 overflow-hidden p-6 shadow-lg">
+    <div 
+      className="relative w-full bg-gradient-to-br from-background via-muted/20 to-background rounded-2xl border border-border/50 overflow-hidden p-6 shadow-lg"
+      aria-hidden="true"
+    >
       {/* Subtle glow orb */}
       <div className="absolute top-0 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-      {/* Dynamic bottleneck banner */}
+      
+      {/* Dynamic bottleneck banner with delay */}
       <AnimatePresence>
-        {bottleneck && (
+        {bottleneck && bottleneckVisible && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: prefersReducedMotion ? 0 : 0.3 }}
             className="mb-5"
           >
             <motion.div
-              animate={{ 
+              animate={prefersReducedMotion ? {} : { 
                 backgroundColor: ["rgba(245, 158, 11, 0.1)", "rgba(245, 158, 11, 0.15)", "rgba(245, 158, 11, 0.1)"]
               }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="flex items-center gap-3 px-4 py-3 rounded-lg border border-amber-500/30"
+              className="flex items-center gap-3 px-4 py-3 rounded-lg border border-amber-500/30 bg-amber-500/10"
             >
               <motion.div
-                animate={{ scale: [1, 1.1, 1] }}
+                animate={prefersReducedMotion ? {} : { scale: [1, 1.1, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 <AlertTriangle className="w-5 h-5 text-amber-500" />
@@ -240,35 +253,32 @@ export const ProcessFlowAnimation = () => {
         )}
       </AnimatePresence>
 
-      {/* Pipeline columns - Kanban style */}
-      <div className="grid grid-cols-6 gap-3">
+      {/* Pipeline columns - 5 stage Kanban */}
+      <div className="grid grid-cols-5 gap-3">
         {stages.map((stage, index) => {
           const stageCandidates = getCandidatesInStage(index);
-          const isBottleneckStage = bottleneck && stage.name === bottleneck.stage;
-          const isRejected = index === 5;
+          const isBottleneckStage = bottleneck && bottleneckVisible && stage.name === bottleneck.stage;
+          const isHired = index === 4;
           
           return (
             <motion.div
               key={stage.name}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.08 }}
+              transition={{ delay: prefersReducedMotion ? 0 : index * 0.08 }}
             >
-              {/* Column header with colored top border */}
               <div className={`rounded-xl overflow-hidden bg-background border ${
                 isBottleneckStage 
                   ? 'border-amber-400/60 ring-2 ring-amber-200/30' 
-                  : isRejected
-                    ? 'border-rose-200/50'
+                  : isHired
+                    ? 'border-emerald-200/50'
                     : 'border-border/40'
               }`}>
-                {/* Colored top bar */}
                 <div className={`h-1 ${stage.borderColor}`} />
                 
-                {/* Header */}
                 <div className="px-3 py-2.5 border-b border-border/20">
                   <div className="flex items-center justify-between">
-                    <span className={`text-xs font-medium ${isRejected ? 'text-rose-600' : 'text-foreground'}`}>
+                    <span className={`text-xs font-medium ${isHired ? 'text-emerald-600' : 'text-foreground'}`}>
                       {stage.name}
                     </span>
                     <span className="text-xs font-medium text-muted-foreground">
@@ -277,36 +287,46 @@ export const ProcessFlowAnimation = () => {
                   </div>
                 </div>
 
-                {/* Candidates - real cards */}
-                <div className={`p-2 min-h-[180px] space-y-2 ${isRejected ? 'bg-rose-50/30 dark:bg-rose-950/10' : ''}`}>
+                <div className={`p-2 min-h-[180px] space-y-2 ${isHired ? 'bg-emerald-50/30 dark:bg-emerald-950/10' : ''}`}>
                   <AnimatePresence mode="popLayout">
                     {stageCandidates.map((candidate) => (
                       <motion.div
                         key={candidate.id}
-                        layout
+                        layout={!prefersReducedMotion}
                         initial={{ scale: 0.8, opacity: 0, y: -10 }}
                         animate={{ scale: 1, opacity: 1, y: 0 }}
                         exit={{ scale: 0.8, opacity: 0, x: 20 }}
-                        transition={{ duration: 0.3, ease: "easeOut" }}
-                        className={`bg-background rounded-lg border p-2.5 shadow-sm hover:shadow-md transition-shadow ${
-                          isRejected ? 'border-rose-200/50 opacity-60' : 'border-border/40'
+                        transition={{ duration: prefersReducedMotion ? 0 : 0.3, ease: "easeOut" }}
+                        whileHover={prefersReducedMotion ? {} : { scale: 1.02, y: -2 }}
+                        className={`bg-background rounded-lg border p-2.5 shadow-sm hover:shadow-md transition-shadow cursor-pointer ${
+                          isHired ? 'border-emerald-200/50' : 'border-border/40'
                         }`}
                       >
                         <div className="flex items-center gap-2">
-                          {/* Avatar */}
                           <div className={`w-7 h-7 rounded-full ${candidate.color} flex items-center justify-center flex-shrink-0`}>
                             <span className="text-white text-[10px] font-semibold">{candidate.initials}</span>
                           </div>
                           
-                          {/* Info */}
                           <div className="min-w-0 flex-1">
                             <p className="text-xs font-medium text-foreground truncate leading-tight">
                               {candidate.name.split(' ')[0]}
                             </p>
-                            <p className="text-[10px] text-muted-foreground truncate">
-                              {candidate.source} · {candidate.daysAgo}d
-                            </p>
+                            <div className="flex items-center gap-1">
+                              <p className="text-[10px] text-muted-foreground truncate">
+                                {candidate.source} · {candidate.daysAgo}d
+                              </p>
+                            </div>
                           </div>
+                          
+                          {/* Score indicator dot */}
+                          {candidate.score >= 90 && (
+                            <motion.div
+                              animate={prefersReducedMotion ? {} : { scale: [1, 1.2, 1] }}
+                              transition={{ repeat: Infinity, duration: 2, delay: candidate.id * 0.3 }}
+                            >
+                              <Sparkles className="w-3 h-3 text-accent" />
+                            </motion.div>
+                          )}
                         </div>
                       </motion.div>
                     ))}
@@ -324,14 +344,14 @@ export const ProcessFlowAnimation = () => {
         })}
       </div>
 
-      {/* Conversion funnel */}
+      {/* Improved Conversion funnel */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8 }}
+        transition={{ delay: prefersReducedMotion ? 0 : 0.8 }}
         className="mt-6 bg-background rounded-xl border border-border/30 p-4"
       >
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center justify-between mb-4">
           <span className="text-sm font-medium text-foreground">Conversion Funnel</span>
           <div className="flex items-center gap-2">
             <CheckCircle className="w-4 h-4 text-emerald-500" />
@@ -339,16 +359,21 @@ export const ProcessFlowAnimation = () => {
           </div>
         </div>
         
-        <div className="flex items-center gap-1">
-          {[100, 58, 35, 18, 12.5].map((width, i) => (
-            <motion.div
-              key={i}
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ delay: 1 + i * 0.1, duration: 0.4 }}
-              style={{ width: `${width}%` }}
-              className="h-2 bg-primary rounded-full origin-left"
-            />
+        {/* Stacked funnel bars */}
+        <div className="space-y-2">
+          {funnelData.map((item, i) => (
+            <div key={item.stage} className="flex items-center gap-3">
+              <span className="text-xs text-muted-foreground w-16 text-right">{item.stage}</span>
+              <div className="flex-1 h-3 bg-muted/50 rounded-full overflow-hidden">
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: `${item.value}%` }}
+                  transition={{ delay: prefersReducedMotion ? 0 : 1 + i * 0.1, duration: 0.5 }}
+                  className={`h-full ${item.color} rounded-full`}
+                />
+              </div>
+              <span className="text-xs font-medium text-foreground w-10">{item.value}%</span>
+            </div>
           ))}
         </div>
       </motion.div>
