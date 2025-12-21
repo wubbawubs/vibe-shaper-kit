@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, TrendingUp } from "lucide-react";
+import { Award, TrendingUp, Sparkles } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 const initialCandidates = [
@@ -13,23 +13,33 @@ export const RankingSystemVisualization = () => {
   const [candidates, setCandidates] = useState(initialCandidates);
   const [phase, setPhase] = useState<"initial" | "scoring" | "ranked">("initial");
   const [activeCandidate, setActiveCandidate] = useState(0);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+
+  // Check for reduced motion preference
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mediaQuery.matches);
+    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
 
   const runScoringAnimation = useCallback(() => {
     setCandidates(initialCandidates);
     setPhase("initial");
     setActiveCandidate(0);
     
-    // Phase 1: Start scoring (much slower - 2s)
-    setTimeout(() => setPhase("scoring"), 2000);
+    // Phase 1: Start scoring (1.5s - faster)
+    setTimeout(() => setPhase("scoring"), 1500);
     
-    // Phase 2: Score each candidate one by one (3s per candidate)
+    // Phase 2: Score each candidate (2.5s per candidate - faster)
     initialCandidates.forEach((_, index) => {
       setTimeout(() => {
         setActiveCandidate(index);
-      }, 2000 + index * 3000);
+      }, 1500 + index * 2500);
     });
     
-    // Phase 3: Show ranked results (wait 2s after last candidate)
+    // Phase 3: Show ranked results (wait 1.5s after last candidate)
     setTimeout(() => {
       setCandidates(prev => {
         const scored = prev.map(c => ({
@@ -39,22 +49,22 @@ export const RankingSystemVisualization = () => {
         return scored.sort((a, b) => b.total - a.total);
       });
       setPhase("ranked");
-    }, 2000 + initialCandidates.length * 3000 + 2000);
+    }, 1500 + initialCandidates.length * 2500 + 1500);
   }, []);
 
   useEffect(() => {
     runScoringAnimation();
     
-    // Loop every 25 seconds (much slower loop)
+    // Loop every 20 seconds (faster loop)
     const loopInterval = setInterval(() => {
       runScoringAnimation();
-    }, 25000);
+    }, 20000);
 
     return () => clearInterval(loopInterval);
   }, [runScoringAnimation]);
 
   return (
-    <div className="relative w-full bg-muted/30 rounded-2xl border border-border/50 overflow-hidden p-8">
+    <div className="relative w-full bg-muted/30 rounded-2xl border border-border/50 overflow-hidden p-8" aria-hidden="true">
       <div className="grid lg:grid-cols-5 gap-8">
         {/* Candidate list - 3 columns */}
         <div className="lg:col-span-3 space-y-4">
@@ -68,27 +78,36 @@ export const RankingSystemVisualization = () => {
             return (
               <motion.div
                 key={candidate.id}
-                layout
-                transition={{ duration: 0.6, ease: "easeInOut" }}
+                layout={!prefersReducedMotion}
+                transition={{ duration: prefersReducedMotion ? 0 : 0.6, ease: "easeInOut" }}
                 className={`relative bg-background rounded-xl border-2 p-5 transition-all duration-500 ${
                   isActive 
                     ? 'border-primary/50 shadow-lg shadow-primary/10' 
                     : isTopCandidate 
-                      ? 'border-accent/40 shadow-md'
+                      ? 'border-accent/50 shadow-lg shadow-accent/20'
                       : 'border-border/30'
                 }`}
               >
-                <div className="flex items-center justify-between">
+                {/* Pulse animation for active candidate */}
+                {isActive && !prefersReducedMotion && (
+                  <motion.div
+                    className="absolute inset-0 rounded-xl border-2 border-primary/30"
+                    animate={{ scale: [1, 1.02, 1], opacity: [0.5, 0.8, 0.5] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                  />
+                )}
+                
+                <div className="flex items-center justify-between relative z-10">
                   <div className="flex items-center gap-4">
                     {/* Rank badge */}
                     {isRanked && (
                       <motion.div
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        transition={{ delay: 0.2, duration: 0.4 }}
+                        transition={{ delay: prefersReducedMotion ? 0 : 0.2, duration: 0.4 }}
                         className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
                           index === 0 
-                            ? 'bg-accent text-accent-foreground' 
+                            ? 'bg-accent text-accent-foreground shadow-lg shadow-accent/30' 
                             : 'bg-muted text-muted-foreground'
                         }`}
                       >
@@ -97,17 +116,27 @@ export const RankingSystemVisualization = () => {
                     )}
                     
                     {/* Avatar */}
-                    <div className={`w-12 h-12 rounded-full ${candidate.color} flex items-center justify-center`}>
+                    <motion.div 
+                      className={`w-12 h-12 rounded-full ${candidate.color} flex items-center justify-center`}
+                      animate={isActive && !prefersReducedMotion ? { scale: [1, 1.05, 1] } : {}}
+                      transition={{ repeat: Infinity, duration: 1 }}
+                    >
                       <span className="text-white font-semibold">{candidate.initials}</span>
-                    </div>
+                    </motion.div>
                     
                     {/* Name and status */}
                     <div>
                       <p className="font-semibold text-foreground">{candidate.name}</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className={`text-sm ${isTopCandidate ? 'text-accent font-medium' : 'text-muted-foreground'}`}>
                         {isActive && "Evaluating..."}
                         {isScored && !isRanked && "Scored"}
-                        {isRanked && (index === 0 ? "Top Match" : `Rank #${index + 1}`)}
+                        {isRanked && index === 0 && (
+                          <span className="flex items-center gap-1">
+                            <Sparkles className="w-3 h-3" />
+                            Top Match
+                          </span>
+                        )}
+                        {isRanked && index !== 0 && `Rank #${index + 1}`}
                         {!isActive && !isScored && !isRanked && "Pending"}
                       </p>
                     </div>
@@ -119,7 +148,7 @@ export const RankingSystemVisualization = () => {
                       <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: prefersReducedMotion ? 0 : 0.5 }}
                         className="flex items-center gap-2"
                       >
                         <TrendingUp className={`w-4 h-4 ${isTopCandidate ? 'text-accent' : 'text-muted-foreground'}`} />
@@ -130,7 +159,7 @@ export const RankingSystemVisualization = () => {
                     )}
                     {isActive && (
                       <motion.div
-                        animate={{ opacity: [0.5, 1, 0.5] }}
+                        animate={prefersReducedMotion ? {} : { opacity: [0.5, 1, 0.5] }}
                         transition={{ repeat: Infinity, duration: 1.5 }}
                         className="text-xl font-bold text-primary"
                       >
@@ -145,13 +174,13 @@ export const RankingSystemVisualization = () => {
                   <motion.div 
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
-                    transition={{ duration: 0.4 }}
+                    transition={{ duration: prefersReducedMotion ? 0 : 0.4 }}
                     className="mt-5 pt-4 border-t border-border/30"
                   >
                     <div className="grid grid-cols-3 gap-6">
-                      <ScoreBar label="Skills" value={candidate.skills} delay={0} />
-                      <ScoreBar label="Experience" value={candidate.experience} delay={0.3} />
-                      <ScoreBar label="Culture Fit" value={candidate.fit} delay={0.6} />
+                      <ScoreBar label="Skills" value={candidate.skills} delay={prefersReducedMotion ? 0 : 0} />
+                      <ScoreBar label="Experience" value={candidate.experience} delay={prefersReducedMotion ? 0 : 0.3} />
+                      <ScoreBar label="Culture Fit" value={candidate.fit} delay={prefersReducedMotion ? 0 : 0.6} />
                     </div>
                   </motion.div>
                 )}
@@ -165,7 +194,7 @@ export const RankingSystemVisualization = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: prefersReducedMotion ? 0 : 0.5 }}
             className="bg-background/60 rounded-xl border border-border/30 p-6"
           >
             <h4 className="font-semibold text-foreground mb-4">Scoring Criteria</h4>
@@ -185,7 +214,7 @@ export const RankingSystemVisualization = () => {
                   key={item.label}
                   initial={{ opacity: 0, x: 10 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.7 + i * 0.15 }}
+                  transition={{ delay: prefersReducedMotion ? 0 : 0.7 + i * 0.15 }}
                   className="flex items-center justify-between p-3 bg-muted/30 rounded-lg"
                 >
                   <div>
