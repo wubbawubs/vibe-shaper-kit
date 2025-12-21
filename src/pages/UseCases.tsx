@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { TrendingUp, Users, Handshake, RefreshCw, ArrowRight, Check, Sparkles } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { useEffect, useState } from "react";
 
 const useCases = [
   {
@@ -46,6 +47,20 @@ const useCases = [
 ];
 
 const UseCases = () => {
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mediaQuery.matches);
+    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
+
+  const animationProps = prefersReducedMotion
+    ? { initial: {}, animate: {}, transition: {} }
+    : { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6 } };
+
   return (
     <MarketingLayout>
       <SEO 
@@ -54,22 +69,24 @@ const UseCases = () => {
         url="https://onerooted.com/use-cases"
       />
       {/* Hero */}
-      <section className="py-16 md:py-24 relative overflow-hidden">
+      <section className="py-16 md:py-24 relative overflow-hidden" aria-labelledby="usecases-hero-title">
         {/* Background glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+        <div 
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" 
+          aria-hidden="true"
+          role="presentation"
+        />
         
         <div className="container relative">
           <motion.div 
             className="max-w-3xl mx-auto text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            {...animationProps}
           >
             <motion.p 
               className="text-sm font-medium text-primary mb-4 tracking-wide uppercase"
-              initial={{ opacity: 0 }}
+              initial={prefersReducedMotion ? {} : { opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
+              transition={prefersReducedMotion ? {} : { delay: 0.2 }}
             >
               Use cases
             </motion.p>
@@ -89,14 +106,14 @@ const UseCases = () => {
         <div className="container">
           <motion.div 
             className="space-y-8 max-w-5xl mx-auto"
-            initial="hidden"
+            initial={prefersReducedMotion ? "visible" : "hidden"}
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={{
               hidden: {},
               visible: {
                 transition: {
-                  staggerChildren: 0.15,
+                  staggerChildren: prefersReducedMotion ? 0 : 0.15,
                 },
               },
             }}
@@ -104,29 +121,28 @@ const UseCases = () => {
             {useCases.map((useCase, index) => (
               <motion.div
                 key={index}
-                variants={{
+                variants={prefersReducedMotion ? {} : {
                   hidden: { opacity: 0, y: 30 },
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.5 }}
               >
-                <Card className="overflow-hidden group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border-border/50">
+                <Card className="overflow-hidden group hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 border-border/50">
                   <CardHeader className="bg-muted/30 pb-6">
-                    <div className="flex items-center justify-between gap-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
                       <div className="flex items-center gap-4">
-                        <motion.div 
-                          className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors"
-                          whileHover={{ scale: 1.05 }}
+                        <div 
+                          className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0"
                         >
-                          <useCase.icon className="h-6 w-6 text-primary" />
-                        </motion.div>
+                          <useCase.icon className="h-6 w-6 text-primary" aria-hidden="true" />
+                        </div>
                         <CardTitle className="text-xl font-semibold">{useCase.title}</CardTitle>
                       </div>
                       
-                      {/* Stat badge */}
-                      <div className="hidden sm:flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full">
-                        <Sparkles className="h-4 w-4" />
-                        <span className="text-sm font-semibold">{useCase.stat} {useCase.statLabel}</span>
+                      {/* Stat badge - now visible on all screens */}
+                      <div className="flex items-center gap-2 bg-primary/10 text-primary px-3 py-1.5 sm:px-4 sm:py-2 rounded-full w-fit">
+                        <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
+                        <span className="text-xs sm:text-sm font-semibold">{useCase.stat} {useCase.statLabel}</span>
                       </div>
                     </div>
                   </CardHeader>
@@ -148,24 +164,12 @@ const UseCases = () => {
                           <motion.span 
                             key={outcomeIndex} 
                             className="inline-flex items-center gap-2 text-sm bg-primary/10 text-primary px-4 py-2 rounded-full"
-                            initial={{ opacity: 0, scale: 0.9 }}
+                            initial={prefersReducedMotion ? {} : { opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.1 * outcomeIndex }}
+                            transition={{ delay: prefersReducedMotion ? 0 : 0.05 * outcomeIndex, duration: 0.3 }}
                           >
-                            <motion.div
-                              initial={{ scale: 0 }}
-                              whileInView={{ scale: 1 }}
-                              viewport={{ once: true }}
-                              transition={{ 
-                                delay: 0.2 + 0.1 * outcomeIndex,
-                                type: "spring",
-                                stiffness: 400,
-                                damping: 10
-                              }}
-                            >
-                              <Check className="h-3.5 w-3.5" />
-                            </motion.div>
+                            <Check className="h-3.5 w-3.5" aria-hidden="true" />
                             {outcome}
                           </motion.span>
                         ))}
@@ -180,18 +184,22 @@ const UseCases = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <section className="py-16 md:py-24 relative overflow-hidden" aria-labelledby="usecases-cta-title">
+        <div 
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" 
+          aria-hidden="true"
+          role="presentation"
+        />
         
         <div className="container relative">
           <motion.div 
             className="text-center max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
+            initial={prefersReducedMotion ? {} : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={prefersReducedMotion ? {} : { duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            <h2 id="usecases-cta-title" className="text-3xl md:text-4xl font-semibold mb-4">
               See how it works for your team
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
@@ -199,13 +207,13 @@ const UseCases = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
+              <Button asChild size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
                   Request a demo
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight className="h-5 w-5" aria-hidden="true" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
+              <Button asChild variant="outline" size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base">
                 <Link to="/product">See how it works</Link>
               </Button>
             </div>
