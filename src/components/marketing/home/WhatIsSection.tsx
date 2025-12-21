@@ -58,7 +58,7 @@ export function WhatIsSection() {
               <Card className={`relative h-full p-8 border-0 bg-gradient-to-b ${pillar.gradient} backdrop-blur-sm overflow-hidden group hover:shadow-xl transition-all duration-500`}>
                 {/* Icon */}
                 <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-2xl bg-background/80 backdrop-blur flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-14 h-14 rounded-2xl bg-background/80 backdrop-blur flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 delay-75">
                     <pillar.icon className="h-7 w-7 text-foreground" />
                   </div>
                   
@@ -67,7 +67,7 @@ export function WhatIsSection() {
                 </div>
 
                 {/* Decorative element */}
-                <div className="absolute -bottom-10 -right-10 w-32 h-32 rounded-full bg-gradient-to-br from-background/50 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-500" />
+                <div className="absolute -bottom-10 -right-10 w-32 h-32 rounded-full bg-gradient-to-br from-background/50 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-500" aria-hidden="true" />
               </Card>
             </motion.div>
           ))}

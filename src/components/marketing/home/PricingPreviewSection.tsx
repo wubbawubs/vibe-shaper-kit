@@ -36,7 +36,7 @@ export function PricingPreviewSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-accent mb-4">Pricing</p>
+          <p className="text-sm uppercase tracking-widest text-primary mb-4">Pricing</p>
           <h2 className="text-4xl md:text-5xl font-semibold mb-4">
             Clear pricing. No surprises.
           </h2>
@@ -55,7 +55,7 @@ export function PricingPreviewSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className={`relative rounded-2xl p-8 ${
                 plan.featured 
-                  ? 'bg-primary text-primary-foreground shadow-2xl shadow-primary/20 scale-105' 
+                  ? 'bg-primary text-primary-foreground shadow-2xl shadow-primary/20 md:scale-[1.02]' 
                   : 'bg-card border border-border/50'
               }`}
             >
