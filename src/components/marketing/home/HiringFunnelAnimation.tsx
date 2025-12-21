@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { Check, ChevronRight, AlertCircle, Star, Clock, TrendingUp, ArrowDown, ArrowUp, Activity } from 'lucide-react';
 
 interface Candidate {
@@ -15,7 +15,7 @@ interface Candidate {
   annotation?: string;
 }
 
-const stages = ['Nieuw', 'Screening', 'Interview', 'Aanbieding', 'Hired'];
+const stages = ['New', 'Screen', 'Interview', 'Offer', 'Hired'];
 
 const names = ['Emma V.', 'Daan M.', 'Sophie B.', 'Lucas K.', 'Julia R.', 'Max W.', 'Lisa D.', 'Tom H.'];
 const sources = ['LinkedIn', 'Indeed', 'Referral', 'Website'];
@@ -40,6 +40,7 @@ const getInitials = (name: string) => {
 };
 
 export function HiringFunnelAnimation() {
+  const prefersReducedMotion = useReducedMotion();
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [stats, setStats] = useState({ total: 0, screened: 0, interviewed: 0, hired: 0 });
   const [metrics, setMetrics] = useState({
@@ -119,21 +120,30 @@ export function HiringFunnelAnimation() {
   }, []);
 
   useEffect(() => {
+    // Skip animations if user prefers reduced motion
+    if (prefersReducedMotion) {
+      // Add static initial candidates
+      for (let i = 0; i < 4; i++) {
+        addCandidate();
+      }
+      return;
+    }
+
     for (let i = 0; i < 4; i++) {
       setTimeout(() => addCandidate(), i * 200);
     }
     
-    const addInterval = setInterval(addCandidate, 2800);
+    const addInterval = setInterval(addCandidate, 2400);
     const moveInterval = setInterval(moveCandidates, 2000);
     
     return () => {
       clearInterval(addInterval);
       clearInterval(moveInterval);
     };
-  }, [addCandidate, moveCandidates]);
+  }, [addCandidate, moveCandidates, prefersReducedMotion]);
 
   const getCandidatesInStage = (stageIndex: number) => {
-    return candidates.filter(c => c.stage === stageIndex).slice(0, 3);
+    return candidates.filter(c => c.stage === stageIndex).slice(0, 2);
   };
 
   const activeAlerts = [
@@ -142,7 +152,7 @@ export function HiringFunnelAnimation() {
   ];
 
   return (
-    <div className="w-full h-full flex gap-4 p-4">
+    <div className="w-full h-full flex gap-4 p-4" aria-hidden="true" role="presentation">
       {/* Pipeline Section - 65% */}
       <div className="flex-[0.65] flex flex-col gap-3 min-w-0 overflow-hidden">
         {/* Stage Headers */}

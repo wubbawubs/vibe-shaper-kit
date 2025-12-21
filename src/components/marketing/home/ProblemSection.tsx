@@ -4,7 +4,7 @@ export function ProblemSection() {
   return (
     <section className="py-16 md:py-24 bg-foreground text-background relative overflow-hidden">
       {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5" aria-hidden="true" role="presentation">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
           backgroundSize: '40px 40px'
@@ -40,7 +40,7 @@ export function ProblemSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="p-6 border border-background/10 rounded-xl"
+                className="p-6 border border-background/10 rounded-xl hover:bg-background/5 transition-colors duration-300"
               >
                 <p className="text-lg font-medium mb-2">{item.tool}</p>
                 <p className="text-background/50 text-sm">{item.purpose}</p>
