@@ -64,10 +64,10 @@ export const RankingSystemVisualization = () => {
   }, [runScoringAnimation]);
 
   return (
-    <div className="relative w-full bg-muted/30 rounded-2xl border border-border/50 overflow-hidden p-8" aria-hidden="true">
-      <div className="grid lg:grid-cols-5 gap-8">
+    <div className="relative w-full bg-muted/30 rounded-xl md:rounded-2xl border border-border/50 overflow-hidden p-4 md:p-8" aria-hidden="true">
+      <div className="grid lg:grid-cols-5 gap-4 md:gap-8">
         {/* Candidate list - 3 columns */}
-        <div className="lg:col-span-3 space-y-4">
+        <div className="lg:col-span-3 space-y-3 md:space-y-4">
           {candidates.map((candidate, index) => {
             const isActive = phase === "scoring" && activeCandidate === index;
             const isScored = phase === "scoring" && activeCandidate > index;
@@ -80,7 +80,7 @@ export const RankingSystemVisualization = () => {
                 key={candidate.id}
                 layout={!prefersReducedMotion}
                 transition={{ duration: prefersReducedMotion ? 0 : 0.6, ease: "easeInOut" }}
-                className={`relative bg-background rounded-xl border-2 p-5 transition-all duration-500 ${
+                className={`relative bg-background rounded-lg md:rounded-xl border-2 p-3 md:p-5 transition-all duration-500 ${
                   isActive 
                     ? 'border-primary/50 shadow-lg shadow-primary/10' 
                     : isTopCandidate 
@@ -98,30 +98,30 @@ export const RankingSystemVisualization = () => {
                 )}
                 
                 <div className="flex items-center justify-between relative z-10">
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2 md:gap-4">
                     {/* Rank badge */}
                     {isRanked && (
                       <motion.div
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ delay: prefersReducedMotion ? 0 : 0.2, duration: 0.4 }}
-                        className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+                        className={`w-6 md:w-8 h-6 md:h-8 rounded-full flex items-center justify-center text-xs md:text-sm font-bold ${
                           index === 0 
                             ? 'bg-accent text-accent-foreground shadow-lg shadow-accent/30' 
                             : 'bg-muted text-muted-foreground'
                         }`}
                       >
-                        {index === 0 ? <Award className="w-4 h-4" /> : index + 1}
+                        {index === 0 ? <Award className="w-3 md:w-4 h-3 md:h-4" /> : index + 1}
                       </motion.div>
                     )}
                     
                     {/* Avatar */}
                     <motion.div 
-                      className={`w-12 h-12 rounded-full ${candidate.color} flex items-center justify-center`}
+                      className={`w-10 md:w-12 h-10 md:h-12 rounded-full ${candidate.color} flex items-center justify-center`}
                       animate={isActive && !prefersReducedMotion ? { scale: [1, 1.05, 1] } : {}}
                       transition={{ repeat: Infinity, duration: 1 }}
                     >
-                      <span className="text-white font-semibold">{candidate.initials}</span>
+                      <span className="text-white font-semibold text-sm md:text-base">{candidate.initials}</span>
                     </motion.div>
                     
                     {/* Name and status */}
@@ -151,8 +151,8 @@ export const RankingSystemVisualization = () => {
                         transition={{ duration: prefersReducedMotion ? 0 : 0.5 }}
                         className="flex items-center gap-2"
                       >
-                        <TrendingUp className={`w-4 h-4 ${isTopCandidate ? 'text-accent' : 'text-muted-foreground'}`} />
-                        <span className={`text-2xl font-bold ${isTopCandidate ? 'text-accent' : 'text-foreground'}`}>
+                        <TrendingUp className={`w-3 md:w-4 h-3 md:h-4 ${isTopCandidate ? 'text-accent' : 'text-muted-foreground'}`} />
+                        <span className={`text-xl md:text-2xl font-bold ${isTopCandidate ? 'text-accent' : 'text-foreground'}`}>
                           {candidate.total || Math.round((candidate.skills * 0.4 + candidate.experience * 0.3 + candidate.fit * 0.3))}%
                         </span>
                       </motion.div>
@@ -169,15 +169,15 @@ export const RankingSystemVisualization = () => {
                   </div>
                 </div>
 
-                {/* Score breakdown - only show for active candidate */}
+                {/* Score breakdown - only show for active candidate, hidden on mobile */}
                 {isActive && (
                   <motion.div 
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: prefersReducedMotion ? 0 : 0.4 }}
-                    className="mt-5 pt-4 border-t border-border/30"
+                    className="hidden sm:block mt-4 md:mt-5 pt-3 md:pt-4 border-t border-border/30"
                   >
-                    <div className="grid grid-cols-3 gap-6">
+                    <div className="grid grid-cols-3 gap-4 md:gap-6">
                       <ScoreBar label="Skills" value={candidate.skills} delay={prefersReducedMotion ? 0 : 0} />
                       <ScoreBar label="Experience" value={candidate.experience} delay={prefersReducedMotion ? 0 : 0.3} />
                       <ScoreBar label="Culture Fit" value={candidate.fit} delay={prefersReducedMotion ? 0 : 0.6} />
@@ -189,8 +189,8 @@ export const RankingSystemVisualization = () => {
           })}
         </div>
 
-        {/* Scoring criteria - 2 columns */}
-        <div className="lg:col-span-2 flex flex-col justify-center">
+        {/* Scoring criteria - 2 columns, hidden on mobile */}
+        <div className="hidden lg:flex lg:col-span-2 flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

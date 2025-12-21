@@ -152,15 +152,15 @@ export function HiringFunnelAnimation() {
   ];
 
   return (
-    <div className="w-full h-full flex gap-4 p-4" aria-hidden="true" role="presentation">
-      {/* Pipeline Section - 65% */}
-      <div className="flex-[0.65] flex flex-col gap-3 min-w-0 overflow-hidden">
+    <div className="w-full h-full flex flex-col md:flex-row gap-3 md:gap-4 p-3 md:p-4" aria-hidden="true" role="presentation">
+      {/* Pipeline Section - 65% on desktop, full on mobile */}
+      <div className="flex-1 md:flex-[0.65] flex flex-col gap-2 md:gap-3 min-w-0 overflow-hidden">
         {/* Stage Headers */}
-        <div className="flex items-center">
+        <div className="flex items-center overflow-x-auto scrollbar-hide">
           {stages.map((stage, index) => (
             <React.Fragment key={stage}>
-              <div className="flex-1 min-w-0">
-                <div className={`text-[10px] font-medium px-2 py-1 rounded inline-flex items-center gap-1 ${
+              <div className="flex-shrink-0 md:flex-1 min-w-0">
+                <div className={`text-[8px] md:text-[10px] font-medium px-1.5 md:px-2 py-0.5 md:py-1 rounded inline-flex items-center gap-0.5 md:gap-1 whitespace-nowrap ${
                   index === stages.length - 1 
                     ? 'bg-emerald-50 text-emerald-700 border border-emerald-200/60'
                     : 'bg-muted/50 text-muted-foreground border border-border/30'
@@ -170,16 +170,16 @@ export function HiringFunnelAnimation() {
                 </div>
               </div>
               {index < stages.length - 1 && (
-                <ChevronRight className="w-3 h-3 text-border/60 mx-0.5 flex-shrink-0" />
+                <ChevronRight className="w-2 md:w-3 h-2 md:h-3 text-border/60 mx-0.5 flex-shrink-0" />
               )}
             </React.Fragment>
           ))}
         </div>
 
         {/* Pipeline Grid */}
-        <div className="flex-1 flex gap-2 overflow-hidden">
+        <div className="flex-1 flex gap-1 md:gap-2 overflow-x-auto md:overflow-hidden scrollbar-hide">
           {stages.map((stage, stageIndex) => (
-            <div key={stage} className="flex-1 min-w-0 flex flex-col gap-2 pt-2 overflow-hidden">
+            <div key={stage} className="flex-shrink-0 w-[70px] md:w-auto md:flex-1 min-w-0 flex flex-col gap-1 md:gap-2 pt-1 md:pt-2 overflow-hidden">
               {getCandidatesInStage(stageIndex).map((candidate) => (
                 <motion.div
                   key={candidate.id}
@@ -187,46 +187,46 @@ export function HiringFunnelAnimation() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className={`bg-card border rounded-md p-2 shadow-sm relative ${
+                  className={`bg-card border rounded-md p-1.5 md:p-2 shadow-sm relative ${
                     candidate.status === 'hired'
                       ? 'border-emerald-300 bg-emerald-50/30'
                       : 'border-border/40'
                   }`}
                 >
-                  {/* AI Annotation */}
+                  {/* AI Annotation - hidden on mobile */}
                   {candidate.annotation && (
-                    <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[8px] px-1.5 py-0.5 rounded whitespace-nowrap shadow-sm z-10">
+                    <div className="hidden md:block absolute -top-2 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[8px] px-1.5 py-0.5 rounded whitespace-nowrap shadow-sm z-10">
                       {candidate.annotation}
                     </div>
                   )}
 
-                  <div className="flex items-start gap-1.5">
+                  <div className="flex items-start gap-1 md:gap-1.5">
                     {/* Avatar with indicator */}
                     <div className="relative">
-                      <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[9px] font-semibold ${avatarColors[candidate.colorIndex]}`}>
+                      <div className={`w-5 md:w-6 h-5 md:h-6 rounded-full flex items-center justify-center text-[8px] md:text-[9px] font-semibold ${avatarColors[candidate.colorIndex]}`}>
                         {getInitials(candidate.name)}
                       </div>
                       {candidate.indicator === 'high-potential' && (
-                        <Star className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-amber-500 fill-amber-500" />
+                        <Star className="absolute -top-0.5 -right-0.5 w-2 md:w-2.5 h-2 md:h-2.5 text-amber-500 fill-amber-500" />
                       )}
                       {candidate.indicator === 'at-risk' && (
-                        <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-amber-500 rounded-full" />
+                        <div className="absolute -top-0.5 -right-0.5 w-1.5 md:w-2 h-1.5 md:h-2 bg-amber-500 rounded-full" />
                       )}
                       {candidate.indicator === 'needs-attention' && (
-                        <Clock className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-muted-foreground" />
+                        <Clock className="absolute -top-0.5 -right-0.5 w-2 md:w-2.5 h-2 md:h-2.5 text-muted-foreground" />
                       )}
                     </div>
                     
-                    <div className="flex-1 min-w-0 space-y-0.5">
-                      <div className="flex items-center gap-1">
-                        <span className="text-[10px] font-medium text-foreground truncate">
+                    <div className="flex-1 min-w-0 space-y-0">
+                      <div className="flex items-center gap-0.5 md:gap-1">
+                        <span className="text-[8px] md:text-[10px] font-medium text-foreground truncate">
                           {candidate.name}
                         </span>
                         {candidate.status === 'hired' && (
-                          <Check className="w-2.5 h-2.5 text-emerald-600" />
+                          <Check className="w-2 md:w-2.5 h-2 md:h-2.5 text-emerald-600" />
                         )}
                       </div>
-                      <div className="text-[8px] text-muted-foreground">
+                      <div className="text-[7px] md:text-[8px] text-muted-foreground truncate">
                         {candidate.source} · {candidate.days}d · <span className={candidate.score >= 8.5 ? 'text-emerald-600 font-medium' : ''}>{candidate.score}</span>
                       </div>
                     </div>
@@ -237,20 +237,20 @@ export function HiringFunnelAnimation() {
           ))}
         </div>
 
-        {/* Business Impact Footer */}
+        {/* Business Impact Footer - simplified on mobile */}
         <div className="flex items-center justify-between pt-2 border-t border-border/20">
-          <div className="flex items-center gap-4">
-            <div className="text-[9px]">
-              <span className="text-muted-foreground">Cost per Hire</span>
-              <div className="flex items-center gap-1">
+          <div className="flex items-center gap-3 md:gap-4">
+            <div className="text-[8px] md:text-[9px]">
+              <span className="text-muted-foreground">Cost/Hire</span>
+              <div className="flex items-center gap-0.5 md:gap-1">
                 <span className="font-semibold text-foreground">€{metrics.costPerHire.toLocaleString()}</span>
-                <span className="flex items-center text-emerald-600">
+                <span className="hidden sm:flex items-center text-emerald-600">
                   <ArrowDown className="w-2 h-2" />
                   <span>12%</span>
                 </span>
               </div>
             </div>
-            <div className="text-[9px]">
+            <div className="hidden sm:block text-[9px]">
               <span className="text-muted-foreground">Time Saved</span>
               <div className="flex items-center gap-1.5">
                 <div className="w-12 h-1 bg-muted rounded-full overflow-hidden">
@@ -261,18 +261,18 @@ export function HiringFunnelAnimation() {
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1 md:gap-1.5">
             <span className="relative flex h-1.5 w-1.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
             </span>
-            <span className="text-[9px] text-muted-foreground">Live</span>
+            <span className="text-[8px] md:text-[9px] text-muted-foreground">Live</span>
           </div>
         </div>
       </div>
 
-      {/* Intelligence Panel - 35% */}
-      <div className="flex-[0.35] flex flex-col gap-3 min-w-0">
+      {/* Intelligence Panel - hidden on mobile, 35% on desktop */}
+      <div className="hidden md:flex flex-[0.35] flex-col gap-3 min-w-0">
         {/* Panel Header */}
         <div className="flex items-center gap-1.5">
           <Activity className="w-3 h-3 text-primary" />
