@@ -155,31 +155,33 @@ export function HiringFunnelAnimation() {
     <div className="w-full h-full flex flex-col md:flex-row gap-3 md:gap-4 p-3 md:p-4" aria-hidden="true" role="presentation">
       {/* Pipeline Section - 65% on desktop, full on mobile */}
       <div className="flex-1 md:flex-[0.65] flex flex-col gap-2 md:gap-3 min-w-0 overflow-hidden">
-        {/* Stage Headers */}
-        <div className="flex items-center overflow-x-auto scrollbar-hide">
+        {/* Stage Headers - horizontal scroll on mobile */}
+        <div className="flex items-center gap-1 pb-1 overflow-x-auto scrollbar-hide">
           {stages.map((stage, index) => (
             <React.Fragment key={stage}>
-              <div className="flex-shrink-0 md:flex-1 min-w-0">
-                <div className={`text-[8px] md:text-[10px] font-medium px-1.5 md:px-2 py-0.5 md:py-1 rounded inline-flex items-center gap-0.5 md:gap-1 whitespace-nowrap ${
-                  index === stages.length - 1 
-                    ? 'bg-emerald-50 text-emerald-700 border border-emerald-200/60'
-                    : 'bg-muted/50 text-muted-foreground border border-border/30'
-                }`}>
-                  <span>{stage}</span>
-                  <span className="opacity-60">({getCandidatesInStage(index).length})</span>
-                </div>
+              <div className={`text-[9px] md:text-[10px] font-medium px-2 py-1 rounded inline-flex items-center gap-1 whitespace-nowrap flex-shrink-0 ${
+                index === stages.length - 1 
+                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200/60'
+                  : 'bg-muted/50 text-muted-foreground border border-border/30'
+              }`}>
+                <span>{stage}</span>
+                <span className="opacity-60">({getCandidatesInStage(index).length})</span>
               </div>
               {index < stages.length - 1 && (
-                <ChevronRight className="w-2 md:w-3 h-2 md:h-3 text-border/60 mx-0.5 flex-shrink-0" />
+                <ChevronRight className="w-3 h-3 text-border/60 flex-shrink-0" />
               )}
             </React.Fragment>
           ))}
         </div>
 
-        {/* Pipeline Grid */}
-        <div className="flex-1 flex gap-1 md:gap-2 overflow-x-auto md:overflow-hidden scrollbar-hide">
-          {stages.map((stage, stageIndex) => (
-            <div key={stage} className="flex-shrink-0 w-[70px] md:w-auto md:flex-1 min-w-0 flex flex-col gap-1 md:gap-2 pt-1 md:pt-2 overflow-hidden">
+        {/* Pipeline Grid - 2 columns on mobile, 5 on desktop */}
+        <div className="flex-1 grid grid-cols-2 md:flex gap-2 md:gap-2 overflow-hidden">
+          {stages.slice(0, 4).map((stage, stageIndex) => (
+            <div key={stage} className={`md:flex-1 min-w-0 flex flex-col gap-1.5 md:gap-2 ${stageIndex >= 2 ? 'hidden md:flex' : ''}`}>
+              {/* Mobile stage label */}
+              <div className="md:hidden text-[8px] font-medium text-muted-foreground uppercase tracking-wide">
+                {stage}
+              </div>
               {getCandidatesInStage(stageIndex).map((candidate) => (
                 <motion.div
                   key={candidate.id}
@@ -187,7 +189,7 @@ export function HiringFunnelAnimation() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className={`bg-card border rounded-md p-1.5 md:p-2 shadow-sm relative ${
+                  className={`bg-card border rounded-lg p-2 md:p-2 shadow-sm relative ${
                     candidate.status === 'hired'
                       ? 'border-emerald-300 bg-emerald-50/30'
                       : 'border-border/40'
@@ -200,34 +202,34 @@ export function HiringFunnelAnimation() {
                     </div>
                   )}
 
-                  <div className="flex items-start gap-1 md:gap-1.5">
+                  <div className="flex items-center gap-2">
                     {/* Avatar with indicator */}
-                    <div className="relative">
-                      <div className={`w-5 md:w-6 h-5 md:h-6 rounded-full flex items-center justify-center text-[8px] md:text-[9px] font-semibold ${avatarColors[candidate.colorIndex]}`}>
+                    <div className="relative flex-shrink-0">
+                      <div className={`w-7 md:w-6 h-7 md:h-6 rounded-full flex items-center justify-center text-[10px] md:text-[9px] font-semibold ${avatarColors[candidate.colorIndex]}`}>
                         {getInitials(candidate.name)}
                       </div>
                       {candidate.indicator === 'high-potential' && (
-                        <Star className="absolute -top-0.5 -right-0.5 w-2 md:w-2.5 h-2 md:h-2.5 text-amber-500 fill-amber-500" />
+                        <Star className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-amber-500 fill-amber-500" />
                       )}
                       {candidate.indicator === 'at-risk' && (
-                        <div className="absolute -top-0.5 -right-0.5 w-1.5 md:w-2 h-1.5 md:h-2 bg-amber-500 rounded-full" />
+                        <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-amber-500 rounded-full" />
                       )}
                       {candidate.indicator === 'needs-attention' && (
-                        <Clock className="absolute -top-0.5 -right-0.5 w-2 md:w-2.5 h-2 md:h-2.5 text-muted-foreground" />
+                        <Clock className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-muted-foreground" />
                       )}
                     </div>
                     
-                    <div className="flex-1 min-w-0 space-y-0">
-                      <div className="flex items-center gap-0.5 md:gap-1">
-                        <span className="text-[8px] md:text-[10px] font-medium text-foreground truncate">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1">
+                        <span className="text-[11px] md:text-[10px] font-medium text-foreground truncate">
                           {candidate.name}
                         </span>
                         {candidate.status === 'hired' && (
-                          <Check className="w-2 md:w-2.5 h-2 md:h-2.5 text-emerald-600" />
+                          <Check className="w-2.5 h-2.5 text-emerald-600 flex-shrink-0" />
                         )}
                       </div>
-                      <div className="text-[7px] md:text-[8px] text-muted-foreground truncate">
-                        {candidate.source} · {candidate.days}d · <span className={candidate.score >= 8.5 ? 'text-emerald-600 font-medium' : ''}>{candidate.score}</span>
+                      <div className="text-[9px] md:text-[8px] text-muted-foreground truncate">
+                        {candidate.source} · {candidate.days}d
                       </div>
                     </div>
                   </div>
@@ -235,6 +237,36 @@ export function HiringFunnelAnimation() {
               ))}
             </div>
           ))}
+          {/* Desktop-only last column */}
+          <div className="hidden md:flex md:flex-1 min-w-0 flex-col gap-2">
+            {getCandidatesInStage(4).map((candidate) => (
+              <motion.div
+                key={candidate.id}
+                initial={{ opacity: 0, y: -6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="bg-card border rounded-md p-2 shadow-sm relative border-emerald-300 bg-emerald-50/30"
+              >
+                <div className="flex items-start gap-1.5">
+                  <div className="relative">
+                    <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[9px] font-semibold ${avatarColors[candidate.colorIndex]}`}>
+                      {getInitials(candidate.name)}
+                    </div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-1">
+                      <span className="text-[10px] font-medium text-foreground truncate">{candidate.name}</span>
+                      <Check className="w-2.5 h-2.5 text-emerald-600" />
+                    </div>
+                    <div className="text-[8px] text-muted-foreground truncate">
+                      {candidate.source} · {candidate.days}d
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         {/* Business Impact Footer - simplified on mobile */}
