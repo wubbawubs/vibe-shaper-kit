@@ -35,7 +35,9 @@ export function useLanguageFromUrl() {
 
   const currentLanguage = (lang as Language) || defaultLanguage;
 
-  return { currentLanguage, changeLanguage };
+  const localizedPath = (path: string) => getLocalizedPath(path, currentLanguage);
+
+  return { currentLanguage, changeLanguage, localizedPath };
 }
 
 export function getLocalizedPath(path: string, lang: Language): string {
