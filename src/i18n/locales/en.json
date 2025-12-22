@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "product": "Product",
+    "useCases": "Use Cases",
+    "partners": "Partners",
+    "pricing": "Pricing",
+    "whyOneRooted": "Why OneRooted",
+    "team": "Team",
+    "requestDemo": "Request demo"
+  },
+  "hero": {
+    "headline": "Hiring doesn't need another tool.",
+    "headlineHighlight": "It needs a system.",
+    "subheadline": "Replace scattered tools with one intelligent system that ranks candidates, streamlines workflows, and drives better hiring decisions.",
+    "cta": "Request a demo",
+    "ctaSecondary": "View plans",
+    "stats": {
+      "screening": "faster screening",
+      "quality": "better quality hires"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "The Hiring OS for Teams That Take Hiring Seriously",
+      "description": "Replace scattered recruitment tools with one intelligent system. OneRooted ranks candidates, streamlines workflows, and drives better hiring decisions."
+    }
+  },
+  "footer": {
+    "tagline": "Hiring doesn't need another tool. It needs a system.",
+    "copyright": "© {year} OneRooted. All rights reserved."
+  }
+}

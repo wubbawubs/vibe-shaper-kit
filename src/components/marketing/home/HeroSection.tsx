@@ -1,10 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { HiringFunnelAnimation } from "./HiringFunnelAnimation";
+import { getLocalizedPath } from "@/i18n/useLanguage";
+import { type Language } from "@/i18n/config";
 
 export function HeroSection() {
+  const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+
+  const getLocalizedHref = (href: string) => {
+    return lang ? getLocalizedPath(href, lang as Language) : href;
+  };
+
   return (
     <section className="relative min-h-[80vh] md:min-h-[85vh] flex items-center overflow-hidden py-8 md:py-0">
       {/* Background gradient */}
@@ -21,9 +31,9 @@ export function HeroSection() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight"
             >
-              Hiring doesn't need another tool.{" "}
+              {t("hero.headline")}{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                It needs a system.
+                {t("hero.headlineHighlight")}
               </span>
             </motion.h1>
 
@@ -34,7 +44,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-lg leading-relaxed"
             >
-              Replace scattered tools with one intelligent system that ranks candidates, streamlines workflows, and drives better hiring decisions.
+              {t("hero.subheadline")}
             </motion.p>
 
             {/* CTAs */}
@@ -45,14 +55,14 @@ export function HeroSection() {
               className="flex flex-col sm:flex-row items-stretch sm:items-start gap-3 pt-2 md:pt-4"
             >
               <Button asChild size="lg" className="h-12 md:h-14 px-6 md:px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
-                <Link to="/demo">
-                  Request a demo
+                <Link to={getLocalizedHref("/demo")}>
+                  {t("hero.cta")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="ghost" size="lg" className="h-12 md:h-14 px-6 md:px-8 text-base text-muted-foreground hover:text-foreground">
-                <Link to="/pricing">
-                  View plans
+                <Link to={getLocalizedHref("/pricing")}>
+                  {t("hero.ctaSecondary")}
                 </Link>
               </Button>
             </motion.div>
@@ -66,12 +76,12 @@ export function HeroSection() {
             >
               <div>
                 <div className="text-xl md:text-2xl font-semibold text-foreground">85%</div>
-                <div className="text-muted-foreground text-xs md:text-sm">faster screening</div>
+                <div className="text-muted-foreground text-xs md:text-sm">{t("hero.stats.screening")}</div>
               </div>
               <div className="w-px h-8 md:h-10 bg-border" />
               <div>
                 <div className="text-xl md:text-2xl font-semibold text-foreground">3x</div>
-                <div className="text-muted-foreground text-xs md:text-sm">better quality hires</div>
+                <div className="text-muted-foreground text-xs md:text-sm">{t("hero.stats.quality")}</div>
               </div>
             </motion.div>
           </div>

@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "product": "Product",
+    "useCases": "Toepassingen",
+    "partners": "Partners",
+    "pricing": "Prijzen",
+    "whyOneRooted": "Waarom OneRooted",
+    "team": "Team",
+    "requestDemo": "Demo aanvragen"
+  },
+  "hero": {
+    "headline": "Recruitment heeft geen nieuwe tool nodig.",
+    "headlineHighlight": "Het heeft een systeem nodig.",
+    "subheadline": "Vervang verspreide tools door één intelligent systeem dat kandidaten rangschikt, workflows stroomlijnt en betere aannamebeslissingen stimuleert.",
+    "cta": "Demo aanvragen",
+    "ctaSecondary": "Bekijk plannen",
+    "stats": {
+      "screening": "snellere screening",
+      "quality": "betere kwaliteit hires"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Het Hiring OS voor Teams die Recruitment Serieus Nemen",
+      "description": "Vervang verspreide recruitment tools door één intelligent systeem. OneRooted rangschikt kandidaten, stroomlijnt workflows en stimuleert betere aannamebeslissingen."
+    }
+  },
+  "footer": {
+    "tagline": "Recruitment heeft geen nieuwe tool nodig. Het heeft een systeem nodig.",
+    "copyright": "© {year} OneRooted. Alle rechten voorbehouden."
+  }
+}
