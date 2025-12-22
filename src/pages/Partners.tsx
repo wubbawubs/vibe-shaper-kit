@@ -53,8 +53,8 @@ const Partners = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="For Recruitment Partners"
-        description="OneRooted makes recruitment partners stronger, not obsolete. Better infrastructure for better outcomes."
+        title="For Recruitment Agencies & Partners"
+        description="Collaborate seamlessly with clients using OneRooted. Get real-time visibility, instant feedback, and better outcomes. Free for partners."
         url="https://onerooted.com/partners"
       />
       

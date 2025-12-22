@@ -64,8 +64,8 @@ const Team = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="Our Team"
-        description="Meet the OneRooted team. Seasoned experts with 25+ years of recruitment experience building the future of hiring."
+        title="About Us | Meet the OneRooted Team"
+        description="Meet the team behind OneRooted. 25+ years of recruitment expertise building the future of hiring. Part of the One-Time Group."
         url="https://onerooted.com/team"
       />
       {/* Hero */}

@@ -31,8 +31,8 @@ const Demo = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="Request a Demo"
-        description="See OneRooted in action. Book a 30-minute demo to discover how our Hiring OS can transform your recruitment process."
+        title="Request a Demo | See OneRooted in Action"
+        description="Book a free 30-minute demo. See how OneRooted's Hiring OS can streamline your recruitment, improve collaboration, and drive better hires."
         url="https://onerooted.com/demo"
       />
       {/* Hero */}

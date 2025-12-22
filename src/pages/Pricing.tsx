@@ -111,8 +111,8 @@ const Pricing = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="Pricing"
-        description="Clear, transparent pricing for OneRooted. Choose Base, Plus, or Premium plans starting at €299/month. No hidden fees, cancel anytime."
+        title="Pricing Plans | Transparent Hiring OS Pricing"
+        description="Simple, transparent pricing starting at €299/month. Choose Base, Plus, or Premium plans. No hidden fees, unlimited users, cancel anytime."
         url="https://onerooted.com/pricing"
       />
       {/* Hero */}
