@@ -405,6 +405,297 @@
       "secondary": "See how it works"
     }
   },
+  "useCasesPage": {
+    "seo": {
+      "title": "Use Cases | Hiring Solutions for Growing Teams",
+      "description": "See how teams use OneRooted for scaling fast, multi-stakeholder hiring, and partner collaboration. Real scenarios with measurable results."
+    },
+    "hero": {
+      "label": "Use cases",
+      "headline": "Real scenarios where",
+      "headlineHighlight": "OneRooted shines",
+      "subheadline": "See how teams like yours are transforming their hiring process."
+    },
+    "cases": [
+      {
+        "title": "Scaling a team fast",
+        "problem": "You need to hire 10+ people in 3 months. Coordination is chaos.",
+        "solution": "OneRooted gives everyone visibility into the pipeline, automates handoffs, and keeps momentum.",
+        "outcomes": ["Faster time-to-hire", "Less coordination overhead", "Clear progress tracking"],
+        "stat": "40%",
+        "statLabel": "faster hiring"
+      },
+      {
+        "title": "Hiring with multiple stakeholders",
+        "problem": "Founders, hiring managers, and team leads all need input. Nothing gets done.",
+        "solution": "Structured feedback loops and decision workflows that actually work.",
+        "outcomes": ["Aligned decisions", "No bottlenecks", "Everyone stays informed"],
+        "stat": "3x",
+        "statLabel": "faster decisions"
+      },
+      {
+        "title": "Working with recruitment partners",
+        "problem": "Agency candidates get lost. Communication breaks down. Blame games start.",
+        "solution": "Partners work in the same system. Full transparency. One source of truth.",
+        "outcomes": ["Better partner relationships", "Clear accountability", "Faster collaboration"],
+        "stat": "100%",
+        "statLabel": "visibility"
+      },
+      {
+        "title": "Replacing an existing ATS without chaos",
+        "problem": "Migration feels impossible. Data everywhere. Team resistance.",
+        "solution": "Clean migration path. Gradual onboarding. Real support.",
+        "outcomes": ["Smooth transition", "No data loss", "Team adoption"],
+        "stat": "2 weeks",
+        "statLabel": "avg. migration"
+      }
+    ],
+    "theProblem": "The problem",
+    "howHelps": "How OneRooted helps",
+    "keyOutcomes": "Key outcomes",
+    "cta": {
+      "headline": "See how it works for your team",
+      "description": "Every team is unique. Let's explore how OneRooted can transform your specific hiring challenges.",
+      "button": "Request a demo",
+      "secondary": "See how it works"
+    }
+  },
+  "whyPage": {
+    "seo": {
+      "title": "Why OneRooted | The Story Behind the Hiring OS",
+      "description": "Why traditional ATS systems fail modern hiring teams. Learn how OneRooted rethinks recruitment software with a Hiring OS approach."
+    },
+    "hero": {
+      "label": "Our story",
+      "headline": "The story behind",
+      "headlineHighlight": "building a Hiring OS",
+      "subheadline": "Why we set out to fundamentally rethink how hiring software should work."
+    },
+    "atsProblem": {
+      "label": "The problem",
+      "headline": "Why traditional ATS systems fail",
+      "items": [
+        { "title": "They're built for storage, not decisions", "desc": "Most ATS platforms are glorified databases. They track where candidates are, not why they should move forward." },
+        { "title": "They fragment the process", "desc": "Feedback in Slack. Decisions in email. Status in spreadsheets. The ATS becomes just another silo." },
+        { "title": "They ignore collaboration", "desc": "Modern hiring involves founders, hiring managers, team members, and external partners. ATS systems weren't built for this." },
+        { "title": "They optimize for recruiters, not outcomes", "desc": "Admin efficiency is good. But what about decision quality? What about time-to-hire? What about candidate experience?" }
+      ]
+    },
+    "insight": {
+      "label": "The insight",
+      "headline": "Why a Hiring OS is needed",
+      "description": "Hiring is no longer a linear process managed by one recruiter. It's a complex operation involving multiple stakeholders, external partners, and critical business decisions.",
+      "whatYouNeed": "What you actually need:",
+      "needs": [
+        "A system that understands complexity",
+        "Connected data across all touchpoints",
+        "Real collaboration, not just handoffs",
+        "Decision support, not just storage"
+      ],
+      "conclusion": "That's what a Hiring OS does. Not a feature upgrade — a fundamental rethink.",
+      "atsLabel": "Traditional ATS",
+      "atsFlow": ["Store", "Track", "Report"],
+      "atsDesc": "Data sits. Decisions happen elsewhere.",
+      "osLabel": "Hiring OS",
+      "osFlow": ["Collaborate", "Decide", "Improve"],
+      "osDesc": "Every action drives better outcomes."
+    },
+    "origin": {
+      "label": "The origin",
+      "headline": "How OneRooted was born",
+      "steps": [
+        { "step": "01", "title": "The frustration", "text": "We worked with organizations struggling to hire effectively, despite having 'all the tools.'" },
+        { "step": "02", "title": "The realization", "text": "The problem wasn't a lack of software—it was a lack of system. Tools weren't connected." },
+        { "step": "03", "title": "The solution", "text": "We built OneRooted as the operating system for hiring. One place where everyone can collaborate." }
+      ],
+      "quote": "Not another tool to learn. A system that works the way modern hiring actually happens."
+    },
+    "future": {
+      "label": "The future",
+      "headline": "Where we're going",
+      "items": [
+        { "title": "Deeper decision intelligence", "desc": "AI-powered insights that help you make better hiring decisions faster." },
+        { "title": "Seamless partner ecosystems", "desc": "Connect with any recruitment partner through standardized interfaces." },
+        { "title": "Predictive hiring insights", "desc": "Know what's working before you see the results." },
+        { "title": "Global team collaboration", "desc": "Built for distributed teams across time zones and cultures." }
+      ]
+    },
+    "cta": {
+      "headline": "Ready to rethink how you hire?",
+      "description": "See how OneRooted can transform your hiring process from fragmented to unified.",
+      "button": "Request a demo",
+      "secondary": "See how it works"
+    }
+  },
+  "partnersPage": {
+    "seo": {
+      "title": "For Recruitment Agencies & Partners",
+      "description": "Collaborate seamlessly with clients using OneRooted. Get real-time visibility, instant feedback, and better outcomes. Free for partners."
+    },
+    "hero": {
+      "label": "For recruitment partners",
+      "headline": "We make you",
+      "headlineHighlight": "stronger",
+      "headlineSuffix": ", not obsolete",
+      "subheadline": "OneRooted is infrastructure. Not competition. When your clients use it, you get better tools, clearer visibility, and stronger relationships.",
+      "cta": "Partner with us",
+      "ctaSecondary": "See how it works"
+    },
+    "perspectives": {
+      "headline": "One system. Two perspectives.",
+      "subheadline": "Partners and clients work in the same system — with views designed for each role.",
+      "partner": {
+        "title": "Partner view",
+        "subtitle": "What you work with",
+        "benefits": [
+          "Your own pipeline per client — full ownership",
+          "Real-time status updates — no more chasing",
+          "Instant feedback on every submission",
+          "Professional interface your clients trust"
+        ]
+      },
+      "client": {
+        "title": "Client view",
+        "subtitle": "What they see",
+        "benefits": [
+          "All candidates in one view — zero chaos",
+          "Clear source attribution per partner",
+          "Performance data that drives decisions",
+          "One system instead of scattered spreadsheets"
+        ]
+      }
+    },
+    "howItWorks": {
+      "label": "How it works",
+      "headline": "From invite to insight in four steps",
+      "subheadline": "No complex onboarding. No learning curve. Just collaboration that works.",
+      "steps": [
+        { "title": "Client invites partner", "desc": "One click. No onboarding friction." },
+        { "title": "Partner submits candidates", "desc": "Direct into the pipeline. Instantly visible." },
+        { "title": "Both sides see progress", "desc": "Real-time updates. No status meetings." },
+        { "title": "Data drives the relationship", "desc": "Clear metrics on what works. No politics." }
+      ],
+      "punchline": "No handovers. No blind spots. No politics.",
+      "punchlineDesc": "Just transparent collaboration that makes everyone better."
+    },
+    "infrastructure": {
+      "headline": "Infrastructure, not competition",
+      "description": "We're not building another agency tool. We're building the operating system that makes collaboration between clients and partners seamless.",
+      "forPartners": "For partners",
+      "forPartnersDesc": "Better tools mean better placements",
+      "forClients": "For clients",
+      "forClientsDesc": "Better visibility means better decisions"
+    },
+    "faq": {
+      "label": "FAQ",
+      "headline": "Common questions from partners",
+      "items": [
+        { "question": "Do I need to pay for OneRooted as a partner?", "answer": "No. Partners don't pay for OneRooted. When a client invites you to collaborate, you get full access to your dedicated pipeline at no cost. The client handles the subscription." },
+        { "question": "Can I work with multiple clients in OneRooted?", "answer": "Yes. Each client has their own workspace, and you'll have a separate pipeline per client. Everything stays organized and confidential between clients." },
+        { "question": "What data can the client see about my work?", "answer": "Clients see the candidates you submit, their status, and performance metrics like time-to-hire and conversion rates. They don't see your internal notes or communication with other clients." },
+        { "question": "How do I get started as a partner?", "answer": "Your client sends you an invite link. You create an account (takes 30 seconds), and you're immediately connected to their pipeline. No onboarding calls, no setup meetings." },
+        { "question": "Is OneRooted trying to replace recruitment agencies?", "answer": "No. We're infrastructure, not competition. OneRooted makes the collaboration between you and your clients smoother. Better tools mean better placements, stronger relationships, and less time wasted on admin." },
+        { "question": "Can I still use my own ATS alongside OneRooted?", "answer": "Yes. Many partners use their own systems internally and submit candidates to OneRooted for client collaboration. Think of it as the shared workspace where you and your client meet." }
+      ]
+    },
+    "cta": {
+      "headline": "Ready to work smarter?",
+      "description": "Join the partners who are already delivering better results through better infrastructure.",
+      "button": "Let's talk",
+      "secondary": "Explore the product"
+    }
+  },
+  "teamPage": {
+    "seo": {
+      "title": "About Us | Meet the OneRooted Team",
+      "description": "Meet the team behind OneRooted. 25+ years of recruitment expertise building the future of hiring. Part of the One-Time Group."
+    },
+    "hero": {
+      "label": "Meet the team",
+      "headline": "Building the future of",
+      "headlineHighlight": "hiring together",
+      "subheadline": "A passionate team of recruiters, dreamers and builders on a mission to make hiring change forever."
+    },
+    "collectiveFrame": "OneRooted wasn't built by product managers guessing at hiring problems. It was built by operators who lived them for decades.",
+    "members": [
+      { "name": "Robin Dennie", "role": "Founder & CEO", "tagline": "Creates", "bio": "25 years of agency experience. Recruitment innovator who transforms how companies hire." },
+      { "name": "Erik Dijkshoorn", "role": "Strategic Advisor", "tagline": "Advises", "bio": "Extensive experience in multiple C-level roles. Leadership coach and strategic thinker." },
+      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Directs", "bio": "Bureau manager and BI specialist. The financial and operational conscience of OneRooted." },
+      { "name": "Luuk Wubs", "role": "CTO", "tagline": "Builds", "bio": "Young, driven tech leader. Passionate about building scalable solutions that make hiring better." }
+    ],
+    "values": {
+      "label": "Our values",
+      "headline": "What drives us",
+      "items": [
+        { "title": "Human-first", "description": "Technology should amplify human connection, not replace it." },
+        { "title": "Outcome-obsessed", "description": "We measure success by the quality of hires, not features shipped." },
+        { "title": "Radically transparent", "description": "No hidden agendas. Clear communication always." },
+        { "title": "Collaborative by design", "description": "The best decisions come from diverse perspectives working together." }
+      ]
+    },
+    "story": {
+      "label": "Our story",
+      "headline": "Part of the One-Time Group",
+      "description": "OneRooted was born from the One-Time Group's mission to transform how organizations find and nurture talent. With deep roots in recruitment and HR technology, we bring decades of combined experience to every feature we build.",
+      "location": "Based in the Netherlands, we're building a global product for teams everywhere."
+    },
+    "joinUs": {
+      "headline": "Interested in working together?",
+      "description": "We're always looking for talented people who share our mission. Reach out and let's have a conversation.",
+      "button": "Get in touch"
+    },
+    "cta": {
+      "trustBadge": "Part of the One-Time Group",
+      "headline": "Ready to transform your hiring?",
+      "description": "Join the teams that have already upgraded from fragmented tools to a unified Hiring OS.",
+      "button": "Why we built this",
+      "secondary": "Learn more"
+    }
+  },
+  "demoPage": {
+    "seo": {
+      "title": "Request a Demo | See OneRooted in Action",
+      "description": "Book a free 30-minute demo. See how OneRooted's Hiring OS can streamline your recruitment, improve collaboration, and drive better hires."
+    },
+    "hero": {
+      "label": "Get started",
+      "headline": "Request a",
+      "headlineHighlight": "demo",
+      "subheadline": "See OneRooted in action. No sales theatrics. Just clarity.",
+      "trustIndicators": [
+        { "text": "30-minute call" },
+        { "text": "No commitment" },
+        { "text": "Tailored to your needs" }
+      ]
+    },
+    "form": {
+      "title": "Tell us about your hiring",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Work email",
+      "company": "Company",
+      "teamSize": "Team size",
+      "teamSizePlaceholder": "Select team size",
+      "teamSizeOptions": ["1-10 employees", "11-50 employees", "51-200 employees", "201-500 employees", "500+ employees"],
+      "message": "What are you looking to solve?",
+      "messagePlaceholder": "Tell us about your current hiring challenges...",
+      "submit": "Request demo",
+      "submitting": "Sending...",
+      "success": "Thank you! We'll be in touch within 24 hours."
+    },
+    "expect": {
+      "headline": "What to expect",
+      "items": [
+        { "title": "30-minute walkthrough", "desc": "We'll show you how OneRooted works for your specific situation." },
+        { "title": "Honest conversation", "desc": "No pressure. We'll tell you if we're the right fit—and if we're not." },
+        { "title": "Clear next steps", "desc": "Whether it's a trial, onboarding, or just staying in touch." }
+      ],
+      "testimonial": "The demo was refreshingly direct. They understood our challenges immediately and showed exactly how OneRooted would help.",
+      "testimonialAuthor": "— Head of Talent, Dutch Scale-up",
+      "quickResponse": "Quick response",
+      "quickResponseDesc": "We typically reply within 24 hours"
+    }
+  },
   "footer": {
     "tagline": "The Hiring OS for teams that take hiring seriously. Replace fragmented tools with one intelligent system.",
     "copyright": "© {{year}} OneRooted. All rights reserved.",

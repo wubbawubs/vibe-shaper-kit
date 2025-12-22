@@ -405,6 +405,297 @@
       "secondary": "Bekijk hoe het werkt"
     }
   },
+  "useCasesPage": {
+    "seo": {
+      "title": "Toepassingen | Hiring Oplossingen voor Groeiende Teams",
+      "description": "Zie hoe teams OneRooted gebruiken voor snel schalen, hiring met meerdere stakeholders en partner samenwerking. Echte scenario's met meetbare resultaten."
+    },
+    "hero": {
+      "label": "Toepassingen",
+      "headline": "Echte scenario's waar",
+      "headlineHighlight": "OneRooted schittert",
+      "subheadline": "Zie hoe teams zoals de jouwe hun wervingsproces transformeren."
+    },
+    "cases": [
+      {
+        "title": "Snel een team opschalen",
+        "problem": "Je moet 10+ mensen aannemen in 3 maanden. Coördinatie is chaos.",
+        "solution": "OneRooted geeft iedereen zicht op de pipeline, automatiseert overdrachten en houdt momentum.",
+        "outcomes": ["Snellere time-to-hire", "Minder coördinatie-overhead", "Helder voortgangsoverzicht"],
+        "stat": "40%",
+        "statLabel": "sneller aannemen"
+      },
+      {
+        "title": "Hiring met meerdere stakeholders",
+        "problem": "Founders, hiring managers en teamleiders willen allemaal input. Niets wordt gedaan.",
+        "solution": "Gestructureerde feedback loops en beslissingsworkflows die echt werken.",
+        "outcomes": ["Afgestemde beslissingen", "Geen bottlenecks", "Iedereen blijft geïnformeerd"],
+        "stat": "3x",
+        "statLabel": "snellere beslissingen"
+      },
+      {
+        "title": "Werken met recruitment partners",
+        "problem": "Bureau-kandidaten raken zoek. Communicatie valt uit. Beschuldigingen beginnen.",
+        "solution": "Partners werken in hetzelfde systeem. Volledige transparantie. Eén bron van waarheid.",
+        "outcomes": ["Betere partnerrelaties", "Heldere verantwoordelijkheid", "Snellere samenwerking"],
+        "stat": "100%",
+        "statLabel": "zichtbaarheid"
+      },
+      {
+        "title": "Bestaand ATS vervangen zonder chaos",
+        "problem": "Migratie voelt onmogelijk. Data overal. Teamweerstand.",
+        "solution": "Schoon migratiepad. Geleidelijke onboarding. Echte support.",
+        "outcomes": ["Soepele overgang", "Geen dataverlies", "Team adoptie"],
+        "stat": "2 weken",
+        "statLabel": "gem. migratie"
+      }
+    ],
+    "theProblem": "Het probleem",
+    "howHelps": "Hoe OneRooted helpt",
+    "keyOutcomes": "Belangrijkste resultaten",
+    "cta": {
+      "headline": "Zie hoe het werkt voor jouw team",
+      "description": "Elk team is uniek. Laten we verkennen hoe OneRooted jouw specifieke wervingsuitdagingen kan transformeren.",
+      "button": "Demo aanvragen",
+      "secondary": "Bekijk hoe het werkt"
+    }
+  },
+  "whyPage": {
+    "seo": {
+      "title": "Waarom OneRooted | Het Verhaal Achter het Hiring OS",
+      "description": "Waarom traditionele ATS-systemen moderne hiring teams teleurstellen. Leer hoe OneRooted recruitment software herdenkt met een Hiring OS aanpak."
+    },
+    "hero": {
+      "label": "Ons verhaal",
+      "headline": "Het verhaal achter",
+      "headlineHighlight": "het bouwen van een Hiring OS",
+      "subheadline": "Waarom we besloten om fundamenteel te heroverwegen hoe hiring software zou moeten werken."
+    },
+    "atsProblem": {
+      "label": "Het probleem",
+      "headline": "Waarom traditionele ATS-systemen falen",
+      "items": [
+        { "title": "Ze zijn gebouwd voor opslag, niet beslissingen", "desc": "De meeste ATS-platforms zijn verheerlijkte databases. Ze volgen waar kandidaten zijn, niet waarom ze vooruit zouden moeten." },
+        { "title": "Ze fragmenteren het proces", "desc": "Feedback in Slack. Beslissingen in e-mail. Status in spreadsheets. Het ATS wordt gewoon een andere silo." },
+        { "title": "Ze negeren samenwerking", "desc": "Moderne hiring betrekt founders, hiring managers, teamleden en externe partners. ATS-systemen zijn hier niet voor gebouwd." },
+        { "title": "Ze optimaliseren voor recruiters, niet resultaten", "desc": "Admin efficiëntie is goed. Maar hoe zit het met beslissingskwaliteit? Time-to-hire? Kandidaatervaring?" }
+      ]
+    },
+    "insight": {
+      "label": "Het inzicht",
+      "headline": "Waarom een Hiring OS nodig is",
+      "description": "Hiring is niet langer een lineair proces beheerd door één recruiter. Het is een complexe operatie met meerdere stakeholders, externe partners en kritieke zakelijke beslissingen.",
+      "whatYouNeed": "Wat je echt nodig hebt:",
+      "needs": [
+        "Een systeem dat complexiteit begrijpt",
+        "Verbonden data over alle touchpoints",
+        "Echte samenwerking, niet alleen overdrachten",
+        "Beslissingsondersteuning, niet alleen opslag"
+      ],
+      "conclusion": "Dat is wat een Hiring OS doet. Geen feature upgrade — een fundamentele heroverweging.",
+      "atsLabel": "Traditioneel ATS",
+      "atsFlow": ["Opslaan", "Volgen", "Rapporteren"],
+      "atsDesc": "Data staat stil. Beslissingen gebeuren elders.",
+      "osLabel": "Hiring OS",
+      "osFlow": ["Samenwerken", "Beslissen", "Verbeteren"],
+      "osDesc": "Elke actie leidt tot betere resultaten."
+    },
+    "origin": {
+      "label": "De oorsprong",
+      "headline": "Hoe OneRooted is ontstaan",
+      "steps": [
+        { "step": "01", "title": "De frustratie", "text": "We werkten met organisaties die worstelden om effectief te werven, ondanks dat ze 'alle tools' hadden." },
+        { "step": "02", "title": "De realisatie", "text": "Het probleem was geen gebrek aan software—het was een gebrek aan systeem. Tools waren niet verbonden." },
+        { "step": "03", "title": "De oplossing", "text": "We bouwden OneRooted als het operating system voor hiring. Eén plek waar iedereen kan samenwerken." }
+      ],
+      "quote": "Geen nieuwe tool om te leren. Een systeem dat werkt zoals moderne hiring echt gebeurt."
+    },
+    "future": {
+      "label": "De toekomst",
+      "headline": "Waar we naartoe gaan",
+      "items": [
+        { "title": "Diepere beslissingsintelligentie", "desc": "AI-gedreven inzichten die je helpen sneller betere aannamebeslissingen te nemen." },
+        { "title": "Naadloze partner ecosystemen", "desc": "Verbind met elke recruitment partner via gestandaardiseerde interfaces." },
+        { "title": "Voorspellende hiring inzichten", "desc": "Weet wat werkt voordat je de resultaten ziet." },
+        { "title": "Globale team samenwerking", "desc": "Gebouwd voor gedistribueerde teams over tijdzones en culturen." }
+      ]
+    },
+    "cta": {
+      "headline": "Klaar om te heroverwegen hoe je werft?",
+      "description": "Zie hoe OneRooted je wervingsproces kan transformeren van gefragmenteerd naar unified.",
+      "button": "Demo aanvragen",
+      "secondary": "Bekijk hoe het werkt"
+    }
+  },
+  "partnersPage": {
+    "seo": {
+      "title": "Voor Recruitment Bureaus & Partners",
+      "description": "Werk naadloos samen met klanten via OneRooted. Krijg real-time zichtbaarheid, directe feedback en betere resultaten. Gratis voor partners."
+    },
+    "hero": {
+      "label": "Voor recruitment partners",
+      "headline": "We maken je",
+      "headlineHighlight": "sterker",
+      "headlineSuffix": ", niet overbodig",
+      "subheadline": "OneRooted is infrastructuur. Geen concurrentie. Als je klanten het gebruiken, krijg jij betere tools, helderder zicht en sterkere relaties.",
+      "cta": "Partner met ons",
+      "ctaSecondary": "Bekijk hoe het werkt"
+    },
+    "perspectives": {
+      "headline": "Eén systeem. Twee perspectieven.",
+      "subheadline": "Partners en klanten werken in hetzelfde systeem — met views ontworpen voor elke rol.",
+      "partner": {
+        "title": "Partner view",
+        "subtitle": "Waarmee jij werkt",
+        "benefits": [
+          "Je eigen pipeline per klant — vol eigenaarschap",
+          "Real-time statusupdates — niet meer achteraan lopen",
+          "Directe feedback op elke inzending",
+          "Professionele interface die je klanten vertrouwen"
+        ]
+      },
+      "client": {
+        "title": "Klant view",
+        "subtitle": "Wat zij zien",
+        "benefits": [
+          "Alle kandidaten in één overzicht — geen chaos",
+          "Duidelijke bronattributie per partner",
+          "Prestatiedata die beslissingen stuurt",
+          "Eén systeem in plaats van verspreide spreadsheets"
+        ]
+      }
+    },
+    "howItWorks": {
+      "label": "Hoe het werkt",
+      "headline": "Van uitnodiging tot inzicht in vier stappen",
+      "subheadline": "Geen complexe onboarding. Geen leercurve. Gewoon samenwerking die werkt.",
+      "steps": [
+        { "title": "Klant nodigt partner uit", "desc": "Eén klik. Geen onboarding-frictie." },
+        { "title": "Partner dient kandidaten in", "desc": "Direct in de pipeline. Meteen zichtbaar." },
+        { "title": "Beide kanten zien voortgang", "desc": "Real-time updates. Geen statusmeetings." },
+        { "title": "Data stuurt de relatie", "desc": "Heldere metrics over wat werkt. Geen politiek." }
+      ],
+      "punchline": "Geen overdrachten. Geen blinde vlekken. Geen politiek.",
+      "punchlineDesc": "Gewoon transparante samenwerking die iedereen beter maakt."
+    },
+    "infrastructure": {
+      "headline": "Infrastructuur, geen concurrentie",
+      "description": "We bouwen geen nieuwe bureau-tool. We bouwen het operating system dat samenwerking tussen klanten en partners naadloos maakt.",
+      "forPartners": "Voor partners",
+      "forPartnersDesc": "Betere tools betekent betere plaatsingen",
+      "forClients": "Voor klanten",
+      "forClientsDesc": "Beter zicht betekent betere beslissingen"
+    },
+    "faq": {
+      "label": "FAQ",
+      "headline": "Veelgestelde vragen van partners",
+      "items": [
+        { "question": "Moet ik betalen voor OneRooted als partner?", "answer": "Nee. Partners betalen niet voor OneRooted. Wanneer een klant je uitnodigt om samen te werken, krijg je volledige toegang tot je dedicated pipeline zonder kosten. De klant handelt het abonnement af." },
+        { "question": "Kan ik met meerdere klanten werken in OneRooted?", "answer": "Ja. Elke klant heeft zijn eigen workspace, en je hebt een aparte pipeline per klant. Alles blijft georganiseerd en vertrouwelijk tussen klanten." },
+        { "question": "Welke data kan de klant zien over mijn werk?", "answer": "Klanten zien de kandidaten die je indient, hun status en prestatiemetrics zoals time-to-hire en conversieratio's. Ze zien niet je interne notities of communicatie met andere klanten." },
+        { "question": "Hoe begin ik als partner?", "answer": "Je klant stuurt je een uitnodigingslink. Je maakt een account aan (duurt 30 seconden), en je bent meteen verbonden met hun pipeline. Geen onboarding calls, geen setup meetings." },
+        { "question": "Probeert OneRooted recruitment bureaus te vervangen?", "answer": "Nee. Wij zijn infrastructuur, geen concurrentie. OneRooted maakt de samenwerking tussen jou en je klanten soepeler. Betere tools betekent betere plaatsingen, sterkere relaties en minder tijd verspild aan admin." },
+        { "question": "Kan ik nog steeds mijn eigen ATS naast OneRooted gebruiken?", "answer": "Ja. Veel partners gebruiken hun eigen systemen intern en dienen kandidaten in bij OneRooted voor klantsamenwerking. Zie het als de gedeelde werkruimte waar jij en je klant samenkomen." }
+      ]
+    },
+    "cta": {
+      "headline": "Klaar om slimmer te werken?",
+      "description": "Sluit je aan bij de partners die al betere resultaten leveren door betere infrastructuur.",
+      "button": "Laten we praten",
+      "secondary": "Verken het product"
+    }
+  },
+  "teamPage": {
+    "seo": {
+      "title": "Over Ons | Maak Kennis met het OneRooted Team",
+      "description": "Maak kennis met het team achter OneRooted. 25+ jaar recruitment expertise die de toekomst van hiring bouwt. Onderdeel van de One-Time Group."
+    },
+    "hero": {
+      "label": "Ontmoet het team",
+      "headline": "Samen de toekomst van",
+      "headlineHighlight": "hiring bouwen",
+      "subheadline": "Een gepassioneerd team van recruiters, dromers en bouwers met de missie om hiring voorgoed te veranderen."
+    },
+    "collectiveFrame": "OneRooted is niet gebouwd door product managers die gokten naar hiring problemen. Het is gebouwd door operators die ze decennialang hebben geleefd.",
+    "members": [
+      { "name": "Robin Dennie", "role": "Founder & CEO", "tagline": "Creëert", "bio": "25 jaar bureau-ervaring. Recruitment innovator die transformeert hoe bedrijven werven." },
+      { "name": "Erik Dijkshoorn", "role": "Strategisch Adviseur", "tagline": "Adviseert", "bio": "Uitgebreide ervaring in meerdere C-level rollen. Leadership coach en strategisch denker." },
+      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leidt", "bio": "Bureau manager en BI specialist. Het financiële en operationele geweten van OneRooted." },
+      { "name": "Luuk Wubs", "role": "CTO", "tagline": "Bouwt", "bio": "Jong, gedreven tech leider. Gepassioneerd over het bouwen van schaalbare oplossingen die hiring beter maken." }
+    ],
+    "values": {
+      "label": "Onze waarden",
+      "headline": "Wat ons drijft",
+      "items": [
+        { "title": "Mens-eerst", "description": "Technologie moet menselijke connectie versterken, niet vervangen." },
+        { "title": "Resultaat-geobsedeerd", "description": "We meten succes aan de kwaliteit van hires, niet aan verzonden features." },
+        { "title": "Radicaal transparant", "description": "Geen verborgen agenda's. Altijd heldere communicatie." },
+        { "title": "Collaboratief by design", "description": "De beste beslissingen komen van diverse perspectieven die samenwerken." }
+      ]
+    },
+    "story": {
+      "label": "Ons verhaal",
+      "headline": "Onderdeel van de One-Time Group",
+      "description": "OneRooted is geboren uit de missie van de One-Time Group om te transformeren hoe organisaties talent vinden en koesteren. Met diepe wortels in recruitment en HR-technologie, brengen we decennia gecombineerde ervaring naar elke feature die we bouwen.",
+      "location": "Gevestigd in Nederland, bouwen we een globaal product voor teams overal."
+    },
+    "joinUs": {
+      "headline": "Interesse om samen te werken?",
+      "description": "We zijn altijd op zoek naar getalenteerde mensen die onze missie delen. Neem contact op en laten we een gesprek hebben.",
+      "button": "Neem contact op"
+    },
+    "cta": {
+      "trustBadge": "Onderdeel van de One-Time Group",
+      "headline": "Klaar om je hiring te transformeren?",
+      "description": "Sluit je aan bij de teams die al zijn geüpgraded van gefragmenteerde tools naar een unified Hiring OS.",
+      "button": "Waarom we dit bouwden",
+      "secondary": "Meer leren"
+    }
+  },
+  "demoPage": {
+    "seo": {
+      "title": "Demo Aanvragen | Zie OneRooted in Actie",
+      "description": "Boek een gratis 30-minuten demo. Zie hoe OneRooted's Hiring OS je recruitment kan stroomlijnen, samenwerking kan verbeteren en betere hires kan realiseren."
+    },
+    "hero": {
+      "label": "Aan de slag",
+      "headline": "Vraag een",
+      "headlineHighlight": "demo",
+      "subheadline": "Zie OneRooted in actie. Geen sales-theater. Gewoon helderheid.",
+      "trustIndicators": [
+        { "text": "30-minuten gesprek" },
+        { "text": "Geen verplichting" },
+        { "text": "Op maat voor jouw behoeften" }
+      ]
+    },
+    "form": {
+      "title": "Vertel ons over je hiring",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "Werk e-mail",
+      "company": "Bedrijf",
+      "teamSize": "Teamgrootte",
+      "teamSizePlaceholder": "Selecteer teamgrootte",
+      "teamSizeOptions": ["1-10 medewerkers", "11-50 medewerkers", "51-200 medewerkers", "201-500 medewerkers", "500+ medewerkers"],
+      "message": "Wat wil je oplossen?",
+      "messagePlaceholder": "Vertel ons over je huidige wervingsuitdagingen...",
+      "submit": "Demo aanvragen",
+      "submitting": "Versturen...",
+      "success": "Bedankt! We nemen binnen 24 uur contact op."
+    },
+    "expect": {
+      "headline": "Wat te verwachten",
+      "items": [
+        { "title": "30-minuten walkthrough", "desc": "We laten je zien hoe OneRooted werkt voor jouw specifieke situatie." },
+        { "title": "Eerlijk gesprek", "desc": "Geen druk. We vertellen je of we de juiste fit zijn—en als we dat niet zijn." },
+        { "title": "Duidelijke volgende stappen", "desc": "Of het nu een trial is, onboarding, of gewoon in contact blijven." }
+      ],
+      "testimonial": "De demo was verfrissend direct. Ze begrepen onze uitdagingen meteen en lieten precies zien hoe OneRooted zou helpen.",
+      "testimonialAuthor": "— Head of Talent, Nederlandse Scale-up",
+      "quickResponse": "Snelle reactie",
+      "quickResponseDesc": "We reageren doorgaans binnen 24 uur"
+    }
+  },
   "footer": {
     "tagline": "Het Hiring OS voor teams die recruitment serieus nemen. Vervang gefragmenteerde tools door één intelligent systeem.",
     "copyright": "© {{year}} OneRooted. Alle rechten voorbehouden.",

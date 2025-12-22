@@ -405,6 +405,297 @@
       "secondary": "Sehen Sie, wie es funktioniert"
     }
   },
+  "useCasesPage": {
+    "seo": {
+      "title": "Anwendungsfälle | Hiring-Lösungen für wachsende Teams",
+      "description": "Sehen Sie, wie Teams OneRooted für schnelles Skalieren, Multi-Stakeholder-Hiring und Partner-Zusammenarbeit nutzen. Echte Szenarien mit messbaren Ergebnissen."
+    },
+    "hero": {
+      "label": "Anwendungsfälle",
+      "headline": "Echte Szenarien, in denen",
+      "headlineHighlight": "OneRooted glänzt",
+      "subheadline": "Sehen Sie, wie Teams wie Ihres ihren Einstellungsprozess transformieren."
+    },
+    "cases": [
+      {
+        "title": "Ein Team schnell skalieren",
+        "problem": "Sie müssen 10+ Personen in 3 Monaten einstellen. Koordination ist Chaos.",
+        "solution": "OneRooted gibt allen Einblick in die Pipeline, automatisiert Übergaben und hält das Momentum.",
+        "outcomes": ["Schnellere Time-to-Hire", "Weniger Koordinationsaufwand", "Klare Fortschrittsverfolgung"],
+        "stat": "40%",
+        "statLabel": "schnellere Einstellung"
+      },
+      {
+        "title": "Hiring mit mehreren Stakeholdern",
+        "problem": "Gründer, Hiring Manager und Teamleiter wollen alle Input geben. Nichts wird erledigt.",
+        "solution": "Strukturierte Feedback-Schleifen und Entscheidungs-Workflows, die wirklich funktionieren.",
+        "outcomes": ["Abgestimmte Entscheidungen", "Keine Engpässe", "Alle bleiben informiert"],
+        "stat": "3x",
+        "statLabel": "schnellere Entscheidungen"
+      },
+      {
+        "title": "Zusammenarbeit mit Recruitment-Partnern",
+        "problem": "Agentur-Kandidaten gehen verloren. Kommunikation bricht zusammen. Schuldzuweisungen beginnen.",
+        "solution": "Partner arbeiten im selben System. Volle Transparenz. Eine Quelle der Wahrheit.",
+        "outcomes": ["Bessere Partnerbeziehungen", "Klare Verantwortung", "Schnellere Zusammenarbeit"],
+        "stat": "100%",
+        "statLabel": "Sichtbarkeit"
+      },
+      {
+        "title": "Bestehendes ATS ohne Chaos ersetzen",
+        "problem": "Migration fühlt sich unmöglich an. Daten überall. Team-Widerstand.",
+        "solution": "Sauberer Migrationspfad. Schrittweises Onboarding. Echte Unterstützung.",
+        "outcomes": ["Reibungsloser Übergang", "Kein Datenverlust", "Team-Adoption"],
+        "stat": "2 Wochen",
+        "statLabel": "durchschn. Migration"
+      }
+    ],
+    "theProblem": "Das Problem",
+    "howHelps": "Wie OneRooted hilft",
+    "keyOutcomes": "Wichtigste Ergebnisse",
+    "cta": {
+      "headline": "Sehen Sie, wie es für Ihr Team funktioniert",
+      "description": "Jedes Team ist einzigartig. Lassen Sie uns erkunden, wie OneRooted Ihre spezifischen Einstellungsherausforderungen transformieren kann.",
+      "button": "Demo anfragen",
+      "secondary": "Sehen Sie, wie es funktioniert"
+    }
+  },
+  "whyPage": {
+    "seo": {
+      "title": "Warum OneRooted | Die Geschichte hinter dem Hiring OS",
+      "description": "Warum traditionelle ATS-Systeme moderne Hiring-Teams enttäuschen. Erfahren Sie, wie OneRooted Recruiting-Software mit einem Hiring-OS-Ansatz neu denkt."
+    },
+    "hero": {
+      "label": "Unsere Geschichte",
+      "headline": "Die Geschichte hinter",
+      "headlineHighlight": "dem Aufbau eines Hiring OS",
+      "subheadline": "Warum wir uns entschieden haben, grundlegend zu überdenken, wie Hiring-Software funktionieren sollte."
+    },
+    "atsProblem": {
+      "label": "Das Problem",
+      "headline": "Warum traditionelle ATS-Systeme scheitern",
+      "items": [
+        { "title": "Sie sind für Speicherung gebaut, nicht für Entscheidungen", "desc": "Die meisten ATS-Plattformen sind glorifizierte Datenbanken. Sie verfolgen, wo Kandidaten sind, nicht warum sie vorankommen sollten." },
+        { "title": "Sie fragmentieren den Prozess", "desc": "Feedback in Slack. Entscheidungen per E-Mail. Status in Tabellen. Das ATS wird einfach ein weiteres Silo." },
+        { "title": "Sie ignorieren Zusammenarbeit", "desc": "Modernes Hiring umfasst Gründer, Hiring Manager, Teammitglieder und externe Partner. ATS-Systeme wurden dafür nicht gebaut." },
+        { "title": "Sie optimieren für Recruiter, nicht für Ergebnisse", "desc": "Admin-Effizienz ist gut. Aber was ist mit Entscheidungsqualität? Time-to-Hire? Kandidatenerfahrung?" }
+      ]
+    },
+    "insight": {
+      "label": "Die Erkenntnis",
+      "headline": "Warum ein Hiring OS benötigt wird",
+      "description": "Hiring ist kein linearer Prozess mehr, der von einem Recruiter verwaltet wird. Es ist eine komplexe Operation mit mehreren Stakeholdern, externen Partnern und kritischen Geschäftsentscheidungen.",
+      "whatYouNeed": "Was Sie wirklich brauchen:",
+      "needs": [
+        "Ein System, das Komplexität versteht",
+        "Verbundene Daten über alle Berührungspunkte",
+        "Echte Zusammenarbeit, nicht nur Übergaben",
+        "Entscheidungsunterstützung, nicht nur Speicherung"
+      ],
+      "conclusion": "Das macht ein Hiring OS. Kein Feature-Upgrade — ein fundamentales Umdenken.",
+      "atsLabel": "Traditionelles ATS",
+      "atsFlow": ["Speichern", "Verfolgen", "Berichten"],
+      "atsDesc": "Daten liegen still. Entscheidungen passieren woanders.",
+      "osLabel": "Hiring OS",
+      "osFlow": ["Zusammenarbeiten", "Entscheiden", "Verbessern"],
+      "osDesc": "Jede Aktion führt zu besseren Ergebnissen."
+    },
+    "origin": {
+      "label": "Der Ursprung",
+      "headline": "Wie OneRooted entstanden ist",
+      "steps": [
+        { "step": "01", "title": "Die Frustration", "text": "Wir arbeiteten mit Organisationen, die Schwierigkeiten hatten, effektiv einzustellen, obwohl sie 'alle Tools' hatten." },
+        { "step": "02", "title": "Die Erkenntnis", "text": "Das Problem war nicht ein Mangel an Software—es war ein Mangel an System. Tools waren nicht verbunden." },
+        { "step": "03", "title": "Die Lösung", "text": "Wir bauten OneRooted als das Betriebssystem für Hiring. Ein Ort, an dem alle zusammenarbeiten können." }
+      ],
+      "quote": "Kein neues Tool zum Lernen. Ein System, das so funktioniert, wie modernes Hiring wirklich passiert."
+    },
+    "future": {
+      "label": "Die Zukunft",
+      "headline": "Wohin wir gehen",
+      "items": [
+        { "title": "Tiefere Entscheidungsintelligenz", "desc": "KI-gestützte Erkenntnisse, die Ihnen helfen, schneller bessere Einstellungsentscheidungen zu treffen." },
+        { "title": "Nahtlose Partner-Ökosysteme", "desc": "Verbinden Sie sich mit jedem Recruitment-Partner über standardisierte Schnittstellen." },
+        { "title": "Prädiktive Hiring-Erkenntnisse", "desc": "Wissen Sie, was funktioniert, bevor Sie die Ergebnisse sehen." },
+        { "title": "Globale Team-Zusammenarbeit", "desc": "Gebaut für verteilte Teams über Zeitzonen und Kulturen hinweg." }
+      ]
+    },
+    "cta": {
+      "headline": "Bereit, Ihr Hiring neu zu überdenken?",
+      "description": "Sehen Sie, wie OneRooted Ihren Einstellungsprozess von fragmentiert zu vereinheitlicht transformieren kann.",
+      "button": "Demo anfragen",
+      "secondary": "Sehen Sie, wie es funktioniert"
+    }
+  },
+  "partnersPage": {
+    "seo": {
+      "title": "Für Recruiting-Agenturen & Partner",
+      "description": "Arbeiten Sie nahtlos mit Kunden über OneRooted zusammen. Erhalten Sie Echtzeit-Sichtbarkeit, sofortiges Feedback und bessere Ergebnisse. Kostenlos für Partner."
+    },
+    "hero": {
+      "label": "Für Recruitment-Partner",
+      "headline": "Wir machen Sie",
+      "headlineHighlight": "stärker",
+      "headlineSuffix": ", nicht überflüssig",
+      "subheadline": "OneRooted ist Infrastruktur. Keine Konkurrenz. Wenn Ihre Kunden es nutzen, bekommen Sie bessere Tools, klarere Sichtbarkeit und stärkere Beziehungen.",
+      "cta": "Partner werden",
+      "ctaSecondary": "Sehen Sie, wie es funktioniert"
+    },
+    "perspectives": {
+      "headline": "Ein System. Zwei Perspektiven.",
+      "subheadline": "Partner und Kunden arbeiten im selben System — mit Views, die für jede Rolle entwickelt wurden.",
+      "partner": {
+        "title": "Partner-Ansicht",
+        "subtitle": "Womit Sie arbeiten",
+        "benefits": [
+          "Ihre eigene Pipeline pro Kunde — volle Ownership",
+          "Echtzeit-Statusupdates — kein Nachlaufen mehr",
+          "Sofortiges Feedback zu jeder Einreichung",
+          "Professionelle Oberfläche, der Ihre Kunden vertrauen"
+        ]
+      },
+      "client": {
+        "title": "Kunden-Ansicht",
+        "subtitle": "Was sie sehen",
+        "benefits": [
+          "Alle Kandidaten in einer Ansicht — kein Chaos",
+          "Klare Quellenzuordnung pro Partner",
+          "Leistungsdaten, die Entscheidungen antreiben",
+          "Ein System statt verstreuter Tabellen"
+        ]
+      }
+    },
+    "howItWorks": {
+      "label": "Wie es funktioniert",
+      "headline": "Von der Einladung zur Erkenntnis in vier Schritten",
+      "subheadline": "Kein komplexes Onboarding. Keine Lernkurve. Einfach Zusammenarbeit, die funktioniert.",
+      "steps": [
+        { "title": "Kunde lädt Partner ein", "desc": "Ein Klick. Keine Onboarding-Reibung." },
+        { "title": "Partner reicht Kandidaten ein", "desc": "Direkt in die Pipeline. Sofort sichtbar." },
+        { "title": "Beide Seiten sehen Fortschritt", "desc": "Echtzeit-Updates. Keine Status-Meetings." },
+        { "title": "Daten treiben die Beziehung", "desc": "Klare Metriken, was funktioniert. Keine Politik." }
+      ],
+      "punchline": "Keine Übergaben. Keine blinden Flecken. Keine Politik.",
+      "punchlineDesc": "Einfach transparente Zusammenarbeit, die alle besser macht."
+    },
+    "infrastructure": {
+      "headline": "Infrastruktur, keine Konkurrenz",
+      "description": "Wir bauen kein weiteres Agentur-Tool. Wir bauen das Betriebssystem, das die Zusammenarbeit zwischen Kunden und Partnern nahtlos macht.",
+      "forPartners": "Für Partner",
+      "forPartnersDesc": "Bessere Tools bedeuten bessere Platzierungen",
+      "forClients": "Für Kunden",
+      "forClientsDesc": "Bessere Sichtbarkeit bedeutet bessere Entscheidungen"
+    },
+    "faq": {
+      "label": "FAQ",
+      "headline": "Häufige Fragen von Partnern",
+      "items": [
+        { "question": "Muss ich als Partner für OneRooted bezahlen?", "answer": "Nein. Partner zahlen nicht für OneRooted. Wenn ein Kunde Sie zur Zusammenarbeit einlädt, erhalten Sie vollen Zugang zu Ihrer dedizierten Pipeline ohne Kosten. Der Kunde übernimmt das Abonnement." },
+        { "question": "Kann ich mit mehreren Kunden in OneRooted arbeiten?", "answer": "Ja. Jeder Kunde hat seinen eigenen Workspace, und Sie haben eine separate Pipeline pro Kunde. Alles bleibt organisiert und vertraulich zwischen Kunden." },
+        { "question": "Welche Daten kann der Kunde über meine Arbeit sehen?", "answer": "Kunden sehen die Kandidaten, die Sie einreichen, deren Status und Leistungskennzahlen wie Time-to-Hire und Konversionsraten. Sie sehen nicht Ihre internen Notizen oder Kommunikation mit anderen Kunden." },
+        { "question": "Wie starte ich als Partner?", "answer": "Ihr Kunde sendet Ihnen einen Einladungslink. Sie erstellen ein Konto (dauert 30 Sekunden) und sind sofort mit deren Pipeline verbunden. Keine Onboarding-Calls, keine Setup-Meetings." },
+        { "question": "Versucht OneRooted, Recruiting-Agenturen zu ersetzen?", "answer": "Nein. Wir sind Infrastruktur, keine Konkurrenz. OneRooted macht die Zusammenarbeit zwischen Ihnen und Ihren Kunden reibungsloser. Bessere Tools bedeuten bessere Platzierungen, stärkere Beziehungen und weniger Zeitverschwendung bei Admin." },
+        { "question": "Kann ich mein eigenes ATS neben OneRooted weiter nutzen?", "answer": "Ja. Viele Partner nutzen ihre eigenen Systeme intern und reichen Kandidaten bei OneRooted für die Kundenzusammenarbeit ein. Sehen Sie es als den gemeinsamen Arbeitsbereich, in dem Sie und Ihr Kunde sich treffen." }
+      ]
+    },
+    "cta": {
+      "headline": "Bereit, smarter zu arbeiten?",
+      "description": "Schließen Sie sich den Partnern an, die bereits bessere Ergebnisse durch bessere Infrastruktur liefern.",
+      "button": "Lassen Sie uns sprechen",
+      "secondary": "Produkt erkunden"
+    }
+  },
+  "teamPage": {
+    "seo": {
+      "title": "Über Uns | Lernen Sie das OneRooted-Team kennen",
+      "description": "Lernen Sie das Team hinter OneRooted kennen. 25+ Jahre Recruiting-Expertise, die die Zukunft des Hirings baut. Teil der One-Time Group."
+    },
+    "hero": {
+      "label": "Das Team kennenlernen",
+      "headline": "Gemeinsam die Zukunft des",
+      "headlineHighlight": "Hirings bauen",
+      "subheadline": "Ein leidenschaftliches Team aus Recruitern, Träumern und Machern mit der Mission, Hiring für immer zu verändern."
+    },
+    "collectiveFrame": "OneRooted wurde nicht von Produktmanagern gebaut, die bei Hiring-Problemen raten. Es wurde von Operatoren gebaut, die sie jahrzehntelang gelebt haben.",
+    "members": [
+      { "name": "Robin Dennie", "role": "Gründer & CEO", "tagline": "Erschafft", "bio": "25 Jahre Agenturerfahrung. Recruiting-Innovator, der transformiert, wie Unternehmen einstellen." },
+      { "name": "Erik Dijkshoorn", "role": "Strategischer Berater", "tagline": "Berät", "bio": "Umfangreiche Erfahrung in mehreren C-Level-Rollen. Leadership-Coach und strategischer Denker." },
+      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leitet", "bio": "Bureau-Managerin und BI-Spezialistin. Das finanzielle und operative Gewissen von OneRooted." },
+      { "name": "Luuk Wubs", "role": "CTO", "tagline": "Baut", "bio": "Junger, engagierter Tech-Leader. Leidenschaftlich beim Aufbau skalierbarer Lösungen, die Hiring besser machen." }
+    ],
+    "values": {
+      "label": "Unsere Werte",
+      "headline": "Was uns antreibt",
+      "items": [
+        { "title": "Mensch zuerst", "description": "Technologie sollte menschliche Verbindung verstärken, nicht ersetzen." },
+        { "title": "Ergebnis-besessen", "description": "Wir messen Erfolg an der Qualität der Einstellungen, nicht an ausgelieferten Features." },
+        { "title": "Radikal transparent", "description": "Keine versteckten Agenden. Immer klare Kommunikation." },
+        { "title": "Kollaborativ by Design", "description": "Die besten Entscheidungen kommen von diversen Perspektiven, die zusammenarbeiten." }
+      ]
+    },
+    "story": {
+      "label": "Unsere Geschichte",
+      "headline": "Teil der One-Time Group",
+      "description": "OneRooted wurde aus der Mission der One-Time Group geboren, zu transformieren, wie Organisationen Talente finden und fördern. Mit tiefen Wurzeln in Recruiting und HR-Technologie bringen wir Jahrzehnte kombinierter Erfahrung in jedes Feature, das wir bauen.",
+      "location": "Mit Sitz in den Niederlanden bauen wir ein globales Produkt für Teams überall."
+    },
+    "joinUs": {
+      "headline": "Interesse an einer Zusammenarbeit?",
+      "description": "Wir suchen immer nach talentierten Menschen, die unsere Mission teilen. Melden Sie sich und lassen Sie uns ein Gespräch führen.",
+      "button": "Kontakt aufnehmen"
+    },
+    "cta": {
+      "trustBadge": "Teil der One-Time Group",
+      "headline": "Bereit, Ihr Hiring zu transformieren?",
+      "description": "Schließen Sie sich den Teams an, die bereits von fragmentierten Tools zu einem vereinheitlichten Hiring OS gewechselt sind.",
+      "button": "Warum wir das gebaut haben",
+      "secondary": "Mehr erfahren"
+    }
+  },
+  "demoPage": {
+    "seo": {
+      "title": "Demo anfragen | OneRooted in Aktion sehen",
+      "description": "Buchen Sie eine kostenlose 30-Minuten-Demo. Sehen Sie, wie OneRooteds Hiring OS Ihr Recruiting optimieren, Zusammenarbeit verbessern und bessere Einstellungen ermöglichen kann."
+    },
+    "hero": {
+      "label": "Loslegen",
+      "headline": "Eine",
+      "headlineHighlight": "Demo anfragen",
+      "subheadline": "Sehen Sie OneRooted in Aktion. Kein Verkaufstheater. Einfach Klarheit.",
+      "trustIndicators": [
+        { "text": "30-Minuten-Gespräch" },
+        { "text": "Keine Verpflichtung" },
+        { "text": "Auf Ihre Bedürfnisse zugeschnitten" }
+      ]
+    },
+    "form": {
+      "title": "Erzählen Sie uns von Ihrem Hiring",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "Geschäftliche E-Mail",
+      "company": "Unternehmen",
+      "teamSize": "Teamgröße",
+      "teamSizePlaceholder": "Teamgröße auswählen",
+      "teamSizeOptions": ["1-10 Mitarbeiter", "11-50 Mitarbeiter", "51-200 Mitarbeiter", "201-500 Mitarbeiter", "500+ Mitarbeiter"],
+      "message": "Was möchten Sie lösen?",
+      "messagePlaceholder": "Erzählen Sie uns von Ihren aktuellen Hiring-Herausforderungen...",
+      "submit": "Demo anfragen",
+      "submitting": "Wird gesendet...",
+      "success": "Danke! Wir melden uns innerhalb von 24 Stunden."
+    },
+    "expect": {
+      "headline": "Was Sie erwartet",
+      "items": [
+        { "title": "30-Minuten-Walkthrough", "desc": "Wir zeigen Ihnen, wie OneRooted für Ihre spezifische Situation funktioniert." },
+        { "title": "Ehrliches Gespräch", "desc": "Kein Druck. Wir sagen Ihnen, ob wir die richtige Wahl sind—und wenn nicht." },
+        { "title": "Klare nächste Schritte", "desc": "Ob Trial, Onboarding oder einfach in Kontakt bleiben." }
+      ],
+      "testimonial": "Die Demo war erfrischend direkt. Sie verstanden unsere Herausforderungen sofort und zeigten genau, wie OneRooted helfen würde.",
+      "testimonialAuthor": "— Head of Talent, Niederländisches Scale-up",
+      "quickResponse": "Schnelle Antwort",
+      "quickResponseDesc": "Wir antworten typischerweise innerhalb von 24 Stunden"
+    }
+  },
   "footer": {
     "tagline": "Das Hiring OS für Teams, die Recruiting ernst nehmen. Ersetzen Sie fragmentierte Tools durch ein intelligentes System.",
     "copyright": "© {{year}} OneRooted. Alle Rechte vorbehalten.",
