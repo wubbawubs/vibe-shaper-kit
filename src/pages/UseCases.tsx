@@ -64,8 +64,8 @@ const UseCases = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="Use Cases"
-        description="Real scenarios where OneRooted shines. From scaling teams fast to working with recruitment partners."
+        title="Use Cases | Hiring Solutions for Growing Teams"
+        description="See how teams use OneRooted for scaling fast, multi-stakeholder hiring, and partner collaboration. Real scenarios with measurable results."
         url="https://onerooted.com/use-cases"
       />
       {/* Hero */}

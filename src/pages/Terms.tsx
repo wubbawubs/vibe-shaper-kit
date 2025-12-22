@@ -6,8 +6,8 @@ const Terms = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="Terms of Service"
-        description="OneRooted Terms of Service. Read about the terms and conditions for using our platform."
+        title="Terms of Service | OneRooted User Agreement"
+        description="Read OneRooted's Terms of Service. Understand your rights and responsibilities when using our Hiring OS platform."
         url="https://onerooted.com/terms"
       />
       <section className="py-20 md:py-28">

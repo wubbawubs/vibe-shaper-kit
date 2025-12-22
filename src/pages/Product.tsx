@@ -15,8 +15,8 @@ const Product = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="How It Works"
-        description="See how OneRooted's intelligent ranking, visual pipeline, and unified collaboration transform your hiring process."
+        title="Product Features | How OneRooted Works"
+        description="Discover OneRooted's intelligent candidate ranking, visual hiring pipeline, and real-time collaboration tools. See how our Hiring OS transforms recruitment."
         url="https://onerooted.com/product"
       />
       {/* Hero */}

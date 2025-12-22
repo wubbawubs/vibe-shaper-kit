@@ -6,8 +6,8 @@ const Privacy = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="Privacy Policy"
-        description="OneRooted Privacy Policy. Learn how we collect, use, and protect your personal data."
+        title="Privacy Policy | Data Protection at OneRooted"
+        description="Learn how OneRooted collects, uses, and protects your personal data. GDPR compliant. Your privacy is our priority."
         url="https://onerooted.com/privacy"
       />
       <section className="py-20 md:py-28">

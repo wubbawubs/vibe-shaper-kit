@@ -24,8 +24,8 @@ const WhyOneRooted = () => {
   return (
     <MarketingLayout>
       <SEO 
-        title="Why OneRooted"
-        description="The story behind building a Hiring OS. Why traditional ATS systems fail and how OneRooted rethinks hiring software."
+        title="Why OneRooted | The Story Behind the Hiring OS"
+        description="Why traditional ATS systems fail modern hiring teams. Learn how OneRooted rethinks recruitment software with a Hiring OS approach."
         url="https://onerooted.com/why-onerooted"
       />
       {/* Hero */}
