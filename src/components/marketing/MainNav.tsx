@@ -81,19 +81,19 @@ export function MainNav() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden bg-background border-b border-border overflow-hidden"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="lg:hidden absolute top-16 left-0 right-0 bg-background border-b border-border shadow-lg z-50"
           >
-            <div className="container py-6 space-y-2">
+            <div className="container py-4 space-y-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`block py-3 px-4 rounded-lg text-sm transition-colors ${
+                  className={`block py-3 px-4 rounded-lg text-sm font-medium transition-colors ${
                     isActive(link.href)
                       ? "text-foreground bg-muted"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
@@ -102,8 +102,8 @@ export function MainNav() {
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-4">
-                <Button asChild className="w-full h-12 bg-primary hover:bg-primary/90">
+              <div className="pt-3">
+                <Button asChild className="w-full h-11 bg-primary hover:bg-primary/90">
                   <Link to="/demo" onClick={() => setMobileMenuOpen(false)}>
                     Request demo
                   </Link>
