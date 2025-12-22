@@ -696,6 +696,91 @@
       "quickResponseDesc": "We reageren doorgaans binnen 24 uur"
     }
   },
+  "privacyPage": {
+    "seo": {
+      "title": "Privacybeleid | Gegevensbescherming bij OneRooted",
+      "description": "Ontdek hoe OneRooted uw persoonsgegevens verzamelt, gebruikt en beschermt. AVG-conform. Uw privacy is onze prioriteit."
+    },
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt:",
+    "sections": [
+      {
+        "title": "1. Inleiding",
+        "content": "OneRooted (\"wij\", \"ons\" of \"onze\") zet zich in voor de bescherming van uw privacy. Dit Privacybeleid legt uit hoe wij uw informatie verzamelen, gebruiken, openbaar maken en beschermen wanneer u ons Hiring OS-platform en gerelateerde diensten gebruikt."
+      },
+      {
+        "title": "2. Informatie die wij verzamelen",
+        "content": "Wij verzamelen informatie die u rechtstreeks aan ons verstrekt, waaronder:",
+        "items": ["Accountinformatie (naam, e-mailadres, bedrijfsnaam)", "Kandidaatgegevens die u naar het platform uploadt", "Communicatievoorkeuren", "Gebruiksgegevens en analyses"]
+      },
+      {
+        "title": "3. Hoe wij uw informatie gebruiken",
+        "content": "Wij gebruiken de verzamelde informatie om:",
+        "items": ["Onze diensten te leveren, onderhouden en verbeteren", "Transacties te verwerken en gerelateerde informatie te verzenden", "Technische kennisgevingen, updates en ondersteuningsberichten te verzenden", "Te reageren op uw opmerkingen, vragen en verzoeken"]
+      },
+      {
+        "title": "4. Gegevensbeveiliging",
+        "content": "Wij implementeren passende technische en organisatorische maatregelen om uw persoonsgegevens te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging. Alle gegevens worden versleuteld tijdens verzending en opslag."
+      },
+      {
+        "title": "5. AVG-naleving",
+        "content": "Als bedrijf gevestigd in Nederland, voldoen wij volledig aan de Algemene Verordening Gegevensbescherming (AVG). U hebt het recht om uw persoonsgegevens in te zien, te rectificeren, te wissen en over te dragen."
+      },
+      {
+        "title": "6. Contact",
+        "content": "Als u vragen hebt over dit Privacybeleid, neem dan contact met ons op via",
+        "email": "privacy@onerooted.com"
+      }
+    ]
+  },
+  "termsPage": {
+    "seo": {
+      "title": "Algemene Voorwaarden | OneRooted Gebruikersovereenkomst",
+      "description": "Lees de Algemene Voorwaarden van OneRooted. Begrijp uw rechten en verantwoordelijkheden bij het gebruik van ons Hiring OS-platform."
+    },
+    "title": "Algemene Voorwaarden",
+    "lastUpdated": "Laatst bijgewerkt:",
+    "sections": [
+      {
+        "title": "1. Akkoord met voorwaarden",
+        "content": "Door toegang te krijgen tot of gebruik te maken van de diensten van OneRooted, gaat u akkoord met deze Algemene Voorwaarden. Als u het niet eens bent met enig deel van deze voorwaarden, mag u onze diensten niet gebruiken."
+      },
+      {
+        "title": "2. Beschrijving van de dienst",
+        "content": "OneRooted biedt een Hiring Operating System (Hiring OS) dat organisaties helpt hun wervingsprocessen te stroomlijnen. Ons platform omvat kandidaattracking, workflowbeheer, samenwerkingstools en analyses."
+      },
+      {
+        "title": "3. Gebruikersaccounts",
+        "content": "U bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van uw accountgegevens en voor alle activiteiten die onder uw account plaatsvinden. U moet ons onmiddellijk op de hoogte stellen van ongeautoriseerd gebruik van uw account."
+      },
+      {
+        "title": "4. Acceptabel gebruik",
+        "content": "U gaat ermee akkoord om niet:",
+        "items": ["De dienst te gebruiken voor onwettige doeleinden", "Kwaadaardige code te uploaden of ongeautoriseerde toegang te proberen te verkrijgen", "De integriteit van onze diensten te verstoren of te onderbreken", "Gebruikersinformatie te verzamelen zonder toestemming"]
+      },
+      {
+        "title": "5. Intellectueel eigendom",
+        "content": "De dienst en de originele inhoud, functies en functionaliteit zijn eigendom van OneRooted en worden beschermd door internationale auteursrecht-, handelsmerk- en andere intellectuele eigendomswetten."
+      },
+      {
+        "title": "6. Abonnement en betaling",
+        "content": "Abonnementskosten worden maandelijks of jaarlijks gefactureerd, afhankelijk van uw gekozen plan. U kunt uw abonnement op elk moment opzeggen, en de opzegging gaat in aan het einde van uw huidige factureringsperiode."
+      },
+      {
+        "title": "7. Beperking van aansprakelijkheid",
+        "content": "OneRooted is niet aansprakelijk voor indirecte, incidentele, speciale, gevolg- of punitieve schade als gevolg van uw gebruik van of onvermogen om onze diensten te gebruiken."
+      },
+      {
+        "title": "8. Wijzigingen in voorwaarden",
+        "content": "Wij behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. Wij zullen gebruikers op de hoogte stellen van materiële wijzigingen via e-mail of via het platform."
+      },
+      {
+        "title": "9. Contact",
+        "content": "Als u vragen hebt over deze Voorwaarden, neem dan contact met ons op via",
+        "email": "legal@onerooted.com"
+      }
+    ]
+  },
   "footer": {
     "tagline": "Het Hiring OS voor teams die recruitment serieus nemen. Vervang gefragmenteerde tools door één intelligent systeem.",
     "copyright": "© {{year}} OneRooted. Alle rechten voorbehouden.",

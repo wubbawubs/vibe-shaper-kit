@@ -696,6 +696,91 @@
       "quickResponseDesc": "We typically reply within 24 hours"
     }
   },
+  "privacyPage": {
+    "seo": {
+      "title": "Privacy Policy | Data Protection at OneRooted",
+      "description": "Learn how OneRooted collects, uses, and protects your personal data. GDPR compliant. Your privacy is our priority."
+    },
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated:",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "OneRooted (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Hiring OS platform and related services."
+      },
+      {
+        "title": "2. Information We Collect",
+        "content": "We collect information that you provide directly to us, including:",
+        "items": ["Account information (name, email address, company name)", "Candidate data you upload to the platform", "Communication preferences", "Usage data and analytics"]
+      },
+      {
+        "title": "3. How We Use Your Information",
+        "content": "We use the information we collect to:",
+        "items": ["Provide, maintain, and improve our services", "Process transactions and send related information", "Send technical notices, updates, and support messages", "Respond to your comments, questions, and requests"]
+      },
+      {
+        "title": "4. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. All data is encrypted in transit and at rest."
+      },
+      {
+        "title": "5. GDPR Compliance",
+        "content": "As a company based in the Netherlands, we fully comply with the General Data Protection Regulation (GDPR). You have the right to access, rectify, erase, and port your personal data."
+      },
+      {
+        "title": "6. Contact Us",
+        "content": "If you have any questions about this Privacy Policy, please contact us at",
+        "email": "privacy@onerooted.com"
+      }
+    ]
+  },
+  "termsPage": {
+    "seo": {
+      "title": "Terms of Service | OneRooted User Agreement",
+      "description": "Read OneRooted's Terms of Service. Understand your rights and responsibilities when using our Hiring OS platform."
+    },
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated:",
+    "sections": [
+      {
+        "title": "1. Agreement to Terms",
+        "content": "By accessing or using OneRooted's services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services."
+      },
+      {
+        "title": "2. Description of Service",
+        "content": "OneRooted provides a Hiring Operating System (Hiring OS) that helps organizations streamline their recruitment processes. Our platform includes candidate tracking, workflow management, collaboration tools, and analytics."
+      },
+      {
+        "title": "3. User Accounts",
+        "content": "You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately of any unauthorized use of your account."
+      },
+      {
+        "title": "4. Acceptable Use",
+        "content": "You agree not to:",
+        "items": ["Use the service for any unlawful purpose", "Upload malicious code or attempt to gain unauthorized access", "Interfere with or disrupt the integrity of our services", "Collect user information without consent"]
+      },
+      {
+        "title": "5. Intellectual Property",
+        "content": "The service and its original content, features, and functionality are owned by OneRooted and are protected by international copyright, trademark, and other intellectual property laws."
+      },
+      {
+        "title": "6. Subscription and Payment",
+        "content": "Subscription fees are billed monthly or annually, depending on your chosen plan. You may cancel your subscription at any time, and cancellation will take effect at the end of your current billing period."
+      },
+      {
+        "title": "7. Limitation of Liability",
+        "content": "OneRooted shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services."
+      },
+      {
+        "title": "8. Changes to Terms",
+        "content": "We reserve the right to modify these terms at any time. We will notify users of any material changes via email or through the platform."
+      },
+      {
+        "title": "9. Contact Us",
+        "content": "If you have any questions about these Terms, please contact us at",
+        "email": "legal@onerooted.com"
+      }
+    ]
+  },
   "footer": {
     "tagline": "The Hiring OS for teams that take hiring seriously. Replace fragmented tools with one intelligent system.",
     "copyright": "© {{year}} OneRooted. All rights reserved.",

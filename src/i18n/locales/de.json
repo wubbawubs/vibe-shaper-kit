@@ -696,6 +696,91 @@
       "quickResponseDesc": "Wir antworten typischerweise innerhalb von 24 Stunden"
     }
   },
+  "privacyPage": {
+    "seo": {
+      "title": "Datenschutzrichtlinie | Datenschutz bei OneRooted",
+      "description": "Erfahren Sie, wie OneRooted Ihre personenbezogenen Daten sammelt, verwendet und schützt. DSGVO-konform. Ihr Datenschutz ist unsere Priorität."
+    },
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "sections": [
+      {
+        "title": "1. Einleitung",
+        "content": "OneRooted (\"wir\", \"uns\" oder \"unser\") verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Hiring OS-Plattform und verwandte Dienste nutzen."
+      },
+      {
+        "title": "2. Informationen, die wir sammeln",
+        "content": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, einschließlich:",
+        "items": ["Kontoinformationen (Name, E-Mail-Adresse, Firmenname)", "Kandidatendaten, die Sie auf die Plattform hochladen", "Kommunikationspräferenzen", "Nutzungsdaten und Analysen"]
+      },
+      {
+        "title": "3. Wie wir Ihre Informationen verwenden",
+        "content": "Wir verwenden die gesammelten Informationen, um:",
+        "items": ["Unsere Dienste bereitzustellen, zu pflegen und zu verbessern", "Transaktionen zu verarbeiten und zugehörige Informationen zu senden", "Technische Hinweise, Updates und Support-Nachrichten zu senden", "Auf Ihre Kommentare, Fragen und Anfragen zu antworten"]
+      },
+      {
+        "title": "4. Datensicherheit",
+        "content": "Wir implementieren geeignete technische und organisatorische Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen. Alle Daten werden während der Übertragung und im Ruhezustand verschlüsselt."
+      },
+      {
+        "title": "5. DSGVO-Konformität",
+        "content": "Als Unternehmen mit Sitz in den Niederlanden halten wir die Datenschutz-Grundverordnung (DSGVO) vollständig ein. Sie haben das Recht, Ihre personenbezogenen Daten einzusehen, zu berichtigen, zu löschen und zu übertragen."
+      },
+      {
+        "title": "6. Kontakt",
+        "content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte unter",
+        "email": "privacy@onerooted.com"
+      }
+    ]
+  },
+  "termsPage": {
+    "seo": {
+      "title": "Allgemeine Geschäftsbedingungen | OneRooted Nutzungsvereinbarung",
+      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen von OneRooted. Verstehen Sie Ihre Rechte und Pflichten bei der Nutzung unserer Hiring OS-Plattform."
+    },
+    "title": "Allgemeine Geschäftsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "sections": [
+      {
+        "title": "1. Zustimmung zu den Bedingungen",
+        "content": "Durch den Zugriff auf oder die Nutzung der Dienste von OneRooted stimmen Sie diesen Allgemeinen Geschäftsbedingungen zu. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen."
+      },
+      {
+        "title": "2. Beschreibung des Dienstes",
+        "content": "OneRooted bietet ein Hiring Operating System (Hiring OS), das Organisationen hilft, ihre Rekrutierungsprozesse zu optimieren. Unsere Plattform umfasst Kandidatenverfolgung, Workflow-Management, Kollaborationstools und Analysen."
+      },
+      {
+        "title": "3. Benutzerkonten",
+        "content": "Sie sind verantwortlich für die Wahrung der Vertraulichkeit Ihrer Kontodaten und für alle Aktivitäten, die unter Ihrem Konto stattfinden. Sie müssen uns unverzüglich über jede unbefugte Nutzung Ihres Kontos informieren."
+      },
+      {
+        "title": "4. Akzeptable Nutzung",
+        "content": "Sie stimmen zu, nicht:",
+        "items": ["Den Dienst für rechtswidrige Zwecke zu nutzen", "Schädlichen Code hochzuladen oder unbefugten Zugriff zu versuchen", "Die Integrität unserer Dienste zu stören oder zu unterbrechen", "Benutzerinformationen ohne Zustimmung zu sammeln"]
+      },
+      {
+        "title": "5. Geistiges Eigentum",
+        "content": "Der Dienst und seine ursprünglichen Inhalte, Funktionen und Funktionalitäten sind Eigentum von OneRooted und werden durch internationale Urheberrechts-, Marken- und andere geistige Eigentumsgesetze geschützt."
+      },
+      {
+        "title": "6. Abonnement und Zahlung",
+        "content": "Abonnementgebühren werden monatlich oder jährlich in Rechnung gestellt, abhängig von Ihrem gewählten Plan. Sie können Ihr Abonnement jederzeit kündigen, und die Kündigung wird am Ende Ihres aktuellen Abrechnungszeitraums wirksam."
+      },
+      {
+        "title": "7. Haftungsbeschränkung",
+        "content": "OneRooted haftet nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden, die aus Ihrer Nutzung oder Unfähigkeit zur Nutzung unserer Dienste resultieren."
+      },
+      {
+        "title": "8. Änderungen der Bedingungen",
+        "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Wir werden Benutzer über wesentliche Änderungen per E-Mail oder über die Plattform informieren."
+      },
+      {
+        "title": "9. Kontakt",
+        "content": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter",
+        "email": "legal@onerooted.com"
+      }
+    ]
+  },
   "footer": {
     "tagline": "Das Hiring OS für Teams, die Recruiting ernst nehmen. Ersetzen Sie fragmentierte Tools durch ein intelligentes System.",
     "copyright": "© {{year}} OneRooted. Alle Rechte vorbehalten.",
