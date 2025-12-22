@@ -152,90 +152,79 @@ export function HiringFunnelAnimation() {
   ];
 
   return (
-    <div className="w-full h-full flex flex-col gap-3 p-3 md:p-4 overflow-hidden" aria-hidden="true" role="presentation">
-      {/* Pipeline Section - full width, constrained */}
-      <div className="flex-1 flex flex-col gap-2 md:gap-3 min-w-0 overflow-hidden">
-        {/* Stage Headers - hidden on mobile, shown on desktop */}
-        <div className="hidden md:flex items-center gap-1 pb-1">
-          {stages.map((stage, index) => (
-            <React.Fragment key={stage}>
-              <div className={`text-[10px] font-medium px-2 py-1 rounded inline-flex items-center gap-1 whitespace-nowrap ${
-                index === stages.length - 1 
-                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200/60'
-                  : 'bg-muted/50 text-muted-foreground border border-border/30'
+    <div className="w-full h-full flex flex-col p-3 md:p-4 overflow-hidden" aria-hidden="true" role="presentation">
+      {/* Pipeline Grid - all 5 stages */}
+      <div className="flex-1 grid grid-cols-5 gap-1 md:gap-2">
+        {stages.map((stage, stageIndex) => {
+          const stageCandidates = getCandidatesInStage(stageIndex);
+          const isHired = stageIndex === 4;
+          
+          return (
+            <div key={stage} className="min-w-0 flex flex-col">
+              {/* Stage header */}
+              <div className={`text-[7px] md:text-[9px] font-medium mb-1 md:mb-2 px-1 py-0.5 rounded text-center truncate ${
+                isHired 
+                  ? 'bg-emerald-50 text-emerald-700' 
+                  : 'text-muted-foreground'
               }`}>
-                <span>{stage}</span>
-                <span className="opacity-60">({getCandidatesInStage(index).length})</span>
-              </div>
-              {index < stages.length - 1 && (
-                <ChevronRight className="w-3 h-3 text-border/60 flex-shrink-0" />
-              )}
-            </React.Fragment>
-          ))}
-        </div>
-
-        {/* Pipeline Grid - 2 columns on mobile, flex on desktop */}
-        <div className="flex-1 grid grid-cols-2 md:grid-cols-5 gap-2 overflow-hidden">
-          {stages.map((stage, stageIndex) => (
-            <div key={stage} className={`min-w-0 flex flex-col gap-1.5 ${stageIndex >= 2 ? 'hidden md:flex' : ''}`}>
-              {/* Stage label */}
-              <div className="text-[8px] md:text-[9px] font-medium text-muted-foreground uppercase tracking-wide truncate">
                 {stage}
               </div>
-              {getCandidatesInStage(stageIndex).map((candidate) => (
-                <motion.div
-                  key={candidate.id}
-                  initial={{ opacity: 0, y: -4 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className={`bg-card border rounded-lg p-2 shadow-sm ${
-                    candidate.status === 'hired'
-                      ? 'border-emerald-300 bg-emerald-50/30'
-                      : 'border-border/40'
-                  }`}
-                >
-                  <div className="flex items-center gap-1.5">
-                    <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[9px] font-semibold flex-shrink-0 ${avatarColors[candidate.colorIndex]}`}>
-                      {getInitials(candidate.name)}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="text-[10px] font-medium text-foreground truncate">
-                        {candidate.name}
+              
+              {/* Candidates */}
+              <div className="flex-1 flex flex-col gap-1">
+                {stageCandidates.map((candidate) => (
+                  <motion.div
+                    key={candidate.id}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                    className={`bg-card border rounded p-1 md:p-2 shadow-sm ${
+                      candidate.status === 'hired'
+                        ? 'border-emerald-300 bg-emerald-50/30'
+                        : 'border-border/40'
+                    }`}
+                  >
+                    <div className="flex items-center gap-1">
+                      <div className={`w-5 md:w-6 h-5 md:h-6 rounded-full flex items-center justify-center text-[7px] md:text-[9px] font-semibold flex-shrink-0 ${avatarColors[candidate.colorIndex]}`}>
+                        {getInitials(candidate.name)}
                       </div>
-                      <div className="text-[8px] text-muted-foreground truncate">
-                        {candidate.source}
+                      <div className="flex-1 min-w-0 hidden md:block">
+                        <div className="text-[9px] font-medium text-foreground truncate">
+                          {candidate.name}
+                        </div>
+                        <div className="text-[7px] text-muted-foreground truncate">
+                          {candidate.source}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </motion.div>
-              ))}
+                  </motion.div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-
-        {/* Business Impact Footer */}
-        <div className="flex items-center justify-between pt-2 border-t border-border/20">
-          <div className="flex items-center gap-3">
-            <div className="text-[8px]">
-              <span className="text-muted-foreground">Cost/Hire</span>
-              <div className="font-semibold text-foreground">€{metrics.costPerHire.toLocaleString()}</div>
-            </div>
-            <div className="text-[8px]">
-              <span className="text-muted-foreground">Time</span>
-              <div className="font-semibold text-foreground">{metrics.timeToHire}d</div>
-            </div>
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
-            </span>
-            <span className="text-[8px] text-muted-foreground">Live</span>
-          </div>
-        </div>
+          );
+        })}
       </div>
 
+      {/* Footer stats */}
+      <div className="flex items-center justify-between pt-2 mt-2 border-t border-border/20">
+        <div className="flex items-center gap-3 md:gap-4">
+          <div className="text-[7px] md:text-[9px]">
+            <span className="text-muted-foreground">Cost/Hire</span>
+            <div className="font-semibold text-foreground">€{metrics.costPerHire.toLocaleString()}</div>
+          </div>
+          <div className="text-[7px] md:text-[9px]">
+            <span className="text-muted-foreground">Time</span>
+            <div className="font-semibold text-foreground">{metrics.timeToHire}d</div>
+          </div>
+        </div>
+        <div className="flex items-center gap-1">
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+          </span>
+          <span className="text-[7px] md:text-[9px] text-muted-foreground">Live</span>
+        </div>
+      </div>
     </div>
   );
 }
