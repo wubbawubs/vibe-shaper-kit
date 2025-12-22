@@ -12,66 +12,25 @@ const Team = () => {
   const { t } = useTranslation();
   useLanguageFromUrl();
 
-  const teamMembers = [
-    {
-      name: t('team.members.robin.name'),
-      role: t('team.members.robin.role'),
-      tagline: t('team.members.robin.tagline'),
-      bio: t('team.members.robin.bio'),
-      linkedin: "#",
-    },
-    {
-      name: t('team.members.erik.name'),
-      role: t('team.members.erik.role'),
-      tagline: t('team.members.erik.tagline'),
-      bio: t('team.members.erik.bio'),
-      linkedin: "#",
-    },
-    {
-      name: t('team.members.juliette.name'),
-      role: t('team.members.juliette.role'),
-      tagline: t('team.members.juliette.tagline'),
-      bio: t('team.members.juliette.bio'),
-      linkedin: "#",
-    },
-    {
-      name: t('team.members.luuk.name'),
-      role: t('team.members.luuk.role'),
-      tagline: t('team.members.luuk.tagline'),
-      bio: t('team.members.luuk.bio'),
-      linkedin: "#",
-    },
-  ];
+  const membersData = t('teamPage.members', { returnObjects: true }) as { name: string; role: string; tagline: string; bio: string }[];
+  const teamMembers = (membersData || []).map((member) => ({
+    ...member,
+    linkedin: "#",
+  }));
 
   const valueIcons = [Heart, Target, Zap, Users];
-  const values = [
-    {
-      icon: valueIcons[0],
-      title: t('team.values.humanFirst.title'),
-      description: t('team.values.humanFirst.description'),
-    },
-    {
-      icon: valueIcons[1],
-      title: t('team.values.outcomeObsessed.title'),
-      description: t('team.values.outcomeObsessed.description'),
-    },
-    {
-      icon: valueIcons[2],
-      title: t('team.values.transparent.title'),
-      description: t('team.values.transparent.description'),
-    },
-    {
-      icon: valueIcons[3],
-      title: t('team.values.collaborative.title'),
-      description: t('team.values.collaborative.description'),
-    },
-  ];
+  const valuesData = t('teamPage.values.items', { returnObjects: true }) as { title: string; description: string }[];
+  const values = (valuesData || []).map((value, index) => ({
+    icon: valueIcons[index] || Heart,
+    title: value.title,
+    description: value.description,
+  }));
 
   return (
     <MarketingLayout>
       <SEO 
-        title={t('team.seo.title')}
-        description={t('team.seo.description')}
+        title={t('teamPage.seo.title')}
+        description={t('teamPage.seo.description')}
         url="https://onerooted.com/team"
       />
       {/* Hero */}
@@ -92,14 +51,14 @@ const Team = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              {t('team.hero.badge')}
+              {t('teamPage.hero.label')}
             </motion.p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-4 md:mb-6 tracking-tight">
-              {t('team.hero.titlePart1')}{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('team.hero.titleHighlight')}</span>
+              {t('teamPage.hero.headline')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('teamPage.hero.headlineHighlight')}</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-              {t('team.hero.subtitle')}
+              {t('teamPage.hero.subheadline')}
             </p>
           </motion.div>
         </div>
@@ -116,7 +75,7 @@ const Team = () => {
             transition={{ duration: 0.6 }}
             className="text-base md:text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-8 md:mb-12 px-4"
           >
-            {t('team.teamGrid.intro')}
+            {t('teamPage.collectiveFrame')}
           </motion.p>
           <motion.div 
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto"
@@ -184,8 +143,8 @@ const Team = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('team.valuesSection.badge')}</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium">{t('team.valuesSection.title')}</h2>
+            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('teamPage.values.label')}</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium">{t('teamPage.values.headline')}</h2>
           </motion.div>
 
           <motion.div 
@@ -233,13 +192,13 @@ const Team = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('team.story.badge')}</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 md:mb-6">{t('team.story.title')}</h2>
+            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('teamPage.story.label')}</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 md:mb-6">{t('teamPage.story.headline')}</h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
-              {t('team.story.description')}
+              {t('teamPage.story.description')}
             </p>
             <p className="text-sm md:text-base text-muted-foreground">
-              {t('team.story.location')}
+              {t('teamPage.story.location')}
             </p>
           </motion.div>
         </div>
@@ -262,14 +221,14 @@ const Team = () => {
               
               <CardContent className="relative py-8 md:py-12 px-6 md:px-12 text-center">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 md:mb-4">
-                  {t('team.joinUs.title')}
+                  {t('teamPage.joinUs.headline')}
                 </h2>
                 <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 max-w-xl mx-auto">
-                  {t('team.joinUs.description')}
+                  {t('teamPage.joinUs.description')}
                 </p>
                 <Button asChild size="lg" className="btn-accent h-11 sm:h-12 px-6 sm:px-8">
                   <Link to="/demo" className="flex items-center gap-2">
-                    {t('team.joinUs.cta')}
+                    {t('teamPage.joinUs.button')}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
@@ -295,25 +254,25 @@ const Team = () => {
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-8">
               <Users className="h-4 w-4" />
-              <span>{t('team.finalCta.badge')}</span>
+              <span>{t('teamPage.cta.trustBadge')}</span>
             </div>
             
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 md:mb-6">
-              {t('team.finalCta.title')}
+              {t('teamPage.cta.headline')}
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
-              {t('team.finalCta.subtitle')}
+              {t('teamPage.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button asChild size="lg" className="btn-accent">
                 <Link to="/why-onerooted" className="flex items-center gap-2">
-                  {t('team.finalCta.whyWeBuilt')}
+                  {t('teamPage.cta.button')}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/product">{t('team.finalCta.learnMore')}</Link>
+                <Link to="/product">{t('teamPage.cta.secondary')}</Link>
               </Button>
             </div>
           </motion.div>
