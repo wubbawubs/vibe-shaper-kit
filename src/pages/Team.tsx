@@ -1,16 +1,21 @@
 import { MarketingLayout } from "@/components/marketing/MarketingLayout";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Linkedin, Heart, Target, Zap, Users, ArrowRight } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
-import { useLanguageFromUrl } from "@/i18n/useLanguage";
+import { getLocalizedPath } from "@/i18n/useLanguage";
+import { type Language } from "@/i18n/config";
 
 const Team = () => {
   const { t } = useTranslation();
-  useLanguageFromUrl();
+  const { lang } = useParams<{ lang: string }>();
+
+  const getLocalizedHref = (href: string) => {
+    return lang ? getLocalizedPath(href, lang as Language) : href;
+  };
 
   const membersData = t('teamPage.members', { returnObjects: true }) as { name: string; role: string; tagline: string; bio: string }[];
   const teamMembers = (membersData || []).map((member) => ({
@@ -227,7 +232,7 @@ const Team = () => {
                   {t('teamPage.joinUs.description')}
                 </p>
                 <Button asChild size="lg" className="btn-accent h-11 sm:h-12 px-6 sm:px-8">
-                  <Link to="/demo" className="flex items-center gap-2">
+                  <Link to={getLocalizedHref("/demo")} className="flex items-center gap-2">
                     {t('teamPage.joinUs.button')}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -266,13 +271,13 @@ const Team = () => {
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button asChild size="lg" className="btn-accent">
-                <Link to="/why-onerooted" className="flex items-center gap-2">
+                <Link to={getLocalizedHref("/why-onerooted")} className="flex items-center gap-2">
                   {t('teamPage.cta.button')}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/product">{t('teamPage.cta.secondary')}</Link>
+                <Link to={getLocalizedHref("/product")}>{t('teamPage.cta.secondary')}</Link>
               </Button>
             </div>
           </motion.div>
