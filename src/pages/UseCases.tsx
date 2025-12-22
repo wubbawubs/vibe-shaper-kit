@@ -29,50 +29,25 @@ const UseCases = () => {
 
   const icons = [TrendingUp, Users, Handshake, RefreshCw];
   
-  const useCases = [
-    {
-      icon: icons[0],
-      title: t('useCases.cases.scaling.title'),
-      problem: t('useCases.cases.scaling.problem'),
-      solution: t('useCases.cases.scaling.solution'),
-      outcomes: t('useCases.cases.scaling.outcomes', { returnObjects: true }) as string[],
-      stat: t('useCases.cases.scaling.stat'),
-      statLabel: t('useCases.cases.scaling.statLabel'),
-    },
-    {
-      icon: icons[1],
-      title: t('useCases.cases.stakeholders.title'),
-      problem: t('useCases.cases.stakeholders.problem'),
-      solution: t('useCases.cases.stakeholders.solution'),
-      outcomes: t('useCases.cases.stakeholders.outcomes', { returnObjects: true }) as string[],
-      stat: t('useCases.cases.stakeholders.stat'),
-      statLabel: t('useCases.cases.stakeholders.statLabel'),
-    },
-    {
-      icon: icons[2],
-      title: t('useCases.cases.partners.title'),
-      problem: t('useCases.cases.partners.problem'),
-      solution: t('useCases.cases.partners.solution'),
-      outcomes: t('useCases.cases.partners.outcomes', { returnObjects: true }) as string[],
-      stat: t('useCases.cases.partners.stat'),
-      statLabel: t('useCases.cases.partners.statLabel'),
-    },
-    {
-      icon: icons[3],
-      title: t('useCases.cases.replacing.title'),
-      problem: t('useCases.cases.replacing.problem'),
-      solution: t('useCases.cases.replacing.solution'),
-      outcomes: t('useCases.cases.replacing.outcomes', { returnObjects: true }) as string[],
-      stat: t('useCases.cases.replacing.stat'),
-      statLabel: t('useCases.cases.replacing.statLabel'),
-    },
-  ];
+  const casesData = t('useCasesPage.cases', { returnObjects: true }) as Array<{
+    title: string;
+    problem: string;
+    solution: string;
+    outcomes: string[];
+    stat: string;
+    statLabel: string;
+  }>;
+
+  const useCases = (Array.isArray(casesData) ? casesData : []).map((caseItem, idx) => ({
+    icon: icons[idx] || TrendingUp,
+    ...caseItem,
+  }));
 
   return (
     <MarketingLayout>
       <SEO 
-        title={t('useCases.seo.title')}
-        description={t('useCases.seo.description')}
+        title={t('useCasesPage.seo.title')}
+        description={t('useCasesPage.seo.description')}
         url="https://onerooted.com/use-cases"
       />
       {/* Hero */}
@@ -95,14 +70,14 @@ const UseCases = () => {
               animate={{ opacity: 1 }}
               transition={prefersReducedMotion ? {} : { delay: 0.2 }}
             >
-              {t('useCases.hero.badge')}
+              {t('useCasesPage.hero.label')}
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
-              {t('useCases.hero.titlePart1')}{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('useCases.hero.titleHighlight')}</span>
+              {t('useCasesPage.hero.headline')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('useCasesPage.hero.headlineHighlight')}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t('useCases.hero.subtitle')}
+              {t('useCasesPage.hero.subheadline')}
             </p>
           </motion.div>
         </div>
@@ -156,16 +131,16 @@ const UseCases = () => {
                   <CardContent className="pt-6">
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
-                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">{t('useCases.labels.problem')}</h4>
+                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">{t('useCasesPage.theProblem')}</h4>
                         <p className="text-foreground">{useCase.problem}</p>
                       </div>
                       <div>
-                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">{t('useCases.labels.solution')}</h4>
+                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">{t('useCasesPage.howHelps')}</h4>
                         <p className="text-foreground">{useCase.solution}</p>
                       </div>
                     </div>
                     <div className="mt-6 pt-6 border-t border-border/50">
-                      <h4 className="text-sm font-semibold text-muted-foreground mb-3">{t('useCases.labels.outcomes')}</h4>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-3">{t('useCasesPage.keyOutcomes')}</h4>
                       <div className="flex flex-wrap gap-3">
                         {useCase.outcomes.map((outcome, outcomeIndex) => (
                           <motion.span 
@@ -207,21 +182,21 @@ const UseCases = () => {
             transition={prefersReducedMotion ? {} : { duration: 0.6 }}
           >
             <h2 id="usecases-cta-title" className="text-3xl md:text-4xl font-semibold mb-4">
-              {t('useCases.cta.title')}
+              {t('useCasesPage.cta.headline')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              {t('useCases.cta.subtitle')}
+              {t('useCasesPage.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
-                  {t('useCases.cta.requestDemo')}
+                  {t('useCasesPage.cta.button')}
                   <ArrowRight className="h-5 w-5" aria-hidden="true" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base">
-                <Link to="/product">{t('useCases.cta.seeHow')}</Link>
+                <Link to="/product">{t('useCasesPage.cta.secondary')}</Link>
               </Button>
             </div>
           </motion.div>

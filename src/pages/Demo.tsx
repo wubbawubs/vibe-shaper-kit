@@ -26,50 +26,39 @@ const Demo = () => {
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    toast.success(t('demo.form.successMessage'));
+    toast.success(t('demoPage.form.success'));
     setIsSubmitting(false);
     
     // Reset form
     (e.target as HTMLFormElement).reset();
   };
 
-  const trustIndicators = [
-    { icon: Clock, text: t('demo.hero.trustIndicators.duration') },
-    { icon: CheckCircle, text: t('demo.hero.trustIndicators.commitment') },
-    { icon: Users, text: t('demo.hero.trustIndicators.tailored') },
-  ];
+  const trustIndicatorsData = t('demoPage.hero.trustIndicators', { returnObjects: true }) as Array<{ text: string }>;
+  const trustIcons = [Clock, CheckCircle, Users];
+  const trustIndicators = (Array.isArray(trustIndicatorsData) ? trustIndicatorsData : []).map((item, idx) => ({
+    icon: trustIcons[idx] || Clock,
+    text: item.text,
+  }));
 
-  const expectations = [
-    {
-      icon: Calendar,
-      title: t('demo.expectations.walkthrough.title'),
-      desc: t('demo.expectations.walkthrough.desc'),
-    },
-    {
-      icon: MessageCircle,
-      title: t('demo.expectations.honest.title'),
-      desc: t('demo.expectations.honest.desc'),
-    },
-    {
-      icon: CheckCircle,
-      title: t('demo.expectations.nextSteps.title'),
-      desc: t('demo.expectations.nextSteps.desc'),
-    },
-  ];
+  const expectationsData = t('demoPage.expect.items', { returnObjects: true }) as Array<{ title: string; desc: string }>;
+  const expectIcons = [Calendar, MessageCircle, CheckCircle];
+  const expectations = (Array.isArray(expectationsData) ? expectationsData : []).map((item, idx) => ({
+    icon: expectIcons[idx] || Calendar,
+    title: item.title,
+    desc: item.desc,
+  }));
 
-  const teamSizes = [
-    { value: "1-10", label: t('demo.form.teamSizes.1-10') },
-    { value: "11-50", label: t('demo.form.teamSizes.11-50') },
-    { value: "51-200", label: t('demo.form.teamSizes.51-200') },
-    { value: "201-500", label: t('demo.form.teamSizes.201-500') },
-    { value: "500+", label: t('demo.form.teamSizes.500+') },
-  ];
+  const teamSizesData = t('demoPage.form.teamSizeOptions', { returnObjects: true }) as string[];
+  const teamSizes = (Array.isArray(teamSizesData) ? teamSizesData : []).map((label, idx) => ({
+    value: ["1-10", "11-50", "51-200", "201-500", "500+"][idx] || `${idx}`,
+    label,
+  }));
 
   return (
     <MarketingLayout>
       <SEO 
-        title={t('demo.seo.title')}
-        description={t('demo.seo.description')}
+        title={t('demoPage.seo.title')}
+        description={t('demoPage.seo.description')}
         url="https://onerooted.com/demo"
       />
       {/* Hero */}
@@ -90,14 +79,14 @@ const Demo = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              {t('demo.hero.badge')}
+              {t('demoPage.hero.label')}
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
-              {t('demo.hero.titlePart1')}{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('demo.hero.titleHighlight')}</span>
+              {t('demoPage.hero.headline')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('demoPage.hero.headlineHighlight')}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              {t('demo.hero.subtitle')}
+              {t('demoPage.hero.subheadline')}
             </p>
             
             {/* Trust indicators */}
@@ -128,7 +117,7 @@ const Demo = () => {
             >
               <Card className="relative overflow-hidden border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
                 <CardHeader className="relative">
-                  <CardTitle className="text-xl font-semibold">{t('demo.form.title')}</CardTitle>
+                  <CardTitle className="text-xl font-semibold">{t('demoPage.form.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="relative">
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -139,12 +128,12 @@ const Demo = () => {
                       transition={{ delay: 0.3 }}
                     >
                       <div className="space-y-2">
-                        <Label htmlFor="firstName">{t('demo.form.firstName')}</Label>
-                        <Input id="firstName" placeholder={t('demo.form.firstNamePlaceholder')} required />
+                        <Label htmlFor="firstName">{t('demoPage.form.firstName')}</Label>
+                        <Input id="firstName" required />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="lastName">{t('demo.form.lastName')}</Label>
-                        <Input id="lastName" placeholder={t('demo.form.lastNamePlaceholder')} required />
+                        <Label htmlFor="lastName">{t('demoPage.form.lastName')}</Label>
+                        <Input id="lastName" required />
                       </div>
                     </motion.div>
 
@@ -154,8 +143,8 @@ const Demo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.35 }}
                     >
-                      <Label htmlFor="email">{t('demo.form.email')}</Label>
-                      <Input id="email" type="email" placeholder={t('demo.form.emailPlaceholder')} required />
+                      <Label htmlFor="email">{t('demoPage.form.email')}</Label>
+                      <Input id="email" type="email" required />
                     </motion.div>
 
                     <motion.div 
@@ -164,8 +153,8 @@ const Demo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4 }}
                     >
-                      <Label htmlFor="company">{t('demo.form.company')}</Label>
-                      <Input id="company" placeholder={t('demo.form.companyPlaceholder')} required />
+                      <Label htmlFor="company">{t('demoPage.form.company')}</Label>
+                      <Input id="company" required />
                     </motion.div>
 
                     <motion.div 
@@ -174,10 +163,10 @@ const Demo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.45 }}
                     >
-                      <Label htmlFor="teamSize">{t('demo.form.teamSize')}</Label>
+                      <Label htmlFor="teamSize">{t('demoPage.form.teamSize')}</Label>
                       <Select>
                         <SelectTrigger>
-                          <SelectValue placeholder={t('demo.form.teamSizePlaceholder')} />
+                          <SelectValue placeholder={t('demoPage.form.teamSizePlaceholder')} />
                         </SelectTrigger>
                         <SelectContent>
                           {teamSizes.map((size) => (
@@ -193,10 +182,10 @@ const Demo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.5 }}
                     >
-                      <Label htmlFor="message">{t('demo.form.message')}</Label>
+                      <Label htmlFor="message">{t('demoPage.form.message')}</Label>
                       <Textarea 
                         id="message" 
-                        placeholder={t('demo.form.messagePlaceholder')}
+                        placeholder={t('demoPage.form.messagePlaceholder')}
                         rows={4}
                       />
                     </motion.div>
@@ -213,11 +202,11 @@ const Demo = () => {
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
-                          t('demo.form.sending')
+                          t('demoPage.form.submitting')
                         ) : (
                           <>
                             <Send className="h-5 w-5 mr-2" />
-                            {t('demo.form.submit')}
+                            {t('demoPage.form.submit')}
                           </>
                         )}
                       </Button>
@@ -235,7 +224,7 @@ const Demo = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <div>
-                <h2 className="text-2xl font-semibold mb-6">{t('demo.expectations.title')}</h2>
+                <h2 className="text-2xl font-semibold mb-6">{t('demoPage.expect.headline')}</h2>
                 
                 <motion.div 
                   className="space-y-6"
@@ -285,9 +274,9 @@ const Demo = () => {
                   <div className="absolute top-4 left-4 text-5xl font-serif text-primary/20">"</div>
                   <CardContent className="pt-10 pb-6 px-8">
                     <p className="text-muted-foreground italic relative z-10 text-lg leading-relaxed">
-                      {t('demo.testimonial.quote')}
+                      {t('demoPage.expect.testimonial')}
                     </p>
-                    <p className="text-sm font-semibold mt-4">{t('demo.testimonial.author')}</p>
+                    <p className="text-sm font-semibold mt-4">{t('demoPage.expect.testimonialAuthor')}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -302,8 +291,8 @@ const Demo = () => {
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">{t('demo.quickResponse.title')}</p>
-                  <p className="text-sm text-muted-foreground">{t('demo.quickResponse.subtitle')}</p>
+                  <p className="text-sm font-semibold">{t('demoPage.expect.quickResponse')}</p>
+                  <p className="text-sm text-muted-foreground">{t('demoPage.expect.quickResponseDesc')}</p>
                 </div>
               </motion.div>
             </motion.div>
