@@ -288,10 +288,121 @@
       "secondary": "Bekijk prijzen"
     }
   },
-  "seo": {
+"seo": {
     "home": {
       "title": "Het Hiring OS voor Teams die Recruitment Serieus Nemen",
       "description": "Vervang verspreide recruitment tools door één intelligent systeem. OneRooted rangschikt kandidaten, stroomlijnt workflows en stimuleert betere aannamebeslissingen."
+    }
+  },
+  "pricingPage": {
+    "seo": {
+      "title": "Prijzen | Transparante Hiring OS Prijzen",
+      "description": "Eenvoudige, transparante prijzen vanaf €299/maand. Kies Base, Plus of Premium. Geen verborgen kosten, onbeperkte gebruikers, opzeggen wanneer je wilt."
+    },
+    "hero": {
+      "label": "Prijzen",
+      "headline": "Heldere prijzen.",
+      "headlineHighlight": "Geen verrassingen.",
+      "subheadline": "Kies het plan dat past bij je wervingsbehoeften. Schaal wanneer je groeit."
+    },
+    "trustBadges": {
+      "noHiddenFees": "Geen verborgen kosten",
+      "cancelAnytime": "Opzeggen wanneer je wilt",
+      "moneyBack": "30 dagen geld terug"
+    },
+    "plans": {
+      "base": {
+        "name": "Base",
+        "price": "299",
+        "description": "Essentiële recruitment ondersteuning voor kleine teams.",
+        "outcome": "Krijg controle over je wervingsproces."
+      },
+      "plus": {
+        "name": "Plus",
+        "price": "399",
+        "description": "Sneller schakelen, slimmer aannemen.",
+        "outcome": "Maak van hiring een gecoördineerd systeem."
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "599",
+        "description": "Hiring volledig georganiseerd.",
+        "outcome": "Draai hiring als een strategische operatie."
+      }
+    },
+    "features": {
+      "onerootedSystem": "OneRooted systeem",
+      "talentPool": "Up-to-date talent pool",
+      "eAcademy": "Toegang tot E-Academy",
+      "emailSupport": "E-mail support",
+      "partnerPortal": "Partner portal",
+      "proactiveSourcing": "Proactieve sourcing",
+      "interviewCoordination": "Interview coördinatie",
+      "everythingInBase": "Alles in Base",
+      "retentionSearch": "Retention search",
+      "prioritySupport": "Prioriteit support",
+      "dedicatedSuccessManager": "Dedicated success manager",
+      "everythingInPlus": "Alles in Plus",
+      "candidateInterviews": "Kandidaat interviews",
+      "schedulingCoordination": "Planning & coördinatie",
+      "customIntegrations": "Custom integraties",
+      "advancedAnalytics": "Geavanceerde analytics",
+      "slaGuarantee": "SLA garantie"
+    },
+    "perMonth": "/ maand",
+    "mostPopular": "Meest populair",
+    "talkToUs": "Neem contact op",
+    "included": {
+      "title": "Wat zit er in alle plannen",
+      "always": "Altijd inbegrepen",
+      "never": "Nooit in rekening gebracht",
+      "alwaysItems": ["Onbeperkte kandidaten", "Onbeperkte vacatures", "Data export", "AVG-compliant"],
+      "neverItems": ["Setup kosten", "Verborgen kosten", "Langetermijn contracten", "Per-kandidaat kosten"]
+    },
+    "faq": {
+      "label": "FAQ",
+      "headline": "Veelgestelde prijsvragen",
+      "items": [
+        {
+          "question": "Kan ik later van plan wisselen?",
+          "answer": "Ja. Upgrade wanneer je wilt en krijg direct toegang tot nieuwe features. Downgrade aan het einde van je factureringsperiode. Geen boetes."
+        },
+        {
+          "question": "Is er een minimale contractperiode?",
+          "answer": "Nee. Alle plannen zijn maand-tot-maand zonder langetermijn verplichting. We geloven erin om je vertrouwen elke maand te verdienen."
+        },
+        {
+          "question": "Bieden jullie korting voor jaarlijkse facturering?",
+          "answer": "Ja — 15% korting bij jaarlijkse betaling. Neem contact op met ons team om dit te regelen."
+        },
+        {
+          "question": "Welke betaalmethoden accepteren jullie?",
+          "answer": "We accepteren alle gangbare creditcards, iDEAL en bankoverschrijvingen voor jaarplannen. Facturen worden automatisch verzonden elke factureringsperiode."
+        },
+        {
+          "question": "Wat gebeurt er na mijn proefperiode of demo?",
+          "answer": "Na je demo kies je een plan dat bij je past. Geen automatische kosten, geen verborgen conversies. Jij beslist wanneer je start."
+        },
+        {
+          "question": "Kan ik meer gebruikers toevoegen aan mijn plan?",
+          "answer": "Alle plannen bevatten onbeperkte gebruikers. Je betaalt alleen op basis van de features en het supportniveau dat je nodig hebt — niet per seat."
+        },
+        {
+          "question": "Bieden jullie aangepaste enterprise prijzen?",
+          "answer": "Ja. Voor organisaties met specifieke behoeften bieden we aangepaste prijzen en dedicated support. Neem contact op om te bespreken."
+        },
+        {
+          "question": "Wat is jullie terugbetalingsbeleid?",
+          "answer": "30 dagen geld-terug-garantie op alle plannen. Als je niet tevreden bent binnen de eerste 30 dagen, krijg je volledige terugbetaling — geen vragen gesteld."
+        }
+      ]
+    },
+    "cta": {
+      "trustBadge": "Vertrouwd door 100+ hiring teams",
+      "headline": "Iets op maat nodig?",
+      "description": "Voor enterprise vereisten, custom integraties of high-volume behoeften, laten we een oplossing op maat bespreken.",
+      "button": "Neem contact op",
+      "secondary": "Bekijk hoe het werkt"
     }
   },
   "footer": {

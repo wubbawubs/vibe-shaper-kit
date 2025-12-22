@@ -288,10 +288,121 @@
       "secondary": "Preise ansehen"
     }
   },
-  "seo": {
+"seo": {
     "home": {
       "title": "Das Hiring OS für Teams, die Recruiting ernst nehmen",
       "description": "Ersetzen Sie verstreute Recruiting-Tools durch ein intelligentes System. OneRooted bewertet Kandidaten, optimiert Workflows und ermöglicht bessere Einstellungsentscheidungen."
+    }
+  },
+  "pricingPage": {
+    "seo": {
+      "title": "Preise | Transparente Hiring OS Preise",
+      "description": "Einfache, transparente Preise ab €299/Monat. Wählen Sie Base, Plus oder Premium. Keine versteckten Gebühren, unbegrenzte Benutzer, jederzeit kündbar."
+    },
+    "hero": {
+      "label": "Preise",
+      "headline": "Klare Preise.",
+      "headlineHighlight": "Keine Überraschungen.",
+      "subheadline": "Wählen Sie den Plan, der zu Ihren Einstellungsbedürfnissen passt. Skalieren Sie, wenn Sie wachsen."
+    },
+    "trustBadges": {
+      "noHiddenFees": "Keine versteckten Gebühren",
+      "cancelAnytime": "Jederzeit kündbar",
+      "moneyBack": "30 Tage Geld zurück"
+    },
+    "plans": {
+      "base": {
+        "name": "Base",
+        "price": "299",
+        "description": "Wesentliche Recruiting-Unterstützung für kleine Teams.",
+        "outcome": "Bekommen Sie Kontrolle über Ihren Einstellungsprozess."
+      },
+      "plus": {
+        "name": "Plus",
+        "price": "399",
+        "description": "Schneller agieren, klüger einstellen.",
+        "outcome": "Machen Sie Hiring zu einem koordinierten System."
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "599",
+        "description": "Hiring vollständig organisiert.",
+        "outcome": "Führen Sie Hiring als strategische Operation."
+      }
+    },
+    "features": {
+      "onerootedSystem": "OneRooted-System",
+      "talentPool": "Aktueller Talent-Pool",
+      "eAcademy": "Zugang zur E-Academy",
+      "emailSupport": "E-Mail-Support",
+      "partnerPortal": "Partner-Portal",
+      "proactiveSourcing": "Proaktives Sourcing",
+      "interviewCoordination": "Interview-Koordination",
+      "everythingInBase": "Alles in Base",
+      "retentionSearch": "Retention-Suche",
+      "prioritySupport": "Prioritäts-Support",
+      "dedicatedSuccessManager": "Dedizierter Success Manager",
+      "everythingInPlus": "Alles in Plus",
+      "candidateInterviews": "Kandidaten-Interviews",
+      "schedulingCoordination": "Terminplanung & Koordination",
+      "customIntegrations": "Custom Integrationen",
+      "advancedAnalytics": "Erweiterte Analytics",
+      "slaGuarantee": "SLA-Garantie"
+    },
+    "perMonth": "/ Monat",
+    "mostPopular": "Am beliebtesten",
+    "talkToUs": "Kontaktieren Sie uns",
+    "included": {
+      "title": "Was in allen Plänen enthalten ist",
+      "always": "Immer enthalten",
+      "never": "Nie berechnet",
+      "alwaysItems": ["Unbegrenzte Kandidaten", "Unbegrenzte Stellenanzeigen", "Datenexport", "DSGVO-konform"],
+      "neverItems": ["Setup-Gebühren", "Versteckte Kosten", "Langzeitverträge", "Pro-Kandidat-Gebühren"]
+    },
+    "faq": {
+      "label": "FAQ",
+      "headline": "Häufige Preisfragen",
+      "items": [
+        {
+          "question": "Kann ich später den Plan wechseln?",
+          "answer": "Ja. Upgraden Sie jederzeit und erhalten Sie sofortigen Zugang zu neuen Features. Downgraden Sie am Ende Ihres Abrechnungszyklus. Keine Strafen."
+        },
+        {
+          "question": "Gibt es eine Mindestvertragslaufzeit?",
+          "answer": "Nein. Alle Pläne sind monatlich ohne langfristige Verpflichtung. Wir glauben daran, Ihr Vertrauen jeden Monat zu verdienen."
+        },
+        {
+          "question": "Bieten Sie Rabatte für jährliche Abrechnung?",
+          "answer": "Ja — 15% Rabatt bei jährlicher Zahlung. Kontaktieren Sie unser Team, um dies einzurichten."
+        },
+        {
+          "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+          "answer": "Wir akzeptieren alle gängigen Kreditkarten, iDEAL und Banküberweisungen für Jahrespläne. Rechnungen werden automatisch in jedem Abrechnungszyklus gesendet."
+        },
+        {
+          "question": "Was passiert nach meiner Testphase oder Demo?",
+          "answer": "Nach Ihrer Demo wählen Sie einen Plan, der zu Ihnen passt. Keine automatischen Gebühren, keine versteckten Konvertierungen. Sie entscheiden, wann Sie starten."
+        },
+        {
+          "question": "Kann ich mehr Benutzer zu meinem Plan hinzufügen?",
+          "answer": "Alle Pläne enthalten unbegrenzte Benutzer. Sie zahlen nur basierend auf den Features und dem Support-Level, das Sie benötigen — nicht pro Platz."
+        },
+        {
+          "question": "Bieten Sie individuelle Enterprise-Preise?",
+          "answer": "Ja. Für Organisationen mit spezifischen Anforderungen bieten wir individuelle Preise und dedizierten Support. Kontaktieren Sie uns, um zu besprechen."
+        },
+        {
+          "question": "Wie ist Ihre Rückerstattungsrichtlinie?",
+          "answer": "30-Tage-Geld-zurück-Garantie auf alle Pläne. Wenn Sie innerhalb der ersten 30 Tage nicht zufrieden sind, erstatten wir Ihnen den vollen Betrag — keine Fragen gestellt."
+        }
+      ]
+    },
+    "cta": {
+      "trustBadge": "Vertraut von 100+ Hiring-Teams",
+      "headline": "Etwas Individuelles benötigt?",
+      "description": "Für Enterprise-Anforderungen, individuelle Integrationen oder Hochvolumen-Bedürfnisse, lassen Sie uns über eine maßgeschneiderte Lösung sprechen.",
+      "button": "Kontakt aufnehmen",
+      "secondary": "Sehen Sie, wie es funktioniert"
     }
   },
   "footer": {

@@ -288,10 +288,121 @@
       "secondary": "View pricing"
     }
   },
-  "seo": {
+"seo": {
     "home": {
       "title": "The Hiring OS for Teams That Take Hiring Seriously",
       "description": "Replace scattered recruitment tools with one intelligent system. OneRooted ranks candidates, streamlines workflows, and drives better hiring decisions."
+    }
+  },
+  "pricingPage": {
+    "seo": {
+      "title": "Pricing Plans | Transparent Hiring OS Pricing",
+      "description": "Simple, transparent pricing starting at €299/month. Choose Base, Plus, or Premium plans. No hidden fees, unlimited users, cancel anytime."
+    },
+    "hero": {
+      "label": "Pricing",
+      "headline": "Clear pricing.",
+      "headlineHighlight": "No surprises.",
+      "subheadline": "Choose the plan that fits your hiring needs. Scale as you grow."
+    },
+    "trustBadges": {
+      "noHiddenFees": "No hidden fees",
+      "cancelAnytime": "Cancel anytime",
+      "moneyBack": "30-day money back"
+    },
+    "plans": {
+      "base": {
+        "name": "Base",
+        "price": "299",
+        "description": "Essential recruitment support for small teams.",
+        "outcome": "Get control over your hiring process."
+      },
+      "plus": {
+        "name": "Plus",
+        "price": "399",
+        "description": "Move faster, hire smarter.",
+        "outcome": "Turn hiring into a coordinated system."
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "599",
+        "description": "Hiring fully organized.",
+        "outcome": "Run hiring as a strategic operation."
+      }
+    },
+    "features": {
+      "onerootedSystem": "OneRooted system",
+      "talentPool": "Up-to-date talent pool",
+      "eAcademy": "Access to E-Academy",
+      "emailSupport": "Email support",
+      "partnerPortal": "Partner portal",
+      "proactiveSourcing": "Proactive sourcing",
+      "interviewCoordination": "Interview coordination",
+      "everythingInBase": "Everything in Base",
+      "retentionSearch": "Retention search",
+      "prioritySupport": "Priority support",
+      "dedicatedSuccessManager": "Dedicated success manager",
+      "everythingInPlus": "Everything in Plus",
+      "candidateInterviews": "Candidate interviews",
+      "schedulingCoordination": "Scheduling & coordination",
+      "customIntegrations": "Custom integrations",
+      "advancedAnalytics": "Advanced analytics",
+      "slaGuarantee": "SLA guarantee"
+    },
+    "perMonth": "/ month",
+    "mostPopular": "Most popular",
+    "talkToUs": "Talk to us",
+    "included": {
+      "title": "What's included in all plans",
+      "always": "Always included",
+      "never": "Never charged",
+      "alwaysItems": ["Unlimited candidates", "Unlimited job postings", "Data export", "GDPR compliance"],
+      "neverItems": ["Setup fees", "Hidden charges", "Long-term contracts", "Per-candidate fees"]
+    },
+    "faq": {
+      "label": "FAQ",
+      "headline": "Common pricing questions",
+      "items": [
+        {
+          "question": "Can I switch plans later?",
+          "answer": "Yes. Upgrade anytime and get immediate access to new features. Downgrade at the end of your billing cycle. No penalties."
+        },
+        {
+          "question": "Is there a minimum contract period?",
+          "answer": "No. All plans are month-to-month with no long-term commitment. We believe in earning your business every month."
+        },
+        {
+          "question": "Do you offer discounts for annual billing?",
+          "answer": "Yes — 15% off when you pay annually. Contact our team to set this up."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "We accept all major credit cards, iDEAL, and bank transfers for annual plans. Invoices are sent automatically each billing cycle."
+        },
+        {
+          "question": "What happens after my trial or demo?",
+          "answer": "After your demo, you choose a plan that fits your needs. No automatic charges, no hidden conversions. You decide when to start."
+        },
+        {
+          "question": "Can I add more users to my plan?",
+          "answer": "All plans include unlimited users. You only pay based on the features and support level you need — not per seat."
+        },
+        {
+          "question": "Do you offer custom enterprise pricing?",
+          "answer": "Yes. For organizations with specific needs, we offer custom pricing and dedicated support. Contact us to discuss."
+        },
+        {
+          "question": "What's your refund policy?",
+          "answer": "30-day money-back guarantee on all plans. If you're not satisfied within the first 30 days, we'll refund you in full — no questions asked."
+        }
+      ]
+    },
+    "cta": {
+      "trustBadge": "Trusted by 100+ hiring teams",
+      "headline": "Need something custom?",
+      "description": "For enterprise requirements, custom integrations, or high-volume needs, let's talk about a tailored solution.",
+      "button": "Contact sales",
+      "secondary": "See how it works"
     }
   },
   "footer": {

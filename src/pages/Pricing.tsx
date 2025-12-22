@@ -11,108 +11,83 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { SEO } from "@/components/SEO";
-
-const plans = [
-  {
-    name: "Base",
-    price: "299",
-    description: "Essential recruitment support for small teams.",
-    outcome: "Get control over your hiring process.",
-    features: [
-      { text: "OneRooted system", included: true },
-      { text: "Up-to-date talent pool", included: true },
-      { text: "Access to E-Academy", included: true },
-      { text: "Email support", included: true },
-      { text: "Partner portal", included: false },
-      { text: "Proactive sourcing", included: false },
-      { text: "Interview coordination", included: false },
-    ],
-    cta: "Talk to us",
-    featured: false,
-  },
-  {
-    name: "Plus",
-    price: "399",
-    description: "Move faster, hire smarter.",
-    outcome: "Turn hiring into a coordinated system.",
-    features: [
-      { text: "Everything in Base", included: true },
-      { text: "Retention search", included: true },
-      { text: "Proactive sourcing", included: true },
-      { text: "Priority support", included: true },
-      { text: "Partner portal", included: true },
-      { text: "Interview coordination", included: false },
-      { text: "Dedicated success manager", included: false },
-    ],
-    cta: "Talk to us",
-    featured: true,
-  },
-  {
-    name: "Premium",
-    price: "599",
-    description: "Hiring fully organized.",
-    outcome: "Run hiring as a strategic operation.",
-    features: [
-      { text: "Everything in Plus", included: true },
-      { text: "Candidate interviews", included: true },
-      { text: "Scheduling & coordination", included: true },
-      { text: "Dedicated success manager", included: true },
-      { text: "Custom integrations", included: true },
-      { text: "Advanced analytics", included: true },
-      { text: "SLA guarantee", included: true },
-    ],
-    cta: "Talk to us",
-    featured: false,
-  },
-];
-
-const faqs = [
-  {
-    question: "Can I switch plans later?",
-    answer: "Yes. Upgrade anytime and get immediate access to new features. Downgrade at the end of your billing cycle. No penalties.",
-  },
-  {
-    question: "Is there a minimum contract period?",
-    answer: "No. All plans are month-to-month with no long-term commitment. We believe in earning your business every month.",
-  },
-  {
-    question: "Do you offer discounts for annual billing?",
-    answer: "Yes — 15% off when you pay annually. Contact our team to set this up.",
-  },
-  {
-    question: "What payment methods do you accept?",
-    answer: "We accept all major credit cards, iDEAL, and bank transfers for annual plans. Invoices are sent automatically each billing cycle.",
-  },
-  {
-    question: "What happens after my trial or demo?",
-    answer: "After your demo, you choose a plan that fits your needs. No automatic charges, no hidden conversions. You decide when to start.",
-  },
-  {
-    question: "Can I add more users to my plan?",
-    answer: "All plans include unlimited users. You only pay based on the features and support level you need — not per seat.",
-  },
-  {
-    question: "Do you offer custom enterprise pricing?",
-    answer: "Yes. For organizations with specific needs, we offer custom pricing and dedicated support. Contact us to discuss.",
-  },
-  {
-    question: "What's your refund policy?",
-    answer: "30-day money-back guarantee on all plans. If you're not satisfied within the first 30 days, we'll refund you in full — no questions asked.",
-  },
-];
-
-const trustBadges = [
-  { icon: Shield, text: "No hidden fees" },
-  { icon: Zap, text: "Cancel anytime" },
-  { icon: HeartHandshake, text: "30-day money back" },
-];
+import { useTranslation } from "react-i18next";
+import { useLanguageFromUrl } from "@/i18n/useLanguage";
 
 const Pricing = () => {
+  const { t } = useTranslation();
+  const { localizedPath } = useLanguageFromUrl();
+
+  const plans = [
+    {
+      name: t('pricingPage.plans.base.name'),
+      price: "299",
+      description: t('pricingPage.plans.base.description'),
+      outcome: t('pricingPage.plans.base.outcome'),
+      features: [
+        { text: t('pricingPage.features.onerootedSystem'), included: true },
+        { text: t('pricingPage.features.talentPool'), included: true },
+        { text: t('pricingPage.features.eAcademy'), included: true },
+        { text: t('pricingPage.features.emailSupport'), included: true },
+        { text: t('pricingPage.features.partnerPortal'), included: false },
+        { text: t('pricingPage.features.proactiveSourcing'), included: false },
+        { text: t('pricingPage.features.interviewCoordination'), included: false },
+      ],
+      cta: t('pricingPage.talkToUs'),
+      featured: false,
+    },
+    {
+      name: t('pricingPage.plans.plus.name'),
+      price: "399",
+      description: t('pricingPage.plans.plus.description'),
+      outcome: t('pricingPage.plans.plus.outcome'),
+      features: [
+        { text: t('pricingPage.features.everythingInBase'), included: true },
+        { text: t('pricingPage.features.retentionSearch'), included: true },
+        { text: t('pricingPage.features.proactiveSourcing'), included: true },
+        { text: t('pricingPage.features.prioritySupport'), included: true },
+        { text: t('pricingPage.features.partnerPortal'), included: true },
+        { text: t('pricingPage.features.interviewCoordination'), included: false },
+        { text: t('pricingPage.features.dedicatedSuccessManager'), included: false },
+      ],
+      cta: t('pricingPage.talkToUs'),
+      featured: true,
+    },
+    {
+      name: t('pricingPage.plans.premium.name'),
+      price: "599",
+      description: t('pricingPage.plans.premium.description'),
+      outcome: t('pricingPage.plans.premium.outcome'),
+      features: [
+        { text: t('pricingPage.features.everythingInPlus'), included: true },
+        { text: t('pricingPage.features.candidateInterviews'), included: true },
+        { text: t('pricingPage.features.schedulingCoordination'), included: true },
+        { text: t('pricingPage.features.dedicatedSuccessManager'), included: true },
+        { text: t('pricingPage.features.customIntegrations'), included: true },
+        { text: t('pricingPage.features.advancedAnalytics'), included: true },
+        { text: t('pricingPage.features.slaGuarantee'), included: true },
+      ],
+      cta: t('pricingPage.talkToUs'),
+      featured: false,
+    },
+  ];
+
+  const faqs = t('pricingPage.faq.items', { returnObjects: true }) as Array<{ question: string; answer: string }>;
+
+  const trustBadges = [
+    { icon: Shield, text: t('pricingPage.trustBadges.noHiddenFees') },
+    { icon: Zap, text: t('pricingPage.trustBadges.cancelAnytime') },
+    { icon: HeartHandshake, text: t('pricingPage.trustBadges.moneyBack') },
+  ];
+
+  const alwaysItems = t('pricingPage.included.alwaysItems', { returnObjects: true }) as string[];
+  const neverItems = t('pricingPage.included.neverItems', { returnObjects: true }) as string[];
+
   return (
     <MarketingLayout>
       <SEO 
-        title="Pricing Plans | Transparent Hiring OS Pricing"
-        description="Simple, transparent pricing starting at €299/month. Choose Base, Plus, or Premium plans. No hidden fees, unlimited users, cancel anytime."
+        title={t('pricingPage.seo.title')}
+        description={t('pricingPage.seo.description')}
         url="https://onerooted.com/pricing"
       />
       {/* Hero */}
@@ -133,14 +108,14 @@ const Pricing = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              Pricing
+              {t('pricingPage.hero.label')}
             </motion.p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-4 md:mb-6 tracking-tight">
-              Clear pricing.{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">No surprises.</span>
+              {t('pricingPage.hero.headline')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('pricingPage.hero.headlineHighlight')}</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
-              Choose the plan that fits your hiring needs. Scale as you grow.
+              {t('pricingPage.hero.subheadline')}
             </p>
             
             {/* Trust badges */}
@@ -214,7 +189,7 @@ const Pricing = () => {
                       transition={{ delay: 0.3 }}
                     >
                       <span className="bg-gradient-to-r from-primary to-accent text-primary-foreground text-xs px-4 py-1.5 rounded-full font-medium">
-                        Most popular
+                        {t('pricingPage.mostPopular')}
                       </span>
                     </motion.div>
                   )}
@@ -223,11 +198,9 @@ const Pricing = () => {
                     <CardTitle className="text-lg sm:text-xl">{plan.name}</CardTitle>
                     <div className="mt-3 sm:mt-4">
                       <span className={`text-3xl sm:text-4xl font-medium ${plan.featured ? 'bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent' : ''}`}>
-                        {plan.price === "Custom" ? "Custom" : `€${plan.price}`}
+                        €{plan.price}
                       </span>
-                      {plan.price !== "Custom" && (
-                        <span className="text-muted-foreground text-sm sm:text-base"> / month</span>
-                      )}
+                      <span className="text-muted-foreground text-sm sm:text-base"> {t('pricingPage.perMonth')}</span>
                     </div>
                     <p className="text-xs sm:text-sm text-muted-foreground mt-2">{plan.description}</p>
                     <p className={`text-xs sm:text-sm font-medium mt-2 sm:mt-3 ${plan.featured ? 'bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent' : 'text-primary'}`}>{plan.outcome}</p>
@@ -272,7 +245,7 @@ const Pricing = () => {
                       className={`w-full ${plan.featured ? 'btn-accent' : ''}`}
                       variant={plan.featured ? "default" : "outline"}
                     >
-                      <Link to="/demo">{plan.cta}</Link>
+                      <Link to={localizedPath("/demo")}>{plan.cta}</Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -293,7 +266,7 @@ const Pricing = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-center mb-8 md:mb-12">
-              What's included in all plans
+              {t('pricingPage.included.title')}
             </h2>
 
             <motion.div 
@@ -318,9 +291,9 @@ const Pricing = () => {
               >
                 <Card className="card-refined h-full">
                   <CardContent className="pt-6 pb-6">
-                    <h3 className="font-medium mb-4 text-success">Always included</h3>
+                    <h3 className="font-medium mb-4 text-success">{t('pricingPage.included.always')}</h3>
                     <ul className="space-y-3 text-sm">
-                      {["Unlimited candidates", "Unlimited job postings", "Data export", "GDPR compliance"].map((item, index) => (
+                      {alwaysItems.map((item, index) => (
                         <motion.li 
                           key={index}
                           className="flex items-center gap-2"
@@ -358,9 +331,9 @@ const Pricing = () => {
               >
                 <Card className="card-refined h-full">
                   <CardContent className="pt-6 pb-6">
-                    <h3 className="font-medium mb-4 text-muted-foreground">Never charged</h3>
+                    <h3 className="font-medium mb-4 text-muted-foreground">{t('pricingPage.included.never')}</h3>
                     <ul className="space-y-3 text-sm text-muted-foreground">
-                      {["Setup fees", "Hidden charges", "Long-term contracts", "Per-candidate fees"].map((item, index) => (
+                      {neverItems.map((item, index) => (
                         <motion.li 
                           key={index}
                           className="flex items-center gap-2"
@@ -393,9 +366,9 @@ const Pricing = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">FAQ</p>
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('pricingPage.faq.label')}</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
-                Common pricing questions
+                {t('pricingPage.faq.headline')}
               </h2>
             </motion.div>
 
@@ -442,26 +415,25 @@ const Pricing = () => {
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-8">
               <Users className="h-4 w-4" />
-              <span>Trusted by 100+ hiring teams</span>
+              <span>{t('pricingPage.cta.trustBadge')}</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              Need something custom?
+              {t('pricingPage.cta.headline')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              For enterprise requirements, custom integrations, or high-volume needs, 
-              let's talk about a tailored solution.
+              {t('pricingPage.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="btn-accent">
-                <Link to="/demo" className="flex items-center gap-2">
-                  Contact sales
+                <Link to={localizedPath("/demo")} className="flex items-center gap-2">
+                  {t('pricingPage.cta.button')}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/product">See how it works</Link>
+                <Link to={localizedPath("/product")}>{t('pricingPage.cta.secondary')}</Link>
               </Button>
             </div>
           </motion.div>
