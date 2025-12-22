@@ -19,6 +19,161 @@
       "quality": "betere kwaliteit hires"
     }
   },
+  "problem": {
+    "headline": "Recruitment is niet kapot.",
+    "subheadline": "Je huidige tools zijn verouderd.",
+    "tools": {
+      "ats": {
+        "name": "ATS",
+        "description": "Gebouwd om kandidaten op te slaan, niet om ze aan te nemen"
+      },
+      "slack": {
+        "name": "Slack",
+        "description": "Beslissingen verdwalen in eindeloze gesprekken"
+      },
+      "excel": {
+        "name": "Excel",
+        "description": "Kritieke keuzes zonder context"
+      }
+    },
+    "consequence": "Geen enkele bron van waarheid. Geen eigenaarschap. Geen inzicht.",
+    "realization": "Recruitment is niet complexer geworden.",
+    "realizationHighlight": "Je tools zijn gewoon nooit geëvolueerd.",
+    "solution": "Nu is er"
+  },
+  "whatIs": {
+    "label": "Het Hiring OS",
+    "headline": "Eén systeem dat elke aannamebeslissing verbindt",
+    "pillars": {
+      "data": {
+        "title": "Hiring Data",
+        "description": "Alle kandidaten, gesprekken en context verenigd in één intelligent systeem."
+      },
+      "workflows": {
+        "title": "Workflows",
+        "description": "Adaptieve processen die meebewegen met je team, niet ertegen."
+      },
+      "intelligence": {
+        "title": "Beslissingsintelligentie",
+        "description": "Gestructureerde inzichten die onderbuikgevoelens vervangen door vertrouwen."
+      },
+      "accountability": {
+        "title": "Verantwoordelijkheid",
+        "description": "Iedereen weet wat er nu moet gebeuren — en wie het doet."
+      }
+    }
+  },
+  "whoItsFor": {
+    "label": "Voor wie",
+    "headline": "Recruitment loopt vast zonder gedeeld systeem",
+    "subheadline": "OneRooted vervangt gefragmenteerde tools door één operationele waarheid voor iedereen.",
+    "cta": "Bekijk het systeem in actie",
+    "audiences": {
+      "leadership": {
+        "title": "Leiderschap",
+        "subtitle": "Founders & Executives",
+        "points": [
+          "Volledig overzicht zonder micromanagement",
+          "Aannamebeslissingen gebaseerd op echte, gedeelde data"
+        ]
+      },
+      "talent": {
+        "title": "Talent Teams",
+        "subtitle": "Recruiters & Hiring Managers",
+        "points": [
+          "Eén gedeelde workflow van intake tot hire",
+          "Minder admin. Meer focus op aannamebeslissingen."
+        ]
+      },
+      "partners": {
+        "title": "Partners",
+        "subtitle": "Bureaus & RPO",
+        "points": [
+          "Een helder, gedeeld wervingsproces per klant",
+          "Volledige transparantie zonder eindeloos heen-en-weer"
+        ]
+      }
+    }
+  },
+  "comparison": {
+    "label": "Het verschil",
+    "headline": "Geen zoveelste ATS",
+    "traditional": "Traditioneel ATS",
+    "rows": {
+      "focus": { "ats": "Slaat kandidaten op", "onerooted": "Volgt aannamebeslissingen" },
+      "flex": { "ats": "Statische pipelines", "onerooted": "Adaptieve workflows" },
+      "priority": { "ats": "Admin-first design", "onerooted": "Decision-first design" },
+      "data": { "ats": "Gesegmenteerde data", "onerooted": "Geünificeerde intelligentie" },
+      "process": { "ats": "Handmatige coördinatie", "onerooted": "Geautomatiseerde samenwerking" }
+    },
+    "conclusion": {
+      "ats": "ATS-tools helpen je",
+      "atsHighlight": "kandidaten te volgen",
+      "onerooted": "OneRooted helpt je",
+      "onerootedHighlight": "betere mensen aan te nemen"
+    }
+  },
+  "pricing": {
+    "label": "Prijzen",
+    "headline": "Heldere prijzen. Geen verrassingen.",
+    "subheadline": "Begin klein, schaal wanneer je klaar bent.",
+    "cta": "Bekijk alle prijzen",
+    "perMonth": "/mnd",
+    "mostPopular": "Meest populair",
+    "plans": {
+      "base": {
+        "name": "Base",
+        "description": "Essentiële recruitment ondersteuning",
+        "features": ["OneRooted systeem", "Up-to-date talent pool", "Toegang tot E-Academy"]
+      },
+      "plus": {
+        "name": "Plus",
+        "description": "Sneller schakelen, slimmer aannemen",
+        "features": ["Alles in Base", "Retention search", "Proactieve sourcing"]
+      },
+      "premium": {
+        "name": "Premium",
+        "description": "Hiring volledig georganiseerd",
+        "features": ["Alles in Plus", "Kandidaat interviews", "Planning & coördinatie"]
+      }
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "headline": "Veelgestelde vragen",
+    "items": [
+      {
+        "question": "Wat is OneRooted precies?",
+        "answer": "OneRooted is een Hiring Operating System — niet zomaar een ATS. Het verbindt al je hiring data, workflows en stakeholders in één intelligent systeem dat je helpt sneller betere aannamebeslissingen te nemen."
+      },
+      {
+        "question": "Hoe verschilt OneRooted van een ATS?",
+        "answer": "Een ATS slaat cv's op. OneRooted runt je wervingsproces. Het verbindt kandidaten, workflows en beslissers in real-time met intelligente ranking, geautomatiseerde samenwerking en inzichten die vanzelf naar boven komen."
+      },
+      {
+        "question": "Voor wie is OneRooted gebouwd?",
+        "answer": "Groeiende teams die regelmatig werven en structuur willen zonder complexiteit. Of je nu founder, talent leader of recruiter bent — als je klaar bent met verspreide tools en één gedeeld systeem wilt, is OneRooted voor jou."
+      },
+      {
+        "question": "Kan ik OneRooted gebruiken met externe recruiters of bureaus?",
+        "answer": "Ja. Ons Partner Portal geeft externe recruiters hun eigen pipeline-weergave per klant. Ze kunnen direct kandidaten indienen, real-time statusupdates zien en samenwerken zonder eindeloze e-mailketens."
+      },
+      {
+        "question": "Hoe lang duurt het om te starten?",
+        "answer": "De meeste teams zijn binnen een dag operationeel. Geen complexe migraties, geen lange onboarding. We helpen je je eerste vacature op te zetten en je team uit te nodigen — zo simpel is het."
+      },
+      {
+        "question": "Is mijn data veilig?",
+        "answer": "Absoluut. We zijn volledig AVG-compliant, gebruiken enterprise-grade encryptie en delen je data nooit. Je hiring data blijft van jou."
+      }
+    ]
+  },
+  "finalCta": {
+    "headline": "Hiring werkt beter als je het helder kunt zien",
+    "subheadline": "Daar is de OneRooted demo voor.",
+    "cta": "Demo aanvragen",
+    "ctaSecondary": "Bekijk prijzen"
+  },
   "seo": {
     "home": {
       "title": "Het Hiring OS voor Teams die Recruitment Serieus Nemen",
@@ -26,7 +181,12 @@
     }
   },
   "footer": {
-    "tagline": "Recruitment heeft geen nieuwe tool nodig. Het heeft een systeem nodig.",
-    "copyright": "© {year} OneRooted. Alle rechten voorbehouden."
+    "tagline": "Het Hiring OS voor teams die recruitment serieus nemen. Vervang gefragmenteerde tools door één intelligent systeem.",
+    "copyright": "© {{year}} OneRooted. Alle rechten voorbehouden.",
+    "company": "Bedrijf",
+    "legal": "Juridisch",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden"
   }
 }

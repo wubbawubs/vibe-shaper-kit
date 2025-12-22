@@ -1,9 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { getLocalizedPath } from "@/i18n/useLanguage";
+import { type Language } from "@/i18n/config";
 
 export function FinalCTASection() {
+  const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+
+  const getLocalizedHref = (href: string) => {
+    return lang ? getLocalizedPath(href, lang as Language) : href;
+  };
+
   return (
     <section className="py-16 md:py-24 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
@@ -17,22 +27,22 @@ export function FinalCTASection() {
           className="max-w-2xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
-            Hiring works better when you can see it clearly
+            {t("finalCta.headline")}
           </h2>
 
           <p className="text-lg text-muted-foreground mb-8">
-            That's what the OneRooted demo is for.
+            {t("finalCta.subheadline")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
-              <Link to="/demo" className="flex items-center gap-2">
-                Request a demo
+              <Link to={getLocalizedHref("/demo")} className="flex items-center gap-2">
+                {t("finalCta.cta")}
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
-              <Link to="/pricing">View pricing</Link>
+              <Link to={getLocalizedHref("/pricing")}>{t("finalCta.ctaSecondary")}</Link>
             </Button>
           </div>
         </motion.div>
