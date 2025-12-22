@@ -10,8 +10,13 @@ import { toast } from "sonner";
 import { motion } from "framer-motion";
 import { Send, Calendar, MessageCircle, Users, Clock, CheckCircle } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { useTranslation } from "react-i18next";
+import { useLanguageFromUrl } from "@/i18n/useLanguage";
 
 const Demo = () => {
+  const { t } = useTranslation();
+  useLanguageFromUrl();
+  
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -21,18 +26,50 @@ const Demo = () => {
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    toast.success("Thank you! We'll be in touch within 24 hours.");
+    toast.success(t('demo.form.successMessage'));
     setIsSubmitting(false);
     
     // Reset form
     (e.target as HTMLFormElement).reset();
   };
 
+  const trustIndicators = [
+    { icon: Clock, text: t('demo.hero.trustIndicators.duration') },
+    { icon: CheckCircle, text: t('demo.hero.trustIndicators.commitment') },
+    { icon: Users, text: t('demo.hero.trustIndicators.tailored') },
+  ];
+
+  const expectations = [
+    {
+      icon: Calendar,
+      title: t('demo.expectations.walkthrough.title'),
+      desc: t('demo.expectations.walkthrough.desc'),
+    },
+    {
+      icon: MessageCircle,
+      title: t('demo.expectations.honest.title'),
+      desc: t('demo.expectations.honest.desc'),
+    },
+    {
+      icon: CheckCircle,
+      title: t('demo.expectations.nextSteps.title'),
+      desc: t('demo.expectations.nextSteps.desc'),
+    },
+  ];
+
+  const teamSizes = [
+    { value: "1-10", label: t('demo.form.teamSizes.1-10') },
+    { value: "11-50", label: t('demo.form.teamSizes.11-50') },
+    { value: "51-200", label: t('demo.form.teamSizes.51-200') },
+    { value: "201-500", label: t('demo.form.teamSizes.201-500') },
+    { value: "500+", label: t('demo.form.teamSizes.500+') },
+  ];
+
   return (
     <MarketingLayout>
       <SEO 
-        title="Request a Demo | See OneRooted in Action"
-        description="Book a free 30-minute demo. See how OneRooted's Hiring OS can streamline your recruitment, improve collaboration, and drive better hires."
+        title={t('demo.seo.title')}
+        description={t('demo.seo.description')}
         url="https://onerooted.com/demo"
       />
       {/* Hero */}
@@ -53,14 +90,14 @@ const Demo = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              Get started
+              {t('demo.hero.badge')}
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
-              Request a{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">demo</span>
+              {t('demo.hero.titlePart1')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('demo.hero.titleHighlight')}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              See OneRooted in action. No sales theatrics. Just clarity.
+              {t('demo.hero.subtitle')}
             </p>
             
             {/* Trust indicators */}
@@ -70,11 +107,7 @@ const Demo = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              {[
-                { icon: Clock, text: "30-minute call" },
-                { icon: CheckCircle, text: "No commitment" },
-                { icon: Users, text: "Tailored to your needs" },
-              ].map((item, index) => (
+              {trustIndicators.map((item, index) => (
                 <div 
                   key={index}
                   className="flex items-center gap-2 text-sm text-muted-foreground"
@@ -95,7 +128,7 @@ const Demo = () => {
             >
               <Card className="relative overflow-hidden border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
                 <CardHeader className="relative">
-                  <CardTitle className="text-xl font-semibold">Tell us about your hiring</CardTitle>
+                  <CardTitle className="text-xl font-semibold">{t('demo.form.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="relative">
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -106,12 +139,12 @@ const Demo = () => {
                       transition={{ delay: 0.3 }}
                     >
                       <div className="space-y-2">
-                        <Label htmlFor="firstName">First name</Label>
-                        <Input id="firstName" placeholder="John" required />
+                        <Label htmlFor="firstName">{t('demo.form.firstName')}</Label>
+                        <Input id="firstName" placeholder={t('demo.form.firstNamePlaceholder')} required />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="lastName">Last name</Label>
-                        <Input id="lastName" placeholder="Doe" required />
+                        <Label htmlFor="lastName">{t('demo.form.lastName')}</Label>
+                        <Input id="lastName" placeholder={t('demo.form.lastNamePlaceholder')} required />
                       </div>
                     </motion.div>
 
@@ -121,8 +154,8 @@ const Demo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.35 }}
                     >
-                      <Label htmlFor="email">Work email</Label>
-                      <Input id="email" type="email" placeholder="john@company.com" required />
+                      <Label htmlFor="email">{t('demo.form.email')}</Label>
+                      <Input id="email" type="email" placeholder={t('demo.form.emailPlaceholder')} required />
                     </motion.div>
 
                     <motion.div 
@@ -131,8 +164,8 @@ const Demo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4 }}
                     >
-                      <Label htmlFor="company">Company</Label>
-                      <Input id="company" placeholder="Company name" required />
+                      <Label htmlFor="company">{t('demo.form.company')}</Label>
+                      <Input id="company" placeholder={t('demo.form.companyPlaceholder')} required />
                     </motion.div>
 
                     <motion.div 
@@ -141,17 +174,15 @@ const Demo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.45 }}
                     >
-                      <Label htmlFor="teamSize">Team size</Label>
+                      <Label htmlFor="teamSize">{t('demo.form.teamSize')}</Label>
                       <Select>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select team size" />
+                          <SelectValue placeholder={t('demo.form.teamSizePlaceholder')} />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="1-10">1-10 employees</SelectItem>
-                          <SelectItem value="11-50">11-50 employees</SelectItem>
-                          <SelectItem value="51-200">51-200 employees</SelectItem>
-                          <SelectItem value="201-500">201-500 employees</SelectItem>
-                          <SelectItem value="500+">500+ employees</SelectItem>
+                          {teamSizes.map((size) => (
+                            <SelectItem key={size.value} value={size.value}>{size.label}</SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                     </motion.div>
@@ -162,10 +193,10 @@ const Demo = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.5 }}
                     >
-                      <Label htmlFor="message">What are you looking to solve?</Label>
+                      <Label htmlFor="message">{t('demo.form.message')}</Label>
                       <Textarea 
                         id="message" 
-                        placeholder="Tell us about your current hiring challenges..."
+                        placeholder={t('demo.form.messagePlaceholder')}
                         rows={4}
                       />
                     </motion.div>
@@ -182,11 +213,11 @@ const Demo = () => {
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
-                          "Sending..."
+                          t('demo.form.sending')
                         ) : (
                           <>
                             <Send className="h-5 w-5 mr-2" />
-                            Request demo
+                            {t('demo.form.submit')}
                           </>
                         )}
                       </Button>
@@ -204,7 +235,7 @@ const Demo = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <div>
-                <h2 className="text-2xl font-semibold mb-6">What to expect</h2>
+                <h2 className="text-2xl font-semibold mb-6">{t('demo.expectations.title')}</h2>
                 
                 <motion.div 
                   className="space-y-6"
@@ -220,23 +251,7 @@ const Demo = () => {
                     },
                   }}
                 >
-                  {[
-                    {
-                      icon: Calendar,
-                      title: "30-minute walkthrough",
-                      desc: "We'll show you how OneRooted works for your specific situation.",
-                    },
-                    {
-                      icon: MessageCircle,
-                      title: "Honest conversation",
-                      desc: "No pressure. We'll tell you if we're the right fit—and if we're not.",
-                    },
-                    {
-                      icon: CheckCircle,
-                      title: "Clear next steps",
-                      desc: "Whether it's a trial, onboarding, or just staying in touch.",
-                    },
-                  ].map((item, index) => (
+                  {expectations.map((item, index) => (
                     <motion.div 
                       key={index}
                       className="flex gap-4 group"
@@ -270,10 +285,9 @@ const Demo = () => {
                   <div className="absolute top-4 left-4 text-5xl font-serif text-primary/20">"</div>
                   <CardContent className="pt-10 pb-6 px-8">
                     <p className="text-muted-foreground italic relative z-10 text-lg leading-relaxed">
-                      The demo was refreshingly direct. They understood our challenges 
-                      immediately and showed exactly how OneRooted would help.
+                      {t('demo.testimonial.quote')}
                     </p>
-                    <p className="text-sm font-semibold mt-4">— Head of Talent, Dutch Scale-up</p>
+                    <p className="text-sm font-semibold mt-4">{t('demo.testimonial.author')}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -288,8 +302,8 @@ const Demo = () => {
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">Quick response</p>
-                  <p className="text-sm text-muted-foreground">We typically reply within 24 hours</p>
+                  <p className="text-sm font-semibold">{t('demo.quickResponse.title')}</p>
+                  <p className="text-sm text-muted-foreground">{t('demo.quickResponse.subtitle')}</p>
                 </div>
               </motion.div>
             </motion.div>

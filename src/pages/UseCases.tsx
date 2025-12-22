@@ -6,47 +6,13 @@ import { motion } from "framer-motion";
 import { TrendingUp, Users, Handshake, RefreshCw, ArrowRight, Check, Sparkles } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { useEffect, useState } from "react";
-
-const useCases = [
-  {
-    icon: TrendingUp,
-    title: "Scaling a team fast",
-    problem: "You need to hire 10+ people in 3 months. Coordination is chaos.",
-    solution: "OneRooted gives everyone visibility into the pipeline, automates handoffs, and keeps momentum.",
-    outcomes: ["Faster time-to-hire", "Less coordination overhead", "Clear progress tracking"],
-    stat: "40%",
-    statLabel: "faster hiring",
-  },
-  {
-    icon: Users,
-    title: "Hiring with multiple stakeholders",
-    problem: "Founders, hiring managers, and team leads all need input. Nothing gets done.",
-    solution: "Structured feedback loops and decision workflows that actually work.",
-    outcomes: ["Aligned decisions", "No bottlenecks", "Everyone stays informed"],
-    stat: "3x",
-    statLabel: "faster decisions",
-  },
-  {
-    icon: Handshake,
-    title: "Working with recruitment partners",
-    problem: "Agency candidates get lost. Communication breaks down. Blame games start.",
-    solution: "Partners work in the same system. Full transparency. One source of truth.",
-    outcomes: ["Better partner relationships", "Clear accountability", "Faster collaboration"],
-    stat: "100%",
-    statLabel: "visibility",
-  },
-  {
-    icon: RefreshCw,
-    title: "Replacing an existing ATS without chaos",
-    problem: "Migration feels impossible. Data everywhere. Team resistance.",
-    solution: "Clean migration path. Gradual onboarding. Real support.",
-    outcomes: ["Smooth transition", "No data loss", "Team adoption"],
-    stat: "2 weeks",
-    statLabel: "avg. migration",
-  },
-];
+import { useTranslation } from "react-i18next";
+import { useLanguageFromUrl } from "@/i18n/useLanguage";
 
 const UseCases = () => {
+  const { t } = useTranslation();
+  useLanguageFromUrl();
+  
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   useEffect(() => {
@@ -61,11 +27,52 @@ const UseCases = () => {
     ? { initial: {}, animate: {}, transition: {} }
     : { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6 } };
 
+  const icons = [TrendingUp, Users, Handshake, RefreshCw];
+  
+  const useCases = [
+    {
+      icon: icons[0],
+      title: t('useCases.cases.scaling.title'),
+      problem: t('useCases.cases.scaling.problem'),
+      solution: t('useCases.cases.scaling.solution'),
+      outcomes: t('useCases.cases.scaling.outcomes', { returnObjects: true }) as string[],
+      stat: t('useCases.cases.scaling.stat'),
+      statLabel: t('useCases.cases.scaling.statLabel'),
+    },
+    {
+      icon: icons[1],
+      title: t('useCases.cases.stakeholders.title'),
+      problem: t('useCases.cases.stakeholders.problem'),
+      solution: t('useCases.cases.stakeholders.solution'),
+      outcomes: t('useCases.cases.stakeholders.outcomes', { returnObjects: true }) as string[],
+      stat: t('useCases.cases.stakeholders.stat'),
+      statLabel: t('useCases.cases.stakeholders.statLabel'),
+    },
+    {
+      icon: icons[2],
+      title: t('useCases.cases.partners.title'),
+      problem: t('useCases.cases.partners.problem'),
+      solution: t('useCases.cases.partners.solution'),
+      outcomes: t('useCases.cases.partners.outcomes', { returnObjects: true }) as string[],
+      stat: t('useCases.cases.partners.stat'),
+      statLabel: t('useCases.cases.partners.statLabel'),
+    },
+    {
+      icon: icons[3],
+      title: t('useCases.cases.replacing.title'),
+      problem: t('useCases.cases.replacing.problem'),
+      solution: t('useCases.cases.replacing.solution'),
+      outcomes: t('useCases.cases.replacing.outcomes', { returnObjects: true }) as string[],
+      stat: t('useCases.cases.replacing.stat'),
+      statLabel: t('useCases.cases.replacing.statLabel'),
+    },
+  ];
+
   return (
     <MarketingLayout>
       <SEO 
-        title="Use Cases | Hiring Solutions for Growing Teams"
-        description="See how teams use OneRooted for scaling fast, multi-stakeholder hiring, and partner collaboration. Real scenarios with measurable results."
+        title={t('useCases.seo.title')}
+        description={t('useCases.seo.description')}
         url="https://onerooted.com/use-cases"
       />
       {/* Hero */}
@@ -88,14 +95,14 @@ const UseCases = () => {
               animate={{ opacity: 1 }}
               transition={prefersReducedMotion ? {} : { delay: 0.2 }}
             >
-              Use cases
+              {t('useCases.hero.badge')}
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
-              Real scenarios where{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">OneRooted shines</span>
+              {t('useCases.hero.titlePart1')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('useCases.hero.titleHighlight')}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              See how teams like yours are transforming their hiring process.
+              {t('useCases.hero.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -149,16 +156,16 @@ const UseCases = () => {
                   <CardContent className="pt-6">
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
-                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">The problem</h4>
+                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">{t('useCases.labels.problem')}</h4>
                         <p className="text-foreground">{useCase.problem}</p>
                       </div>
                       <div>
-                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">How OneRooted helps</h4>
+                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">{t('useCases.labels.solution')}</h4>
                         <p className="text-foreground">{useCase.solution}</p>
                       </div>
                     </div>
                     <div className="mt-6 pt-6 border-t border-border/50">
-                      <h4 className="text-sm font-semibold text-muted-foreground mb-3">Key outcomes</h4>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-3">{t('useCases.labels.outcomes')}</h4>
                       <div className="flex flex-wrap gap-3">
                         {useCase.outcomes.map((outcome, outcomeIndex) => (
                           <motion.span 
@@ -200,21 +207,21 @@ const UseCases = () => {
             transition={prefersReducedMotion ? {} : { duration: 0.6 }}
           >
             <h2 id="usecases-cta-title" className="text-3xl md:text-4xl font-semibold mb-4">
-              See how it works for your team
+              {t('useCases.cta.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Every team is unique. Let's explore how OneRooted can transform your specific hiring challenges.
+              {t('useCases.cta.subtitle')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
-                  Request a demo
+                  {t('useCases.cta.requestDemo')}
                   <ArrowRight className="h-5 w-5" aria-hidden="true" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base">
-                <Link to="/product">See how it works</Link>
+                <Link to="/product">{t('useCases.cta.seeHow')}</Link>
               </Button>
             </div>
           </motion.div>

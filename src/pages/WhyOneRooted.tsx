@@ -3,29 +3,42 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { AlertTriangle, Lightbulb, Target, ArrowRight, Users, Rocket, Quote } from "lucide-react";
+import { AlertTriangle, Lightbulb, Target, ArrowRight, Rocket, Quote } from "lucide-react";
 import { SEO } from "@/components/SEO";
-
-const atsProblems = [
-  { title: "They're built for storage, not decisions", desc: "Most ATS platforms are glorified databases. They track where candidates are, not why they should move forward." },
-  { title: "They fragment the process", desc: "Feedback in Slack. Decisions in email. Status in spreadsheets. The ATS becomes just another silo." },
-  { title: "They ignore collaboration", desc: "Modern hiring involves founders, hiring managers, team members, and external partners. ATS systems weren't built for this." },
-  { title: "They optimize for recruiters, not outcomes", desc: "Admin efficiency is good. But what about decision quality? What about time-to-hire? What about candidate experience?" },
-];
-
-const roadmapItems = [
-  { title: "Deeper decision intelligence", desc: "AI-powered insights that help you make better hiring decisions faster." },
-  { title: "Seamless partner ecosystems", desc: "Connect with any recruitment partner through standardized interfaces." },
-  { title: "Predictive hiring insights", desc: "Know what's working before you see the results." },
-  { title: "Global team collaboration", desc: "Built for distributed teams across time zones and cultures." },
-];
+import { useTranslation } from "react-i18next";
+import { useLanguageFromUrl } from "@/i18n/useLanguage";
 
 const WhyOneRooted = () => {
+  const { t } = useTranslation();
+  useLanguageFromUrl();
+
+  const atsProblems = [
+    { title: t('whyOneRooted.atsProblems.storage.title'), desc: t('whyOneRooted.atsProblems.storage.desc') },
+    { title: t('whyOneRooted.atsProblems.fragment.title'), desc: t('whyOneRooted.atsProblems.fragment.desc') },
+    { title: t('whyOneRooted.atsProblems.collaboration.title'), desc: t('whyOneRooted.atsProblems.collaboration.desc') },
+    { title: t('whyOneRooted.atsProblems.recruiters.title'), desc: t('whyOneRooted.atsProblems.recruiters.desc') },
+  ];
+
+  const roadmapItems = [
+    { title: t('whyOneRooted.roadmap.intelligence.title'), desc: t('whyOneRooted.roadmap.intelligence.desc') },
+    { title: t('whyOneRooted.roadmap.ecosystems.title'), desc: t('whyOneRooted.roadmap.ecosystems.desc') },
+    { title: t('whyOneRooted.roadmap.predictive.title'), desc: t('whyOneRooted.roadmap.predictive.desc') },
+    { title: t('whyOneRooted.roadmap.global.title'), desc: t('whyOneRooted.roadmap.global.desc') },
+  ];
+
+  const whatYouNeed = t('whyOneRooted.insight.whatYouNeed', { returnObjects: true }) as string[];
+
+  const originSteps = [
+    { step: "01", title: t('whyOneRooted.origin.steps.frustration.title'), text: t('whyOneRooted.origin.steps.frustration.text') },
+    { step: "02", title: t('whyOneRooted.origin.steps.realization.title'), text: t('whyOneRooted.origin.steps.realization.text') },
+    { step: "03", title: t('whyOneRooted.origin.steps.solution.title'), text: t('whyOneRooted.origin.steps.solution.text') },
+  ];
+
   return (
     <MarketingLayout>
       <SEO 
-        title="Why OneRooted | The Story Behind the Hiring OS"
-        description="Why traditional ATS systems fail modern hiring teams. Learn how OneRooted rethinks recruitment software with a Hiring OS approach."
+        title={t('whyOneRooted.seo.title')}
+        description={t('whyOneRooted.seo.description')}
         url="https://onerooted.com/why-onerooted"
       />
       {/* Hero */}
@@ -46,14 +59,14 @@ const WhyOneRooted = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              Our story
+              {t('whyOneRooted.hero.badge')}
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
-              The story behind{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">building a Hiring OS</span>
+              {t('whyOneRooted.hero.titlePart1')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('whyOneRooted.hero.titleHighlight')}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Why we set out to fundamentally rethink how hiring software should work.
+              {t('whyOneRooted.hero.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -77,8 +90,8 @@ const WhyOneRooted = () => {
                 <AlertTriangle className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">The problem</p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Why traditional ATS systems fail</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyOneRooted.problem.badge')}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyOneRooted.problem.title')}</h2>
               </div>
             </motion.div>
 
@@ -139,8 +152,8 @@ const WhyOneRooted = () => {
                 <Lightbulb className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">The insight</p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Why a Hiring OS is needed</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyOneRooted.insight.badge')}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyOneRooted.insight.title')}</h2>
               </div>
             </motion.div>
 
@@ -154,19 +167,13 @@ const WhyOneRooted = () => {
               {/* Structured text */}
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground">
-                  Hiring is no longer a linear process managed by one recruiter. It's a complex operation 
-                  involving multiple stakeholders, external partners, and critical business decisions.
+                  {t('whyOneRooted.insight.description')}
                 </p>
                 
                 <div className="space-y-4">
-                  <p className="text-sm font-medium text-foreground uppercase tracking-wide">What you actually need:</p>
+                  <p className="text-sm font-medium text-foreground uppercase tracking-wide">{t('whyOneRooted.insight.whatYouNeedLabel')}</p>
                   <ul className="space-y-3">
-                    {[
-                      "A system that understands complexity",
-                      "Connected data across all touchpoints",
-                      "Real collaboration, not just handoffs",
-                      "Decision support, not just storage"
-                    ].map((item, index) => (
+                    {whatYouNeed.map((item, index) => (
                       <motion.li 
                         key={index}
                         className="flex items-center gap-3 text-muted-foreground"
@@ -183,7 +190,7 @@ const WhyOneRooted = () => {
                 </div>
 
                 <p className="text-foreground font-semibold pt-2">
-                  That's what a Hiring OS does. Not a feature upgrade — a fundamental rethink.
+                  {t('whyOneRooted.insight.conclusion')}
                 </p>
               </div>
               
@@ -199,16 +206,16 @@ const WhyOneRooted = () => {
                     <div className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center">
                       <AlertTriangle className="h-4 w-4 text-muted-foreground" />
                     </div>
-                    <p className="text-sm font-medium text-muted-foreground">Traditional ATS</p>
+                    <p className="text-sm font-medium text-muted-foreground">{t('whyOneRooted.insight.comparison.ats.label')}</p>
                   </div>
                   <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                    <span className="text-base sm:text-lg font-semibold text-foreground/70">Store</span>
+                    <span className="text-base sm:text-lg font-semibold text-foreground/70">{t('whyOneRooted.insight.comparison.ats.store')}</span>
                     <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-                    <span className="text-base sm:text-lg font-semibold text-foreground/70">Track</span>
+                    <span className="text-base sm:text-lg font-semibold text-foreground/70">{t('whyOneRooted.insight.comparison.ats.track')}</span>
                     <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-                    <span className="text-base sm:text-lg font-semibold text-foreground/70">Report</span>
+                    <span className="text-base sm:text-lg font-semibold text-foreground/70">{t('whyOneRooted.insight.comparison.ats.report')}</span>
                   </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">Data sits. Decisions happen elsewhere.</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">{t('whyOneRooted.insight.comparison.ats.caption')}</p>
                 </motion.div>
 
                 {/* Arrow */}
@@ -236,16 +243,16 @@ const WhyOneRooted = () => {
                       <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                         <Lightbulb className="h-4 w-4 text-primary-foreground" />
                       </div>
-                      <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Hiring OS</p>
+                      <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('whyOneRooted.insight.comparison.os.label')}</p>
                     </div>
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-foreground">
-                      <span className="text-sm sm:text-base font-medium">Collaborate</span>
+                      <span className="text-sm sm:text-base font-medium">{t('whyOneRooted.insight.comparison.os.collaborate')}</span>
                       <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
-                      <span className="text-sm sm:text-base font-medium">Decide</span>
+                      <span className="text-sm sm:text-base font-medium">{t('whyOneRooted.insight.comparison.os.decide')}</span>
                       <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
-                      <span className="text-sm sm:text-base font-medium">Improve</span>
+                      <span className="text-sm sm:text-base font-medium">{t('whyOneRooted.insight.comparison.os.improve')}</span>
                     </div>
-                    <p className="text-xs text-muted-foreground mt-3">Every action drives better outcomes.</p>
+                    <p className="text-xs text-muted-foreground mt-3">{t('whyOneRooted.insight.comparison.os.caption')}</p>
                   </div>
                 </motion.div>
               </div>
@@ -272,8 +279,8 @@ const WhyOneRooted = () => {
                 <Target className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">The origin</p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">How OneRooted was born</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyOneRooted.origin.badge')}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyOneRooted.origin.title')}</h2>
               </div>
             </motion.div>
 
@@ -291,11 +298,7 @@ const WhyOneRooted = () => {
                 },
               }}
             >
-              {[
-                { step: "01", title: "The frustration", text: "We worked with organizations struggling to hire effectively, despite having 'all the tools.'" },
-                { step: "02", title: "The realization", text: "The problem wasn't a lack of software—it was a lack of system. Tools weren't connected." },
-                { step: "03", title: "The solution", text: "We built OneRooted as the operating system for hiring. One place where everyone can collaborate." },
-              ].map((item, index) => (
+              {originSteps.map((item, index) => (
                 <motion.div
                   key={index}
                   variants={{
@@ -322,7 +325,7 @@ const WhyOneRooted = () => {
             >
               <Quote className="h-8 w-8 md:h-10 md:w-10 text-primary/20 absolute top-4 left-4 md:top-6 md:left-6" />
               <blockquote className="text-lg sm:text-xl md:text-2xl font-medium text-center px-4 sm:px-8 py-4">
-                "Not another tool to learn. A system that works the way modern hiring actually happens."
+                {t('whyOneRooted.origin.quote')}
               </blockquote>
             </motion.div>
           </div>
@@ -347,8 +350,8 @@ const WhyOneRooted = () => {
                 <Rocket className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">The future</p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Where we're going</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyOneRooted.future.badge')}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyOneRooted.future.title')}</h2>
               </div>
             </motion.div>
 
@@ -406,21 +409,21 @@ const WhyOneRooted = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              Ready to rethink how you hire?
+              {t('whyOneRooted.cta.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              See how OneRooted can transform your hiring process from fragmented to unified.
+              {t('whyOneRooted.cta.subtitle')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
-                  Request a demo
+                  {t('whyOneRooted.cta.requestDemo')}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
-                <Link to="/product">See how it works</Link>
+                <Link to="/product">{t('whyOneRooted.cta.seeHow')}</Link>
               </Button>
             </div>
           </motion.div>
