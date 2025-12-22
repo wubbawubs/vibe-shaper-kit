@@ -12,33 +12,23 @@ const WhyOneRooted = () => {
   const { t } = useTranslation();
   useLanguageFromUrl();
 
-  const atsProblems = [
-    { title: t('whyOneRooted.atsProblems.storage.title'), desc: t('whyOneRooted.atsProblems.storage.desc') },
-    { title: t('whyOneRooted.atsProblems.fragment.title'), desc: t('whyOneRooted.atsProblems.fragment.desc') },
-    { title: t('whyOneRooted.atsProblems.collaboration.title'), desc: t('whyOneRooted.atsProblems.collaboration.desc') },
-    { title: t('whyOneRooted.atsProblems.recruiters.title'), desc: t('whyOneRooted.atsProblems.recruiters.desc') },
-  ];
+  const atsProblemsData = t('whyPage.atsProblem.items', { returnObjects: true }) as { title: string; desc: string }[];
+  const atsProblems = atsProblemsData || [];
 
-  const roadmapItems = [
-    { title: t('whyOneRooted.roadmap.intelligence.title'), desc: t('whyOneRooted.roadmap.intelligence.desc') },
-    { title: t('whyOneRooted.roadmap.ecosystems.title'), desc: t('whyOneRooted.roadmap.ecosystems.desc') },
-    { title: t('whyOneRooted.roadmap.predictive.title'), desc: t('whyOneRooted.roadmap.predictive.desc') },
-    { title: t('whyOneRooted.roadmap.global.title'), desc: t('whyOneRooted.roadmap.global.desc') },
-  ];
+  const roadmapData = t('whyPage.future.items', { returnObjects: true }) as { title: string; desc: string }[];
+  const roadmapItems = roadmapData || [];
 
-  const whatYouNeed = t('whyOneRooted.insight.whatYouNeed', { returnObjects: true }) as string[];
+  const whatYouNeedData = t('whyPage.insight.needs', { returnObjects: true }) as string[];
+  const whatYouNeed = whatYouNeedData || [];
 
-  const originSteps = [
-    { step: "01", title: t('whyOneRooted.origin.steps.frustration.title'), text: t('whyOneRooted.origin.steps.frustration.text') },
-    { step: "02", title: t('whyOneRooted.origin.steps.realization.title'), text: t('whyOneRooted.origin.steps.realization.text') },
-    { step: "03", title: t('whyOneRooted.origin.steps.solution.title'), text: t('whyOneRooted.origin.steps.solution.text') },
-  ];
+  const originStepsData = t('whyPage.origin.steps', { returnObjects: true }) as { step: string; title: string; text: string }[];
+  const originSteps = originStepsData || [];
 
   return (
     <MarketingLayout>
       <SEO 
-        title={t('whyOneRooted.seo.title')}
-        description={t('whyOneRooted.seo.description')}
+        title={t('whyPage.seo.title')}
+        description={t('whyPage.seo.description')}
         url="https://onerooted.com/why-onerooted"
       />
       {/* Hero */}
@@ -59,14 +49,14 @@ const WhyOneRooted = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              {t('whyOneRooted.hero.badge')}
+              {t('whyPage.hero.label')}
             </motion.p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
-              {t('whyOneRooted.hero.titlePart1')}{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('whyOneRooted.hero.titleHighlight')}</span>
+              {t('whyPage.hero.headline')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('whyPage.hero.headlineHighlight')}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t('whyOneRooted.hero.subtitle')}
+              {t('whyPage.hero.subheadline')}
             </p>
           </motion.div>
         </div>
@@ -90,8 +80,8 @@ const WhyOneRooted = () => {
                 <AlertTriangle className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyOneRooted.problem.badge')}</p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyOneRooted.problem.title')}</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyPage.atsProblem.label')}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyPage.atsProblem.headline')}</h2>
               </div>
             </motion.div>
 
@@ -152,8 +142,8 @@ const WhyOneRooted = () => {
                 <Lightbulb className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyOneRooted.insight.badge')}</p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyOneRooted.insight.title')}</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyPage.insight.label')}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyPage.insight.headline')}</h2>
               </div>
             </motion.div>
 
@@ -167,11 +157,11 @@ const WhyOneRooted = () => {
               {/* Structured text */}
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground">
-                  {t('whyOneRooted.insight.description')}
+                  {t('whyPage.insight.description')}
                 </p>
                 
                 <div className="space-y-4">
-                  <p className="text-sm font-medium text-foreground uppercase tracking-wide">{t('whyOneRooted.insight.whatYouNeedLabel')}</p>
+                  <p className="text-sm font-medium text-foreground uppercase tracking-wide">{t('whyPage.insight.whatYouNeed')}</p>
                   <ul className="space-y-3">
                     {whatYouNeed.map((item, index) => (
                       <motion.li 
@@ -190,7 +180,7 @@ const WhyOneRooted = () => {
                 </div>
 
                 <p className="text-foreground font-semibold pt-2">
-                  {t('whyOneRooted.insight.conclusion')}
+                  {t('whyPage.insight.conclusion')}
                 </p>
               </div>
               
@@ -206,16 +196,17 @@ const WhyOneRooted = () => {
                     <div className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center">
                       <AlertTriangle className="h-4 w-4 text-muted-foreground" />
                     </div>
-                    <p className="text-sm font-medium text-muted-foreground">{t('whyOneRooted.insight.comparison.ats.label')}</p>
+                    <p className="text-sm font-medium text-muted-foreground">{t('whyPage.insight.atsLabel')}</p>
                   </div>
                   <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                    <span className="text-base sm:text-lg font-semibold text-foreground/70">{t('whyOneRooted.insight.comparison.ats.store')}</span>
-                    <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-                    <span className="text-base sm:text-lg font-semibold text-foreground/70">{t('whyOneRooted.insight.comparison.ats.track')}</span>
-                    <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-                    <span className="text-base sm:text-lg font-semibold text-foreground/70">{t('whyOneRooted.insight.comparison.ats.report')}</span>
+                    {(t('whyPage.insight.atsFlow', { returnObjects: true }) as string[]).map((step, idx, arr) => (
+                      <span key={idx} className="flex items-center gap-2 sm:gap-3">
+                        <span className="text-base sm:text-lg font-semibold text-foreground/70">{step}</span>
+                        {idx < arr.length - 1 && <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />}
+                      </span>
+                    ))}
                   </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">{t('whyOneRooted.insight.comparison.ats.caption')}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">{t('whyPage.insight.atsDesc')}</p>
                 </motion.div>
 
                 {/* Arrow */}
@@ -243,16 +234,17 @@ const WhyOneRooted = () => {
                       <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                         <Lightbulb className="h-4 w-4 text-primary-foreground" />
                       </div>
-                      <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('whyOneRooted.insight.comparison.os.label')}</p>
+                      <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('whyPage.insight.osLabel')}</p>
                     </div>
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-foreground">
-                      <span className="text-sm sm:text-base font-medium">{t('whyOneRooted.insight.comparison.os.collaborate')}</span>
-                      <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
-                      <span className="text-sm sm:text-base font-medium">{t('whyOneRooted.insight.comparison.os.decide')}</span>
-                      <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
-                      <span className="text-sm sm:text-base font-medium">{t('whyOneRooted.insight.comparison.os.improve')}</span>
+                      {(t('whyPage.insight.osFlow', { returnObjects: true }) as string[]).map((step, idx, arr) => (
+                        <span key={idx} className="flex items-center gap-2 sm:gap-3">
+                          <span className="text-sm sm:text-base font-medium">{step}</span>
+                          {idx < arr.length - 1 && <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />}
+                        </span>
+                      ))}
                     </div>
-                    <p className="text-xs text-muted-foreground mt-3">{t('whyOneRooted.insight.comparison.os.caption')}</p>
+                    <p className="text-xs text-muted-foreground mt-3">{t('whyPage.insight.osDesc')}</p>
                   </div>
                 </motion.div>
               </div>
@@ -279,8 +271,8 @@ const WhyOneRooted = () => {
                 <Target className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyOneRooted.origin.badge')}</p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyOneRooted.origin.title')}</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyPage.origin.label')}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyPage.origin.headline')}</h2>
               </div>
             </motion.div>
 
@@ -325,7 +317,7 @@ const WhyOneRooted = () => {
             >
               <Quote className="h-8 w-8 md:h-10 md:w-10 text-primary/20 absolute top-4 left-4 md:top-6 md:left-6" />
               <blockquote className="text-lg sm:text-xl md:text-2xl font-medium text-center px-4 sm:px-8 py-4">
-                {t('whyOneRooted.origin.quote')}
+                {t('whyPage.origin.quote')}
               </blockquote>
             </motion.div>
           </div>
@@ -350,8 +342,8 @@ const WhyOneRooted = () => {
                 <Rocket className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyOneRooted.future.badge')}</p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyOneRooted.future.title')}</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyPage.future.label')}</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyPage.future.headline')}</h2>
               </div>
             </motion.div>
 
@@ -409,21 +401,21 @@ const WhyOneRooted = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              {t('whyOneRooted.cta.title')}
+              {t('whyPage.cta.headline')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              {t('whyOneRooted.cta.subtitle')}
+              {t('whyPage.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
-                  {t('whyOneRooted.cta.requestDemo')}
+                  {t('whyPage.cta.button')}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
-                <Link to="/product">{t('whyOneRooted.cta.seeHow')}</Link>
+                <Link to="/product">{t('whyPage.cta.secondary')}</Link>
               </Button>
             </div>
           </motion.div>
