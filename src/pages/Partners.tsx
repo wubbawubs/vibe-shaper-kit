@@ -18,25 +18,32 @@ const Partners = () => {
   const { t } = useTranslation();
   useLanguageFromUrl();
 
-  const partnerBenefits = t('partners.perspectives.partner.benefits', { returnObjects: true }) as string[];
-  const clientBenefits = t('partners.perspectives.client.benefits', { returnObjects: true }) as string[];
-  const howItWorksSteps = t('partners.howItWorks.steps', { returnObjects: true }) as { title: string; desc: string }[];
-  const faqItemsData = t('partners.faq.items', { returnObjects: true }) as { question: string; answer: string }[];
+  const partnerBenefitsData = t('partnersPage.perspectives.partner.benefits', { returnObjects: true });
+  const partnerBenefits = Array.isArray(partnerBenefitsData) ? partnerBenefitsData : [];
+  
+  const clientBenefitsData = t('partnersPage.perspectives.client.benefits', { returnObjects: true });
+  const clientBenefits = Array.isArray(clientBenefitsData) ? clientBenefitsData : [];
+  
+  const howItWorksStepsData = t('partnersPage.howItWorks.steps', { returnObjects: true });
+  const howItWorksSteps = Array.isArray(howItWorksStepsData) ? howItWorksStepsData : [];
+  
+  const faqItemsRaw = t('partnersPage.faq.items', { returnObjects: true });
+  const faqItemsData = Array.isArray(faqItemsRaw) ? faqItemsRaw : [];
 
   const stepIcons = [Handshake, Zap, Eye, BarChart3];
-  const collaborationSteps = (howItWorksSteps || []).map((step, index) => ({
+  const collaborationSteps = howItWorksSteps.map((step: { title: string; desc: string }, index: number) => ({
     icon: stepIcons[index] || Zap,
     title: step.title,
     desc: step.desc,
   }));
 
-  const faqItems = faqItemsData || [];
+  const faqItems = faqItemsData;
 
   return (
     <MarketingLayout>
       <SEO 
-        title={t('partners.seo.title')}
-        description={t('partners.seo.description')}
+        title={t('partnersPage.seo.title')}
+        description={t('partnersPage.seo.description')}
         url="https://onerooted.com/partners"
       />
       
@@ -57,14 +64,14 @@ const Partners = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              {t('partners.hero.badge')}
+              {t('partnersPage.hero.label')}
             </motion.p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 md:mb-6 tracking-tight leading-[1.1]">
-              {t('partners.hero.titlePart1')}{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('partners.hero.titleHighlight')}</span>{t('partners.hero.titlePart2')}
+              {t('partnersPage.hero.headline')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('partnersPage.hero.headlineHighlight')}</span>{t('partnersPage.hero.headlineSuffix')}
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
-              {t('partners.hero.subtitle')}
+              {t('partnersPage.hero.subheadline')}
             </p>
             
             <motion.div
@@ -75,13 +82,13 @@ const Partners = () => {
             >
               <Button asChild size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo">
-                  {t('partners.hero.cta')}
+                  {t('partnersPage.hero.cta')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="ghost" size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base text-muted-foreground hover:text-foreground">
                 <Link to="/product">
-                  {t('partners.hero.secondary')}
+                  {t('partnersPage.hero.ctaSecondary')}
                 </Link>
               </Button>
             </motion.div>
@@ -100,10 +107,10 @@ const Partners = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
-              {t('partners.perspectives.headline')}
+              {t('partnersPage.perspectives.headline')}
             </h2>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-              {t('partners.perspectives.subheadline')}
+              {t('partnersPage.perspectives.subheadline')}
             </p>
           </motion.div>
 
@@ -136,8 +143,8 @@ const Partners = () => {
                       <Handshake className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold">{t('partners.perspectives.partner.title')}</h3>
-                      <p className="text-sm text-muted-foreground">{t('partners.perspectives.partner.subtitle')}</p>
+                      <h3 className="text-xl font-semibold">{t('partnersPage.perspectives.partner.title')}</h3>
+                      <p className="text-sm text-muted-foreground">{t('partnersPage.perspectives.partner.subtitle')}</p>
                     </div>
                   </div>
                   <ul className="space-y-3">
@@ -176,8 +183,8 @@ const Partners = () => {
                       <Building2 className="h-6 w-6 text-accent-foreground" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold">{t('partners.perspectives.client.title')}</h3>
-                      <p className="text-sm text-muted-foreground">{t('partners.perspectives.client.subtitle')}</p>
+                      <h3 className="text-xl font-semibold">{t('partnersPage.perspectives.client.title')}</h3>
+                      <p className="text-sm text-muted-foreground">{t('partnersPage.perspectives.client.subtitle')}</p>
                     </div>
                   </div>
                   <ul className="space-y-3">
@@ -215,12 +222,12 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partners.howItWorks.label')}</p>
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partnersPage.howItWorks.label')}</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
-                {t('partners.howItWorks.headline')}
+                {t('partnersPage.howItWorks.headline')}
               </h2>
               <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto">
-                {t('partners.howItWorks.subheadline')}
+                {t('partnersPage.howItWorks.subheadline')}
               </p>
             </motion.div>
 
@@ -274,10 +281,10 @@ const Partners = () => {
               className="text-center mt-12 p-6 bg-muted/30 rounded-2xl"
             >
               <p className="text-lg font-semibold text-foreground">
-                {t('partners.howItWorks.punchline')}
+                {t('partnersPage.howItWorks.punchline')}
               </p>
               <p className="text-muted-foreground mt-1">
-                {t('partners.howItWorks.punchlineDesc')}
+                {t('partnersPage.howItWorks.punchlineDesc')}
               </p>
             </motion.div>
           </div>
@@ -305,19 +312,19 @@ const Partners = () => {
               <Target className="h-6 w-6 sm:h-8 sm:w-8 text-background" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 leading-tight">
-              {t('partners.infrastructure.headline')}
+              {t('partnersPage.infrastructure.headline')}
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-background/60 mb-6 sm:mb-8 max-w-2xl mx-auto">
-              {t('partners.infrastructure.description')}
+              {t('partnersPage.infrastructure.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center text-left max-w-xl mx-auto">
               <div className="flex-1 p-3 sm:p-4 border border-background/10 rounded-xl">
-                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partners.infrastructure.forPartners')}</p>
-                <p className="text-xs sm:text-sm text-background/50">{t('partners.infrastructure.forPartnersDesc')}</p>
+                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partnersPage.infrastructure.forPartners')}</p>
+                <p className="text-xs sm:text-sm text-background/50">{t('partnersPage.infrastructure.forPartnersDesc')}</p>
               </div>
               <div className="flex-1 p-3 sm:p-4 border border-background/10 rounded-xl">
-                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partners.infrastructure.forClients')}</p>
-                <p className="text-xs sm:text-sm text-background/50">{t('partners.infrastructure.forClientsDesc')}</p>
+                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partnersPage.infrastructure.forClients')}</p>
+                <p className="text-xs sm:text-sm text-background/50">{t('partnersPage.infrastructure.forClientsDesc')}</p>
               </div>
             </div>
           </motion.div>
@@ -335,9 +342,9 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partners.faq.label')}</p>
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partnersPage.faq.label')}</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
-                {t('partners.faq.headline')}
+                {t('partnersPage.faq.headline')}
               </h2>
             </motion.div>
 
@@ -377,21 +384,21 @@ const Partners = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              {t('partners.cta.title')}
+              {t('partnersPage.cta.headline')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              {t('partners.cta.subtitle')}
+              {t('partnersPage.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
-                  {t('partners.cta.letsTalk')}
+                  {t('partnersPage.cta.button')}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
-                <Link to="/product">{t('partners.cta.explore')}</Link>
+                <Link to="/product">{t('partnersPage.cta.secondary')}</Link>
               </Button>
             </div>
           </motion.div>
