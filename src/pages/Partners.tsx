@@ -20,22 +20,17 @@ const Partners = () => {
 
   const partnerBenefits = t('partners.perspectives.partner.benefits', { returnObjects: true }) as string[];
   const clientBenefits = t('partners.perspectives.client.benefits', { returnObjects: true }) as string[];
+  const howItWorksSteps = t('partners.howItWorks.steps', { returnObjects: true }) as { title: string; desc: string }[];
+  const faqItemsData = t('partners.faq.items', { returnObjects: true }) as { question: string; answer: string }[];
 
-  const collaborationSteps = [
-    { icon: Handshake, title: t('partners.howItWorks.steps.invite.title'), desc: t('partners.howItWorks.steps.invite.desc') },
-    { icon: Zap, title: t('partners.howItWorks.steps.submit.title'), desc: t('partners.howItWorks.steps.submit.desc') },
-    { icon: Eye, title: t('partners.howItWorks.steps.progress.title'), desc: t('partners.howItWorks.steps.progress.desc') },
-    { icon: BarChart3, title: t('partners.howItWorks.steps.data.title'), desc: t('partners.howItWorks.steps.data.desc') },
-  ];
+  const stepIcons = [Handshake, Zap, Eye, BarChart3];
+  const collaborationSteps = (howItWorksSteps || []).map((step, index) => ({
+    icon: stepIcons[index] || Zap,
+    title: step.title,
+    desc: step.desc,
+  }));
 
-  const faqItems = [
-    { question: t('partners.faq.items.pay.question'), answer: t('partners.faq.items.pay.answer') },
-    { question: t('partners.faq.items.multiple.question'), answer: t('partners.faq.items.multiple.answer') },
-    { question: t('partners.faq.items.data.question'), answer: t('partners.faq.items.data.answer') },
-    { question: t('partners.faq.items.started.question'), answer: t('partners.faq.items.started.answer') },
-    { question: t('partners.faq.items.replace.question'), answer: t('partners.faq.items.replace.answer') },
-    { question: t('partners.faq.items.ats.question'), answer: t('partners.faq.items.ats.answer') },
-  ];
+  const faqItems = faqItemsData || [];
 
   return (
     <MarketingLayout>
@@ -105,10 +100,10 @@ const Partners = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
-              {t('partners.perspectives.title')}
+              {t('partners.perspectives.headline')}
             </h2>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-              {t('partners.perspectives.subtitle')}
+              {t('partners.perspectives.subheadline')}
             </p>
           </motion.div>
 
@@ -220,12 +215,12 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partners.howItWorks.badge')}</p>
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partners.howItWorks.label')}</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
-                {t('partners.howItWorks.title')}
+                {t('partners.howItWorks.headline')}
               </h2>
               <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto">
-                {t('partners.howItWorks.subtitle')}
+                {t('partners.howItWorks.subheadline')}
               </p>
             </motion.div>
 
@@ -282,7 +277,7 @@ const Partners = () => {
                 {t('partners.howItWorks.punchline')}
               </p>
               <p className="text-muted-foreground mt-1">
-                {t('partners.howItWorks.punchlineSubtitle')}
+                {t('partners.howItWorks.punchlineDesc')}
               </p>
             </motion.div>
           </div>
@@ -310,19 +305,19 @@ const Partners = () => {
               <Target className="h-6 w-6 sm:h-8 sm:w-8 text-background" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 leading-tight">
-              {t('partners.infrastructure.title')}
+              {t('partners.infrastructure.headline')}
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-background/60 mb-6 sm:mb-8 max-w-2xl mx-auto">
-              {t('partners.infrastructure.subtitle')}
+              {t('partners.infrastructure.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center text-left max-w-xl mx-auto">
               <div className="flex-1 p-3 sm:p-4 border border-background/10 rounded-xl">
-                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partners.infrastructure.forPartners.title')}</p>
-                <p className="text-xs sm:text-sm text-background/50">{t('partners.infrastructure.forPartners.desc')}</p>
+                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partners.infrastructure.forPartners')}</p>
+                <p className="text-xs sm:text-sm text-background/50">{t('partners.infrastructure.forPartnersDesc')}</p>
               </div>
               <div className="flex-1 p-3 sm:p-4 border border-background/10 rounded-xl">
-                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partners.infrastructure.forClients.title')}</p>
-                <p className="text-xs sm:text-sm text-background/50">{t('partners.infrastructure.forClients.desc')}</p>
+                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partners.infrastructure.forClients')}</p>
+                <p className="text-xs sm:text-sm text-background/50">{t('partners.infrastructure.forClientsDesc')}</p>
               </div>
             </div>
           </motion.div>
@@ -340,9 +335,9 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partners.faq.badge')}</p>
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partners.faq.label')}</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
-                {t('partners.faq.title')}
+                {t('partners.faq.headline')}
               </h2>
             </motion.div>
 
