@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import {
   Accordion,
   AccordionContent,
@@ -6,34 +7,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
-  {
-    question: "What exactly is OneRooted?",
-    answer: "OneRooted is a Hiring Operating System — not just another ATS. It connects all your hiring data, workflows, and stakeholders in one intelligent system designed to help you make better hiring decisions faster.",
-  },
-  {
-    question: "How is OneRooted different from an ATS?",
-    answer: "An ATS stores resumes. OneRooted runs your hiring process. It connects candidates, workflows, and decision-makers in real-time with intelligent ranking, automated collaboration, and insights that surface automatically.",
-  },
-  {
-    question: "Who is OneRooted built for?",
-    answer: "Growing teams that hire regularly and want structure without complexity. Whether you're a founder, talent leader, or recruiter — if you're tired of scattered tools and want one shared system, OneRooted is for you.",
-  },
-  {
-    question: "Can I use OneRooted with external recruiters or agencies?",
-    answer: "Yes. Our Partner Portal gives external recruiters their own pipeline view per client. They can submit candidates directly, see real-time status updates, and collaborate without endless email chains.",
-  },
-  {
-    question: "How long does it take to get started?",
-    answer: "Most teams are up and running within a day. No complex migrations, no lengthy onboarding. We'll help you set up your first vacancy and invite your team — it's that simple.",
-  },
-  {
-    question: "Is my data secure?",
-    answer: "Absolutely. We're fully GDPR compliant, use enterprise-grade encryption, and never share your data. Your hiring data stays yours.",
-  },
-];
-
 export function FAQSection() {
+  const { t } = useTranslation();
+
+  const faqs = t("faq.items", { returnObjects: true }) as Array<{
+    question: string;
+    answer: string;
+  }>;
+
   return (
     <section className="py-16 md:py-24 bg-muted/30">
       <div className="container">
@@ -45,9 +26,11 @@ export function FAQSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">FAQ</p>
+            <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">
+              {t("faq.label")}
+            </p>
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              Common questions
+              {t("faq.headline")}
             </h2>
           </motion.div>
 

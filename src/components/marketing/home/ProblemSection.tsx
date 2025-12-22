@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export function ProblemSection() {
+  const { t } = useTranslation();
+
+  const tools = [
+    { key: "ats", name: t("problem.tools.ats.name"), description: t("problem.tools.ats.description") },
+    { key: "slack", name: t("problem.tools.slack.name"), description: t("problem.tools.slack.description") },
+    { key: "excel", name: t("problem.tools.excel.name"), description: t("problem.tools.excel.description") },
+  ];
+
   return (
     <section className="py-16 md:py-24 bg-foreground text-background relative overflow-hidden">
       {/* Subtle pattern overlay */}
@@ -21,29 +30,25 @@ export function ProblemSection() {
         >
           {/* Headline */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-3">
-            Hiring isn't broken.
+            {t("problem.headline")}
           </h2>
           <p className="text-2xl md:text-3xl lg:text-4xl font-normal text-background/60 mb-12">
-            Your current tools are outdated.
+            {t("problem.subheadline")}
           </p>
 
           {/* Tool cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-10">
-            {[
-              { tool: "ATS", purpose: <>Built to store candidates,<br />not to hire them</> },
-              { tool: "Slack", purpose: "Decisions lost in endless conversations" },
-              { tool: "Excel", purpose: "Critical choices without context" },
-            ].map((item, i) => (
+            {tools.map((item, i) => (
               <motion.div
-                key={i}
+                key={item.key}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="p-6 border border-background/10 rounded-xl hover:bg-background/5 transition-colors duration-300"
               >
-                <p className="text-lg font-medium mb-2">{item.tool}</p>
-                <p className="text-background/50 text-sm">{item.purpose}</p>
+                <p className="text-lg font-medium mb-2">{item.name}</p>
+                <p className="text-background/50 text-sm">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -56,7 +61,7 @@ export function ProblemSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-background/40 text-base mb-16"
           >
-            No single source of truth. No ownership. No insight.
+            {t("problem.consequence")}
           </motion.p>
 
           {/* Divider */}
@@ -70,13 +75,13 @@ export function ProblemSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className="text-2xl md:text-3xl lg:text-4xl font-medium leading-tight mb-6">
-              Hiring didn't get more complex.
+              {t("problem.realization")}
               <br />
-              <span className="text-accent">Your tools just never evolved.</span>
+              <span className="text-accent">{t("problem.realizationHighlight")}</span>
             </p>
 
             <p className="text-base md:text-lg text-background/40 font-medium">
-              Now there is <span className="text-accent">OneRooted.</span>
+              {t("problem.solution")} <span className="text-accent">OneRooted.</span>
             </p>
           </motion.div>
         </motion.div>

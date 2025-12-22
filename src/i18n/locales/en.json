@@ -19,6 +19,161 @@
       "quality": "better quality hires"
     }
   },
+  "problem": {
+    "headline": "Hiring isn't broken.",
+    "subheadline": "Your current tools are outdated.",
+    "tools": {
+      "ats": {
+        "name": "ATS",
+        "description": "Built to store candidates, not to hire them"
+      },
+      "slack": {
+        "name": "Slack",
+        "description": "Decisions lost in endless conversations"
+      },
+      "excel": {
+        "name": "Excel",
+        "description": "Critical choices without context"
+      }
+    },
+    "consequence": "No single source of truth. No ownership. No insight.",
+    "realization": "Hiring didn't get more complex.",
+    "realizationHighlight": "Your tools just never evolved.",
+    "solution": "Now there is"
+  },
+  "whatIs": {
+    "label": "The Hiring OS",
+    "headline": "One system that connects every hiring decision",
+    "pillars": {
+      "data": {
+        "title": "Hiring Data",
+        "description": "All candidates, conversations and context unified in one intelligent system."
+      },
+      "workflows": {
+        "title": "Workflows",
+        "description": "Adaptive processes that flex with your team, not against it."
+      },
+      "intelligence": {
+        "title": "Decision Intelligence",
+        "description": "Structured insights that replace gut feelings with confidence."
+      },
+      "accountability": {
+        "title": "Accountability",
+        "description": "Everyone knows what happens next—and who owns it."
+      }
+    }
+  },
+  "whoItsFor": {
+    "label": "Who it's for",
+    "headline": "Hiring breaks without a shared system",
+    "subheadline": "OneRooted replaces fragmented tools with a single operational truth for everyone involved.",
+    "cta": "See the system in action",
+    "audiences": {
+      "leadership": {
+        "title": "Leadership",
+        "subtitle": "Founders & Executives",
+        "points": [
+          "Full visibility without micromanagement",
+          "Hiring decisions grounded in real, shared data"
+        ]
+      },
+      "talent": {
+        "title": "Talent Teams",
+        "subtitle": "Recruiters & Hiring Managers",
+        "points": [
+          "One shared workflow from intake to hire",
+          "Less admin. More focus on hiring decisions."
+        ]
+      },
+      "partners": {
+        "title": "Partners",
+        "subtitle": "Agencies & RPO",
+        "points": [
+          "A clear, shared hiring process per client",
+          "Full transparency without endless back-and-forth"
+        ]
+      }
+    }
+  },
+  "comparison": {
+    "label": "The difference",
+    "headline": "Not another ATS",
+    "traditional": "Traditional ATS",
+    "rows": {
+      "focus": { "ats": "Stores candidates", "onerooted": "Tracks hiring decisions" },
+      "flex": { "ats": "Static pipelines", "onerooted": "Adaptive workflows" },
+      "priority": { "ats": "Admin-first design", "onerooted": "Decision-first design" },
+      "data": { "ats": "Siloed data", "onerooted": "Unified intelligence" },
+      "process": { "ats": "Manual coordination", "onerooted": "Automated collaboration" }
+    },
+    "conclusion": {
+      "ats": "ATS tools help you",
+      "atsHighlight": "track candidates",
+      "onerooted": "OneRooted helps you",
+      "onerootedHighlight": "hire better people"
+    }
+  },
+  "pricing": {
+    "label": "Pricing",
+    "headline": "Clear pricing. No surprises.",
+    "subheadline": "Start small, scale when ready.",
+    "cta": "View full pricing",
+    "perMonth": "/mo",
+    "mostPopular": "Most popular",
+    "plans": {
+      "base": {
+        "name": "Base",
+        "description": "Essential recruitment support",
+        "features": ["OneRooted system", "Up-to-date talent pool", "Access to E-Academy"]
+      },
+      "plus": {
+        "name": "Plus",
+        "description": "Move faster, hire smarter",
+        "features": ["Everything in Base", "Retention search", "Proactive sourcing"]
+      },
+      "premium": {
+        "name": "Premium",
+        "description": "Hiring fully organized",
+        "features": ["Everything in Plus", "Candidate interviews", "Scheduling & coordination"]
+      }
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "headline": "Common questions",
+    "items": [
+      {
+        "question": "What exactly is OneRooted?",
+        "answer": "OneRooted is a Hiring Operating System — not just another ATS. It connects all your hiring data, workflows, and stakeholders in one intelligent system designed to help you make better hiring decisions faster."
+      },
+      {
+        "question": "How is OneRooted different from an ATS?",
+        "answer": "An ATS stores resumes. OneRooted runs your hiring process. It connects candidates, workflows, and decision-makers in real-time with intelligent ranking, automated collaboration, and insights that surface automatically."
+      },
+      {
+        "question": "Who is OneRooted built for?",
+        "answer": "Growing teams that hire regularly and want structure without complexity. Whether you're a founder, talent leader, or recruiter — if you're tired of scattered tools and want one shared system, OneRooted is for you."
+      },
+      {
+        "question": "Can I use OneRooted with external recruiters or agencies?",
+        "answer": "Yes. Our Partner Portal gives external recruiters their own pipeline view per client. They can submit candidates directly, see real-time status updates, and collaborate without endless email chains."
+      },
+      {
+        "question": "How long does it take to get started?",
+        "answer": "Most teams are up and running within a day. No complex migrations, no lengthy onboarding. We'll help you set up your first vacancy and invite your team — it's that simple."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "Absolutely. We're fully GDPR compliant, use enterprise-grade encryption, and never share your data. Your hiring data stays yours."
+      }
+    ]
+  },
+  "finalCta": {
+    "headline": "Hiring works better when you can see it clearly",
+    "subheadline": "That's what the OneRooted demo is for.",
+    "cta": "Request a demo",
+    "ctaSecondary": "View pricing"
+  },
   "seo": {
     "home": {
       "title": "The Hiring OS for Teams That Take Hiring Seriously",
@@ -26,7 +181,12 @@
     }
   },
   "footer": {
-    "tagline": "Hiring doesn't need another tool. It needs a system.",
-    "copyright": "© {year} OneRooted. All rights reserved."
+    "tagline": "The Hiring OS for teams that take hiring seriously. Replace fragmented tools with one intelligent system.",
+    "copyright": "© {{year}} OneRooted. All rights reserved.",
+    "company": "Company",
+    "legal": "Legal",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms"
   }
 }

@@ -1,35 +1,38 @@
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Database, Workflow, Brain, Shield } from "lucide-react";
-
-const pillars = [
-  {
-    icon: Database,
-    title: "Hiring Data",
-    description: "All candidates, conversations and context unified in one intelligent system.",
-    gradient: "from-primary/20 to-primary/5",
-  },
-  {
-    icon: Workflow,
-    title: "Workflows",
-    description: "Adaptive processes that flex with your team, not against it.",
-    gradient: "from-accent/20 to-accent/5",
-  },
-  {
-    icon: Brain,
-    title: "Decision Intelligence",
-    description: "Structured insights that replace gut feelings with confidence.",
-    gradient: "from-success/20 to-success/5",
-  },
-  {
-    icon: Shield,
-    title: "Accountability",
-    description: "Everyone knows what happens next—and who owns it.",
-    gradient: "from-primary/20 to-primary/5",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export function WhatIsSection() {
+  const { t } = useTranslation();
+
+  const pillars = [
+    {
+      icon: Database,
+      titleKey: "whatIs.pillars.data.title",
+      descriptionKey: "whatIs.pillars.data.description",
+      gradient: "from-primary/20 to-primary/5",
+    },
+    {
+      icon: Workflow,
+      titleKey: "whatIs.pillars.workflows.title",
+      descriptionKey: "whatIs.pillars.workflows.description",
+      gradient: "from-accent/20 to-accent/5",
+    },
+    {
+      icon: Brain,
+      titleKey: "whatIs.pillars.intelligence.title",
+      descriptionKey: "whatIs.pillars.intelligence.description",
+      gradient: "from-success/20 to-success/5",
+    },
+    {
+      icon: Shield,
+      titleKey: "whatIs.pillars.accountability.title",
+      descriptionKey: "whatIs.pillars.accountability.description",
+      gradient: "from-primary/20 to-primary/5",
+    },
+  ];
+
   return (
     <section className="py-16 md:py-24 relative">
       <div className="container">
@@ -40,9 +43,11 @@ export function WhatIsSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">The Hiring OS</p>
+          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">
+            {t("whatIs.label")}
+          </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold max-w-3xl mx-auto leading-tight">
-            One system that connects every hiring decision
+            {t("whatIs.headline")}
           </h2>
         </motion.div>
 
@@ -62,8 +67,8 @@ export function WhatIsSection() {
                     <pillar.icon className="h-7 w-7 text-foreground" />
                   </div>
                   
-                  <h3 className="text-xl font-semibold mb-3">{pillar.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{pillar.description}</p>
+                  <h3 className="text-xl font-semibold mb-3">{t(pillar.titleKey)}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{t(pillar.descriptionKey)}</p>
                 </div>
 
                 {/* Decorative element */}
