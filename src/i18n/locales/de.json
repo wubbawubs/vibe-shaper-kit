@@ -174,6 +174,120 @@
     "cta": "Demo anfragen",
     "ctaSecondary": "Preise ansehen"
   },
+  "product": {
+    "seo": {
+      "title": "Produktfunktionen | Wie OneRooted funktioniert",
+      "description": "Entdecken Sie OneRooteds intelligentes Kandidaten-Ranking, visuelle Hiring-Pipeline und Echtzeit-Kollaborationstools. Sehen Sie, wie unser Hiring OS das Recruiting transformiert."
+    },
+    "hero": {
+      "label": "Wie es funktioniert",
+      "headline": "So sieht ein",
+      "headlineHighlight": "Hiring OS",
+      "headlineSuffix": "aus",
+      "subheadline": "Kandidaten bewegen sich vorwärts. Signale erscheinen automatisch. Sie sehen, was wichtig ist — ohne Updates hinterherzulaufen.",
+      "cta": "In Aktion sehen",
+      "ctaSecondary": "Preise ansehen"
+    },
+    "ranking": {
+      "label": "Intelligentes Ranking",
+      "headline": "Jeder Kandidat bewertet. Jede Entscheidung informiert.",
+      "description": "Konsistente Bewertung nach denselben Kriterien. Entscheidungen basierend auf Struktur, nicht auf Bauchgefühl.",
+      "criteria": {
+        "title": "Bewertungskriterien",
+        "description": "Dieselben Kriterien. Jeder Kandidat. Konsistente Bewertung nimmt das Rätselraten aus Entscheidungen.",
+        "skills": { "label": "Skills-Match", "weight": "40%", "desc": "Technische Anforderungen" },
+        "experience": { "label": "Erfahrung", "weight": "30%", "desc": "Relevanter Hintergrund" },
+        "fit": { "label": "Culture Fit", "weight": "30%", "desc": "Team-Ausrichtung" }
+      },
+      "status": {
+        "evaluating": "Bewertung...",
+        "scored": "Bewertet",
+        "topMatch": "Top Match",
+        "rank": "Rang #{{number}}",
+        "pending": "Ausstehend"
+      }
+    },
+    "pipeline": {
+      "label": "Visuelle Pipeline",
+      "headline": "Sehen Sie genau, wo jede Einstellung steht",
+      "description": "Von der ersten Bewerbung bis zum unterschriebenen Angebot — jeder Schritt sichtbar. Engpässe tauchen auf, bevor sie Sie verlangsamen.",
+      "stages": {
+        "new": "Neu",
+        "screening": "Screening",
+        "interview": "Interview",
+        "offer": "Angebot",
+        "hired": "Eingestellt"
+      },
+      "bottleneck": {
+        "title": "Engpass erkannt",
+        "description": "{{count}} Kandidaten warten in {{stage}}"
+      },
+      "conversion": "Konversion",
+      "hired": "eingestellt"
+    },
+    "intelligence": {
+      "label": "Prozess-Intelligenz",
+      "headline": "Metriken, die Ihnen sagen, wo Sie handeln müssen",
+      "description": "Echtzeit-Einblick in die Hiring-Gesundheit. Wissen Sie, wo Sie sich konzentrieren müssen, bevor Probleme zu Blockern werden.",
+      "metrics": {
+        "efficiency": "Prozess-Effizienz",
+        "timeToHire": "Durchschn. Time-to-Hire",
+        "quality": "Qualitätsscore",
+        "candidates": "Aktive Kandidaten"
+      },
+      "sourceEffectiveness": "Quellen-Effektivität",
+      "last30Days": "Letzte 30 Tage",
+      "trend": "Prozess-Effizienz-Trend (12 Monate)"
+    },
+    "collaboration": {
+      "label": "Einheitliche Zusammenarbeit",
+      "headline": "Alle im selben System",
+      "description": "Recruiter, Hiring Manager und Partner arbeiten von derselben Wahrheitsquelle. Keine Versionskonflikte. Kein verlorenes Feedback.",
+      "activeNow": "Jetzt aktiv",
+      "activity": "Aktivität",
+      "typing": "tippt",
+      "sharedContext": "Ein System. Jeder Stakeholder. Echtzeit.",
+      "roles": {
+        "recruiter": "Recruiter",
+        "hiringManager": "Hiring Manager",
+        "agency": "Agentur"
+      },
+      "actions": {
+        "moved": "verschob",
+        "reviewed": "überprüfte",
+        "submitted": "reichte ein",
+        "commentedOn": "kommentierte",
+        "approved": "genehmigte",
+        "uploadedCv": "lud Lebenslauf hoch",
+        "scheduled": "plante",
+        "gaveFeedback": "gab Feedback"
+      }
+    },
+    "atsComparison": {
+      "label": "Der Unterschied",
+      "headline": "Dies ist kein weiteres ATS",
+      "description": "Ein ATS speichert Lebensläufe. OneRooted führt Ihren Einstellungsprozess.",
+      "traditional": "Traditionelles ATS",
+      "traditionalItems": [
+        "Speichert Lebensläufe in einer Datenbank",
+        "Manuelle Statusaktualisierungen",
+        "Admin-fokussierte Dateneingabe",
+        "Berichte, die Sie selbst erstellen müssen"
+      ],
+      "onerootedItems": [
+        "Verbindet alle Hiring-Daten intelligent",
+        "Automatisierte Workflows und Trigger",
+        "Entscheidungsfokussierte Intelligenz",
+        "Erkenntnisse, die automatisch auftauchen"
+      ]
+    },
+    "cta": {
+      "headline": "Sehen Sie, was passiert, wenn Hiring Struktur hat",
+      "description": "Wir zeigen Ihnen, wie OneRooted Klarheit in Ihren Einstellungsprozess bringt.",
+      "button": "Demo anfragen",
+      "secondary": "Preise ansehen"
+    }
+  },
   "seo": {
     "home": {
       "title": "Das Hiring OS für Teams, die Recruiting ernst nehmen",

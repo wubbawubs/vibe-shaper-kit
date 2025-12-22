@@ -1,6 +1,6 @@
 import { MarketingLayout } from "@/components/marketing/MarketingLayout";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ProductHeroAnimation } from "@/components/marketing/product/ProductHeroAnimation";
@@ -10,13 +10,26 @@ import { MetricsDashboardAnimation } from "@/components/marketing/product/Metric
 import { CollaborationAnimation } from "@/components/marketing/product/CollaborationAnimation";
 import { Check, Minus, Sparkles, ArrowRight, Zap, Eye, BarChart3, Users2 } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { useTranslation } from "react-i18next";
+import { getLocalizedPath } from "@/i18n/useLanguage";
+import { type Language } from "@/i18n/config";
 
 const Product = () => {
+  const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+
+  const getLocalizedHref = (href: string) => {
+    return lang ? getLocalizedPath(href, lang as Language) : href;
+  };
+
+  const traditionalItems = t("product.atsComparison.traditionalItems", { returnObjects: true }) as string[];
+  const onerootedItems = t("product.atsComparison.onerootedItems", { returnObjects: true }) as string[];
+
   return (
     <MarketingLayout>
       <SEO 
-        title="Product Features | How OneRooted Works"
-        description="Discover OneRooted's intelligent candidate ranking, visual hiring pipeline, and real-time collaboration tools. See how our Hiring OS transforms recruitment."
+        title={t("product.seo.title")}
+        description={t("product.seo.description")}
         url="https://onerooted.com/product"
       />
       {/* Hero */}
@@ -36,14 +49,17 @@ const Product = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
               >
-                How it works
+                {t("product.hero.label")}
               </motion.p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 md:mb-6 tracking-tight leading-[1.1]">
-                This is what a{" "}
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">hiring OS</span> looks like
+                {t("product.hero.headline")}{" "}
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  {t("product.hero.headlineHighlight")}
+                </span>{" "}
+                {t("product.hero.headlineSuffix")}
               </h1>
               <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 max-w-xl">
-                Candidates move forward. Signals surface automatically. You see what matters — without chasing updates.
+                {t("product.hero.subheadline")}
               </p>
               
               <motion.div
@@ -53,14 +69,14 @@ const Product = () => {
                 className="flex flex-col sm:flex-row items-stretch sm:items-start gap-3"
               >
                 <Button asChild size="lg" className="h-12 md:h-14 px-6 md:px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
-                  <Link to="/demo">
-                    See it in action
+                  <Link to={getLocalizedHref("/demo")}>
+                    {t("product.hero.cta")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button asChild variant="ghost" size="lg" className="h-12 md:h-14 px-6 md:px-8 text-base text-muted-foreground hover:text-foreground">
-                  <Link to="/pricing">
-                    View pricing
+                  <Link to={getLocalizedHref("/pricing")}>
+                    {t("product.hero.ctaSecondary")}
                   </Link>
                 </Button>
               </motion.div>
@@ -92,13 +108,15 @@ const Product = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Zap className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-primary tracking-wide uppercase">Intelligent Ranking</p>
+                <p className="text-sm font-medium text-primary tracking-wide uppercase">
+                  {t("product.ranking.label")}
+                </p>
               </div>
               <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                Every candidate scored. Every decision informed.
+                {t("product.ranking.headline")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Consistent evaluation across the same criteria. Decisions based on structure, not gut feeling.
+                {t("product.ranking.description")}
               </p>
             </motion.div>
           </div>
@@ -128,13 +146,15 @@ const Product = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Eye className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-primary tracking-wide uppercase">Visual Pipeline</p>
+                <p className="text-sm font-medium text-primary tracking-wide uppercase">
+                  {t("product.pipeline.label")}
+                </p>
               </div>
               <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                See exactly where every hire stands
+                {t("product.pipeline.headline")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                From first application to signed offer — every step visible. Bottlenecks surface before they slow you down.
+                {t("product.pipeline.description")}
               </p>
             </motion.div>
           </div>
@@ -164,13 +184,15 @@ const Product = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
                   <BarChart3 className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-primary tracking-wide uppercase">Process Intelligence</p>
+                <p className="text-sm font-medium text-primary tracking-wide uppercase">
+                  {t("product.intelligence.label")}
+                </p>
               </div>
               <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                Metrics that tell you where to act
+                {t("product.intelligence.headline")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Real-time insight into hiring health. Know where to focus before issues become blockers.
+                {t("product.intelligence.description")}
               </p>
             </motion.div>
           </div>
@@ -200,13 +222,15 @@ const Product = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Users2 className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-primary tracking-wide uppercase">Unified Collaboration</p>
+                <p className="text-sm font-medium text-primary tracking-wide uppercase">
+                  {t("product.collaboration.label")}
+                </p>
               </div>
               <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                Everyone in the same system
+                {t("product.collaboration.headline")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Recruiters, hiring managers, and partners work from the same source of truth. No version conflicts. No lost feedback.
+                {t("product.collaboration.description")}
               </p>
             </motion.div>
           </div>
@@ -239,12 +263,14 @@ const Product = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <p className="text-sm font-medium text-background/60 mb-4 tracking-wide uppercase">The difference</p>
+            <p className="text-sm font-medium text-background/60 mb-4 tracking-wide uppercase">
+              {t("product.atsComparison.label")}
+            </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
-              This isn't another ATS
+              {t("product.atsComparison.headline")}
             </h2>
             <p className="text-lg text-background/60 max-w-xl mx-auto">
-              An ATS stores resumes. OneRooted runs your hiring process.
+              {t("product.atsComparison.description")}
             </p>
           </motion.div>
 
@@ -257,14 +283,11 @@ const Product = () => {
             >
               <Card className="h-full border-background/10 bg-background/5 backdrop-blur-sm">
                 <CardContent className="py-8 px-6">
-                  <h3 className="font-semibold mb-6 text-background/50">Traditional ATS</h3>
+                  <h3 className="font-semibold mb-6 text-background/50">
+                    {t("product.atsComparison.traditional")}
+                  </h3>
                   <ul className="space-y-4 text-sm text-background/60">
-                    {[
-                      "Stores resumes in a database",
-                      "Manual status updates",
-                      "Admin-focused data entry",
-                      "Reports you have to build"
-                    ].map((item, i) => (
+                    {traditionalItems.map((item, i) => (
                       <motion.li
                         key={item}
                         initial={{ opacity: 0, x: -10 }}
@@ -295,12 +318,7 @@ const Product = () => {
                     <h3 className="font-semibold text-primary">OneRooted</h3>
                   </div>
                   <ul className="space-y-4 text-sm">
-                    {[
-                      "Connects all hiring data intelligently",
-                      "Automated workflows and triggers",
-                      "Decision-focused intelligence",
-                      "Insights that surface automatically"
-                    ].map((item, i) => (
+                    {onerootedItems.map((item, i) => (
                       <motion.li
                         key={item}
                         initial={{ opacity: 0, x: -10 }}
@@ -342,21 +360,21 @@ const Product = () => {
             className="text-center max-w-2xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              See what happens when hiring has structure
+              {t("product.cta.headline")}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              We'll walk you through how OneRooted brings clarity to your hiring process.
+              {t("product.cta.description")}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
-                <Link to="/demo" className="flex items-center gap-2">
-                  Request a demo
+                <Link to={getLocalizedHref("/demo")} className="flex items-center gap-2">
+                  {t("product.cta.button")}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
-                <Link to="/pricing">View pricing</Link>
+                <Link to={getLocalizedHref("/pricing")}>{t("product.cta.secondary")}</Link>
               </Button>
             </div>
           </motion.div>

@@ -174,6 +174,120 @@
     "cta": "Request a demo",
     "ctaSecondary": "View pricing"
   },
+  "product": {
+    "seo": {
+      "title": "Product Features | How OneRooted Works",
+      "description": "Discover OneRooted's intelligent candidate ranking, visual hiring pipeline, and real-time collaboration tools. See how our Hiring OS transforms recruitment."
+    },
+    "hero": {
+      "label": "How it works",
+      "headline": "This is what a",
+      "headlineHighlight": "hiring OS",
+      "headlineSuffix": "looks like",
+      "subheadline": "Candidates move forward. Signals surface automatically. You see what matters — without chasing updates.",
+      "cta": "See it in action",
+      "ctaSecondary": "View pricing"
+    },
+    "ranking": {
+      "label": "Intelligent Ranking",
+      "headline": "Every candidate scored. Every decision informed.",
+      "description": "Consistent evaluation across the same criteria. Decisions based on structure, not gut feeling.",
+      "criteria": {
+        "title": "Scoring Criteria",
+        "description": "Same criteria. Every candidate. Consistent evaluation removes guesswork from decisions.",
+        "skills": { "label": "Skills Match", "weight": "40%", "desc": "Technical requirements" },
+        "experience": { "label": "Experience", "weight": "30%", "desc": "Relevant background" },
+        "fit": { "label": "Culture Fit", "weight": "30%", "desc": "Team alignment" }
+      },
+      "status": {
+        "evaluating": "Evaluating...",
+        "scored": "Scored",
+        "topMatch": "Top Match",
+        "rank": "Rank #{{number}}",
+        "pending": "Pending"
+      }
+    },
+    "pipeline": {
+      "label": "Visual Pipeline",
+      "headline": "See exactly where every hire stands",
+      "description": "From first application to signed offer — every step visible. Bottlenecks surface before they slow you down.",
+      "stages": {
+        "new": "New",
+        "screening": "Screening",
+        "interview": "Interview",
+        "offer": "Offer",
+        "hired": "Hired"
+      },
+      "bottleneck": {
+        "title": "Bottleneck detected",
+        "description": "{{count}} candidates waiting in {{stage}}"
+      },
+      "conversion": "Conversion",
+      "hired": "hired"
+    },
+    "intelligence": {
+      "label": "Process Intelligence",
+      "headline": "Metrics that tell you where to act",
+      "description": "Real-time insight into hiring health. Know where to focus before issues become blockers.",
+      "metrics": {
+        "efficiency": "Process Efficiency",
+        "timeToHire": "Avg. Time-to-Hire",
+        "quality": "Quality Score",
+        "candidates": "Active Candidates"
+      },
+      "sourceEffectiveness": "Source Effectiveness",
+      "last30Days": "Last 30 days",
+      "trend": "Process efficiency trend (12 months)"
+    },
+    "collaboration": {
+      "label": "Unified Collaboration",
+      "headline": "Everyone in the same system",
+      "description": "Recruiters, hiring managers, and partners work from the same source of truth. No version conflicts. No lost feedback.",
+      "activeNow": "Active now",
+      "activity": "Activity",
+      "typing": "typing",
+      "sharedContext": "One system. Every stakeholder. Real-time.",
+      "roles": {
+        "recruiter": "Recruiter",
+        "hiringManager": "Hiring Manager",
+        "agency": "Agency"
+      },
+      "actions": {
+        "moved": "moved",
+        "reviewed": "reviewed",
+        "submitted": "submitted",
+        "commentedOn": "commented on",
+        "approved": "approved",
+        "uploadedCv": "uploaded CV",
+        "scheduled": "scheduled",
+        "gaveFeedback": "gave feedback"
+      }
+    },
+    "atsComparison": {
+      "label": "The difference",
+      "headline": "This isn't another ATS",
+      "description": "An ATS stores resumes. OneRooted runs your hiring process.",
+      "traditional": "Traditional ATS",
+      "traditionalItems": [
+        "Stores resumes in a database",
+        "Manual status updates",
+        "Admin-focused data entry",
+        "Reports you have to build"
+      ],
+      "onerootedItems": [
+        "Connects all hiring data intelligently",
+        "Automated workflows and triggers",
+        "Decision-focused intelligence",
+        "Insights that surface automatically"
+      ]
+    },
+    "cta": {
+      "headline": "See what happens when hiring has structure",
+      "description": "We'll walk you through how OneRooted brings clarity to your hiring process.",
+      "button": "Request a demo",
+      "secondary": "View pricing"
+    }
+  },
   "seo": {
     "home": {
       "title": "The Hiring OS for Teams That Take Hiring Seriously",
