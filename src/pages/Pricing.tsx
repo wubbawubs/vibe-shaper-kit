@@ -135,11 +135,11 @@ const Pricing = () => {
             >
               Pricing
             </motion.p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-4 md:mb-6 tracking-tight">
               Clear pricing.{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">No surprises.</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
               Choose the plan that fits your hiring needs. Scale as you grow.
             </p>
             
@@ -168,7 +168,7 @@ const Pricing = () => {
       <section className="py-8 md:py-16">
         <div className="container">
           <motion.div 
-            className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -219,22 +219,22 @@ const Pricing = () => {
                     </motion.div>
                   )}
                   
-                  <CardHeader className="relative pt-8 pb-4">
-                    <CardTitle className="text-xl">{plan.name}</CardTitle>
-                    <div className="mt-4">
-                      <span className={`text-4xl font-medium ${plan.featured ? 'bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent' : ''}`}>
+                  <CardHeader className="relative pt-6 pb-4 sm:pt-8">
+                    <CardTitle className="text-lg sm:text-xl">{plan.name}</CardTitle>
+                    <div className="mt-3 sm:mt-4">
+                      <span className={`text-3xl sm:text-4xl font-medium ${plan.featured ? 'bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent' : ''}`}>
                         {plan.price === "Custom" ? "Custom" : `€${plan.price}`}
                       </span>
                       {plan.price !== "Custom" && (
-                        <span className="text-muted-foreground"> / month</span>
+                        <span className="text-muted-foreground text-sm sm:text-base"> / month</span>
                       )}
                     </div>
-                    <p className="text-sm text-muted-foreground mt-2">{plan.description}</p>
-                    <p className={`text-sm font-medium mt-3 ${plan.featured ? 'bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent' : 'text-primary'}`}>{plan.outcome}</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground mt-2">{plan.description}</p>
+                    <p className={`text-xs sm:text-sm font-medium mt-2 sm:mt-3 ${plan.featured ? 'bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent' : 'text-primary'}`}>{plan.outcome}</p>
                   </CardHeader>
                   
-                  <CardContent className="relative pt-4 pb-8">
-                    <ul className="space-y-3 mb-8">
+                  <CardContent className="relative pt-4 pb-6 sm:pb-8">
+                    <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                       {plan.features.map((feature, featureIndex) => (
                         <motion.li 
                           key={featureIndex} 
@@ -292,12 +292,12 @@ const Pricing = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-medium text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-center mb-8 md:mb-12">
               What's included in all plans
             </h2>
 
             <motion.div 
-              className="grid md:grid-cols-2 gap-8"
+              className="grid sm:grid-cols-2 gap-4 md:gap-8"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
@@ -393,8 +393,8 @@ const Pricing = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">FAQ</p>
-              <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">FAQ</p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
                 Common pricing questions
               </h2>
             </motion.div>

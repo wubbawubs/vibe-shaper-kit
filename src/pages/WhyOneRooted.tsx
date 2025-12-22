@@ -64,21 +64,21 @@ const WhyOneRooted = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
-              className="flex items-center gap-4 mb-12"
+              className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-8 md:mb-12"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
               <motion.div 
-                className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center"
+                className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0"
                 whileHover={{ scale: 1.05 }}
               >
-                <AlertTriangle className="h-7 w-7 text-primary" />
+                <AlertTriangle className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-sm font-medium text-primary mb-1 tracking-wide uppercase">The problem</p>
-                <h2 className="text-3xl md:text-4xl font-semibold">Why traditional ATS systems fail</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">The problem</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Why traditional ATS systems fail</h2>
               </div>
             </motion.div>
 
@@ -126,26 +126,26 @@ const WhyOneRooted = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
-              className="flex items-center gap-4 mb-12"
+              className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-8 md:mb-12"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
               <motion.div 
-                className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center"
+                className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0"
                 whileHover={{ scale: 1.05 }}
               >
-                <Lightbulb className="h-7 w-7 text-primary" />
+                <Lightbulb className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-sm font-medium text-primary mb-1 tracking-wide uppercase">The insight</p>
-                <h2 className="text-3xl md:text-4xl font-semibold">Why a Hiring OS is needed</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">The insight</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Why a Hiring OS is needed</h2>
               </div>
             </motion.div>
 
             <motion.div 
-              className="grid md:grid-cols-2 gap-12 items-start"
+              className="grid md:grid-cols-2 gap-8 md:gap-12 items-start"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -201,14 +201,14 @@ const WhyOneRooted = () => {
                     </div>
                     <p className="text-sm font-medium text-muted-foreground">Traditional ATS</p>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-lg font-semibold text-foreground/70">Store</span>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-lg font-semibold text-foreground/70">Track</span>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-lg font-semibold text-foreground/70">Report</span>
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <span className="text-base sm:text-lg font-semibold text-foreground/70">Store</span>
+                    <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
+                    <span className="text-base sm:text-lg font-semibold text-foreground/70">Track</span>
+                    <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
+                    <span className="text-base sm:text-lg font-semibold text-foreground/70">Report</span>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-3">Data sits. Decisions happen elsewhere.</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">Data sits. Decisions happen elsewhere.</p>
                 </motion.div>
 
                 {/* Arrow */}
@@ -238,12 +238,12 @@ const WhyOneRooted = () => {
                       </div>
                       <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Hiring OS</p>
                     </div>
-                    <div className="flex items-center gap-3 text-foreground">
-                      <span className="font-medium">Collaborate</span>
-                      <ArrowRight className="h-4 w-4 text-primary" />
-                      <span className="font-medium">Decide</span>
-                      <ArrowRight className="h-4 w-4 text-primary" />
-                      <span className="font-medium">Improve</span>
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-foreground">
+                      <span className="text-sm sm:text-base font-medium">Collaborate</span>
+                      <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
+                      <span className="text-sm sm:text-base font-medium">Decide</span>
+                      <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
+                      <span className="text-sm sm:text-base font-medium">Improve</span>
                     </div>
                     <p className="text-xs text-muted-foreground mt-3">Every action drives better outcomes.</p>
                   </div>
@@ -259,26 +259,26 @@ const WhyOneRooted = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
-              className="flex items-center gap-4 mb-12"
+              className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-8 md:mb-12"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
               <motion.div 
-                className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center"
+                className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0"
                 whileHover={{ scale: 1.05 }}
               >
-                <Target className="h-7 w-7 text-primary" />
+                <Target className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-sm font-medium text-primary mb-1 tracking-wide uppercase">The origin</p>
-                <h2 className="text-3xl md:text-4xl font-semibold">How OneRooted was born</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">The origin</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">How OneRooted was born</h2>
               </div>
             </motion.div>
 
             <motion.div 
-              className="grid md:grid-cols-3 gap-8"
+              className="grid sm:grid-cols-3 gap-6 md:gap-8"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
@@ -303,9 +303,9 @@ const WhyOneRooted = () => {
                     visible: { opacity: 1, y: 0 },
                   }}
                   transition={{ duration: 0.5 }}
-                  className="relative"
+                  className="relative text-center sm:text-left"
                 >
-                  <div className="text-6xl font-bold text-primary/10 mb-4">{item.step}</div>
+                  <div className="text-4xl sm:text-6xl font-bold text-primary/10 mb-2 sm:mb-4">{item.step}</div>
                   <h3 className="font-semibold mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.text}</p>
                 </motion.div>
@@ -314,14 +314,14 @@ const WhyOneRooted = () => {
 
             {/* Quote */}
             <motion.div 
-              className="mt-16 p-8 rounded-2xl bg-card border border-border/50 relative"
+              className="mt-10 md:mt-16 p-6 md:p-8 rounded-2xl bg-card border border-border/50 relative"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <Quote className="h-10 w-10 text-primary/20 absolute top-6 left-6" />
-              <blockquote className="text-xl md:text-2xl font-medium text-center px-8 py-4">
+              <Quote className="h-8 w-8 md:h-10 md:w-10 text-primary/20 absolute top-4 left-4 md:top-6 md:left-6" />
+              <blockquote className="text-lg sm:text-xl md:text-2xl font-medium text-center px-4 sm:px-8 py-4">
                 "Not another tool to learn. A system that works the way modern hiring actually happens."
               </blockquote>
             </motion.div>
@@ -334,21 +334,21 @@ const WhyOneRooted = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <motion.div 
-              className="flex items-center gap-4 mb-12"
+              className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-8 md:mb-12"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
               <motion.div 
-                className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center"
+                className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0"
                 whileHover={{ scale: 1.05 }}
               >
-                <Rocket className="h-7 w-7 text-primary" />
+                <Rocket className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-sm font-medium text-primary mb-1 tracking-wide uppercase">The future</p>
-                <h2 className="text-3xl md:text-4xl font-semibold">Where we're going</h2>
+                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">The future</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Where we're going</h2>
               </div>
             </motion.div>
 
