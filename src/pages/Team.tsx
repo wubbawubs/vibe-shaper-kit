@@ -5,67 +5,73 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Linkedin, Heart, Target, Zap, Users, ArrowRight } from "lucide-react";
 import { SEO } from "@/components/SEO";
-
-const teamMembers = [
-  {
-    name: "Robin Dennie",
-    role: "Founder & CEO",
-    tagline: "Creates",
-    bio: "25 years of agency experience. Recruitment innovator who transforms how companies hire.",
-    linkedin: "#",
-  },
-  {
-    name: "Erik Dijkshoorn",
-    role: "Strategic Advisor",
-    tagline: "Advises",
-    bio: "Extensive experience in multiple C-level roles. Leadership coach and strategic thinker.",
-    linkedin: "#",
-  },
-  {
-    name: "Juliëtte Welten",
-    role: "Operations Director",
-    tagline: "Directs",
-    bio: "Bureau manager and BI specialist. The financial and operational conscience of OneRooted.",
-    linkedin: "#",
-  },
-  {
-    name: "Luuk Wubs",
-    role: "CTO",
-    tagline: "Builds",
-    bio: "Young, driven tech leader. Passionate about building scalable solutions that make hiring better.",
-    linkedin: "#",
-  },
-];
-
-const values = [
-  {
-    icon: Heart,
-    title: "Human-first",
-    description: "Technology should amplify human connection, not replace it.",
-  },
-  {
-    icon: Target,
-    title: "Outcome-obsessed",
-    description: "We measure success by the quality of hires, not features shipped.",
-  },
-  {
-    icon: Zap,
-    title: "Radically transparent",
-    description: "No hidden agendas. Clear communication always.",
-  },
-  {
-    icon: Users,
-    title: "Collaborative by design",
-    description: "The best decisions come from diverse perspectives working together.",
-  },
-];
+import { useTranslation } from "react-i18next";
+import { useLanguageFromUrl } from "@/i18n/useLanguage";
 
 const Team = () => {
+  const { t } = useTranslation();
+  useLanguageFromUrl();
+
+  const teamMembers = [
+    {
+      name: t('team.members.robin.name'),
+      role: t('team.members.robin.role'),
+      tagline: t('team.members.robin.tagline'),
+      bio: t('team.members.robin.bio'),
+      linkedin: "#",
+    },
+    {
+      name: t('team.members.erik.name'),
+      role: t('team.members.erik.role'),
+      tagline: t('team.members.erik.tagline'),
+      bio: t('team.members.erik.bio'),
+      linkedin: "#",
+    },
+    {
+      name: t('team.members.juliette.name'),
+      role: t('team.members.juliette.role'),
+      tagline: t('team.members.juliette.tagline'),
+      bio: t('team.members.juliette.bio'),
+      linkedin: "#",
+    },
+    {
+      name: t('team.members.luuk.name'),
+      role: t('team.members.luuk.role'),
+      tagline: t('team.members.luuk.tagline'),
+      bio: t('team.members.luuk.bio'),
+      linkedin: "#",
+    },
+  ];
+
+  const valueIcons = [Heart, Target, Zap, Users];
+  const values = [
+    {
+      icon: valueIcons[0],
+      title: t('team.values.humanFirst.title'),
+      description: t('team.values.humanFirst.description'),
+    },
+    {
+      icon: valueIcons[1],
+      title: t('team.values.outcomeObsessed.title'),
+      description: t('team.values.outcomeObsessed.description'),
+    },
+    {
+      icon: valueIcons[2],
+      title: t('team.values.transparent.title'),
+      description: t('team.values.transparent.description'),
+    },
+    {
+      icon: valueIcons[3],
+      title: t('team.values.collaborative.title'),
+      description: t('team.values.collaborative.description'),
+    },
+  ];
+
   return (
     <MarketingLayout>
       <SEO 
-        title="About Us | Meet the OneRooted Team"
-        description="Meet the team behind OneRooted. 25+ years of recruitment expertise building the future of hiring. Part of the One-Time Group."
+        title={t('team.seo.title')}
+        description={t('team.seo.description')}
         url="https://onerooted.com/team"
       />
       {/* Hero */}
@@ -86,14 +92,14 @@ const Team = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              Meet the team
+              {t('team.hero.badge')}
             </motion.p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-4 md:mb-6 tracking-tight">
-              Building the future of{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">hiring together</span>
+              {t('team.hero.titlePart1')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('team.hero.titleHighlight')}</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-              A passionate team of recruiters, dreamers and builders on a mission to make hiring change forever.
+              {t('team.hero.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -110,7 +116,7 @@ const Team = () => {
             transition={{ duration: 0.6 }}
             className="text-base md:text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-8 md:mb-12 px-4"
           >
-            OneRooted wasn't built by product managers guessing at hiring problems. It was built by operators who lived them for decades.
+            {t('team.teamGrid.intro')}
           </motion.p>
           <motion.div 
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto"
@@ -178,8 +184,8 @@ const Team = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">Our values</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium">What drives us</h2>
+            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('team.valuesSection.badge')}</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium">{t('team.valuesSection.title')}</h2>
           </motion.div>
 
           <motion.div 
@@ -227,15 +233,13 @@ const Team = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">Our story</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 md:mb-6">Part of the One-Time Group</h2>
+            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('team.story.badge')}</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 md:mb-6">{t('team.story.title')}</h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
-              OneRooted was born from the One-Time Group's mission to transform how organizations 
-              find and nurture talent. With deep roots in recruitment and HR technology, we bring 
-              decades of combined experience to every feature we build.
+              {t('team.story.description')}
             </p>
             <p className="text-sm md:text-base text-muted-foreground">
-              Based in the Netherlands, we're building a global product for teams everywhere.
+              {t('team.story.location')}
             </p>
           </motion.div>
         </div>
@@ -258,15 +262,14 @@ const Team = () => {
               
               <CardContent className="relative py-8 md:py-12 px-6 md:px-12 text-center">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 md:mb-4">
-                  Interested in working together?
+                  {t('team.joinUs.title')}
                 </h2>
                 <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 max-w-xl mx-auto">
-                  We're always looking for talented people who share our mission. 
-                  Reach out and let's have a conversation.
+                  {t('team.joinUs.description')}
                 </p>
                 <Button asChild size="lg" className="btn-accent h-11 sm:h-12 px-6 sm:px-8">
                   <Link to="/demo" className="flex items-center gap-2">
-                    Get in touch
+                    {t('team.joinUs.cta')}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
@@ -292,25 +295,25 @@ const Team = () => {
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-8">
               <Users className="h-4 w-4" />
-              <span>Part of the One-Time Group</span>
+              <span>{t('team.finalCta.badge')}</span>
             </div>
             
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 md:mb-6">
-              Ready to transform your hiring?
+              {t('team.finalCta.title')}
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
-              Join the teams that have already upgraded from fragmented tools to a unified Hiring OS.
+              {t('team.finalCta.subtitle')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button asChild size="lg" className="btn-accent">
                 <Link to="/why-onerooted" className="flex items-center gap-2">
-                  Why we built this
+                  {t('team.finalCta.whyWeBuilt')}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/product">Learn more</Link>
+                <Link to="/product">{t('team.finalCta.learnMore')}</Link>
               </Button>
             </div>
           </motion.div>

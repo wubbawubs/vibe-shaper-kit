@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Building2, Handshake, ArrowRight, Check, Zap, Target, BarChart3, Eye, ChevronDown } from "lucide-react";
+import { Building2, Handshake, ArrowRight, Check, Zap, Target, BarChart3, Eye } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -11,50 +11,37 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { SEO } from "@/components/SEO";
-
-const partnerBenefits = [
-  "Your own pipeline per client — full ownership",
-  "Real-time status updates — no more chasing",
-  "Instant feedback on every submission",
-  "Professional interface your clients trust",
-];
-
-const clientBenefits = [
-  "All candidates in one view — zero chaos",
-  "Clear source attribution per partner",
-  "Performance data that drives decisions",
-  "One system instead of scattered spreadsheets",
-];
-
-const collaborationSteps = [
-  { 
-    icon: Handshake, 
-    title: "Client invites partner", 
-    desc: "One click. No onboarding friction." 
-  },
-  { 
-    icon: Zap, 
-    title: "Partner submits candidates", 
-    desc: "Direct into the pipeline. Instantly visible." 
-  },
-  { 
-    icon: Eye, 
-    title: "Both sides see progress", 
-    desc: "Real-time updates. No status meetings." 
-  },
-  { 
-    icon: BarChart3, 
-    title: "Data drives the relationship", 
-    desc: "Clear metrics on what works. No politics." 
-  },
-];
+import { useTranslation } from "react-i18next";
+import { useLanguageFromUrl } from "@/i18n/useLanguage";
 
 const Partners = () => {
+  const { t } = useTranslation();
+  useLanguageFromUrl();
+
+  const partnerBenefits = t('partners.perspectives.partner.benefits', { returnObjects: true }) as string[];
+  const clientBenefits = t('partners.perspectives.client.benefits', { returnObjects: true }) as string[];
+
+  const collaborationSteps = [
+    { icon: Handshake, title: t('partners.howItWorks.steps.invite.title'), desc: t('partners.howItWorks.steps.invite.desc') },
+    { icon: Zap, title: t('partners.howItWorks.steps.submit.title'), desc: t('partners.howItWorks.steps.submit.desc') },
+    { icon: Eye, title: t('partners.howItWorks.steps.progress.title'), desc: t('partners.howItWorks.steps.progress.desc') },
+    { icon: BarChart3, title: t('partners.howItWorks.steps.data.title'), desc: t('partners.howItWorks.steps.data.desc') },
+  ];
+
+  const faqItems = [
+    { question: t('partners.faq.items.pay.question'), answer: t('partners.faq.items.pay.answer') },
+    { question: t('partners.faq.items.multiple.question'), answer: t('partners.faq.items.multiple.answer') },
+    { question: t('partners.faq.items.data.question'), answer: t('partners.faq.items.data.answer') },
+    { question: t('partners.faq.items.started.question'), answer: t('partners.faq.items.started.answer') },
+    { question: t('partners.faq.items.replace.question'), answer: t('partners.faq.items.replace.answer') },
+    { question: t('partners.faq.items.ats.question'), answer: t('partners.faq.items.ats.answer') },
+  ];
+
   return (
     <MarketingLayout>
       <SEO 
-        title="For Recruitment Agencies & Partners"
-        description="Collaborate seamlessly with clients using OneRooted. Get real-time visibility, instant feedback, and better outcomes. Free for partners."
+        title={t('partners.seo.title')}
+        description={t('partners.seo.description')}
         url="https://onerooted.com/partners"
       />
       
@@ -75,14 +62,14 @@ const Partners = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              For recruitment partners
+              {t('partners.hero.badge')}
             </motion.p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 md:mb-6 tracking-tight leading-[1.1]">
-              We make you{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">stronger</span>, not obsolete
+              {t('partners.hero.titlePart1')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('partners.hero.titleHighlight')}</span>{t('partners.hero.titlePart2')}
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
-              OneRooted is infrastructure. Not competition. When your clients use it, you get better tools, clearer visibility, and stronger relationships.
+              {t('partners.hero.subtitle')}
             </p>
             
             <motion.div
@@ -93,13 +80,13 @@ const Partners = () => {
             >
               <Button asChild size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo">
-                  Partner with us
+                  {t('partners.hero.cta')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="ghost" size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base text-muted-foreground hover:text-foreground">
                 <Link to="/product">
-                  See how it works
+                  {t('partners.hero.secondary')}
                 </Link>
               </Button>
             </motion.div>
@@ -118,10 +105,10 @@ const Partners = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
-              One system. Two perspectives.
+              {t('partners.perspectives.title')}
             </h2>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-              Partners and clients work in the same system — with views designed for each role.
+              {t('partners.perspectives.subtitle')}
             </p>
           </motion.div>
 
@@ -154,8 +141,8 @@ const Partners = () => {
                       <Handshake className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold">Partner view</h3>
-                      <p className="text-sm text-muted-foreground">What you work with</p>
+                      <h3 className="text-xl font-semibold">{t('partners.perspectives.partner.title')}</h3>
+                      <p className="text-sm text-muted-foreground">{t('partners.perspectives.partner.subtitle')}</p>
                     </div>
                   </div>
                   <ul className="space-y-3">
@@ -194,8 +181,8 @@ const Partners = () => {
                       <Building2 className="h-6 w-6 text-accent-foreground" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold">Client view</h3>
-                      <p className="text-sm text-muted-foreground">What they see</p>
+                      <h3 className="text-xl font-semibold">{t('partners.perspectives.client.title')}</h3>
+                      <p className="text-sm text-muted-foreground">{t('partners.perspectives.client.subtitle')}</p>
                     </div>
                   </div>
                   <ul className="space-y-3">
@@ -233,12 +220,12 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">How it works</p>
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partners.howItWorks.badge')}</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
-                From invite to insight in four steps
+                {t('partners.howItWorks.title')}
               </h2>
               <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto">
-                No complex onboarding. No learning curve. Just collaboration that works.
+                {t('partners.howItWorks.subtitle')}
               </p>
             </motion.div>
 
@@ -292,10 +279,10 @@ const Partners = () => {
               className="text-center mt-12 p-6 bg-muted/30 rounded-2xl"
             >
               <p className="text-lg font-semibold text-foreground">
-                No handovers. No blind spots. No politics.
+                {t('partners.howItWorks.punchline')}
               </p>
               <p className="text-muted-foreground mt-1">
-                Just transparent collaboration that makes everyone better.
+                {t('partners.howItWorks.punchlineSubtitle')}
               </p>
             </motion.div>
           </div>
@@ -323,19 +310,19 @@ const Partners = () => {
               <Target className="h-6 w-6 sm:h-8 sm:w-8 text-background" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 leading-tight">
-              Infrastructure, not competition
+              {t('partners.infrastructure.title')}
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-background/60 mb-6 sm:mb-8 max-w-2xl mx-auto">
-              We're not building another agency tool. We're building the operating system that makes collaboration between clients and partners seamless.
+              {t('partners.infrastructure.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center text-left max-w-xl mx-auto">
               <div className="flex-1 p-3 sm:p-4 border border-background/10 rounded-xl">
-                <p className="font-semibold mb-1 text-sm sm:text-base">For partners</p>
-                <p className="text-xs sm:text-sm text-background/50">Better tools mean better placements</p>
+                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partners.infrastructure.forPartners.title')}</p>
+                <p className="text-xs sm:text-sm text-background/50">{t('partners.infrastructure.forPartners.desc')}</p>
               </div>
               <div className="flex-1 p-3 sm:p-4 border border-background/10 rounded-xl">
-                <p className="font-semibold mb-1 text-sm sm:text-base">For clients</p>
-                <p className="text-xs sm:text-sm text-background/50">Better visibility means better decisions</p>
+                <p className="font-semibold mb-1 text-sm sm:text-base">{t('partners.infrastructure.forClients.title')}</p>
+                <p className="text-xs sm:text-sm text-background/50">{t('partners.infrastructure.forClients.desc')}</p>
               </div>
             </div>
           </motion.div>
@@ -353,9 +340,9 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">FAQ</p>
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('partners.faq.badge')}</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
-                Common questions from partners
+                {t('partners.faq.title')}
               </h2>
             </motion.div>
 
@@ -366,59 +353,16 @@ const Partners = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <Accordion type="single" collapsible className="w-full space-y-3">
-                <AccordionItem value="item-1" className="border border-border/50 rounded-xl px-6 bg-background">
-                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
-                    Do I need to pay for OneRooted as a partner?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    No. Partners don't pay for OneRooted. When a client invites you to collaborate, you get full access to your dedicated pipeline at no cost. The client handles the subscription.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-2" className="border border-border/50 rounded-xl px-6 bg-background">
-                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
-                    Can I work with multiple clients in OneRooted?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    Yes. Each client has their own workspace, and you'll have a separate pipeline per client. Everything stays organized and confidential between clients.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-3" className="border border-border/50 rounded-xl px-6 bg-background">
-                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
-                    What data can the client see about my work?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    Clients see the candidates you submit, their status, and performance metrics like time-to-hire and conversion rates. They don't see your internal notes or communication with other clients.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-4" className="border border-border/50 rounded-xl px-6 bg-background">
-                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
-                    How do I get started as a partner?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    Your client sends you an invite link. You create an account (takes 30 seconds), and you're immediately connected to their pipeline. No onboarding calls, no setup meetings.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-5" className="border border-border/50 rounded-xl px-6 bg-background">
-                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
-                    Is OneRooted trying to replace recruitment agencies?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    No. We're infrastructure, not competition. OneRooted makes the collaboration between you and your clients smoother. Better tools mean better placements, stronger relationships, and less time wasted on admin.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-6" className="border border-border/50 rounded-xl px-6 bg-background">
-                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
-                    Can I still use my own ATS alongside OneRooted?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    Yes. Many partners use their own systems internally and submit candidates to OneRooted for client collaboration. Think of it as the shared workspace where you and your client meet.
-                  </AccordionContent>
-                </AccordionItem>
+                {faqItems.map((item, index) => (
+                  <AccordionItem key={index} value={`item-${index + 1}`} className="border border-border/50 rounded-xl px-6 bg-background">
+                    <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-5">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
               </Accordion>
             </motion.div>
           </div>
@@ -438,21 +382,21 @@ const Partners = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              Ready to work smarter?
+              {t('partners.cta.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Join the partners who are already delivering better results through better infrastructure.
+              {t('partners.cta.subtitle')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo" className="flex items-center gap-2">
-                  Let's talk
+                  {t('partners.cta.letsTalk')}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-14 px-8 text-base">
-                <Link to="/product">Explore the product</Link>
+                <Link to="/product">{t('partners.cta.explore')}</Link>
               </Button>
             </div>
           </motion.div>
