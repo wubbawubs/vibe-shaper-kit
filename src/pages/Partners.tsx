@@ -77,11 +77,11 @@ const Partners = () => {
             >
               For recruitment partners
             </motion.p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 md:mb-6 tracking-tight leading-[1.1]">
               We make you{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">stronger</span>, not obsolete
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
               OneRooted is infrastructure. Not competition. When your clients use it, you get better tools, clearer visibility, and stronger relationships.
             </p>
             
@@ -89,15 +89,15 @@ const Partners = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4"
             >
-              <Button asChild size="lg" className="h-14 px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
+              <Button asChild size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25">
                 <Link to="/demo">
                   Partner with us
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="ghost" size="lg" className="h-14 px-8 text-base text-muted-foreground hover:text-foreground">
+              <Button asChild variant="ghost" size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-base text-muted-foreground hover:text-foreground">
                 <Link to="/product">
                   See how it works
                 </Link>
@@ -117,10 +117,10 @@ const Partners = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
               One system. Two perspectives.
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
               Partners and clients work in the same system — with views designed for each role.
             </p>
           </motion.div>
@@ -233,17 +233,17 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">How it works</p>
-              <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">How it works</p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
                 From invite to insight in four steps
               </h2>
-              <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+              <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto">
                 No complex onboarding. No learning curve. Just collaboration that works.
               </p>
             </motion.div>
 
             <motion.div 
-              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+              className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
@@ -259,7 +259,7 @@ const Partners = () => {
               {collaborationSteps.map((item, index) => (
                 <motion.div 
                   key={index} 
-                  className="relative text-center p-6"
+                  className="relative text-center p-3 sm:p-6"
                   variants={{
                     hidden: { opacity: 0, y: 20 },
                     visible: { opacity: 1, y: 0 },
@@ -267,18 +267,18 @@ const Partners = () => {
                   transition={{ duration: 0.5 }}
                 >
                   {/* Step number */}
-                  <div className="absolute top-4 left-4 text-6xl font-bold text-muted/30">
+                  <div className="absolute top-2 left-2 sm:top-4 sm:left-4 text-3xl sm:text-6xl font-bold text-muted/30">
                     {index + 1}
                   </div>
                   
                   <motion.div 
-                    className="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/10 flex items-center justify-center relative z-10"
+                    className="w-10 h-10 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center relative z-10"
                     whileHover={{ scale: 1.1 }}
                   >
-                    <item.icon className="h-7 w-7 text-primary" />
+                    <item.icon className="h-5 w-5 sm:h-7 sm:w-7 text-primary" />
                   </motion.div>
-                  <h3 className="font-semibold mb-2 relative z-10">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground relative z-10">{item.desc}</p>
+                  <h3 className="font-semibold text-sm sm:text-base mb-1 sm:mb-2 relative z-10">{item.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground relative z-10 hidden sm:block">{item.desc}</p>
                 </motion.div>
               ))}
             </motion.div>
@@ -319,23 +319,23 @@ const Partners = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-16 h-16 mx-auto mb-6 bg-background/10 rounded-2xl flex items-center justify-center">
-              <Target className="h-8 w-8 text-background" />
+            <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 bg-background/10 rounded-xl sm:rounded-2xl flex items-center justify-center">
+              <Target className="h-6 w-6 sm:h-8 sm:w-8 text-background" />
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 leading-tight">
               Infrastructure, not competition
             </h2>
-            <p className="text-lg md:text-xl text-background/60 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-background/60 mb-6 sm:mb-8 max-w-2xl mx-auto">
               We're not building another agency tool. We're building the operating system that makes collaboration between clients and partners seamless.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center text-left max-w-xl mx-auto">
-              <div className="flex-1 p-4 border border-background/10 rounded-xl">
-                <p className="font-semibold mb-1">For partners</p>
-                <p className="text-sm text-background/50">Better tools mean better placements</p>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center text-left max-w-xl mx-auto">
+              <div className="flex-1 p-3 sm:p-4 border border-background/10 rounded-xl">
+                <p className="font-semibold mb-1 text-sm sm:text-base">For partners</p>
+                <p className="text-xs sm:text-sm text-background/50">Better tools mean better placements</p>
               </div>
-              <div className="flex-1 p-4 border border-background/10 rounded-xl">
-                <p className="font-semibold mb-1">For clients</p>
-                <p className="text-sm text-background/50">Better visibility means better decisions</p>
+              <div className="flex-1 p-3 sm:p-4 border border-background/10 rounded-xl">
+                <p className="font-semibold mb-1 text-sm sm:text-base">For clients</p>
+                <p className="text-xs sm:text-sm text-background/50">Better visibility means better decisions</p>
               </div>
             </div>
           </motion.div>
@@ -353,8 +353,8 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">FAQ</p>
-              <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">FAQ</p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
                 Common questions from partners
               </h2>
             </motion.div>

@@ -69,7 +69,7 @@ const Team = () => {
         url="https://onerooted.com/team"
       />
       {/* Hero */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-12 md:py-28 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
@@ -88,11 +88,11 @@ const Team = () => {
             >
               Meet the team
             </motion.p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-4 md:mb-6 tracking-tight">
               Building the future of{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">hiring together</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
               A passionate team of recruiters, dreamers and builders on a mission to make hiring change forever.
             </p>
           </motion.div>
@@ -100,7 +100,7 @@ const Team = () => {
       </section>
 
       {/* Team Grid */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      <section className="py-12 md:py-28 bg-muted/30">
         <div className="container">
           {/* Collective Frame */}
           <motion.p
@@ -108,12 +108,12 @@ const Team = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12"
+            className="text-base md:text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-8 md:mb-12 px-4"
           >
             OneRooted wasn't built by product managers guessing at hiring problems. It was built by operators who lived them for decades.
           </motion.p>
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -136,20 +136,20 @@ const Team = () => {
                 transition={{ duration: 0.5 }}
               >
                 <Card className="card-refined group h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-6 pb-6 sm:pt-8 sm:pb-8">
                     {/* Avatar placeholder */}
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 mb-6 flex items-center justify-center">
-                      <span className="text-2xl font-medium text-primary">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 mb-4 sm:mb-6 flex items-center justify-center">
+                      <span className="text-xl sm:text-2xl font-medium text-primary">
                         {member.name.split(" ").map(n => n[0]).join("")}
                       </span>
                     </div>
                     
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
+                    <div className="flex items-start justify-between gap-3 sm:gap-4">
+                      <div className="min-w-0">
                         <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-1">{member.tagline}</p>
-                        <h3 className="font-medium text-lg mb-1">{member.name}</h3>
-                        <p className="text-sm text-primary mb-3">{member.role}</p>
-                        <p className="text-sm text-muted-foreground">{member.bio}</p>
+                        <h3 className="font-medium text-base sm:text-lg mb-1 truncate">{member.name}</h3>
+                        <p className="text-xs sm:text-sm text-primary mb-2 sm:mb-3">{member.role}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground line-clamp-3">{member.bio}</p>
                       </div>
                       
                       <a 
@@ -169,21 +169,21 @@ const Team = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 md:py-28">
         <div className="container">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-10 md:mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">Our values</p>
-            <h2 className="text-3xl md:text-4xl font-medium">What drives us</h2>
+            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">Our values</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium">What drives us</h2>
           </motion.div>
 
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 max-w-5xl mx-auto"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -204,13 +204,13 @@ const Team = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.5 }}
-                className="text-center"
+                className="text-center p-2 sm:p-4"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 mx-auto mb-5 flex items-center justify-center">
-                  <value.icon className="h-7 w-7 text-primary" />
+                <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-primary/10 mx-auto mb-3 sm:mb-5 flex items-center justify-center">
+                  <value.icon className="h-5 w-5 sm:h-7 sm:w-7 text-primary" />
                 </div>
-                <h3 className="font-medium mb-2">{value.title}</h3>
-                <p className="text-sm text-muted-foreground">{value.description}</p>
+                <h3 className="font-medium text-sm sm:text-base mb-1 sm:mb-2">{value.title}</h3>
+                <p className="text-xs sm:text-sm text-muted-foreground">{value.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -218,23 +218,23 @@ const Team = () => {
       </section>
 
       {/* Part of One-Time Group */}
-      <section className="py-20 md:py-28 bg-muted/30">
+      <section className="py-12 md:py-28 bg-muted/30">
         <div className="container">
           <motion.div 
-            className="max-w-3xl mx-auto text-center"
+            className="max-w-3xl mx-auto text-center px-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">Our story</p>
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">Part of the One-Time Group</h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">Our story</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 md:mb-6">Part of the One-Time Group</h2>
+            <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
               OneRooted was born from the One-Time Group's mission to transform how organizations 
               find and nurture talent. With deep roots in recruitment and HR technology, we bring 
               decades of combined experience to every feature we build.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-sm md:text-base text-muted-foreground">
               Based in the Netherlands, we're building a global product for teams everywhere.
             </p>
           </motion.div>
@@ -242,7 +242,7 @@ const Team = () => {
       </section>
 
       {/* Join Us CTA */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 md:py-28">
         <div className="container">
           <motion.div 
             className="max-w-4xl mx-auto"
@@ -256,15 +256,15 @@ const Team = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-xl opacity-50" />
               <div className="absolute inset-[1px] bg-card rounded-xl" />
               
-              <CardContent className="relative py-12 px-8 md:px-12 text-center">
-                <h2 className="text-2xl md:text-3xl font-medium mb-4">
+              <CardContent className="relative py-8 md:py-12 px-6 md:px-12 text-center">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 md:mb-4">
                   Interested in working together?
                 </h2>
-                <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+                <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 max-w-xl mx-auto">
                   We're always looking for talented people who share our mission. 
                   Reach out and let's have a conversation.
                 </p>
-                <Button asChild size="lg" className="btn-accent">
+                <Button asChild size="lg" className="btn-accent h-11 sm:h-12 px-6 sm:px-8">
                   <Link to="/demo" className="flex items-center gap-2">
                     Get in touch
                     <ArrowRight className="h-4 w-4" />
@@ -277,7 +277,7 @@ const Team = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 md:py-28 bg-muted/30 relative overflow-hidden">
+      <section className="py-12 md:py-28 bg-muted/30 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
@@ -295,14 +295,14 @@ const Team = () => {
               <span>Part of the One-Time Group</span>
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 md:mb-6">
               Ready to transform your hiring?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
               Join the teams that have already upgraded from fragmented tools to a unified Hiring OS.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button asChild size="lg" className="btn-accent">
                 <Link to="/why-onerooted" className="flex items-center gap-2">
                   Why we built this
