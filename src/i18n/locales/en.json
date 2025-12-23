@@ -808,7 +808,7 @@
         "label": "OneRooted Light",
         "badge": "Limited Offer",
         "headline": "Stop Wasting Money on Recruiters.",
-        "headlineHighlight": "Hire Smarter for €199.",
+        "headlineHighlight": "Hire Smarter for €99.",
         "subheadline": "Get the full power of OneRooted with 1 vacancy and 100 candidates from our pre-screened talent pool. Professional hiring without the agency price tag.",
         "stats": {
           "companies": "10+",
@@ -1013,10 +1013,10 @@
       },
       "pricing": {
         "label": "Price",
-        "headline": "Start for €199/month",
-        "price": "199",
+        "headline": "Start for €99/month",
+        "price": "99",
         "perMonth": "/month",
-        "previousPrice": "299",
+        "previousPrice": "199",
         "savings": "Save €100/month",
         "cta": "Start now",
         "trust": "No obligations. Cancel anytime.",
@@ -1077,7 +1077,7 @@
       "cta": {
         "headline": "Ready to start?",
         "description": "Start today with OneRooted Light and experience the difference. No big investment, no risk, real results.",
-        "button": "Start now — €199/month",
+        "button": "Start now — €99/month",
         "secondary": "View all plans",
         "trust": "30-day money back guarantee"
       }

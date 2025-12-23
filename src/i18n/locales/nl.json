@@ -808,7 +808,7 @@
         "label": "OneRooted Light",
         "badge": "Tijdelijk Aanbod",
         "headline": "Stop met Geld Verspillen aan Recruiters.",
-        "headlineHighlight": "Hire Slimmer voor €199.",
+        "headlineHighlight": "Hire Slimmer voor €99.",
         "subheadline": "Krijg de volledige kracht van OneRooted met 1 vacature en 100 kandidaten uit onze pre-screened talentpool. Professioneel werven zonder de bureau-prijs.",
         "stats": {
           "companies": "10+",
@@ -1013,10 +1013,10 @@
       },
       "pricing": {
         "label": "Prijs",
-        "headline": "Start voor €199/maand",
-        "price": "199",
+        "headline": "Start voor €99/maand",
+        "price": "99",
         "perMonth": "/maand",
-        "previousPrice": "299",
+        "previousPrice": "199",
         "savings": "Bespaar €100/maand",
         "cta": "Start direct",
         "trust": "Geen verplichtingen. Cancel wanneer je wilt.",
@@ -1077,7 +1077,7 @@
       "cta": {
         "headline": "Klaar om te starten?",
         "description": "Begin vandaag met OneRooted Light en ervaar het verschil. Geen grote investering, geen risico, wel resultaat.",
-        "button": "Start direct — €199/maand",
+        "button": "Start direct — €99/maand",
         "secondary": "Bekijk alle plannen",
         "trust": "30 dagen geld terug garantie"
       }
