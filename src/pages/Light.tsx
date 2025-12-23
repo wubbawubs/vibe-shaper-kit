@@ -20,7 +20,7 @@ import { useTranslation } from "react-i18next";
 import { useLanguageFromUrl } from "@/i18n/useLanguage";
 
 // New components
-import { LightHeroAnimation } from "@/components/marketing/light/LightHeroAnimation";
+// LightHeroAnimation removed - using counters instead
 import { AnimatedCounter } from "@/components/marketing/light/AnimatedCounter";
 import { TrustBadges } from "@/components/marketing/light/TrustBadges";
 import { StickyCTA } from "@/components/marketing/light/StickyCTA";
@@ -71,84 +71,90 @@ const Light = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-gradient-to-br from-primary/10 via-accent/5 to-transparent rounded-full blur-3xl pointer-events-none" />
         
         <div className="container relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Text content */}
-            <motion.div 
-              className="max-w-xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Urgency Banner */}
-              <motion.div
-                className="mb-6"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-              >
-                <UrgencyBanner />
-              </motion.div>
-
-              <motion.div
-                className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-6"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2 }}
-              >
-                <span className="font-medium">{t('lightOffer.page.hero.label')}</span>
-              </motion.div>
-              
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-6 tracking-tight">
-                {t('lightOffer.page.hero.headline')}{" "}
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  {t('lightOffer.page.hero.headlineHighlight')}
-                </span>
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                {t('lightOffer.page.hero.subheadline')}
-              </p>
-
-              {/* Hero CTA */}
-              <motion.div
-                className="flex flex-col sm:flex-row items-start gap-4 mb-8"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
-              >
-                <div className="flex items-baseline gap-2">
-                  <span className="text-xl text-muted-foreground line-through">€{t('lightOffer.page.pricing.previousPrice')}</span>
-                  <span className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    €{t('lightOffer.page.pricing.price')}
-                  </span>
-                  <span className="text-lg text-muted-foreground">{t('lightOffer.page.pricing.perMonth')}</span>
-                </div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-              >
-                <Button asChild size="lg" className="btn-accent text-lg px-8 py-6">
-                  <Link to={localizedPath("/demo")} className="flex items-center gap-2">
-                    {t('lightOffer.page.pricing.cta')}
-                    <ArrowRight className="h-5 w-5" />
-                  </Link>
-                </Button>
-                <p className="text-sm text-muted-foreground mt-3">{t('lightOffer.page.pricing.trust')}</p>
-              </motion.div>
-            </motion.div>
-
-            {/* Right side - Animation */}
+          <motion.div 
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            {/* Urgency Banner */}
             <motion.div
-              className="hidden lg:block"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              className="mb-6 flex justify-center"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
             >
-              <LightHeroAnimation />
+              <UrgencyBanner />
             </motion.div>
-          </div>
+
+            <motion.div
+              className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-6"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <span className="font-medium">{t('lightOffer.page.hero.label')}</span>
+            </motion.div>
+            
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold mb-6 tracking-tight">
+              {t('lightOffer.page.hero.headline')}{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                {t('lightOffer.page.hero.headlineHighlight')}
+              </span>
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto">
+              {t('lightOffer.page.hero.subheadline')}
+            </p>
+
+            {/* Stats with Animated Counters */}
+            <motion.div
+              className="flex flex-wrap justify-center gap-12 mb-10"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              <AnimatedCounter 
+                value={t('lightOffer.page.hero.stats.companies')} 
+                label={t('lightOffer.page.hero.stats.companiesLabel')}
+                duration={1.5}
+              />
+              <AnimatedCounter 
+                value={t('lightOffer.page.hero.stats.candidates')} 
+                label={t('lightOffer.page.hero.stats.candidatesLabel')}
+                duration={2}
+              />
+            </motion.div>
+
+            {/* Hero CTA */}
+            <motion.div
+              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              <div className="flex items-baseline gap-2">
+                <span className="text-2xl text-muted-foreground line-through">€{t('lightOffer.page.pricing.previousPrice')}</span>
+                <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  €{t('lightOffer.page.pricing.price')}
+                </span>
+                <span className="text-xl text-muted-foreground">{t('lightOffer.page.pricing.perMonth')}</span>
+              </div>
+            </motion.div>
+            <motion.div
+              className="mt-6"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+            >
+              <Button asChild size="lg" className="btn-accent text-lg px-8 py-6">
+                <Link to={localizedPath("/demo")} className="flex items-center gap-2">
+                  {t('lightOffer.page.pricing.cta')}
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <p className="text-sm text-muted-foreground mt-3">{t('lightOffer.page.pricing.trust')}</p>
+            </motion.div>
+          </motion.div>
 
           {/* Trust badges */}
           <motion.div
