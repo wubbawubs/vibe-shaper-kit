@@ -789,5 +789,86 @@
     "contact": "Contact",
     "privacy": "Privacy",
     "terms": "Terms"
+  },
+  "lightOffer": {
+    "banner": {
+      "label": "✨ New: Try OneRooted",
+      "headline": "Start small. Grow when ready.",
+      "description": "One vacancy, 100 candidates from our talent pool. Perfect to experience the system.",
+      "price": "99",
+      "perMonth": "/month",
+      "cta": "Try Light →"
+    },
+    "page": {
+      "seo": {
+        "title": "OneRooted Light | Start with one vacancy",
+        "description": "Experience OneRooted with our Light plan: 1 vacancy, 100 candidates from our talent pool for just €99/month. Perfect to get started."
+      },
+      "hero": {
+        "label": "OneRooted Light",
+        "headline": "Experience OneRooted.",
+        "headlineHighlight": "No commitment.",
+        "subheadline": "Start with one vacancy and 100 candidates from our talent pool. Discover how a real hiring system works."
+      },
+      "features": {
+        "title": "What you get",
+        "vacancy": {
+          "title": "1 active vacancy",
+          "description": "Focus on what matters now"
+        },
+        "candidates": {
+          "title": "100 candidates",
+          "description": "From our curated talent pool or add your own"
+        },
+        "system": {
+          "title": "Full system",
+          "description": "No stripped-down version — all features"
+        }
+      },
+      "whyItWorks": {
+        "title": "Why this works",
+        "items": [
+          "Perfect for your first or next hire",
+          "Test the system before you scale",
+          "Upgrade when you're ready",
+          "No obligations"
+        ]
+      },
+      "pricing": {
+        "headline": "Ready to start?",
+        "price": "99",
+        "perMonth": "/month",
+        "cta": "Start now",
+        "trust": "No obligations. Cancel anytime."
+      },
+      "faq": {
+        "label": "FAQ",
+        "headline": "Common questions about Light",
+        "items": [
+          {
+            "question": "What's in the talent pool?",
+            "answer": "Our talent pool contains actively job-seeking professionals that we've screened. You get access to candidates that match your vacancy."
+          },
+          {
+            "question": "Can I add my own candidates?",
+            "answer": "Yes, you can add your own candidates in addition to the talent pool. These count towards your limit of 100 candidates."
+          },
+          {
+            "question": "What happens after 100 candidates?",
+            "answer": "After 100 candidates, you can upgrade to one of our regular plans for unlimited candidates and additional features."
+          },
+          {
+            "question": "How do I upgrade to a full plan?",
+            "answer": "You can upgrade at any time. You keep all your data and candidates. Contact us or upgrade directly in your dashboard."
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Ready to start?",
+        "description": "Start today with OneRooted Light and experience the difference.",
+        "button": "Start now",
+        "secondary": "View all plans"
+      }
+    }
   }
 }

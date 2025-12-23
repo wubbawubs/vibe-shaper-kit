@@ -789,5 +789,86 @@
     "contact": "Contact",
     "privacy": "Privacy",
     "terms": "Voorwaarden"
+  },
+  "lightOffer": {
+    "banner": {
+      "label": "✨ Nieuw: Probeer OneRooted",
+      "headline": "Start klein. Groei wanneer je klaar bent.",
+      "description": "Eén vacature, 100 kandidaten uit onze talentpool. Perfect om het systeem te ervaren.",
+      "price": "99",
+      "perMonth": "/maand",
+      "cta": "Probeer Light →"
+    },
+    "page": {
+      "seo": {
+        "title": "OneRooted Light | Start met één vacature",
+        "description": "Ervaar OneRooted met ons Light plan: 1 vacature, 100 kandidaten uit onze talentpool voor slechts €99/maand. Perfect om te starten."
+      },
+      "hero": {
+        "label": "OneRooted Light",
+        "headline": "Ervaar OneRooted.",
+        "headlineHighlight": "Zonder commitment.",
+        "subheadline": "Start met één vacature en 100 kandidaten uit onze talentpool. Ontdek hoe een echt hiring systeem werkt."
+      },
+      "features": {
+        "title": "Wat je krijgt",
+        "vacancy": {
+          "title": "1 actieve vacature",
+          "description": "Focus op wat nu belangrijk is"
+        },
+        "candidates": {
+          "title": "100 kandidaten",
+          "description": "Uit onze gecureerde talentpool of zelf toevoegen"
+        },
+        "system": {
+          "title": "Volledig systeem",
+          "description": "Geen uitgeklede versie — alle features"
+        }
+      },
+      "whyItWorks": {
+        "title": "Waarom dit werkt",
+        "items": [
+          "Perfect voor je eerste of volgende hire",
+          "Test het systeem voordat je schaalt",
+          "Upgrade wanneer je klaar bent",
+          "Geen verplichtingen"
+        ]
+      },
+      "pricing": {
+        "headline": "Klaar om te starten?",
+        "price": "99",
+        "perMonth": "/maand",
+        "cta": "Start direct",
+        "trust": "Geen verplichtingen. Cancel wanneer je wilt."
+      },
+      "faq": {
+        "label": "FAQ",
+        "headline": "Veelgestelde vragen over Light",
+        "items": [
+          {
+            "question": "Wat zit er in de talentpool?",
+            "answer": "Onze talentpool bevat actief werkzoekende professionals die wij hebben gescreend. Je krijgt toegang tot kandidaten die passen bij jouw vacature."
+          },
+          {
+            "question": "Kan ik kandidaten zelf toevoegen?",
+            "answer": "Ja, je kunt naast de talentpool ook eigen kandidaten toevoegen aan je account. Deze tellen mee in je limiet van 100 kandidaten."
+          },
+          {
+            "question": "Wat gebeurt er na 100 kandidaten?",
+            "answer": "Na 100 kandidaten kun je upgraden naar een van onze reguliere plannen voor onbeperkte kandidaten en extra features."
+          },
+          {
+            "question": "Hoe upgrade ik naar een volledig plan?",
+            "answer": "Upgraden kan op elk moment. Je behoudt al je data en kandidaten. Neem contact op of upgrade direct in je dashboard."
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Klaar om te starten?",
+        "description": "Begin vandaag met OneRooted Light en ervaar het verschil.",
+        "button": "Start direct",
+        "secondary": "Bekijk alle plannen"
+      }
+    }
   }
 }

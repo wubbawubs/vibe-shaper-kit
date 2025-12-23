@@ -255,6 +255,61 @@ const Pricing = () => {
         </div>
       </section>
 
+      {/* Try Light Section */}
+      <section className="py-12 md:py-16">
+        <div className="container">
+          <motion.div
+            className="max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <Card className="card-refined relative overflow-hidden border-primary/20">
+              {/* Background gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
+              <div className="absolute inset-0 shimmer opacity-20" />
+              
+              <CardContent className="relative py-8 md:py-10 px-6 md:px-10">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                  <div className="text-center md:text-left">
+                    <motion.span 
+                      className="inline-block text-sm font-medium text-primary mb-2"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 }}
+                    >
+                      {t('lightOffer.banner.label')}
+                    </motion.span>
+                    <h3 className="text-xl md:text-2xl font-medium mb-2">
+                      {t('lightOffer.banner.headline')}
+                    </h3>
+                    <p className="text-muted-foreground text-sm md:text-base">
+                      {t('lightOffer.banner.description')}
+                    </p>
+                  </div>
+                  
+                  <div className="flex flex-col sm:flex-row items-center gap-4">
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-3xl md:text-4xl font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                        €{t('lightOffer.banner.price')}
+                      </span>
+                      <span className="text-muted-foreground text-sm">{t('lightOffer.banner.perMonth')}</span>
+                    </div>
+                    <Button asChild className="btn-accent whitespace-nowrap">
+                      <Link to={localizedPath("/light")} className="flex items-center gap-2">
+                        {t('lightOffer.banner.cta')}
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
+
       {/* What's included / not included */}
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">

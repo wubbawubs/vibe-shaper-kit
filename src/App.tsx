@@ -25,6 +25,7 @@ import Team from "./pages/Team";
 import Demo from "./pages/Demo";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Light from "./pages/Light";
 import BrandGuide from "./pages/BrandGuide";
 import EmailTemplates from "./pages/EmailTemplates";
 
@@ -83,6 +84,7 @@ const App = () => (
                 <Route path="demo" element={<Demo />} />
                 <Route path="privacy" element={<Privacy />} />
                 <Route path="terms" element={<Terms />} />
+                <Route path="light" element={<Light />} />
               </Route>
 
               {/* Non-prefixed routes (default to English) */}
@@ -97,6 +99,7 @@ const App = () => (
                 <Route path="/demo" element={<Demo />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/terms" element={<Terms />} />
+                <Route path="/light" element={<Light />} />
               </Route>
               
               {/* Utility Routes */}
