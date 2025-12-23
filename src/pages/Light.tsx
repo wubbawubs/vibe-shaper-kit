@@ -19,6 +19,16 @@ import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 import { useLanguageFromUrl } from "@/i18n/useLanguage";
 
+// New components
+import { LightHeroAnimation } from "@/components/marketing/light/LightHeroAnimation";
+import { AnimatedCounter } from "@/components/marketing/light/AnimatedCounter";
+import { TrustBadges } from "@/components/marketing/light/TrustBadges";
+import { StickyCTA } from "@/components/marketing/light/StickyCTA";
+import { ComparisonTable } from "@/components/marketing/light/ComparisonTable";
+import { UrgencyBanner } from "@/components/marketing/light/UrgencyBanner";
+import { HowItWorksSteps } from "@/components/marketing/light/HowItWorksSteps";
+import { TestimonialCard } from "@/components/marketing/light/TestimonialCard";
+
 const Light = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLanguageFromUrl();
@@ -34,6 +44,7 @@ const Light = () => {
   const talentPoolStats = t('lightOffer.page.talentPool.stats', { returnObjects: true }) as Array<{ value: string; label: string }>;
   const talentPoolCategories = t('lightOffer.page.talentPool.categories', { returnObjects: true }) as string[];
   const howItWorksSteps = t('lightOffer.page.howItWorks.steps', { returnObjects: true }) as Array<{ number: string; title: string; description: string }>;
+  const comparisonHeaders = t('lightOffer.page.comparison.headers', { returnObjects: true }) as string[];
   const comparisonRows = t('lightOffer.page.comparison.rows', { returnObjects: true }) as Array<{ label: string; light: string; agency: string; jobboard: string }>;
   const testimonials = t('lightOffer.page.testimonials.items', { returnObjects: true }) as Array<{ quote: string; author: string; role: string; company: string }>;
   const personas = t('lightOffer.page.forWho.personas', { returnObjects: true }) as Array<{ title: string; subtitle: string; description: string; points: string[] }>;
@@ -51,93 +62,102 @@ const Light = () => {
         url="https://onerooted.com/light"
       />
 
+      {/* Sticky CTA */}
+      <StickyCTA />
+
       {/* Hero Section */}
       <section className="py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-gradient-to-br from-primary/10 via-accent/5 to-transparent rounded-full blur-3xl pointer-events-none" />
         
         <div className="container relative">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <motion.div
-              className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground text-sm px-4 py-2 rounded-full mb-4"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.1 }}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text content */}
+            <motion.div 
+              className="max-w-xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              <Sparkles className="h-4 w-4" />
-              <span className="font-semibold">{t('lightOffer.page.hero.badge')}</span>
-            </motion.div>
+              {/* Urgency Banner */}
+              <motion.div
+                className="mb-6"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+              >
+                <UrgencyBanner />
+              </motion.div>
 
-            <motion.div
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-6"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              <span className="font-medium">{t('lightOffer.page.hero.label')}</span>
-            </motion.div>
-            
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold mb-6 tracking-tight">
-              {t('lightOffer.page.hero.headline')}{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                {t('lightOffer.page.hero.headlineHighlight')}
-              </span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              {t('lightOffer.page.hero.subheadline')}
-            </p>
-
-            {/* Stats */}
-            <motion.div
-              className="flex flex-wrap justify-center gap-8 mb-10"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary">{t('lightOffer.page.hero.stats.companies')}</div>
-                <div className="text-sm text-muted-foreground">{t('lightOffer.page.hero.stats.companiesLabel')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary">{t('lightOffer.page.hero.stats.candidates')}</div>
-                <div className="text-sm text-muted-foreground">{t('lightOffer.page.hero.stats.candidatesLabel')}</div>
-              </div>
-            </motion.div>
-
-            {/* Hero CTA */}
-            <motion.div
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl text-muted-foreground line-through">€{t('lightOffer.page.pricing.previousPrice')}</span>
-                <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  €{t('lightOffer.page.pricing.price')}
+              <motion.div
+                className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-6"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2 }}
+              >
+                <span className="font-medium">{t('lightOffer.page.hero.label')}</span>
+              </motion.div>
+              
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-6 tracking-tight">
+                {t('lightOffer.page.hero.headline')}{" "}
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  {t('lightOffer.page.hero.headlineHighlight')}
                 </span>
-                <span className="text-xl text-muted-foreground">{t('lightOffer.page.pricing.perMonth')}</span>
-              </div>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+                {t('lightOffer.page.hero.subheadline')}
+              </p>
+
+              {/* Hero CTA */}
+              <motion.div
+                className="flex flex-col sm:flex-row items-start gap-4 mb-8"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4 }}
+              >
+                <div className="flex items-baseline gap-2">
+                  <span className="text-xl text-muted-foreground line-through">€{t('lightOffer.page.pricing.previousPrice')}</span>
+                  <span className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                    €{t('lightOffer.page.pricing.price')}
+                  </span>
+                  <span className="text-lg text-muted-foreground">{t('lightOffer.page.pricing.perMonth')}</span>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+              >
+                <Button asChild size="lg" className="btn-accent text-lg px-8 py-6">
+                  <Link to={localizedPath("/demo")} className="flex items-center gap-2">
+                    {t('lightOffer.page.pricing.cta')}
+                    <ArrowRight className="h-5 w-5" />
+                  </Link>
+                </Button>
+                <p className="text-sm text-muted-foreground mt-3">{t('lightOffer.page.pricing.trust')}</p>
+              </motion.div>
             </motion.div>
+
+            {/* Right side - Animation */}
             <motion.div
-              className="mt-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              className="hidden lg:block"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <Button asChild size="lg" className="btn-accent text-lg px-8 py-6">
-                <Link to={localizedPath("/demo")} className="flex items-center gap-2">
-                  {t('lightOffer.page.pricing.cta')}
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
-              <p className="text-sm text-muted-foreground mt-3">{t('lightOffer.page.pricing.trust')}</p>
+              <LightHeroAnimation />
             </motion.div>
+          </div>
+
+          {/* Trust badges */}
+          <motion.div
+            className="mt-16"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.7 }}
+          >
+            <TrustBadges />
           </motion.div>
         </div>
       </section>
@@ -166,7 +186,7 @@ const Light = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="h-full border-destructive/20 bg-destructive/5">
+                <Card className="h-full border-destructive/20 bg-destructive/5 hover:shadow-lg transition-shadow">
                   <CardContent className="pt-6">
                     <div className="flex items-center justify-between mb-4">
                       <AlertTriangle className="h-8 w-8 text-destructive" />
@@ -229,7 +249,7 @@ const Light = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="relative overflow-hidden border-2 border-primary/20">
+              <Card className="relative overflow-hidden border-2 border-primary/20 hover:border-primary/30 transition-colors">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
                 <CardContent className="relative pt-8 pb-8">
                   <div className="text-center mb-6">
@@ -287,9 +307,9 @@ const Light = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <Card className="h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
                   <CardContent className="pt-6">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                       <feature.icon className="h-6 w-6 text-accent" />
                     </div>
                     <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
@@ -302,7 +322,7 @@ const Light = () => {
         </div>
       </section>
 
-      {/* Talent Pool Section */}
+      {/* Talent Pool Section with Animated Counters */}
       <section className="py-20 md:py-28">
         <div className="container">
           <motion.div
@@ -320,19 +340,15 @@ const Light = () => {
             </p>
           </motion.div>
 
+          {/* Animated Stats */}
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
             {talentPoolStats.map((stat, index) => (
-              <motion.div
+              <AnimatedCounter
                 key={index}
-                className="text-center"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">{stat.value}</div>
-                <div className="text-muted-foreground">{stat.label}</div>
-              </motion.div>
+                value={stat.value}
+                label={stat.label}
+                duration={2 + index * 0.3}
+              />
             ))}
           </div>
 
@@ -343,15 +359,23 @@ const Light = () => {
             viewport={{ once: true }}
           >
             {talentPoolCategories.map((category, index) => (
-              <span key={index} className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+              <motion.span
+                key={index}
+                className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary/20 transition-colors cursor-default"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                whileHover={{ scale: 1.05 }}
+              >
                 {category}
-              </span>
+              </motion.span>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* How It Works Section with Improved Steps */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="container">
           <motion.div
@@ -366,33 +390,11 @@ const Light = () => {
             </h2>
           </motion.div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-4 gap-6">
-              {howItWorksSteps.map((step, index) => (
-                <motion.div
-                  key={index}
-                  className="relative text-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                    {step.number}
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.description}</p>
-                  {index < howItWorksSteps.length - 1 && (
-                    <div className="hidden md:block absolute top-8 left-[60%] w-[80%] h-0.5 bg-border" />
-                  )}
-                </motion.div>
-              ))}
-            </div>
-          </div>
+          <HowItWorksSteps steps={howItWorksSteps} />
         </div>
       </section>
 
-      {/* Comparison Section */}
+      {/* Comparison Section with Enhanced Table */}
       <section className="py-20 md:py-28">
         <div className="container">
           <motion.div
@@ -407,37 +409,12 @@ const Light = () => {
             </h2>
           </motion.div>
 
-          <motion.div
-            className="max-w-4xl mx-auto overflow-x-auto"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <table className="w-full border-collapse">
-              <thead>
-                <tr>
-                  {(t('lightOffer.page.comparison.headers', { returnObjects: true }) as string[]).map((header, index) => (
-                    <th key={index} className={`p-4 text-left ${index === 1 ? 'bg-primary/10 text-primary font-bold' : ''}`}>
-                      {header}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {comparisonRows.map((row, index) => (
-                  <tr key={index} className="border-t border-border">
-                    <td className="p-4 font-medium">{row.label}</td>
-                    <td className="p-4 bg-primary/5 font-semibold text-primary">{row.light}</td>
-                    <td className="p-4 text-muted-foreground">{row.agency}</td>
-                    <td className="p-4 text-muted-foreground">{row.jobboard}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </motion.div>
+          <div className="max-w-4xl mx-auto">
+            <ComparisonTable headers={comparisonHeaders} rows={comparisonRows} />
+          </div>
 
           <motion.p
-            className="text-center text-xl font-medium mt-8"
+            className="text-center text-xl font-medium mt-8 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -447,7 +424,7 @@ const Light = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section with Enhanced Cards */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="container">
           <motion.div
@@ -464,29 +441,7 @@ const Light = () => {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card className="h-full">
-                  <CardContent className="pt-6">
-                    <Quote className="h-8 w-8 text-primary/30 mb-4" />
-                    <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                        <User className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <p className="font-semibold">{testimonial.author}</p>
-                        <p className="text-sm text-muted-foreground">{testimonial.role}, {testimonial.company}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
+              <TestimonialCard key={index} testimonial={testimonial} index={index} />
             ))}
           </div>
         </div>
@@ -518,9 +473,9 @@ const Light = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <Card className="h-full hover:shadow-lg transition-shadow">
+                  <Card className="h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
                     <CardContent className="pt-6">
-                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4">
+                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <Icon className="h-7 w-7 text-primary" />
                       </div>
                       <h3 className="text-xl font-semibold mb-1">{persona.title}</h3>
@@ -568,9 +523,13 @@ const Light = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <div className="w-14 h-14 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-4">
+                <motion.div
+                  className="w-14 h-14 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-4"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
                   <Shield className="h-7 w-7 text-success" />
-                </div>
+                </motion.div>
                 <h3 className="font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.description}</p>
               </motion.div>
@@ -607,7 +566,7 @@ const Light = () => {
                   <AccordionItem 
                     key={index}
                     value={`faq-${index}`} 
-                    className="border border-border/50 rounded-xl px-6 bg-background"
+                    className="border border-border/50 rounded-xl px-6 bg-background hover:border-border transition-colors"
                   >
                     <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
                       {faq.question}
