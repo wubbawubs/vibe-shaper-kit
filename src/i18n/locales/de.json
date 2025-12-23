@@ -808,7 +808,7 @@
         "label": "OneRooted Light",
         "badge": "Zeitlich begrenztes Angebot",
         "headline": "Hören Sie auf, Geld für Recruiter zu verschwenden.",
-        "headlineHighlight": "Smarter einstellen für €199.",
+        "headlineHighlight": "Smarter einstellen für €99.",
         "subheadline": "Erhalten Sie die volle Power von OneRooted mit 1 Stelle und 100 Kandidaten aus unserem vorgeprüften Talent-Pool. Professionelles Recruiting ohne Agentur-Preise.",
         "stats": {
           "companies": "10+",
@@ -1013,10 +1013,10 @@
       },
       "pricing": {
         "label": "Preis",
-        "headline": "Starten Sie für €199/Monat",
-        "price": "199",
+        "headline": "Starten Sie für €99/Monat",
+        "price": "99",
         "perMonth": "/Monat",
-        "previousPrice": "299",
+        "previousPrice": "199",
         "savings": "Sparen Sie €100/Monat",
         "cta": "Jetzt starten",
         "trust": "Keine Verpflichtungen. Jederzeit kündbar.",
@@ -1077,7 +1077,7 @@
       "cta": {
         "headline": "Bereit zu starten?",
         "description": "Starten Sie heute mit OneRooted Light und erleben Sie den Unterschied. Keine große Investition, kein Risiko, echte Ergebnisse.",
-        "button": "Jetzt starten — €199/Monat",
+        "button": "Jetzt starten — €99/Monat",
         "secondary": "Alle Pläne ansehen",
         "trust": "30 Tage Geld-zurück-Garantie"
       }
