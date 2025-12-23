@@ -807,13 +807,13 @@
       "hero": {
         "label": "OneRooted Light",
         "badge": "Tijdelijk Aanbod",
-        "headline": "Ervaar OneRooted.",
-        "headlineHighlight": "Zonder commitment.",
-        "subheadline": "Start met één vacature en 100 kandidaten uit onze talentpool. Ontdek hoe een echt hiring systeem werkt — zonder grote investering.",
+        "headline": "Stop met Geld Verspillen aan Recruiters.",
+        "headlineHighlight": "Hire Slimmer voor €199.",
+        "subheadline": "Krijg de volledige kracht van OneRooted met 1 vacature en 100 kandidaten uit onze pre-screened talentpool. Professioneel werven zonder de bureau-prijs.",
         "stats": {
-          "companies": "50+",
+          "companies": "10+",
           "companiesLabel": "bedrijven gestart met Light",
-          "candidates": "5.000+",
+          "candidates": "50.000+",
           "candidatesLabel": "kandidaten in talentpool"
         }
       },
@@ -882,11 +882,11 @@
       },
       "talentPool": {
         "label": "Talentpool",
-        "headline": "Toegang tot 5.000+ pre-screened professionals",
+        "headline": "Toegang tot 50.000+ pre-screened professionals",
         "description": "Onze talentpool bevat actief werkzoekende professionals die wij hebben gevalideerd. Geen oude CV's of ghosting — echte kandidaten die klaar zijn voor hun volgende stap.",
         "stats": [
-          { "value": "5.000+", "label": "Actieve profielen" },
-          { "value": "50+", "label": "Verschillende functies" },
+          { "value": "50.000+", "label": "Actieve profielen" },
+          { "value": "10+", "label": "Verschillende functies" },
           { "value": "< 48u", "label": "Gemiddelde responstijd" }
         ],
         "categories": ["Sales & Marketing", "Tech & Development", "Operations", "Finance", "HR & People", "Customer Success"],
@@ -1013,11 +1013,11 @@
       },
       "pricing": {
         "label": "Prijs",
-        "headline": "Start voor €99/maand",
-        "price": "99",
+        "headline": "Start voor €199/maand",
+        "price": "199",
         "perMonth": "/maand",
         "previousPrice": "299",
-        "savings": "Bespaar €200/maand",
+        "savings": "Bespaar €100/maand",
         "cta": "Start direct",
         "trust": "Geen verplichtingen. Cancel wanneer je wilt.",
         "includes": [
@@ -1034,7 +1034,7 @@
         "items": [
           {
             "question": "Wat zit er in de talentpool?",
-            "answer": "Onze talentpool bevat 5.000+ actief werkzoekende professionals die wij hebben gescreend op ervaring, beschikbaarheid en motivatie. Je krijgt toegang tot kandidaten die passen bij jouw vacature, met diverse functies van sales tot development."
+            "answer": "Onze talentpool bevat 50.000+ actief werkzoekende professionals die wij hebben gescreend op ervaring, beschikbaarheid en motivatie. Je krijgt toegang tot kandidaten die passen bij jouw vacature, met diverse functies van sales tot development."
           },
           {
             "question": "Kan ik kandidaten zelf toevoegen?",
@@ -1077,7 +1077,7 @@
       "cta": {
         "headline": "Klaar om te starten?",
         "description": "Begin vandaag met OneRooted Light en ervaar het verschil. Geen grote investering, geen risico, wel resultaat.",
-        "button": "Start direct — €99/maand",
+        "button": "Start direct — €199/maand",
         "secondary": "Bekijk alle plannen",
         "trust": "30 dagen geld terug garantie"
       }

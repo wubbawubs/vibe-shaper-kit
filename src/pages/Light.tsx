@@ -272,7 +272,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.features.label')}</p>
+            <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-3 tracking-wide uppercase">{t('lightOffer.page.features.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
               {t('lightOffer.page.features.title')}
             </h2>
@@ -289,8 +289,8 @@ const Light = () => {
               >
                 <Card className="h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   <CardContent className="pt-6">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4">
-                      <feature.icon className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4">
+                      <feature.icon className="h-6 w-6 text-accent" />
                     </div>
                     <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground">{feature.description}</p>
@@ -311,7 +311,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.talentPool.label')}</p>
+            <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-3 tracking-wide uppercase">{t('lightOffer.page.talentPool.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">
               {t('lightOffer.page.talentPool.headline')}
             </h2>
@@ -330,7 +330,7 @@ const Light = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.value}</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">{stat.value}</div>
                 <div className="text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}

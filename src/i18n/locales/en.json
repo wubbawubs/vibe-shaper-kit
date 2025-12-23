@@ -807,13 +807,13 @@
       "hero": {
         "label": "OneRooted Light",
         "badge": "Limited Offer",
-        "headline": "Experience OneRooted.",
-        "headlineHighlight": "No commitment.",
-        "subheadline": "Start with one vacancy and 100 candidates from our talent pool. Discover how a real hiring system works — without the big investment.",
+        "headline": "Stop Wasting Money on Recruiters.",
+        "headlineHighlight": "Hire Smarter for €199.",
+        "subheadline": "Get the full power of OneRooted with 1 vacancy and 100 candidates from our pre-screened talent pool. Professional hiring without the agency price tag.",
         "stats": {
-          "companies": "50+",
+          "companies": "10+",
           "companiesLabel": "companies started with Light",
-          "candidates": "5,000+",
+          "candidates": "50,000+",
           "candidatesLabel": "candidates in talent pool"
         }
       },
@@ -882,11 +882,11 @@
       },
       "talentPool": {
         "label": "Talent Pool",
-        "headline": "Access to 5,000+ pre-screened professionals",
+        "headline": "Access to 50,000+ pre-screened professionals",
         "description": "Our talent pool contains actively job-seeking professionals that we've validated. No old CVs or ghosting — real candidates ready for their next step.",
         "stats": [
-          { "value": "5,000+", "label": "Active profiles" },
-          { "value": "50+", "label": "Different roles" },
+          { "value": "50,000+", "label": "Active profiles" },
+          { "value": "10+", "label": "Different roles" },
           { "value": "< 48h", "label": "Average response time" }
         ],
         "categories": ["Sales & Marketing", "Tech & Development", "Operations", "Finance", "HR & People", "Customer Success"],
@@ -1013,11 +1013,11 @@
       },
       "pricing": {
         "label": "Price",
-        "headline": "Start for €99/month",
-        "price": "99",
+        "headline": "Start for €199/month",
+        "price": "199",
         "perMonth": "/month",
         "previousPrice": "299",
-        "savings": "Save €200/month",
+        "savings": "Save €100/month",
         "cta": "Start now",
         "trust": "No obligations. Cancel anytime.",
         "includes": [
@@ -1034,7 +1034,7 @@
         "items": [
           {
             "question": "What's in the talent pool?",
-            "answer": "Our talent pool contains 5,000+ actively job-seeking professionals that we've screened on experience, availability, and motivation. You get access to candidates that match your vacancy, with diverse roles from sales to development."
+            "answer": "Our talent pool contains 50,000+ actively job-seeking professionals that we've screened on experience, availability, and motivation. You get access to candidates that match your vacancy, with diverse roles from sales to development."
           },
           {
             "question": "Can I add my own candidates?",
@@ -1077,7 +1077,7 @@
       "cta": {
         "headline": "Ready to start?",
         "description": "Start today with OneRooted Light and experience the difference. No big investment, no risk, real results.",
-        "button": "Start now — €99/month",
+        "button": "Start now — €199/month",
         "secondary": "View all plans",
         "trust": "30-day money back guarantee"
       }
