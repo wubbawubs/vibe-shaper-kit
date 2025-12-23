@@ -789,5 +789,86 @@
     "contact": "Kontakt",
     "privacy": "Datenschutz",
     "terms": "AGB"
+  },
+  "lightOffer": {
+    "banner": {
+      "label": "✨ Neu: OneRooted testen",
+      "headline": "Klein anfangen. Wachsen wenn bereit.",
+      "description": "Eine Stelle, 100 Kandidaten aus unserem Talent-Pool. Perfekt um das System zu erleben.",
+      "price": "99",
+      "perMonth": "/Monat",
+      "cta": "Light testen →"
+    },
+    "page": {
+      "seo": {
+        "title": "OneRooted Light | Starten Sie mit einer Stelle",
+        "description": "Erleben Sie OneRooted mit unserem Light-Plan: 1 Stelle, 100 Kandidaten aus unserem Talent-Pool für nur €99/Monat. Perfekt zum Starten."
+      },
+      "hero": {
+        "label": "OneRooted Light",
+        "headline": "OneRooted erleben.",
+        "headlineHighlight": "Ohne Verpflichtung.",
+        "subheadline": "Starten Sie mit einer Stelle und 100 Kandidaten aus unserem Talent-Pool. Entdecken Sie, wie ein echtes Hiring-System funktioniert."
+      },
+      "features": {
+        "title": "Was Sie bekommen",
+        "vacancy": {
+          "title": "1 aktive Stelle",
+          "description": "Fokus auf das, was jetzt wichtig ist"
+        },
+        "candidates": {
+          "title": "100 Kandidaten",
+          "description": "Aus unserem kuratierten Talent-Pool oder selbst hinzufügen"
+        },
+        "system": {
+          "title": "Volles System",
+          "description": "Keine abgespeckte Version — alle Features"
+        }
+      },
+      "whyItWorks": {
+        "title": "Warum das funktioniert",
+        "items": [
+          "Perfekt für Ihre erste oder nächste Einstellung",
+          "Testen Sie das System bevor Sie skalieren",
+          "Upgraden Sie wenn Sie bereit sind",
+          "Keine Verpflichtungen"
+        ]
+      },
+      "pricing": {
+        "headline": "Bereit zu starten?",
+        "price": "99",
+        "perMonth": "/Monat",
+        "cta": "Jetzt starten",
+        "trust": "Keine Verpflichtungen. Jederzeit kündbar."
+      },
+      "faq": {
+        "label": "FAQ",
+        "headline": "Häufige Fragen zu Light",
+        "items": [
+          {
+            "question": "Was ist im Talent-Pool?",
+            "answer": "Unser Talent-Pool enthält aktiv arbeitssuchende Fachkräfte, die wir geprüft haben. Sie erhalten Zugang zu Kandidaten, die zu Ihrer Stelle passen."
+          },
+          {
+            "question": "Kann ich eigene Kandidaten hinzufügen?",
+            "answer": "Ja, Sie können zusätzlich zum Talent-Pool eigene Kandidaten hinzufügen. Diese zählen zu Ihrem Limit von 100 Kandidaten."
+          },
+          {
+            "question": "Was passiert nach 100 Kandidaten?",
+            "answer": "Nach 100 Kandidaten können Sie auf einen unserer regulären Pläne upgraden für unbegrenzte Kandidaten und zusätzliche Features."
+          },
+          {
+            "question": "Wie upgrade ich auf einen vollen Plan?",
+            "answer": "Sie können jederzeit upgraden. Sie behalten alle Ihre Daten und Kandidaten. Kontaktieren Sie uns oder upgraden Sie direkt in Ihrem Dashboard."
+          }
+        ]
+      },
+      "cta": {
+        "headline": "Bereit zu starten?",
+        "description": "Starten Sie heute mit OneRooted Light und erleben Sie den Unterschied.",
+        "button": "Jetzt starten",
+        "secondary": "Alle Pläne ansehen"
+      }
+    }
   }
 }
