@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, AlertTriangle, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { HiringFunnelAnimation } from "./HiringFunnelAnimation";
@@ -93,6 +93,22 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="lg:col-span-7 relative"
           >
+            {/* KPI/Bottleneck Insight Bar - Desktop only */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="hidden md:flex items-center gap-4 mb-4 px-4 py-3 rounded-xl bg-amber-500/10 border border-amber-500/20"
+            >
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-amber-500/15 shrink-0">
+                <AlertTriangle className="h-4 w-4 text-amber-600" />
+              </div>
+              <p className="text-sm text-amber-800 dark:text-amber-300">
+                <span className="font-medium">Bottleneck in 'Screen'</span>
+                {" "}— kandidaten blijven gemiddeld 12 dagen hangen.
+              </p>
+            </motion.div>
+
             <div className="relative aspect-[4/3] md:aspect-[16/10] rounded-xl md:rounded-2xl overflow-hidden bg-gradient-to-br from-muted/30 to-muted/10 border border-border/50 shadow-xl md:shadow-2xl">
               <HiringFunnelAnimation />
             </div>
