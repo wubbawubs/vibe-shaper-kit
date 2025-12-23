@@ -801,29 +801,206 @@
     },
     "page": {
       "seo": {
-        "title": "OneRooted Light | Starten Sie mit einer Stelle",
-        "description": "Erleben Sie OneRooted mit unserem Light-Plan: 1 Stelle, 100 Kandidaten aus unserem Talent-Pool für nur €99/Monat. Perfekt zum Starten."
+        "title": "OneRooted Light | Starten Sie mit einer Stelle für €99/Monat",
+        "description": "Erleben Sie OneRooted mit unserem Light-Plan: 1 Stelle, 100 Kandidaten aus unserem Talent-Pool für nur €99/Monat. Perfekt zum Starten ohne Verpflichtung."
       },
       "hero": {
         "label": "OneRooted Light",
+        "badge": "Zeitlich begrenztes Angebot",
         "headline": "OneRooted erleben.",
         "headlineHighlight": "Ohne Verpflichtung.",
-        "subheadline": "Starten Sie mit einer Stelle und 100 Kandidaten aus unserem Talent-Pool. Entdecken Sie, wie ein echtes Hiring-System funktioniert."
+        "subheadline": "Starten Sie mit einer Stelle und 100 Kandidaten aus unserem Talent-Pool. Entdecken Sie, wie ein echtes Hiring-System funktioniert — ohne große Investition.",
+        "stats": {
+          "companies": "50+",
+          "companiesLabel": "Unternehmen mit Light gestartet",
+          "candidates": "5.000+",
+          "candidatesLabel": "Kandidaten im Talent-Pool"
+        }
+      },
+      "problem": {
+        "label": "Das Problem",
+        "headline": "Warum traditionelles Recruiting für wachsende Unternehmen nicht funktioniert",
+        "items": [
+          {
+            "title": "Recruitment-Agenturen",
+            "description": "€5.000-15.000 pro Einstellung. Keine Garantie. Keine Kontrolle über den Prozess.",
+            "cost": "€5.000+"
+          },
+          {
+            "title": "Job-Portale",
+            "description": "Hunderte Bewerbungen. 90% nicht relevant. Stunden an Screening.",
+            "cost": "€500+"
+          },
+          {
+            "title": "Selbst machen",
+            "description": "Tabellenkalkulationen, E-Mails, keine Übersicht. Gute Kandidaten gehen verloren.",
+            "cost": "Unbezahlbar"
+          }
+        ],
+        "conclusion": "Sie brauchen kein größeres Budget. Sie brauchen ein besseres System."
+      },
+      "solution": {
+        "label": "Die Lösung",
+        "headline": "OneRooted Light: alles was Sie zum Starten brauchen",
+        "description": "Light ist keine abgespeckte Version. Es ist dasselbe leistungsstarke Tool, das größere Teams nutzen — mit Fokus auf Ihre erste Einstellung.",
+        "points": [
+          "Dasselbe System wie unsere Premium-Kunden",
+          "Zugang zu unserem kuratierten Talent-Pool",
+          "Alle Features, keine Funktionseinschränkungen",
+          "Upgraden Sie wenn Sie bereit für mehr sind"
+        ]
       },
       "features": {
-        "title": "Was Sie bekommen",
-        "vacancy": {
-          "title": "1 aktive Stelle",
-          "description": "Fokus auf das, was jetzt wichtig ist"
-        },
-        "candidates": {
-          "title": "100 Kandidaten",
-          "description": "Aus unserem kuratierten Talent-Pool oder selbst hinzufügen"
-        },
-        "system": {
-          "title": "Volles System",
-          "description": "Keine abgespeckte Version — alle Features"
-        }
+        "label": "Was Sie Bekommen",
+        "title": "Alles was Sie brauchen. Nichts was Sie nicht brauchen.",
+        "items": [
+          {
+            "title": "1 aktive Stelle",
+            "description": "Fokus auf das, was jetzt wichtig ist. Keine Ablenkung durch mehrere Rollen."
+          },
+          {
+            "title": "100 Kandidaten",
+            "description": "Aus unserem kuratierten Talent-Pool oder fügen Sie eigene Kandidaten hinzu."
+          },
+          {
+            "title": "Vollständiges Ranking",
+            "description": "Automatische Bewertung und Rangfolge aller Kandidaten."
+          },
+          {
+            "title": "Visuelle Pipeline",
+            "description": "Sehen Sie genau, wo jeder Kandidat in Ihrem Prozess steht."
+          },
+          {
+            "title": "Team-Zusammenarbeit",
+            "description": "Laden Sie Kollegen ein, um Feedback zu geben und Entscheidungen zu treffen."
+          },
+          {
+            "title": "Alle Integrationen",
+            "description": "Verbinden Sie sich mit Ihren bestehenden Tools und Workflows."
+          }
+        ]
+      },
+      "talentPool": {
+        "label": "Talent-Pool",
+        "headline": "Zugang zu 5.000+ vorab geprüften Fachkräften",
+        "description": "Unser Talent-Pool enthält aktiv arbeitssuchende Fachkräfte, die wir validiert haben. Keine alten Lebensläufe oder Ghosting — echte Kandidaten, die bereit für ihren nächsten Schritt sind.",
+        "stats": [
+          { "value": "5.000+", "label": "Aktive Profile" },
+          { "value": "50+", "label": "Verschiedene Rollen" },
+          { "value": "< 48h", "label": "Durchschnittliche Antwortzeit" }
+        ],
+        "categories": ["Sales & Marketing", "Tech & Entwicklung", "Operations", "Finanzen", "HR & People", "Customer Success"],
+        "cta": "Talent-Pool aufrufen"
+      },
+      "howItWorks": {
+        "label": "Wie Es Funktioniert",
+        "headline": "Vom Start zur ersten Einstellung in 4 Schritten",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Abonnement starten",
+            "description": "Innerhalb von 5 Minuten aktiv. Kein langes Onboarding oder Verkaufsgespräche."
+          },
+          {
+            "number": "2",
+            "title": "Stelle erstellen",
+            "description": "Fügen Sie Ihre Rolle hinzu und definieren Sie Ihre Kriterien. Wir helfen mit Vorlagen."
+          },
+          {
+            "number": "3",
+            "title": "Matches erhalten",
+            "description": "Erhalten Sie sofort Kandidaten aus unserem Talent-Pool, die zu Ihrer Rolle passen."
+          },
+          {
+            "number": "4",
+            "title": "Interviews führen",
+            "description": "Planen Sie Interviews, sammeln Sie Feedback und machen Sie Ihre Einstellung."
+          }
+        ]
+      },
+      "comparison": {
+        "label": "Vergleich",
+        "headline": "Light vs. traditionelle Optionen",
+        "headers": ["", "OneRooted Light", "Recruitment-Agentur", "Job-Portal"],
+        "rows": [
+          { "label": "Monatliche Kosten", "light": "€99", "agency": "€5.000+", "jobboard": "€500+" },
+          { "label": "Zugang zu Kandidaten", "light": "✓ 100 Kandidaten", "agency": "✓ Begrenzt", "jobboard": "✓ Unbegrenzt (unqualifiziert)" },
+          { "label": "Vor-Screening", "light": "✓ Inklusive", "agency": "✓ Inklusive", "jobboard": "✗ Selbst machen" },
+          { "label": "Hiring-System", "light": "✓ Vollständige Plattform", "agency": "✗ Tabellenkalkulationen", "jobboard": "✗ E-Mail-Chaos" },
+          { "label": "Kündigung", "light": "✓ Monatlich", "agency": "✗ Pro Projekt", "jobboard": "✓ Monatlich" },
+          { "label": "Datenbesitz", "light": "✓ Immer Ihre", "agency": "✗ Deren", "jobboard": "✗ Begrenzt" }
+        ],
+        "conclusion": "€99/Monat für ein professionelles Hiring-System. Keine versteckten Kosten."
+      },
+      "testimonials": {
+        "label": "Was Andere Sagen",
+        "headline": "Teams, die mit Light gestartet haben",
+        "items": [
+          {
+            "quote": "Wir hatten kein Budget für eine Agentur, brauchten aber Struktur. Light war genau das, was wir brauchten, um unseren ersten Entwickler zu finden.",
+            "author": "Sarah van den Berg",
+            "role": "Gründerin",
+            "company": "TechStartup BV"
+          },
+          {
+            "quote": "Der Talent-Pool ist Gold wert. Innerhalb einer Woche hatten wir 3 starke Kandidaten für unsere Sales-Rolle.",
+            "author": "Mark de Vries",
+            "role": "CEO",
+            "company": "GrowthCo"
+          },
+          {
+            "quote": "Endlich ein Hiring-Tool, das zu einem kleinen Team passt. Kein Overkill, einfach was funktioniert.",
+            "author": "Lisa Jansen",
+            "role": "Operations Managerin",
+            "company": "ScaleUp Studio"
+          }
+        ]
+      },
+      "forWho": {
+        "label": "Für Wen",
+        "headline": "Light ist perfekt für...",
+        "personas": [
+          {
+            "title": "Startups",
+            "subtitle": "Erste Einstellungen",
+            "description": "Bauen Sie Ihr Kernteam mit einem professionellen System von Tag 1 auf.",
+            "points": ["Keine große Investition nötig", "Lernen Sie Hiring richtig", "Skalieren Sie wenn Sie wachsen"]
+          },
+          {
+            "title": "Kleine Teams",
+            "subtitle": "Gelegentliches Hiring",
+            "description": "Perfekt wenn Sie 1-2 Mal pro Jahr jemanden einstellen, aber trotzdem Struktur wollen.",
+            "points": ["Zahlen Sie nur wenn Sie einstellen", "Behalten Sie Ihre Kandidaten-Daten", "Upgraden wenn nötig"]
+          },
+          {
+            "title": "Gründer",
+            "subtitle": "Hands-on Hiring",
+            "description": "Für Gründer, die Hiring ernst nehmen, aber kein HR-Team haben.",
+            "points": ["Behalten Sie die Kontrolle", "Treffen Sie bessere Entscheidungen", "Sparen Sie Tausende von Euros"]
+          }
+        ]
+      },
+      "guarantee": {
+        "label": "Garantie",
+        "headline": "Risikofrei testen",
+        "items": [
+          {
+            "title": "Kein Langzeitvertrag",
+            "description": "Monatlich kündbar. Keine Fragen gestellt."
+          },
+          {
+            "title": "Behalten Sie Ihre Daten",
+            "description": "Wenn Sie aufhören, exportieren Sie alles. Ihre Kandidaten bleiben Ihre."
+          },
+          {
+            "title": "Upgraden wenn Sie wollen",
+            "description": "Bereit für mehr? Nahtloses Upgrade auf einen vollen Plan."
+          },
+          {
+            "title": "30 Tage Geld zurück",
+            "description": "Nicht zufrieden in den ersten 30 Tagen? Volle Rückerstattung."
+          }
+        ]
       },
       "whyItWorks": {
         "title": "Warum das funktioniert",
@@ -835,11 +1012,21 @@
         ]
       },
       "pricing": {
-        "headline": "Bereit zu starten?",
+        "label": "Preis",
+        "headline": "Starten Sie für €99/Monat",
         "price": "99",
         "perMonth": "/Monat",
+        "previousPrice": "299",
+        "savings": "Sparen Sie €200/Monat",
         "cta": "Jetzt starten",
-        "trust": "Keine Verpflichtungen. Jederzeit kündbar."
+        "trust": "Keine Verpflichtungen. Jederzeit kündbar.",
+        "includes": [
+          "1 aktive Stelle",
+          "100 Kandidaten aus Talent-Pool",
+          "Vollständiges OneRooted-System",
+          "Alle Features inklusive",
+          "E-Mail-Support"
+        ]
       },
       "faq": {
         "label": "FAQ",
@@ -847,27 +1034,52 @@
         "items": [
           {
             "question": "Was ist im Talent-Pool?",
-            "answer": "Unser Talent-Pool enthält aktiv arbeitssuchende Fachkräfte, die wir geprüft haben. Sie erhalten Zugang zu Kandidaten, die zu Ihrer Stelle passen."
+            "answer": "Unser Talent-Pool enthält 5.000+ aktiv arbeitssuchende Fachkräfte, die wir auf Erfahrung, Verfügbarkeit und Motivation geprüft haben. Sie erhalten Zugang zu Kandidaten, die zu Ihrer Stelle passen, mit diversen Rollen von Sales bis Entwicklung."
           },
           {
             "question": "Kann ich eigene Kandidaten hinzufügen?",
-            "answer": "Ja, Sie können zusätzlich zum Talent-Pool eigene Kandidaten hinzufügen. Diese zählen zu Ihrem Limit von 100 Kandidaten."
+            "answer": "Ja, Sie können zusätzlich zum Talent-Pool eigene Kandidaten hinzufügen. Das können Bewerber von Ihrer Website sein, LinkedIn-Kontakte oder Empfehlungen. Diese zählen zu Ihrem Limit von 100 Kandidaten."
           },
           {
             "question": "Was passiert nach 100 Kandidaten?",
-            "answer": "Nach 100 Kandidaten können Sie auf einen unserer regulären Pläne upgraden für unbegrenzte Kandidaten und zusätzliche Features."
+            "answer": "Nach 100 Kandidaten können Sie auf einen unserer regulären Pläne (Base, Plus oder Premium) upgraden für unbegrenzte Kandidaten. Sie behalten alle Ihre Daten und müssen nichts neu einrichten."
           },
           {
             "question": "Wie upgrade ich auf einen vollen Plan?",
-            "answer": "Sie können jederzeit upgraden. Sie behalten alle Ihre Daten und Kandidaten. Kontaktieren Sie uns oder upgraden Sie direkt in Ihrem Dashboard."
+            "answer": "Sie können jederzeit über Ihr Dashboard upgraden. Sie behalten alle Ihre Daten, Kandidaten und Einstellungen. Der Übergang ist nahtlos — Sie machen einfach weiter, wo Sie aufgehört haben."
+          },
+          {
+            "question": "Ist das wirklich dasselbe System wie die teuren Pläne?",
+            "answer": "Ja, 100%. Sie erhalten genau dieselben Features, dieselbe Oberfläche, dieselbe Qualität. Der einzige Unterschied ist die Anzahl der Stellen und Kandidaten. Keine Feature-Sperren, keine 'Lite'-Version."
+          },
+          {
+            "question": "Kann ich monatlich kündigen?",
+            "answer": "Absolut. Light ist Monat-zu-Monat ohne langfristige Verpflichtung. Sie können jederzeit kündigen und haben Zugang bis zum Ende Ihres Abrechnungszeitraums."
+          },
+          {
+            "question": "Was wenn ich mehr als 1 Stelle brauche?",
+            "answer": "Dann ist es Zeit, auf Base (€299/Monat) für unbegrenzte Stellen zu upgraden. Dies kann jederzeit erfolgen und Ihre Daten bleiben erhalten."
+          },
+          {
+            "question": "Wie schnell bekomme ich Zugang zum Talent-Pool?",
+            "answer": "Sofort nach Aktivierung haben Sie vollen Zugang zum Talent-Pool. Sie können sofort mit der Suche beginnen und Matches erhalten."
+          },
+          {
+            "question": "Was ist der Unterschied zu einem Recruiter?",
+            "answer": "Ein Recruiter kostet €5.000-15.000 pro Einstellung und Sie haben keine Kontrolle über den Prozess. Mit Light haben Sie volle Kontrolle, Zugang zu mehr Kandidaten und zahlen nur €99/Monat — unabhängig davon, wie viele Leute Sie einstellen."
+          },
+          {
+            "question": "Bekomme ich auch Support?",
+            "answer": "Ja, Sie erhalten E-Mail-Support mit Antwort innerhalb von 24 Stunden an Werktagen. Wir helfen gerne bei Fragen zum System, Ihrer Stelle oder dem Einstellungsprozess."
           }
         ]
       },
       "cta": {
         "headline": "Bereit zu starten?",
-        "description": "Starten Sie heute mit OneRooted Light und erleben Sie den Unterschied.",
-        "button": "Jetzt starten",
-        "secondary": "Alle Pläne ansehen"
+        "description": "Starten Sie heute mit OneRooted Light und erleben Sie den Unterschied. Keine große Investition, kein Risiko, echte Ergebnisse.",
+        "button": "Jetzt starten — €99/Monat",
+        "secondary": "Alle Pläne ansehen",
+        "trust": "30 Tage Geld-zurück-Garantie"
       }
     }
   }

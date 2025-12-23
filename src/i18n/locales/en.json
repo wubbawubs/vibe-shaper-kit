@@ -801,29 +801,206 @@
     },
     "page": {
       "seo": {
-        "title": "OneRooted Light | Start with one vacancy",
-        "description": "Experience OneRooted with our Light plan: 1 vacancy, 100 candidates from our talent pool for just €99/month. Perfect to get started."
+        "title": "OneRooted Light | Start with one vacancy for €99/month",
+        "description": "Experience OneRooted with our Light plan: 1 vacancy, 100 candidates from our talent pool for just €99/month. Perfect to get started without commitment."
       },
       "hero": {
         "label": "OneRooted Light",
+        "badge": "Limited Offer",
         "headline": "Experience OneRooted.",
         "headlineHighlight": "No commitment.",
-        "subheadline": "Start with one vacancy and 100 candidates from our talent pool. Discover how a real hiring system works."
+        "subheadline": "Start with one vacancy and 100 candidates from our talent pool. Discover how a real hiring system works — without the big investment.",
+        "stats": {
+          "companies": "50+",
+          "companiesLabel": "companies started with Light",
+          "candidates": "5,000+",
+          "candidatesLabel": "candidates in talent pool"
+        }
+      },
+      "problem": {
+        "label": "The Problem",
+        "headline": "Why traditional recruitment doesn't work for growing companies",
+        "items": [
+          {
+            "title": "Recruitment agencies",
+            "description": "€5,000-15,000 per hire. No guarantee. No control over the process.",
+            "cost": "€5,000+"
+          },
+          {
+            "title": "Job boards",
+            "description": "Hundreds of applications. 90% not relevant. Hours of screening.",
+            "cost": "€500+"
+          },
+          {
+            "title": "DIY hiring",
+            "description": "Spreadsheets, emails, no overview. Good candidates fall through the cracks.",
+            "cost": "Priceless"
+          }
+        ],
+        "conclusion": "You don't need a bigger budget. You need a better system."
+      },
+      "solution": {
+        "label": "The Solution",
+        "headline": "OneRooted Light: everything you need to get started",
+        "description": "Light is not a stripped-down version. It's the same powerful tool that larger teams use — with a focus on your first hire.",
+        "points": [
+          "Same system as our Premium customers",
+          "Access to our curated talent pool",
+          "All features, no functionality restrictions",
+          "Upgrade when you're ready for more"
+        ]
       },
       "features": {
-        "title": "What you get",
-        "vacancy": {
-          "title": "1 active vacancy",
-          "description": "Focus on what matters now"
-        },
-        "candidates": {
-          "title": "100 candidates",
-          "description": "From our curated talent pool or add your own"
-        },
-        "system": {
-          "title": "Full system",
-          "description": "No stripped-down version — all features"
-        }
+        "label": "What You Get",
+        "title": "Everything you need. Nothing you don't.",
+        "items": [
+          {
+            "title": "1 active vacancy",
+            "description": "Focus on what matters now. No distraction from multiple roles."
+          },
+          {
+            "title": "100 candidates",
+            "description": "From our curated talent pool or add your own candidates."
+          },
+          {
+            "title": "Full ranking",
+            "description": "Automatic scoring and ranking of all candidates."
+          },
+          {
+            "title": "Visual pipeline",
+            "description": "See exactly where each candidate stands in your process."
+          },
+          {
+            "title": "Team collaboration",
+            "description": "Invite colleagues to provide feedback and make decisions."
+          },
+          {
+            "title": "All integrations",
+            "description": "Connect with your existing tools and workflows."
+          }
+        ]
+      },
+      "talentPool": {
+        "label": "Talent Pool",
+        "headline": "Access to 5,000+ pre-screened professionals",
+        "description": "Our talent pool contains actively job-seeking professionals that we've validated. No old CVs or ghosting — real candidates ready for their next step.",
+        "stats": [
+          { "value": "5,000+", "label": "Active profiles" },
+          { "value": "50+", "label": "Different roles" },
+          { "value": "< 48h", "label": "Average response time" }
+        ],
+        "categories": ["Sales & Marketing", "Tech & Development", "Operations", "Finance", "HR & People", "Customer Success"],
+        "cta": "Access talent pool"
+      },
+      "howItWorks": {
+        "label": "How It Works",
+        "headline": "From start to first hire in 4 steps",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Start your subscription",
+            "description": "Active within 5 minutes. No lengthy onboarding or sales calls."
+          },
+          {
+            "number": "2",
+            "title": "Create your vacancy",
+            "description": "Add your role and define your criteria. We help with templates."
+          },
+          {
+            "number": "3",
+            "title": "Receive matches",
+            "description": "Get immediate candidates from our talent pool that match your role."
+          },
+          {
+            "number": "4",
+            "title": "Conduct interviews",
+            "description": "Schedule interviews, gather feedback, and make your hire."
+          }
+        ]
+      },
+      "comparison": {
+        "label": "Comparison",
+        "headline": "Light vs. traditional options",
+        "headers": ["", "OneRooted Light", "Recruitment Agency", "Job Board"],
+        "rows": [
+          { "label": "Monthly cost", "light": "€99", "agency": "€5,000+", "jobboard": "€500+" },
+          { "label": "Access to candidates", "light": "✓ 100 candidates", "agency": "✓ Limited", "jobboard": "✓ Unlimited (unqualified)" },
+          { "label": "Pre-screening", "light": "✓ Included", "agency": "✓ Included", "jobboard": "✗ Do it yourself" },
+          { "label": "Hiring system", "light": "✓ Full platform", "agency": "✗ Spreadsheets", "jobboard": "✗ Email chaos" },
+          { "label": "Cancellation", "light": "✓ Monthly", "agency": "✗ Per project", "jobboard": "✓ Monthly" },
+          { "label": "Data ownership", "light": "✓ Always yours", "agency": "✗ Theirs", "jobboard": "✗ Limited" }
+        ],
+        "conclusion": "€99/month for a professional hiring system. No hidden costs."
+      },
+      "testimonials": {
+        "label": "What Others Say",
+        "headline": "Teams that started with Light",
+        "items": [
+          {
+            "quote": "We didn't have the budget for an agency but needed structure. Light was exactly what we needed to find our first developer.",
+            "author": "Sarah van den Berg",
+            "role": "Founder",
+            "company": "TechStartup BV"
+          },
+          {
+            "quote": "The talent pool is worth its weight in gold. Within a week we had 3 strong candidates for our sales role.",
+            "author": "Mark de Vries",
+            "role": "CEO",
+            "company": "GrowthCo"
+          },
+          {
+            "quote": "Finally a hiring tool that fits a small team. No overkill, just what works.",
+            "author": "Lisa Jansen",
+            "role": "Operations Manager",
+            "company": "ScaleUp Studio"
+          }
+        ]
+      },
+      "forWho": {
+        "label": "For Whom",
+        "headline": "Light is perfect for...",
+        "personas": [
+          {
+            "title": "Startups",
+            "subtitle": "First hires",
+            "description": "Build your core team with a professional system from day 1.",
+            "points": ["No big investment needed", "Learn hiring the right way", "Scale as you grow"]
+          },
+          {
+            "title": "Small Teams",
+            "subtitle": "Occasional hiring",
+            "description": "Perfect when you hire 1-2 times per year but still want structure.",
+            "points": ["Only pay when you're hiring", "Keep your candidate data", "Upgrade if needed"]
+          },
+          {
+            "title": "Founders",
+            "subtitle": "Hands-on hiring",
+            "description": "For founders who take hiring seriously but don't have an HR team.",
+            "points": ["Stay in control", "Make better decisions", "Save thousands of euros"]
+          }
+        ]
+      },
+      "guarantee": {
+        "label": "Guarantee",
+        "headline": "Try risk-free",
+        "items": [
+          {
+            "title": "No long-term contract",
+            "description": "Cancel monthly. No questions asked."
+          },
+          {
+            "title": "Keep your data",
+            "description": "If you stop, export everything. Your candidates stay yours."
+          },
+          {
+            "title": "Upgrade when you want",
+            "description": "Ready for more? Upgrade seamlessly to a full plan."
+          },
+          {
+            "title": "30-day money back",
+            "description": "Not satisfied in the first 30 days? Full refund."
+          }
+        ]
       },
       "whyItWorks": {
         "title": "Why this works",
@@ -835,11 +1012,21 @@
         ]
       },
       "pricing": {
-        "headline": "Ready to start?",
+        "label": "Price",
+        "headline": "Start for €99/month",
         "price": "99",
         "perMonth": "/month",
+        "previousPrice": "299",
+        "savings": "Save €200/month",
         "cta": "Start now",
-        "trust": "No obligations. Cancel anytime."
+        "trust": "No obligations. Cancel anytime.",
+        "includes": [
+          "1 active vacancy",
+          "100 candidates from talent pool",
+          "Full OneRooted system",
+          "All features included",
+          "Email support"
+        ]
       },
       "faq": {
         "label": "FAQ",
@@ -847,27 +1034,52 @@
         "items": [
           {
             "question": "What's in the talent pool?",
-            "answer": "Our talent pool contains actively job-seeking professionals that we've screened. You get access to candidates that match your vacancy."
+            "answer": "Our talent pool contains 5,000+ actively job-seeking professionals that we've screened on experience, availability, and motivation. You get access to candidates that match your vacancy, with diverse roles from sales to development."
           },
           {
             "question": "Can I add my own candidates?",
-            "answer": "Yes, you can add your own candidates in addition to the talent pool. These count towards your limit of 100 candidates."
+            "answer": "Yes, you can add your own candidates in addition to the talent pool. These can be applicants from your website, LinkedIn connections, or referrals. These count towards your limit of 100 candidates."
           },
           {
             "question": "What happens after 100 candidates?",
-            "answer": "After 100 candidates, you can upgrade to one of our regular plans for unlimited candidates and additional features."
+            "answer": "After 100 candidates, you can upgrade to one of our regular plans (Base, Plus, or Premium) for unlimited candidates. You keep all your data and don't need to set anything up again."
           },
           {
             "question": "How do I upgrade to a full plan?",
-            "answer": "You can upgrade at any time. You keep all your data and candidates. Contact us or upgrade directly in your dashboard."
+            "answer": "You can upgrade at any time via your dashboard. You keep all your data, candidates, and settings. The transition is seamless — you just continue where you left off."
+          },
+          {
+            "question": "Is this really the same system as the expensive plans?",
+            "answer": "Yes, 100%. You get exactly the same features, the same interface, the same quality. The only difference is the number of vacancies and candidates. No feature locks, no 'lite' version."
+          },
+          {
+            "question": "Can I cancel monthly?",
+            "answer": "Absolutely. Light is month-to-month with no long-term commitment. You can cancel at any time and have access until the end of your billing period."
+          },
+          {
+            "question": "What if I need more than 1 vacancy?",
+            "answer": "Then it's time to upgrade to Base (€299/month) for unlimited vacancies. This can be done at any time and your data is preserved."
+          },
+          {
+            "question": "How quickly do I get access to the talent pool?",
+            "answer": "Immediately after activation you have full access to the talent pool. You can start searching and receiving matches right away."
+          },
+          {
+            "question": "What's the difference with a recruiter?",
+            "answer": "A recruiter costs €5,000-15,000 per hire and you have no control over the process. With Light you have full control, access to more candidates, and pay only €99/month — regardless of how many people you hire."
+          },
+          {
+            "question": "Do I also get support?",
+            "answer": "Yes, you get email support with response within 24 hours on business days. We're happy to help with questions about the system, your vacancy, or the hiring process."
           }
         ]
       },
       "cta": {
         "headline": "Ready to start?",
-        "description": "Start today with OneRooted Light and experience the difference.",
-        "button": "Start now",
-        "secondary": "View all plans"
+        "description": "Start today with OneRooted Light and experience the difference. No big investment, no risk, real results.",
+        "button": "Start now — €99/month",
+        "secondary": "View all plans",
+        "trust": "30-day money back guarantee"
       }
     }
   }
