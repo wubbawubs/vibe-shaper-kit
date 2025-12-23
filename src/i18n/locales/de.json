@@ -807,13 +807,13 @@
       "hero": {
         "label": "OneRooted Light",
         "badge": "Zeitlich begrenztes Angebot",
-        "headline": "OneRooted erleben.",
-        "headlineHighlight": "Ohne Verpflichtung.",
-        "subheadline": "Starten Sie mit einer Stelle und 100 Kandidaten aus unserem Talent-Pool. Entdecken Sie, wie ein echtes Hiring-System funktioniert — ohne große Investition.",
+        "headline": "Hören Sie auf, Geld für Recruiter zu verschwenden.",
+        "headlineHighlight": "Smarter einstellen für €199.",
+        "subheadline": "Erhalten Sie die volle Power von OneRooted mit 1 Stelle und 100 Kandidaten aus unserem vorgeprüften Talent-Pool. Professionelles Recruiting ohne Agentur-Preise.",
         "stats": {
-          "companies": "50+",
+          "companies": "10+",
           "companiesLabel": "Unternehmen mit Light gestartet",
-          "candidates": "5.000+",
+          "candidates": "50.000+",
           "candidatesLabel": "Kandidaten im Talent-Pool"
         }
       },
@@ -882,11 +882,11 @@
       },
       "talentPool": {
         "label": "Talent-Pool",
-        "headline": "Zugang zu 5.000+ vorab geprüften Fachkräften",
+        "headline": "Zugang zu 50.000+ vorab geprüften Fachkräften",
         "description": "Unser Talent-Pool enthält aktiv arbeitssuchende Fachkräfte, die wir validiert haben. Keine alten Lebensläufe oder Ghosting — echte Kandidaten, die bereit für ihren nächsten Schritt sind.",
         "stats": [
-          { "value": "5.000+", "label": "Aktive Profile" },
-          { "value": "50+", "label": "Verschiedene Rollen" },
+          { "value": "50.000+", "label": "Aktive Profile" },
+          { "value": "10+", "label": "Verschiedene Rollen" },
           { "value": "< 48h", "label": "Durchschnittliche Antwortzeit" }
         ],
         "categories": ["Sales & Marketing", "Tech & Entwicklung", "Operations", "Finanzen", "HR & People", "Customer Success"],
@@ -1013,11 +1013,11 @@
       },
       "pricing": {
         "label": "Preis",
-        "headline": "Starten Sie für €99/Monat",
-        "price": "99",
+        "headline": "Starten Sie für €199/Monat",
+        "price": "199",
         "perMonth": "/Monat",
         "previousPrice": "299",
-        "savings": "Sparen Sie €200/Monat",
+        "savings": "Sparen Sie €100/Monat",
         "cta": "Jetzt starten",
         "trust": "Keine Verpflichtungen. Jederzeit kündbar.",
         "includes": [
@@ -1034,7 +1034,7 @@
         "items": [
           {
             "question": "Was ist im Talent-Pool?",
-            "answer": "Unser Talent-Pool enthält 5.000+ aktiv arbeitssuchende Fachkräfte, die wir auf Erfahrung, Verfügbarkeit und Motivation geprüft haben. Sie erhalten Zugang zu Kandidaten, die zu Ihrer Stelle passen, mit diversen Rollen von Sales bis Entwicklung."
+            "answer": "Unser Talent-Pool enthält 50.000+ aktiv arbeitssuchende Fachkräfte, die wir auf Erfahrung, Verfügbarkeit und Motivation geprüft haben. Sie erhalten Zugang zu Kandidaten, die zu Ihrer Stelle passen, mit diversen Rollen von Sales bis Entwicklung."
           },
           {
             "question": "Kann ich eigene Kandidaten hinzufügen?",
@@ -1077,7 +1077,7 @@
       "cta": {
         "headline": "Bereit zu starten?",
         "description": "Starten Sie heute mit OneRooted Light und erleben Sie den Unterschied. Keine große Investition, kein Risiko, echte Ergebnisse.",
-        "button": "Jetzt starten — €99/Monat",
+        "button": "Jetzt starten — €199/Monat",
         "secondary": "Alle Pläne ansehen",
         "trust": "30 Tage Geld-zurück-Garantie"
       }
