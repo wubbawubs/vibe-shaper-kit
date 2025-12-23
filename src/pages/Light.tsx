@@ -23,9 +23,7 @@ import { useLanguageFromUrl } from "@/i18n/useLanguage";
 // LightHeroAnimation removed - using counters instead
 import { AnimatedCounter } from "@/components/marketing/light/AnimatedCounter";
 import { TrustBadges } from "@/components/marketing/light/TrustBadges";
-import { StickyCTA } from "@/components/marketing/light/StickyCTA";
 import { ComparisonTable } from "@/components/marketing/light/ComparisonTable";
-import { UrgencyBanner } from "@/components/marketing/light/UrgencyBanner";
 import { HowItWorksSteps } from "@/components/marketing/light/HowItWorksSteps";
 import { TestimonialCard } from "@/components/marketing/light/TestimonialCard";
 
@@ -62,9 +60,6 @@ const Light = () => {
         url="https://onerooted.com/light"
       />
 
-      {/* Sticky CTA */}
-      <StickyCTA />
-
       {/* Hero Section */}
       <section className="py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
@@ -77,21 +72,11 @@ const Light = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Urgency Banner */}
-            <motion.div
-              className="mb-6 flex justify-center"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-            >
-              <UrgencyBanner />
-            </motion.div>
-
             <motion.div
               className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm px-4 py-2 rounded-full mb-6"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.1 }}
             >
               <span className="font-medium">{t('lightOffer.page.hero.label')}</span>
             </motion.div>
