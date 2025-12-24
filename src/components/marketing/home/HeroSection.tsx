@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, AlertTriangle, Target } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { HiringFunnelAnimation } from "./HiringFunnelAnimation";
@@ -86,63 +86,14 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right - Interactive Funnel Animation with Side KPI Card */}
+          {/* Right - Interactive Funnel Animation */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="lg:col-span-7 relative"
           >
-            <div className="hidden md:flex gap-4">
-              {/* Main Funnel Animation */}
-              <div className="flex-1 relative aspect-[4/3] md:aspect-[16/10] rounded-xl md:rounded-2xl overflow-hidden bg-gradient-to-br from-muted/30 to-muted/10 border border-border/50 shadow-xl md:shadow-2xl">
-                <HiringFunnelAnimation />
-              </div>
-              
-              {/* KPI Side Card - Desktop only */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                className="w-48 flex-shrink-0 flex flex-col gap-3"
-              >
-                {/* Bottleneck Alert */}
-                <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                  <div className="flex items-center gap-2 mb-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-600" />
-                    <span className="text-xs font-medium text-amber-700">Bottleneck</span>
-                  </div>
-                  <p className="text-sm font-semibold text-foreground">Screen</p>
-                  <p className="text-xs text-muted-foreground">12 dagen gemiddeld</p>
-                </div>
-                
-                {/* Today Focus */}
-                <div className="p-4 rounded-xl bg-primary/5 border border-primary/10">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Target className="h-4 w-4 text-primary" />
-                    <span className="text-xs font-medium text-primary">Vandaag</span>
-                  </div>
-                  <p className="text-xs text-foreground leading-relaxed">3 kandidaten opvolgen</p>
-                </div>
-                
-                {/* Quick Stats */}
-                <div className="p-4 rounded-xl bg-card border border-border/50">
-                  <div className="space-y-3">
-                    <div>
-                      <p className="text-xs text-muted-foreground">Actief</p>
-                      <p className="text-lg font-semibold text-foreground">24</p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-muted-foreground">Deze week</p>
-                      <p className="text-lg font-semibold text-emerald-600">+8</p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-            
-            {/* Mobile view - just the funnel */}
-            <div className="md:hidden relative aspect-[4/3] rounded-xl overflow-hidden bg-gradient-to-br from-muted/30 to-muted/10 border border-border/50 shadow-xl">
+            <div className="relative aspect-[4/3] md:aspect-[16/10] rounded-xl md:rounded-2xl overflow-hidden bg-gradient-to-br from-muted/30 to-muted/10 border border-border/50 shadow-xl md:shadow-2xl">
               <HiringFunnelAnimation />
             </div>
             
