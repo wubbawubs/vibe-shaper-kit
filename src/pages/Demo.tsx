@@ -74,7 +74,7 @@ const Demo = () => {
             transition={{ duration: 0.6 }}
           >
             <motion.p 
-              className="text-sm font-medium text-primary mb-4 tracking-wide uppercase"
+              className="text-sm font-medium text-label mb-4 tracking-wide uppercase"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}

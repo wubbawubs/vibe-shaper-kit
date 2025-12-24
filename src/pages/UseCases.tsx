@@ -65,7 +65,7 @@ const UseCases = () => {
             {...animationProps}
           >
             <motion.p 
-              className="text-sm font-medium text-primary mb-4 tracking-wide uppercase"
+              className="text-sm font-medium text-label mb-4 tracking-wide uppercase"
               initial={prefersReducedMotion ? {} : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={prefersReducedMotion ? {} : { delay: 0.2 }}
@@ -131,11 +131,11 @@ const UseCases = () => {
                   <CardContent className="pt-6">
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
-                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">{t('useCasesPage.theProblem')}</h4>
+                        <h4 className="text-sm font-semibold text-label mb-2 tracking-wide uppercase">{t('useCasesPage.theProblem')}</h4>
                         <p className="text-foreground">{useCase.problem}</p>
                       </div>
                       <div>
-                        <h4 className="text-sm font-semibold text-primary mb-2 tracking-wide uppercase">{t('useCasesPage.howHelps')}</h4>
+                        <h4 className="text-sm font-semibold text-label mb-2 tracking-wide uppercase">{t('useCasesPage.howHelps')}</h4>
                         <p className="text-foreground">{useCase.solution}</p>
                       </div>
                     </div>

@@ -39,7 +39,7 @@ export function SocialProofSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">Trusted by</p>
+          <p className="text-sm font-medium text-label mb-4 tracking-wide uppercase">Trusted by</p>
           <h2 className="text-3xl md:text-4xl font-semibold">
             Forward-thinking teams at scale
           </h2>

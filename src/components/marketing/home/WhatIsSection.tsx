@@ -43,7 +43,7 @@ export function WhatIsSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">
+          <p className="text-sm font-medium text-label mb-4 tracking-wide uppercase">
             {t("whatIs.label")}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold max-w-3xl mx-auto leading-tight">

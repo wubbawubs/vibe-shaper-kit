@@ -26,7 +26,7 @@ export function FAQSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">
+            <p className="text-sm font-medium text-label mb-4 tracking-wide uppercase">
               {t("faq.label")}
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">

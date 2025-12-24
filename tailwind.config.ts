@@ -69,6 +69,7 @@ export default {
           DEFAULT: "hsl(var(--warning))",
           foreground: "hsl(var(--warning-foreground))",
         },
+        label: "hsl(var(--label))",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -103,7 +103,7 @@ const Pricing = () => {
             transition={{ duration: 0.6 }}
           >
             <motion.p 
-              className="text-sm font-medium text-primary mb-4 tracking-wide uppercase"
+              className="text-sm font-medium text-label mb-4 tracking-wide uppercase"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -421,7 +421,7 @@ const Pricing = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xs sm:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase">{t('pricingPage.faq.label')}</p>
+              <p className="text-xs sm:text-sm font-medium text-label mb-3 md:mb-4 tracking-wide uppercase">{t('pricingPage.faq.label')}</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
                 {t('pricingPage.faq.headline')}
               </h2>
