@@ -97,7 +97,7 @@
   },
   "comparison": {
     "label": "Het verschil",
-    "headline": "Geen zoveelste ATS",
+    "headline": "Niet het zoveelste ATS",
     "traditional": "Traditioneel ATS",
     "rows": {
       "focus": { "ats": "Slaat kandidaten op", "onerooted": "Volgt aannamebeslissingen" },
