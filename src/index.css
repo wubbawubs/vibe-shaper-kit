@@ -26,6 +26,9 @@
     --warning: 32 90% 50%;
     --warning-foreground: 32 85% 10%;
 
+    /* Label - Bright Amber for section headers */
+    --label: 38 95% 50%;
+
     /* Backgrounds - Clean with subtle warmth */
     --background: 40 20% 99%;
     --foreground: 200 20% 12%;
@@ -84,6 +87,9 @@
     /* Warning */
     --warning: 32 85% 55%;
     --warning-foreground: 32 80% 5%;
+
+    /* Label - Bright Amber for section headers */
+    --label: 38 95% 55%;
 
     /* Dark backgrounds - Rich, warm charcoal */
     --background: 220 18% 6%;

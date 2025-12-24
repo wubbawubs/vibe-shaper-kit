@@ -46,7 +46,7 @@ export function PricingPreviewSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-primary mb-4">
+          <p className="text-sm uppercase tracking-widest text-label mb-4">
             {t("pricing.label")}
           </p>
           <h2 className="text-4xl md:text-5xl font-semibold mb-4">

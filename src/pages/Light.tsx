@@ -162,7 +162,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.problem.label')}</p>
+            <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.problem.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold max-w-4xl mx-auto">
               {t('lightOffer.page.problem.headline')}
             </h2>
@@ -211,7 +211,7 @@ const Light = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.solution.label')}</p>
+              <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.solution.label')}</p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">
                 {t('lightOffer.page.solution.headline')}
               </h2>
@@ -375,7 +375,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.howItWorks.label')}</p>
+            <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.howItWorks.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
               {t('lightOffer.page.howItWorks.headline')}
             </h2>
@@ -394,7 +394,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.comparison.label')}</p>
+            <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.comparison.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
               {t('lightOffer.page.comparison.headline')}
             </h2>
@@ -424,7 +424,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.testimonials.label')}</p>
+            <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.testimonials.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
               {t('lightOffer.page.testimonials.headline')}
             </h2>
@@ -447,7 +447,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.forWho.label')}</p>
+            <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.forWho.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
               {t('lightOffer.page.forWho.headline')}
             </h2>
@@ -498,7 +498,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">{t('lightOffer.page.guarantee.label')}</p>
+            <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.guarantee.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
               {t('lightOffer.page.guarantee.headline')}
             </h2>
@@ -539,7 +539,7 @@ const Light = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">
+              <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">
                 {t('lightOffer.page.faq.label')}
               </p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">

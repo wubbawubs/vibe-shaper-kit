@@ -20,7 +20,7 @@ export function ComparisonSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">
+          <p className="text-sm font-medium text-label mb-4 tracking-wide uppercase">
             {t("comparison.label")}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold">

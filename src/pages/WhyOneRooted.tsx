@@ -44,7 +44,7 @@ const WhyOneRooted = () => {
             transition={{ duration: 0.6 }}
           >
             <motion.p 
-              className="text-sm font-medium text-primary mb-4 tracking-wide uppercase"
+              className="text-sm font-medium text-label mb-4 tracking-wide uppercase"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -80,7 +80,7 @@ const WhyOneRooted = () => {
                 <AlertTriangle className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyPage.atsProblem.label')}</p>
+                <p className="text-xs sm:text-sm font-medium text-label mb-1 tracking-wide uppercase">{t('whyPage.atsProblem.label')}</p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyPage.atsProblem.headline')}</h2>
               </div>
             </motion.div>
@@ -142,7 +142,7 @@ const WhyOneRooted = () => {
                 <Lightbulb className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyPage.insight.label')}</p>
+                <p className="text-xs sm:text-sm font-medium text-label mb-1 tracking-wide uppercase">{t('whyPage.insight.label')}</p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyPage.insight.headline')}</h2>
               </div>
             </motion.div>
@@ -271,7 +271,7 @@ const WhyOneRooted = () => {
                 <Target className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyPage.origin.label')}</p>
+                <p className="text-xs sm:text-sm font-medium text-label mb-1 tracking-wide uppercase">{t('whyPage.origin.label')}</p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyPage.origin.headline')}</h2>
               </div>
             </motion.div>
@@ -342,7 +342,7 @@ const WhyOneRooted = () => {
                 <Rocket className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
               </motion.div>
               <div>
-                <p className="text-xs sm:text-sm font-medium text-primary mb-1 tracking-wide uppercase">{t('whyPage.future.label')}</p>
+                <p className="text-xs sm:text-sm font-medium text-label mb-1 tracking-wide uppercase">{t('whyPage.future.label')}</p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{t('whyPage.future.headline')}</h2>
               </div>
             </motion.div>

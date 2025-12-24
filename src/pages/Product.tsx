@@ -44,7 +44,7 @@ const Product = () => {
               transition={{ duration: 0.6 }}
             >
               <motion.p 
-                className="text-xs md:text-sm font-medium text-primary mb-3 md:mb-4 tracking-wide uppercase"
+                className="text-xs md:text-sm font-medium text-label mb-3 md:mb-4 tracking-wide uppercase"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
@@ -108,7 +108,7 @@ const Product = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Zap className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-primary tracking-wide uppercase">
+                <p className="text-sm font-medium text-label tracking-wide uppercase">
                   {t("product.ranking.label")}
                 </p>
               </div>
@@ -146,7 +146,7 @@ const Product = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Eye className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-primary tracking-wide uppercase">
+                <p className="text-sm font-medium text-label tracking-wide uppercase">
                   {t("product.pipeline.label")}
                 </p>
               </div>
@@ -184,7 +184,7 @@ const Product = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
                   <BarChart3 className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-primary tracking-wide uppercase">
+                <p className="text-sm font-medium text-label tracking-wide uppercase">
                   {t("product.intelligence.label")}
                 </p>
               </div>
@@ -222,7 +222,7 @@ const Product = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Users2 className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-primary tracking-wide uppercase">
+                <p className="text-sm font-medium text-label tracking-wide uppercase">
                   {t("product.collaboration.label")}
                 </p>
               </div>
