@@ -100,10 +100,10 @@
     "headline": "Niet het zoveelste ATS",
     "traditional": "Traditioneel ATS",
     "rows": {
-      "focus": { "ats": "Slaat kandidaten op", "onerooted": "Volgt aannamebeslissingen" },
+      "focus": { "ats": "Slaat kandidaten op", "onerooted": "Volgt hiring keuzes" },
       "flex": { "ats": "Statische pipelines", "onerooted": "Adaptieve workflows" },
       "priority": { "ats": "Admin-first design", "onerooted": "Decision-first design" },
-      "data": { "ats": "Gesegmenteerde data", "onerooted": "Geünificeerde intelligentie" },
+      "data": { "ats": "Gesegmenteerde data", "onerooted": "Slimme inzichten" },
       "process": { "ats": "Handmatige coördinatie", "onerooted": "Geautomatiseerde samenwerking" }
     },
     "conclusion": {
