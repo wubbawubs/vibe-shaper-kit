@@ -283,7 +283,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-3 tracking-wide uppercase">{t('lightOffer.page.features.label')}</p>
+            <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.features.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
               {t('lightOffer.page.features.title')}
             </h2>
@@ -322,7 +322,7 @@ const Light = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-3 tracking-wide uppercase">{t('lightOffer.page.talentPool.label')}</p>
+            <p className="text-sm font-medium text-label mb-3 tracking-wide uppercase">{t('lightOffer.page.talentPool.label')}</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">
               {t('lightOffer.page.talentPool.headline')}
             </h2>
