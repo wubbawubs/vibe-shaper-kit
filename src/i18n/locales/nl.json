@@ -43,7 +43,7 @@
   },
   "whatIs": {
     "label": "Het Hiring OS",
-    "headline": "Eén systeem dat elke aannamebeslissing verbindt",
+    "headline": "Eén systeem dat elke hiring keuze verbindt",
     "pillars": {
       "data": {
         "title": "Hiring Data",
@@ -291,7 +291,7 @@
 "seo": {
     "home": {
       "title": "Het Hiring OS voor Teams die Recruitment Serieus Nemen",
-      "description": "Vervang verspreide recruitment tools door één intelligent systeem. OneRooted rangschikt kandidaten, stroomlijnt workflows en stimuleert betere aannamebeslissingen."
+      "description": "Vervang verspreide recruitment tools door één intelligent systeem. OneRooted rangschikt kandidaten, stroomlijnt workflows en stimuleert betere hiring keuzes."
     }
   },
   "pricingPage": {
@@ -620,7 +620,7 @@
     "members": [
       { "name": "Robin Dennie", "role": "Founder & CEO", "tagline": "Creëert", "bio": "25 jaar bureau-ervaring. Recruitment innovator die transformeert hoe bedrijven werven." },
       { "name": "Erik Dijkshoorn", "role": "Strategisch Adviseur", "tagline": "Adviseert", "bio": "Uitgebreide ervaring in meerdere C-level rollen. Leadership coach en strategisch denker." },
-      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leidt", "bio": "Bureau manager en BI specialist. Het financiële en operationele geweten van OneRooted." },
+      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leidt", "bio": "Bureau-manager en BI-specialist. Het financiële en operationele geweten van OneRooted." },
       { "name": "Luuk Wubs", "role": "CTO", "tagline": "Bouwt", "bio": "Jong, gedreven tech leider. Gepassioneerd over het bouwen van schaalbare oplossingen die hiring beter maken." }
     ],
     "values": {
@@ -647,7 +647,7 @@
     "cta": {
       "trustBadge": "Onderdeel van de One-Time Group",
       "headline": "Klaar om je hiring te transformeren?",
-      "description": "Sluit je aan bij de teams die al zijn geüpgraded van gefragmenteerde tools naar een unified Hiring OS.",
+      "description": "Sluit je aan bij de teams die al zijn geüpgraded van gefragmenteerde tools naar een gecentraliseerd Hiring OS.",
       "button": "Waarom we dit bouwden",
       "secondary": "Meer leren"
     }
