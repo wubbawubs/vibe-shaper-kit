@@ -1,37 +1,15 @@
-import { useState } from "react";
 import { MarketingLayout } from "@/components/marketing/MarketingLayout";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { toast } from "sonner";
 import { motion } from "framer-motion";
-import { Send, Calendar, MessageCircle, Users, Clock, CheckCircle } from "lucide-react";
+import { Clock, CheckCircle, Users, Calendar, MessageCircle } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 import { useLanguageFromUrl } from "@/i18n/useLanguage";
+import { CalendlyEmbed } from "@/components/calendly/CalendlyEmbed";
+import { Card, CardContent } from "@/components/ui/card";
 
 const Demo = () => {
   const { t } = useTranslation();
   useLanguageFromUrl();
-  
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    toast.success(t('demoPage.form.success'));
-    setIsSubmitting(false);
-    
-    // Reset form
-    (e.target as HTMLFormElement).reset();
-  };
 
   const trustIndicatorsData = t('demoPage.hero.trustIndicators', { returnObjects: true }) as Array<{ text: string }>;
   const trustIcons = [Clock, CheckCircle, Users];
@@ -48,12 +26,6 @@ const Demo = () => {
     desc: item.desc,
   }));
 
-  const teamSizesData = t('demoPage.form.teamSizeOptions', { returnObjects: true }) as string[];
-  const teamSizes = (Array.isArray(teamSizesData) ? teamSizesData : []).map((label, idx) => ({
-    value: ["1-10", "11-50", "51-200", "201-500", "500+"][idx] || `${idx}`,
-    label,
-  }));
-
   return (
     <MarketingLayout>
       <SEO 
@@ -68,7 +40,7 @@ const Demo = () => {
         
         <div className="container relative">
           <motion.div 
-            className="max-w-3xl mx-auto text-center mb-16"
+            className="max-w-3xl mx-auto text-center mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -108,126 +80,29 @@ const Demo = () => {
             </motion.div>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Form */}
+          <div className="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
+            {/* Calendly Embed - Takes more space */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
+              className="lg:col-span-3"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Card className="relative overflow-hidden border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
-                <CardHeader className="relative">
-                  <CardTitle className="text-xl font-semibold">{t('demoPage.form.title')}</CardTitle>
-                </CardHeader>
-                <CardContent className="relative">
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <motion.div 
-                      className="grid md:grid-cols-2 gap-4"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.3 }}
-                    >
-                      <div className="space-y-2">
-                        <Label htmlFor="firstName">{t('demoPage.form.firstName')}</Label>
-                        <Input id="firstName" required />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="lastName">{t('demoPage.form.lastName')}</Label>
-                        <Input id="lastName" required />
-                      </div>
-                    </motion.div>
-
-                    <motion.div 
-                      className="space-y-2"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.35 }}
-                    >
-                      <Label htmlFor="email">{t('demoPage.form.email')}</Label>
-                      <Input id="email" type="email" required />
-                    </motion.div>
-
-                    <motion.div 
-                      className="space-y-2"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.4 }}
-                    >
-                      <Label htmlFor="company">{t('demoPage.form.company')}</Label>
-                      <Input id="company" required />
-                    </motion.div>
-
-                    <motion.div 
-                      className="space-y-2"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.45 }}
-                    >
-                      <Label htmlFor="teamSize">{t('demoPage.form.teamSize')}</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder={t('demoPage.form.teamSizePlaceholder')} />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {teamSizes.map((size) => (
-                            <SelectItem key={size.value} value={size.value}>{size.label}</SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </motion.div>
-
-                    <motion.div 
-                      className="space-y-2"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.5 }}
-                    >
-                      <Label htmlFor="message">{t('demoPage.form.message')}</Label>
-                      <Textarea 
-                        id="message" 
-                        placeholder={t('demoPage.form.messagePlaceholder')}
-                        rows={4}
-                      />
-                    </motion.div>
-
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.55 }}
-                    >
-                      <Button 
-                        type="submit" 
-                        size="lg"
-                        className="w-full h-14 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/25"
-                        disabled={isSubmitting}
-                      >
-                        {isSubmitting ? (
-                          t('demoPage.form.submitting')
-                        ) : (
-                          <>
-                            <Send className="h-5 w-5 mr-2" />
-                            {t('demoPage.form.submit')}
-                          </>
-                        )}
-                      </Button>
-                    </motion.div>
-                  </form>
-                </CardContent>
-              </Card>
+              <CalendlyEmbed className="shadow-xl" />
             </motion.div>
 
-            {/* What to expect */}
+            {/* What to expect - Side panel */}
             <motion.div 
-              className="space-y-8"
+              className="lg:col-span-2 space-y-6"
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <div>
-                <h2 className="text-2xl font-semibold mb-6">{t('demoPage.expect.headline')}</h2>
+                <h2 className="text-xl font-semibold mb-5">{t('demoPage.expect.headline')}</h2>
                 
                 <motion.div 
-                  className="space-y-6"
+                  className="space-y-4"
                   initial="hidden"
                   animate="visible"
                   variants={{
@@ -243,7 +118,7 @@ const Demo = () => {
                   {expectations.map((item, index) => (
                     <motion.div 
                       key={index}
-                      className="flex gap-4 group"
+                      className="flex gap-3 group"
                       variants={{
                         hidden: { opacity: 0, x: -20 },
                         visible: { opacity: 1, x: 0 },
@@ -251,14 +126,14 @@ const Demo = () => {
                       transition={{ duration: 0.5 }}
                     >
                       <motion.div 
-                        className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors"
+                        className="w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors"
                         whileHover={{ scale: 1.05 }}
                       >
-                        <item.icon className="h-5 w-5 text-primary" />
+                        <item.icon className="h-4 w-4 text-primary" />
                       </motion.div>
                       <div>
-                        <h3 className="font-semibold mb-1">{item.title}</h3>
-                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                        <h3 className="font-medium text-sm mb-0.5">{item.title}</h3>
+                        <p className="text-xs text-muted-foreground">{item.desc}</p>
                       </div>
                     </motion.div>
                   ))}
@@ -271,12 +146,12 @@ const Demo = () => {
                 transition={{ delay: 0.7 }}
               >
                 <Card className="bg-muted/30 border-border/50 relative overflow-hidden">
-                  <div className="absolute top-4 left-4 text-5xl font-serif text-primary/20">"</div>
-                  <CardContent className="pt-10 pb-6 px-8">
-                    <p className="text-muted-foreground italic relative z-10 text-lg leading-relaxed">
+                  <div className="absolute top-3 left-3 text-4xl font-serif text-primary/20">"</div>
+                  <CardContent className="pt-8 pb-4 px-6">
+                    <p className="text-muted-foreground italic relative z-10 text-sm leading-relaxed">
                       {t('demoPage.expect.testimonial')}
                     </p>
-                    <p className="text-sm font-semibold mt-4">{t('demoPage.expect.testimonialAuthor')}</p>
+                    <p className="text-xs font-semibold mt-3">{t('demoPage.expect.testimonialAuthor')}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -285,14 +160,14 @@ const Demo = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
-                className="flex items-center gap-4 p-5 rounded-xl bg-primary/5 border border-primary/10"
+                className="flex items-center gap-3 p-4 rounded-xl bg-primary/5 border border-primary/10"
               >
-                <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                  <Clock className="h-5 w-5 text-primary" />
+                <div className="w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                  <Clock className="h-4 w-4 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">{t('demoPage.expect.quickResponse')}</p>
-                  <p className="text-sm text-muted-foreground">{t('demoPage.expect.quickResponseDesc')}</p>
+                  <p className="text-sm font-medium">{t('demoPage.expect.quickResponse')}</p>
+                  <p className="text-xs text-muted-foreground">{t('demoPage.expect.quickResponseDesc')}</p>
                 </div>
               </motion.div>
             </motion.div>
