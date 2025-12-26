@@ -790,6 +790,12 @@
     "privacy": "Privacy",
     "terms": "Voorwaarden"
   },
+  "popup": {
+    "headline": "Klaar om je hiring te transformeren?",
+    "description": "Breek los van gefragmenteerd werven. Ontdek hoe OneRooted je kan helpen slimmer te werven in slechts 20 minuten.",
+    "cta": "Plan een demo",
+    "dismiss": "Misschien later"
+  },
   "lightOffer": {
     "banner": {
       "label": "✨ Nieuw: Probeer OneRooted",

@@ -790,6 +790,12 @@
     "privacy": "Datenschutz",
     "terms": "AGB"
   },
+  "popup": {
+    "headline": "Bereit, Ihr Recruiting zu transformieren?",
+    "description": "Befreien Sie sich von fragmentiertem Recruiting. Entdecken Sie, wie OneRooted Ihnen helfen kann, in nur 20 Minuten smarter einzustellen.",
+    "cta": "Demo vereinbaren",
+    "dismiss": "Vielleicht später"
+  },
   "lightOffer": {
     "banner": {
       "label": "✨ Neu: OneRooted testen",

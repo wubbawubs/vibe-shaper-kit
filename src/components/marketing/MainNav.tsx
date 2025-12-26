@@ -23,7 +23,7 @@ export function MainNav() {
 
   const navLinks = [
     { labelKey: "nav.product", href: "/product" },
-    { labelKey: "nav.useCases", href: "/use-cases" },
+    // { labelKey: "nav.useCases", href: "/use-cases" }, // Hidden until we have real use cases
     { labelKey: "nav.partners", href: "/partners" },
     { labelKey: "nav.pricing", href: "/pricing" },
     { labelKey: "nav.whyOneRooted", href: "/why-onerooted" },

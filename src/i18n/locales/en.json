@@ -790,6 +790,12 @@
     "privacy": "Privacy",
     "terms": "Terms"
   },
+  "popup": {
+    "headline": "Ready to transform your hiring?",
+    "description": "Break free from fragmented recruiting. See how OneRooted can help you hire smarter in just 20 minutes.",
+    "cta": "Schedule a demo",
+    "dismiss": "Maybe later"
+  },
   "lightOffer": {
     "banner": {
       "label": "✨ New: Try OneRooted",

@@ -5,9 +5,10 @@ import { WhatIsSection } from "@/components/marketing/home/WhatIsSection";
 import { WhoItsForSection } from "@/components/marketing/home/WhoItsForSection";
 import { ComparisonSection } from "@/components/marketing/home/ComparisonSection";
 import { PricingPreviewSection } from "@/components/marketing/home/PricingPreviewSection";
-import { SocialProofSection } from "@/components/marketing/home/SocialProofSection";
+// import { SocialProofSection } from "@/components/marketing/home/SocialProofSection"; // Hidden until we have real testimonials
 import { FAQSection } from "@/components/marketing/home/FAQSection";
 import { FinalCTASection } from "@/components/marketing/home/FinalCTASection";
+import { DemoCTAPopup } from "@/components/marketing/DemoCTAPopup";
 import { SEO } from "@/components/SEO";
 
 const Home = () => {
@@ -24,9 +25,10 @@ const Home = () => {
       <WhoItsForSection />
       <ComparisonSection />
       <PricingPreviewSection />
-      <SocialProofSection />
+      {/* <SocialProofSection /> */}
       <FAQSection />
       <FinalCTASection />
+      <DemoCTAPopup />
     </MarketingLayout>
   );
 };
