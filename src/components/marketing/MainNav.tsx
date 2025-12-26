@@ -46,9 +46,9 @@ export function MainNav() {
       <nav className="container relative flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link to={getLocalizedHref("/")} className="flex items-center gap-3 group">
-          <img src={onerootedLogo} alt="OneRooted" className="h-8 w-auto" />
+          <img src={onerootedLogo} alt="One Rooted" className="h-8 w-auto" />
           <span className="font-semibold text-foreground tracking-tight hidden sm:inline">
-            OneRooted
+            One Rooted
           </span>
         </Link>
 
