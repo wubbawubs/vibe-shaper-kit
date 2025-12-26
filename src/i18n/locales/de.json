@@ -620,7 +620,7 @@
     "members": [
       { "name": "Robin Dennie", "role": "Gründer & CEO", "tagline": "Erschafft", "bio": "25 Jahre Agenturerfahrung. Recruiting-Innovator, der transformiert, wie Unternehmen einstellen." },
       { "name": "Erik Dijkshoorn", "role": "Strategischer Berater", "tagline": "Berät", "bio": "Umfangreiche Erfahrung in mehreren C-Level-Rollen. Leadership-Coach und strategischer Denker." },
-      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leitet", "bio": "Bureau-Managerin und BI-Spezialistin. Das finanzielle und operative Gewissen von OneRooted." },
+      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leitet", "bio": "Office Managerin und BI-Spezialistin. Das finanzielle und operative Gewissen von OneRooted." },
       { "name": "Luuk Wubs", "role": "CTO", "tagline": "Baut", "bio": "Junger, engagierter Tech-Leader. Leidenschaftlich beim Aufbau skalierbarer Lösungen, die Hiring besser machen." }
     ],
     "values": {

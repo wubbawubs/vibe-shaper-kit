@@ -11,7 +11,7 @@
   "hero": {
     "headline": "Recruitment heeft geen nieuwe tool nodig.",
     "headlineHighlight": "Het heeft een systeem nodig.",
-    "subheadline": "Vervang verspreide tools door één intelligent systeem dat kandidaten rangschikt, workflows stroomlijnt en betere aannamebeslissingen stimuleert.",
+    "subheadline": "Vervang verspreide tools door één intelligent systeem dat kandidaten rangschikt, workflows stroomlijnt en betere hiring keuzes stimuleert.",
     "cta": "Demo aanvragen",
     "ctaSecondary": "Bekijk plannen",
     "stats": {
@@ -74,7 +74,7 @@
         "subtitle": "Founders & Executives",
         "points": [
           "Volledig overzicht zonder micromanagement",
-          "Aannamebeslissingen gebaseerd op echte, gedeelde data"
+          "Hiring keuzes gebaseerd op echte, gedeelde data"
         ]
       },
       "talent": {
@@ -82,7 +82,7 @@
         "subtitle": "Recruiters & Hiring Managers",
         "points": [
           "Eén gedeelde workflow van intake tot hire",
-          "Minder admin. Meer focus op aannamebeslissingen."
+          "Minder admin. Meer focus op hiring keuzes."
         ]
       },
       "partners": {
@@ -144,7 +144,7 @@
     "items": [
       {
         "question": "Wat is OneRooted precies?",
-        "answer": "OneRooted is een Hiring Operating System — niet zomaar een ATS. Het verbindt al je hiring data, workflows en stakeholders in één intelligent systeem dat je helpt sneller betere aannamebeslissingen te nemen."
+        "answer": "OneRooted is een Hiring Operating System — niet zomaar een ATS. Het verbindt al je hiring data, workflows en stakeholders in één intelligent systeem dat je helpt sneller betere hiring keuzes te maken."
       },
       {
         "question": "Hoe verschilt OneRooted van een ATS?",
@@ -514,7 +514,7 @@
       "label": "De toekomst",
       "headline": "Waar we naartoe gaan",
       "items": [
-        { "title": "Diepere beslissingsintelligentie", "desc": "AI-gedreven inzichten die je helpen sneller betere aannamebeslissingen te nemen." },
+        { "title": "Diepere beslissingsintelligentie", "desc": "AI-gedreven inzichten die je helpen sneller betere hiring keuzes te maken." },
         { "title": "Naadloze partner ecosystemen", "desc": "Verbind met elke recruitment partner via gestandaardiseerde interfaces." },
         { "title": "Voorspellende hiring inzichten", "desc": "Weet wat werkt voordat je de resultaten ziet." },
         { "title": "Globale team samenwerking", "desc": "Gebouwd voor gedistribueerde teams over tijdzones en culturen." }
