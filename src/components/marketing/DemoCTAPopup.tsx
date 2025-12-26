@@ -50,13 +50,14 @@ export const DemoCTAPopup = () => {
           />
 
           {/* Popup */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[101] w-[90vw] max-w-md"
-          >
+          <div className="fixed inset-0 flex items-center justify-center z-[101] pointer-events-none">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="w-[90vw] max-w-md pointer-events-auto"
+            >
             <div className="bg-background border border-border rounded-2xl shadow-2xl overflow-hidden relative">
               {/* Close button */}
               <button
@@ -131,7 +132,8 @@ export const DemoCTAPopup = () => {
               {/* Bottom accent */}
               <div className="h-1 bg-gradient-to-r from-primary via-accent to-primary" />
             </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </>
       )}
     </AnimatePresence>
