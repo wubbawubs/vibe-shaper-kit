@@ -10,7 +10,7 @@ interface SEOProps {
 }
 
 const defaultMeta = {
-  title: "OneRooted | The Hiring OS for Teams That Take Hiring Seriously",
+  title: "One Rooted | The Hiring OS for Teams That Take Hiring Seriously",
   description: "Replace scattered tools with one intelligent system that ranks candidates, streamlines workflows, and drives better hiring decisions.",
   image: "/og-image.png",
   url: "https://onerooted.com",
@@ -19,12 +19,12 @@ const defaultMeta = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "OneRooted",
+  "name": "One Rooted",
   "url": "https://onerooted.com",
   "logo": "https://onerooted.com/og-image.png",
   "description": "The Hiring OS for Teams That Take Hiring Seriously. Replace scattered tools with one intelligent system.",
   "sameAs": [
-    "https://linkedin.com/company/onerooted"
+    "https://linkedin.com/company/110167349"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
@@ -36,7 +36,7 @@ const organizationSchema = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "OneRooted",
+  "name": "One Rooted",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
   "description": "Intelligent hiring operating system that ranks candidates, streamlines workflows, and drives better hiring decisions.",
@@ -69,7 +69,7 @@ export function SEO({
   jsonLd = "both"
 }: SEOProps) {
   const fullTitle = title 
-    ? `${title} | OneRooted` 
+    ? `${title} | One Rooted` 
     : defaultMeta.title;
 
   const getJsonLdScripts = () => {

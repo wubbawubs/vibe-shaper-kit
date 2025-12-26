@@ -9,6 +9,30 @@ import { useTranslation } from "react-i18next";
 import { getLocalizedPath } from "@/i18n/useLanguage";
 import { type Language } from "@/i18n/config";
 
+// Team photos
+import luukPhoto from "@/assets/team/luuk.jpeg";
+import robinPhoto from "@/assets/team/robin.jpeg";
+import erikPhoto from "@/assets/team/erik.jpeg";
+import juliettePhoto from "@/assets/team/juliette.jpeg";
+
+// LinkedIn URLs
+const linkedInUrls: Record<string, string> = {
+  "Luuk Wubs": "https://www.linkedin.com/in/luuk-wubs-32a451252/",
+  "Robin Dennie": "https://www.linkedin.com/in/robindennie024/",
+  "Erik Dijkshoorn": "https://www.linkedin.com/in/erik-dijkshoorn-1a72aa17/",
+  "Juliëtte Welten": "https://www.linkedin.com/in/juliette-welten-ab566061/",
+  "Juliette Welten": "https://www.linkedin.com/in/juliette-welten-ab566061/",
+};
+
+// Team photos mapping
+const teamPhotos: Record<string, string> = {
+  "Luuk Wubs": luukPhoto,
+  "Robin Dennie": robinPhoto,
+  "Erik Dijkshoorn": erikPhoto,
+  "Juliëtte Welten": juliettePhoto,
+  "Juliette Welten": juliettePhoto,
+};
+
 const Team = () => {
   const { t } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
@@ -20,7 +44,8 @@ const Team = () => {
   const membersData = t('teamPage.members', { returnObjects: true }) as { name: string; role: string; tagline: string; bio: string }[];
   const teamMembers = (membersData || []).map((member) => ({
     ...member,
-    linkedin: "#",
+    linkedin: linkedInUrls[member.name] || "#",
+    photo: teamPhotos[member.name] || null,
   }));
 
   const valueIcons = [Heart, Target, Zap, Users];
@@ -107,12 +132,20 @@ const Team = () => {
               >
                 <Card className="card-refined group h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   <CardContent className="pt-6 pb-6 sm:pt-8 sm:pb-8">
-                    {/* Avatar placeholder */}
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 mb-4 sm:mb-6 flex items-center justify-center">
-                      <span className="text-xl sm:text-2xl font-medium text-primary">
-                        {member.name.split(" ").map(n => n[0]).join("")}
-                      </span>
-                    </div>
+                    {/* Team member photo */}
+                    {member.photo ? (
+                      <img 
+                        src={member.photo} 
+                        alt={member.name}
+                        className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover mb-4 sm:mb-6"
+                      />
+                    ) : (
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 mb-4 sm:mb-6 flex items-center justify-center">
+                        <span className="text-xl sm:text-2xl font-medium text-primary">
+                          {member.name.split(" ").map(n => n[0]).join("")}
+                        </span>
+                      </div>
+                    )}
                     
                     <div className="flex items-start justify-between gap-3 sm:gap-4">
                       <div className="min-w-0">

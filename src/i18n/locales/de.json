@@ -4,7 +4,7 @@
     "useCases": "Anwendungsfälle",
     "partners": "Partner",
     "pricing": "Preise",
-    "whyOneRooted": "Warum OneRooted",
+    "whyOneRooted": "Warum One Rooted",
     "team": "Team",
     "requestDemo": "Demo anfragen"
   },
@@ -66,7 +66,7 @@
   "whoItsFor": {
     "label": "Für wen",
     "headline": "Recruiting scheitert ohne gemeinsames System",
-    "subheadline": "OneRooted ersetzt fragmentierte Tools durch eine einzige operative Wahrheit für alle Beteiligten.",
+    "subheadline": "One Rooted ersetzt fragmentierte Tools durch eine einzige operative Wahrheit für alle Beteiligten.",
     "cta": "System in Aktion sehen",
     "audiences": {
       "leadership": {
@@ -109,7 +109,7 @@
     "conclusion": {
       "ats": "ATS-Tools helfen Ihnen",
       "atsHighlight": "Kandidaten zu verfolgen",
-      "onerooted": "OneRooted hilft Ihnen",
+      "onerooted": "One Rooted hilft Ihnen",
       "onerootedHighlight": "bessere Mitarbeiter einzustellen"
     }
   },
@@ -124,7 +124,7 @@
       "base": {
         "name": "Base",
         "description": "Wesentliche Recruiting-Unterstützung",
-        "features": ["OneRooted-System", "Aktueller Talent-Pool", "Zugang zur E-Academy"]
+        "features": ["One Rooted-System", "Aktueller Talent-Pool", "Zugang zur E-Academy"]
       },
       "plus": {
         "name": "Plus",
@@ -783,7 +783,7 @@
   },
   "footer": {
     "tagline": "Das Hiring OS für Teams, die Recruiting ernst nehmen. Ersetzen Sie fragmentierte Tools durch ein intelligentes System.",
-    "copyright": "© {{year}} OneRooted. Alle Rechte vorbehalten.",
+    "copyright": "© {{year}} One Rooted. Alle Rechte vorbehalten.",
     "company": "Unternehmen",
     "legal": "Rechtliches",
     "contact": "Kontakt",
