@@ -57,7 +57,7 @@ export const DemoCTAPopup = () => {
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[101] w-[90vw] max-w-md"
           >
-            <div className="bg-background border border-border rounded-2xl shadow-2xl overflow-hidden">
+            <div className="bg-background border border-border rounded-2xl shadow-2xl overflow-hidden relative">
               {/* Close button */}
               <button
                 onClick={handleDismiss}
@@ -68,7 +68,7 @@ export const DemoCTAPopup = () => {
               </button>
 
               {/* Content */}
-              <div className="p-8 text-center">
+              <div className="p-8 text-center flex flex-col items-center">
                 {/* Icon */}
                 <motion.div
                   initial={{ scale: 0 }}
