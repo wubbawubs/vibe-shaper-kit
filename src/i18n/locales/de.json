@@ -143,19 +143,19 @@
     "headline": "Häufige Fragen",
     "items": [
       {
-        "question": "Was genau ist OneRooted?",
-        "answer": "OneRooted ist ein Hiring Operating System — nicht nur ein weiteres ATS. Es verbindet alle Ihre Hiring-Daten, Workflows und Stakeholder in einem intelligenten System, das Ihnen hilft, schneller bessere Einstellungsentscheidungen zu treffen."
+        "question": "Was genau ist One Rooted?",
+        "answer": "One Rooted ist ein Hiring Operating System — nicht nur ein weiteres ATS. Es verbindet alle Ihre Hiring-Daten, Workflows und Stakeholder in einem intelligenten System, das Ihnen hilft, schneller bessere Einstellungsentscheidungen zu treffen."
       },
       {
-        "question": "Wie unterscheidet sich OneRooted von einem ATS?",
-        "answer": "Ein ATS speichert Lebensläufe. OneRooted führt Ihren Einstellungsprozess. Es verbindet Kandidaten, Workflows und Entscheidungsträger in Echtzeit mit intelligentem Ranking, automatisierter Zusammenarbeit und Erkenntnissen, die automatisch auftauchen."
+        "question": "Wie unterscheidet sich One Rooted von einem ATS?",
+        "answer": "Ein ATS speichert Lebensläufe. One Rooted führt Ihren Einstellungsprozess. Es verbindet Kandidaten, Workflows und Entscheidungsträger in Echtzeit mit intelligentem Ranking, automatisierter Zusammenarbeit und Erkenntnissen, die automatisch auftauchen."
       },
       {
-        "question": "Für wen ist OneRooted gebaut?",
-        "answer": "Wachsende Teams, die regelmäßig einstellen und Struktur ohne Komplexität wollen. Ob Sie Gründer, Talent-Leader oder Recruiter sind — wenn Sie genug von verstreuten Tools haben und ein gemeinsames System wollen, ist OneRooted für Sie."
+        "question": "Für wen ist One Rooted gebaut?",
+        "answer": "Wachsende Teams, die regelmäßig einstellen und Struktur ohne Komplexität wollen. Ob Sie Gründer, Talent-Leader oder Recruiter sind — wenn Sie genug von verstreuten Tools haben und ein gemeinsames System wollen, ist One Rooted für Sie."
       },
       {
-        "question": "Kann ich OneRooted mit externen Recruitern oder Agenturen nutzen?",
+        "question": "Kann ich One Rooted mit externen Recruitern oder Agenturen nutzen?",
         "answer": "Ja. Unser Partner-Portal gibt externen Recruitern ihre eigene Pipeline-Ansicht pro Kunde. Sie können Kandidaten direkt einreichen, Echtzeit-Statusupdates sehen und zusammenarbeiten ohne endlose E-Mail-Ketten."
       },
       {
@@ -170,14 +170,14 @@
   },
   "finalCta": {
     "headline": "Hiring funktioniert besser, wenn Sie klar sehen können",
-    "subheadline": "Dafür ist die OneRooted-Demo da.",
+    "subheadline": "Dafür ist die One Rooted-Demo da.",
     "cta": "Demo anfragen",
     "ctaSecondary": "Preise ansehen"
   },
   "product": {
     "seo": {
-      "title": "Produktfunktionen | Wie OneRooted funktioniert",
-      "description": "Entdecken Sie OneRooteds intelligentes Kandidaten-Ranking, visuelle Hiring-Pipeline und Echtzeit-Kollaborationstools. Sehen Sie, wie unser Hiring OS das Recruiting transformiert."
+      "title": "Produktfunktionen | Wie One Rooted funktioniert",
+      "description": "Entdecken Sie One Rooteds intelligentes Kandidaten-Ranking, visuelle Hiring-Pipeline und Echtzeit-Kollaborationstools. Sehen Sie, wie unser Hiring OS das Recruiting transformiert."
     },
     "hero": {
       "label": "Wie es funktioniert",
@@ -266,7 +266,7 @@
     "atsComparison": {
       "label": "Der Unterschied",
       "headline": "Dies ist kein weiteres ATS",
-      "description": "Ein ATS speichert Lebensläufe. OneRooted führt Ihren Einstellungsprozess.",
+      "description": "Ein ATS speichert Lebensläufe. One Rooted führt Ihren Einstellungsprozess.",
       "traditional": "Traditionelles ATS",
       "traditionalItems": [
         "Speichert Lebensläufe in einer Datenbank",
@@ -283,7 +283,7 @@
     },
     "cta": {
       "headline": "Sehen Sie, was passiert, wenn Hiring Struktur hat",
-      "description": "Wir zeigen Ihnen, wie OneRooted Klarheit in Ihren Einstellungsprozess bringt.",
+      "description": "Wir zeigen Ihnen, wie One Rooted Klarheit in Ihren Einstellungsprozess bringt.",
       "button": "Demo anfragen",
       "secondary": "Preise ansehen"
     }
@@ -291,7 +291,7 @@
 "seo": {
     "home": {
       "title": "Das Hiring OS für Teams, die Recruiting ernst nehmen",
-      "description": "Ersetzen Sie verstreute Recruiting-Tools durch ein intelligentes System. OneRooted bewertet Kandidaten, optimiert Workflows und ermöglicht bessere Einstellungsentscheidungen."
+      "description": "Ersetzen Sie verstreute Recruiting-Tools durch ein intelligentes System. One Rooted bewertet Kandidaten, optimiert Workflows und ermöglicht bessere Einstellungsentscheidungen."
     }
   },
   "pricingPage": {
@@ -331,7 +331,7 @@
       }
     },
     "features": {
-      "onerootedSystem": "OneRooted-System",
+      "onerootedSystem": "One Rooted-System",
       "talentPool": "Aktueller Talent-Pool",
       "eAcademy": "Zugang zur E-Academy",
       "emailSupport": "E-Mail-Support",
@@ -408,19 +408,19 @@
   "useCasesPage": {
     "seo": {
       "title": "Anwendungsfälle | Hiring-Lösungen für wachsende Teams",
-      "description": "Sehen Sie, wie Teams OneRooted für schnelles Skalieren, Multi-Stakeholder-Hiring und Partner-Zusammenarbeit nutzen. Echte Szenarien mit messbaren Ergebnissen."
+      "description": "Sehen Sie, wie Teams One Rooted für schnelles Skalieren, Multi-Stakeholder-Hiring und Partner-Zusammenarbeit nutzen. Echte Szenarien mit messbaren Ergebnissen."
     },
     "hero": {
       "label": "Anwendungsfälle",
       "headline": "Echte Szenarien, in denen",
-      "headlineHighlight": "OneRooted glänzt",
+      "headlineHighlight": "One Rooted glänzt",
       "subheadline": "Sehen Sie, wie Teams wie Ihres ihren Einstellungsprozess transformieren."
     },
     "cases": [
       {
         "title": "Ein Team schnell skalieren",
         "problem": "Sie müssen 10+ Personen in 3 Monaten einstellen. Koordination ist Chaos.",
-        "solution": "OneRooted gibt allen Einblick in die Pipeline, automatisiert Übergaben und hält das Momentum.",
+        "solution": "One Rooted gibt allen Einblick in die Pipeline, automatisiert Übergaben und hält das Momentum.",
         "outcomes": ["Schnellere Time-to-Hire", "Weniger Koordinationsaufwand", "Klare Fortschrittsverfolgung"],
         "stat": "40%",
         "statLabel": "schnellere Einstellung"
@@ -451,19 +451,19 @@
       }
     ],
     "theProblem": "Das Problem",
-    "howHelps": "Wie OneRooted hilft",
+    "howHelps": "Wie One Rooted hilft",
     "keyOutcomes": "Wichtigste Ergebnisse",
     "cta": {
       "headline": "Sehen Sie, wie es für Ihr Team funktioniert",
-      "description": "Jedes Team ist einzigartig. Lassen Sie uns erkunden, wie OneRooted Ihre spezifischen Einstellungsherausforderungen transformieren kann.",
+      "description": "Jedes Team ist einzigartig. Lassen Sie uns erkunden, wie One Rooted Ihre spezifischen Einstellungsherausforderungen transformieren kann.",
       "button": "Demo anfragen",
       "secondary": "Sehen Sie, wie es funktioniert"
     }
   },
   "whyPage": {
     "seo": {
-      "title": "Warum OneRooted | Die Geschichte hinter dem Hiring OS",
-      "description": "Warum traditionelle ATS-Systeme moderne Hiring-Teams enttäuschen. Erfahren Sie, wie OneRooted Recruiting-Software mit einem Hiring-OS-Ansatz neu denkt."
+      "title": "Warum One Rooted | Die Geschichte hinter dem Hiring OS",
+      "description": "Warum traditionelle ATS-Systeme moderne Hiring-Teams enttäuschen. Erfahren Sie, wie One Rooted Recruiting-Software mit einem Hiring-OS-Ansatz neu denkt."
     },
     "hero": {
       "label": "Unsere Geschichte",
@@ -502,11 +502,11 @@
     },
     "origin": {
       "label": "Der Ursprung",
-      "headline": "Wie OneRooted entstanden ist",
+      "headline": "Wie One Rooted entstanden ist",
       "steps": [
         { "step": "01", "title": "Die Frustration", "text": "Wir arbeiteten mit Organisationen, die Schwierigkeiten hatten, effektiv einzustellen, obwohl sie 'alle Tools' hatten." },
         { "step": "02", "title": "Die Erkenntnis", "text": "Das Problem war nicht ein Mangel an Software—es war ein Mangel an System. Tools waren nicht verbunden." },
-        { "step": "03", "title": "Die Lösung", "text": "Wir bauten OneRooted als das Betriebssystem für Hiring. Ein Ort, an dem alle zusammenarbeiten können." }
+        { "step": "03", "title": "Die Lösung", "text": "Wir bauten One Rooted als das Betriebssystem für Hiring. Ein Ort, an dem alle zusammenarbeiten können." }
       ],
       "quote": "Kein neues Tool zum Lernen. Ein System, das so funktioniert, wie modernes Hiring wirklich passiert."
     },
@@ -522,7 +522,7 @@
     },
     "cta": {
       "headline": "Bereit, Ihr Hiring neu zu überdenken?",
-      "description": "Sehen Sie, wie OneRooted Ihren Einstellungsprozess von fragmentiert zu vereinheitlicht transformieren kann.",
+      "description": "Sehen Sie, wie One Rooted Ihren Einstellungsprozess von fragmentiert zu vereinheitlicht transformieren kann.",
       "button": "Demo anfragen",
       "secondary": "Sehen Sie, wie es funktioniert"
     }
@@ -530,14 +530,14 @@
   "partnersPage": {
     "seo": {
       "title": "Für Recruiting-Agenturen & Partner",
-      "description": "Arbeiten Sie nahtlos mit Kunden über OneRooted zusammen. Erhalten Sie Echtzeit-Sichtbarkeit, sofortiges Feedback und bessere Ergebnisse. Kostenlos für Partner."
+      "description": "Arbeiten Sie nahtlos mit Kunden über One Rooted zusammen. Erhalten Sie Echtzeit-Sichtbarkeit, sofortiges Feedback und bessere Ergebnisse. Kostenlos für Partner."
     },
     "hero": {
       "label": "Für Recruitment-Partner",
       "headline": "Wir machen Sie",
       "headlineHighlight": "stärker",
       "headlineSuffix": ", nicht überflüssig",
-      "subheadline": "OneRooted ist Infrastruktur. Keine Konkurrenz. Wenn Ihre Kunden es nutzen, bekommen Sie bessere Tools, klarere Sichtbarkeit und stärkere Beziehungen.",
+      "subheadline": "One Rooted ist Infrastruktur. Keine Konkurrenz. Wenn Ihre Kunden es nutzen, bekommen Sie bessere Tools, klarere Sichtbarkeit und stärkere Beziehungen.",
       "cta": "Partner werden",
       "ctaSecondary": "Sehen Sie, wie es funktioniert"
     },
@@ -590,12 +590,12 @@
       "label": "FAQ",
       "headline": "Häufige Fragen von Partnern",
       "items": [
-        { "question": "Muss ich als Partner für OneRooted bezahlen?", "answer": "Nein. Partner zahlen nicht für OneRooted. Wenn ein Kunde Sie zur Zusammenarbeit einlädt, erhalten Sie vollen Zugang zu Ihrer dedizierten Pipeline ohne Kosten. Der Kunde übernimmt das Abonnement." },
-        { "question": "Kann ich mit mehreren Kunden in OneRooted arbeiten?", "answer": "Ja. Jeder Kunde hat seinen eigenen Workspace, und Sie haben eine separate Pipeline pro Kunde. Alles bleibt organisiert und vertraulich zwischen Kunden." },
+        { "question": "Muss ich als Partner für One Rooted bezahlen?", "answer": "Nein. Partner zahlen nicht für One Rooted. Wenn ein Kunde Sie zur Zusammenarbeit einlädt, erhalten Sie vollen Zugang zu Ihrer dedizierten Pipeline ohne Kosten. Der Kunde übernimmt das Abonnement." },
+        { "question": "Kann ich mit mehreren Kunden in One Rooted arbeiten?", "answer": "Ja. Jeder Kunde hat seinen eigenen Workspace, und Sie haben eine separate Pipeline pro Kunde. Alles bleibt organisiert und vertraulich zwischen Kunden." },
         { "question": "Welche Daten kann der Kunde über meine Arbeit sehen?", "answer": "Kunden sehen die Kandidaten, die Sie einreichen, deren Status und Leistungskennzahlen wie Time-to-Hire und Konversionsraten. Sie sehen nicht Ihre internen Notizen oder Kommunikation mit anderen Kunden." },
         { "question": "Wie starte ich als Partner?", "answer": "Ihr Kunde sendet Ihnen einen Einladungslink. Sie erstellen ein Konto (dauert 30 Sekunden) und sind sofort mit deren Pipeline verbunden. Keine Onboarding-Calls, keine Setup-Meetings." },
-        { "question": "Versucht OneRooted, Recruiting-Agenturen zu ersetzen?", "answer": "Nein. Wir sind Infrastruktur, keine Konkurrenz. OneRooted macht die Zusammenarbeit zwischen Ihnen und Ihren Kunden reibungsloser. Bessere Tools bedeuten bessere Platzierungen, stärkere Beziehungen und weniger Zeitverschwendung bei Admin." },
-        { "question": "Kann ich mein eigenes ATS neben OneRooted weiter nutzen?", "answer": "Ja. Viele Partner nutzen ihre eigenen Systeme intern und reichen Kandidaten bei OneRooted für die Kundenzusammenarbeit ein. Sehen Sie es als den gemeinsamen Arbeitsbereich, in dem Sie und Ihr Kunde sich treffen." }
+        { "question": "Versucht One Rooted, Recruiting-Agenturen zu ersetzen?", "answer": "Nein. Wir sind Infrastruktur, keine Konkurrenz. One Rooted macht die Zusammenarbeit zwischen Ihnen und Ihren Kunden reibungsloser. Bessere Tools bedeuten bessere Platzierungen, stärkere Beziehungen und weniger Zeitverschwendung bei Admin." },
+        { "question": "Kann ich mein eigenes ATS neben One Rooted weiter nutzen?", "answer": "Ja. Viele Partner nutzen ihre eigenen Systeme intern und reichen Kandidaten bei One Rooted für die Kundenzusammenarbeit ein. Sehen Sie es als den gemeinsamen Arbeitsbereich, in dem Sie und Ihr Kunde sich treffen." }
       ]
     },
     "cta": {
@@ -607,8 +607,8 @@
   },
   "teamPage": {
     "seo": {
-      "title": "Über Uns | Lernen Sie das OneRooted-Team kennen",
-      "description": "Lernen Sie das Team hinter OneRooted kennen. 25+ Jahre Recruiting-Expertise, die die Zukunft des Hirings baut. Teil der One-Time Group."
+      "title": "Über Uns | Lernen Sie das One Rooted-Team kennen",
+      "description": "Lernen Sie das Team hinter One Rooted kennen. 25+ Jahre Recruiting-Expertise, die die Zukunft des Hirings baut. Teil der One-Time Group."
     },
     "hero": {
       "label": "Das Team kennenlernen",
@@ -616,11 +616,11 @@
       "headlineHighlight": "Hirings bauen",
       "subheadline": "Ein leidenschaftliches Team aus Recruitern, Träumern und Machern mit der Mission, Hiring für immer zu verändern."
     },
-    "collectiveFrame": "OneRooted wurde nicht von Produktmanagern gebaut, die bei Hiring-Problemen raten. Es wurde von Operatoren gebaut, die sie jahrzehntelang gelebt haben.",
+    "collectiveFrame": "One Rooted wurde nicht von Produktmanagern gebaut, die bei Hiring-Problemen raten. Es wurde von Operatoren gebaut, die sie jahrzehntelang gelebt haben.",
     "members": [
       { "name": "Robin Dennie", "role": "Gründer & CEO", "tagline": "Erschafft", "bio": "25 Jahre Agenturerfahrung. Recruiting-Innovator, der transformiert, wie Unternehmen einstellen." },
       { "name": "Erik Dijkshoorn", "role": "Strategischer Berater", "tagline": "Berät", "bio": "Umfangreiche Erfahrung in mehreren C-Level-Rollen. Leadership-Coach und strategischer Denker." },
-      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leitet", "bio": "Office Managerin und BI-Spezialistin. Das finanzielle und operative Gewissen von OneRooted." },
+      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leitet", "bio": "Office Managerin und BI-Spezialistin. Das finanzielle und operative Gewissen von One Rooted." },
       { "name": "Luuk Wubs", "role": "CTO", "tagline": "Baut", "bio": "Junger, engagierter Tech-Leader. Leidenschaftlich beim Aufbau skalierbarer Lösungen, die Hiring besser machen." }
     ],
     "values": {
@@ -636,7 +636,7 @@
     "story": {
       "label": "Unsere Geschichte",
       "headline": "Teil der One-Time Group",
-      "description": "OneRooted wurde aus der Mission der One-Time Group geboren, zu transformieren, wie Organisationen Talente finden und fördern. Mit tiefen Wurzeln in Recruiting und HR-Technologie bringen wir Jahrzehnte kombinierter Erfahrung in jedes Feature, das wir bauen.",
+      "description": "One Rooted wurde aus der Mission der One-Time Group geboren, zu transformieren, wie Organisationen Talente finden und fördern. Mit tiefen Wurzeln in Recruiting und HR-Technologie bringen wir Jahrzehnte kombinierter Erfahrung in jedes Feature, das wir bauen.",
       "location": "Mit Sitz in den Niederlanden bauen wir ein globales Produkt für Teams überall."
     },
     "joinUs": {
@@ -654,14 +654,14 @@
   },
   "demoPage": {
     "seo": {
-      "title": "Demo anfragen | OneRooted in Aktion sehen",
-      "description": "Buchen Sie eine kostenlose 30-Minuten-Demo. Sehen Sie, wie OneRooteds Hiring OS Ihr Recruiting optimieren, Zusammenarbeit verbessern und bessere Einstellungen ermöglichen kann."
+      "title": "Demo anfragen | One Rooted in Aktion sehen",
+      "description": "Buchen Sie eine kostenlose 30-Minuten-Demo. Sehen Sie, wie One Rooteds Hiring OS Ihr Recruiting optimieren, Zusammenarbeit verbessern und bessere Einstellungen ermöglichen kann."
     },
     "hero": {
       "label": "Loslegen",
       "headline": "Eine",
       "headlineHighlight": "Demo anfragen",
-      "subheadline": "Sehen Sie OneRooted in Aktion. Kein Verkaufstheater. Einfach Klarheit.",
+      "subheadline": "Sehen Sie One Rooted in Aktion. Kein Verkaufstheater. Einfach Klarheit.",
       "trustIndicators": [
         { "text": "30-Minuten-Gespräch" },
         { "text": "Keine Verpflichtung" },
@@ -686,11 +686,11 @@
     "expect": {
       "headline": "Was Sie erwartet",
       "items": [
-        { "title": "30-Minuten-Walkthrough", "desc": "Wir zeigen Ihnen, wie OneRooted für Ihre spezifische Situation funktioniert." },
+        { "title": "30-Minuten-Walkthrough", "desc": "Wir zeigen Ihnen, wie One Rooted für Ihre spezifische Situation funktioniert." },
         { "title": "Ehrliches Gespräch", "desc": "Kein Druck. Wir sagen Ihnen, ob wir die richtige Wahl sind—und wenn nicht." },
         { "title": "Klare nächste Schritte", "desc": "Ob Trial, Onboarding oder einfach in Kontakt bleiben." }
       ],
-      "testimonial": "Die Demo war erfrischend direkt. Sie verstanden unsere Herausforderungen sofort und zeigten genau, wie OneRooted helfen würde.",
+      "testimonial": "Die Demo war erfrischend direkt. Sie verstanden unsere Herausforderungen sofort und zeigten genau, wie One Rooted helfen würde.",
       "testimonialAuthor": "— Head of Talent, Niederländisches Scale-up",
       "quickResponse": "Schnelle Antwort",
       "quickResponseDesc": "Wir antworten typischerweise innerhalb von 24 Stunden"
@@ -698,15 +698,15 @@
   },
   "privacyPage": {
     "seo": {
-      "title": "Datenschutzrichtlinie | Datenschutz bei OneRooted",
-      "description": "Erfahren Sie, wie OneRooted Ihre personenbezogenen Daten sammelt, verwendet und schützt. DSGVO-konform. Ihr Datenschutz ist unsere Priorität."
+      "title": "Datenschutzrichtlinie | Datenschutz bei One Rooted",
+      "description": "Erfahren Sie, wie One Rooted Ihre personenbezogenen Daten sammelt, verwendet und schützt. DSGVO-konform. Ihr Datenschutz ist unsere Priorität."
     },
     "title": "Datenschutzrichtlinie",
     "lastUpdated": "Zuletzt aktualisiert:",
     "sections": [
       {
         "title": "1. Einleitung",
-        "content": "OneRooted (\"wir\", \"uns\" oder \"unser\") verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Hiring OS-Plattform und verwandte Dienste nutzen."
+        "content": "One Rooted (\"wir\", \"uns\" oder \"unser\") verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Hiring OS-Plattform und verwandte Dienste nutzen."
       },
       {
         "title": "2. Informationen, die wir sammeln",
@@ -735,19 +735,19 @@
   },
   "termsPage": {
     "seo": {
-      "title": "Allgemeine Geschäftsbedingungen | OneRooted Nutzungsvereinbarung",
-      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen von OneRooted. Verstehen Sie Ihre Rechte und Pflichten bei der Nutzung unserer Hiring OS-Plattform."
+      "title": "Allgemeine Geschäftsbedingungen | One Rooted Nutzungsvereinbarung",
+      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen von One Rooted. Verstehen Sie Ihre Rechte und Pflichten bei der Nutzung unserer Hiring OS-Plattform."
     },
     "title": "Allgemeine Geschäftsbedingungen",
     "lastUpdated": "Zuletzt aktualisiert:",
     "sections": [
       {
         "title": "1. Zustimmung zu den Bedingungen",
-        "content": "Durch den Zugriff auf oder die Nutzung der Dienste von OneRooted stimmen Sie diesen Allgemeinen Geschäftsbedingungen zu. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen."
+        "content": "Durch den Zugriff auf oder die Nutzung der Dienste von One Rooted stimmen Sie diesen Allgemeinen Geschäftsbedingungen zu. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen."
       },
       {
         "title": "2. Beschreibung des Dienstes",
-        "content": "OneRooted bietet ein Hiring Operating System (Hiring OS), das Organisationen hilft, ihre Rekrutierungsprozesse zu optimieren. Unsere Plattform umfasst Kandidatenverfolgung, Workflow-Management, Kollaborationstools und Analysen."
+        "content": "One Rooted bietet ein Hiring Operating System (Hiring OS), das Organisationen hilft, ihre Rekrutierungsprozesse zu optimieren. Unsere Plattform umfasst Kandidatenverfolgung, Workflow-Management, Kollaborationstools und Analysen."
       },
       {
         "title": "3. Benutzerkonten",

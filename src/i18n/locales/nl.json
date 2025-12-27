@@ -143,19 +143,19 @@
     "headline": "Veelgestelde vragen",
     "items": [
       {
-        "question": "Wat is OneRooted precies?",
-        "answer": "OneRooted is een Hiring Operating System — niet zomaar een ATS. Het verbindt al je hiring data, workflows en stakeholders in één intelligent systeem dat je helpt sneller betere hiring keuzes te maken."
+        "question": "Wat is One Rooted precies?",
+        "answer": "One Rooted is een Hiring Operating System — niet zomaar een ATS. Het verbindt al je hiring data, workflows en stakeholders in één intelligent systeem dat je helpt sneller betere hiring keuzes te maken."
       },
       {
-        "question": "Hoe verschilt OneRooted van een ATS?",
-        "answer": "Een ATS slaat cv's op. OneRooted runt je wervingsproces. Het verbindt kandidaten, workflows en beslissers in real-time met intelligente ranking, geautomatiseerde samenwerking en inzichten die vanzelf naar boven komen."
+        "question": "Hoe verschilt One Rooted van een ATS?",
+        "answer": "Een ATS slaat cv's op. One Rooted runt je wervingsproces. Het verbindt kandidaten, workflows en beslissers in real-time met intelligente ranking, geautomatiseerde samenwerking en inzichten die vanzelf naar boven komen."
       },
       {
-        "question": "Voor wie is OneRooted gebouwd?",
-        "answer": "Groeiende teams die regelmatig werven en structuur willen zonder complexiteit. Of je nu founder, talent leader of recruiter bent — als je klaar bent met verspreide tools en één gedeeld systeem wilt, is OneRooted voor jou."
+        "question": "Voor wie is One Rooted gebouwd?",
+        "answer": "Groeiende teams die regelmatig werven en structuur willen zonder complexiteit. Of je nu founder, talent leader of recruiter bent — als je klaar bent met verspreide tools en één gedeeld systeem wilt, is One Rooted voor jou."
       },
       {
-        "question": "Kan ik OneRooted gebruiken met externe recruiters of bureaus?",
+        "question": "Kan ik One Rooted gebruiken met externe recruiters of bureaus?",
         "answer": "Ja. Ons Partner Portal geeft externe recruiters hun eigen pipeline-weergave per klant. Ze kunnen direct kandidaten indienen, real-time statusupdates zien en samenwerken zonder eindeloze e-mailketens."
       },
       {
@@ -170,14 +170,14 @@
   },
   "finalCta": {
     "headline": "Hiring werkt beter als je het helder kunt zien",
-    "subheadline": "Daar is de OneRooted demo voor.",
+    "subheadline": "Daar is de One Rooted demo voor.",
     "cta": "Demo aanvragen",
     "ctaSecondary": "Bekijk prijzen"
   },
   "product": {
     "seo": {
-      "title": "Product Features | Hoe OneRooted Werkt",
-      "description": "Ontdek OneRooted's intelligente kandidaat-ranking, visuele hiring pipeline en real-time samenwerkingstools. Zie hoe ons Hiring OS recruitment transformeert."
+      "title": "Product Features | Hoe One Rooted Werkt",
+      "description": "Ontdek One Rooted's intelligente kandidaat-ranking, visuele hiring pipeline en real-time samenwerkingstools. Zie hoe ons Hiring OS recruitment transformeert."
     },
     "hero": {
       "label": "Hoe het werkt",
@@ -266,7 +266,7 @@
     "atsComparison": {
       "label": "Het verschil",
       "headline": "Dit is geen zoveelste ATS",
-      "description": "Een ATS slaat cv's op. OneRooted runt je wervingsproces.",
+      "description": "Een ATS slaat cv's op. One Rooted runt je wervingsproces.",
       "traditional": "Traditioneel ATS",
       "traditionalItems": [
         "Slaat cv's op in een database",
@@ -283,7 +283,7 @@
     },
     "cta": {
       "headline": "Zie wat er gebeurt als hiring structuur heeft",
-      "description": "We laten je zien hoe OneRooted helderheid brengt in je wervingsproces.",
+      "description": "We laten je zien hoe One Rooted helderheid brengt in je wervingsproces.",
       "button": "Demo aanvragen",
       "secondary": "Bekijk prijzen"
     }
@@ -291,7 +291,7 @@
 "seo": {
     "home": {
       "title": "Het Hiring OS voor Teams die Recruitment Serieus Nemen",
-      "description": "Vervang verspreide recruitment tools door één intelligent systeem. OneRooted rangschikt kandidaten, stroomlijnt workflows en stimuleert betere hiring keuzes."
+      "description": "Vervang verspreide recruitment tools door één intelligent systeem. One Rooted rangschikt kandidaten, stroomlijnt workflows en stimuleert betere hiring keuzes."
     }
   },
   "pricingPage": {
@@ -331,7 +331,7 @@
       }
     },
     "features": {
-      "onerootedSystem": "OneRooted systeem",
+      "onerootedSystem": "One Rooted systeem",
       "talentPool": "Up-to-date talent pool",
       "eAcademy": "Toegang tot E-Academy",
       "emailSupport": "E-mail support",
@@ -408,19 +408,19 @@
   "useCasesPage": {
     "seo": {
       "title": "Toepassingen | Hiring Oplossingen voor Groeiende Teams",
-      "description": "Zie hoe teams OneRooted gebruiken voor snel schalen, hiring met meerdere stakeholders en partner samenwerking. Echte scenario's met meetbare resultaten."
+      "description": "Zie hoe teams One Rooted gebruiken voor snel schalen, hiring met meerdere stakeholders en partner samenwerking. Echte scenario's met meetbare resultaten."
     },
     "hero": {
       "label": "Toepassingen",
       "headline": "Echte scenario's waar",
-      "headlineHighlight": "OneRooted schittert",
+      "headlineHighlight": "One Rooted schittert",
       "subheadline": "Zie hoe teams zoals de jouwe hun wervingsproces transformeren."
     },
     "cases": [
       {
         "title": "Snel een team opschalen",
         "problem": "Je moet 10+ mensen aannemen in 3 maanden. Coördinatie is chaos.",
-        "solution": "OneRooted geeft iedereen zicht op de pipeline, automatiseert overdrachten en houdt momentum.",
+        "solution": "One Rooted geeft iedereen zicht op de pipeline, automatiseert overdrachten en houdt momentum.",
         "outcomes": ["Snellere time-to-hire", "Minder coördinatie-overhead", "Helder voortgangsoverzicht"],
         "stat": "40%",
         "statLabel": "sneller aannemen"
@@ -451,19 +451,19 @@
       }
     ],
     "theProblem": "Het probleem",
-    "howHelps": "Hoe OneRooted helpt",
+    "howHelps": "Hoe One Rooted helpt",
     "keyOutcomes": "Belangrijkste resultaten",
     "cta": {
       "headline": "Zie hoe het werkt voor jouw team",
-      "description": "Elk team is uniek. Laten we verkennen hoe OneRooted jouw specifieke wervingsuitdagingen kan transformeren.",
+      "description": "Elk team is uniek. Laten we verkennen hoe One Rooted jouw specifieke wervingsuitdagingen kan transformeren.",
       "button": "Demo aanvragen",
       "secondary": "Bekijk hoe het werkt"
     }
   },
   "whyPage": {
     "seo": {
-      "title": "Waarom OneRooted | Het Verhaal Achter het Hiring OS",
-      "description": "Waarom traditionele ATS-systemen moderne hiring teams teleurstellen. Leer hoe OneRooted recruitment software herdenkt met een Hiring OS aanpak."
+      "title": "Waarom One Rooted | Het Verhaal Achter het Hiring OS",
+      "description": "Waarom traditionele ATS-systemen moderne hiring teams teleurstellen. Leer hoe One Rooted recruitment software herdenkt met een Hiring OS aanpak."
     },
     "hero": {
       "label": "Ons verhaal",
@@ -502,11 +502,11 @@
     },
     "origin": {
       "label": "De oorsprong",
-      "headline": "Hoe OneRooted is ontstaan",
+      "headline": "Hoe One Rooted is ontstaan",
       "steps": [
         { "step": "01", "title": "De frustratie", "text": "We werkten met organisaties die worstelden om effectief te werven, ondanks dat ze 'alle tools' hadden." },
         { "step": "02", "title": "De realisatie", "text": "Het probleem was geen gebrek aan software—het was een gebrek aan systeem. Tools waren niet verbonden." },
-        { "step": "03", "title": "De oplossing", "text": "We bouwden OneRooted als het operating system voor hiring. Eén plek waar iedereen kan samenwerken." }
+        { "step": "03", "title": "De oplossing", "text": "We bouwden One Rooted als het operating system voor hiring. Eén plek waar iedereen kan samenwerken." }
       ],
       "quote": "Geen nieuwe tool om te leren. Een systeem dat werkt zoals moderne hiring echt gebeurt."
     },
@@ -522,7 +522,7 @@
     },
     "cta": {
       "headline": "Klaar om te heroverwegen hoe je werft?",
-      "description": "Zie hoe OneRooted je wervingsproces kan transformeren van gefragmenteerd naar gecentraliseerd.",
+      "description": "Zie hoe One Rooted je wervingsproces kan transformeren van gefragmenteerd naar gecentraliseerd.",
       "button": "Demo aanvragen",
       "secondary": "Bekijk hoe het werkt"
     }
@@ -530,14 +530,14 @@
   "partnersPage": {
     "seo": {
       "title": "Voor Recruitment Bureaus & Partners",
-      "description": "Werk naadloos samen met klanten via OneRooted. Krijg real-time zichtbaarheid, directe feedback en betere resultaten. Gratis voor partners."
+      "description": "Werk naadloos samen met klanten via One Rooted. Krijg real-time zichtbaarheid, directe feedback en betere resultaten. Gratis voor partners."
     },
     "hero": {
       "label": "Voor recruitment partners",
       "headline": "We maken je",
       "headlineHighlight": "sterker",
       "headlineSuffix": ", niet overbodig",
-      "subheadline": "OneRooted is infrastructuur. Geen concurrentie. Als je klanten het gebruiken, krijg jij betere tools, helderder zicht en sterkere relaties.",
+      "subheadline": "One Rooted is infrastructuur. Geen concurrentie. Als je klanten het gebruiken, krijg jij betere tools, helderder zicht en sterkere relaties.",
       "cta": "Partner met ons",
       "ctaSecondary": "Bekijk hoe het werkt"
     },
@@ -590,12 +590,12 @@
       "label": "FAQ",
       "headline": "Veelgestelde vragen van partners",
       "items": [
-        { "question": "Moet ik betalen voor OneRooted als partner?", "answer": "Nee. Partners betalen niet voor OneRooted. Wanneer een klant je uitnodigt om samen te werken, krijg je volledige toegang tot je dedicated pipeline zonder kosten. De klant handelt het abonnement af." },
-        { "question": "Kan ik met meerdere klanten werken in OneRooted?", "answer": "Ja. Elke klant heeft zijn eigen workspace, en je hebt een aparte pipeline per klant. Alles blijft georganiseerd en vertrouwelijk tussen klanten." },
+        { "question": "Moet ik betalen voor One Rooted als partner?", "answer": "Nee. Partners betalen niet voor One Rooted. Wanneer een klant je uitnodigt om samen te werken, krijg je volledige toegang tot je dedicated pipeline zonder kosten. De klant handelt het abonnement af." },
+        { "question": "Kan ik met meerdere klanten werken in One Rooted?", "answer": "Ja. Elke klant heeft zijn eigen workspace, en je hebt een aparte pipeline per klant. Alles blijft georganiseerd en vertrouwelijk tussen klanten." },
         { "question": "Welke data kan de klant zien over mijn werk?", "answer": "Klanten zien de kandidaten die je indient, hun status en prestatiemetrics zoals time-to-hire en conversieratio's. Ze zien niet je interne notities of communicatie met andere klanten." },
         { "question": "Hoe begin ik als partner?", "answer": "Je klant stuurt je een uitnodigingslink. Je maakt een account aan (duurt 30 seconden), en je bent meteen verbonden met hun pipeline. Geen onboarding calls, geen setup meetings." },
-        { "question": "Probeert OneRooted recruitment bureaus te vervangen?", "answer": "Nee. Wij zijn infrastructuur, geen concurrentie. OneRooted maakt de samenwerking tussen jou en je klanten soepeler. Betere tools betekent betere plaatsingen, sterkere relaties en minder tijd verspild aan admin." },
-        { "question": "Kan ik nog steeds mijn eigen ATS naast OneRooted gebruiken?", "answer": "Ja. Veel partners gebruiken hun eigen systemen intern en dienen kandidaten in bij OneRooted voor klantsamenwerking. Zie het als de gedeelde werkruimte waar jij en je klant samenkomen." }
+        { "question": "Probeert One Rooted recruitment bureaus te vervangen?", "answer": "Nee. Wij zijn infrastructuur, geen concurrentie. One Rooted maakt de samenwerking tussen jou en je klanten soepeler. Betere tools betekent betere plaatsingen, sterkere relaties en minder tijd verspild aan admin." },
+        { "question": "Kan ik nog steeds mijn eigen ATS naast One Rooted gebruiken?", "answer": "Ja. Veel partners gebruiken hun eigen systemen intern en dienen kandidaten in bij One Rooted voor klantsamenwerking. Zie het als de gedeelde werkruimte waar jij en je klant samenkomen." }
       ]
     },
     "cta": {
@@ -607,8 +607,8 @@
   },
   "teamPage": {
     "seo": {
-      "title": "Over Ons | Maak Kennis met het OneRooted Team",
-      "description": "Maak kennis met het team achter OneRooted. 25+ jaar recruitment expertise die de toekomst van hiring bouwt. Onderdeel van de One-Time Group."
+      "title": "Over Ons | Maak Kennis met het One Rooted Team",
+      "description": "Maak kennis met het team achter One Rooted. 25+ jaar recruitment expertise die de toekomst van hiring bouwt. Onderdeel van de One-Time Group."
     },
     "hero": {
       "label": "Ontmoet het team",
@@ -616,11 +616,11 @@
       "headlineHighlight": "hiring bouwen",
       "subheadline": "Een gepassioneerd team van recruiters, dromers en bouwers met de missie om hiring voorgoed te veranderen."
     },
-    "collectiveFrame": "OneRooted is niet gebouwd door product managers die gokten naar hiring problemen. Het is gebouwd door operators die ze decennialang hebben geleefd.",
+    "collectiveFrame": "One Rooted is niet gebouwd door product managers die gokten naar hiring problemen. Het is gebouwd door operators die ze decennialang hebben geleefd.",
     "members": [
       { "name": "Robin Dennie", "role": "Founder & CEO", "tagline": "Creëert", "bio": "25 jaar bureau-ervaring. Recruitment innovator die transformeert hoe bedrijven werven." },
       { "name": "Erik Dijkshoorn", "role": "Strategisch Adviseur", "tagline": "Adviseert", "bio": "Uitgebreide ervaring in meerdere C-level rollen. Leadership coach en strategisch denker." },
-      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leidt", "bio": "Bureau-manager en BI-specialist. Het financiële en operationele geweten van OneRooted." },
+      { "name": "Juliëtte Welten", "role": "Operations Director", "tagline": "Leidt", "bio": "Bureau-manager en BI-specialist. Het financiële en operationele geweten van One Rooted." },
       { "name": "Luuk Wubs", "role": "CTO", "tagline": "Bouwt", "bio": "Jong, gedreven tech leider. Gepassioneerd over het bouwen van schaalbare oplossingen die hiring beter maken." }
     ],
     "values": {
@@ -636,7 +636,7 @@
     "story": {
       "label": "Ons verhaal",
       "headline": "Onderdeel van de One-Time Group",
-      "description": "OneRooted is geboren uit de missie van de One-Time Group om te transformeren hoe organisaties talent vinden en koesteren. Met diepe wortels in recruitment en HR-technologie, brengen we decennia gecombineerde ervaring naar elke feature die we bouwen.",
+      "description": "One Rooted is geboren uit de missie van de One-Time Group om te transformeren hoe organisaties talent vinden en koesteren. Met diepe wortels in recruitment en HR-technologie, brengen we decennia gecombineerde ervaring naar elke feature die we bouwen.",
       "location": "Gevestigd in Nederland, bouwen we een globaal product voor teams overal."
     },
     "joinUs": {
@@ -654,14 +654,14 @@
   },
   "demoPage": {
     "seo": {
-      "title": "Demo Aanvragen | Zie OneRooted in Actie",
-      "description": "Boek een gratis 30-minuten demo. Zie hoe OneRooted's Hiring OS je recruitment kan stroomlijnen, samenwerking kan verbeteren en betere hires kan realiseren."
+      "title": "Demo Aanvragen | Zie One Rooted in Actie",
+      "description": "Boek een gratis 30-minuten demo. Zie hoe One Rooted's Hiring OS je recruitment kan stroomlijnen, samenwerking kan verbeteren en betere hires kan realiseren."
     },
     "hero": {
       "label": "Aan de slag",
       "headline": "Vraag een",
       "headlineHighlight": "demo",
-      "subheadline": "Zie OneRooted in actie. Geen sales-theater. Gewoon helderheid.",
+      "subheadline": "Zie One Rooted in actie. Geen sales-theater. Gewoon helderheid.",
       "trustIndicators": [
         { "text": "30-minuten gesprek" },
         { "text": "Geen verplichting" },
@@ -686,11 +686,11 @@
     "expect": {
       "headline": "Wat te verwachten",
       "items": [
-        { "title": "30-minuten walkthrough", "desc": "We laten je zien hoe OneRooted werkt voor jouw specifieke situatie." },
+        { "title": "30-minuten walkthrough", "desc": "We laten je zien hoe One Rooted werkt voor jouw specifieke situatie." },
         { "title": "Eerlijk gesprek", "desc": "Geen druk. We vertellen je of we de juiste fit zijn—en als we dat niet zijn." },
         { "title": "Duidelijke volgende stappen", "desc": "Of het nu een trial is, onboarding, of gewoon in contact blijven." }
       ],
-      "testimonial": "De demo was verfrissend direct. Ze begrepen onze uitdagingen meteen en lieten precies zien hoe OneRooted zou helpen.",
+      "testimonial": "De demo was verfrissend direct. Ze begrepen onze uitdagingen meteen en lieten precies zien hoe One Rooted zou helpen.",
       "testimonialAuthor": "— Head of Talent, Nederlandse Scale-up",
       "quickResponse": "Snelle reactie",
       "quickResponseDesc": "We reageren doorgaans binnen 24 uur"
@@ -698,15 +698,15 @@
   },
   "privacyPage": {
     "seo": {
-      "title": "Privacybeleid | Gegevensbescherming bij OneRooted",
-      "description": "Ontdek hoe OneRooted uw persoonsgegevens verzamelt, gebruikt en beschermt. AVG-conform. Uw privacy is onze prioriteit."
+      "title": "Privacybeleid | Gegevensbescherming bij One Rooted",
+      "description": "Ontdek hoe One Rooted uw persoonsgegevens verzamelt, gebruikt en beschermt. AVG-conform. Uw privacy is onze prioriteit."
     },
     "title": "Privacybeleid",
     "lastUpdated": "Laatst bijgewerkt:",
     "sections": [
       {
         "title": "1. Inleiding",
-        "content": "OneRooted (\"wij\", \"ons\" of \"onze\") zet zich in voor de bescherming van uw privacy. Dit Privacybeleid legt uit hoe wij uw informatie verzamelen, gebruiken, openbaar maken en beschermen wanneer u ons Hiring OS-platform en gerelateerde diensten gebruikt."
+        "content": "One Rooted (\"wij\", \"ons\" of \"onze\") zet zich in voor de bescherming van uw privacy. Dit Privacybeleid legt uit hoe wij uw informatie verzamelen, gebruiken, openbaar maken en beschermen wanneer u ons Hiring OS-platform en gerelateerde diensten gebruikt."
       },
       {
         "title": "2. Informatie die wij verzamelen",
@@ -735,19 +735,19 @@
   },
   "termsPage": {
     "seo": {
-      "title": "Algemene Voorwaarden | OneRooted Gebruikersovereenkomst",
-      "description": "Lees de Algemene Voorwaarden van OneRooted. Begrijp uw rechten en verantwoordelijkheden bij het gebruik van ons Hiring OS-platform."
+      "title": "Algemene Voorwaarden | One Rooted Gebruikersovereenkomst",
+      "description": "Lees de Algemene Voorwaarden van One Rooted. Begrijp uw rechten en verantwoordelijkheden bij het gebruik van ons Hiring OS-platform."
     },
     "title": "Algemene Voorwaarden",
     "lastUpdated": "Laatst bijgewerkt:",
     "sections": [
       {
         "title": "1. Akkoord met voorwaarden",
-        "content": "Door toegang te krijgen tot of gebruik te maken van de diensten van OneRooted, gaat u akkoord met deze Algemene Voorwaarden. Als u het niet eens bent met enig deel van deze voorwaarden, mag u onze diensten niet gebruiken."
+        "content": "Door toegang te krijgen tot of gebruik te maken van de diensten van One Rooted, gaat u akkoord met deze Algemene Voorwaarden. Als u het niet eens bent met enig deel van deze voorwaarden, mag u onze diensten niet gebruiken."
       },
       {
         "title": "2. Beschrijving van de dienst",
-        "content": "OneRooted biedt een Hiring Operating System (Hiring OS) dat organisaties helpt hun wervingsprocessen te stroomlijnen. Ons platform omvat kandidaattracking, workflowbeheer, samenwerkingstools en analyses."
+        "content": "One Rooted biedt een Hiring Operating System (Hiring OS) dat organisaties helpt hun wervingsprocessen te stroomlijnen. Ons platform omvat kandidaattracking, workflowbeheer, samenwerkingstools en analyses."
       },
       {
         "title": "3. Gebruikersaccounts",
