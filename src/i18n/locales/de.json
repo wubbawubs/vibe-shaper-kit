@@ -798,7 +798,7 @@
   },
   "lightOffer": {
     "banner": {
-      "label": "✨ Neu: OneRooted testen",
+      "label": "✨ Neu: One Rooted testen",
       "headline": "Klein anfangen. Wachsen wenn bereit.",
       "description": "Eine Stelle, 100 Kandidaten aus unserem Talent-Pool. Perfekt um das System zu erleben.",
       "price": "99",
@@ -807,15 +807,15 @@
     },
     "page": {
       "seo": {
-        "title": "OneRooted Light | Starten Sie mit einer Stelle für €99/Monat",
-        "description": "Erleben Sie OneRooted mit unserem Light-Plan: 1 Stelle, 100 Kandidaten aus unserem Talent-Pool für nur €99/Monat. Perfekt zum Starten ohne Verpflichtung."
+        "title": "One Rooted Light | Starten Sie mit einer Stelle für €99/Monat",
+        "description": "Erleben Sie One Rooted mit unserem Light-Plan: 1 Stelle, 100 Kandidaten aus unserem Talent-Pool für nur €99/Monat. Perfekt zum Starten ohne Verpflichtung."
       },
       "hero": {
-        "label": "OneRooted Light",
+        "label": "One Rooted Light",
         "badge": "Zeitlich begrenztes Angebot",
-        "headline": "Hören Sie auf, Geld für Recruiter zu verschwenden.",
-        "headlineHighlight": "Smarter einstellen.",
-        "subheadline": "Erhalten Sie die volle Power von OneRooted mit 1 Stelle und 100 Kandidaten aus unserem vorgeprüften Talent-Pool. Professionelles Recruiting ohne Agentur-Preise.",
+        "headline": "Klein Anfangen.",
+        "headlineHighlight": "Smarter Einstellen.",
+        "subheadline": "1 Stelle, 100 Kandidaten aus unserem Talent-Pool. Das volle System für €99/Monat.",
         "stats": {
           "companies": "10+",
           "companiesLabel": "Unternehmen mit Light gestartet",
@@ -824,30 +824,30 @@
         }
       },
       "problem": {
-        "label": "Das Problem",
-        "headline": "Warum traditionelles Recruiting für wachsende Unternehmen nicht funktioniert",
+        "label": "Die Herausforderung",
+        "headline": "Recruiting ist schwieriger als es sein sollte",
         "items": [
           {
-            "title": "Recruitment-Agenturen",
-            "description": "€5.000-15.000 pro Einstellung. Keine Garantie. Keine Kontrolle über den Prozess.",
+            "title": "Hohe Kosten",
+            "description": "Qualitative Hiring-Lösungen kosten oft Tausende pro Monat oder pro Einstellung.",
             "cost": "€5.000+"
           },
           {
-            "title": "Job-Portale",
-            "description": "Hunderte Bewerbungen. 90% nicht relevant. Stunden an Screening.",
-            "cost": "€500+"
+            "title": "Zeitaufwendig",
+            "description": "Screening, Terminplanung, Nachverfolgung — Stunden Arbeit für jede Rolle.",
+            "cost": "Stunden"
           },
           {
-            "title": "Selbst machen",
-            "description": "Tabellenkalkulationen, E-Mails, keine Übersicht. Gute Kandidaten gehen verloren.",
-            "cost": "Unbezahlbar"
+            "title": "Keine Struktur",
+            "description": "Tabellenkalkulationen, E-Mails überall, gute Kandidaten gehen verloren.",
+            "cost": "Chaos"
           }
         ],
         "conclusion": "Sie brauchen kein größeres Budget. Sie brauchen ein besseres System."
       },
       "solution": {
         "label": "Die Lösung",
-        "headline": "OneRooted Light: alles was Sie zum Starten brauchen",
+        "headline": "One Rooted Light: alles was Sie zum Starten brauchen",
         "description": "Light ist keine abgespeckte Version. Es ist dasselbe leistungsstarke Tool, das größere Teams nutzen — mit Fokus auf Ihre erste Einstellung.",
         "points": [
           "Dasselbe System wie unsere Premium-Kunden",
@@ -926,15 +926,15 @@
       },
       "comparison": {
         "label": "Vergleich",
-        "headline": "Light vs. traditionelle Optionen",
-        "headers": ["", "OneRooted Light", "Recruitment-Agentur", "Job-Portal"],
+        "headline": "Light vs. Alternativen",
+        "headers": ["", "One Rooted Light", "Selbst machen", "Premium-Tools"],
         "rows": [
-          { "label": "Monatliche Kosten", "light": "€99", "agency": "€5.000+", "jobboard": "€500+" },
-          { "label": "Zugang zu Kandidaten", "light": "✓ 100 Kandidaten", "agency": "✓ Begrenzt", "jobboard": "✓ Unbegrenzt (unqualifiziert)" },
-          { "label": "Vor-Screening", "light": "✓ Inklusive", "agency": "✓ Inklusive", "jobboard": "✗ Selbst machen" },
-          { "label": "Hiring-System", "light": "✓ Vollständige Plattform", "agency": "✗ Tabellenkalkulationen", "jobboard": "✗ E-Mail-Chaos" },
-          { "label": "Kündigung", "light": "✓ Monatlich", "agency": "✗ Pro Projekt", "jobboard": "✓ Monatlich" },
-          { "label": "Datenbesitz", "light": "✓ Immer Ihre", "agency": "✗ Deren", "jobboard": "✗ Begrenzt" }
+          { "label": "Monatliche Kosten", "light": "€99", "agency": "€0 + Zeit", "jobboard": "€500+" },
+          { "label": "Zugang zu Kandidaten", "light": "✓ 100 Kandidaten", "agency": "✗ Nur Ihr Netzwerk", "jobboard": "✓ Variiert" },
+          { "label": "Vor-Screening", "light": "✓ Inklusive", "agency": "✗ Selbst machen", "jobboard": "✗ Selbst machen" },
+          { "label": "Hiring-System", "light": "✓ Vollständige Plattform", "agency": "✗ Tabellenkalkulationen", "jobboard": "✗ Begrenzt" },
+          { "label": "Kündigung", "light": "✓ Monatlich", "agency": "✓ N/A", "jobboard": "✓ Monatlich" },
+          { "label": "Datenbesitz", "light": "✓ Immer Ihre", "agency": "✓ Ihre", "jobboard": "✗ Begrenzt" }
         ],
         "conclusion": "€99/Monat für ein professionelles Hiring-System. Keine versteckten Kosten."
       },
@@ -943,7 +943,7 @@
         "headline": "Teams, die mit Light gestartet haben",
         "items": [
           {
-            "quote": "Wir hatten kein Budget für eine Agentur, brauchten aber Struktur. Light war genau das, was wir brauchten, um unseren ersten Entwickler zu finden.",
+            "quote": "Wir brauchten Struktur, hatten aber kein großes Budget. Light war genau das, was wir brauchten, um unseren ersten Entwickler zu finden.",
             "author": "Sarah van den Berg",
             "role": "Gründerin",
             "company": "TechStartup BV"
@@ -982,7 +982,7 @@
             "title": "Gründer",
             "subtitle": "Hands-on Hiring",
             "description": "Für Gründer, die Hiring ernst nehmen, aber kein HR-Team haben.",
-            "points": ["Behalten Sie die Kontrolle", "Treffen Sie bessere Entscheidungen", "Sparen Sie Tausende von Euros"]
+            "points": ["Behalten Sie die Kontrolle", "Treffen Sie bessere Entscheidungen", "Sparen Sie Zeit und Geld"]
           }
         ]
       },
@@ -1029,7 +1029,7 @@
         "includes": [
           "1 aktive Stelle",
           "100 Kandidaten aus Talent-Pool",
-          "Vollständiges OneRooted-System",
+          "Vollständiges One Rooted-System",
           "Alle Features inklusive",
           "E-Mail-Support"
         ]
@@ -1071,8 +1071,8 @@
             "answer": "Sofort nach Aktivierung haben Sie vollen Zugang zum Talent-Pool. Sie können sofort mit der Suche beginnen und Matches erhalten."
           },
           {
-            "question": "Was ist der Unterschied zu einem Recruiter?",
-            "answer": "Ein Recruiter kostet €5.000-15.000 pro Einstellung und Sie haben keine Kontrolle über den Prozess. Mit Light haben Sie volle Kontrolle, Zugang zu mehr Kandidaten und zahlen nur €99/Monat — unabhängig davon, wie viele Leute Sie einstellen."
+            "question": "Warum ist das so günstig?",
+            "answer": "Wir glauben, dass gute Hiring-Tools für jeden zugänglich sein sollten. Light lässt Sie das vollständige System zu einem Bruchteil der Kosten erleben, mit der Option zu skalieren, wenn Sie mehr brauchen."
           },
           {
             "question": "Bekomme ich auch Support?",
@@ -1082,7 +1082,7 @@
       },
       "cta": {
         "headline": "Bereit zu starten?",
-        "description": "Starten Sie heute mit OneRooted Light und erleben Sie den Unterschied. Keine große Investition, kein Risiko, echte Ergebnisse.",
+        "description": "Starten Sie heute mit One Rooted Light und erleben Sie den Unterschied. Keine große Investition, kein Risiko, echte Ergebnisse.",
         "button": "Jetzt starten — €99/Monat",
         "secondary": "Alle Pläne ansehen",
         "trust": "30 Tage Geld-zurück-Garantie"

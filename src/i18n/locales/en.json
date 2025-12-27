@@ -813,9 +813,9 @@
       "hero": {
           "label": "One Rooted Light",
           "badge": "Limited Offer",
-          "headline": "Stop Wasting Money on Recruiters.",
-          "headlineHighlight": "Hire Smarter.",
-          "subheadline": "Get the full power of One Rooted with 1 vacancy and 100 candidates from our pre-screened talent pool. Professional hiring without the agency price tag.",
+          "headline": "Start Small.",
+          "headlineHighlight": "Hire Smart.",
+          "subheadline": "1 vacancy, 100 candidates from our talent pool. The full system for €99/month.",
         "stats": {
           "companies": "10+",
           "companiesLabel": "companies started with Light",
@@ -824,23 +824,23 @@
         }
       },
       "problem": {
-        "label": "The Problem",
-        "headline": "Why traditional recruitment doesn't work for growing companies",
+        "label": "The Challenge",
+        "headline": "Hiring is harder than it should be",
         "items": [
           {
-            "title": "Recruitment agencies",
-            "description": "€5,000-15,000 per hire. No guarantee. No control over the process.",
+            "title": "High costs",
+            "description": "Quality hiring solutions often cost thousands per month or per hire.",
             "cost": "€5,000+"
           },
           {
-            "title": "Job boards",
-            "description": "Hundreds of applications. 90% not relevant. Hours of screening.",
-            "cost": "€500+"
+            "title": "Time-intensive",
+            "description": "Screening, scheduling, following up — hours of work for each role.",
+            "cost": "Hours"
           },
           {
-            "title": "DIY hiring",
-            "description": "Spreadsheets, emails, no overview. Good candidates fall through the cracks.",
-            "cost": "Priceless"
+            "title": "No structure",
+            "description": "Spreadsheets, emails everywhere, candidates falling through the cracks.",
+            "cost": "Chaos"
           }
         ],
         "conclusion": "You don't need a bigger budget. You need a better system."
@@ -926,15 +926,15 @@
       },
       "comparison": {
         "label": "Comparison",
-        "headline": "Light vs. traditional options",
-        "headers": ["", "OneRooted Light", "Recruitment Agency", "Job Board"],
+        "headline": "Light vs. alternatives",
+        "headers": ["", "One Rooted Light", "Doing it yourself", "Premium tools"],
         "rows": [
-          { "label": "Monthly cost", "light": "€99", "agency": "€5,000+", "jobboard": "€500+" },
-          { "label": "Access to candidates", "light": "✓ 100 candidates", "agency": "✓ Limited", "jobboard": "✓ Unlimited (unqualified)" },
-          { "label": "Pre-screening", "light": "✓ Included", "agency": "✓ Included", "jobboard": "✗ Do it yourself" },
-          { "label": "Hiring system", "light": "✓ Full platform", "agency": "✗ Spreadsheets", "jobboard": "✗ Email chaos" },
-          { "label": "Cancellation", "light": "✓ Monthly", "agency": "✗ Per project", "jobboard": "✓ Monthly" },
-          { "label": "Data ownership", "light": "✓ Always yours", "agency": "✗ Theirs", "jobboard": "✗ Limited" }
+          { "label": "Monthly cost", "light": "€99", "agency": "€0 + time", "jobboard": "€500+" },
+          { "label": "Access to candidates", "light": "✓ 100 candidates", "agency": "✗ Your network only", "jobboard": "✓ Varies" },
+          { "label": "Pre-screening", "light": "✓ Included", "agency": "✗ Do it yourself", "jobboard": "✗ Do it yourself" },
+          { "label": "Hiring system", "light": "✓ Full platform", "agency": "✗ Spreadsheets", "jobboard": "✗ Limited" },
+          { "label": "Cancellation", "light": "✓ Monthly", "agency": "✓ N/A", "jobboard": "✓ Monthly" },
+          { "label": "Data ownership", "light": "✓ Always yours", "agency": "✓ Yours", "jobboard": "✗ Limited" }
         ],
         "conclusion": "€99/month for a professional hiring system. No hidden costs."
       },
@@ -943,7 +943,7 @@
         "headline": "Teams that started with Light",
         "items": [
           {
-            "quote": "We didn't have the budget for an agency but needed structure. Light was exactly what we needed to find our first developer.",
+            "quote": "We needed structure but didn't have a big budget. Light was exactly what we needed to find our first developer.",
             "author": "Sarah van den Berg",
             "role": "Founder",
             "company": "TechStartup BV"
@@ -982,7 +982,7 @@
             "title": "Founders",
             "subtitle": "Hands-on hiring",
             "description": "For founders who take hiring seriously but don't have an HR team.",
-            "points": ["Stay in control", "Make better decisions", "Save thousands of euros"]
+            "points": ["Stay in control", "Make better decisions", "Save time and money"]
           }
         ]
       },
@@ -1071,8 +1071,8 @@
             "answer": "Immediately after activation you have full access to the talent pool. You can start searching and receiving matches right away."
           },
           {
-            "question": "What's the difference with a recruiter?",
-            "answer": "A recruiter costs €5,000-15,000 per hire and you have no control over the process. With Light you have full control, access to more candidates, and pay only €99/month — regardless of how many people you hire."
+            "question": "Why is this so affordable?",
+            "answer": "We believe great hiring tools should be accessible to everyone. Light lets you experience the full system at a fraction of the cost, with the option to scale when you need more."
           },
           {
             "question": "Do I also get support?",
