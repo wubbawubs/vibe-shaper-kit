@@ -798,7 +798,7 @@
   },
   "lightOffer": {
     "banner": {
-      "label": "✨ Nieuw: Probeer OneRooted",
+      "label": "✨ Nieuw: Probeer One Rooted",
       "headline": "Start klein. Groei wanneer je klaar bent.",
       "description": "Eén vacature, 100 kandidaten uit onze talentpool. Perfect om het systeem te ervaren.",
       "price": "99",
@@ -807,15 +807,15 @@
     },
     "page": {
       "seo": {
-        "title": "OneRooted Light | Start met één vacature voor €99/maand",
-        "description": "Ervaar OneRooted met ons Light plan: 1 vacature, 100 kandidaten uit onze talentpool voor slechts €99/maand. Perfect om te starten zonder commitment."
+        "title": "One Rooted Light | Start met één vacature voor €99/maand",
+        "description": "Ervaar One Rooted met ons Light plan: 1 vacature, 100 kandidaten uit onze talentpool voor slechts €99/maand. Perfect om te starten zonder commitment."
       },
       "hero": {
-        "label": "OneRooted Light",
+        "label": "One Rooted Light",
         "badge": "Tijdelijk Aanbod",
-        "headline": "Stop met Geld Verspillen aan Recruiters.",
-        "headlineHighlight": "Slimmer Werven.",
-        "subheadline": "Krijg de volledige kracht van OneRooted met 1 vacature en 100 kandidaten uit onze pre-screened talentpool. Professioneel werven zonder de bureau-prijs.",
+        "headline": "Start Klein.",
+        "headlineHighlight": "Werf Slim.",
+        "subheadline": "1 vacature, 100 kandidaten uit onze talentpool. Het volledige systeem voor €99/maand.",
         "stats": {
           "companies": "10+",
           "companiesLabel": "bedrijven gestart met Light",
@@ -824,30 +824,30 @@
         }
       },
       "problem": {
-        "label": "Het Probleem",
-        "headline": "Waarom traditionele recruitment niet werkt voor groeibedrijven",
+        "label": "De Uitdaging",
+        "headline": "Werven is moeilijker dan het zou moeten zijn",
         "items": [
           {
-            "title": "Recruitment bureaus",
-            "description": "€5.000-15.000 per hire. Geen garantie. Geen controle over het proces.",
+            "title": "Hoge kosten",
+            "description": "Kwalitatieve hiring oplossingen kosten vaak duizenden per maand of per hire.",
             "cost": "€5.000+"
           },
           {
-            "title": "Job boards",
-            "description": "Honderden sollicitaties. 90% niet relevant. Uren aan screening.",
-            "cost": "€500+"
+            "title": "Tijdrovend",
+            "description": "Screenen, plannen, opvolgen — uren werk voor elke rol.",
+            "cost": "Uren"
           },
           {
-            "title": "Doen het zelf",
-            "description": "Spreadsheets, e-mails, geen overzicht. Goede kandidaten vallen door de mazen.",
-            "cost": "Onbetaalbaar"
+            "title": "Geen structuur",
+            "description": "Spreadsheets, e-mails overal, goede kandidaten vallen door de mazen.",
+            "cost": "Chaos"
           }
         ],
         "conclusion": "Je hebt geen groter budget nodig. Je hebt een beter systeem nodig."
       },
       "solution": {
         "label": "De Oplossing",
-        "headline": "OneRooted Light: alles wat je nodig hebt om te starten",
+        "headline": "One Rooted Light: alles wat je nodig hebt om te starten",
         "description": "Light is geen uitgeklede versie. Het is dezelfde krachtige tool die grotere teams gebruiken — met een focus op je eerste hire.",
         "points": [
           "Hetzelfde systeem als onze Premium klanten",
@@ -926,15 +926,15 @@
       },
       "comparison": {
         "label": "Vergelijking",
-        "headline": "Light vs. traditionele opties",
-        "headers": ["", "OneRooted Light", "Recruitment Bureau", "Job Board"],
+        "headline": "Light vs. alternatieven",
+        "headers": ["", "One Rooted Light", "Zelf doen", "Premium tools"],
         "rows": [
-          { "label": "Kosten per maand", "light": "€99", "agency": "€5.000+", "jobboard": "€500+" },
-          { "label": "Toegang tot kandidaten", "light": "✓ 100 kandidaten", "agency": "✓ Beperkt", "jobboard": "✓ Onbeperkt (ongekwalificeerd)" },
-          { "label": "Pre-screening", "light": "✓ Inbegrepen", "agency": "✓ Inbegrepen", "jobboard": "✗ Zelf doen" },
-          { "label": "Hiring systeem", "light": "✓ Volledig platform", "agency": "✗ Spreadsheets", "jobboard": "✗ E-mail chaos" },
-          { "label": "Opzeggen", "light": "✓ Elke maand", "agency": "✗ Per project", "jobboard": "✓ Elke maand" },
-          { "label": "Eigenaarschap van data", "light": "✓ Altijd van jou", "agency": "✗ Van hen", "jobboard": "✗ Beperkt" }
+          { "label": "Kosten per maand", "light": "€99", "agency": "€0 + tijd", "jobboard": "€500+" },
+          { "label": "Toegang tot kandidaten", "light": "✓ 100 kandidaten", "agency": "✗ Alleen je netwerk", "jobboard": "✓ Varieert" },
+          { "label": "Pre-screening", "light": "✓ Inbegrepen", "agency": "✗ Zelf doen", "jobboard": "✗ Zelf doen" },
+          { "label": "Hiring systeem", "light": "✓ Volledig platform", "agency": "✗ Spreadsheets", "jobboard": "✗ Beperkt" },
+          { "label": "Opzeggen", "light": "✓ Elke maand", "agency": "✓ N.v.t.", "jobboard": "✓ Elke maand" },
+          { "label": "Eigenaarschap van data", "light": "✓ Altijd van jou", "agency": "✓ Van jou", "jobboard": "✗ Beperkt" }
         ],
         "conclusion": "€99/maand voor een professioneel hiring systeem. Geen verborgen kosten."
       },
@@ -943,7 +943,7 @@
         "headline": "Teams die begonnen met Light",
         "items": [
           {
-            "quote": "We hadden geen budget voor een bureau maar wel behoefte aan structuur. Light was precies wat we nodig hadden om onze eerste developer te vinden.",
+            "quote": "We hadden behoefte aan structuur maar geen groot budget. Light was precies wat we nodig hadden om onze eerste developer te vinden.",
             "author": "Sarah van den Berg",
             "role": "Founder",
             "company": "TechStartup BV"
@@ -982,7 +982,7 @@
             "title": "Founders",
             "subtitle": "Hands-on hiring",
             "description": "Voor founders die hiring serieus nemen maar geen HR team hebben.",
-            "points": ["Blijf in controle", "Maak betere beslissingen", "Bespaar duizenden euro's"]
+            "points": ["Blijf in controle", "Maak betere beslissingen", "Bespaar tijd en geld"]
           }
         ]
       },
@@ -1029,7 +1029,7 @@
         "includes": [
           "1 actieve vacature",
           "100 kandidaten uit talentpool",
-          "Volledig OneRooted systeem",
+          "Volledig One Rooted systeem",
           "Alle features inbegrepen",
           "E-mail support"
         ]
@@ -1071,8 +1071,8 @@
             "answer": "Direct na activatie heb je volledige toegang tot de talentpool. Je kunt meteen beginnen met zoeken en matches ontvangen."
           },
           {
-            "question": "Wat is het verschil met een recruiter?",
-            "answer": "Een recruiter kost €5.000-15.000 per hire en je hebt geen controle over het proces. Met Light heb je volledige controle, toegang tot meer kandidaten, en betaal je slechts €99/maand — ongeacht hoeveel mensen je aanneemt."
+            "question": "Waarom is dit zo betaalbaar?",
+            "answer": "Wij geloven dat goede hiring tools toegankelijk moeten zijn voor iedereen. Light laat je het volledige systeem ervaren tegen een fractie van de kosten, met de optie om te schalen wanneer je meer nodig hebt."
           },
           {
             "question": "Krijg ik ook support?",
@@ -1082,7 +1082,7 @@
       },
       "cta": {
         "headline": "Klaar om te starten?",
-        "description": "Begin vandaag met OneRooted Light en ervaar het verschil. Geen grote investering, geen risico, wel resultaat.",
+        "description": "Begin vandaag met One Rooted Light en ervaar het verschil. Geen grote investering, geen risico, wel resultaat.",
         "button": "Start direct — €99/maand",
         "secondary": "Bekijk alle plannen",
         "trust": "30 dagen geld terug garantie"
