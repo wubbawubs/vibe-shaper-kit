@@ -9,64 +9,64 @@
     "requestDemo": "Demo aanvragen"
   },
   "hero": {
-    "headline": "Niet nog een tool.",
-    "headlineHighlight": "Éen werkend systeem.",
-    "subheadline": "Vervang verspreide tools door één intelligent systeem dat kandidaten rangschikt, workflows stroomlijnt en betere hiring keuzes stimuleert.",
+    "headline": "Niet nóg een tool.",
+    "headlineHighlight": "Eén systeem dat hiring laat werken.",
+    "subheadline": "Vervang losse ATS'en, spreadsheets en Slack-threads door één intelligent Hiring OS dat kandidaten structureert, beslissingen versnelt en betere hires mogelijk maakt.",
     "cta": "Demo aanvragen",
     "ctaSecondary": "Bekijk plannen",
     "stats": {
       "screening": "snellere screening",
-      "quality": "betere kwaliteit hires"
+      "quality": "hogere kwaliteit hires"
     }
   },
   "problem": {
-    "headline": "Recruitment is niet kapot.",
-    "subheadline": "Je huidige tools zijn verouderd.",
+    "headline": "Geen gedeelde waarheid.",
+    "subheadline": "Geen eigenaarschap. Geen overzicht.",
     "tools": {
       "ats": {
         "name": "ATS",
-        "description": "Gebouwd om kandidaten op te slaan, niet om ze aan te nemen"
+        "description": "Gebouwd om kandidaten te bewaren, niet om keuzes te ondersteunen"
       },
       "slack": {
         "name": "Slack",
-        "description": "Beslissingen verdwalen in eindeloze gesprekken"
+        "description": "Beslissingen verdwijnen in eindeloze gesprekken"
       },
       "excel": {
         "name": "Excel",
-        "description": "Kritieke keuzes zonder context"
+        "description": "Kritieke hiring-keuzes zonder samenhang"
       }
     },
-    "consequence": "Geen enkele bron van waarheid. Geen eigenaarschap. Geen inzicht.",
+    "consequence": "Geen gedeelde waarheid. Geen eigenaarschap. Geen overzicht.",
     "realization": "Recruitment is niet complexer geworden.",
-    "realizationHighlight": "Je tools zijn gewoon nooit geëvolueerd.",
+    "realizationHighlight": "Je tools zijn gewoon nooit meegegroeid.",
     "solution": "Nu is er"
   },
   "whatIs": {
     "label": "Het Hiring OS",
-    "headline": "Eén systeem dat elke hiring keuze verbindt",
+    "headline": "Eén systeem dat elke hiring-keuze verbindt",
     "pillars": {
       "data": {
-        "title": "Hiring Data",
-        "description": "Alle kandidaten, gesprekken en context verenigd in één intelligent systeem."
+        "title": "Hiring data",
+        "description": "Alle kandidaten, gesprekken en feedback samengebracht in één centrale waarheid."
       },
       "workflows": {
-        "title": "Workflows",
-        "description": "Adaptieve processen die meebewegen met je team, niet ertegen."
+        "title": "Adaptieve workflows",
+        "description": "Processen die zich aanpassen aan hoe je team écht werkt, niet andersom."
       },
       "intelligence": {
         "title": "Beslissingsintelligentie",
-        "description": "Gestructureerde inzichten die onderbuikgevoelens vervangen door vertrouwen."
+        "description": "Inzicht dat structuur brengt in keuzes en onderbuikgevoel vervangt door vertrouwen."
       },
       "accountability": {
-        "title": "Verantwoordelijkheid",
-        "description": "Iedereen weet wat er nu moet gebeuren — en wie het doet."
+        "title": "Duidelijke verantwoordelijkheid",
+        "description": "Iedereen weet wat er moet gebeuren — en wie het oppakt."
       }
     }
   },
   "whoItsFor": {
     "label": "Voor wie",
     "headline": "Recruitment loopt vast zonder gedeeld systeem",
-    "subheadline": "One Rooted vervangt gefragmenteerde tools door één operationele waarheid voor iedereen.",
+    "subheadline": "OneRooted brengt iedereen samen in één operationele waarheid.",
     "cta": "Bekijk het systeem in actie",
     "audiences": {
       "leadership": {
@@ -74,23 +74,23 @@
         "subtitle": "Founders & Executives",
         "points": [
           "Volledig overzicht zonder micromanagement",
-          "Hiring keuzes gebaseerd op echte, gedeelde data"
+          "Strategische hiring-keuzes op basis van gedeelde data"
         ]
       },
       "talent": {
-        "title": "Talent Teams",
+        "title": "Talent teams",
         "subtitle": "Recruiters & Hiring Managers",
         "points": [
-          "Eén gedeelde workflow van intake tot hire",
-          "Minder admin. Meer focus op hiring keuzes."
+          "Eén workflow van intake tot hire",
+          "Minder administratie, meer focus op kwaliteit"
         ]
       },
       "partners": {
         "title": "Partners",
         "subtitle": "Bureaus & RPO",
         "points": [
-          "Een helder, gedeeld wervingsproces per klant",
-          "Volledige transparantie zonder eindeloos heen-en-weer"
+          "Een helder, gedeeld proces per klant",
+          "Transparantie zonder eindeloos afstemmen"
         ]
       }
     }
@@ -100,31 +100,31 @@
     "headline": "Niet het zoveelste ATS",
     "traditional": "Traditioneel ATS",
     "rows": {
-      "focus": { "ats": "Slaat kandidaten op", "onerooted": "Volgt hiring keuzes" },
+      "focus": { "ats": "Kandidaten opslaan", "onerooted": "Hiring-beslissingen ondersteunen" },
       "flex": { "ats": "Statische pipelines", "onerooted": "Adaptieve workflows" },
-      "priority": { "ats": "Admin-first design", "onerooted": "Decision-first design" },
-      "data": { "ats": "Gesegmenteerde data", "onerooted": "Slimme inzichten" },
-      "process": { "ats": "Handmatige coördinatie", "onerooted": "Geautomatiseerde samenwerking" }
+      "priority": { "ats": "Admin-first ontwerp", "onerooted": "Decision-first ontwerp" },
+      "data": { "ats": "Gescheiden data", "onerooted": "Slimme, verbonden inzichten" },
+      "process": { "ats": "Handmatige afstemming", "onerooted": "Geautomatiseerde samenwerking" }
     },
     "conclusion": {
       "ats": "ATS-tools helpen je",
-      "atsHighlight": "kandidaten te volgen",
-      "onerooted": "One Rooted helpt je",
-      "onerootedHighlight": "betere mensen aan te nemen"
+      "atsHighlight": "kandidaten volgen",
+      "onerooted": "OneRooted helpt je",
+      "onerootedHighlight": "betere mensen aannemen"
     }
   },
   "pricing": {
     "label": "Prijzen",
     "headline": "Heldere prijzen. Geen verrassingen.",
-    "subheadline": "Begin klein, schaal wanneer je klaar bent.",
+    "subheadline": "Begin klein. Schaal wanneer jij er klaar voor bent.",
     "cta": "Bekijk alle prijzen",
     "perMonth": "/mnd",
-    "mostPopular": "Meest populair",
+    "mostPopular": "Meest gekozen",
     "plans": {
       "base": {
         "name": "Base",
         "description": "Essentiële recruitment ondersteuning",
-        "features": ["One Rooted systeem", "Up-to-date talent pool", "Toegang tot E-Academy"]
+        "features": ["OneRooted systeem", "Up-to-date talentpool", "Toegang tot E-Academy"]
       },
       "plus": {
         "name": "Plus",
@@ -134,7 +134,7 @@
       "premium": {
         "name": "Premium",
         "description": "Hiring volledig georganiseerd",
-        "features": ["Alles in Plus", "Kandidaat interviews", "Planning & coördinatie"]
+        "features": ["Alles in Plus", "Kandidaatinterviews", "Planning & coördinatie"]
       }
     }
   },
@@ -143,23 +143,23 @@
     "headline": "Veelgestelde vragen",
     "items": [
       {
-        "question": "Wat is One Rooted precies?",
-        "answer": "One Rooted is een Hiring Operating System — niet zomaar een ATS. Het verbindt al je hiring data, workflows en stakeholders in één intelligent systeem dat je helpt sneller betere hiring keuzes te maken."
+        "question": "Wat is OneRooted precies?",
+        "answer": "OneRooted is een Hiring Operating System — niet zomaar een ATS. Het verbindt al je hiring data, workflows en stakeholders in één intelligent systeem dat je helpt sneller betere hiring keuzes te maken."
       },
       {
-        "question": "Hoe verschilt One Rooted van een ATS?",
-        "answer": "Een ATS slaat cv's op. One Rooted runt je wervingsproces. Het verbindt kandidaten, workflows en beslissers in real-time met intelligente ranking, geautomatiseerde samenwerking en inzichten die vanzelf naar boven komen."
+        "question": "Hoe verschilt OneRooted van een ATS?",
+        "answer": "Een ATS slaat cv's op. OneRooted runt je wervingsproces. Het verbindt kandidaten, workflows en beslissers in real-time met intelligente ranking, geautomatiseerde samenwerking en inzichten die vanzelf naar boven komen."
       },
       {
-        "question": "Voor wie is One Rooted gebouwd?",
-        "answer": "Groeiende teams die regelmatig werven en structuur willen zonder complexiteit. Of je nu founder, talent leader of recruiter bent — als je klaar bent met verspreide tools en één gedeeld systeem wilt, is One Rooted voor jou."
+        "question": "Voor wie is OneRooted gebouwd?",
+        "answer": "Groeiende teams die regelmatig werven en structuur willen zonder complexiteit. Of je nu founder, talent leader of recruiter bent — als je klaar bent met verspreide tools en één gedeeld systeem wilt, is OneRooted voor jou."
       },
       {
-        "question": "Kan ik One Rooted gebruiken met externe recruiters of bureaus?",
+        "question": "Werkt OneRooted met externe recruiters of bureaus?",
         "answer": "Ja. Ons Partner Portal geeft externe recruiters hun eigen pipeline-weergave per klant. Ze kunnen direct kandidaten indienen, real-time statusupdates zien en samenwerken zonder eindeloze e-mailketens."
       },
       {
-        "question": "Hoe lang duurt het om te starten?",
+        "question": "Hoe snel kan ik starten?",
         "answer": "De meeste teams zijn binnen een dag operationeel. Geen complexe migraties, geen lange onboarding. We helpen je je eerste vacature op te zetten en je team uit te nodigen — zo simpel is het."
       },
       {
@@ -169,8 +169,8 @@
     ]
   },
   "finalCta": {
-    "headline": "Hiring werkt beter als je het helder kunt zien",
-    "subheadline": "Daar is de One Rooted demo voor.",
+    "headline": "Hiring werkt beter als je het kunt overzien",
+    "subheadline": "Daar is de OneRooted demo voor.",
     "cta": "Demo aanvragen",
     "ctaSecondary": "Bekijk prijzen"
   },
@@ -783,7 +783,7 @@
   },
   "footer": {
     "tagline": "Het Hiring OS voor teams die recruitment serieus nemen. Vervang gefragmenteerde tools door één intelligent systeem.",
-    "copyright": "© {{year}} One Rooted. Alle rechten voorbehouden.",
+    "copyright": "© {{year}} OneRooted. Alle rechten voorbehouden.",
     "company": "Bedrijf",
     "legal": "Juridisch",
     "contact": "Contact",
