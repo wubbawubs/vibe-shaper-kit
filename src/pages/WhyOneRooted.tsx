@@ -59,24 +59,24 @@ const WhyOneRooted = () => {
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               {t('whyPage.hero.subheadline')}
             </p>
-            
-            {/* Intro text - Quote block */}
-            <motion.div 
-              className="max-w-2xl mt-10"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-            >
-              <div className="pl-8 py-6 border-l-4 border-primary/40 text-left">
-                <Quote className="h-8 w-8 text-primary/30 mb-4" />
-                <p className="text-lg md:text-xl text-muted-foreground italic leading-relaxed mb-4">
-                  {t('whyPage.hero.intro')}
-                </p>
-                <p className="text-lg md:text-xl font-semibold text-foreground">
-                  {t('whyPage.hero.introHighlight')}
-                </p>
-              </div>
-            </motion.div>
+          </motion.div>
+          
+          {/* Intro text - Quote block - outside centered container */}
+          <motion.div 
+            className="max-w-2xl mt-10"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
+            <div className="pl-8 py-6 border-l-4 border-primary/40 text-left">
+              <Quote className="h-8 w-8 text-primary/30 mb-4" />
+              <p className="text-lg md:text-xl text-muted-foreground italic leading-relaxed mb-4">
+                {t('whyPage.hero.intro')}
+              </p>
+              <p className="text-lg md:text-xl font-semibold text-foreground">
+                {t('whyPage.hero.introHighlight')}
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
