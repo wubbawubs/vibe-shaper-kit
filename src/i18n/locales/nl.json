@@ -333,7 +333,7 @@
       "label": "Prijzen",
       "headline": "Heldere prijzen.",
       "headlineHighlight": "Geen verrassingen.",
-      "subheadline": "Kies het plan dat past bij hoe je vandaag werkt. Schaal op zodra je hiring volwassen wordt."
+      "subheadline": "Kies het plan dat past bij hoe je vandaag werft. Schaal op wanneer hiring structureel belangrijker wordt."
     },
     "trustBadges": {
       "noHiddenFees": "Geen verborgen kosten",
@@ -345,21 +345,21 @@
         "name": "Base",
         "price": "299",
         "description": "Grip op je wervingsproces.",
-        "outcome": "Voor teams die overzicht willen zonder complexiteit.",
-        "notIncluded": ["Partner portal", "Proactieve sourcing", "Interviewcoördinatie"]
+        "outcome": "Voor teams die overzicht willen, zonder extra complexiteit.",
+        "notIncluded": ["Partnerportal", "Proactieve sourcing", "Interviewcoördinatie"]
       },
       "plus": {
         "name": "Plus",
         "price": "399",
         "description": "Sneller schakelen. Betere beslissingen.",
-        "outcome": "Voor teams die hiring als een gedeeld proces willen runnen.",
+        "outcome": "Voor teams die hiring als een gedeeld proces willen organiseren.",
         "notIncluded": ["Dedicated success manager", "Custom integraties"]
       },
       "premium": {
         "name": "Premium",
         "price": "599",
         "description": "Hiring als strategische operatie.",
-        "outcome": "Voor organisaties waar hiring bedrijfskritisch is.",
+        "outcome": "Voor organisaties waar hiring direct impact heeft op groei en continuïteit.",
         "notIncluded": []
       }
     },
@@ -368,7 +368,7 @@
       "talentPool": "Up-to-date talentpool",
       "eAcademy": "Toegang tot E-Academy",
       "emailSupport": "E-mail support",
-      "partnerPortal": "Partner portal",
+      "partnerPortal": "Partnerportal",
       "proactiveSourcing": "Proactieve sourcing",
       "interviewCoordination": "Interviewcoördinatie",
       "everythingInBase": "Alles in Base",
@@ -376,7 +376,7 @@
       "prioritySupport": "Prioriteit support",
       "dedicatedSuccessManager": "Dedicated success manager",
       "everythingInPlus": "Alles in Plus",
-      "candidateInterviews": "Kandidaat interviews",
+      "candidateInterviews": "Kandidaatinterviews",
       "schedulingCoordination": "Planning & coördinatie",
       "customIntegrations": "Custom integraties",
       "advancedAnalytics": "Geavanceerde analytics",
@@ -389,8 +389,8 @@
     "light": {
       "badge": "Nieuw",
       "headline": "OneRooted Light",
-      "subheadline": "Probeer OneRooted zonder commitment",
-      "description": "Start klein. Ervaar hoe een Hiring OS werkt.",
+      "subheadline": "Ervaar OneRooted zonder commitment",
+      "description": "Start klein en ontdek hoe een Hiring OS werkt in de praktijk.",
       "features": ["1 actieve vacature", "Tot 100 kandidaten uit onze talentpool", "Volledig OneRooted-systeem"],
       "price": "99",
       "cta": "Probeer Light"
