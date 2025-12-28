@@ -67,7 +67,7 @@ const WhyOneRooted = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              <div className="relative px-10 py-8 rounded-2xl bg-muted/50 border border-border shadow-sm">
+              <div className="relative px-10 py-8 rounded-2xl bg-muted/50 border border-border border-l-4 border-l-primary/40 shadow-sm">
                 {/* Decorative quote icon */}
                 <Quote className="absolute -top-4 left-8 h-8 w-8 text-primary/60 bg-background p-1 rounded" />
                 
