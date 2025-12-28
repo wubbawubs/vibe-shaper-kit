@@ -315,21 +315,25 @@
         "name": "Base",
         "price": "299",
         "description": "Wesentliche Recruiting-Unterstützung für kleine Teams.",
-        "outcome": "Bekommen Sie Kontrolle über Ihren Einstellungsprozess."
+        "outcome": "Bekommen Sie Kontrolle über Ihren Einstellungsprozess.",
+        "notIncluded": ["Partner-Portal", "Proaktives Sourcing", "Interview-Koordination"]
       },
       "plus": {
         "name": "Plus",
         "price": "399",
         "description": "Schneller agieren, klüger einstellen.",
-        "outcome": "Machen Sie Hiring zu einem koordinierten System."
+        "outcome": "Machen Sie Hiring zu einem koordinierten System.",
+        "notIncluded": ["Dedizierter Success Manager", "Custom Integrationen"]
       },
       "premium": {
         "name": "Premium",
         "price": "599",
         "description": "Hiring vollständig organisiert.",
-        "outcome": "Führen Sie Hiring als strategische Operation."
+        "outcome": "Führen Sie Hiring als strategische Operation.",
+        "notIncluded": []
       }
     },
+    "notIncluded": "Nicht enthalten",
     "features": {
       "onerootedSystem": "One Rooted-System",
       "talentPool": "Aktueller Talent-Pool",
@@ -352,6 +356,15 @@
     "perMonth": "/ Monat",
     "mostPopular": "Am beliebtesten",
     "talkToUs": "Kontaktieren Sie uns",
+    "light": {
+      "badge": "Neu",
+      "headline": "OneRooted Light",
+      "subheadline": "Erleben Sie OneRooted ohne Verpflichtung",
+      "description": "Starten Sie klein und entdecken Sie, wie ein Hiring OS in der Praxis funktioniert.",
+      "features": ["1 aktive Stelle", "Bis zu 100 Kandidaten aus unserem Talent-Pool", "Vollständiges OneRooted-System"],
+      "price": "99",
+      "cta": "Light testen"
+    },
     "included": {
       "title": "Was in allen Plänen enthalten ist",
       "always": "Immer enthalten",

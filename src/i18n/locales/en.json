@@ -315,21 +315,25 @@
         "name": "Base",
         "price": "299",
         "description": "Essential recruitment support for small teams.",
-        "outcome": "Get control over your hiring process."
+        "outcome": "Get control over your hiring process.",
+        "notIncluded": ["Partner portal", "Proactive sourcing", "Interview coordination"]
       },
       "plus": {
         "name": "Plus",
         "price": "399",
         "description": "Move faster, hire smarter.",
-        "outcome": "Turn hiring into a coordinated system."
+        "outcome": "Turn hiring into a coordinated system.",
+        "notIncluded": ["Dedicated success manager", "Custom integrations"]
       },
       "premium": {
         "name": "Premium",
         "price": "599",
         "description": "Hiring fully organized.",
-        "outcome": "Run hiring as a strategic operation."
+        "outcome": "Run hiring as a strategic operation.",
+        "notIncluded": []
       }
     },
+    "notIncluded": "Not included",
     "features": {
       "onerootedSystem": "One Rooted system",
       "talentPool": "Up-to-date talent pool",
@@ -352,6 +356,15 @@
     "perMonth": "/ month",
     "mostPopular": "Most popular",
     "talkToUs": "Talk to us",
+    "light": {
+      "badge": "New",
+      "headline": "OneRooted Light",
+      "subheadline": "Experience OneRooted without commitment",
+      "description": "Start small and discover how a Hiring OS works in practice.",
+      "features": ["1 active vacancy", "Up to 100 candidates from our talent pool", "Full OneRooted system"],
+      "price": "99",
+      "cta": "Try Light"
+    },
     "included": {
       "title": "What's included in all plans",
       "always": "Always included",
