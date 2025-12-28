@@ -462,67 +462,72 @@
   },
   "whyPage": {
     "seo": {
-      "title": "Why One Rooted | The Story Behind the Hiring OS",
-      "description": "Why traditional ATS systems fail modern hiring teams. Learn how One Rooted rethinks recruitment software with a Hiring OS approach."
+      "title": "Why OneRooted | The Story Behind the Hiring OS",
+      "description": "Why traditional ATS systems fall short. Discover how OneRooted rethinks hiring with a Hiring OS approach."
     },
     "hero": {
       "label": "Our story",
-      "headline": "The story behind",
-      "headlineHighlight": "building a Hiring OS",
-      "subheadline": "Why we set out to fundamentally rethink how hiring software should work."
+      "headline": "Why we built a",
+      "headlineHighlight": "Hiring OS",
+      "headlineSuffix": "",
+      "subheadline": "Not to add another tool, but to finally make hiring work the way it actually happens.",
+      "intro": "Hiring software has evolved in features for years. But never in foundation.",
+      "introHighlight": "That's where we stopped following — and started over."
     },
     "atsProblem": {
       "label": "The problem",
-      "headline": "Why traditional ATS systems fail",
+      "headline": "Why traditional ATS systems fall short",
       "items": [
-        { "title": "They're built for storage, not decisions", "desc": "Most ATS platforms are glorified databases. They track where candidates are, not why they should move forward." },
-        { "title": "They fragment the process", "desc": "Feedback in Slack. Decisions in email. Status in spreadsheets. The ATS becomes just another silo." },
-        { "title": "They ignore collaboration", "desc": "Modern hiring involves founders, hiring managers, team members, and external partners. ATS systems weren't built for this." },
-        { "title": "They optimize for recruiters, not outcomes", "desc": "Admin efficiency is good. But what about decision quality? What about time-to-hire? What about candidate experience?" }
+        { "title": "They're built for storage, not decisions", "desc": "Most ATS systems are advanced databases. They record where candidates are, but not why they should move forward." },
+        { "title": "They break the process into pieces", "desc": "Feedback lives in Slack. Decisions in email. Status in spreadsheets. The ATS becomes one silo in a sea of other tools." },
+        { "title": "They don't understand collaboration", "desc": "Modern hiring isn't about one recruiter. Founders, hiring managers, team members, and external partners are all involved — but the system doesn't support that." },
+        { "title": "They optimize for admin, not outcomes", "desc": "Efficiency is good. But what happens to decision quality, time-to-hire, and candidate experience?" }
       ]
     },
     "insight": {
       "label": "The insight",
-      "headline": "Why a Hiring OS is needed",
-      "description": "Hiring is no longer a linear process managed by one recruiter. It's a complex operation involving multiple stakeholders, external partners, and critical business decisions.",
-      "whatYouNeed": "What you actually need:",
+      "headline": "Why hiring needs an Operating System",
+      "description": "Hiring is no longer a linear process. It's a complex operation with multiple roles, interests, and decisions that directly impact the business.",
+      "whatYouNeed": "What you need isn't a better tool. What you need is a system that:",
       "needs": [
-        "A system that understands complexity",
-        "Connected data across all touchpoints",
-        "Real collaboration, not just handoffs",
-        "Decision support, not just storage"
+        "understands complexity",
+        "connects data across all touchpoints",
+        "facilitates collaboration instead of handoffs",
+        "supports decisions instead of storing them"
       ],
-      "conclusion": "That's what a Hiring OS does. Not a feature upgrade — a fundamental rethink.",
+      "conclusion": "That's what a Hiring OS does.",
+      "conclusionHighlight": "Not a feature upgrade. A fundamentally different way of working.",
+      "comparisonTitle": "The difference in thinking",
       "atsLabel": "Traditional ATS",
       "atsFlow": ["Store", "Track", "Report"],
-      "atsDesc": "Data sits. Decisions happen elsewhere.",
+      "atsDesc": "Data sits still. Decisions happen somewhere else.",
       "osLabel": "Hiring OS",
       "osFlow": ["Collaborate", "Decide", "Improve"],
-      "osDesc": "Every action drives better outcomes."
+      "osDesc": "Every action feeds better choices. The system works with you."
     },
     "origin": {
       "label": "The origin",
-      "headline": "How One Rooted was born",
+      "headline": "How OneRooted came to be",
       "steps": [
-        { "step": "01", "title": "The frustration", "text": "We worked with organizations struggling to hire effectively, despite having 'all the tools.'" },
-        { "step": "02", "title": "The realization", "text": "The problem wasn't a lack of software—it was a lack of system. Tools weren't connected." },
-        { "step": "03", "title": "The solution", "text": "We built One Rooted as the operating system for hiring. One place where everyone can collaborate." }
+        { "step": "01", "title": "The frustration", "text": "We worked with organizations struggling to hire well, despite having a stack of tools and systems." },
+        { "step": "02", "title": "The realization", "text": "The problem wasn't a lack of software. The problem was the lack of a coherent system. Everything worked side by side. Nothing worked together." },
+        { "step": "03", "title": "The solution", "text": "We built OneRooted as the operating system for hiring. One place where everyone collaborates, and where the system actively helps make better decisions." }
       ],
-      "quote": "Not another tool to learn. A system that works the way modern hiring actually happens."
+      "quote": "Not another tool to learn. A system that works the way hiring actually happens today."
     },
     "future": {
       "label": "The future",
-      "headline": "Where we're going",
+      "headline": "Where we're heading",
       "items": [
-        { "title": "Deeper decision intelligence", "desc": "AI-powered insights that help you make better hiring decisions faster." },
-        { "title": "Seamless partner ecosystems", "desc": "Connect with any recruitment partner through standardized interfaces." },
-        { "title": "Predictive hiring insights", "desc": "Know what's working before you see the results." },
-        { "title": "Global team collaboration", "desc": "Built for distributed teams across time zones and cultures." }
+        { "title": "Deeper decision intelligence", "desc": "AI-powered insights that help you choose faster and better." },
+        { "title": "Seamless partner ecosystems", "desc": "Collaborate with any recruitment partner through standardized interfaces." },
+        { "title": "Predictive hiring insights", "desc": "See what works before the results become visible." },
+        { "title": "Global collaboration", "desc": "Designed for teams working across time zones, cultures, and organizations." }
       ]
     },
     "cta": {
-      "headline": "Ready to rethink how you hire?",
-      "description": "See how One Rooted can transform your hiring process from fragmented to unified.",
+      "headline": "Ready to rethink hiring?",
+      "description": "See how OneRooted transforms your hiring process from fragmented to coherent.",
       "button": "Request a demo",
       "secondary": "See how it works"
     }
