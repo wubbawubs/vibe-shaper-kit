@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Linkedin } from "lucide-react";
-import onerootedLogo from "@/assets/onerooted-logo.png";
+import onerootedLogoWhite from "@/assets/onerooted-logo-white.png";
 import { getLocalizedPath } from "@/i18n/useLanguage";
 import { type Language } from "@/i18n/config";
 
@@ -20,7 +20,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2">
             <Link to={getLocalizedHref("/")} className="flex items-center gap-3 mb-4 md:mb-6">
-              <img src={onerootedLogo} alt="One Rooted" className="h-7 md:h-8 w-auto brightness-0 invert" />
+              <img src={onerootedLogoWhite} alt="One Rooted" className="h-7 md:h-8 w-auto" />
               <span className="font-semibold text-base md:text-lg">One Rooted</span>
             </Link>
             <p className="text-background/60 max-w-sm leading-relaxed text-sm md:text-base">
