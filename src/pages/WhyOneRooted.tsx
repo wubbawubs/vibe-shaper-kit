@@ -60,19 +60,24 @@ const WhyOneRooted = () => {
               {t('whyPage.hero.subheadline')}
             </p>
             
-            {/* Intro text */}
+            {/* Intro text - Quote block */}
             <motion.div 
-              className="max-w-xl mx-auto text-center"
+              className="max-w-2xl mx-auto mt-10"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              <p className="text-base text-muted-foreground mb-2">
-                {t('whyPage.hero.intro')}
-              </p>
-              <p className="text-base font-medium text-foreground">
-                {t('whyPage.hero.introHighlight')}
-              </p>
+              <div className="relative px-8 py-6 rounded-2xl bg-muted/30 border border-border/50">
+                {/* Decorative quote icon */}
+                <Quote className="absolute -top-3 left-6 h-6 w-6 text-primary/40 bg-background p-0.5" />
+                
+                <p className="text-lg md:text-xl text-muted-foreground italic leading-relaxed mb-3">
+                  {t('whyPage.hero.intro')}
+                </p>
+                <p className="text-lg md:text-xl font-semibold text-foreground">
+                  {t('whyPage.hero.introHighlight')}
+                </p>
+              </div>
             </motion.div>
           </motion.div>
         </div>
