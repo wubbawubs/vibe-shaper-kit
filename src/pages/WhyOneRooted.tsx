@@ -67,14 +67,14 @@ const WhyOneRooted = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              <div className="relative px-8 py-6 rounded-2xl bg-muted/30 border border-border/50">
+              <div className="relative px-10 py-8 rounded-2xl bg-muted/50 border border-border shadow-sm">
                 {/* Decorative quote icon */}
-                <Quote className="absolute -top-3 left-6 h-6 w-6 text-primary/40 bg-background p-0.5" />
+                <Quote className="absolute -top-4 left-8 h-8 w-8 text-primary/60 bg-background p-1 rounded" />
                 
-                <p className="text-lg md:text-xl text-muted-foreground italic leading-relaxed mb-3">
+                <p className="text-lg md:text-xl text-muted-foreground italic leading-relaxed mb-5">
                   {t('whyPage.hero.intro')}
                 </p>
-                <p className="text-lg md:text-xl font-semibold text-foreground">
+                <p className="text-lg md:text-xl font-bold text-foreground">
                   {t('whyPage.hero.introHighlight')}
                 </p>
               </div>
