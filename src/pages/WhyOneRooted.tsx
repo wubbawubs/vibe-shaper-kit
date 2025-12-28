@@ -67,7 +67,7 @@ const WhyOneRooted = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              <div className="pl-8 py-6 border-l-4 border-primary/40">
+              <div className="pl-8 py-6 border-l-4 border-primary/40 text-left">
                 <Quote className="h-8 w-8 text-primary/30 mb-4" />
                 <p className="text-lg md:text-xl text-muted-foreground italic leading-relaxed mb-4">
                   {t('whyPage.hero.intro')}
