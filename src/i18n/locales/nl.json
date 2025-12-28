@@ -176,28 +176,38 @@
   },
   "product": {
     "seo": {
-      "title": "Product Features | Hoe One Rooted Werkt",
-      "description": "Ontdek One Rooted's intelligente kandidaat-ranking, visuele hiring pipeline en real-time samenwerkingstools. Zie hoe ons Hiring OS recruitment transformeert."
+      "title": "Product | Zo werkt een Hiring OS",
+      "description": "Ontdek hoe OneRooted kandidaten structureert, keuzes ondersteunt en teams synchroon laat werken. Geen losse tools, één intelligent systeem."
     },
     "hero": {
-      "label": "Hoe het werkt",
-      "headline": "Dit is hoe een",
-      "headlineHighlight": "hiring OS",
-      "headlineSuffix": "eruitziet",
-      "subheadline": "Kandidaten bewegen vooruit. Signalen komen vanzelf boven. Je ziet wat ertoe doet — zonder updates na te jagen.",
+      "label": "Zo werkt een Hiring OS",
+      "headline": "Kandidaten bewegen vooruit.",
+      "headlineHighlight": "Signalen komen vanzelf bovendrijven.",
+      "headlineSuffix": "Je ziet wat ertoe doet — zonder updates na te jagen.",
+      "subheadline": "OneRooted vervangt losse tools door één systeem dat hiring structureert, keuzes ondersteunt en teams synchroon laat werken.",
       "cta": "Bekijk het in actie",
       "ctaSecondary": "Bekijk prijzen"
     },
+    "flow": {
+      "label": "Flow",
+      "headline": "Kandidaten bewegen. Het systeem denkt mee.",
+      "description": "In OneRooted stagneert niets ongemerkt. Kandidaten stromen door fases, signalen ontstaan automatisch en het systeem laat zien waar aandacht nodig is — voordat het een probleem wordt.",
+      "points": [
+        "Geen handmatige opvolging.",
+        "Geen statusjacht.",
+        "Wel overzicht."
+      ]
+    },
     "ranking": {
-      "label": "Intelligente Ranking",
-      "headline": "Elke kandidaat gescoord. Elke beslissing geïnformeerd.",
-      "description": "Consistente evaluatie op dezelfde criteria. Beslissingen gebaseerd op structuur, niet op onderbuikgevoel.",
+      "label": "Intelligente ranking",
+      "headline": "Elke kandidaat gescoord. Elke beslissing onderbouwd.",
+      "description": "Elke kandidaat wordt beoordeeld op dezelfde criteria. Niet op gevoel, niet op volume, maar op structuur. Zo ontstaat consistentie in evaluatie en vertrouwen in beslissingen.",
       "criteria": {
-        "title": "Scoringscriteria",
-        "description": "Dezelfde criteria. Elke kandidaat. Consistente evaluatie haalt het giswerk uit beslissingen.",
-        "skills": { "label": "Skills Match", "weight": "40%", "desc": "Technische vereisten" },
-        "experience": { "label": "Ervaring", "weight": "30%", "desc": "Relevante achtergrond" },
-        "fit": { "label": "Culture Fit", "weight": "30%", "desc": "Team aansluiting" }
+        "title": "Vaste beoordelingscriteria",
+        "description": "Iedere kandidaat. Elke keer dezelfde lat. Onderbuik verdwijnt. Besluitvorming blijft.",
+        "skills": { "label": "Skills match", "weight": "40%", "desc": "Technische vereisten" },
+        "experience": { "label": "Relevante ervaring", "weight": "30%", "desc": "Relevante achtergrond" },
+        "fit": { "label": "Culturele fit", "weight": "30%", "desc": "Team aansluiting" }
       },
       "status": {
         "evaluating": "Evalueren...",
@@ -208,9 +218,15 @@
       }
     },
     "pipeline": {
-      "label": "Visuele Pipeline",
+      "label": "Visuele pipeline",
       "headline": "Zie precies waar elke hire staat",
-      "description": "Van eerste sollicitatie tot getekend aanbod — elke stap zichtbaar. Bottlenecks komen boven voordat ze je vertragen.",
+      "description": "Van eerste sollicitatie tot getekend contract: elke stap is zichtbaar. Bottlenecks komen boven voordat ze je vertragen.",
+      "points": [
+        "Waar kandidaten blijven hangen",
+        "Waar beslissingen wachten",
+        "Waar het proces vertraagt"
+      ],
+      "pointsConclusion": "En belangrijker: waar je moet ingrijpen.",
       "stages": {
         "new": "Nieuw",
         "screening": "Screening",
@@ -226,23 +242,31 @@
       "hired": "aangenomen"
     },
     "intelligence": {
-      "label": "Proces Intelligentie",
-      "headline": "Metrics die je vertellen waar je moet handelen",
-      "description": "Real-time inzicht in hiring gezondheid. Weet waar je moet focussen voordat problemen blokkers worden.",
+      "label": "Procesintelligentie",
+      "headline": "Metrics die zeggen wat je nú moet doen",
+      "description": "OneRooted meet niet alleen wat er gebeurt, maar wat het betekent.",
+      "realTimeInsight": "Real-time inzicht in:",
       "metrics": {
         "efficiency": "Proces Efficiëntie",
-        "timeToHire": "Gem. Time-to-Hire",
-        "quality": "Kwaliteitsscore",
-        "candidates": "Actieve Kandidaten"
+        "timeToHire": "Time-to-hire",
+        "quality": "Kwaliteit van hires",
+        "candidates": "Doorstroom per fase",
+        "sourceEffectiveness": "Bron-effectiviteit"
       },
-      "sourceEffectiveness": "Bron Effectiviteit",
+      "sourceEffectiveness": "Bron-effectiviteit",
       "last30Days": "Laatste 30 dagen",
-      "trend": "Proces efficiëntie trend (12 maanden)"
+      "trend": "Je ziet trends voordat ze pijn doen. En stuurt bij voordat performance daalt."
     },
     "collaboration": {
-      "label": "Gecentraliseerde Samenwerking",
-      "headline": "Iedereen in hetzelfde systeem",
-      "description": "Recruiters, hiring managers en partners werken vanuit dezelfde bron van waarheid. Geen versieconflicten. Geen verloren feedback.",
+      "label": "Gecentraliseerde samenwerking",
+      "headline": "Eén systeem. Elke stakeholder. Real-time.",
+      "description": "Recruiters, hiring managers en partners werken vanuit dezelfde bron van waarheid.",
+      "points": [
+        "Geen versieconflicten",
+        "Geen verloren feedback",
+        "Geen parallelle waarheid"
+      ],
+      "conclusion": "Iedere actie is zichtbaar. Iedere beslissing traceerbaar. Iedereen werkt in hetzelfde ritme.",
       "activeNow": "Nu actief",
       "activity": "Activiteit",
       "typing": "typt",
@@ -264,26 +288,32 @@
       }
     },
     "atsComparison": {
-      "label": "Het verschil",
+      "label": "Positionering",
       "headline": "Dit is geen zoveelste ATS",
-      "description": "Een ATS slaat cv's op. One Rooted runt je wervingsproces.",
+      "description": "Een ATS slaat cv's op. OneRooted runt je wervingsproces.",
       "traditional": "Traditioneel ATS",
       "traditionalItems": [
-        "Slaat cv's op in een database",
+        "Database voor cv's",
         "Handmatige statusupdates",
-        "Admin-gerichte data-invoer",
+        "Admin-gerichte invoer",
         "Rapporten die je zelf moet bouwen"
       ],
       "onerootedItems": [
-        "Verbindt alle hiring data intelligent",
-        "Geautomatiseerde workflows en triggers",
-        "Decision-focused intelligentie",
-        "Inzichten die vanzelf boven komen"
-      ]
+        "Verbindt alle hiring-data intelligent",
+        "Automatische workflows en triggers",
+        "Decision-first intelligentie",
+        "Inzichten die vanzelf ontstaan"
+      ],
+      "conclusion": {
+        "ats": "ATS'en helpen je",
+        "atsHighlight": "volgen",
+        "onerooted": "OneRooted helpt je",
+        "onerootedHighlight": "beslissen"
+      }
     },
     "cta": {
-      "headline": "Zie wat er gebeurt als hiring structuur heeft",
-      "description": "We laten je zien hoe One Rooted helderheid brengt in je wervingsproces.",
+      "headline": "Zie wat er gebeurt als hiring structuur krijgt",
+      "description": "We laten je zien hoe OneRooted helderheid brengt in je wervingsproces — zonder ruis, zonder omwegen.",
       "button": "Demo aanvragen",
       "secondary": "Bekijk prijzen"
     }
