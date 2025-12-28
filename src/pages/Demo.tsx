@@ -156,7 +156,6 @@ const Demo = () => {
                   </CardContent>
                 </Card>
               </motion.div>
-              */}
 
               <motion.div
                 initial={{ opacity: 0 }}
@@ -171,6 +170,27 @@ const Demo = () => {
                   <p className="text-sm font-medium">{t('demoPage.expect.quickResponse')}</p>
                   <p className="text-xs text-muted-foreground">{t('demoPage.expect.quickResponseDesc')}</p>
                 </div>
+              </motion.div>
+
+              {/* Why different */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9 }}
+                className="pt-4"
+              >
+                <h3 className="text-sm font-semibold mb-2">{t('demoPage.whyDifferent.headline')}</h3>
+                <p className="text-xs text-muted-foreground mb-3">
+                  {t('demoPage.whyDifferent.description')}
+                </p>
+                <ul className="space-y-1.5 text-xs text-muted-foreground">
+                  {(t('demoPage.whyDifferent.points', { returnObjects: true }) as string[]).map((point, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-primary mt-0.5">•</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             </motion.div>
           </div>
