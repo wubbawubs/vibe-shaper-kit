@@ -684,16 +684,26 @@
       "success": "Thank you! We'll be in touch within 24 hours."
     },
     "expect": {
-      "headline": "What to expect",
+      "headline": "What you get in 30 minutes",
       "items": [
-        { "title": "30-minute walkthrough", "desc": "We'll show you how One Rooted works for your specific situation." },
-        { "title": "Honest conversation", "desc": "No pressure. We'll tell you if we're the right fit—and if we're not." },
-        { "title": "Clear next steps", "desc": "Whether it's a trial, onboarding, or just staying in touch." }
+        { "title": "A concrete walkthrough", "desc": "We show how OneRooted works for your way of hiring — not in abstracts, but in real scenarios." },
+        { "title": "An honest conversation", "desc": "No pressure, no scripts. We'll also tell you if OneRooted isn't (yet) the right solution for you." },
+        { "title": "Clarity on next steps", "desc": "Trial, onboarding, or simply staying in touch. You'll know exactly where you stand." }
       ],
-      "testimonial": "The demo was refreshingly direct. They understood our challenges immediately and showed exactly how One Rooted would help.",
+      "testimonial": "The demo was refreshingly direct. They understood our challenges immediately and showed exactly how OneRooted would help.",
       "testimonialAuthor": "— Head of Talent, Dutch Scale-up",
       "quickResponse": "Quick response",
-      "quickResponseDesc": "We typically reply within 24 hours"
+      "quickResponseDesc": "We usually reply within 24 hours"
+    },
+    "whyDifferent": {
+      "headline": "Why this is different",
+      "description": "Most demos are built to sell. This demo is built to understand.",
+      "points": [
+        "Whether OneRooted can strengthen your hiring process.",
+        "And whether it makes sense to move forward together."
+      ],
+      "cta": "Request a demo",
+      "ctaSubtext": "See if this is the system you've been missing."
     }
   },
   "privacyPage": {
