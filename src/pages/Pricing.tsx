@@ -25,14 +25,12 @@ const Pricing = () => {
       description: t('pricingPage.plans.base.description'),
       outcome: t('pricingPage.plans.base.outcome'),
       features: [
-        { text: t('pricingPage.features.onerootedSystem'), included: true },
-        { text: t('pricingPage.features.talentPool'), included: true },
-        { text: t('pricingPage.features.eAcademy'), included: true },
-        { text: t('pricingPage.features.emailSupport'), included: true },
-        { text: t('pricingPage.features.partnerPortal'), included: false },
-        { text: t('pricingPage.features.proactiveSourcing'), included: false },
-        { text: t('pricingPage.features.interviewCoordination'), included: false },
+        t('pricingPage.features.onerootedSystem'),
+        t('pricingPage.features.talentPool'),
+        t('pricingPage.features.eAcademy'),
+        t('pricingPage.features.emailSupport'),
       ],
+      notIncluded: t('pricingPage.plans.base.notIncluded', { returnObjects: true }) as string[],
       cta: t('pricingPage.talkToUs'),
       featured: false,
     },
@@ -42,14 +40,14 @@ const Pricing = () => {
       description: t('pricingPage.plans.plus.description'),
       outcome: t('pricingPage.plans.plus.outcome'),
       features: [
-        { text: t('pricingPage.features.everythingInBase'), included: true },
-        { text: t('pricingPage.features.retentionSearch'), included: true },
-        { text: t('pricingPage.features.proactiveSourcing'), included: true },
-        { text: t('pricingPage.features.prioritySupport'), included: true },
-        { text: t('pricingPage.features.partnerPortal'), included: true },
-        { text: t('pricingPage.features.interviewCoordination'), included: false },
-        { text: t('pricingPage.features.dedicatedSuccessManager'), included: false },
+        t('pricingPage.features.everythingInBase'),
+        t('pricingPage.features.retentionSearch'),
+        t('pricingPage.features.proactiveSourcing'),
+        t('pricingPage.features.prioritySupport'),
+        t('pricingPage.features.partnerPortal'),
+        t('pricingPage.features.interviewCoordination'),
       ],
+      notIncluded: t('pricingPage.plans.plus.notIncluded', { returnObjects: true }) as string[],
       cta: t('pricingPage.talkToUs'),
       featured: true,
     },
@@ -59,14 +57,15 @@ const Pricing = () => {
       description: t('pricingPage.plans.premium.description'),
       outcome: t('pricingPage.plans.premium.outcome'),
       features: [
-        { text: t('pricingPage.features.everythingInPlus'), included: true },
-        { text: t('pricingPage.features.candidateInterviews'), included: true },
-        { text: t('pricingPage.features.schedulingCoordination'), included: true },
-        { text: t('pricingPage.features.dedicatedSuccessManager'), included: true },
-        { text: t('pricingPage.features.customIntegrations'), included: true },
-        { text: t('pricingPage.features.advancedAnalytics'), included: true },
-        { text: t('pricingPage.features.slaGuarantee'), included: true },
+        t('pricingPage.features.everythingInPlus'),
+        t('pricingPage.features.candidateInterviews'),
+        t('pricingPage.features.schedulingCoordination'),
+        t('pricingPage.features.dedicatedSuccessManager'),
+        t('pricingPage.features.customIntegrations'),
+        t('pricingPage.features.advancedAnalytics'),
+        t('pricingPage.features.slaGuarantee'),
       ],
+      notIncluded: [],
       cta: t('pricingPage.talkToUs'),
       featured: false,
     },
@@ -207,7 +206,7 @@ const Pricing = () => {
                   </CardHeader>
                   
                   <CardContent className="relative pt-4 pb-6 sm:pb-8">
-                    <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
+                    <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
                       {plan.features.map((feature, featureIndex) => (
                         <motion.li 
                           key={featureIndex} 
@@ -217,29 +216,42 @@ const Pricing = () => {
                           viewport={{ once: true }}
                           transition={{ delay: 0.1 * featureIndex }}
                         >
-                          {feature.included ? (
-                            <motion.div
-                              initial={{ scale: 0 }}
-                              whileInView={{ scale: 1 }}
-                              viewport={{ once: true }}
-                              transition={{ 
-                                delay: 0.2 + 0.05 * featureIndex,
-                                type: "spring",
-                                stiffness: 400,
-                                damping: 10
-                              }}
-                            >
-                              <Check className="h-4 w-4 text-success shrink-0" />
-                            </motion.div>
-                          ) : (
-                            <X className="h-4 w-4 text-muted-foreground/40 shrink-0" />
-                          )}
-                          <span className={feature.included ? "" : "text-muted-foreground/60"}>
-                            {feature.text}
-                          </span>
+                          <motion.div
+                            initial={{ scale: 0 }}
+                            whileInView={{ scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ 
+                              delay: 0.2 + 0.05 * featureIndex,
+                              type: "spring",
+                              stiffness: 400,
+                              damping: 10
+                            }}
+                          >
+                            <Check className="h-4 w-4 text-success shrink-0" />
+                          </motion.div>
+                          <span>{feature}</span>
                         </motion.li>
                       ))}
                     </ul>
+                    
+                    {plan.notIncluded.length > 0 && (
+                      <div className="mb-6 sm:mb-8">
+                        <p className="text-xs text-muted-foreground mb-2">{t('pricingPage.notIncluded')}:</p>
+                        <ul className="space-y-1.5">
+                          {plan.notIncluded.map((item, itemIndex) => (
+                            <li 
+                              key={itemIndex} 
+                              className="flex items-center gap-2 text-xs text-muted-foreground/70"
+                            >
+                              <span>–</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    
+                    {plan.notIncluded.length === 0 && <div className="mb-6 sm:mb-8" />}
                     <Button 
                       asChild 
                       className={`w-full ${plan.featured ? 'btn-accent' : ''}`}
@@ -255,7 +267,7 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Try Light Section */}
+      {/* OneRooted Light Section */}
       <section className="py-12 md:py-16">
         <div className="container">
           <motion.div
@@ -271,35 +283,50 @@ const Pricing = () => {
               <div className="absolute inset-0 shimmer opacity-20" />
               
               <CardContent className="relative py-8 md:py-10 px-6 md:px-10">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                  <div className="text-center md:text-left">
-                    <motion.span 
-                      className="inline-block text-sm font-medium text-primary mb-2"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.2 }}
-                    >
-                      {t('lightOffer.banner.label')}
-                    </motion.span>
+                <div className="flex flex-col md:flex-row items-start justify-between gap-8">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-3">
+                      <motion.span 
+                        className="inline-block text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                      >
+                        ✨ {t('pricingPage.light.badge')}
+                      </motion.span>
+                    </div>
                     <h3 className="text-xl md:text-2xl font-medium mb-2">
-                      {t('lightOffer.banner.headline')}
+                      {t('pricingPage.light.headline')}
                     </h3>
-                    <p className="text-muted-foreground text-sm md:text-base">
-                      {t('lightOffer.banner.description')}
+                    <p className="text-sm text-muted-foreground mb-1">
+                      {t('pricingPage.light.subheadline')}
                     </p>
+                    <p className="text-muted-foreground text-sm md:text-base mb-4">
+                      {t('pricingPage.light.description')}
+                    </p>
+                    
+                    <ul className="space-y-2">
+                      {(t('pricingPage.light.features', { returnObjects: true }) as string[]).map((feature, index) => (
+                        <li key={index} className="flex items-center gap-2 text-sm">
+                          <Check className="h-4 w-4 text-success shrink-0" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                   
-                  <div className="flex flex-col sm:flex-row items-center gap-4">
+                  <div className="flex flex-col items-center md:items-end gap-4 md:text-right">
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl md:text-4xl font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                        €{t('lightOffer.banner.price')}
+                        €{t('pricingPage.light.price')}
                       </span>
-                      <span className="text-muted-foreground text-sm">{t('lightOffer.banner.perMonth')}</span>
+                      <span className="text-muted-foreground text-sm">{t('pricingPage.perMonth')}</span>
                     </div>
                     <Button asChild className="btn-accent whitespace-nowrap">
                       <Link to={localizedPath("/light")} className="flex items-center gap-2">
-                        {t('lightOffer.banner.cta')}
+                        {t('pricingPage.light.cta')}
+                        <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>
                   </div>

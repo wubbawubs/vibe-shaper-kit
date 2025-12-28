@@ -326,48 +326,51 @@
   },
   "pricingPage": {
     "seo": {
-      "title": "Prijzen | Transparante Hiring OS Prijzen",
-      "description": "Eenvoudige, transparante prijzen vanaf €299/maand. Kies Base, Plus of Premium. Geen verborgen kosten, onbeperkte gebruikers, opzeggen wanneer je wilt."
+      "title": "Prijzen | Heldere Hiring OS Prijzen",
+      "description": "Heldere prijzen vanaf €299/maand. Kies Base, Plus of Premium. Geen verborgen kosten, maandelijks opzegbaar, 30 dagen geld-terug-garantie."
     },
     "hero": {
       "label": "Prijzen",
       "headline": "Heldere prijzen.",
       "headlineHighlight": "Geen verrassingen.",
-      "subheadline": "Kies het plan dat past bij je wervingsbehoeften. Schaal wanneer je groeit."
+      "subheadline": "Kies het plan dat past bij hoe je vandaag werkt. Schaal op zodra je hiring volwassen wordt."
     },
     "trustBadges": {
       "noHiddenFees": "Geen verborgen kosten",
-      "cancelAnytime": "Opzeggen wanneer je wilt",
-      "moneyBack": "30 dagen geld terug"
+      "cancelAnytime": "Maandelijks opzegbaar",
+      "moneyBack": "30 dagen geld-terug-garantie"
     },
     "plans": {
       "base": {
         "name": "Base",
         "price": "299",
-        "description": "Essentiële recruitment ondersteuning voor kleine teams.",
-        "outcome": "Krijg controle over je wervingsproces."
+        "description": "Grip op je wervingsproces.",
+        "outcome": "Voor teams die overzicht willen zonder complexiteit.",
+        "notIncluded": ["Partner portal", "Proactieve sourcing", "Interviewcoördinatie"]
       },
       "plus": {
         "name": "Plus",
         "price": "399",
-        "description": "Sneller schakelen, slimmer aannemen.",
-        "outcome": "Maak van hiring een gecoördineerd systeem."
+        "description": "Sneller schakelen. Betere beslissingen.",
+        "outcome": "Voor teams die hiring als een gedeeld proces willen runnen.",
+        "notIncluded": ["Dedicated success manager", "Custom integraties"]
       },
       "premium": {
         "name": "Premium",
         "price": "599",
-        "description": "Hiring volledig georganiseerd.",
-        "outcome": "Draai hiring als een strategische operatie."
+        "description": "Hiring als strategische operatie.",
+        "outcome": "Voor organisaties waar hiring bedrijfskritisch is.",
+        "notIncluded": []
       }
     },
     "features": {
-      "onerootedSystem": "One Rooted systeem",
-      "talentPool": "Up-to-date talent pool",
+      "onerootedSystem": "OneRooted Hiring OS",
+      "talentPool": "Up-to-date talentpool",
       "eAcademy": "Toegang tot E-Academy",
       "emailSupport": "E-mail support",
       "partnerPortal": "Partner portal",
       "proactiveSourcing": "Proactieve sourcing",
-      "interviewCoordination": "Interview coördinatie",
+      "interviewCoordination": "Interviewcoördinatie",
       "everythingInBase": "Alles in Base",
       "retentionSearch": "Retention search",
       "prioritySupport": "Prioriteit support",
@@ -377,21 +380,31 @@
       "schedulingCoordination": "Planning & coördinatie",
       "customIntegrations": "Custom integraties",
       "advancedAnalytics": "Geavanceerde analytics",
-      "slaGuarantee": "SLA garantie"
+      "slaGuarantee": "SLA-garantie"
     },
+    "notIncluded": "Niet inbegrepen",
     "perMonth": "/ maand",
-    "mostPopular": "Meest populair",
+    "mostPopular": "Meest gekozen",
     "talkToUs": "Neem contact op",
+    "light": {
+      "badge": "Nieuw",
+      "headline": "OneRooted Light",
+      "subheadline": "Probeer OneRooted zonder commitment",
+      "description": "Start klein. Ervaar hoe een Hiring OS werkt.",
+      "features": ["1 actieve vacature", "Tot 100 kandidaten uit onze talentpool", "Volledig OneRooted-systeem"],
+      "price": "99",
+      "cta": "Probeer Light"
+    },
     "included": {
-      "title": "Wat zit er in alle plannen",
+      "title": "Wat zit in alle plannen",
       "always": "Altijd inbegrepen",
       "never": "Nooit in rekening gebracht",
-      "alwaysItems": ["Onbeperkte kandidaten", "Onbeperkte vacatures", "Data export", "AVG-compliant"],
-      "neverItems": ["Setup kosten", "Verborgen kosten", "Langetermijn contracten", "Per-kandidaat kosten"]
+      "alwaysItems": ["Onbeperkt aantal kandidaten", "Onbeperkt aantal vacatures", "Data-export", "Volledig AVG-compliant"],
+      "neverItems": ["Setupkosten", "Verborgen kosten", "Langetermijncontracten", "Kosten per kandidaat"]
     },
     "faq": {
       "label": "FAQ",
-      "headline": "Veelgestelde prijsvragen",
+      "headline": "Veelgestelde vragen over prijzen",
       "items": [
         {
           "question": "Kan ik later van plan wisselen?",
@@ -402,7 +415,7 @@
           "answer": "Nee. Alle plannen zijn maand-tot-maand zonder langetermijn verplichting. We geloven erin om je vertrouwen elke maand te verdienen."
         },
         {
-          "question": "Bieden jullie korting voor jaarlijkse facturering?",
+          "question": "Bieden jullie korting bij jaarlijkse betaling?",
           "answer": "Ja — 15% korting bij jaarlijkse betaling. Neem contact op met ons team om dit te regelen."
         },
         {
@@ -410,19 +423,19 @@
           "answer": "We accepteren alle gangbare creditcards, iDEAL en bankoverschrijvingen voor jaarplannen. Facturen worden automatisch verzonden elke factureringsperiode."
         },
         {
-          "question": "Wat gebeurt er na mijn proefperiode of demo?",
+          "question": "Wat gebeurt er na mijn demo of proefperiode?",
           "answer": "Na je demo kies je een plan dat bij je past. Geen automatische kosten, geen verborgen conversies. Jij beslist wanneer je start."
         },
         {
-          "question": "Kan ik meer gebruikers toevoegen aan mijn plan?",
+          "question": "Kan ik extra gebruikers toevoegen?",
           "answer": "Alle plannen bevatten onbeperkte gebruikers. Je betaalt alleen op basis van de features en het supportniveau dat je nodig hebt — niet per seat."
         },
         {
-          "question": "Bieden jullie aangepaste enterprise prijzen?",
+          "question": "Bieden jullie maatwerk of enterprise pricing?",
           "answer": "Ja. Voor organisaties met specifieke behoeften bieden we aangepaste prijzen en dedicated support. Neem contact op om te bespreken."
         },
         {
-          "question": "Wat is jullie terugbetalingsbeleid?",
+          "question": "Wat is het terugbetalingsbeleid?",
           "answer": "30 dagen geld-terug-garantie op alle plannen. Als je niet tevreden bent binnen de eerste 30 dagen, krijg je volledige terugbetaling — geen vragen gesteld."
         }
       ]
@@ -430,7 +443,7 @@
     "cta": {
       "trustBadge": "Vertrouwd door 100+ hiring teams",
       "headline": "Iets op maat nodig?",
-      "description": "Voor enterprise vereisten, custom integraties of high-volume behoeften, laten we een oplossing op maat bespreken.",
+      "description": "Voor enterprise-vereisten, custom integraties of high-volume hiring denken we graag mee.",
       "button": "Neem contact op",
       "secondary": "Bekijk hoe het werkt"
     }
