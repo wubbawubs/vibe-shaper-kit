@@ -578,27 +578,27 @@
   "partnersPage": {
     "seo": {
       "title": "Voor Recruitment Partners | OneRooted",
-      "description": "OneRooted is infrastructuur, geen concurrent. Als je klanten met OneRooted werken, krijg jij meer grip, betere tools en sterkere relaties."
+      "description": "OneRooted is infrastructuur, geen concurrent. Wanneer je klanten met OneRooted werken, krijg jij meer grip op het proces, betere tools in handen en een sterkere relatie met je klant."
     },
     "hero": {
       "label": "Voor recruitment partners",
       "headline": "We maken je",
       "headlineHighlight": "sterker",
       "headlineSuffix": ". Niet overbodig.",
-      "subheadline": "OneRooted is infrastructuur, geen concurrent. Als je klanten met OneRooted werken, krijg jij meer grip, betere tools en sterkere relaties — zonder je rol te verliezen.",
-      "cta": "Partner met ons",
+      "subheadline": "OneRooted is infrastructuur, geen concurrent. Wanneer je klanten met OneRooted werken, krijg jij meer grip op het proces, betere tools in handen en een sterkere relatie met je klant — zonder je rol te verliezen.",
+      "cta": "Partner worden",
       "ctaSecondary": "Bekijk hoe het werkt"
     },
     "perspectives": {
       "headline": "Eén systeem. Twee perspectieven.",
-      "subheadline": "Partners en klanten werken in hetzelfde Hiring OS — met een eigen view per rol.",
+      "subheadline": "Partners en klanten werken in hetzelfde Hiring OS, met views die zijn ontworpen voor ieders verantwoordelijkheid.",
       "partner": {
         "title": "Partner view",
         "subtitle": "Waar jij op stuurt",
         "benefits": [
           "Een eigen pipeline per klant, met duidelijk eigenaarschap",
-          "Real-time voortgang, zonder achter updates aan te lopen",
-          "Directe feedback op elke inzending",
+          "Real-time voortgang, zonder achter updates aan te hoeven",
+          "Directe en zichtbare feedback op elke inzending",
           "Een professionele omgeving die vertrouwen uitstraalt richting je klant"
         ]
       },
@@ -608,8 +608,8 @@
         "benefits": [
           "Alle kandidaten in één helder overzicht",
           "Transparante bronattributie per partner",
-          "Prestatie-inzichten die keuzes onderbouwen",
-          "Eén systeem, geen losse spreadsheets of mails"
+          "Prestatie-inzichten die beslissingen onderbouwen",
+          "Eén systeem in plaats van losse mails, spreadsheets en tools"
         ]
       }
     },
@@ -618,9 +618,9 @@
       "headline": "Van uitnodiging tot inzicht in vier stappen",
       "subheadline": "Geen onboarding-traject. Geen uitleg-sessies. Gewoon samenwerken zoals het hoort.",
       "steps": [
-        { "title": "Klant nodigt partner uit", "desc": "Eén klik. Direct toegang." },
-        { "title": "Partner dient kandidaten in", "desc": "Rechtstreeks in de pipeline. Meteen zichtbaar." },
-        { "title": "Beide kanten volgen voortgang", "desc": "Real-time updates. Geen statusmeetings." },
+        { "title": "Klant nodigt partner uit", "desc": "Eén klik. Direct toegang tot het systeem." },
+        { "title": "Partner dient kandidaten in", "desc": "Rechtstreeks in de pipeline. Meteen zichtbaar voor iedereen." },
+        { "title": "Beide kanten volgen voortgang", "desc": "Real-time updates. Geen statusmeetings of losse afstemming." },
         { "title": "Data stuurt de relatie", "desc": "Inzicht in wat werkt. Geen aannames. Geen politiek." }
       ],
       "punchline": "Geen overdrachten. Geen blinde vlekken. Geen ruis.",
@@ -628,7 +628,7 @@
     },
     "infrastructure": {
       "headline": "Infrastructuur, geen concurrentie",
-      "description": "We bouwen geen bureau-tool. We bouwen het operating system waarin klanten en partners samen betere beslissingen nemen.",
+      "description": "We bouwen geen bureau-tool. We bouwen het operating system waarin klanten en partners samen betere hiring-beslissingen nemen.",
       "forPartners": "Voor partners",
       "forPartnersDesc": "Betere infrastructuur leidt tot betere plaatsingen.",
       "forClients": "Voor klanten",
@@ -639,8 +639,8 @@
       "headline": "Veelgestelde vragen — voor partners",
       "items": [
         { "question": "Moet ik betalen voor OneRooted als partner?", "answer": "Nee. Partners betalen niet voor OneRooted. Wanneer een klant je uitnodigt om samen te werken, krijg je volledige toegang tot je dedicated pipeline zonder kosten. De klant handelt het abonnement af." },
-        { "question": "Kan ik met meerdere klanten werken in OneRooted?", "answer": "Ja. Elke klant heeft zijn eigen workspace, en je hebt een aparte pipeline per klant. Alles blijft georganiseerd en vertrouwelijk tussen klanten." },
-        { "question": "Welke data kan de klant zien over mijn prestaties?", "answer": "Klanten zien de kandidaten die je indient, hun status en prestatiemetrics zoals time-to-hire en conversieratio's. Ze zien niet je interne notities of communicatie met andere klanten." },
+        { "question": "Kan ik met meerdere klanten werken binnen OneRooted?", "answer": "Ja. Elke klant heeft zijn eigen workspace, en je hebt een aparte pipeline per klant. Alles blijft georganiseerd en vertrouwelijk tussen klanten." },
+        { "question": "Welke data ziet de klant over mijn prestaties?", "answer": "Klanten zien de kandidaten die je indient, hun status en prestatiemetrics zoals time-to-hire en conversieratio's. Ze zien niet je interne notities of communicatie met andere klanten." },
         { "question": "Hoe start ik als partner?", "answer": "Je klant stuurt je een uitnodigingslink. Je maakt een account aan (duurt 30 seconden), en je bent meteen verbonden met hun pipeline. Geen onboarding calls, geen setup meetings." },
         { "question": "Probeert OneRooted recruitmentbureaus te vervangen?", "answer": "Nee. Wij zijn infrastructuur, geen concurrentie. OneRooted maakt de samenwerking tussen jou en je klanten soepeler. Betere tools betekent betere plaatsingen, sterkere relaties en minder tijd verspild aan admin." },
         { "question": "Kan ik mijn eigen ATS blijven gebruiken naast OneRooted?", "answer": "Ja. Veel partners gebruiken hun eigen systemen intern en dienen kandidaten in bij OneRooted voor klantsamenwerking. Zie het als de gedeelde werkruimte waar jij en je klant samenkomen." }
@@ -648,7 +648,7 @@
     },
     "cta": {
       "headline": "Klaar om slimmer samen te werken?",
-      "description": "Sluit je aan bij partners die betere resultaten boeken door betere infrastructuur.",
+      "description": "Sluit je aan bij partners die betere resultaten boeken door betere infrastructuur — niet door harder te duwen.",
       "button": "Laten we praten",
       "secondary": "Verken het product"
     }
