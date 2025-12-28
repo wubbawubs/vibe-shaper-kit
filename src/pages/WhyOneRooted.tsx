@@ -54,10 +54,26 @@ const WhyOneRooted = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight leading-[1.1]">
               {t('whyPage.hero.headline')}{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t('whyPage.hero.headlineHighlight')}</span>
+              {" "}{t('whyPage.hero.headlineSuffix')}
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               {t('whyPage.hero.subheadline')}
             </p>
+            
+            {/* Intro text */}
+            <motion.div 
+              className="max-w-xl mx-auto text-center"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              <p className="text-base text-muted-foreground mb-2">
+                {t('whyPage.hero.intro')}
+              </p>
+              <p className="text-base font-medium text-foreground">
+                {t('whyPage.hero.introHighlight')}
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -179,13 +195,21 @@ const WhyOneRooted = () => {
                   </ul>
                 </div>
 
-                <p className="text-foreground font-semibold pt-2">
-                  {t('whyPage.insight.conclusion')}
-                </p>
+                <div className="space-y-2 pt-2">
+                  <p className="text-foreground font-semibold">
+                    {t('whyPage.insight.conclusion')}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {t('whyPage.insight.conclusionHighlight')}
+                  </p>
+                </div>
               </div>
-              
-              {/* Visual comparison - improved */}
+              {/* Visual comparison */}
               <div className="space-y-6">
+                <p className="text-sm font-medium text-foreground uppercase tracking-wide text-center">
+                  {t('whyPage.insight.comparisonTitle')}
+                </p>
+                
                 {/* Traditional ATS */}
                 <motion.div 
                   className="p-6 rounded-2xl border border-border/50 bg-muted/30 relative overflow-hidden"
