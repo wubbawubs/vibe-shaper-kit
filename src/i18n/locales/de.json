@@ -684,16 +684,26 @@
       "success": "Danke! Wir melden uns innerhalb von 24 Stunden."
     },
     "expect": {
-      "headline": "Was Sie erwartet",
+      "headline": "Was Sie in 30 Minuten bekommen",
       "items": [
-        { "title": "30-Minuten-Walkthrough", "desc": "Wir zeigen Ihnen, wie One Rooted für Ihre spezifische Situation funktioniert." },
-        { "title": "Ehrliches Gespräch", "desc": "Kein Druck. Wir sagen Ihnen, ob wir die richtige Wahl sind—und wenn nicht." },
-        { "title": "Klare nächste Schritte", "desc": "Ob Trial, Onboarding oder einfach in Kontakt bleiben." }
+        { "title": "Ein konkreter Walkthrough", "desc": "Wir zeigen, wie OneRooted für Ihre Art des Hirings funktioniert — nicht abstrakt, sondern in echten Szenarien." },
+        { "title": "Ein ehrliches Gespräch", "desc": "Kein Druck, keine Scripts. Wir sagen auch ehrlich, wenn OneRooted (noch) nicht die richtige Lösung für Sie ist." },
+        { "title": "Klarheit über nächste Schritte", "desc": "Trial, Onboarding oder einfach in Kontakt bleiben. Sie wissen danach genau, wo Sie stehen." }
       ],
-      "testimonial": "Die Demo war erfrischend direkt. Sie verstanden unsere Herausforderungen sofort und zeigten genau, wie One Rooted helfen würde.",
+      "testimonial": "Die Demo war erfrischend direkt. Sie verstanden unsere Herausforderungen sofort und zeigten genau, wie OneRooted helfen würde.",
       "testimonialAuthor": "— Head of Talent, Niederländisches Scale-up",
       "quickResponse": "Schnelle Antwort",
-      "quickResponseDesc": "Wir antworten typischerweise innerhalb von 24 Stunden"
+      "quickResponseDesc": "Wir antworten meistens innerhalb von 24 Stunden"
+    },
+    "whyDifferent": {
+      "headline": "Warum das anders ist",
+      "description": "Die meisten Demos sind gebaut, um zu verkaufen. Diese Demo ist gebaut, um zu verstehen.",
+      "points": [
+        "Ob OneRooted Ihren Hiring-Prozess stärken kann.",
+        "Und ob es sinnvoll ist, gemeinsam weiterzugehen."
+      ],
+      "cta": "Demo anfragen",
+      "ctaSubtext": "Sehen Sie, ob dies das System ist, das Ihnen fehlt."
     }
   },
   "privacyPage": {
