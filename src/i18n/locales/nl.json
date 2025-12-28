@@ -505,67 +505,72 @@
   },
   "whyPage": {
     "seo": {
-      "title": "Waarom One Rooted | Het Verhaal Achter het Hiring OS",
-      "description": "Waarom traditionele ATS-systemen moderne hiring teams teleurstellen. Leer hoe One Rooted recruitment software herdenkt met een Hiring OS aanpak."
+      "title": "Waarom OneRooted | Het Verhaal Achter het Hiring OS",
+      "description": "Waarom traditionele ATS-systemen tekortschieten. Ontdek hoe OneRooted hiring herdenkt met een Hiring OS aanpak."
     },
     "hero": {
       "label": "Ons verhaal",
-      "headline": "Het verhaal achter",
-      "headlineHighlight": "het bouwen van een Hiring OS",
-      "subheadline": "Waarom we besloten om fundamenteel te heroverwegen hoe hiring software zou moeten werken."
+      "headline": "Waarom we een",
+      "headlineHighlight": "Hiring OS",
+      "headlineSuffix": "bouwden",
+      "subheadline": "Niet om nog een tool toe te voegen, maar om hiring eindelijk te laten werken zoals het echt gebeurt.",
+      "intro": "Hiring software is jarenlang geëvolueerd in features. Maar nooit in fundament.",
+      "introHighlight": "Daar zijn wij gestopt met volgen — en opnieuw begonnen."
     },
     "atsProblem": {
       "label": "Het probleem",
-      "headline": "Waarom traditionele ATS-systemen falen",
+      "headline": "Waarom traditionele ATS-systemen tekortschieten",
       "items": [
-        { "title": "Ze zijn gebouwd voor opslag, niet beslissingen", "desc": "De meeste ATS-platforms zijn verheerlijkte databases. Ze volgen waar kandidaten zijn, niet waarom ze vooruit zouden moeten." },
-        { "title": "Ze fragmenteren het proces", "desc": "Feedback in Slack. Beslissingen in e-mail. Status in spreadsheets. Het ATS wordt gewoon een andere silo." },
-        { "title": "Ze negeren samenwerking", "desc": "Moderne hiring betrekt founders, hiring managers, teamleden en externe partners. ATS-systemen zijn hier niet voor gebouwd." },
-        { "title": "Ze optimaliseren voor recruiters, niet resultaten", "desc": "Admin efficiëntie is goed. Maar hoe zit het met beslissingskwaliteit? Time-to-hire? Kandidaatervaring?" }
+        { "title": "Ze zijn gebouwd voor opslag, niet voor beslissingen", "desc": "De meeste ATS'en zijn geavanceerde databases. Ze registreren waar kandidaten staan, maar niet waarom ze verder moeten." },
+        { "title": "Ze breken het proces op in losse stukken", "desc": "Feedback leeft in Slack. Beslissingen in e-mail. Status in spreadsheets. Het ATS wordt één silo in een zee van andere tools." },
+        { "title": "Ze begrijpen samenwerking niet", "desc": "Moderne hiring draait niet om één recruiter. Founders, hiring managers, teamleden en externe partners zijn allemaal betrokken — maar het systeem ondersteunt dat niet." },
+        { "title": "Ze optimaliseren voor administratie, niet voor resultaat", "desc": "Efficiëntie is mooi. Maar wat gebeurt er met beslissingskwaliteit, time-to-hire en kandidaatervaring?" }
       ]
     },
     "insight": {
       "label": "Het inzicht",
-      "headline": "Waarom een Hiring OS nodig is",
-      "description": "Hiring is niet langer een lineair proces beheerd door één recruiter. Het is een complexe operatie met meerdere stakeholders, externe partners en kritieke zakelijke beslissingen.",
-      "whatYouNeed": "Wat je echt nodig hebt:",
+      "headline": "Waarom hiring een Operating System nodig heeft",
+      "description": "Hiring is geen lineair proces meer. Het is een complexe operatie met meerdere rollen, belangen en beslissingen die directe impact hebben op het bedrijf.",
+      "whatYouNeed": "Wat je nodig hebt is geen betere tool. Wat je nodig hebt is een systeem dat:",
       "needs": [
-        "Een systeem dat complexiteit begrijpt",
-        "Verbonden data over alle touchpoints",
-        "Echte samenwerking, niet alleen overdrachten",
-        "Beslissingsondersteuning, niet alleen opslag"
+        "complexiteit begrijpt",
+        "data over alle touchpoints verbindt",
+        "samenwerking faciliteert in plaats van overdraagt",
+        "beslissingen ondersteunt in plaats van opslaat"
       ],
-      "conclusion": "Dat is wat een Hiring OS doet. Geen feature upgrade — een fundamentele heroverweging.",
+      "conclusion": "Dat is wat een Hiring OS doet.",
+      "conclusionHighlight": "Geen feature-upgrade. Een fundamenteel andere manier van werken.",
+      "comparisonTitle": "Het verschil in denken",
       "atsLabel": "Traditioneel ATS",
       "atsFlow": ["Opslaan", "Volgen", "Rapporteren"],
-      "atsDesc": "Data staat stil. Beslissingen gebeuren elders.",
+      "atsDesc": "Data staat stil. Beslissingen gebeuren ergens anders.",
       "osLabel": "Hiring OS",
       "osFlow": ["Samenwerken", "Beslissen", "Verbeteren"],
-      "osDesc": "Elke actie leidt tot betere resultaten."
+      "osDesc": "Elke actie voedt betere keuzes. Het systeem werkt mee."
     },
     "origin": {
       "label": "De oorsprong",
-      "headline": "Hoe One Rooted is ontstaan",
+      "headline": "Hoe OneRooted ontstond",
       "steps": [
-        { "step": "01", "title": "De frustratie", "text": "We werkten met organisaties die worstelden om effectief te werven, ondanks dat ze 'alle tools' hadden." },
-        { "step": "02", "title": "De realisatie", "text": "Het probleem was geen gebrek aan software—het was een gebrek aan systeem. Tools waren niet verbonden." },
-        { "step": "03", "title": "De oplossing", "text": "We bouwden One Rooted als het operating system voor hiring. Eén plek waar iedereen kan samenwerken." }
+        { "step": "01", "title": "De frustratie", "text": "We werkten met organisaties die moeite hadden om goed aan te nemen, ondanks een stapel tools en systemen." },
+        { "step": "02", "title": "De realisatie", "text": "Het probleem was geen gebrek aan software. Het probleem was het ontbreken van een samenhangend systeem. Alles werkte naast elkaar. Niets werkte samen." },
+        { "step": "03", "title": "De oplossing", "text": "We bouwden OneRooted als het operating system voor hiring. Eén plek waar iedereen samenwerkt, en waar het systeem actief helpt betere beslissingen te nemen." }
       ],
-      "quote": "Geen nieuwe tool om te leren. Een systeem dat werkt zoals moderne hiring echt gebeurt."
+      "quote": "Niet nog een tool om te leren. Een systeem dat werkt zoals hiring vandaag echt gebeurt."
     },
     "future": {
       "label": "De toekomst",
       "headline": "Waar we naartoe gaan",
       "items": [
-        { "title": "Diepere beslissingsintelligentie", "desc": "AI-gedreven inzichten die je helpen sneller betere hiring keuzes te maken." },
-        { "title": "Naadloze partner ecosystemen", "desc": "Verbind met elke recruitment partner via gestandaardiseerde interfaces." },
-        { "title": "Voorspellende hiring inzichten", "desc": "Weet wat werkt voordat je de resultaten ziet." },
-        { "title": "Globale team samenwerking", "desc": "Gebouwd voor gedistribueerde teams over tijdzones en culturen." }
+        { "title": "Diepere beslissingsintelligentie", "desc": "AI-gedreven inzichten die helpen sneller en beter te kiezen." },
+        { "title": "Naadloze partner-ecosystemen", "desc": "Samenwerken met elke recruitmentpartner via gestandaardiseerde interfaces." },
+        { "title": "Voorspellende hiring inzichten", "desc": "Zien wat werkt, vóórdat de resultaten zichtbaar zijn." },
+        { "title": "Globale samenwerking", "desc": "Ontworpen voor teams die werken over tijdzones, culturen en organisaties heen." }
       ]
     },
     "cta": {
-      "headline": "Klaar om te heroverwegen hoe je werft?",
-      "description": "Zie hoe One Rooted je wervingsproces kan transformeren van gefragmenteerd naar gecentraliseerd.",
+      "headline": "Klaar om hiring opnieuw te bekijken?",
+      "description": "Zie hoe OneRooted je wervingsproces verandert van gefragmenteerd naar samenhangend.",
       "button": "Demo aanvragen",
       "secondary": "Bekijk hoe het werkt"
     }
