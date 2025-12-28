@@ -189,9 +189,9 @@
       "ctaSecondary": "Bekijk prijzen"
     },
     "flow": {
-      "label": "Flow",
-      "headline": "Kandidaten bewegen. Het systeem denkt mee.",
-      "description": "In OneRooted stagneert niets ongemerkt. Kandidaten stromen door fases, signalen ontstaan automatisch en het systeem laat zien waar aandacht nodig is — voordat het een probleem wordt.",
+      "label": "Het systeem in beweging",
+      "headline": "Kandidaten stromen door fases.",
+      "description": "Het systeem signaleert waar aandacht nodig is — automatisch.",
       "points": [
         "Geen handmatige opvolging.",
         "Geen statusjacht.",
@@ -255,7 +255,7 @@
       },
       "sourceEffectiveness": "Bron-effectiviteit",
       "last30Days": "Laatste 30 dagen",
-      "trend": "Je ziet trends voordat ze pijn doen. En stuurt bij voordat performance daalt."
+      "trend": "Zo stuur je bij vóórdat prestaties dalen."
     },
     "collaboration": {
       "label": "Gecentraliseerde samenwerking",
@@ -266,7 +266,7 @@
         "Geen verloren feedback",
         "Geen parallelle waarheid"
       ],
-      "conclusion": "Iedere actie is zichtbaar. Iedere beslissing traceerbaar. Iedereen werkt in hetzelfde ritme.",
+      "conclusion": "Iedere actie is zichtbaar. Iedere beslissing traceerbaar.",
       "activeNow": "Nu actief",
       "activity": "Activiteit",
       "typing": "typt",
