@@ -702,18 +702,18 @@
   },
   "demoPage": {
     "seo": {
-      "title": "Demo Aanvragen | Zie One Rooted in Actie",
-      "description": "Boek een gratis 30-minuten demo. Zie hoe One Rooted's Hiring OS je recruitment kan stroomlijnen, samenwerking kan verbeteren en betere hires kan realiseren."
+      "title": "Demo Aanvragen | Zie OneRooted in Actie",
+      "description": "Boek een gratis 30-minuten demo. Geen salespraat, geen demo-theater. Gewoon laten zien hoe hiring werkt als alles samenkomt."
     },
     "hero": {
       "label": "Aan de slag",
-      "headline": "Vraag een",
-      "headlineHighlight": "demo",
-      "subheadline": "Zie One Rooted in actie. Geen sales-theater. Gewoon helderheid.",
+      "headline": "Zie OneRooted",
+      "headlineHighlight": "in actie",
+      "subheadline": "Geen salespraat. Geen demo-theater. Gewoon laten zien hoe hiring werkt als alles samenkomt.",
       "trustIndicators": [
-        { "text": "30-minuten gesprek" },
-        { "text": "Geen verplichting" },
-        { "text": "Op maat voor jouw behoeften" }
+        { "text": "30 minuten" },
+        { "text": "Geen verplichtingen" },
+        { "text": "Afgestemd op jouw situatie" }
       ]
     },
     "form": {
@@ -732,16 +732,26 @@
       "success": "Bedankt! We nemen binnen 24 uur contact op."
     },
     "expect": {
-      "headline": "Wat te verwachten",
+      "headline": "Wat je krijgt in 30 minuten",
       "items": [
-        { "title": "30-minuten walkthrough", "desc": "We laten je zien hoe One Rooted werkt voor jouw specifieke situatie." },
-        { "title": "Eerlijk gesprek", "desc": "Geen druk. We vertellen je of we de juiste fit zijn—en als we dat niet zijn." },
-        { "title": "Duidelijke volgende stappen", "desc": "Of het nu een trial is, onboarding, of gewoon in contact blijven." }
+        { "title": "Een concrete walkthrough", "desc": "We laten zien hoe OneRooted werkt voor jouw manier van hiring — niet in abstracties, maar in echte scenario's." },
+        { "title": "Een eerlijk gesprek", "desc": "Geen druk, geen scripts. We zeggen het ook gewoon als OneRooted (nog) niet de juiste oplossing voor je is." },
+        { "title": "Helderheid over vervolgstappen", "desc": "Trial, onboarding of simpelweg contact houden. Je weet na afloop precies waar je staat." }
       ],
-      "testimonial": "De demo was verfrissend direct. Ze begrepen onze uitdagingen meteen en lieten precies zien hoe One Rooted zou helpen.",
+      "testimonial": "De demo was verfrissend direct. Ze begrepen onze uitdagingen meteen en lieten precies zien hoe OneRooted zou helpen.",
       "testimonialAuthor": "— Head of Talent, Nederlandse Scale-up",
       "quickResponse": "Snelle reactie",
-      "quickResponseDesc": "We reageren doorgaans binnen 24 uur"
+      "quickResponseDesc": "We reageren meestal binnen 24 uur"
+    },
+    "whyDifferent": {
+      "headline": "Waarom dit anders is",
+      "description": "De meeste demo's zijn gebouwd om te verkopen. Deze demo is gebouwd om te begrijpen.",
+      "points": [
+        "Of OneRooted je hiringproces kan versterken.",
+        "En of het logisch is om samen verder te gaan."
+      ],
+      "cta": "Vraag een demo aan",
+      "ctaSubtext": "Zie of dit het systeem is dat je mist."
     }
   },
   "privacyPage": {
