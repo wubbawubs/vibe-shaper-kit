@@ -12,6 +12,7 @@ const POPUP_STORAGE_KEY = "onerooted_popup_dismissed";
 
 export const DemoCTAPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const { t } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
 
@@ -19,7 +20,14 @@ export const DemoCTAPopup = () => {
     return lang ? getLocalizedPath(href, lang as Language) : href;
   };
 
+  // Ensure component is mounted before starting timer
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+    
     // Check if popup was already dismissed this session
     const wasDismissed = sessionStorage.getItem(POPUP_STORAGE_KEY);
     if (wasDismissed) return;
@@ -29,7 +37,7 @@ export const DemoCTAPopup = () => {
     }, POPUP_DELAY_MS);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [isMounted]);
 
   const handleDismiss = () => {
     setIsVisible(false);
