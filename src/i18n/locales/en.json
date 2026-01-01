@@ -547,23 +547,23 @@
   },
   "partnersPage": {
     "seo": {
-      "title": "For Recruitment Agencies & Partners",
-      "description": "Collaborate seamlessly with clients using One Rooted. Get real-time visibility, instant feedback, and better outcomes. Free for partners."
+      "title": "For Recruiters & Agencies",
+      "description": "Collaborate seamlessly with clients using One Rooted. Get real-time visibility, instant feedback, and better outcomes. Free for recruiters."
     },
     "hero": {
-      "label": "For recruitment partners",
+      "label": "For recruiters",
       "headline": "We make you",
       "headlineHighlight": "stronger",
       "headlineSuffix": ", not obsolete",
       "subheadline": "One Rooted is infrastructure. Not competition. When your clients use it, you get better tools, clearer visibility, and stronger relationships.",
-      "cta": "Partner with us",
+      "cta": "Become a recruiter",
       "ctaSecondary": "See how it works"
     },
     "perspectives": {
       "headline": "One system. Two perspectives.",
-      "subheadline": "Partners and clients work in the same system — with views designed for each role.",
+      "subheadline": "Recruiters and clients work in the same system — with views designed for each role.",
       "partner": {
-        "title": "Partner view",
+        "title": "Recruiter view",
         "subtitle": "What you work with",
         "benefits": [
           "Your own pipeline per client — full ownership",
@@ -577,7 +577,7 @@
         "subtitle": "What they see",
         "benefits": [
           "All candidates in one view — zero chaos",
-          "Clear source attribution per partner",
+          "Clear source attribution per recruiter",
           "Performance data that drives decisions",
           "One system instead of scattered spreadsheets"
         ]
@@ -588,8 +588,8 @@
       "headline": "From invite to insight in four steps",
       "subheadline": "No complex onboarding. No learning curve. Just collaboration that works.",
       "steps": [
-        { "title": "Client invites partner", "desc": "One click. No onboarding friction." },
-        { "title": "Partner submits candidates", "desc": "Direct into the pipeline. Instantly visible." },
+        { "title": "Client invites recruiter", "desc": "One click. No onboarding friction." },
+        { "title": "Recruiter submits candidates", "desc": "Direct into the pipeline. Instantly visible." },
         { "title": "Both sides see progress", "desc": "Real-time updates. No status meetings." },
         { "title": "Data drives the relationship", "desc": "Clear metrics on what works. No politics." }
       ],
@@ -598,27 +598,27 @@
     },
     "infrastructure": {
       "headline": "Infrastructure, not competition",
-      "description": "We're not building another agency tool. We're building the operating system that makes collaboration between clients and partners seamless.",
-      "forPartners": "For partners",
+      "description": "We're not building another agency tool. We're building the operating system that makes collaboration between clients and recruiters seamless.",
+      "forPartners": "For recruiters",
       "forPartnersDesc": "Better tools mean better placements",
       "forClients": "For clients",
       "forClientsDesc": "Better visibility means better decisions"
     },
     "faq": {
       "label": "FAQ",
-      "headline": "Common questions from partners",
+      "headline": "Common questions from recruiters",
       "items": [
-        { "question": "Do I need to pay for One Rooted as a partner?", "answer": "No. Partners don't pay for One Rooted. When a client invites you to collaborate, you get full access to your dedicated pipeline at no cost. The client handles the subscription." },
+        { "question": "Do I need to pay for One Rooted as a recruiter?", "answer": "No. Recruiters don't pay for One Rooted. When a client invites you to collaborate, you get full access to your dedicated pipeline at no cost. The client handles the subscription." },
         { "question": "Can I work with multiple clients in One Rooted?", "answer": "Yes. Each client has their own workspace, and you'll have a separate pipeline per client. Everything stays organized and confidential between clients." },
         { "question": "What data can the client see about my work?", "answer": "Clients see the candidates you submit, their status, and performance metrics like time-to-hire and conversion rates. They don't see your internal notes or communication with other clients." },
-        { "question": "How do I get started as a partner?", "answer": "Your client sends you an invite link. You create an account (takes 30 seconds), and you're immediately connected to their pipeline. No onboarding calls, no setup meetings." },
+        { "question": "How do I get started as a recruiter?", "answer": "Your client sends you an invite link. You create an account (takes 30 seconds), and you're immediately connected to their pipeline. No onboarding calls, no setup meetings." },
         { "question": "Is One Rooted trying to replace recruitment agencies?", "answer": "No. We're infrastructure, not competition. One Rooted makes the collaboration between you and your clients smoother. Better tools mean better placements, stronger relationships, and less time wasted on admin." },
-        { "question": "Can I still use my own ATS alongside One Rooted?", "answer": "Yes. Many partners use their own systems internally and submit candidates to One Rooted for client collaboration. Think of it as the shared workspace where you and your client meet." }
+        { "question": "Can I still use my own ATS alongside One Rooted?", "answer": "Yes. Many recruiters use their own systems internally and submit candidates to One Rooted for client collaboration. Think of it as the shared workspace where you and your client meet." }
       ]
     },
     "cta": {
       "headline": "Ready to work smarter?",
-      "description": "Join the partners who are already delivering better results through better infrastructure.",
+      "description": "Join the recruiters who are already delivering better results through better infrastructure.",
       "button": "Let's talk",
       "secondary": "Explore the product"
     }
