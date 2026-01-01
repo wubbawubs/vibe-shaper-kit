@@ -4,7 +4,7 @@ import { Menu, X, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import onerootedLogo from "@/assets/onerooted-logo.png";
+import onerootedLogo from "@/assets/onerooted-logo-transparent.avif";
 import { useLanguageFromUrl, getLocalizedPath } from "@/i18n/useLanguage";
 import { supportedLanguages, languageNames, type Language } from "@/i18n/config";
 import {
