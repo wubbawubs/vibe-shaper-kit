@@ -542,23 +542,23 @@
   },
   "partnersPage": {
     "seo": {
-      "title": "Für Recruiting-Agenturen & Partner",
-      "description": "Arbeiten Sie nahtlos mit Kunden über One Rooted zusammen. Erhalten Sie Echtzeit-Sichtbarkeit, sofortiges Feedback und bessere Ergebnisse. Kostenlos für Partner."
+      "title": "Für Recruiter & Agenturen",
+      "description": "Arbeiten Sie nahtlos mit Kunden über One Rooted zusammen. Erhalten Sie Echtzeit-Sichtbarkeit, sofortiges Feedback und bessere Ergebnisse. Kostenlos für Recruiter."
     },
     "hero": {
-      "label": "Für Recruitment-Partner",
+      "label": "Für Recruiter",
       "headline": "Wir machen Sie",
       "headlineHighlight": "stärker",
       "headlineSuffix": ", nicht überflüssig",
       "subheadline": "One Rooted ist Infrastruktur. Keine Konkurrenz. Wenn Ihre Kunden es nutzen, bekommen Sie bessere Tools, klarere Sichtbarkeit und stärkere Beziehungen.",
-      "cta": "Partner werden",
+      "cta": "Recruiter werden",
       "ctaSecondary": "Sehen Sie, wie es funktioniert"
     },
     "perspectives": {
       "headline": "Ein System. Zwei Perspektiven.",
-      "subheadline": "Partner und Kunden arbeiten im selben System — mit Views, die für jede Rolle entwickelt wurden.",
+      "subheadline": "Recruiter und Kunden arbeiten im selben System — mit Views, die für jede Rolle entwickelt wurden.",
       "partner": {
-        "title": "Partner-Ansicht",
+        "title": "Recruiter-Ansicht",
         "subtitle": "Womit Sie arbeiten",
         "benefits": [
           "Ihre eigene Pipeline pro Kunde — volle Ownership",
@@ -572,7 +572,7 @@
         "subtitle": "Was sie sehen",
         "benefits": [
           "Alle Kandidaten in einer Ansicht — kein Chaos",
-          "Klare Quellenzuordnung pro Partner",
+          "Klare Quellenzuordnung pro Recruiter",
           "Leistungsdaten, die Entscheidungen antreiben",
           "Ein System statt verstreuter Tabellen"
         ]
@@ -583,8 +583,8 @@
       "headline": "Von der Einladung zur Erkenntnis in vier Schritten",
       "subheadline": "Kein komplexes Onboarding. Keine Lernkurve. Einfach Zusammenarbeit, die funktioniert.",
       "steps": [
-        { "title": "Kunde lädt Partner ein", "desc": "Ein Klick. Keine Onboarding-Reibung." },
-        { "title": "Partner reicht Kandidaten ein", "desc": "Direkt in die Pipeline. Sofort sichtbar." },
+        { "title": "Kunde lädt Recruiter ein", "desc": "Ein Klick. Keine Onboarding-Reibung." },
+        { "title": "Recruiter reicht Kandidaten ein", "desc": "Direkt in die Pipeline. Sofort sichtbar." },
         { "title": "Beide Seiten sehen Fortschritt", "desc": "Echtzeit-Updates. Keine Status-Meetings." },
         { "title": "Daten treiben die Beziehung", "desc": "Klare Metriken, was funktioniert. Keine Politik." }
       ],
@@ -593,27 +593,27 @@
     },
     "infrastructure": {
       "headline": "Infrastruktur, keine Konkurrenz",
-      "description": "Wir bauen kein weiteres Agentur-Tool. Wir bauen das Betriebssystem, das die Zusammenarbeit zwischen Kunden und Partnern nahtlos macht.",
-      "forPartners": "Für Partner",
+      "description": "Wir bauen kein weiteres Agentur-Tool. Wir bauen das Betriebssystem, das die Zusammenarbeit zwischen Kunden und Recruitern nahtlos macht.",
+      "forPartners": "Für Recruiter",
       "forPartnersDesc": "Bessere Tools bedeuten bessere Platzierungen",
       "forClients": "Für Kunden",
       "forClientsDesc": "Bessere Sichtbarkeit bedeutet bessere Entscheidungen"
     },
     "faq": {
       "label": "FAQ",
-      "headline": "Häufige Fragen von Partnern",
+      "headline": "Häufige Fragen von Recruitern",
       "items": [
-        { "question": "Muss ich als Partner für One Rooted bezahlen?", "answer": "Nein. Partner zahlen nicht für One Rooted. Wenn ein Kunde Sie zur Zusammenarbeit einlädt, erhalten Sie vollen Zugang zu Ihrer dedizierten Pipeline ohne Kosten. Der Kunde übernimmt das Abonnement." },
+        { "question": "Muss ich als Recruiter für One Rooted bezahlen?", "answer": "Nein. Recruiter zahlen nicht für One Rooted. Wenn ein Kunde Sie zur Zusammenarbeit einlädt, erhalten Sie vollen Zugang zu Ihrer dedizierten Pipeline ohne Kosten. Der Kunde übernimmt das Abonnement." },
         { "question": "Kann ich mit mehreren Kunden in One Rooted arbeiten?", "answer": "Ja. Jeder Kunde hat seinen eigenen Workspace, und Sie haben eine separate Pipeline pro Kunde. Alles bleibt organisiert und vertraulich zwischen Kunden." },
         { "question": "Welche Daten kann der Kunde über meine Arbeit sehen?", "answer": "Kunden sehen die Kandidaten, die Sie einreichen, deren Status und Leistungskennzahlen wie Time-to-Hire und Konversionsraten. Sie sehen nicht Ihre internen Notizen oder Kommunikation mit anderen Kunden." },
-        { "question": "Wie starte ich als Partner?", "answer": "Ihr Kunde sendet Ihnen einen Einladungslink. Sie erstellen ein Konto (dauert 30 Sekunden) und sind sofort mit deren Pipeline verbunden. Keine Onboarding-Calls, keine Setup-Meetings." },
+        { "question": "Wie starte ich als Recruiter?", "answer": "Ihr Kunde sendet Ihnen einen Einladungslink. Sie erstellen ein Konto (dauert 30 Sekunden) und sind sofort mit deren Pipeline verbunden. Keine Onboarding-Calls, keine Setup-Meetings." },
         { "question": "Versucht One Rooted, Recruiting-Agenturen zu ersetzen?", "answer": "Nein. Wir sind Infrastruktur, keine Konkurrenz. One Rooted macht die Zusammenarbeit zwischen Ihnen und Ihren Kunden reibungsloser. Bessere Tools bedeuten bessere Platzierungen, stärkere Beziehungen und weniger Zeitverschwendung bei Admin." },
-        { "question": "Kann ich mein eigenes ATS neben One Rooted weiter nutzen?", "answer": "Ja. Viele Partner nutzen ihre eigenen Systeme intern und reichen Kandidaten bei One Rooted für die Kundenzusammenarbeit ein. Sehen Sie es als den gemeinsamen Arbeitsbereich, in dem Sie und Ihr Kunde sich treffen." }
+        { "question": "Kann ich mein eigenes ATS neben One Rooted weiter nutzen?", "answer": "Ja. Viele Recruiter nutzen ihre eigenen Systeme intern und reichen Kandidaten bei One Rooted für die Kundenzusammenarbeit ein. Sehen Sie es als den gemeinsamen Arbeitsbereich, in dem Sie und Ihr Kunde sich treffen." }
       ]
     },
     "cta": {
       "headline": "Bereit, smarter zu arbeiten?",
-      "description": "Schließen Sie sich den Partnern an, die bereits bessere Ergebnisse durch bessere Infrastruktur liefern.",
+      "description": "Schließen Sie sich den Recruitern an, die bereits bessere Ergebnisse durch bessere Infrastruktur liefern.",
       "button": "Lassen Sie uns sprechen",
       "secondary": "Produkt erkunden"
     }
