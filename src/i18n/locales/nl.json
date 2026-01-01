@@ -618,7 +618,7 @@
       "headline": "Van uitnodiging tot inzicht in vier stappen",
       "subheadline": "Geen onboarding-traject. Geen uitleg-sessies. Gewoon samenwerken zoals het hoort.",
       "steps": [
-        { "title": "Klant nodigt recruiter uit", "desc": "Eén klik. Direct toegang tot het systeem." },
+        { "title": "Admin nodigt recruiter/klant uit", "desc": "Eén klik. Direct toegang tot het systeem." },
         { "title": "Recruiter dient kandidaten in", "desc": "Rechtstreeks in de pipeline. Meteen zichtbaar voor iedereen." },
         { "title": "Beide kanten volgen voortgang", "desc": "Real-time updates. Geen statusmeetings of losse afstemming." },
         { "title": "Data stuurt de relatie", "desc": "Inzicht in wat werkt. Geen aannames. Geen politiek." }
@@ -638,7 +638,6 @@
       "label": "FAQ",
       "headline": "Veelgestelde vragen — voor recruiters",
       "items": [
-        { "question": "Moet ik betalen voor OneRooted als recruiter?", "answer": "Nee. Recruiters betalen niet voor OneRooted. Wanneer een klant je uitnodigt om samen te werken, krijg je volledige toegang tot je dedicated pipeline zonder kosten. De klant handelt het abonnement af." },
         { "question": "Kan ik met meerdere klanten werken binnen OneRooted?", "answer": "Ja. Elke klant heeft zijn eigen workspace, en je hebt een aparte pipeline per klant. Alles blijft georganiseerd en vertrouwelijk tussen klanten." },
         { "question": "Welke data ziet de klant over mijn prestaties?", "answer": "Klanten zien de kandidaten die je indient, hun status en prestatiemetrics zoals time-to-hire en conversieratio's. Ze zien niet je interne notities of communicatie met andere klanten." },
         { "question": "Hoe start ik als recruiter?", "answer": "Je klant stuurt je een uitnodigingslink. Je maakt een account aan (duurt 30 seconden), en je bent meteen verbonden met hun pipeline. Geen onboarding calls, geen setup meetings." },

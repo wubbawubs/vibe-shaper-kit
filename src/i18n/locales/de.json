@@ -583,7 +583,7 @@
       "headline": "Von der Einladung zur Erkenntnis in vier Schritten",
       "subheadline": "Kein komplexes Onboarding. Keine Lernkurve. Einfach Zusammenarbeit, die funktioniert.",
       "steps": [
-        { "title": "Kunde lädt Recruiter ein", "desc": "Ein Klick. Keine Onboarding-Reibung." },
+        { "title": "Admin lädt Recruiter/Kunde ein", "desc": "Ein Klick. Keine Onboarding-Reibung." },
         { "title": "Recruiter reicht Kandidaten ein", "desc": "Direkt in die Pipeline. Sofort sichtbar." },
         { "title": "Beide Seiten sehen Fortschritt", "desc": "Echtzeit-Updates. Keine Status-Meetings." },
         { "title": "Daten treiben die Beziehung", "desc": "Klare Metriken, was funktioniert. Keine Politik." }
@@ -603,7 +603,6 @@
       "label": "FAQ",
       "headline": "Häufige Fragen von Recruitern",
       "items": [
-        { "question": "Muss ich als Recruiter für One Rooted bezahlen?", "answer": "Nein. Recruiter zahlen nicht für One Rooted. Wenn ein Kunde Sie zur Zusammenarbeit einlädt, erhalten Sie vollen Zugang zu Ihrer dedizierten Pipeline ohne Kosten. Der Kunde übernimmt das Abonnement." },
         { "question": "Kann ich mit mehreren Kunden in One Rooted arbeiten?", "answer": "Ja. Jeder Kunde hat seinen eigenen Workspace, und Sie haben eine separate Pipeline pro Kunde. Alles bleibt organisiert und vertraulich zwischen Kunden." },
         { "question": "Welche Daten kann der Kunde über meine Arbeit sehen?", "answer": "Kunden sehen die Kandidaten, die Sie einreichen, deren Status und Leistungskennzahlen wie Time-to-Hire und Konversionsraten. Sie sehen nicht Ihre internen Notizen oder Kommunikation mit anderen Kunden." },
         { "question": "Wie starte ich als Recruiter?", "answer": "Ihr Kunde sendet Ihnen einen Einladungslink. Sie erstellen ein Konto (dauert 30 Sekunden) und sind sofort mit deren Pipeline verbunden. Keine Onboarding-Calls, keine Setup-Meetings." },
