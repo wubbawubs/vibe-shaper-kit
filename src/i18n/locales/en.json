@@ -588,7 +588,7 @@
       "headline": "From invite to insight in four steps",
       "subheadline": "No complex onboarding. No learning curve. Just collaboration that works.",
       "steps": [
-        { "title": "Client invites recruiter", "desc": "One click. No onboarding friction." },
+        { "title": "Admin invites recruiter/client", "desc": "One click. No onboarding friction." },
         { "title": "Recruiter submits candidates", "desc": "Direct into the pipeline. Instantly visible." },
         { "title": "Both sides see progress", "desc": "Real-time updates. No status meetings." },
         { "title": "Data drives the relationship", "desc": "Clear metrics on what works. No politics." }
@@ -608,7 +608,6 @@
       "label": "FAQ",
       "headline": "Common questions from recruiters",
       "items": [
-        { "question": "Do I need to pay for One Rooted as a recruiter?", "answer": "No. Recruiters don't pay for One Rooted. When a client invites you to collaborate, you get full access to your dedicated pipeline at no cost. The client handles the subscription." },
         { "question": "Can I work with multiple clients in One Rooted?", "answer": "Yes. Each client has their own workspace, and you'll have a separate pipeline per client. Everything stays organized and confidential between clients." },
         { "question": "What data can the client see about my work?", "answer": "Clients see the candidates you submit, their status, and performance metrics like time-to-hire and conversion rates. They don't see your internal notes or communication with other clients." },
         { "question": "How do I get started as a recruiter?", "answer": "Your client sends you an invite link. You create an account (takes 30 seconds), and you're immediately connected to their pipeline. No onboarding calls, no setup meetings." },
