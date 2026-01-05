@@ -157,6 +157,8 @@ const Team = () => {
                       
                       <a 
                         href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="shrink-0 w-8 h-8 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                         aria-label={`${member.name} on LinkedIn`}
                       >
