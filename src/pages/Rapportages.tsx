@@ -7,15 +7,10 @@ import { ReportsExportTab } from '@/components/reports/ReportsExportTab';
 import { PartnerFilter } from '@/components/shared/PartnerFilter';
 import { ErrorBanner } from '@/components/ui/error-banner';
 import { getReportsOverview } from '@/data/mockReportsData';
-import { useAuth } from '@/contexts/AuthContext';
 
 export default function Rapportages() {
-  const { user } = useAuth();
   const [error, setError] = useState<string | null>(null);
-  
-  // For clients, default to their own partner. For others, show all.
-  const defaultPartnerId = user?.role === 'client' ? (user.partnerId || 'all') : 'all';
-  const [selectedPartnerId, setSelectedPartnerId] = useState(defaultPartnerId);
+  const [selectedPartnerId, setSelectedPartnerId] = useState('all');
   
   const overviewData = getReportsOverview(selectedPartnerId);
 

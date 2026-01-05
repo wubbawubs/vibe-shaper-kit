@@ -39,12 +39,12 @@ export function Sidebar() {
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { collapsed, toggleCollapsed } = useSidebarContext();
-  const { user, logout } = useAuth();
+  const { user, profile, logout } = useAuth();
   const { theme, setTheme } = useTheme();
 
-  const handleLogout = () => {
-    logout();
-    navigate("/login");
+  const handleLogout = async () => {
+    await logout();
+    navigate("/auth");
   };
 
   const toggleTheme = () => {
@@ -123,7 +123,7 @@ export function Sidebar() {
           {/* Navigation */}
           <nav className={cn("flex-1 space-y-1", collapsed ? "px-2" : "px-3")}>
             {navItems
-              .filter((item) => !('adminOnly' in item && item.adminOnly) || user?.role === 'admin')
+              .filter((item) => !('adminOnly' in item && item.adminOnly))
               .map((item) => {
               const isActive = location.pathname === item.href || 
                 (item.href === "/dashboard" && location.pathname === "/") ||
@@ -236,13 +236,13 @@ export function Sidebar() {
               <div className={cn("flex items-center", collapsed ? "justify-center" : "gap-3")}>
                 <Avatar className="h-8 w-8 flex-shrink-0">
                   <AvatarFallback className="bg-primary/10 text-primary text-xs font-medium">
-                    {getInitials(user.name)}
+                    {getInitials(profile?.name || user.email || "U")}
                   </AvatarFallback>
                 </Avatar>
                 {!collapsed && (
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium truncate">{user.name}</p>
-                    <p className="text-[11px] text-muted-foreground truncate">{user.role}</p>
+                    <p className="text-sm font-medium truncate">{profile?.name || user.email}</p>
+                    <p className="text-[11px] text-muted-foreground truncate">{user.email}</p>
                   </div>
                 )}
               </div>

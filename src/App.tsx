@@ -10,6 +10,9 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { supportedLanguages, defaultLanguage, type Language } from "@/i18n/config";
+import { AuthProvider } from "@/contexts/AuthContext";
+import { ProtectedRoute } from "@/components/auth/ProtectedRoute";
+import { SidebarProvider } from "@/contexts/SidebarContext";
 
 // i18n
 import "@/i18n/config";
@@ -28,6 +31,18 @@ import Terms from "./pages/Terms";
 import Light from "./pages/Light";
 import BrandGuide from "./pages/BrandGuide";
 import EmailTemplates from "./pages/EmailTemplates";
+
+// Auth pages
+import Auth from "./pages/Auth";
+
+// Dashboard pages
+import Dashboard from "./pages/Dashboard";
+import Vacatures from "./pages/Vacatures";
+import VacancyDetail from "./pages/VacancyDetail";
+import Kandidaten from "./pages/Kandidaten";
+import Pipeline from "./pages/Pipeline";
+import Rapportages from "./pages/Rapportages";
+import Instellingen from "./pages/Instellingen";
 
 const queryClient = new QueryClient();
 
@@ -66,51 +81,67 @@ const App = () => (
   <HelmetProvider>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
       <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <ScrollToTop />
-            <Routes>
-              {/* Language-prefixed Marketing Routes */}
-              <Route path="/:lang" element={<LanguageWrapper />}>
-                <Route index element={<Home />} />
-                <Route path="product" element={<Product />} />
-                <Route path="use-cases" element={<UseCases />} />
-                <Route path="partners" element={<Partners />} />
-                <Route path="pricing" element={<Pricing />} />
-                <Route path="why-onerooted" element={<WhyOneRooted />} />
-                <Route path="team" element={<Team />} />
-                <Route path="demo" element={<Demo />} />
-                <Route path="privacy" element={<Privacy />} />
-                <Route path="terms" element={<Terms />} />
-                <Route path="light" element={<Light />} />
-              </Route>
+        <AuthProvider>
+          <SidebarProvider>
+            <TooltipProvider>
+              <Toaster />
+              <Sonner />
+              <BrowserRouter>
+                <ScrollToTop />
+                <Routes>
+                  {/* Auth routes */}
+                  <Route path="/auth" element={<Auth />} />
 
-              {/* Non-prefixed routes (default to English) */}
-              <Route element={<DefaultLanguageWrapper />}>
-                <Route path="/" element={<Home />} />
-                <Route path="/product" element={<Product />} />
-                <Route path="/use-cases" element={<UseCases />} />
-                <Route path="/partners" element={<Partners />} />
-                <Route path="/pricing" element={<Pricing />} />
-                <Route path="/why-onerooted" element={<WhyOneRooted />} />
-                <Route path="/team" element={<Team />} />
-                <Route path="/demo" element={<Demo />} />
-                <Route path="/privacy" element={<Privacy />} />
-                <Route path="/terms" element={<Terms />} />
-                <Route path="/light" element={<Light />} />
-              </Route>
-              
-              {/* Utility Routes */}
-              <Route path="/brand-guide" element={<BrandGuide />} />
-              <Route path="/email-templates" element={<EmailTemplates />} />
-              
-              {/* Fallback */}
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
+                  {/* Protected Dashboard Routes */}
+                  <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+                  <Route path="/vacatures" element={<ProtectedRoute><Vacatures /></ProtectedRoute>} />
+                  <Route path="/vacatures/:id" element={<ProtectedRoute><VacancyDetail /></ProtectedRoute>} />
+                  <Route path="/kandidaten" element={<ProtectedRoute><Kandidaten /></ProtectedRoute>} />
+                  <Route path="/pipeline" element={<ProtectedRoute><Pipeline /></ProtectedRoute>} />
+                  <Route path="/rapportages" element={<ProtectedRoute><Rapportages /></ProtectedRoute>} />
+                  <Route path="/instellingen" element={<ProtectedRoute><Instellingen /></ProtectedRoute>} />
+
+                  {/* Language-prefixed Marketing Routes */}
+                  <Route path="/:lang" element={<LanguageWrapper />}>
+                    <Route index element={<Home />} />
+                    <Route path="product" element={<Product />} />
+                    <Route path="use-cases" element={<UseCases />} />
+                    <Route path="partners" element={<Partners />} />
+                    <Route path="pricing" element={<Pricing />} />
+                    <Route path="why-onerooted" element={<WhyOneRooted />} />
+                    <Route path="team" element={<Team />} />
+                    <Route path="demo" element={<Demo />} />
+                    <Route path="privacy" element={<Privacy />} />
+                    <Route path="terms" element={<Terms />} />
+                    <Route path="light" element={<Light />} />
+                  </Route>
+
+                  {/* Non-prefixed routes (default to English) */}
+                  <Route element={<DefaultLanguageWrapper />}>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/product" element={<Product />} />
+                    <Route path="/use-cases" element={<UseCases />} />
+                    <Route path="/partners" element={<Partners />} />
+                    <Route path="/pricing" element={<Pricing />} />
+                    <Route path="/why-onerooted" element={<WhyOneRooted />} />
+                    <Route path="/team" element={<Team />} />
+                    <Route path="/demo" element={<Demo />} />
+                    <Route path="/privacy" element={<Privacy />} />
+                    <Route path="/terms" element={<Terms />} />
+                    <Route path="/light" element={<Light />} />
+                  </Route>
+                  
+                  {/* Utility Routes */}
+                  <Route path="/brand-guide" element={<BrandGuide />} />
+                  <Route path="/email-templates" element={<EmailTemplates />} />
+                  
+                  {/* Fallback */}
+                  <Route path="*" element={<Navigate to="/" replace />} />
+                </Routes>
+              </BrowserRouter>
+            </TooltipProvider>
+          </SidebarProvider>
+        </AuthProvider>
       </QueryClientProvider>
     </ThemeProvider>
   </HelmetProvider>

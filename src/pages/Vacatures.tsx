@@ -18,8 +18,7 @@ import { NewVacancyModal } from "@/components/vacancy/NewVacancyModal";
 import { EmptyState } from "@/components/ui/empty-state";
 import { ErrorBanner } from "@/components/ui/error-banner";
 import { PartnerFilter } from "@/components/shared/PartnerFilter";
-import { useAuth } from "@/contexts/AuthContext";
-import { getVisiblePartners } from "@/data/mockPartnersData";
+import { partners } from "@/data/mockPartnersData";
 
 const statusConfig = {
   live: { label: "Live", color: "bg-emerald-500", textColor: "text-emerald-700 dark:text-emerald-400", bgColor: "bg-emerald-50 dark:bg-emerald-500/10" },
@@ -35,18 +34,15 @@ function formatDate(dateString: string) {
 }
 
 export default function Vacatures() {
-  const { user } = useAuth();
   const [newVacancyOpen, setNewVacancyOpen] = useState(false);
   const [statusFilter, setStatusFilter] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
   
-  // Partner filter - for clients, default to their own partner
-  const defaultPartnerId = user?.role === 'client' ? (user.partnerId || 'all') : 'all';
-  const [partnerFilter, setPartnerFilter] = useState(defaultPartnerId);
+  const [partnerFilter, setPartnerFilter] = useState('all');
   
-  // Get visible partners for the current user
-  const visiblePartners = getVisiblePartners(user?.role || 'client', user?.partnerId);
+  // Get all partners for filtering
+  const visiblePartners = partners;
   const visiblePartnerIds = visiblePartners.map(p => p.id);
 
   const filteredVacancies = useMemo(() => {
