@@ -6,8 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { useAuth } from '@/contexts/AuthContext';
-import { getVisiblePartners, Partner } from '@/data/mockPartnersData';
+import { partners, Partner } from '@/data/mockPartnersData';
 
 interface PartnerFilterProps {
   value: string;
@@ -22,20 +21,10 @@ export function PartnerFilter({
   showAllOption = true,
   className = ''
 }: PartnerFilterProps) {
-  const { user } = useAuth();
-  
-  const visiblePartners = getVisiblePartners(
-    user?.role || 'client', 
-    user?.partnerId
-  );
+  const visiblePartners = partners;
 
-  // Don't show filter if user can only see one partner
-  if (visiblePartners.length <= 1 && !showAllOption) {
-    return null;
-  }
-
-  // For clients, don't show any filter - they only see their own data
-  if (user?.role === 'client') {
+  // Don't show filter if there are no partners
+  if (visiblePartners.length === 0) {
     return null;
   }
 

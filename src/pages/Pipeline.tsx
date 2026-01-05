@@ -10,8 +10,7 @@ import { FilterDrawer, FilterState } from "@/components/candidates/FilterDrawer"
 import { EmptyState } from "@/components/ui/empty-state";
 import { ErrorBanner } from "@/components/ui/error-banner";
 import { PartnerFilter } from "@/components/shared/PartnerFilter";
-import { useAuth } from "@/contexts/AuthContext";
-import { 
+import {
   allCandidates, 
   stages, 
   getStageCounts, 
@@ -27,13 +26,10 @@ const defaultFilters: FilterState = {
 };
 
 export default function Pipeline() {
-  const { user } = useAuth();
   const [searchQuery, setSearchQuery] = useState("");
   const [activeStage, setActiveStage] = useState("all");
   const [filterDrawerOpen, setFilterDrawerOpen] = useState(false);
-  const [partnerFilter, setPartnerFilter] = useState<string | null>(
-    user?.role === 'client' ? (user?.partnerId || null) : null
-  );
+  const [partnerFilter, setPartnerFilter] = useState<string | null>(null);
   const [filters, setFilters] = useState<FilterState>(defaultFilters);
   const [appliedFilters, setAppliedFilters] = useState<FilterState>(defaultFilters);
   const [error, setError] = useState<string | null>(null);

@@ -14,7 +14,6 @@ import { ErrorBanner } from "@/components/ui/error-banner";
 import { PartnerFilter } from "@/components/shared/PartnerFilter";
 import { allCandidates, stages, getStageCounts, CandidateListItem } from "@/data/mockCandidatesData";
 import { Candidate } from "@/data/mockVacancyData";
-import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/hooks/use-toast";
 import { exportCandidatesCSV } from "@/lib/exportUtils";
 
@@ -28,15 +27,12 @@ const defaultFilters: FilterState = {
 export default function Kandidaten() {
   const [searchParams] = useSearchParams();
   const vacancyParam = searchParams.get("vacancy");
-  const { user } = useAuth();
   const { toast } = useToast();
   
   const [searchQuery, setSearchQuery] = useState("");
   const [activeStage, setActiveStage] = useState("all");
   const [filterDrawerOpen, setFilterDrawerOpen] = useState(false);
-  const [partnerFilter, setPartnerFilter] = useState<string | null>(
-    user?.role === 'client' ? (user?.partnerId || null) : null
-  );
+  const [partnerFilter, setPartnerFilter] = useState<string | null>(null);
   const [filters, setFilters] = useState<FilterState>({
     ...defaultFilters,
     vacancy: vacancyParam || "all",

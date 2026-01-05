@@ -1,121 +1,131 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { User, Session } from "@supabase/supabase-js";
+import { supabase } from "@/integrations/supabase/client";
 
-export type UserRole = 'admin' | 'partner' | 'client';
-
-interface User {
+interface Profile {
   id: string;
-  email: string;
-  name: string;
-  displayRole: string; // Display name for the role
-  role: UserRole; // System role for permissions
-  partnerId?: string; // Which partner this user belongs to
-  avatar?: string;
+  user_id: string;
+  name: string | null;
+  avatar_url: string | null;
 }
 
 interface AuthContextType {
   user: User | null;
+  session: Session | null;
+  profile: Profile | null;
   isLoading: boolean;
-  login: (email: string, password: string) => Promise<boolean>;
-  logout: () => void;
+  signUp: (email: string, password: string, name?: string) => Promise<{ error: Error | null }>;
+  signIn: (email: string, password: string) => Promise<{ error: Error | null }>;
+  signOut: () => Promise<void>;
+  // Legacy compatibility - will be removed after full migration
+  logout: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-// Mock user data with multi-tenant roles
-const mockUsers: Record<string, User> = {
-  // Admin - Platform Owner (OneTimeRooted team)
-  "juliette@onerooted.nl": {
-    id: "1",
-    email: "juliette@onerooted.nl",
-    name: "Juliëtte Welten",
-    displayRole: "Platform Admin",
-    role: "admin",
-    partnerId: "partner-otr",
-    avatar: undefined,
-  },
-  // Partner - Recruitment Partner
-  "robin@onerooted.nl": {
-    id: "2",
-    email: "robin@onerooted.nl",
-    name: "Robin Verhoeven",
-    displayRole: "Recruitment Partner",
-    role: "partner",
-    partnerId: "partner-otr",
-    avatar: undefined,
-  },
-  // Partner - Recruitment Partner
-  "dennie@onerooted.nl": {
-    id: "3",
-    email: "dennie@onerooted.nl",
-    name: "Dennie de Boer",
-    displayRole: "Recruitment Partner",
-    role: "partner",
-    partnerId: "partner-otr",
-    avatar: undefined,
-  },
-  // Client - Opdrachtgever
-  "luuk@techbedrijf.nl": {
-    id: "4",
-    email: "luuk@techbedrijf.nl",
-    name: "Luuk Janssen",
-    displayRole: "Hiring Manager",
-    role: "client",
-    partnerId: "partner-techbedrijf",
-    avatar: undefined,
-  },
-  // Legacy demo account - keep for backwards compatibility
-  "demo@onerooted.nl": {
-    id: "5",
-    email: "demo@onerooted.nl",
-    name: "Demo Gebruiker",
-    displayRole: "Platform Admin",
-    role: "admin",
-    partnerId: "partner-otr",
-    avatar: undefined,
-  },
-};
-
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isInitialized, setIsInitialized] = useState(false);
+  const [session, setSession] = useState<Session | null>(null);
+  const [profile, setProfile] = useState<Profile | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Fetch user profile
+  const fetchProfile = async (userId: string) => {
+    const { data, error } = await supabase
+      .from("profiles")
+      .select("*")
+      .eq("user_id", userId)
+      .maybeSingle();
+
+    if (error) {
+      console.error("Error fetching profile:", error);
+      return null;
+    }
+    return data;
+  };
 
   useEffect(() => {
-    // Check for stored session immediately (no loading screen)
-    const storedUser = localStorage.getItem("otr_user");
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
-    setIsInitialized(true);
+    // Set up auth state listener FIRST
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        setSession(session);
+        setUser(session?.user ?? null);
+        setIsLoading(false);
+
+        // Defer profile fetch with setTimeout to avoid deadlock
+        if (session?.user) {
+          setTimeout(() => {
+            fetchProfile(session.user.id).then(setProfile);
+          }, 0);
+        } else {
+          setProfile(null);
+        }
+      }
+    );
+
+    // THEN check for existing session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      setUser(session?.user ?? null);
+      setIsLoading(false);
+
+      if (session?.user) {
+        fetchProfile(session.user.id).then(setProfile);
+      }
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
-  const login = async (email: string, password: string): Promise<boolean> => {
-    const foundUser = mockUsers[email.toLowerCase()];
-    if (foundUser && password.length >= 4) {
-      // Show loading animation for full duration
-      setIsLoading(true);
-      await new Promise((resolve) => setTimeout(resolve, 2800));
-      
-      setUser(foundUser);
-      localStorage.setItem("otr_user", JSON.stringify(foundUser));
-      setIsLoading(false);
-      return true;
-    }
-    return false;
+  const signUp = async (email: string, password: string, name?: string) => {
+    const redirectUrl = `${window.location.origin}/`;
+
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        emailRedirectTo: redirectUrl,
+        data: {
+          name: name || null,
+        },
+      },
+    });
+
+    return { error: error as Error | null };
   };
 
-  const logout = () => {
+  const signIn = async (email: string, password: string) => {
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    return { error: error as Error | null };
+  };
+
+  const signOut = async () => {
+    await supabase.auth.signOut();
     setUser(null);
-    localStorage.removeItem("otr_user");
+    setSession(null);
+    setProfile(null);
   };
 
-  // Don't render children until initialized
-  if (!isInitialized) {
-    return null;
-  }
+  // Legacy alias for backward compatibility
+  const logout = signOut;
 
   return (
-    <AuthContext.Provider value={{ user, isLoading, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        session,
+        profile,
+        isLoading,
+        signUp,
+        signIn,
+        signOut,
+        logout,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

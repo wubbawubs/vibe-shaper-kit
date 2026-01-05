@@ -25,11 +25,11 @@ const getFirstName = (fullName: string) => {
 };
 
 const Dashboard = () => {
-  const { user } = useAuth();
+  const { user, profile } = useAuth();
   const [error, setError] = useState<string | null>(null);
   
   const greeting = getGreeting();
-  const firstName = user ? getFirstName(user.name) : "";
+  const firstName = profile?.name ? getFirstName(profile.name) : (user?.email?.split("@")[0] || "");
 
   return (
     <DashboardLayout>
