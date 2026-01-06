@@ -53,31 +53,31 @@ const teamMembers = [
 const PAGE_WIDTH = 794;
 const PAGE_HEIGHT = 1123;
 
-// Page styles
+// Page styles - premium spacing
 const pageStyle: React.CSSProperties = {
   width: `${PAGE_WIDTH}px`,
   height: `${PAGE_HEIGHT}px`,
   backgroundColor: colors.white,
   boxSizing: 'border-box',
-  padding: '36px 44px',
+  padding: '40px 48px',
   position: 'relative',
   overflow: 'hidden',
 };
 
-// Step circle style - absolute positioning for perfect PDF centering
+// Step circle style - larger for visual impact
 const stepCircleStyle: React.CSSProperties = {
-  width: '32px',
-  height: '32px',
+  width: '40px',
+  height: '40px',
   backgroundColor: colors.white,
   borderRadius: '50%',
   position: 'relative',
-  margin: '0 auto 6px',
+  margin: '0 auto 8px',
 };
 
 const stepNumberStyle: React.CSSProperties = {
   color: colors.primary,
   fontWeight: 700,
-  fontSize: '13px',
+  fontSize: '15px',
   lineHeight: 1,
   position: 'absolute',
   left: '50%',
@@ -85,18 +85,18 @@ const stepNumberStyle: React.CSSProperties = {
   transform: 'translate(-50%, -52%)',
 };
 
-// Icon box style - fixed for PDF alignment
-  const iconBoxStyle: React.CSSProperties = {
-    width: '26px',
-    height: '26px',
-    backgroundColor: 'rgba(45, 74, 66, 0.1)',
-    borderRadius: '4px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: '6px',
-    flexShrink: 0,
-  };
+// Icon box style - slightly larger
+const iconBoxStyle: React.CSSProperties = {
+  width: '28px',
+  height: '28px',
+  backgroundColor: 'rgba(45, 74, 66, 0.1)',
+  borderRadius: '5px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  marginBottom: '8px',
+  flexShrink: 0,
+};
 
 export default function PitchDeck() {
   const { t } = useTranslation();
@@ -185,44 +185,44 @@ export default function PitchDeck() {
       >
         {/* ========== PAGE 1 ========== */}
         <section id="pdf-page-1" className="pdf-page" style={pageStyle}>
-          {/* Header - Brand row with fixed alignment */}
-          <div className="brandRow" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
+          {/* Header - Brand row with subtle border */}
+          <div className="brandRow pdfHeader" style={{ display: 'flex', alignItems: 'center', gap: '10px', paddingBottom: '14px', borderBottom: '1px solid rgba(0,0,0,0.06)', marginBottom: '20px' }}>
             <img 
               src={logo} 
               alt="One Rooted" 
               className="brandMark"
-              style={{ height: '24px', width: 'auto', display: 'block' }} 
+              style={{ height: '22px', width: 'auto', display: 'block' }} 
             />
             <span className="brandDivider" style={{ color: '#9ca3af', lineHeight: 1, fontSize: '16px' }}>|</span>
             <span className="brandName" style={{ fontSize: '15px', fontWeight: 600, color: colors.foreground, lineHeight: 1 }}>One Rooted</span>
           </div>
 
-          {/* Hero - Compact */}
-          <h1 style={{ fontSize: '28px', fontWeight: 600, color: colors.foreground, marginBottom: '6px', lineHeight: 1.1 }}>
+          {/* Hero - Larger typography */}
+          <h1 style={{ fontSize: '32px', fontWeight: 600, color: colors.foreground, marginBottom: '8px', lineHeight: 1.15 }}>
             {t("pitchDeck.cover.headline")}
           </h1>
-          <p style={{ fontSize: '12px', color: colors.mutedForeground, marginBottom: '16px', lineHeight: 1.5 }}>
+          <p style={{ fontSize: '12px', color: colors.mutedForeground, marginBottom: '20px', lineHeight: 1.5 }}>
             Not another ATS, the next-gen Talent Acquisition SaaS that centralises hiring workflows, automates candidate tracking, and scales with your business.
           </p>
 
-          {/* Problem Section - Compact */}
-          <div style={{ 
-            padding: '16px', 
+          {/* Problem Section - More spacious */}
+          <div className="pdfSection" style={{ 
+            padding: '18px 20px', 
             backgroundColor: colors.primaryLight, 
             borderRadius: '10px', 
-            marginBottom: '14px' 
+            marginBottom: '20px' 
           }}>
-            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '4px' }}>
+            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '6px' }}>
               {t("pitchDeck.problem.label")}
             </p>
-            <h2 style={{ fontSize: '16px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '12px', lineHeight: 1.2 }}>
+            <h2 style={{ fontSize: '18px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '14px', lineHeight: 1.2 }}>
               {t("pitchDeck.problem.headline")}
             </h2>
             
-            <div style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
+            <div style={{ display: 'flex', gap: '10px', marginBottom: '14px' }}>
               {["ats", "slack", "excel"].map((tool) => (
-                <div key={tool} style={{ flex: 1, backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '6px', padding: '8px' }}>
-                  <h3 style={{ fontSize: '11px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '3px' }}>
+                <div key={tool} className="problemCard" style={{ flex: 1, backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '6px', padding: '10px', minHeight: '56px' }}>
+                  <h3 style={{ fontSize: '11px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
                     {t(`problem.tools.${tool}.name`)}
                   </h3>
                   <p style={{ fontSize: '9px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4, margin: 0 }}>
@@ -237,28 +237,28 @@ export default function PitchDeck() {
             </p>
           </div>
 
-          {/* Solution Section - Compact */}
-          <div style={{ marginBottom: '14px' }}>
-            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: colors.label, fontWeight: 500, marginBottom: '4px' }}>
+          {/* Solution Section - Larger cards */}
+          <div className="pdfSection" style={{ marginBottom: '20px' }}>
+            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: colors.label, fontWeight: 500, marginBottom: '6px' }}>
               {t("pitchDeck.solution.label")}
             </p>
-            <h2 style={{ fontSize: '16px', fontWeight: 600, color: colors.foreground, marginBottom: '4px', lineHeight: 1.2 }}>
+            <h2 style={{ fontSize: '18px', fontWeight: 600, color: colors.foreground, marginBottom: '6px', lineHeight: 1.2 }}>
               {t("pitchDeck.solution.headline")}
             </h2>
-            <p style={{ fontSize: '10px', color: colors.mutedForeground, marginBottom: '10px', lineHeight: 1.4 }}>
+            <p style={{ fontSize: '10px', color: colors.mutedForeground, marginBottom: '12px', lineHeight: 1.4 }}>
               {t("pitchDeck.solution.description")}
             </p>
             
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div style={{ display: 'flex', gap: '10px' }}>
               {pillars.map(({ icon, key }) => (
-                <div key={key} style={{ flex: 1, backgroundColor: colors.muted, border: `1px solid ${colors.border}`, borderRadius: '6px', padding: '8px' }}>
-                  <div style={iconBoxStyle}>
-                    <img src={icon} alt="" style={{ width: '14px', height: '14px', display: 'block' }} />
+                <div key={key} className="pillarCard" style={{ flex: 1, backgroundColor: colors.muted, border: `1px solid ${colors.border}`, borderRadius: '8px', padding: '10px', minHeight: '92px' }}>
+                  <div className="iconBox" style={iconBoxStyle}>
+                    <img src={icon} alt="" style={{ width: '15px', height: '15px', display: 'block' }} />
                   </div>
-                  <h3 style={{ fontSize: '10px', fontWeight: 600, color: colors.foreground, marginBottom: '3px' }}>
+                  <h3 style={{ fontSize: '11px', fontWeight: 600, color: colors.foreground, marginBottom: '4px' }}>
                     {t(`whatIs.pillars.${key}.title`)}
                   </h3>
-                  <p style={{ fontSize: '9px', color: colors.mutedForeground, lineHeight: 1.3, margin: 0 }}>
+                  <p className="pillarDesc" style={{ fontSize: '9px', color: colors.mutedForeground, lineHeight: 1.35, margin: 0 }}>
                     {t(`whatIs.pillars.${key}.description`)}
                   </p>
                 </div>
@@ -266,37 +266,37 @@ export default function PitchDeck() {
             </div>
           </div>
 
-          {/* How It Works - NOW ON PAGE 1 */}
-          <div style={{ padding: '16px', backgroundColor: colors.primaryLight, borderRadius: '10px' }}>
-            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '4px' }}>
+          {/* How It Works - Larger step circles and stats */}
+          <div style={{ padding: '20px', backgroundColor: colors.primaryLight, borderRadius: '10px' }}>
+            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '6px' }}>
               {t("pitchDeck.howItWorks.label")}
             </p>
-            <h2 style={{ fontSize: '16px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '12px', lineHeight: 1.2 }}>
+            <h2 style={{ fontSize: '18px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '16px', lineHeight: 1.2 }}>
               {t("pitchDeck.howItWorks.headline")}
             </h2>
             
-            <div style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
+            <div style={{ display: 'flex', gap: '20px', marginBottom: '16px' }}>
               {[1, 2, 3].map((step) => (
                 <div key={step} style={{ flex: 1, textAlign: 'center' }}>
-                  <div style={stepCircleStyle}>
-                    <span style={stepNumberStyle}>{step}</span>
+                  <div className="stepCircle" style={stepCircleStyle}>
+                    <span className="stepNum" style={stepNumberStyle}>{step}</span>
                   </div>
-                  <h3 style={{ fontSize: '11px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '3px' }}>
+                  <h3 style={{ fontSize: '12px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
                     {t(`pitchDeck.howItWorks.steps.${step}.title`)}
                   </h3>
-                  <p style={{ fontSize: '9px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.3, margin: 0 }}>
+                  <p style={{ fontSize: '9px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.35, margin: 0 }}>
                     {t(`pitchDeck.howItWorks.steps.${step}.description`)}
                   </p>
                 </div>
               ))}
             </div>
 
-            <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '6px', padding: '10px' }}>
+            <div className="statsBar" style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '14px' }}>
               <div style={{ display: 'flex' }}>
                 {["40%", "60%", "1", "100%"].map((stat, i) => (
                   <div key={i} style={{ flex: 1, textAlign: 'center', padding: '2px' }}>
-                    <p style={{ fontSize: '16px', fontWeight: 600, color: colors.white, margin: 0, lineHeight: 1 }}>{stat}</p>
-                    <p style={{ fontSize: '9px', color: 'rgba(255,255,255,0.8)', margin: 0, marginTop: '2px' }}>
+                    <p className="statValue" style={{ fontSize: '20px', fontWeight: 600, color: colors.white, margin: 0, lineHeight: 1 }}>{stat}</p>
+                    <p style={{ fontSize: '9px', color: 'rgba(255,255,255,0.8)', margin: 0, marginTop: '4px' }}>
                       {t(`pitchDeck.howItWorks.stats.${i}`)}
                     </p>
                   </div>
@@ -306,7 +306,7 @@ export default function PitchDeck() {
           </div>
 
           {/* Page number */}
-          <div style={{ position: 'absolute', bottom: '18px', right: '22px', fontSize: '10px', color: colors.mutedForeground }}>
+          <div style={{ position: 'absolute', bottom: '20px', right: '24px', fontSize: '10px', color: colors.mutedForeground }}>
             1 / 2
           </div>
         </section>
@@ -314,42 +314,55 @@ export default function PitchDeck() {
         {/* ========== PAGE 2 ========== */}
         <section id="pdf-page-2" className="pdf-page" style={pageStyle}>
           {/* Pricing */}
-          <div style={{ marginBottom: '20px' }}>
-            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: colors.label, fontWeight: 500, marginBottom: '4px', textAlign: 'center' }}>
+          <div className="pdfSection" style={{ marginBottom: '24px' }}>
+            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: colors.label, fontWeight: 500, marginBottom: '6px', textAlign: 'center' }}>
               {t("pitchDeck.pricing.label")}
             </p>
-            <h2 style={{ fontSize: '18px', fontWeight: 600, color: colors.foreground, marginBottom: '14px', textAlign: 'center', lineHeight: 1.2 }}>
+            <h2 style={{ fontSize: '20px', fontWeight: 600, color: colors.foreground, marginBottom: '16px', textAlign: 'center', lineHeight: 1.2 }}>
               {t("pitchDeck.pricing.headline")}
             </h2>
             
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div style={{ display: 'flex', gap: '10px' }}>
               {plans.map(({ key, price }) => (
-                <div key={key} style={{ 
+                <div key={key} className="planCard" style={{ 
                   flex: 1, 
                   backgroundColor: colors.white, 
                   border: key === "plus" ? `2px solid ${colors.primary}` : `1px solid ${colors.border}`, 
-                  borderRadius: '6px', 
-                  padding: '12px'
+                  borderRadius: '8px', 
+                  padding: '14px',
+                  minHeight: '165px',
+                  position: 'relative',
                 }}>
                   {key === "plus" && (
-                    <span style={{ fontSize: '8px', textTransform: 'uppercase', letterSpacing: '0.05em', color: colors.primary, fontWeight: 500, display: 'block', marginBottom: '2px' }}>
+                    <span style={{ 
+                      fontSize: '8px', 
+                      textTransform: 'uppercase', 
+                      letterSpacing: '0.05em', 
+                      color: colors.white, 
+                      fontWeight: 600, 
+                      display: 'inline-block', 
+                      marginBottom: '4px',
+                      backgroundColor: colors.primary,
+                      padding: '2px 6px',
+                      borderRadius: '4px',
+                    }}>
                       {t("pricingPage.mostPopular")}
                     </span>
                   )}
-                  <h3 style={{ fontSize: '12px', fontWeight: 600, color: colors.foreground, marginBottom: '2px' }}>
+                  <h3 style={{ fontSize: '13px', fontWeight: 600, color: colors.foreground, marginBottom: '3px' }}>
                     {t(`pitchDeck.pricing.plans.${key}.name`)}
                   </h3>
-                  <p style={{ fontSize: '9px', color: colors.mutedForeground, marginBottom: '6px', lineHeight: 1.3 }}>
+                  <p style={{ fontSize: '9px', color: colors.mutedForeground, marginBottom: '8px', lineHeight: 1.35, minHeight: '24px' }}>
                     {t(`pitchDeck.pricing.plans.${key}.description`)}
                   </p>
-                  <p style={{ fontSize: '18px', fontWeight: 600, color: colors.foreground, marginBottom: '8px' }}>
-                    €{price}<span style={{ fontSize: '9px', fontWeight: 400, color: colors.mutedForeground }}>/mo</span>
+                  <p className="planPrice" style={{ fontSize: '22px', fontWeight: 600, color: colors.foreground, marginBottom: '10px' }}>
+                    €{price}<span style={{ fontSize: '10px', fontWeight: 400, color: colors.mutedForeground }}>/mo</span>
                   </p>
                   <div>
                     {(t(`pitchDeck.pricing.plans.${key}.features`, { returnObjects: true }) as string[]).slice(0, 3).map((feature, i) => (
-                      <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '4px', marginBottom: '3px' }}>
-                        <img src={icons.check} alt="" style={{ width: '8px', height: '8px', marginTop: '2px', display: 'block', flexShrink: 0 }} />
-                        <span style={{ fontSize: '9px', color: colors.mutedForeground, lineHeight: 1.3 }}>
+                      <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '5px', marginBottom: '4px' }}>
+                        <img src={icons.check} alt="" style={{ width: '9px', height: '9px', marginTop: '2px', display: 'block', flexShrink: 0 }} />
+                        <span style={{ fontSize: '9px', color: colors.mutedForeground, lineHeight: 1.35 }}>
                           {feature}
                         </span>
                       </div>
@@ -358,32 +371,32 @@ export default function PitchDeck() {
                 </div>
               ))}
             </div>
-            <p style={{ textAlign: 'center', fontSize: '10px', color: colors.mutedForeground, marginTop: '10px' }}>
+            <p style={{ textAlign: 'center', fontSize: '10px', color: colors.mutedForeground, marginTop: '12px' }}>
               {t("pitchDeck.pricing.note")}
             </p>
           </div>
 
           {/* Team */}
-          <div style={{ padding: '20px', backgroundColor: colors.primaryLight, borderRadius: '10px' }}>
-            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '4px', textAlign: 'center' }}>
+          <div style={{ padding: '22px', backgroundColor: colors.primaryLight, borderRadius: '10px' }}>
+            <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '6px', textAlign: 'center' }}>
               {t("pitchDeck.team.label")}
             </p>
-            <h2 style={{ fontSize: '18px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px', textAlign: 'center', lineHeight: 1.2 }}>
+            <h2 style={{ fontSize: '20px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '6px', textAlign: 'center', lineHeight: 1.2 }}>
               {t("pitchDeck.team.headline")}
             </h2>
-            <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.8)', textAlign: 'center', marginBottom: '16px' }}>
+            <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.8)', textAlign: 'center', marginBottom: '18px' }}>
               {t("pitchDeck.team.subheadline")}
             </p>
             
-            <div className="teamRow" style={{ display: 'flex', marginBottom: '16px' }}>
+            <div className="teamRow" style={{ display: 'flex', marginBottom: '18px' }}>
               {teamMembers.map((member, index) => (
-                <div key={member.name} className="teamMember" style={{ flex: 1, textAlign: 'center', marginRight: index < teamMembers.length - 1 ? '16px' : '0' }}>
+                <div key={member.name} className="teamMember" style={{ flex: 1, textAlign: 'center', marginRight: index < teamMembers.length - 1 ? '20px' : '0' }}>
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    style={{ width: '52px', height: '52px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.3)', display: 'block', margin: '0 auto 6px' }}
+                    style={{ width: '56px', height: '56px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.3)', display: 'block', margin: '0 auto 8px' }}
                   />
-                  <h3 style={{ fontWeight: 600, color: colors.primaryForeground, fontSize: '12px', margin: '0 0 2px 0' }}>{member.name}</h3>
+                  <h3 style={{ fontWeight: 600, color: colors.primaryForeground, fontSize: '13px', margin: '0 0 3px 0' }}>{member.name}</h3>
                   <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="socialRow" style={{ fontSize: '9px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <span className="socialIcon" style={{ width: '10px', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginRight: '4px' }}>
                       <img src={icons.linkedin} alt="" style={{ width: '10px', height: '10px', display: 'block' }} />
@@ -394,12 +407,12 @@ export default function PitchDeck() {
               ))}
             </div>
 
-            <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '6px', padding: '14px', textAlign: 'center' }}>
-              <p style={{ fontSize: '9px', color: 'rgba(255,255,255,0.7)', marginBottom: '2px' }}>
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px', textAlign: 'center' }}>
+              <p style={{ fontSize: '9px', color: 'rgba(255,255,255,0.7)', marginBottom: '3px' }}>
                 {t("pitchDeck.team.partOf")}
               </p>
-              <p style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '8px' }}>One-Time Group</p>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+              <p style={{ fontSize: '15px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '10px' }}>One-Time Group</p>
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px' }}>
                 <a href="mailto:info@onerooted.nl" style={{ color: colors.white, textDecoration: 'none', fontSize: '12px' }}>info@onerooted.nl</a>
                 <span style={{ color: 'rgba(255,255,255,0.5)' }}>|</span>
                 <a href="https://onerooted.nl" style={{ color: colors.white, textDecoration: 'none', fontSize: '12px' }}>onerooted.nl</a>
@@ -407,9 +420,10 @@ export default function PitchDeck() {
             </div>
           </div>
 
-          {/* Page number */}
-          <div style={{ position: 'absolute', bottom: '18px', right: '22px', fontSize: '10px', color: colors.mutedForeground }}>
-            2 / 2
+          {/* Page footer line */}
+          <div style={{ position: 'absolute', bottom: '40px', left: '48px', right: '48px', borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ fontSize: '9px', color: colors.mutedForeground }}>© 2024 One Rooted — The Hiring OS</span>
+            <span style={{ fontSize: '10px', color: colors.mutedForeground }}>2 / 2</span>
           </div>
         </section>
       </div>
