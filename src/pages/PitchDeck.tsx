@@ -196,17 +196,22 @@ export default function PitchDeck() {
                     padding: '12px',
                     verticalAlign: 'top'
                   }}>
-                    <div style={{ 
+                    <table style={{ 
                       width: '32px', 
                       height: '32px', 
                       backgroundColor: 'rgba(45, 74, 66, 0.1)', 
                       borderRadius: '4px', 
                       marginBottom: '8px',
-                      textAlign: 'center',
-                      lineHeight: '32px'
+                      borderCollapse: 'collapse'
                     }}>
-                      <img src={icon} alt="" style={{ width: '16px', height: '16px', verticalAlign: 'middle' }} />
-                    </div>
+                      <tbody>
+                        <tr>
+                          <td style={{ textAlign: 'center', verticalAlign: 'middle' }}>
+                            <img src={icon} alt="" style={{ width: '16px', height: '16px', display: 'block', margin: '0 auto' }} />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                     <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground, marginBottom: '4px' }}>
                       {t(`whatIs.pillars.${key}.title`)}
                     </h3>
