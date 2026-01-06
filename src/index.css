@@ -367,19 +367,30 @@ html {
   display: block !important;
 }
 
-/* Position export root offscreen to avoid parent constraints */
-.pdf-exporting #pdf-export-root {
+/* Kill grey wrapper bleeding - force transparent backgrounds */
+.pdf-exporting,
+.pdf-exporting html,
+.pdf-exporting body {
+  background: transparent !important;
+}
+
+/* Position export root offscreen - no wrapper styling */
+.pdf-exporting #pdf-export-root,
+.pdf-exporting .pdf-export-container {
   position: fixed !important;
   left: -99999px !important;
   top: 0 !important;
   width: 794px !important;
   padding: 0 !important;
   margin: 0 !important;
-  background: white !important;
+  background: transparent !important;
   gap: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
-/* Hard-lock PDF pages to A4 dimensions with page breaks */
+/* Hard-lock PDF pages to A4 dimensions - clean white, no effects */
 .pdf-exporting .pdf-page,
 .pdf-exporting #pdf-page-1,
 .pdf-exporting #pdf-page-2 {
@@ -400,11 +411,35 @@ html {
   break-after: page !important;
   page-break-inside: avoid !important;
   break-inside: avoid !important;
+  /* Kill any visual effects */
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Kill pseudo-elements that might add grey bars */
+.pdf-exporting .pdf-page::before,
+.pdf-exporting .pdf-page::after,
+.pdf-exporting #pdf-export-root::before,
+.pdf-exporting #pdf-export-root::after {
+  display: none !important;
+  content: none !important;
 }
 
 .pdf-exporting #pdf-page-2 {
   page-break-after: auto !important;
   break-after: auto !important;
+}
+
+/* Page number - always absolute bottom right */
+.pdf-exporting .pdfPageNumber {
+  position: absolute !important;
+  right: 24px !important;
+  bottom: 20px !important;
+  font-size: 10px !important;
+  opacity: 0.55 !important;
+  line-height: 1 !important;
+  color: #6b7280 !important;
 }
 
 /* Content wrapper - centered with max-width */
