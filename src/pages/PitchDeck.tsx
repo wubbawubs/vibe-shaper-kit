@@ -63,7 +63,7 @@ export default function PitchDeck() {
         </Button>
       </div>
 
-      <div ref={pdfRef} className="bg-white max-w-4xl mx-auto">
+      <div ref={pdfRef} className="bg-white max-w-4xl mx-auto p-4">
         {/* Cover - White */}
         <div className="text-center py-16 px-8">
           <img 
@@ -80,7 +80,7 @@ export default function PitchDeck() {
         </div>
 
         {/* The Problem - Primary BG */}
-        <div className="py-10 px-8 bg-primary text-primary-foreground">
+        <div className="py-10 px-8 bg-primary/80 text-primary-foreground rounded-2xl mb-4">
           <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2">
             {t("pitchDeck.problem.label")}
           </p>
@@ -136,7 +136,7 @@ export default function PitchDeck() {
         </div>
 
         {/* How It Works - Primary BG */}
-        <div className="py-10 px-8 bg-primary text-primary-foreground" style={{ pageBreakAfter: 'always' }}>
+        <div className="py-10 px-8 bg-primary/80 text-primary-foreground rounded-2xl mb-4" style={{ pageBreakAfter: 'always' }}>
           <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2">
             {t("pitchDeck.howItWorks.label")}
           </p>
@@ -175,7 +175,7 @@ export default function PitchDeck() {
         </div>
 
         {/* Pricing - White */}
-        <div className="py-10 px-8">
+        <div className="py-10 px-8" style={{ pageBreakInside: 'avoid' }}>
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2 text-center">
             {t("pitchDeck.pricing.label")}
           </p>
@@ -224,7 +224,7 @@ export default function PitchDeck() {
         </div>
 
         {/* Team & Contact - Primary BG */}
-        <div className="py-10 px-8 bg-primary text-primary-foreground">
+        <div className="py-10 px-8 bg-primary/80 text-primary-foreground rounded-2xl">
           <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2 text-center">
             {t("pitchDeck.team.label")}
           </p>
