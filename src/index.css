@@ -376,7 +376,8 @@ html {
 
 /* Position export root offscreen - no wrapper styling */
 .pdf-exporting #pdf-export-root,
-.pdf-exporting .pdf-export-container {
+.pdf-exporting .pdf-export-container,
+.pdf-exporting .pdfPreview {
   position: fixed !important;
   left: -99999px !important;
   top: 0 !important;
@@ -388,6 +389,15 @@ html {
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
+}
+
+/* Preview wrapper styling (only visible in browser, not in PDF) */
+.pdfPreview {
+  background: #1a1a1a;
+}
+
+.pdfPreview .pdf-page {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
 /* Hard-lock PDF pages to A4 dimensions - clean white, no effects */

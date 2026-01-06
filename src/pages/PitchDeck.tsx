@@ -170,22 +170,22 @@ export default function PitchDeck() {
         </Button>
       </div>
 
-      {/* PDF Container - Preview wrapper (grey bg for preview, removed during export via CSS) */}
+      {/* PDF Container - Preview wrapper (dark bg for preview contrast, removed during export via CSS) */}
       <div 
         id="pdf-export-root"
-        className="pdf-export-container"
+        className="pdf-export-container pdfPreview"
         style={{ 
-          backgroundColor: '#e5e7eb', 
-          padding: '24px',
+          backgroundColor: '#1a1a1a', 
+          padding: '40px 24px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: '24px',
+          gap: '32px',
           minHeight: '100vh',
         }}
       >
         {/* ========== PAGE 1 ========== */}
-        <section id="pdf-page-1" className="pdf-page" style={pageStyle}>
+        <section id="pdf-page-1" className="pdf-page" style={{...pageStyle, boxShadow: '0 20px 60px rgba(0,0,0,0.5)'}}>
           {/* Header - Brand row with subtle border */}
           <div className="brandRow pdfHeader" style={{ display: 'flex', alignItems: 'center', gap: '10px', paddingBottom: '14px', borderBottom: '1px solid rgba(0,0,0,0.06)', marginBottom: '20px' }}>
             <img 
@@ -313,7 +313,7 @@ export default function PitchDeck() {
         </section>
 
         {/* ========== PAGE 2 ========== */}
-        <section id="pdf-page-2" className="pdf-page" style={pageStyle}>
+        <section id="pdf-page-2" className="pdf-page" style={{...pageStyle, boxShadow: '0 20px 60px rgba(0,0,0,0.5)'}}>
           {/* Pricing */}
           <div className="pdfSection" style={{ marginBottom: '24px' }}>
             <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: colors.label, fontWeight: 500, marginBottom: '6px', textAlign: 'center' }}>
