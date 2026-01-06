@@ -35,6 +35,35 @@ serve(async (req) => {
     // Browserless.io PDF API endpoint
     const browserlessUrl = `https://chrome.browserless.io/pdf?token=${browserlessApiKey}`;
 
+    // Script to inject that prepares the page for PDF export
+    const preparePageScript = `
+      // Add pdf-exporting class to body
+      document.body.classList.add('pdf-exporting');
+      
+      // Hide all page elements except pdf pages
+      const allElements = document.body.children;
+      for (let el of allElements) {
+        if (!el.id || el.id !== 'pdf-export-root') {
+          el.style.display = 'none';
+        }
+      }
+      
+      // Reset the pdf-export-root to show pages stacked vertically without wrapper styling
+      const root = document.getElementById('pdf-export-root');
+      if (root) {
+        root.style.cssText = 'position: static; display: block; background: transparent; padding: 0; margin: 0; gap: 0;';
+      }
+      
+      // Ensure each page has correct A4 dimensions and white background
+      document.querySelectorAll('.pdf-page').forEach((page, index) => {
+        page.style.cssText = 'width: 794px; height: 1123px; background: white; box-shadow: none; border: none; margin: 0; padding: 40px 48px; box-sizing: border-box; position: relative; overflow: hidden; page-break-after: always; break-after: page;';
+        if (index === document.querySelectorAll('.pdf-page').length - 1) {
+          page.style.pageBreakAfter = 'auto';
+          page.style.breakAfter = 'auto';
+        }
+      });
+    `;
+
     const pdfResponse = await fetch(browserlessUrl, {
       method: 'POST',
       headers: {
@@ -51,14 +80,17 @@ serve(async (req) => {
             bottom: '0mm',
             left: '0mm',
           },
-          preferCSSPageSize: false,
-          width: '794px',
-          height: '1123px',
+          preferCSSPageSize: true,
+          displayHeaderFooter: false,
         },
         gotoOptions: {
           waitUntil: 'networkidle2',
           timeout: 30000,
         },
+        addScriptTag: [
+          { content: preparePageScript }
+        ],
+        waitFor: 500,
       }),
     });
 
