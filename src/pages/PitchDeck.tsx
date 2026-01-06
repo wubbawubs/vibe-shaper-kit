@@ -423,29 +423,42 @@ export default function PitchDeck() {
             <tbody>
               <tr>
                 {teamMembers.map((member) => (
-                  <td key={member.name} style={{ width: '25%', textAlign: 'center', verticalAlign: 'top' }}>
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      style={{ 
-                        width: '56px', 
-                        height: '56px', 
-                        borderRadius: '50%', 
-                        objectFit: 'cover', 
-                        border: '2px solid rgba(255,255,255,0.3)', 
-                        marginBottom: '8px'
-                      }}
-                    />
-                    <h3 style={{ fontWeight: 600, color: colors.primaryForeground, fontSize: '14px', margin: 0 }}>{member.name}</h3>
-                    <a 
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ fontSize: '10px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}
-                    >
-                      <img src={icons.linkedin} alt="" style={{ width: '10px', height: '10px', verticalAlign: 'middle', marginRight: '4px' }} />
-                      LinkedIn
-                    </a>
+                  <td key={member.name} style={{ width: '25%', verticalAlign: 'top' }}>
+                    <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                      <tbody>
+                        <tr>
+                          <td style={{ textAlign: 'center', paddingBottom: '8px' }}>
+                            <img 
+                              src={member.image} 
+                              alt={member.name}
+                              style={{ 
+                                width: '56px', 
+                                height: '56px', 
+                                borderRadius: '50%', 
+                                objectFit: 'cover', 
+                                border: '2px solid rgba(255,255,255,0.3)',
+                                display: 'block',
+                                margin: '0 auto'
+                              }}
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ textAlign: 'center' }}>
+                            <h3 style={{ fontWeight: 600, color: colors.primaryForeground, fontSize: '14px', margin: '0 0 4px 0' }}>{member.name}</h3>
+                            <a 
+                              href={member.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{ fontSize: '10px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}
+                            >
+                              <img src={icons.linkedin} alt="" style={{ width: '10px', height: '10px', verticalAlign: 'middle', marginRight: '4px' }} />
+                              LinkedIn
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 ))}
               </tr>
