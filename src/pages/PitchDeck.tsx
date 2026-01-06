@@ -136,7 +136,7 @@ export default function PitchDeck() {
         </div>
 
         {/* How It Works */}
-        <div className="py-10 px-8 bg-muted/30">
+        <div className="py-10 px-8 bg-muted/30" style={{ pageBreakAfter: 'always' }}>
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2">
             {t("pitchDeck.howItWorks.label")}
           </p>
