@@ -117,26 +117,28 @@ export default function PitchDeck() {
             {t("pitchDeck.problem.headline")}
           </h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '24px' }}>
-            {["ats", "slack", "excel"].map((tool) => (
-              <div key={tool} style={{ 
-                backgroundColor: 'rgba(255,255,255,0.1)', 
-                borderRadius: '8px', 
-                padding: '12px',
-                minHeight: '80px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center'
-              }}>
-                <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
-                  {t(`problem.tools.${tool}.name`)}
-                </h3>
-                <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4 }}>
-                  {t(`problem.tools.${tool}.description`)}
-                </p>
-              </div>
-            ))}
-          </div>
+          <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: '12px', marginBottom: '24px' }}>
+            <tbody>
+              <tr>
+                {["ats", "slack", "excel"].map((tool) => (
+                  <td key={tool} style={{ 
+                    width: '33.33%',
+                    backgroundColor: 'rgba(255,255,255,0.1)', 
+                    borderRadius: '8px', 
+                    padding: '12px',
+                    verticalAlign: 'top'
+                  }}>
+                    <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
+                      {t(`problem.tools.${tool}.name`)}
+                    </h3>
+                    <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4 }}>
+                      {t(`problem.tools.${tool}.description`)}
+                    </p>
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
 
           <p style={{ fontSize: '16px', color: colors.primaryForeground, fontWeight: 500, textAlign: 'center' }}>
             {t("pitchDeck.problem.consequence")}
@@ -162,35 +164,40 @@ export default function PitchDeck() {
             {t("pitchDeck.solution.description")}
           </p>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px' }}>
-            {pillars.map(({ icon: Icon, key }) => (
-              <div key={key} style={{ 
-                backgroundColor: colors.muted, 
-                border: `1px solid ${colors.border}`, 
-                borderRadius: '8px', 
-                padding: '12px' 
-              }}>
-                <div style={{ 
-                  width: '32px', 
-                  height: '32px', 
-                  backgroundColor: 'rgba(45, 74, 66, 0.1)', 
-                  borderRadius: '4px', 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center', 
-                  marginBottom: '8px' 
-                }}>
-                  <Icon style={{ width: '16px', height: '16px', color: colors.primary }} />
-                </div>
-                <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground, marginBottom: '4px' }}>
-                  {t(`whatIs.pillars.${key}.title`)}
-                </h3>
-                <p style={{ fontSize: '12px', color: colors.mutedForeground, lineHeight: 1.4 }}>
-                  {t(`whatIs.pillars.${key}.description`)}
-                </p>
-              </div>
-            ))}
-          </div>
+          <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: '12px' }}>
+            <tbody>
+              <tr>
+                {pillars.map(({ icon: Icon, key }) => (
+                  <td key={key} style={{ 
+                    width: '25%',
+                    backgroundColor: colors.muted, 
+                    border: `1px solid ${colors.border}`, 
+                    borderRadius: '8px', 
+                    padding: '12px',
+                    verticalAlign: 'top'
+                  }}>
+                    <div style={{ 
+                      width: '32px', 
+                      height: '32px', 
+                      backgroundColor: 'rgba(45, 74, 66, 0.1)', 
+                      borderRadius: '4px', 
+                      marginBottom: '8px',
+                      textAlign: 'center',
+                      lineHeight: '32px'
+                    }}>
+                      <Icon style={{ width: '16px', height: '16px', color: colors.primary, verticalAlign: 'middle' }} />
+                    </div>
+                    <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground, marginBottom: '4px' }}>
+                      {t(`whatIs.pillars.${key}.title`)}
+                    </h3>
+                    <p style={{ fontSize: '12px', color: colors.mutedForeground, lineHeight: 1.4 }}>
+                      {t(`whatIs.pillars.${key}.description`)}
+                    </p>
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         {/* How It Works - Primary BG */}
@@ -215,47 +222,54 @@ export default function PitchDeck() {
             {t("pitchDeck.howItWorks.headline")}
           </h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginBottom: '24px' }}>
-            {[1, 2, 3].map((step) => (
-              <div key={step} style={{ textAlign: 'center' }}>
-                <div style={{ 
-                  width: '32px', 
-                  height: '32px', 
-                  backgroundColor: colors.white, 
-                  color: colors.primary, 
-                  borderRadius: '50%', 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center', 
-                  fontWeight: 600, 
-                  fontSize: '14px', 
-                  marginBottom: '12px',
-                  marginLeft: 'auto',
-                  marginRight: 'auto'
-                }}>
-                  {step}
-                </div>
-                <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
-                  {t(`pitchDeck.howItWorks.steps.${step}.title`)}
-                </h3>
-                <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4 }}>
-                  {t(`pitchDeck.howItWorks.steps.${step}.description`)}
-                </p>
-              </div>
-            ))}
-          </div>
+          <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: '16px', marginBottom: '24px' }}>
+            <tbody>
+              <tr>
+                {[1, 2, 3].map((step) => (
+                  <td key={step} style={{ width: '33.33%', textAlign: 'center', verticalAlign: 'top' }}>
+                    <div style={{ 
+                      width: '32px', 
+                      height: '32px', 
+                      backgroundColor: colors.white, 
+                      color: colors.primary, 
+                      borderRadius: '50%', 
+                      fontWeight: 600, 
+                      fontSize: '14px', 
+                      marginBottom: '12px',
+                      marginLeft: 'auto',
+                      marginRight: 'auto',
+                      textAlign: 'center',
+                      lineHeight: '32px'
+                    }}>
+                      {step}
+                    </div>
+                    <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
+                      {t(`pitchDeck.howItWorks.steps.${step}.title`)}
+                    </h3>
+                    <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4 }}>
+                      {t(`pitchDeck.howItWorks.steps.${step}.description`)}
+                    </p>
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
 
           <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px', textAlign: 'center' }}>
-              {["40%", "60%", "1", "100%"].map((stat, i) => (
-                <div key={i}>
-                  <p style={{ fontSize: '20px', fontWeight: 600, color: colors.white }}>{stat}</p>
-                  <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)' }}>
-                    {t(`pitchDeck.howItWorks.stats.${i}`)}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <tbody>
+                <tr>
+                  {["40%", "60%", "1", "100%"].map((stat, i) => (
+                    <td key={i} style={{ width: '25%', textAlign: 'center', padding: '4px' }}>
+                      <p style={{ fontSize: '20px', fontWeight: 600, color: colors.white, margin: 0 }}>{stat}</p>
+                      <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', margin: 0 }}>
+                        {t(`pitchDeck.howItWorks.stats.${i}`)}
+                      </p>
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
@@ -276,43 +290,55 @@ export default function PitchDeck() {
             {t("pitchDeck.pricing.headline")}
           </h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px' }}>
-            {plans.map(({ key, price }) => (
-              <div 
-                key={key} 
-                style={{ 
-                  backgroundColor: colors.white, 
-                  border: key === "plus" ? `2px solid ${colors.primary}` : `1px solid ${colors.border}`,
-                  borderRadius: '8px', 
-                  padding: '12px'
-                }}
-              >
-                {key === "plus" && (
-                  <span style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.05em', color: colors.primary, fontWeight: 500, display: 'block', marginBottom: '4px' }}>
-                    {t("pricingPage.mostPopular")}
-                  </span>
-                )}
-                <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground }}>
-                  {t(`pitchDeck.pricing.plans.${key}.name`)}
-                </h3>
-                <p style={{ fontSize: '10px', color: colors.mutedForeground, marginBottom: '8px', lineHeight: 1.4 }}>
-                  {t(`pitchDeck.pricing.plans.${key}.description`)}
-                </p>
-                <p style={{ fontSize: '18px', fontWeight: 600, color: colors.foreground, marginBottom: '8px' }}>
-                  €{price}
-                  <span style={{ fontSize: '10px', fontWeight: 400, color: colors.mutedForeground }}>/mo</span>
-                </p>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {(t(`pitchDeck.pricing.plans.${key}.features`, { returnObjects: true }) as string[]).slice(0, 3).map((feature, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '4px', fontSize: '10px', color: colors.mutedForeground, marginBottom: '2px' }}>
-                      <Check style={{ width: '10px', height: '10px', color: colors.primary, marginTop: '2px', flexShrink: 0 }} />
-                      <span style={{ lineHeight: 1.4 }}>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: '8px' }}>
+            <tbody>
+              <tr>
+                {plans.map(({ key, price }) => (
+                  <td 
+                    key={key} 
+                    style={{ 
+                      width: '25%',
+                      backgroundColor: colors.white, 
+                      border: key === "plus" ? `2px solid ${colors.primary}` : `1px solid ${colors.border}`,
+                      borderRadius: '8px', 
+                      padding: '12px',
+                      verticalAlign: 'top'
+                    }}
+                  >
+                    {key === "plus" && (
+                      <span style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.05em', color: colors.primary, fontWeight: 500, display: 'block', marginBottom: '4px' }}>
+                        {t("pricingPage.mostPopular")}
+                      </span>
+                    )}
+                    <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground }}>
+                      {t(`pitchDeck.pricing.plans.${key}.name`)}
+                    </h3>
+                    <p style={{ fontSize: '10px', color: colors.mutedForeground, marginBottom: '8px', lineHeight: 1.4 }}>
+                      {t(`pitchDeck.pricing.plans.${key}.description`)}
+                    </p>
+                    <p style={{ fontSize: '18px', fontWeight: 600, color: colors.foreground, marginBottom: '8px' }}>
+                      €{price}
+                      <span style={{ fontSize: '10px', fontWeight: 400, color: colors.mutedForeground }}>/mo</span>
+                    </p>
+                    <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                      <tbody>
+                        {(t(`pitchDeck.pricing.plans.${key}.features`, { returnObjects: true }) as string[]).slice(0, 3).map((feature, i) => (
+                          <tr key={i}>
+                            <td style={{ width: '14px', verticalAlign: 'top', paddingBottom: '2px' }}>
+                              <Check style={{ width: '10px', height: '10px', color: colors.primary }} />
+                            </td>
+                            <td style={{ fontSize: '10px', color: colors.mutedForeground, lineHeight: 1.4, paddingBottom: '2px' }}>
+                              {feature}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
 
           <p style={{ textAlign: 'center', fontSize: '12px', color: colors.mutedForeground, marginTop: '16px' }}>
             {t("pitchDeck.pricing.note")}
@@ -343,37 +369,38 @@ export default function PitchDeck() {
             {t("pitchDeck.team.subheadline")}
           </p>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginBottom: '24px' }}>
-            {teamMembers.map((member) => (
-              <div key={member.name} style={{ textAlign: 'center' }}>
-                <img 
-                  src={member.image} 
-                  alt={member.name}
-                  style={{ 
-                    width: '56px', 
-                    height: '56px', 
-                    borderRadius: '50%', 
-                    objectFit: 'cover', 
-                    border: '2px solid rgba(255,255,255,0.3)', 
-                    marginBottom: '8px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    display: 'block'
-                  }}
-                />
-                <h3 style={{ fontWeight: 600, color: colors.primaryForeground, fontSize: '14px' }}>{member.name}</h3>
-                <a 
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}
-                >
-                  <Linkedin style={{ width: '10px', height: '10px' }} />
-                  LinkedIn
-                </a>
-              </div>
-            ))}
-          </div>
+          <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: '16px', marginBottom: '24px' }}>
+            <tbody>
+              <tr>
+                {teamMembers.map((member) => (
+                  <td key={member.name} style={{ width: '25%', textAlign: 'center', verticalAlign: 'top' }}>
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      style={{ 
+                        width: '56px', 
+                        height: '56px', 
+                        borderRadius: '50%', 
+                        objectFit: 'cover', 
+                        border: '2px solid rgba(255,255,255,0.3)', 
+                        marginBottom: '8px'
+                      }}
+                    />
+                    <h3 style={{ fontWeight: 600, color: colors.primaryForeground, fontSize: '14px', margin: 0 }}>{member.name}</h3>
+                    <a 
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ fontSize: '10px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}
+                    >
+                      <Linkedin style={{ width: '10px', height: '10px', verticalAlign: 'middle', marginRight: '4px' }} />
+                      LinkedIn
+                    </a>
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
 
           <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px', textAlign: 'center' }}>
             <p style={{ fontSize: '10px', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>
