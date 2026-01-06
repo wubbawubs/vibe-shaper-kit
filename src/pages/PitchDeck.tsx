@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { usePDF } from "react-to-pdf";
-import { Download, Users, Zap, BarChart3, Shield, Check, Linkedin } from "lucide-react";
+import { Download, Check, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 import logo from "@/assets/onerooted-logo-transparent.avif";
@@ -25,10 +25,10 @@ const colors = {
 };
 
 const pillars = [
-  { icon: BarChart3, key: "data" },
-  { icon: Zap, key: "workflows" },
-  { icon: Users, key: "intelligence" },
-  { icon: Shield, key: "accountability" },
+  { icon: "📊", key: "data" },
+  { icon: "⚡", key: "workflows" },
+  { icon: "👥", key: "intelligence" },
+  { icon: "🛡️", key: "accountability" },
 ];
 
 const teamMembers = [
@@ -79,15 +79,25 @@ export default function PitchDeck() {
       <div ref={pdfRef} style={{ backgroundColor: colors.white, maxWidth: '896px', margin: '0 auto', padding: '16px' }}>
         {/* Cover - White */}
         <div style={{ padding: '64px 32px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
-            <img 
-              src={logo} 
-              alt="One Rooted" 
-              style={{ height: '32px' }}
-            />
-            <span style={{ color: '#9ca3af', margin: '0 12px' }}>|</span>
-            <span style={{ fontSize: '18px', fontWeight: 500, color: colors.foreground }}>One Rooted</span>
-          </div>
+          <table style={{ borderCollapse: 'collapse', marginBottom: '40px' }}>
+            <tbody>
+              <tr>
+                <td style={{ verticalAlign: 'middle', paddingRight: '12px' }}>
+                  <img 
+                    src={logo} 
+                    alt="One Rooted" 
+                    style={{ height: '32px', display: 'block' }}
+                  />
+                </td>
+                <td style={{ verticalAlign: 'middle', paddingRight: '12px' }}>
+                  <span style={{ color: '#9ca3af' }}>|</span>
+                </td>
+                <td style={{ verticalAlign: 'middle' }}>
+                  <span style={{ fontSize: '18px', fontWeight: 500, color: colors.foreground }}>One Rooted</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <h1 style={{ fontSize: '36px', fontWeight: 600, color: colors.foreground, marginBottom: '12px', letterSpacing: '-0.025em' }}>
             {t("pitchDeck.cover.headline")}
           </h1>
@@ -167,7 +177,7 @@ export default function PitchDeck() {
           <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: '12px' }}>
             <tbody>
               <tr>
-                {pillars.map(({ icon: Icon, key }) => (
+                {pillars.map(({ icon, key }) => (
                   <td key={key} style={{ 
                     width: '25%',
                     backgroundColor: colors.muted, 
@@ -183,9 +193,10 @@ export default function PitchDeck() {
                       borderRadius: '4px', 
                       marginBottom: '8px',
                       textAlign: 'center',
-                      lineHeight: '32px'
+                      lineHeight: '32px',
+                      fontSize: '16px'
                     }}>
-                      <Icon style={{ width: '16px', height: '16px', color: colors.primary, verticalAlign: 'middle' }} />
+                      {icon}
                     </div>
                     <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground, marginBottom: '4px' }}>
                       {t(`whatIs.pillars.${key}.title`)}
@@ -227,28 +238,38 @@ export default function PitchDeck() {
               <tr>
                 {[1, 2, 3].map((step) => (
                   <td key={step} style={{ width: '33.33%', textAlign: 'center', verticalAlign: 'top' }}>
-                    <div style={{ 
-                      width: '32px', 
-                      height: '32px', 
-                      backgroundColor: colors.white, 
-                      color: colors.primary, 
-                      borderRadius: '50%', 
-                      fontWeight: 600, 
-                      fontSize: '14px', 
-                      marginBottom: '12px',
-                      marginLeft: 'auto',
-                      marginRight: 'auto',
-                      textAlign: 'center',
-                      lineHeight: '32px'
-                    }}>
-                      {step}
-                    </div>
-                    <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
-                      {t(`pitchDeck.howItWorks.steps.${step}.title`)}
-                    </h3>
-                    <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4 }}>
-                      {t(`pitchDeck.howItWorks.steps.${step}.description`)}
-                    </p>
+                    <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                      <tbody>
+                        <tr>
+                          <td style={{ textAlign: 'center', paddingBottom: '12px' }}>
+                            <div style={{ 
+                              width: '32px', 
+                              height: '32px', 
+                              backgroundColor: colors.white, 
+                              color: colors.primary, 
+                              borderRadius: '50%', 
+                              fontWeight: 600, 
+                              fontSize: '14px', 
+                              textAlign: 'center',
+                              lineHeight: '32px',
+                              display: 'inline-block'
+                            }}>
+                              {step}
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ textAlign: 'center' }}>
+                            <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
+                              {t(`pitchDeck.howItWorks.steps.${step}.title`)}
+                            </h3>
+                            <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4 }}>
+                              {t(`pitchDeck.howItWorks.steps.${step}.description`)}
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 ))}
               </tr>
@@ -325,7 +346,7 @@ export default function PitchDeck() {
                         {(t(`pitchDeck.pricing.plans.${key}.features`, { returnObjects: true }) as string[]).slice(0, 3).map((feature, i) => (
                           <tr key={i}>
                             <td style={{ width: '14px', verticalAlign: 'top', paddingBottom: '2px' }}>
-                              <Check style={{ width: '10px', height: '10px', color: colors.primary }} />
+                              <span style={{ color: colors.primary, fontSize: '10px' }}>✓</span>
                             </td>
                             <td style={{ fontSize: '10px', color: colors.mutedForeground, lineHeight: 1.4, paddingBottom: '2px' }}>
                               {feature}
@@ -393,8 +414,7 @@ export default function PitchDeck() {
                       rel="noopener noreferrer"
                       style={{ fontSize: '10px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}
                     >
-                      <Linkedin style={{ width: '10px', height: '10px', verticalAlign: 'middle', marginRight: '4px' }} />
-                      LinkedIn
+                      🔗 LinkedIn
                     </a>
                   </td>
                 ))}
@@ -408,15 +428,23 @@ export default function PitchDeck() {
             </p>
             <p style={{ fontSize: '16px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '12px' }}>One-Time Group</p>
             
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '24px', fontSize: '14px' }}>
-              <a href="mailto:info@onerooted.nl" style={{ color: colors.white, textDecoration: 'none' }}>
-                info@onerooted.nl
-              </a>
-              <span style={{ color: 'rgba(255,255,255,0.5)' }}>|</span>
-              <a href="https://onerooted.nl" style={{ color: colors.white, textDecoration: 'none' }}>
-                onerooted.nl
-              </a>
-            </div>
+            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'center' }}>
+              <tbody>
+                <tr>
+                  <td style={{ padding: '0 12px' }}>
+                    <a href="mailto:info@onerooted.nl" style={{ color: colors.white, textDecoration: 'none', fontSize: '14px' }}>
+                      info@onerooted.nl
+                    </a>
+                  </td>
+                  <td style={{ color: 'rgba(255,255,255,0.5)' }}>|</td>
+                  <td style={{ padding: '0 12px' }}>
+                    <a href="https://onerooted.nl" style={{ color: colors.white, textDecoration: 'none', fontSize: '14px' }}>
+                      onerooted.nl
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
