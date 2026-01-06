@@ -337,11 +337,28 @@ html {
 }
 
 /* PDF Export Mode - Kill animations, lock fonts, fix alignment */
+.pdf-exporting {
+  /* PDF Typography Scale - locked on 4px grid */
+  --pdf-h1: 32px;
+  --pdf-h2: 18px;
+  --pdf-h3: 12px;
+  --pdf-p: 10px;
+  --pdf-label: 9px;
+  --pdf-lh-tight: 1.15;
+  --pdf-lh: 1.35;
+}
+
 .pdf-exporting * {
   animation: none !important;
   transition: none !important;
   caret-color: transparent !important;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+
+/* Force balanced text wrap for headings */
+.pdf-exporting h1,
+.pdf-exporting h2 {
+  text-wrap: balance;
 }
 
 .pdf-exporting svg,
@@ -376,14 +393,37 @@ html {
   background: #fff !important;
   transform: none !important;
   margin: 0 !important;
-  padding: 36px 44px !important;
+  padding: 40px 48px !important;
   position: relative !important;
 }
 
-/* Step circles - absolute centering for html2canvas */
+/* Content wrapper - centered with max-width */
+.pdf-exporting .pdfContent {
+  width: 100% !important;
+  max-width: 698px !important;
+  margin: 0 auto !important;
+}
+
+/* Section spacing - consistent 28px for major sections */
+.pdf-exporting .pdfSection {
+  margin-bottom: 24px !important;
+}
+
+.pdf-exporting .pdfSectionSmall {
+  margin-bottom: 16px !important;
+}
+
+/* Header with subtle bottom border */
+.pdf-exporting .pdfHeader {
+  padding-bottom: 14px !important;
+  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+  margin-bottom: 20px !important;
+}
+
+/* Step circles - larger for page 1 fill */
 .pdf-exporting .stepCircle {
-  width: 34px !important;
-  height: 34px !important;
+  width: 40px !important;
+  height: 40px !important;
   border-radius: 9999px !important;
   position: relative !important;
   display: block !important;
@@ -397,7 +437,7 @@ html {
   transform: translate(-50%, -52%) !important;
   line-height: 1 !important;
   font-weight: 700 !important;
-  font-size: 14px !important;
+  font-size: 15px !important;
   display: block !important;
 }
 
@@ -409,8 +449,8 @@ html {
 }
 
 .pdf-exporting .brandMark {
-  width: 18px !important;
-  height: 18px !important;
+  width: 20px !important;
+  height: 20px !important;
   display: block !important;
 }
 
@@ -422,8 +462,8 @@ html {
 
 /* Icon boxes - force block rendering */
 .pdf-exporting .iconBox {
-  width: 26px !important;
-  height: 26px !important;
+  width: 28px !important;
+  height: 28px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -431,9 +471,26 @@ html {
 }
 
 .pdf-exporting .iconBox img {
-  width: 14px !important;
-  height: 14px !important;
+  width: 15px !important;
+  height: 15px !important;
   display: block !important;
+}
+
+/* Pillar cards - equal height with clamped descriptions */
+.pdf-exporting .pillarCard {
+  min-height: 88px !important;
+}
+
+.pdf-exporting .pillarDesc {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* Problem tools cards - equal height */
+.pdf-exporting .problemCard {
+  min-height: 52px !important;
 }
 
 /* Social/LinkedIn rows - baseline proof */
@@ -473,14 +530,24 @@ html {
   flex: 1 !important;
 }
 
-/* Pricing cards - tighter layout */
+/* Pricing cards - equal height with consistent padding */
 .pdf-exporting .planCard {
-  padding: 12px !important;
+  padding: 14px !important;
+  min-height: 160px !important;
 }
 
 .pdf-exporting .planPrice {
-  font-size: 18px !important;
+  font-size: 20px !important;
   line-height: 1.1 !important;
+}
+
+/* Stats bar - larger for visual impact */
+.pdf-exporting .statsBar {
+  padding: 14px !important;
+}
+
+.pdf-exporting .statValue {
+  font-size: 20px !important;
 }
 
 /* Kill any remaining flex baseline issues */
