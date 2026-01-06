@@ -11,6 +11,19 @@ import robin from "@/assets/team/robin.jpeg";
 import erik from "@/assets/team/erik.jpeg";
 import juliette from "@/assets/team/juliette.jpeg";
 
+// Colors for inline styles (PDF-safe)
+const colors = {
+  primary: '#2d4a42',
+  primaryLight: 'rgba(45, 74, 66, 0.8)',
+  primaryForeground: '#ffffff',
+  foreground: '#1f2937',
+  mutedForeground: '#6b7280',
+  label: '#d97706',
+  border: '#e5e7eb',
+  muted: '#f3f4f6',
+  white: '#ffffff',
+};
+
 const pillars = [
   { icon: BarChart3, key: "data" },
   { icon: Zap, key: "workflows" },
@@ -63,7 +76,7 @@ export default function PitchDeck() {
         </Button>
       </div>
 
-      <div ref={pdfRef} className="bg-white max-w-4xl mx-auto p-4">
+      <div ref={pdfRef} style={{ backgroundColor: colors.white, maxWidth: '896px', margin: '0 auto', padding: '16px' }}>
         {/* Cover - White */}
         <div style={{ padding: '64px 32px' }}>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
@@ -73,65 +86,106 @@ export default function PitchDeck() {
               style={{ height: '32px' }}
             />
             <span style={{ color: '#9ca3af', margin: '0 12px' }}>|</span>
-            <span style={{ fontSize: '18px', fontWeight: 500, color: '#1f2937' }}>One Rooted</span>
+            <span style={{ fontSize: '18px', fontWeight: 500, color: colors.foreground }}>One Rooted</span>
           </div>
-          <h1 style={{ fontSize: '36px', fontWeight: 600, color: '#1f2937', marginBottom: '12px', letterSpacing: '-0.025em' }}>
+          <h1 style={{ fontSize: '36px', fontWeight: 600, color: colors.foreground, marginBottom: '12px', letterSpacing: '-0.025em' }}>
             {t("pitchDeck.cover.headline")}
           </h1>
-          <p style={{ fontSize: '16px', color: '#6b7280', maxWidth: '672px' }}>
+          <p style={{ fontSize: '16px', color: colors.mutedForeground, maxWidth: '672px', lineHeight: 1.6 }}>
             Not another ATS, the next-gen Talent Acquisition SaaS that centralises hiring workflows, automates candidate tracking, and scales with your business.
           </p>
         </div>
 
         {/* The Problem - Primary BG */}
-        <div className="py-10 px-8 bg-primary/80 text-primary-foreground rounded-2xl mb-4">
-          <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2">
+        <div style={{ 
+          padding: '40px 32px', 
+          backgroundColor: colors.primaryLight, 
+          borderRadius: '16px', 
+          marginBottom: '16px' 
+        }}>
+          <p style={{ 
+            fontSize: '12px', 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.1em', 
+            color: 'rgba(255,255,255,0.7)', 
+            fontWeight: 500, 
+            marginBottom: '8px' 
+          }}>
             {t("pitchDeck.problem.label")}
           </p>
-          <h2 className="text-2xl font-semibold text-primary-foreground mb-6">
+          <h2 style={{ fontSize: '24px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '24px' }}>
             {t("pitchDeck.problem.headline")}
           </h2>
           
-          <div className="grid grid-cols-3 gap-3 mb-6">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '24px' }}>
             {["ats", "slack", "excel"].map((tool) => (
-              <div key={tool} className="bg-white/10 backdrop-blur rounded-lg p-3 flex flex-col justify-center min-h-[80px]">
-                <h3 className="text-sm font-semibold text-primary-foreground mb-1">
+              <div key={tool} style={{ 
+                backgroundColor: 'rgba(255,255,255,0.1)', 
+                borderRadius: '8px', 
+                padding: '12px',
+                minHeight: '80px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}>
+                <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
                   {t(`problem.tools.${tool}.name`)}
                 </h3>
-                <p className="text-xs text-primary-foreground/80 leading-snug">
+                <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4 }}>
                   {t(`problem.tools.${tool}.description`)}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-base text-primary-foreground font-medium text-center">
+          <p style={{ fontSize: '16px', color: colors.primaryForeground, fontWeight: 500, textAlign: 'center' }}>
             {t("pitchDeck.problem.consequence")}
           </p>
         </div>
 
         {/* The Solution - White */}
-        <div className="py-10 px-8">
-          <p className="text-xs uppercase tracking-widest text-label font-medium mb-2">
+        <div style={{ padding: '40px 32px' }}>
+          <p style={{ 
+            fontSize: '12px', 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.1em', 
+            color: colors.label, 
+            fontWeight: 500, 
+            marginBottom: '8px' 
+          }}>
             {t("pitchDeck.solution.label")}
           </p>
-          <h2 className="text-2xl font-semibold text-foreground mb-2">
+          <h2 style={{ fontSize: '24px', fontWeight: 600, color: colors.foreground, marginBottom: '8px' }}>
             {t("pitchDeck.solution.headline")}
           </h2>
-          <p className="text-sm text-muted-foreground mb-6">
+          <p style={{ fontSize: '14px', color: colors.mutedForeground, marginBottom: '24px', lineHeight: 1.5 }}>
             {t("pitchDeck.solution.description")}
           </p>
           
-          <div className="grid grid-cols-4 gap-3">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px' }}>
             {pillars.map(({ icon: Icon, key }) => (
-              <div key={key} className="bg-muted/40 border border-border rounded-lg p-3">
-                <div className="w-8 h-8 bg-primary/10 rounded flex items-center justify-center mb-2">
-                  <Icon className="w-4 h-4 text-primary" />
+              <div key={key} style={{ 
+                backgroundColor: colors.muted, 
+                border: `1px solid ${colors.border}`, 
+                borderRadius: '8px', 
+                padding: '12px' 
+              }}>
+                <div style={{ 
+                  width: '32px', 
+                  height: '32px', 
+                  backgroundColor: 'rgba(45, 74, 66, 0.1)', 
+                  borderRadius: '4px', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  marginBottom: '8px' 
+                }}>
+                  <Icon style={{ width: '16px', height: '16px', color: colors.primary }} />
                 </div>
-                <h3 className="text-sm font-semibold text-foreground mb-1">
+                <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground, marginBottom: '4px' }}>
                   {t(`whatIs.pillars.${key}.title`)}
                 </h3>
-                <p className="text-xs text-muted-foreground leading-snug">
+                <p style={{ fontSize: '12px', color: colors.mutedForeground, lineHeight: 1.4 }}>
                   {t(`whatIs.pillars.${key}.description`)}
                 </p>
               </div>
@@ -140,36 +194,63 @@ export default function PitchDeck() {
         </div>
 
         {/* How It Works - Primary BG */}
-        <div className="py-10 px-8 bg-primary/80 text-primary-foreground rounded-2xl mb-4" style={{ pageBreakAfter: 'always' }}>
-          <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2">
+        <div style={{ 
+          padding: '40px 32px', 
+          backgroundColor: colors.primaryLight, 
+          borderRadius: '16px', 
+          marginBottom: '16px',
+          pageBreakAfter: 'always'
+        }}>
+          <p style={{ 
+            fontSize: '12px', 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.1em', 
+            color: 'rgba(255,255,255,0.7)', 
+            fontWeight: 500, 
+            marginBottom: '8px' 
+          }}>
             {t("pitchDeck.howItWorks.label")}
           </p>
-          <h2 className="text-2xl font-semibold text-primary-foreground mb-6">
+          <h2 style={{ fontSize: '24px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '24px' }}>
             {t("pitchDeck.howItWorks.headline")}
           </h2>
           
-          <div className="grid grid-cols-3 gap-4 mb-6">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginBottom: '24px' }}>
             {[1, 2, 3].map((step) => (
-              <div key={step} className="text-center">
-                <div className="w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center font-semibold text-sm mb-3 mx-auto">
+              <div key={step} style={{ textAlign: 'center' }}>
+                <div style={{ 
+                  width: '32px', 
+                  height: '32px', 
+                  backgroundColor: colors.white, 
+                  color: colors.primary, 
+                  borderRadius: '50%', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  fontWeight: 600, 
+                  fontSize: '14px', 
+                  marginBottom: '12px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'
+                }}>
                   {step}
                 </div>
-                <h3 className="text-sm font-semibold text-primary-foreground mb-1">
+                <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '4px' }}>
                   {t(`pitchDeck.howItWorks.steps.${step}.title`)}
                 </h3>
-                <p className="text-xs text-primary-foreground/80 leading-snug">
+                <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.4 }}>
                   {t(`pitchDeck.howItWorks.steps.${step}.description`)}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-            <div className="grid grid-cols-4 gap-3 text-center">
+          <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px', textAlign: 'center' }}>
               {["40%", "60%", "1", "100%"].map((stat, i) => (
                 <div key={i}>
-                  <p className="text-xl font-semibold text-white">{stat}</p>
-                  <p className="text-xs text-primary-foreground/80">
+                  <p style={{ fontSize: '20px', fontWeight: 600, color: colors.white }}>{stat}</p>
+                  <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.8)' }}>
                     {t(`pitchDeck.howItWorks.stats.${i}`)}
                   </p>
                 </div>
@@ -179,42 +260,53 @@ export default function PitchDeck() {
         </div>
 
         {/* Pricing - White */}
-        <div className="py-10 px-8" style={{ pageBreakInside: 'avoid' }}>
-          <p className="text-xs uppercase tracking-widest text-label font-medium mb-2 text-center">
+        <div style={{ padding: '40px 32px', pageBreakInside: 'avoid' }}>
+          <p style={{ 
+            fontSize: '12px', 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.1em', 
+            color: colors.label, 
+            fontWeight: 500, 
+            marginBottom: '8px',
+            textAlign: 'center'
+          }}>
             {t("pitchDeck.pricing.label")}
           </p>
-          <h2 className="text-2xl font-semibold text-foreground mb-6 text-center">
+          <h2 style={{ fontSize: '24px', fontWeight: 600, color: colors.foreground, marginBottom: '24px', textAlign: 'center' }}>
             {t("pitchDeck.pricing.headline")}
           </h2>
           
-          <div className="grid grid-cols-4 gap-2">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px' }}>
             {plans.map(({ key, price }) => (
               <div 
                 key={key} 
-                className={`bg-white border rounded-lg p-3 ${
-                  key === "plus" ? "border-primary ring-1 ring-primary" : "border-border"
-                }`}
+                style={{ 
+                  backgroundColor: colors.white, 
+                  border: key === "plus" ? `2px solid ${colors.primary}` : `1px solid ${colors.border}`,
+                  borderRadius: '8px', 
+                  padding: '12px'
+                }}
               >
                 {key === "plus" && (
-                  <span className="text-[10px] uppercase tracking-wider text-primary font-medium block mb-1">
+                  <span style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.05em', color: colors.primary, fontWeight: 500, display: 'block', marginBottom: '4px' }}>
                     {t("pricingPage.mostPopular")}
                   </span>
                 )}
-                <h3 className="text-sm font-semibold text-foreground">
+                <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground }}>
                   {t(`pitchDeck.pricing.plans.${key}.name`)}
                 </h3>
-                <p className="text-[10px] text-muted-foreground mb-2 leading-snug">
+                <p style={{ fontSize: '10px', color: colors.mutedForeground, marginBottom: '8px', lineHeight: 1.4 }}>
                   {t(`pitchDeck.pricing.plans.${key}.description`)}
                 </p>
-                <p className="text-lg font-semibold text-foreground mb-2">
+                <p style={{ fontSize: '18px', fontWeight: 600, color: colors.foreground, marginBottom: '8px' }}>
                   €{price}
-                  <span className="text-[10px] font-normal text-muted-foreground">/mo</span>
+                  <span style={{ fontSize: '10px', fontWeight: 400, color: colors.mutedForeground }}>/mo</span>
                 </p>
-                <ul className="space-y-0.5">
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {(t(`pitchDeck.pricing.plans.${key}.features`, { returnObjects: true }) as string[]).slice(0, 3).map((feature, i) => (
-                    <li key={i} className="flex items-start gap-1 text-[10px] text-muted-foreground">
-                      <Check className="w-2.5 h-2.5 text-primary mt-0.5 shrink-0" />
-                      <span className="leading-snug">{feature}</span>
+                    <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '4px', fontSize: '10px', color: colors.mutedForeground, marginBottom: '2px' }}>
+                      <Check style={{ width: '10px', height: '10px', color: colors.primary, marginTop: '2px', flexShrink: 0 }} />
+                      <span style={{ lineHeight: 1.4 }}>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -222,57 +314,79 @@ export default function PitchDeck() {
             ))}
           </div>
 
-          <p className="text-center text-xs text-muted-foreground mt-4">
+          <p style={{ textAlign: 'center', fontSize: '12px', color: colors.mutedForeground, marginTop: '16px' }}>
             {t("pitchDeck.pricing.note")}
           </p>
         </div>
 
         {/* Team & Contact - Primary BG */}
-        <div className="py-10 px-8 bg-primary/80 text-primary-foreground rounded-2xl">
-          <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2 text-center">
+        <div style={{ 
+          padding: '40px 32px', 
+          backgroundColor: colors.primaryLight, 
+          borderRadius: '16px' 
+        }}>
+          <p style={{ 
+            fontSize: '12px', 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.1em', 
+            color: 'rgba(255,255,255,0.7)', 
+            fontWeight: 500, 
+            marginBottom: '8px',
+            textAlign: 'center'
+          }}>
             {t("pitchDeck.team.label")}
           </p>
-          <h2 className="text-2xl font-semibold text-primary-foreground mb-2 text-center">
+          <h2 style={{ fontSize: '24px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '8px', textAlign: 'center' }}>
             {t("pitchDeck.team.headline")}
           </h2>
-          <p className="text-sm text-primary-foreground/80 text-center mb-6">
+          <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.8)', textAlign: 'center', marginBottom: '24px' }}>
             {t("pitchDeck.team.subheadline")}
           </p>
           
-          <div className="grid grid-cols-4 gap-4 mb-6">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginBottom: '24px' }}>
             {teamMembers.map((member) => (
-              <div key={member.name} className="text-center">
+              <div key={member.name} style={{ textAlign: 'center' }}>
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-14 h-14 rounded-full mx-auto object-cover border-2 border-white/30 mb-2"
+                  style={{ 
+                    width: '56px', 
+                    height: '56px', 
+                    borderRadius: '50%', 
+                    objectFit: 'cover', 
+                    border: '2px solid rgba(255,255,255,0.3)', 
+                    marginBottom: '8px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    display: 'block'
+                  }}
                 />
-                <h3 className="font-semibold text-primary-foreground text-sm">{member.name}</h3>
+                <h3 style={{ fontWeight: 600, color: colors.primaryForeground, fontSize: '14px' }}>{member.name}</h3>
                 <a 
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[10px] text-primary-foreground/70 hover:text-white"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}
                 >
-                  <Linkedin className="w-2.5 h-2.5" />
+                  <Linkedin style={{ width: '10px', height: '10px' }} />
                   LinkedIn
                 </a>
               </div>
             ))}
           </div>
 
-          <div className="bg-white/10 backdrop-blur rounded-lg p-4 text-center">
-            <p className="text-[10px] text-primary-foreground/70 mb-1">
+          <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px', textAlign: 'center' }}>
+            <p style={{ fontSize: '10px', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>
               {t("pitchDeck.team.partOf")}
             </p>
-            <p className="text-base font-semibold text-primary-foreground mb-3">One-Time Group</p>
+            <p style={{ fontSize: '16px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '12px' }}>One-Time Group</p>
             
-            <div className="flex items-center justify-center gap-6 text-sm">
-              <a href="mailto:info@onerooted.nl" className="text-white hover:underline">
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '24px', fontSize: '14px' }}>
+              <a href="mailto:info@onerooted.nl" style={{ color: colors.white, textDecoration: 'none' }}>
                 info@onerooted.nl
               </a>
-              <span className="text-primary-foreground/50">|</span>
-              <a href="https://onerooted.nl" className="text-white hover:underline">
+              <span style={{ color: 'rgba(255,255,255,0.5)' }}>|</span>
+              <a href="https://onerooted.nl" style={{ color: colors.white, textDecoration: 'none' }}>
                 onerooted.nl
               </a>
             </div>
