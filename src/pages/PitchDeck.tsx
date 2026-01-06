@@ -55,7 +55,7 @@ export default function PitchDeck() {
   const { toPDF, targetRef: pdfRef } = usePDF({
     filename: `OneRooted-PitchDeck-${lang || "en"}.pdf`,
     page: {
-      margin: 20,
+      margin: 0,
       format: "A4",
       orientation: "portrait",
     },
@@ -86,7 +86,13 @@ export default function PitchDeck() {
         </Button>
       </div>
 
-      <div ref={pdfRef} style={{ backgroundColor: colors.white, maxWidth: '896px', margin: '0 auto', padding: '16px' }}>
+      <div ref={pdfRef} style={{ 
+        backgroundColor: colors.white, 
+        width: '794px',  /* A4 width at 96dpi */
+        margin: '0 auto', 
+        padding: '16px',
+        boxSizing: 'border-box'
+      }}>
         {/* Cover - White */}
         <div style={{ padding: '64px 32px' }}>
           <table style={{ borderCollapse: 'collapse', marginBottom: '40px' }}>
@@ -256,20 +262,29 @@ export default function PitchDeck() {
                       <tbody>
                         <tr>
                           <td style={{ textAlign: 'center', paddingBottom: '12px' }}>
-                            <div style={{ 
+                            <table style={{ 
                               width: '32px', 
                               height: '32px', 
                               backgroundColor: colors.white, 
-                              color: colors.primary, 
                               borderRadius: '50%', 
-                              fontWeight: 600, 
-                              fontSize: '14px', 
-                              textAlign: 'center',
-                              lineHeight: '32px',
-                              display: 'inline-block'
+                              borderCollapse: 'collapse',
+                              margin: '0 auto'
                             }}>
-                              {step}
-                            </div>
+                              <tbody>
+                                <tr>
+                                  <td style={{ 
+                                    textAlign: 'center', 
+                                    verticalAlign: 'middle',
+                                    color: colors.primary,
+                                    fontWeight: 600, 
+                                    fontSize: '14px',
+                                    lineHeight: 1
+                                  }}>
+                                    {step}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </td>
                         </tr>
                         <tr>
