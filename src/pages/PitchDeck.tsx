@@ -306,8 +306,8 @@ export default function PitchDeck() {
             </div>
           </div>
 
-          {/* Page number */}
-          <div style={{ position: 'absolute', bottom: '20px', right: '24px', fontSize: '10px', color: colors.mutedForeground }}>
+          {/* Page number - absolute positioned */}
+          <div className="pdfPageNumber" style={{ position: 'absolute', bottom: '20px', right: '24px', fontSize: '10px', color: colors.mutedForeground }}>
             1 / 2
           </div>
         </section>
@@ -421,10 +421,9 @@ export default function PitchDeck() {
             </div>
           </div>
 
-          {/* Page footer line */}
-          <div style={{ position: 'absolute', bottom: '40px', left: '48px', right: '48px', borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontSize: '9px', color: colors.mutedForeground }}>© 2024 One Rooted — The Hiring OS</span>
-            <span style={{ fontSize: '10px', color: colors.mutedForeground }}>2 / 2</span>
+          {/* Page number - absolute positioned */}
+          <div className="pdfPageNumber" style={{ position: 'absolute', bottom: '20px', right: '24px', fontSize: '10px', color: colors.mutedForeground }}>
+            2 / 2
           </div>
         </section>
       </div>
