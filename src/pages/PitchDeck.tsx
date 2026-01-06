@@ -1,4 +1,5 @@
 import { useRef } from "react";
+// Pitch Deck Page - PDF Export Ready
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { usePDF } from "react-to-pdf";
