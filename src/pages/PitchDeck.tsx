@@ -1,9 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
-import { usePDF } from "react-to-pdf";
-import { Download } from "lucide-react";
+import { Download, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
+import { useState, useCallback } from "react";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 import logo from "@/assets/onerooted-logo-transparent.avif";
 import luuk from "@/assets/team/luuk.jpeg";
 import robin from "@/assets/team/robin.jpeg";
@@ -65,15 +67,61 @@ const pageStyle: React.CSSProperties = {
 export default function PitchDeck() {
   const { t } = useTranslation();
   const { lang } = useParams();
-  
-  const { toPDF, targetRef: pdfRef } = usePDF({
-    filename: `OneRooted-PitchDeck-${lang || "en"}.pdf`,
-    page: {
-      margin: 0,
-      format: "A4",
-      orientation: "portrait",
-    },
-  });
+  const [isExporting, setIsExporting] = useState(false);
+
+  const exportToPDF = useCallback(async () => {
+    setIsExporting(true);
+    
+    try {
+      // Wait for fonts and images to load
+      await document.fonts.ready;
+      await Promise.all(
+        Array.from(document.images)
+          .filter(img => !img.complete)
+          .map(img => new Promise(res => { img.onload = img.onerror = res; }))
+      );
+      await new Promise(r => setTimeout(r, 100));
+
+      const pdf = new jsPDF({
+        orientation: 'portrait',
+        unit: 'pt',
+        format: 'a4',
+      });
+
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+
+      // Render each page separately
+      const pageIds = ['pdf-page-1', 'pdf-page-2'];
+      
+      for (let i = 0; i < pageIds.length; i++) {
+        const element = document.getElementById(pageIds[i]);
+        if (!element) continue;
+
+        const canvas = await html2canvas(element, {
+          scale: 2,
+          backgroundColor: '#ffffff',
+          logging: false,
+          useCORS: true,
+          allowTaint: true,
+        });
+
+        const imgData = canvas.toDataURL('image/png');
+        
+        if (i > 0) {
+          pdf.addPage();
+        }
+        
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+      }
+
+      pdf.save(`OneRooted-PitchDeck-${lang || 'en'}.pdf`);
+    } catch (error) {
+      console.error('PDF export failed:', error);
+    } finally {
+      setIsExporting(false);
+    }
+  }, [lang]);
 
   const plans = [
     { key: "light", price: "99" },
@@ -92,28 +140,33 @@ export default function PitchDeck() {
       {/* Fixed download button */}
       <div className="fixed top-4 right-4 z-50 print:hidden">
         <Button 
-          onClick={() => toPDF()} 
+          onClick={exportToPDF}
+          disabled={isExporting}
           className="bg-primary hover:bg-primary/90 shadow-lg"
         >
-          <Download className="w-4 h-4 mr-2" />
-          {t("pitchDeck.exportButton")}
+          {isExporting ? (
+            <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+          ) : (
+            <Download className="w-4 h-4 mr-2" />
+          )}
+          {isExporting ? "Exporting..." : t("pitchDeck.exportButton")}
         </Button>
       </div>
 
-      {/* PDF Container */}
+      {/* PDF Container - Preview wrapper */}
       <div 
-        ref={pdfRef} 
         style={{ 
           backgroundColor: '#e5e7eb', 
           padding: '24px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: '24px'
+          gap: '24px',
+          minHeight: '100vh',
         }}
       >
         {/* ========== PAGE 1 ========== */}
-        <section style={pageStyle} data-page="1">
+        <section id="pdf-page-1" style={pageStyle}>
           {/* Header */}
           <table style={{ borderCollapse: 'collapse', marginBottom: '24px' }}>
             <tbody>
@@ -221,7 +274,7 @@ export default function PitchDeck() {
         </section>
 
         {/* ========== PAGE 2 ========== */}
-        <section style={pageStyle} data-page="2">
+        <section id="pdf-page-2" style={pageStyle}>
           {/* How It Works */}
           <div style={{ padding: '24px', backgroundColor: colors.primaryLight, borderRadius: '12px', marginBottom: '20px' }}>
             <p style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '6px' }}>
