@@ -5,6 +5,34 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
 
+// Retry with exponential backoff
+async function fetchWithRetry(url: string, options: RequestInit, maxRetries = 3): Promise<Response> {
+  let lastError: Error | null = null;
+  
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      const response = await fetch(url, options);
+      
+      // If rate limited, wait and retry
+      if (response.status === 429) {
+        const waitTime = Math.pow(2, attempt + 1) * 1000; // 2s, 4s, 8s
+        console.log(`Rate limited (429), waiting ${waitTime}ms before retry ${attempt + 1}/${maxRetries}`);
+        await new Promise(resolve => setTimeout(resolve, waitTime));
+        continue;
+      }
+      
+      return response;
+    } catch (error) {
+      lastError = error as Error;
+      const waitTime = Math.pow(2, attempt) * 1000;
+      console.log(`Request failed, waiting ${waitTime}ms before retry ${attempt + 1}/${maxRetries}`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+  }
+  
+  throw lastError || new Error('Max retries exceeded');
+}
+
 serve(async (req) => {
   // Handle CORS preflight requests
   if (req.method === 'OPTIONS') {
@@ -35,7 +63,7 @@ serve(async (req) => {
     // Browserless.io PDF API endpoint
     const browserlessUrl = `https://chrome.browserless.io/pdf?token=${browserlessApiKey}`;
 
-    const pdfResponse = await fetch(browserlessUrl, {
+    const pdfResponse = await fetchWithRetry(browserlessUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -60,11 +88,20 @@ serve(async (req) => {
           timeout: 30000,
         },
       }),
-    });
+    }, 3);
 
     if (!pdfResponse.ok) {
       const errorText = await pdfResponse.text();
       console.error('Browserless API error:', errorText);
+      
+      // More helpful error message for rate limiting
+      if (pdfResponse.status === 429) {
+        return new Response(
+          JSON.stringify({ error: 'PDF service is busy, please try again in a few seconds' }),
+          { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        );
+      }
+      
       return new Response(
         JSON.stringify({ error: 'Failed to generate PDF', details: errorText }),
         { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
