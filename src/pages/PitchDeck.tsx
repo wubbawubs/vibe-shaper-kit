@@ -458,16 +458,16 @@ export default function PitchDeck() {
             </p>
             <p style={{ fontSize: '16px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '12px' }}>One-Time Group</p>
             
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'center' }}>
+            <table style={{ borderCollapse: 'collapse', margin: '0 auto' }}>
               <tbody>
                 <tr>
-                  <td style={{ padding: '0 12px' }}>
+                  <td style={{ textAlign: 'right', paddingRight: '12px' }}>
                     <a href="mailto:info@onerooted.nl" style={{ color: colors.white, textDecoration: 'none', fontSize: '14px' }}>
                       info@onerooted.nl
                     </a>
                   </td>
-                  <td style={{ color: 'rgba(255,255,255,0.5)' }}>|</td>
-                  <td style={{ padding: '0 12px' }}>
+                  <td style={{ color: 'rgba(255,255,255,0.5)', textAlign: 'center' }}>|</td>
+                  <td style={{ textAlign: 'left', paddingLeft: '12px' }}>
                     <a href="https://onerooted.nl" style={{ color: colors.white, textDecoration: 'none', fontSize: '14px' }}>
                       onerooted.nl
                     </a>
