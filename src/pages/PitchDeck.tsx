@@ -65,7 +65,7 @@ export default function PitchDeck() {
 
       <div ref={pdfRef} className="bg-white max-w-4xl mx-auto">
         {/* Cover */}
-        <div className="text-center py-16 px-8">
+        <div className="text-center py-16 px-8 border-2 border-primary rounded-lg m-4">
           <img 
             src={logo} 
             alt="One Rooted" 
@@ -80,7 +80,7 @@ export default function PitchDeck() {
         </div>
 
         {/* The Problem */}
-        <div className="py-10 px-8 bg-muted/30">
+        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4">
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2">
             {t("pitchDeck.problem.label")}
           </p>
@@ -107,7 +107,7 @@ export default function PitchDeck() {
         </div>
 
         {/* The Solution */}
-        <div className="py-10 px-8">
+        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4">
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2">
             {t("pitchDeck.solution.label")}
           </p>
@@ -136,7 +136,7 @@ export default function PitchDeck() {
         </div>
 
         {/* How It Works */}
-        <div className="py-10 px-8 bg-muted/30" style={{ pageBreakAfter: 'always' }}>
+        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4" style={{ pageBreakAfter: 'always' }}>
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2">
             {t("pitchDeck.howItWorks.label")}
           </p>
@@ -175,7 +175,7 @@ export default function PitchDeck() {
         </div>
 
         {/* Pricing */}
-        <div className="py-10 px-8">
+        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4">
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2 text-center">
             {t("pitchDeck.pricing.label")}
           </p>
@@ -224,7 +224,7 @@ export default function PitchDeck() {
         </div>
 
         {/* Team & Contact */}
-        <div className="py-10 px-8 bg-muted/30">
+        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4">
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2 text-center">
             {t("pitchDeck.team.label")}
           </p>
