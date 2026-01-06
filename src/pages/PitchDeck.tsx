@@ -65,20 +65,20 @@ export default function PitchDeck() {
 
       <div ref={pdfRef} className="bg-white max-w-4xl mx-auto p-4">
         {/* Cover - White */}
-        <div className="py-16 px-8">
-          <div className="flex items-center mb-10">
+        <div style={{ padding: '64px 32px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
             <img 
               src={logo} 
               alt="One Rooted" 
-              className="h-8"
+              style={{ height: '32px' }}
             />
-            <span className="text-muted-foreground/40 mx-3">|</span>
-            <span className="text-lg font-medium text-foreground">One Rooted</span>
+            <span style={{ color: '#9ca3af', margin: '0 12px' }}>|</span>
+            <span style={{ fontSize: '18px', fontWeight: 500, color: '#1f2937' }}>One Rooted</span>
           </div>
-          <h1 className="text-4xl font-semibold text-foreground mb-3 tracking-tight">
+          <h1 style={{ fontSize: '36px', fontWeight: 600, color: '#1f2937', marginBottom: '12px', letterSpacing: '-0.025em' }}>
             {t("pitchDeck.cover.headline")}
           </h1>
-          <p className="text-base text-muted-foreground max-w-2xl">
+          <p style={{ fontSize: '16px', color: '#6b7280', maxWidth: '672px' }}>
             Not another ATS, the next-gen Talent Acquisition SaaS that centralises hiring workflows, automates candidate tracking, and scales with your business.
           </p>
         </div>
