@@ -1145,5 +1145,82 @@
         "trust": "30 dagen geld terug garantie"
       }
     }
+  },
+  "pitchDeck": {
+    "seo": {
+      "title": "Pitch Deck | OneRooted - Het Hiring OS",
+      "description": "OneRooted pitch deck: ontdek het Hiring Operating System dat elke hiring-beslissing verbindt in één intelligent platform."
+    },
+    "exportButton": "Download PDF",
+    "cover": {
+      "headline": "Het Hiring OS",
+      "subheadline": "Eén systeem. Elke hiring-beslissing. Verbonden."
+    },
+    "problem": {
+      "label": "Het Probleem",
+      "headline": "Recruitment is niet kapot. Je tools wel.",
+      "consequence": "Geen gedeelde waarheid. Geen eigenaarschap. Geen overzicht."
+    },
+    "solution": {
+      "label": "De Oplossing",
+      "headline": "Maak kennis met het Hiring Operating System",
+      "description": "OneRooted verbindt al je hiring data, workflows en stakeholders in één intelligent systeem dat je helpt sneller betere hiring-beslissingen te nemen."
+    },
+    "howItWorks": {
+      "label": "Hoe Het Werkt",
+      "headline": "Van gefragmenteerd naar verbonden",
+      "steps": {
+        "1": {
+          "title": "Verbind",
+          "description": "Alle kandidaten, gesprekken en context samengebracht in één systeem."
+        },
+        "2": {
+          "title": "Beslis",
+          "description": "Gestructureerde scoring vervangt onderbuikgevoel door datagedreven vertrouwen."
+        },
+        "3": {
+          "title": "Hire",
+          "description": "Duidelijke verantwoordelijkheid zorgt dat elke beslissing vooruit gaat."
+        }
+      },
+      "stats": ["snellere screening", "minder coördinatie-overhead", "gedeelde bron van waarheid", "AVG-compliant"]
+    },
+    "pricing": {
+      "label": "Prijzen",
+      "headline": "Heldere prijzen. Geen verrassingen.",
+      "note": "Alle plannen bevatten onbeperkte gebruikers en kandidaten. Geen setupkosten.",
+      "plans": {
+        "light": {
+          "name": "Light",
+          "description": "Probeer het volledige systeem",
+          "features": ["1 actieve vacature", "Tot 100 kandidaten", "Volledig OneRooted systeem"]
+        },
+        "base": {
+          "name": "Base",
+          "description": "Essentiële recruitment ondersteuning",
+          "features": ["OneRooted systeem", "Up-to-date talentpool", "E-Academy toegang"]
+        },
+        "plus": {
+          "name": "Plus",
+          "description": "Sneller schakelen, slimmer aannemen",
+          "features": ["Alles in Base", "Retention search", "Proactieve sourcing"]
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "Hiring volledig georganiseerd",
+          "features": ["Alles in Plus", "Kandidaatinterviews", "Planning & coördinatie"]
+        }
+      }
+    },
+    "team": {
+      "label": "Team",
+      "headline": "Gebouwd door operators, voor operators",
+      "subheadline": "OneRooted is niet gebouwd door product managers die hiring-problemen raden. Het is gebouwd door operators die ze decennialang hebben meegemaakt.",
+      "partOf": "Onderdeel van",
+      "contact": {
+        "email": "E-mail",
+        "website": "Website"
+      }
+    }
   }
 }
