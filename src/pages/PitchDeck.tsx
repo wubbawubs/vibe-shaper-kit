@@ -121,9 +121,10 @@ export default function PitchDeck() {
     setIsExporting(true);
     
     try {
-      // Build export URL with ?export=true parameter
-      const baseUrl = window.location.origin + window.location.pathname;
-      const exportUrl = `${baseUrl}?export=true`;
+      // Build export URL - preserve existing query params (like __lovable_token) and add export=true
+      const currentUrl = new URL(window.location.href);
+      currentUrl.searchParams.set('export', 'true');
+      const exportUrl = currentUrl.toString();
       const filename = `OneRooted-PitchDeck-${lang || 'en'}.pdf`;
 
       const response = await supabase.functions.invoke('export-pdf', {
