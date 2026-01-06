@@ -170,9 +170,10 @@ export default function PitchDeck() {
         </Button>
       </div>
 
-      {/* PDF Container - Preview wrapper */}
+      {/* PDF Container - Preview wrapper (grey bg for preview, removed during export via CSS) */}
       <div 
         id="pdf-export-root"
+        className="pdf-export-container"
         style={{ 
           backgroundColor: '#e5e7eb', 
           padding: '24px',

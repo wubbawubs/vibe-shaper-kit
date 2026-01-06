@@ -51,7 +51,9 @@ serve(async (req) => {
             bottom: '0mm',
             left: '0mm',
           },
-          preferCSSPageSize: true,
+          preferCSSPageSize: false,
+          width: '794px',
+          height: '1123px',
         },
         gotoOptions: {
           waitUntil: 'networkidle2',
