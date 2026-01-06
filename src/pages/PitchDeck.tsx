@@ -66,16 +66,19 @@ export default function PitchDeck() {
       <div ref={pdfRef} className="bg-white max-w-4xl mx-auto p-4">
         {/* Cover - White */}
         <div className="text-center py-16 px-8">
-          <img 
-            src={logo} 
-            alt="One Rooted" 
-            className="h-12 mx-auto mb-6"
-          />
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <img 
+              src={logo} 
+              alt="One Rooted" 
+              className="h-10"
+            />
+            <span className="text-2xl font-semibold text-foreground">One Rooted</span>
+          </div>
           <h1 className="text-4xl font-semibold text-foreground mb-3 tracking-tight">
             {t("pitchDeck.cover.headline")}
           </h1>
-          <p className="text-lg text-muted-foreground">
-            {t("pitchDeck.cover.subheadline")}
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+            Not another ATS, the next-gen Talent Acquisition SaaS that centralises hiring workflows, automates candidate tracking, and scales with your business.
           </p>
         </div>
 
@@ -90,7 +93,7 @@ export default function PitchDeck() {
           
           <div className="grid grid-cols-3 gap-3 mb-6">
             {["ats", "slack", "excel"].map((tool) => (
-              <div key={tool} className="bg-white/10 backdrop-blur rounded-lg p-3">
+              <div key={tool} className="bg-white/10 backdrop-blur rounded-lg p-3 flex flex-col justify-center min-h-[80px]">
                 <h3 className="text-sm font-semibold text-primary-foreground mb-1">
                   {t(`problem.tools.${tool}.name`)}
                 </h3>
@@ -146,8 +149,8 @@ export default function PitchDeck() {
           
           <div className="grid grid-cols-3 gap-4 mb-6">
             {[1, 2, 3].map((step) => (
-              <div key={step}>
-                <div className="w-6 h-6 bg-white text-primary rounded-full flex items-center justify-center font-semibold text-xs mb-2">
+              <div key={step} className="text-center">
+                <div className="w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center font-semibold text-sm mb-3 mx-auto">
                   {step}
                 </div>
                 <h3 className="text-sm font-semibold text-primary-foreground mb-1">
