@@ -147,6 +147,8 @@ export default function PitchDeck() {
           height: PAGE_HEIGHT,
           windowWidth: PAGE_WIDTH,
           windowHeight: PAGE_HEIGHT,
+          scrollX: 0,
+          scrollY: 0,
         });
 
         const imgData = canvas.toDataURL('image/png');
@@ -213,14 +215,15 @@ export default function PitchDeck() {
         {/* ========== PAGE 1 ========== */}
         <section id="pdf-page-1" className="pdf-page" style={pageStyle}>
           {/* Header - Brand row with fixed alignment */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
+          <div className="brandRow" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
             <img 
               src={logo} 
               alt="One Rooted" 
+              className="brandMark"
               style={{ height: '24px', width: 'auto', display: 'block' }} 
             />
-            <span style={{ color: '#9ca3af', lineHeight: 1, fontSize: '16px' }}>|</span>
-            <span style={{ fontSize: '15px', fontWeight: 600, color: colors.foreground, lineHeight: 1 }}>One Rooted</span>
+            <span className="brandDivider" style={{ color: '#9ca3af', lineHeight: 1, fontSize: '16px' }}>|</span>
+            <span className="brandName" style={{ fontSize: '15px', fontWeight: 600, color: colors.foreground, lineHeight: 1 }}>One Rooted</span>
           </div>
 
           {/* Hero - Compact */}
