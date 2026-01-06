@@ -66,13 +66,13 @@ export default function PitchDeck() {
       <div ref={pdfRef} className="bg-white max-w-4xl mx-auto p-4">
         {/* Cover - White */}
         <div className="py-16 px-8">
-          <div className="flex items-center gap-3 mb-10">
+          <div className="flex items-center mb-10">
             <img 
               src={logo} 
               alt="One Rooted" 
               className="h-8"
             />
-            <span className="text-muted-foreground/40">|</span>
+            <span className="text-muted-foreground/40 mx-3">|</span>
             <span className="text-lg font-medium text-foreground">One Rooted</span>
           </div>
           <h1 className="text-4xl font-semibold text-foreground mb-3 tracking-tight">
