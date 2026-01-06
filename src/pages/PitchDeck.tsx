@@ -170,22 +170,13 @@ export default function PitchDeck() {
         </Button>
       </div>
 
-      {/* PDF Container - Preview wrapper (dark bg for preview contrast, removed during export via CSS) */}
+      {/* PDF Container - Preview wrapper (dark canvas bg, removed during export via CSS) */}
       <div 
         id="pdf-export-root"
         className="pdf-export-container pdfPreview"
-        style={{ 
-          backgroundColor: '#1a1a1a', 
-          padding: '40px 24px',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '32px',
-          minHeight: '100vh',
-        }}
       >
         {/* ========== PAGE 1 ========== */}
-        <section id="pdf-page-1" className="pdf-page" style={{...pageStyle, boxShadow: '0 20px 60px rgba(0,0,0,0.5)'}}>
+        <section id="pdf-page-1" className="pdf-page" style={pageStyle}>
           {/* Header - Brand row with subtle border */}
           <div className="brandRow pdfHeader" style={{ display: 'flex', alignItems: 'center', gap: '10px', paddingBottom: '14px', borderBottom: '1px solid rgba(0,0,0,0.06)', marginBottom: '20px' }}>
             <img 
@@ -307,13 +298,11 @@ export default function PitchDeck() {
           </div>
 
           {/* Page number - absolute positioned */}
-          <div className="pdfPageNumber" style={{ position: 'absolute', bottom: '20px', right: '24px', fontSize: '10px', color: colors.mutedForeground }}>
-            1 / 2
-          </div>
+          <div className="pdfPageNumber">1 / 2</div>
         </section>
 
         {/* ========== PAGE 2 ========== */}
-        <section id="pdf-page-2" className="pdf-page" style={{...pageStyle, boxShadow: '0 20px 60px rgba(0,0,0,0.5)'}}>
+        <section id="pdf-page-2" className="pdf-page" style={pageStyle}>
           {/* Pricing */}
           <div className="pdfSection" style={{ marginBottom: '24px' }}>
             <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: colors.label, fontWeight: 500, marginBottom: '6px', textAlign: 'center' }}>
@@ -422,9 +411,7 @@ export default function PitchDeck() {
           </div>
 
           {/* Page number - absolute positioned */}
-          <div className="pdfPageNumber" style={{ position: 'absolute', bottom: '20px', right: '24px', fontSize: '10px', color: colors.mutedForeground }}>
-            2 / 2
-          </div>
+          <div className="pdfPageNumber">2 / 2</div>
         </section>
       </div>
     </>
