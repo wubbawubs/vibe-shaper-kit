@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint .",
-    "export-pdf": "node scripts/export-pdf.mjs"
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "lint": "eslint .",
+  "export-pdf": "node scripts/export-pdf.mjs"
+}
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
