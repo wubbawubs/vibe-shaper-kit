@@ -4,8 +4,8 @@ import { Download, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 import { useState, useCallback } from "react";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 import logo from "@/assets/onerooted-logo-transparent.avif";
 import luuk from "@/assets/team/luuk.jpeg";
 import robin from "@/assets/team/robin.jpeg";
@@ -105,66 +105,44 @@ export default function PitchDeck() {
 
   const exportToPDF = useCallback(async () => {
     setIsExporting(true);
-    document.documentElement.classList.add('pdf-exporting');
     
     try {
-      // Wait for fonts to load
-      await document.fonts.ready;
-      
-      // Wait for all images to load
-      await Promise.all(
-        Array.from(document.images)
-          .filter(img => !img.complete)
-          .map(img => new Promise(res => { img.onload = img.onerror = () => res(true); }))
-      );
-      
-      await new Promise(resolve => setTimeout(resolve, 200));
+      const currentUrl = window.location.href;
+      const filename = `OneRooted-PitchDeck-${lang || 'en'}.pdf`;
 
-      const pdf = new jsPDF({
-        orientation: 'portrait',
-        unit: 'pt',
-        format: 'a4',
+      const { data, error } = await supabase.functions.invoke('export-pdf', {
+        body: { url: currentUrl, filename },
       });
 
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = pdf.internal.pageSize.getHeight();
-
-      // Export each page
-      const pageIds = ['pdf-page-1', 'pdf-page-2'];
-      
-      for (let i = 0; i < pageIds.length; i++) {
-        const element = document.getElementById(pageIds[i]);
-        if (!element) continue;
-
-        const canvas = await html2canvas(element, {
-          scale: 2,
-          backgroundColor: '#ffffff',
-          logging: false,
-          useCORS: true,
-          allowTaint: false,
-          removeContainer: true,
-          width: PAGE_WIDTH,
-          height: PAGE_HEIGHT,
-          windowWidth: PAGE_WIDTH,
-          windowHeight: PAGE_HEIGHT,
-          scrollX: 0,
-          scrollY: 0,
-        });
-
-        const imgData = canvas.toDataURL('image/png');
-
-        if (i > 0) {
-          pdf.addPage();
-        }
-
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+      if (error) {
+        throw new Error(error.message || 'PDF export failed');
       }
 
-      pdf.save(`OneRooted-PitchDeck-${lang || 'en'}.pdf`);
+      // Convert base64 to blob and download
+      const pdfBase64 = data.pdf;
+      const byteCharacters = atob(pdfBase64);
+      const byteNumbers = new Array(byteCharacters.length);
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+      }
+      const byteArray = new Uint8Array(byteNumbers);
+      const blob = new Blob([byteArray], { type: 'application/pdf' });
+
+      // Download the file
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      toast.success('PDF exported successfully!');
     } catch (error) {
       console.error('PDF export failed:', error);
+      toast.error('PDF export failed. Please try again.');
     } finally {
-      document.documentElement.classList.remove('pdf-exporting');
       setIsExporting(false);
     }
   }, [lang]);
