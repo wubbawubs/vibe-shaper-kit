@@ -346,10 +346,97 @@ html {
 .pdf-exporting svg,
 .pdf-exporting img {
   image-rendering: auto;
+  display: block !important;
 }
 
 /* Force integer pixels on PDF pages */
 .pdf-exporting #pdf-page-1,
 .pdf-exporting #pdf-page-2 {
   transform: none !important;
+}
+
+/* Step circles - absolute centering for html2canvas */
+.pdf-exporting .stepCircle {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 9999px !important;
+  position: relative !important;
+  display: block !important;
+}
+
+.pdf-exporting .stepNum {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -52%) !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  display: block !important;
+}
+
+/* Icon boxes - force block rendering */
+.pdf-exporting .iconBox {
+  width: 26px !important;
+  height: 26px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.pdf-exporting .iconBox img {
+  width: 14px !important;
+  height: 14px !important;
+  display: block !important;
+}
+
+/* Social/LinkedIn rows - baseline proof */
+.pdf-exporting .socialRow {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.pdf-exporting .socialIcon {
+  width: 10px !important;
+  height: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.pdf-exporting .socialIcon img {
+  width: 10px !important;
+  height: 10px !important;
+  display: block !important;
+}
+
+.pdf-exporting .socialText {
+  line-height: 1 !important;
+  transform: translateY(-0.5px) !important;
+}
+
+/* Team row - margin-based spacing */
+.pdf-exporting .teamRow {
+  display: flex !important;
+}
+
+.pdf-exporting .teamMember {
+  flex: 1 !important;
+}
+
+/* Pricing cards - tighter layout */
+.pdf-exporting .planCard {
+  padding: 12px !important;
+}
+
+.pdf-exporting .planPrice {
+  font-size: 18px !important;
+  line-height: 1.1 !important;
+}
+
+/* Kill any remaining flex baseline issues */
+.pdf-exporting [style*="inline-flex"] {
+  display: flex !important;
 }

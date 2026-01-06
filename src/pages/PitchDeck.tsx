@@ -64,15 +64,13 @@ const pageStyle: React.CSSProperties = {
   overflow: 'hidden',
 };
 
-// Step circle style - fixed for PDF alignment
+// Step circle style - absolute positioning for perfect PDF centering
 const stepCircleStyle: React.CSSProperties = {
   width: '32px',
   height: '32px',
   backgroundColor: colors.white,
   borderRadius: '50%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
+  position: 'relative',
   margin: '0 auto 6px',
 };
 
@@ -81,21 +79,24 @@ const stepNumberStyle: React.CSSProperties = {
   fontWeight: 700,
   fontSize: '13px',
   lineHeight: 1,
-  display: 'block',
-  textAlign: 'center',
+  position: 'absolute',
+  left: '50%',
+  top: '50%',
+  transform: 'translate(-50%, -52%)',
 };
 
 // Icon box style - fixed for PDF alignment
-const iconBoxStyle: React.CSSProperties = {
-  width: '26px',
-  height: '26px',
-  backgroundColor: 'rgba(45, 74, 66, 0.1)',
-  borderRadius: '4px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  marginBottom: '6px',
-};
+  const iconBoxStyle: React.CSSProperties = {
+    width: '26px',
+    height: '26px',
+    backgroundColor: 'rgba(45, 74, 66, 0.1)',
+    borderRadius: '4px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: '6px',
+    flexShrink: 0,
+  };
 
 export default function PitchDeck() {
   const { t } = useTranslation();
@@ -104,19 +105,20 @@ export default function PitchDeck() {
 
   const exportToPDF = useCallback(async () => {
     setIsExporting(true);
+    document.documentElement.classList.add('pdf-exporting');
     
     try {
-      // Add PDF exporting class
-      document.documentElement.classList.add("pdf-exporting");
-      
-      // Wait for fonts and images to load
+      // Wait for fonts to load
       await document.fonts.ready;
+      
+      // Wait for all images to load
       await Promise.all(
         Array.from(document.images)
           .filter(img => !img.complete)
-          .map(img => new Promise(res => { img.onload = img.onerror = res; }))
+          .map(img => new Promise(res => { img.onload = img.onerror = () => res(true); }))
       );
-      await new Promise(r => setTimeout(r, 150));
+      
+      await new Promise(resolve => setTimeout(resolve, 200));
 
       const pdf = new jsPDF({
         orientation: 'portrait',
@@ -127,7 +129,7 @@ export default function PitchDeck() {
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
 
-      // Render each page separately
+      // Export each page
       const pageIds = ['pdf-page-1', 'pdf-page-2'];
       
       for (let i = 0; i < pageIds.length; i++) {
@@ -139,15 +141,16 @@ export default function PitchDeck() {
           backgroundColor: '#ffffff',
           logging: false,
           useCORS: true,
-          allowTaint: true,
+          allowTaint: false,
+          removeContainer: true,
         });
 
         const imgData = canvas.toDataURL('image/png');
-        
+
         if (i > 0) {
           pdf.addPage();
         }
-        
+
         pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
       }
 
@@ -155,7 +158,7 @@ export default function PitchDeck() {
     } catch (error) {
       console.error('PDF export failed:', error);
     } finally {
-      document.documentElement.classList.remove("pdf-exporting");
+      document.documentElement.classList.remove('pdf-exporting');
       setIsExporting(false);
     }
   }, [lang]);
@@ -393,18 +396,20 @@ export default function PitchDeck() {
               {t("pitchDeck.team.subheadline")}
             </p>
             
-            <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
-              {teamMembers.map((member) => (
-                <div key={member.name} style={{ flex: 1, textAlign: 'center' }}>
+            <div className="teamRow" style={{ display: 'flex', marginBottom: '16px' }}>
+              {teamMembers.map((member, index) => (
+                <div key={member.name} className="teamMember" style={{ flex: 1, textAlign: 'center', marginRight: index < teamMembers.length - 1 ? '16px' : '0' }}>
                   <img 
                     src={member.image} 
                     alt={member.name}
                     style={{ width: '52px', height: '52px', borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.3)', display: 'block', margin: '0 auto 6px' }}
                   />
                   <h3 style={{ fontWeight: 600, color: colors.primaryForeground, fontSize: '12px', margin: '0 0 2px 0' }}>{member.name}</h3>
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" style={{ fontSize: '9px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
-                    <img src={icons.linkedin} alt="" style={{ width: '9px', height: '9px', display: 'block' }} />
-                    <span>LinkedIn</span>
+                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="socialRow" style={{ fontSize: '9px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span className="socialIcon" style={{ width: '10px', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginRight: '4px' }}>
+                      <img src={icons.linkedin} alt="" style={{ width: '10px', height: '10px', display: 'block' }} />
+                    </span>
+                    <span className="socialText" style={{ lineHeight: 1 }}>LinkedIn</span>
                   </a>
                 </div>
               ))}
