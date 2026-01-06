@@ -24,11 +24,21 @@ const colors = {
   white: '#ffffff',
 };
 
+// Base64 encoded SVG icons for PDF compatibility
+const icons = {
+  data: `data:image/svg+xml;base64,${btoa('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>')}`,
+  workflows: `data:image/svg+xml;base64,${btoa('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>')}`,
+  intelligence: `data:image/svg+xml;base64,${btoa('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>')}`,
+  accountability: `data:image/svg+xml;base64,${btoa('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>')}`,
+  check: `data:image/svg+xml;base64,${btoa('<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#2d4a42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>')}`,
+  linkedin: `data:image/svg+xml;base64,${btoa('<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>')}`,
+};
+
 const pillars = [
-  { icon: "📊", key: "data" },
-  { icon: "⚡", key: "workflows" },
-  { icon: "👥", key: "intelligence" },
-  { icon: "🛡️", key: "accountability" },
+  { icon: icons.data, key: "data" },
+  { icon: icons.workflows, key: "workflows" },
+  { icon: icons.intelligence, key: "intelligence" },
+  { icon: icons.accountability, key: "accountability" },
 ];
 
 const teamMembers = [
@@ -193,10 +203,9 @@ export default function PitchDeck() {
                       borderRadius: '4px', 
                       marginBottom: '8px',
                       textAlign: 'center',
-                      lineHeight: '32px',
-                      fontSize: '16px'
+                      lineHeight: '32px'
                     }}>
-                      {icon}
+                      <img src={icon} alt="" style={{ width: '16px', height: '16px', verticalAlign: 'middle' }} />
                     </div>
                     <h3 style={{ fontSize: '14px', fontWeight: 600, color: colors.foreground, marginBottom: '4px' }}>
                       {t(`whatIs.pillars.${key}.title`)}
@@ -346,7 +355,7 @@ export default function PitchDeck() {
                         {(t(`pitchDeck.pricing.plans.${key}.features`, { returnObjects: true }) as string[]).slice(0, 3).map((feature, i) => (
                           <tr key={i}>
                             <td style={{ width: '14px', verticalAlign: 'top', paddingBottom: '2px' }}>
-                              <span style={{ color: colors.primary, fontSize: '10px' }}>✓</span>
+                              <img src={icons.check} alt="" style={{ width: '10px', height: '10px' }} />
                             </td>
                             <td style={{ fontSize: '10px', color: colors.mutedForeground, lineHeight: 1.4, paddingBottom: '2px' }}>
                               {feature}
@@ -414,7 +423,8 @@ export default function PitchDeck() {
                       rel="noopener noreferrer"
                       style={{ fontSize: '10px', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}
                     >
-                      🔗 LinkedIn
+                      <img src={icons.linkedin} alt="" style={{ width: '10px', height: '10px', verticalAlign: 'middle', marginRight: '4px' }} />
+                      LinkedIn
                     </a>
                   </td>
                 ))}
