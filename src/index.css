@@ -272,3 +272,66 @@ html {
     min-height: -webkit-fill-available;
   }
 }
+
+/* Pitch Deck Print Styles */
+@media print {
+  /* Force page breaks between slides */
+  .pitch-slide {
+    page-break-after: always;
+    break-after: page;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .pitch-slide:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Reset backgrounds for print */
+  body {
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Ensure colors print correctly */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide non-printable elements */
+  .print\\:hidden,
+  [class*="print:hidden"] {
+    display: none !important;
+  }
+
+  /* Optimize typography for print */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  img {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Remove shadows and complex effects for cleaner print */
+  .shadow-lg,
+  .shadow-md,
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+
+  /* Ensure grids don't break across pages */
+  .grid {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
