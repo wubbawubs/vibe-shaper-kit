@@ -19,10 +19,10 @@ const pillars = [
 ];
 
 const teamMembers = [
-  { name: "Robin", image: robin, linkedin: "https://www.linkedin.com/in/robinbrons/" },
-  { name: "Erik", image: erik, linkedin: "https://www.linkedin.com/in/erikbrons/" },
-  { name: "Juliette", image: juliette, linkedin: "https://www.linkedin.com/in/juliettebrons/" },
-  { name: "Luuk", image: luuk, linkedin: "https://www.linkedin.com/in/luuk-van-der-laan-33b2a7135/" },
+  { name: "Robin", image: robin, linkedin: "https://www.linkedin.com/in/robindennie024/" },
+  { name: "Erik", image: erik, linkedin: "https://www.linkedin.com/in/erik-dijkshoorn-1a72aa17/" },
+  { name: "Juliette", image: juliette, linkedin: "https://www.linkedin.com/in/juliette-welten-ab566061/" },
+  { name: "Luuk", image: luuk, linkedin: "https://www.linkedin.com/in/luuk-wubs-32a451252/" },
 ];
 
 export default function PitchDeck() {
@@ -290,8 +290,8 @@ export default function PitchDeck() {
               <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                 <div className="text-muted-foreground">
                   <p className="font-medium text-foreground">{t("pitchDeck.team.contact.email")}</p>
-                  <a href="mailto:hello@onerooted.nl" className="text-primary hover:underline">
-                    hello@onerooted.nl
+                  <a href="mailto:info@onerooted.nl" className="text-primary hover:underline">
+                    info@onerooted.nl
                   </a>
                 </div>
                 <div className="hidden md:block w-px h-8 bg-border" />
