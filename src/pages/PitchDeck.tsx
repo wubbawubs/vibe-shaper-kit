@@ -66,7 +66,7 @@ export default function PitchDeck() {
 
       <div ref={pdfRef} className="bg-background">
         {/* Slide 1: Cover */}
-        <section className="min-h-screen flex flex-col items-center justify-center p-8 md:p-16 relative overflow-hidden">
+        <section className="pitch-slide min-h-screen flex flex-col items-center justify-center p-8 md:p-16 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,hsl(var(--primary)/0.08),transparent_50%)]" />
           <div className="relative z-10 text-center max-w-4xl mx-auto">
             <img 
@@ -84,7 +84,7 @@ export default function PitchDeck() {
         </section>
 
         {/* Slide 2: The Problem */}
-        <section className="min-h-screen flex flex-col items-center justify-center p-8 md:p-16 bg-muted/30">
+        <section className="pitch-slide min-h-screen flex flex-col items-center justify-center p-8 md:p-16 bg-muted/30">
           <div className="max-w-5xl mx-auto w-full">
             <p className="text-sm uppercase tracking-widest text-label font-medium mb-4">
               {t("pitchDeck.problem.label")}
@@ -115,7 +115,7 @@ export default function PitchDeck() {
         </section>
 
         {/* Slide 3: The Solution */}
-        <section className="min-h-screen flex flex-col items-center justify-center p-8 md:p-16">
+        <section className="pitch-slide min-h-screen flex flex-col items-center justify-center p-8 md:p-16">
           <div className="max-w-5xl mx-auto w-full">
             <p className="text-sm uppercase tracking-widest text-label font-medium mb-4">
               {t("pitchDeck.solution.label")}
@@ -146,7 +146,7 @@ export default function PitchDeck() {
         </section>
 
         {/* Slide 4: How It Works */}
-        <section className="min-h-screen flex flex-col items-center justify-center p-8 md:p-16 bg-muted/30">
+        <section className="pitch-slide min-h-screen flex flex-col items-center justify-center p-8 md:p-16 bg-muted/30">
           <div className="max-w-5xl mx-auto w-full">
             <p className="text-sm uppercase tracking-widest text-label font-medium mb-4">
               {t("pitchDeck.howItWorks.label")}
@@ -192,7 +192,7 @@ export default function PitchDeck() {
         </section>
 
         {/* Slide 5: Pricing */}
-        <section className="min-h-screen flex flex-col items-center justify-center p-8 md:p-16">
+        <section className="pitch-slide min-h-screen flex flex-col items-center justify-center p-8 md:p-16">
           <div className="max-w-6xl mx-auto w-full">
             <p className="text-sm uppercase tracking-widest text-label font-medium mb-4 text-center">
               {t("pitchDeck.pricing.label")}
@@ -245,7 +245,7 @@ export default function PitchDeck() {
         </section>
 
         {/* Slide 6: Team & Contact */}
-        <section className="min-h-screen flex flex-col items-center justify-center p-8 md:p-16 bg-muted/30">
+        <section className="pitch-slide min-h-screen flex flex-col items-center justify-center p-8 md:p-16 bg-muted/30">
           <div className="max-w-5xl mx-auto w-full">
             <p className="text-sm uppercase tracking-widest text-label font-medium mb-4 text-center">
               {t("pitchDeck.team.label")}
