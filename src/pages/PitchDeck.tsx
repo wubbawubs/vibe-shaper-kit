@@ -143,6 +143,10 @@ export default function PitchDeck() {
           useCORS: true,
           allowTaint: false,
           removeContainer: true,
+          width: PAGE_WIDTH,
+          height: PAGE_HEIGHT,
+          windowWidth: PAGE_WIDTH,
+          windowHeight: PAGE_HEIGHT,
         });
 
         const imgData = canvas.toDataURL('image/png');
@@ -195,6 +199,7 @@ export default function PitchDeck() {
 
       {/* PDF Container - Preview wrapper */}
       <div 
+        id="pdf-export-root"
         style={{ 
           backgroundColor: '#e5e7eb', 
           padding: '24px',
@@ -206,7 +211,7 @@ export default function PitchDeck() {
         }}
       >
         {/* ========== PAGE 1 ========== */}
-        <section id="pdf-page-1" style={pageStyle}>
+        <section id="pdf-page-1" className="pdf-page" style={pageStyle}>
           {/* Header - Brand row with fixed alignment */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
             <img 
@@ -333,7 +338,7 @@ export default function PitchDeck() {
         </section>
 
         {/* ========== PAGE 2 ========== */}
-        <section id="pdf-page-2" style={pageStyle}>
+        <section id="pdf-page-2" className="pdf-page" style={pageStyle}>
           {/* Pricing */}
           <div style={{ marginBottom: '20px' }}>
             <p style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.1em', color: colors.label, fontWeight: 500, marginBottom: '4px', textAlign: 'center' }}>

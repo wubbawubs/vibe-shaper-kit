@@ -349,10 +349,34 @@ html {
   display: block !important;
 }
 
-/* Force integer pixels on PDF pages */
+/* Position export root offscreen to avoid parent constraints */
+.pdf-exporting #pdf-export-root {
+  position: fixed !important;
+  left: -99999px !important;
+  top: 0 !important;
+  width: 794px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+/* Hard-lock PDF pages to A4 dimensions */
+.pdf-exporting .pdf-page,
 .pdf-exporting #pdf-page-1,
 .pdf-exporting #pdf-page-2 {
+  width: 794px !important;
+  height: 1123px !important;
+  min-width: 794px !important;
+  max-width: 794px !important;
+  min-height: 1123px !important;
+  max-height: 1123px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  background: #fff !important;
   transform: none !important;
+  margin: 0 !important;
+  padding: 36px 44px !important;
+  position: relative !important;
 }
 
 /* Step circles - absolute centering for html2canvas */
