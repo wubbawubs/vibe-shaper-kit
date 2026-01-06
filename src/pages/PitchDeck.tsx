@@ -64,8 +64,8 @@ export default function PitchDeck() {
       </div>
 
       <div ref={pdfRef} className="bg-white max-w-4xl mx-auto">
-        {/* Cover */}
-        <div className="text-center py-16 px-8 border-2 border-primary rounded-lg m-4">
+        {/* Cover - White */}
+        <div className="text-center py-16 px-8">
           <img 
             src={logo} 
             alt="One Rooted" 
@@ -79,35 +79,35 @@ export default function PitchDeck() {
           </p>
         </div>
 
-        {/* The Problem */}
-        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4">
-          <p className="text-xs uppercase tracking-widest text-label font-medium mb-2">
+        {/* The Problem - Primary BG */}
+        <div className="py-10 px-8 bg-primary text-primary-foreground">
+          <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2">
             {t("pitchDeck.problem.label")}
           </p>
-          <h2 className="text-2xl font-semibold text-foreground mb-6">
+          <h2 className="text-2xl font-semibold text-primary-foreground mb-6">
             {t("pitchDeck.problem.headline")}
           </h2>
           
           <div className="grid grid-cols-3 gap-3 mb-6">
             {["ats", "slack", "excel"].map((tool) => (
-              <div key={tool} className="bg-white border border-border rounded-lg p-3">
-                <h3 className="text-sm font-semibold text-foreground mb-1">
+              <div key={tool} className="bg-white/10 backdrop-blur rounded-lg p-3">
+                <h3 className="text-sm font-semibold text-primary-foreground mb-1">
                   {t(`problem.tools.${tool}.name`)}
                 </h3>
-                <p className="text-xs text-muted-foreground leading-snug">
+                <p className="text-xs text-primary-foreground/80 leading-snug">
                   {t(`problem.tools.${tool}.description`)}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-base text-foreground font-medium text-center">
+          <p className="text-base text-primary-foreground font-medium text-center">
             {t("pitchDeck.problem.consequence")}
           </p>
         </div>
 
-        {/* The Solution */}
-        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4">
+        {/* The Solution - White */}
+        <div className="py-10 px-8">
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2">
             {t("pitchDeck.solution.label")}
           </p>
@@ -135,37 +135,37 @@ export default function PitchDeck() {
           </div>
         </div>
 
-        {/* How It Works */}
-        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4" style={{ pageBreakAfter: 'always' }}>
-          <p className="text-xs uppercase tracking-widest text-label font-medium mb-2">
+        {/* How It Works - Primary BG */}
+        <div className="py-10 px-8 bg-primary text-primary-foreground" style={{ pageBreakAfter: 'always' }}>
+          <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2">
             {t("pitchDeck.howItWorks.label")}
           </p>
-          <h2 className="text-2xl font-semibold text-foreground mb-6">
+          <h2 className="text-2xl font-semibold text-primary-foreground mb-6">
             {t("pitchDeck.howItWorks.headline")}
           </h2>
           
           <div className="grid grid-cols-3 gap-4 mb-6">
             {[1, 2, 3].map((step) => (
               <div key={step}>
-                <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-xs mb-2">
+                <div className="w-6 h-6 bg-white text-primary rounded-full flex items-center justify-center font-semibold text-xs mb-2">
                   {step}
                 </div>
-                <h3 className="text-sm font-semibold text-foreground mb-1">
+                <h3 className="text-sm font-semibold text-primary-foreground mb-1">
                   {t(`pitchDeck.howItWorks.steps.${step}.title`)}
                 </h3>
-                <p className="text-xs text-muted-foreground leading-snug">
+                <p className="text-xs text-primary-foreground/80 leading-snug">
                   {t(`pitchDeck.howItWorks.steps.${step}.description`)}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="bg-white border border-border rounded-lg p-4">
+          <div className="bg-white/10 backdrop-blur rounded-lg p-4">
             <div className="grid grid-cols-4 gap-3 text-center">
               {["40%", "60%", "1", "100%"].map((stat, i) => (
                 <div key={i}>
-                  <p className="text-xl font-semibold text-primary">{stat}</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xl font-semibold text-white">{stat}</p>
+                  <p className="text-xs text-primary-foreground/80">
                     {t(`pitchDeck.howItWorks.stats.${i}`)}
                   </p>
                 </div>
@@ -174,8 +174,8 @@ export default function PitchDeck() {
           </div>
         </div>
 
-        {/* Pricing */}
-        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4">
+        {/* Pricing - White */}
+        <div className="py-10 px-8">
           <p className="text-xs uppercase tracking-widest text-label font-medium mb-2 text-center">
             {t("pitchDeck.pricing.label")}
           </p>
@@ -223,15 +223,15 @@ export default function PitchDeck() {
           </p>
         </div>
 
-        {/* Team & Contact */}
-        <div className="py-10 px-8 border-2 border-primary rounded-lg m-4">
-          <p className="text-xs uppercase tracking-widest text-label font-medium mb-2 text-center">
+        {/* Team & Contact - Primary BG */}
+        <div className="py-10 px-8 bg-primary text-primary-foreground">
+          <p className="text-xs uppercase tracking-widest text-primary-foreground/70 font-medium mb-2 text-center">
             {t("pitchDeck.team.label")}
           </p>
-          <h2 className="text-2xl font-semibold text-foreground mb-2 text-center">
+          <h2 className="text-2xl font-semibold text-primary-foreground mb-2 text-center">
             {t("pitchDeck.team.headline")}
           </h2>
-          <p className="text-sm text-muted-foreground text-center mb-6">
+          <p className="text-sm text-primary-foreground/80 text-center mb-6">
             {t("pitchDeck.team.subheadline")}
           </p>
           
@@ -241,14 +241,14 @@ export default function PitchDeck() {
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-14 h-14 rounded-full mx-auto object-cover border border-border mb-2"
+                  className="w-14 h-14 rounded-full mx-auto object-cover border-2 border-white/30 mb-2"
                 />
-                <h3 className="font-semibold text-foreground text-sm">{member.name}</h3>
+                <h3 className="font-semibold text-primary-foreground text-sm">{member.name}</h3>
                 <a 
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[10px] text-muted-foreground hover:text-primary"
+                  className="inline-flex items-center gap-1 text-[10px] text-primary-foreground/70 hover:text-white"
                 >
                   <Linkedin className="w-2.5 h-2.5" />
                   LinkedIn
@@ -257,18 +257,18 @@ export default function PitchDeck() {
             ))}
           </div>
 
-          <div className="bg-white border border-border rounded-lg p-4 text-center">
-            <p className="text-[10px] text-muted-foreground mb-1">
+          <div className="bg-white/10 backdrop-blur rounded-lg p-4 text-center">
+            <p className="text-[10px] text-primary-foreground/70 mb-1">
               {t("pitchDeck.team.partOf")}
             </p>
-            <p className="text-base font-semibold text-foreground mb-3">One-Time Group</p>
+            <p className="text-base font-semibold text-primary-foreground mb-3">One-Time Group</p>
             
             <div className="flex items-center justify-center gap-6 text-sm">
-              <a href="mailto:info@onerooted.nl" className="text-primary hover:underline">
+              <a href="mailto:info@onerooted.nl" className="text-white hover:underline">
                 info@onerooted.nl
               </a>
-              <span className="text-border">|</span>
-              <a href="https://onerooted.nl" className="text-primary hover:underline">
+              <span className="text-primary-foreground/50">|</span>
+              <a href="https://onerooted.nl" className="text-white hover:underline">
                 onerooted.nl
               </a>
             </div>
