@@ -1116,5 +1116,82 @@
         "trust": "30-day money back guarantee"
       }
     }
+  },
+  "pitchDeck": {
+    "seo": {
+      "title": "Pitch Deck | OneRooted - The Hiring OS",
+      "description": "OneRooted pitch deck: discover the Hiring Operating System that connects every hiring decision in one intelligent platform."
+    },
+    "exportButton": "Download PDF",
+    "cover": {
+      "headline": "The Hiring OS",
+      "subheadline": "One system. Every hiring decision. Connected."
+    },
+    "problem": {
+      "label": "The Problem",
+      "headline": "Hiring isn't broken. Your tools are.",
+      "consequence": "No single source of truth. No ownership. No insight."
+    },
+    "solution": {
+      "label": "The Solution",
+      "headline": "Meet the Hiring Operating System",
+      "description": "OneRooted connects all your hiring data, workflows, and stakeholders in one intelligent system designed to help you make better hiring decisions faster."
+    },
+    "howItWorks": {
+      "label": "How It Works",
+      "headline": "From fragmented to connected",
+      "steps": {
+        "1": {
+          "title": "Connect",
+          "description": "All candidates, conversations, and context unified in one system."
+        },
+        "2": {
+          "title": "Decide",
+          "description": "Structured scoring replaces gut feelings with data-driven confidence."
+        },
+        "3": {
+          "title": "Hire",
+          "description": "Clear accountability ensures every decision moves forward."
+        }
+      },
+      "stats": ["faster screening", "less coordination overhead", "shared source of truth", "GDPR compliant"]
+    },
+    "pricing": {
+      "label": "Pricing",
+      "headline": "Clear pricing. No surprises.",
+      "note": "All plans include unlimited users and candidates. No setup fees.",
+      "plans": {
+        "light": {
+          "name": "Light",
+          "description": "Try the full system",
+          "features": ["1 active vacancy", "Up to 100 candidates", "Full OneRooted system"]
+        },
+        "base": {
+          "name": "Base",
+          "description": "Essential recruitment support",
+          "features": ["OneRooted system", "Up-to-date talent pool", "E-Academy access"]
+        },
+        "plus": {
+          "name": "Plus",
+          "description": "Move faster, hire smarter",
+          "features": ["Everything in Base", "Retention search", "Proactive sourcing"]
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "Hiring fully organized",
+          "features": ["Everything in Plus", "Candidate interviews", "Scheduling & coordination"]
+        }
+      }
+    },
+    "team": {
+      "label": "Team",
+      "headline": "Built by operators, for operators",
+      "subheadline": "OneRooted wasn't built by product managers guessing at hiring problems. It was built by operators who lived them for decades.",
+      "partOf": "Part of",
+      "contact": {
+        "email": "Email",
+        "website": "Website"
+      }
+    }
   }
 }

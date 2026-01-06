@@ -31,6 +31,7 @@ import Terms from "./pages/Terms";
 import Light from "./pages/Light";
 import BrandGuide from "./pages/BrandGuide";
 import EmailTemplates from "./pages/EmailTemplates";
+import PitchDeck from "./pages/PitchDeck";
 
 // Auth pages
 import Auth from "./pages/Auth";
@@ -114,6 +115,7 @@ const App = () => (
                     <Route path="privacy" element={<Privacy />} />
                     <Route path="terms" element={<Terms />} />
                     <Route path="light" element={<Light />} />
+                    <Route path="pitch-deck" element={<PitchDeck />} />
                   </Route>
 
                   {/* Non-prefixed routes (default to English) */}
@@ -129,6 +131,7 @@ const App = () => (
                     <Route path="/privacy" element={<Privacy />} />
                     <Route path="/terms" element={<Terms />} />
                     <Route path="/light" element={<Light />} />
+                    <Route path="/pitch-deck" element={<PitchDeck />} />
                   </Route>
                   
                   {/* Utility Routes */}

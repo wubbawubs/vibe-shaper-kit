@@ -1110,5 +1110,82 @@
         "trust": "30 Tage Geld-zurück-Garantie"
       }
     }
+  },
+  "pitchDeck": {
+    "seo": {
+      "title": "Pitch Deck | OneRooted - Das Hiring OS",
+      "description": "OneRooted Pitch Deck: Entdecken Sie das Hiring Operating System, das jede Einstellungsentscheidung auf einer intelligenten Plattform verbindet."
+    },
+    "exportButton": "PDF herunterladen",
+    "cover": {
+      "headline": "Das Hiring OS",
+      "subheadline": "Ein System. Jede Einstellungsentscheidung. Verbunden."
+    },
+    "problem": {
+      "label": "Das Problem",
+      "headline": "Recruiting ist nicht kaputt. Ihre Tools schon.",
+      "consequence": "Keine einheitliche Wahrheit. Keine Verantwortung. Kein Einblick."
+    },
+    "solution": {
+      "label": "Die Lösung",
+      "headline": "Das Hiring Operating System",
+      "description": "OneRooted verbindet alle Ihre Hiring-Daten, Workflows und Stakeholder in einem intelligenten System, das Ihnen hilft, schneller bessere Einstellungsentscheidungen zu treffen."
+    },
+    "howItWorks": {
+      "label": "So Funktioniert Es",
+      "headline": "Von fragmentiert zu verbunden",
+      "steps": {
+        "1": {
+          "title": "Verbinden",
+          "description": "Alle Kandidaten, Gespräche und Kontext vereint in einem System."
+        },
+        "2": {
+          "title": "Entscheiden",
+          "description": "Strukturierte Bewertung ersetzt Bauchgefühle durch datengestützte Zuversicht."
+        },
+        "3": {
+          "title": "Einstellen",
+          "description": "Klare Verantwortung stellt sicher, dass jede Entscheidung vorankommt."
+        }
+      },
+      "stats": ["schnelleres Screening", "weniger Koordinationsaufwand", "gemeinsame Wahrheitsquelle", "DSGVO-konform"]
+    },
+    "pricing": {
+      "label": "Preise",
+      "headline": "Klare Preise. Keine Überraschungen.",
+      "note": "Alle Pläne enthalten unbegrenzte Benutzer und Kandidaten. Keine Setup-Gebühren.",
+      "plans": {
+        "light": {
+          "name": "Light",
+          "description": "Testen Sie das volle System",
+          "features": ["1 aktive Stelle", "Bis zu 100 Kandidaten", "Vollständiges OneRooted-System"]
+        },
+        "base": {
+          "name": "Base",
+          "description": "Wesentliche Recruiting-Unterstützung",
+          "features": ["OneRooted-System", "Aktueller Talent-Pool", "E-Academy-Zugang"]
+        },
+        "plus": {
+          "name": "Plus",
+          "description": "Schneller agieren, klüger einstellen",
+          "features": ["Alles in Base", "Retention-Suche", "Proaktives Sourcing"]
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "Hiring vollständig organisiert",
+          "features": ["Alles in Plus", "Kandidaten-Interviews", "Terminplanung & Koordination"]
+        }
+      }
+    },
+    "team": {
+      "label": "Team",
+      "headline": "Von Operators für Operators gebaut",
+      "subheadline": "OneRooted wurde nicht von Produktmanagern gebaut, die Hiring-Probleme erraten. Es wurde von Operators gebaut, die sie jahrzehntelang erlebt haben.",
+      "partOf": "Teil von",
+      "contact": {
+        "email": "E-Mail",
+        "website": "Website"
+      }
+    }
   }
 }
