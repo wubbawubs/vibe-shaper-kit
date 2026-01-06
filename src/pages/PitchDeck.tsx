@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import { Download, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import logo from "@/assets/onerooted-logo-transparent.avif";
@@ -101,17 +101,33 @@ const iconBoxStyle: React.CSSProperties = {
 export default function PitchDeck() {
   const { t } = useTranslation();
   const { lang } = useParams();
+  const [searchParams] = useSearchParams();
   const [isExporting, setIsExporting] = useState(false);
+  
+  // Check if we're in export mode (triggered by ?export=true query param)
+  const isExportMode = searchParams.get('export') === 'true';
+  
+  // Apply pdf-exporting class to body when in export mode
+  useEffect(() => {
+    if (isExportMode) {
+      document.body.classList.add('pdf-exporting');
+      return () => {
+        document.body.classList.remove('pdf-exporting');
+      };
+    }
+  }, [isExportMode]);
 
   const exportToPDF = useCallback(async () => {
     setIsExporting(true);
     
     try {
-      const currentUrl = window.location.href;
+      // Build export URL with ?export=true parameter
+      const baseUrl = window.location.origin + window.location.pathname;
+      const exportUrl = `${baseUrl}?export=true`;
       const filename = `OneRooted-PitchDeck-${lang || 'en'}.pdf`;
 
       const response = await supabase.functions.invoke('export-pdf', {
-        body: { url: currentUrl, filename },
+        body: { url: exportUrl, filename },
       });
 
       if (response.error) {
@@ -154,27 +170,36 @@ export default function PitchDeck() {
         description={t("pitchDeck.seo.description")}
       />
       
-      {/* Fixed download button */}
-      <div className="fixed top-4 right-4 z-50 print:hidden">
-        <Button 
-          onClick={exportToPDF}
-          disabled={isExporting}
-          className="bg-primary hover:bg-primary/90 shadow-lg"
-        >
-          {isExporting ? (
-            <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-          ) : (
-            <Download className="w-4 h-4 mr-2" />
-          )}
-          {isExporting ? "Exporting..." : t("pitchDeck.exportButton")}
-        </Button>
-      </div>
+      {/* Fixed download button - hide in export mode */}
+      {!isExportMode && (
+        <div className="fixed top-4 right-4 z-50 print:hidden">
+          <Button 
+            onClick={exportToPDF}
+            disabled={isExporting}
+            className="bg-primary hover:bg-primary/90 shadow-lg"
+          >
+            {isExporting ? (
+              <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+            ) : (
+              <Download className="w-4 h-4 mr-2" />
+            )}
+            {isExporting ? "Exporting..." : t("pitchDeck.exportButton")}
+          </Button>
+        </div>
+      )}
 
-      {/* PDF Container - Preview wrapper (grey bg for preview, removed during export via CSS) */}
+      {/* PDF Container - Preview wrapper (grey bg for preview, clean for export) */}
       <div 
         id="pdf-export-root"
         className="pdf-export-container"
-        style={{ 
+        style={isExportMode ? {
+          // Export mode: clean, no wrapper styling
+          backgroundColor: 'transparent',
+          padding: 0,
+          margin: 0,
+          display: 'block',
+        } : { 
+          // Preview mode: grey wrapper with spacing
           backgroundColor: '#e5e7eb', 
           padding: '24px',
           display: 'flex',
