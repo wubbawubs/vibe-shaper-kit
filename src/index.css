@@ -335,3 +335,21 @@ html {
     break-inside: avoid;
   }
 }
+
+/* PDF Export Mode - Kill animations and fix alignment */
+.pdf-exporting * {
+  animation: none !important;
+  transition: none !important;
+  caret-color: transparent !important;
+}
+
+.pdf-exporting svg,
+.pdf-exporting img {
+  image-rendering: auto;
+}
+
+/* Force integer pixels on PDF pages */
+.pdf-exporting #pdf-page-1,
+.pdf-exporting #pdf-page-2 {
+  transform: none !important;
+}
