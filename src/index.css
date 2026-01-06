@@ -393,11 +393,29 @@ html {
 
 /* Preview wrapper styling (only visible in browser, not in PDF) */
 .pdfPreview {
-  background: #1a1a1a;
+  background: #111;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .pdfPreview .pdf-page {
+  margin: 0;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* Page number - inside page, not in gap */
+.pdfPageNumber {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  font-size: 10px;
+  opacity: 0.55;
+  line-height: 1;
+  color: #6b7280;
 }
 
 /* Hard-lock PDF pages to A4 dimensions - clean white, no effects */
@@ -441,11 +459,11 @@ html {
   break-after: auto !important;
 }
 
-/* Page number - always absolute bottom right */
+/* Page number - absolute bottom right during export */
 .pdf-exporting .pdfPageNumber {
   position: absolute !important;
-  right: 24px !important;
-  bottom: 20px !important;
+  right: 28px !important;
+  bottom: 28px !important;
   font-size: 10px !important;
   opacity: 0.55 !important;
   line-height: 1 !important;
