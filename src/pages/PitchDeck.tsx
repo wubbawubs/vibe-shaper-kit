@@ -110,23 +110,16 @@ export default function PitchDeck() {
       const currentUrl = window.location.href;
       const filename = `OneRooted-PitchDeck-${lang || 'en'}.pdf`;
 
-      const { data, error } = await supabase.functions.invoke('export-pdf', {
+      const response = await supabase.functions.invoke('export-pdf', {
         body: { url: currentUrl, filename },
       });
 
-      if (error) {
-        throw new Error(error.message || 'PDF export failed');
+      if (response.error) {
+        throw new Error(response.error.message || 'PDF export failed');
       }
 
-      // Convert base64 to blob and download
-      const pdfBase64 = data.pdf;
-      const byteCharacters = atob(pdfBase64);
-      const byteNumbers = new Array(byteCharacters.length);
-      for (let i = 0; i < byteCharacters.length; i++) {
-        byteNumbers[i] = byteCharacters.charCodeAt(i);
-      }
-      const byteArray = new Uint8Array(byteNumbers);
-      const blob = new Blob([byteArray], { type: 'application/pdf' });
+      // The response.data is already an ArrayBuffer when Content-Type is application/pdf
+      const blob = new Blob([response.data], { type: 'application/pdf' });
 
       // Download the file
       const url = URL.createObjectURL(blob);

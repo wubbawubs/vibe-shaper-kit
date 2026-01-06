@@ -57,7 +57,6 @@ serve(async (req) => {
           waitUntil: 'networkidle2',
           timeout: 30000,
         },
-        waitFor: 1000, // Wait 1 second for fonts/images to load
       }),
     });
 
@@ -81,10 +80,11 @@ serve(async (req) => {
       },
     });
 
-  } catch (error) {
-    console.error('Error in export-pdf function:', error);
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error('Error in export-pdf function:', errorMessage);
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: errorMessage }),
       { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     );
   }
