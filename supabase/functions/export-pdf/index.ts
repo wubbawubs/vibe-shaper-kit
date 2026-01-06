@@ -90,7 +90,6 @@ serve(async (req) => {
         addScriptTag: [
           { content: preparePageScript }
         ],
-        waitFor: 500,
       }),
     });
 
