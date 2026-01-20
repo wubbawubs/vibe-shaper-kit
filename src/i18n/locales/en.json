@@ -1479,6 +1479,48 @@
       ]
     },
 
+    "homerun-alternative": {
+      "metaTitle": "Homerun Alternative: When Branding Isn't Enough",
+      "metaDescription": "Looking for a Homerun alternative? Discover why teams upgrade to OneRooted for deeper hiring functionality beyond career pages.",
+      "breadcrumb": "Homerun Alternative",
+      "label": "Homerun Alternative",
+      "headline": "Outgrowing",
+      "headlineHighlight": "Homerun?",
+      "subheadline": "Homerun does branding beautifully. But when hiring gets serious, you need more than a stunning career page.",
+      "shortDescription": "Compare OneRooted with Homerun.",
+      "whySwitchHeadline": "Signs you've outgrown Homerun",
+      "painPoints": [
+        "Career pages are great, but hiring workflows are limited",
+        "Basic candidate ranking and scoring capabilities",
+        "Workflows that quickly hit their ceiling",
+        "Reporting that stays surface-level",
+        "No real support for recruitment agencies",
+        "Integration options are limited"
+      ],
+      "migrationHeadline": "From branding to system",
+      "migrationSteps": [
+        { "title": "Homerun export", "description": "Export candidates and job data from Homerun.", "duration": "1 day" },
+        { "title": "Enhanced import", "description": "Data comes in with full history preserved.", "duration": "1 day" },
+        { "title": "Workflow configuration", "description": "Set up the processes Homerun couldn't support.", "duration": "2 days" },
+        { "title": "Team onboarding", "description": "Learn features beyond what Homerun offers.", "duration": "1 day" }
+      ],
+      "migrationBenefits": [
+        "Keep all your candidate history",
+        "Immediate access to advanced workflows",
+        "Training on new capabilities included",
+        "30-day satisfaction guarantee"
+      ],
+      "solutionHeadline": "The hiring system behind the branding",
+      "solutionPoints": [
+        "Keep the beautiful branding, add the process power",
+        "Ranking that actually differentiates candidates",
+        "Workflows that scale with your ambition",
+        "Reporting you don't have to build yourself",
+        "Partner collaboration when you need it",
+        "Real-time insight into your entire hiring funnel"
+      ]
+    },
+
     "hiring-software": {
       "metaTitle": "Hiring Software That Connects Every Decision",
       "metaDescription": "Modern hiring software that goes beyond tracking. OneRooted connects candidates, workflows, and stakeholders in one intelligent system.",

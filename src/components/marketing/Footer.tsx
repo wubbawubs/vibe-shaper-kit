@@ -44,6 +44,7 @@ export function Footer() {
       { href: "/lever-alternative", label: "Lever" },
       { href: "/workday-alternative", label: "Workday" },
       { href: "/breezy-alternative", label: "Breezy HR" },
+      { href: "/homerun-alternative", label: "Homerun" },
     ],
   };
 
@@ -171,7 +172,7 @@ export function Footer() {
             {t("footer.copyright", { year: new Date().getFullYear() })}
           </p>
           <p className="text-xs md:text-sm text-background/40">
-            Part of the One-Time Group
+            Part of One Group
           </p>
         </div>
       </div>

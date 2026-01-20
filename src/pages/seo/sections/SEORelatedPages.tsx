@@ -25,6 +25,14 @@ export function SEORelatedPages({ headline, pages }: SEORelatedPagesProps) {
 
   if (pages.length === 0) return null;
 
+  // Dynamische grid class op basis van aantal items voor visuele consistentie
+  const getGridCols = () => {
+    if (pages.length === 1) return 'sm:grid-cols-1 max-w-md';
+    if (pages.length === 2) return 'sm:grid-cols-2 max-w-2xl';
+    if (pages.length === 4) return 'sm:grid-cols-2 lg:grid-cols-2 max-w-3xl';
+    return 'sm:grid-cols-2 lg:grid-cols-3'; // 3, 5, 6+ items
+  };
+
   return (
     <section className="border-t bg-background py-12 md:py-16">
       <div className="container">
@@ -36,7 +44,7 @@ export function SEORelatedPages({ headline, pages }: SEORelatedPagesProps) {
           <h3 className="text-lg font-semibold text-foreground">{headline}</h3>
         </motion.div>
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className={`mt-6 grid gap-4 ${getGridCols()}`}>
           {pages.map((page, index) => (
             <motion.div
               key={page.slug}
