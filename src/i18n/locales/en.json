@@ -1612,5 +1612,120 @@
         { "icon": "collaboration", "title": "Shared View", "description": "Everyone sees the same picture." }
       ]
     }
+  },
+
+  "atsChecklist": {
+    "badge": "Interactive Tool",
+    "title": "ATS Selection",
+    "titleHighlight": "Scorecard",
+    "subtitle": "Evaluate an ATS objectively. Check what the system offers and get a weighted score.",
+    "categoriesTitle": "Categories",
+    "totalScore": "Total Score",
+    "viewResults": "View Results",
+    "reset": "Reset Checklist",
+    "mustHave": "Must-have",
+    "mustHaves": "Must-haves",
+    "niceToHaves": "Nice-to-haves",
+    "resultsTitle": "Your ATS Scorecard",
+    "missingMustHaves": "Missing Must-haves",
+    "ctaText": "Curious how OneRooted scores on this checklist?",
+    "ctaButton": "Book a demo",
+    "continueEditing": "Continue editing",
+    "scores": {
+      "excellent": {
+        "label": "Excellent",
+        "description": "This ATS meets virtually all criteria."
+      },
+      "good": {
+        "label": "Good",
+        "description": "Solid choice, pay attention to missing must-haves."
+      },
+      "acceptable": {
+        "label": "Acceptable",
+        "description": "Important features are missing, consider alternatives."
+      },
+      "weak": {
+        "label": "Weak",
+        "description": "Many missing criteria, not recommended."
+      },
+      "poor": {
+        "label": "Poor",
+        "description": "Does not meet basic requirements for a modern ATS."
+      }
+    },
+    "categories": [
+      {
+        "id": "core",
+        "name": "Core Functionality",
+        "icon": "core",
+        "items": [
+          { "id": "core-1", "title": "Visual kanban pipeline", "description": "Drag candidates between stages with one click.", "weight": 10, "mustHave": true },
+          { "id": "core-2", "title": "Candidate ranking", "description": "Automatic prioritization based on criteria.", "weight": 8, "mustHave": true },
+          { "id": "core-3", "title": "Centralized candidate profiles", "description": "All info, documents and history in one place.", "weight": 9, "mustHave": true },
+          { "id": "core-4", "title": "Job management", "description": "Easily create, duplicate and archive vacancies.", "weight": 7, "mustHave": true },
+          { "id": "core-5", "title": "Multi-channel posting", "description": "Publish to multiple job boards at once.", "weight": 5, "mustHave": false }
+        ]
+      },
+      {
+        "id": "collab",
+        "name": "Collaboration",
+        "icon": "collaboration",
+        "items": [
+          { "id": "collab-1", "title": "Team roles and permissions", "description": "Control who can see and do what per vacancy.", "weight": 8, "mustHave": true },
+          { "id": "collab-2", "title": "Structured feedback", "description": "Scorecards and evaluation forms after interviews.", "weight": 9, "mustHave": true },
+          { "id": "collab-3", "title": "Partner/agency access", "description": "External recruiters in the same system without separate logins.", "weight": 7, "mustHave": false },
+          { "id": "collab-4", "title": "Real-time activity feed", "description": "See what's happening in each vacancy immediately.", "weight": 5, "mustHave": false },
+          { "id": "collab-5", "title": "@mentions and notifications", "description": "Tag colleagues and keep them informed.", "weight": 4, "mustHave": false }
+        ]
+      },
+      {
+        "id": "automation",
+        "name": "Automation",
+        "icon": "automation",
+        "items": [
+          { "id": "auto-1", "title": "Email templates", "description": "Standardized communication per stage.", "weight": 7, "mustHave": true },
+          { "id": "auto-2", "title": "Automatic status updates", "description": "Move candidates based on certain actions.", "weight": 6, "mustHave": false },
+          { "id": "auto-3", "title": "Interview scheduling", "description": "Calendar integration and availability sharing.", "weight": 8, "mustHave": true },
+          { "id": "auto-4", "title": "Bulk actions", "description": "Email or move multiple candidates at once.", "weight": 5, "mustHave": false },
+          { "id": "auto-5", "title": "Workflow triggers", "description": "If-this-then-that automation without code.", "weight": 6, "mustHave": false }
+        ]
+      },
+      {
+        "id": "analytics",
+        "name": "Reporting & Insights",
+        "icon": "analytics",
+        "items": [
+          { "id": "ana-1", "title": "Funnel reports", "description": "From application to hire in one overview.", "weight": 8, "mustHave": true },
+          { "id": "ana-2", "title": "Time-to-hire metrics", "description": "Lead time per vacancy and stage.", "weight": 7, "mustHave": true },
+          { "id": "ana-3", "title": "Source effectiveness", "description": "Which channels deliver the best candidates?", "weight": 6, "mustHave": false },
+          { "id": "ana-4", "title": "Team performance", "description": "Who does what and where are the bottlenecks?", "weight": 5, "mustHave": false },
+          { "id": "ana-5", "title": "Export and API access", "description": "Extract data for your own analyses.", "weight": 4, "mustHave": false }
+        ]
+      },
+      {
+        "id": "ux",
+        "name": "User Experience",
+        "icon": "ux",
+        "items": [
+          { "id": "ux-1", "title": "Intuitive interface", "description": "No training needed to get started.", "weight": 9, "mustHave": true },
+          { "id": "ux-2", "title": "Mobile access", "description": "Works on phone and tablet.", "weight": 5, "mustHave": false },
+          { "id": "ux-3", "title": "Fast load times", "description": "No waiting with heavy lists.", "weight": 6, "mustHave": false },
+          { "id": "ux-4", "title": "Self-configurable", "description": "Customize fields and stages without IT.", "weight": 8, "mustHave": true },
+          { "id": "ux-5", "title": "Multi-language support", "description": "Available in your preferred language.", "weight": 4, "mustHave": false }
+        ]
+      },
+      {
+        "id": "security",
+        "name": "Security & Compliance",
+        "icon": "security",
+        "items": [
+          { "id": "sec-1", "title": "GDPR compliant", "description": "Meets European privacy legislation.", "weight": 10, "mustHave": true },
+          { "id": "sec-2", "title": "SSO/SAML", "description": "Single sign-on with company identity.", "weight": 6, "mustHave": false },
+          { "id": "sec-3", "title": "Audit logging", "description": "Who did what and when.", "weight": 5, "mustHave": false },
+          { "id": "sec-4", "title": "Data export rights", "description": "Candidates can request their data.", "weight": 7, "mustHave": true },
+          { "id": "sec-5", "title": "EU data centers", "description": "Data stored within Europe.", "weight": 6, "mustHave": false }
+        ]
+      }
+    ]
   }
 }

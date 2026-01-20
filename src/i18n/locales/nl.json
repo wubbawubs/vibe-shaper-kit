@@ -2027,5 +2027,120 @@
         { "icon": "analytics", "title": "Executive Reporting", "description": "Cross-entity analytics en dashboards." }
       ]
     }
+  },
+
+  "atsChecklist": {
+    "badge": "Interactieve Tool",
+    "title": "ATS Selectie",
+    "titleHighlight": "Scorecard",
+    "subtitle": "Evalueer een ATS objectief. Vink aan wat het systeem biedt en krijg een gewogen score.",
+    "categoriesTitle": "Categorieën",
+    "totalScore": "Totaalscore",
+    "viewResults": "Bekijk resultaten",
+    "reset": "Reset checklist",
+    "mustHave": "Must-have",
+    "mustHaves": "Must-haves",
+    "niceToHaves": "Nice-to-haves",
+    "resultsTitle": "Jouw ATS Scorecard",
+    "missingMustHaves": "Ontbrekende must-haves",
+    "ctaText": "Benieuwd hoe OneRooted scoort op deze checklist?",
+    "ctaButton": "Plan een demo",
+    "continueEditing": "Verder bewerken",
+    "scores": {
+      "excellent": {
+        "label": "Uitstekend",
+        "description": "Dit ATS voldoet aan vrijwel alle criteria."
+      },
+      "good": {
+        "label": "Goed",
+        "description": "Solide keuze, let op de ontbrekende must-haves."
+      },
+      "acceptable": {
+        "label": "Acceptabel",
+        "description": "Er missen belangrijke features, overweeg alternatieven."
+      },
+      "weak": {
+        "label": "Zwak",
+        "description": "Veel ontbrekende criteria, niet aanbevolen."
+      },
+      "poor": {
+        "label": "Onvoldoende",
+        "description": "Voldoet niet aan basiseisen voor een modern ATS."
+      }
+    },
+    "categories": [
+      {
+        "id": "core",
+        "name": "Kernfunctionaliteit",
+        "icon": "core",
+        "items": [
+          { "id": "core-1", "title": "Visuele kanban pipeline", "description": "Kandidaten slepen tussen fases met één klik.", "weight": 10, "mustHave": true },
+          { "id": "core-2", "title": "Kandidaat-ranking", "description": "Automatische prioritering op basis van criteria.", "weight": 8, "mustHave": true },
+          { "id": "core-3", "title": "Gecentraliseerde kandidaatprofielen", "description": "Alle info, documenten en geschiedenis op één plek.", "weight": 9, "mustHave": true },
+          { "id": "core-4", "title": "Vacaturebeheer", "description": "Eenvoudig vacatures aanmaken, dupliceren en archiveren.", "weight": 7, "mustHave": true },
+          { "id": "core-5", "title": "Multi-channel posting", "description": "Publiceren naar meerdere jobboards tegelijk.", "weight": 5, "mustHave": false }
+        ]
+      },
+      {
+        "id": "collab",
+        "name": "Samenwerking",
+        "icon": "collaboration",
+        "items": [
+          { "id": "collab-1", "title": "Team-rollen en rechten", "description": "Bepaal wie wat mag zien en doen per vacature.", "weight": 8, "mustHave": true },
+          { "id": "collab-2", "title": "Gestructureerde feedback", "description": "Scorecards en evaluatieformulieren na interviews.", "weight": 9, "mustHave": true },
+          { "id": "collab-3", "title": "Partner/bureau toegang", "description": "Externe recruiters in hetzelfde systeem zonder aparte logins.", "weight": 7, "mustHave": false },
+          { "id": "collab-4", "title": "Real-time activiteitenfeed", "description": "Zie direct wat er gebeurt in elke vacature.", "weight": 5, "mustHave": false },
+          { "id": "collab-5", "title": "@mentions en notificaties", "description": "Collega's taggen en direct op de hoogte houden.", "weight": 4, "mustHave": false }
+        ]
+      },
+      {
+        "id": "automation",
+        "name": "Automatisering",
+        "icon": "automation",
+        "items": [
+          { "id": "auto-1", "title": "Email templates", "description": "Gestandaardiseerde communicatie per fase.", "weight": 7, "mustHave": true },
+          { "id": "auto-2", "title": "Automatische status-updates", "description": "Kandidaten verplaatsen bij bepaalde acties.", "weight": 6, "mustHave": false },
+          { "id": "auto-3", "title": "Interview scheduling", "description": "Agenda-integratie en beschikbaarheid delen.", "weight": 8, "mustHave": true },
+          { "id": "auto-4", "title": "Bulk-acties", "description": "Meerdere kandidaten tegelijk mailen of verplaatsen.", "weight": 5, "mustHave": false },
+          { "id": "auto-5", "title": "Workflow triggers", "description": "If-this-then-that automatisering zonder code.", "weight": 6, "mustHave": false }
+        ]
+      },
+      {
+        "id": "analytics",
+        "name": "Rapportage & Inzichten",
+        "icon": "analytics",
+        "items": [
+          { "id": "ana-1", "title": "Funnel-rapportages", "description": "Van sollicitatie tot hire in één overzicht.", "weight": 8, "mustHave": true },
+          { "id": "ana-2", "title": "Time-to-hire metrics", "description": "Doorlooptijd per vacature en fase.", "weight": 7, "mustHave": true },
+          { "id": "ana-3", "title": "Source-effectiviteit", "description": "Welke kanalen leveren de beste kandidaten?", "weight": 6, "mustHave": false },
+          { "id": "ana-4", "title": "Team-performance", "description": "Wie doet wat en waar zitten bottlenecks?", "weight": 5, "mustHave": false },
+          { "id": "ana-5", "title": "Export en API-toegang", "description": "Data eruit halen voor eigen analyses.", "weight": 4, "mustHave": false }
+        ]
+      },
+      {
+        "id": "ux",
+        "name": "Gebruikservaring",
+        "icon": "ux",
+        "items": [
+          { "id": "ux-1", "title": "Intuïtieve interface", "description": "Geen training nodig om te starten.", "weight": 9, "mustHave": true },
+          { "id": "ux-2", "title": "Mobiele toegang", "description": "Werkt op telefoon en tablet.", "weight": 5, "mustHave": false },
+          { "id": "ux-3", "title": "Snelle laadtijden", "description": "Geen wachten bij zware lijsten.", "weight": 6, "mustHave": false },
+          { "id": "ux-4", "title": "Zelf configureerbaar", "description": "Velden en fases aanpassen zonder IT.", "weight": 8, "mustHave": true },
+          { "id": "ux-5", "title": "Nederlandse interface", "description": "Volledig in het Nederlands beschikbaar.", "weight": 4, "mustHave": false }
+        ]
+      },
+      {
+        "id": "security",
+        "name": "Beveiliging & Compliance",
+        "icon": "security",
+        "items": [
+          { "id": "sec-1", "title": "GDPR-compliant", "description": "Voldoet aan Europese privacywetgeving.", "weight": 10, "mustHave": true },
+          { "id": "sec-2", "title": "SSO/SAML", "description": "Single sign-on met bedrijfsidentiteit.", "weight": 6, "mustHave": false },
+          { "id": "sec-3", "title": "Audit logging", "description": "Wie deed wat en wanneer.", "weight": 5, "mustHave": false },
+          { "id": "sec-4", "title": "Data-export rechten", "description": "Kandidaten kunnen hun data opvragen.", "weight": 7, "mustHave": true },
+          { "id": "sec-5", "title": "EU-datacenters", "description": "Data opgeslagen binnen Europa.", "weight": 6, "mustHave": false }
+        ]
+      }
+    ]
   }
 }
