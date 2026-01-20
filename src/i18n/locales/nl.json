@@ -2223,5 +2223,235 @@
         ]
       }
     ]
+  },
+
+  "integrations": {
+    "afas-integratie": {
+      "metaTitle": "AFAS Koppeling met ATS: Complete Integratie Guide",
+      "metaDescription": "Koppel je ATS aan AFAS voor naadloze HR-dataflow. Automatische contracten, salarisadministratie sync en candidate-to-employee conversie.",
+      "breadcrumb": "AFAS Integratie",
+      "label": "AFAS Koppeling",
+      "headline": "AFAS integratie",
+      "headlineHighlight": "die écht werkt",
+      "subheadline": "Geen handmatige data-overdracht meer. Automatische sync tussen recruitment en HR-administratie.",
+      "shortDescription": "Koppel OneRooted aan AFAS voor naadloze HR-workflow.",
+      "benefitsHeadline": "Waarom AFAS koppelen?",
+      "benefits": [
+        "Kandidaat wordt medewerker met één klik",
+        "Contractdata automatisch in AFAS",
+        "Geen dubbele invoer, geen fouten",
+        "Salarisadministratie direct gereed",
+        "Realtime sync tussen systemen"
+      ],
+      "stepsHeadline": "Hoe de integratie werkt",
+      "steps": [
+        { "step": "1", "title": "API-koppeling instellen", "description": "Genereer API-credentials in AFAS en koppel in OneRooted." },
+        { "step": "2", "title": "Velden mappen", "description": "Bepaal welke kandidaatvelden naar welke AFAS-velden gaan." },
+        { "step": "3", "title": "Trigger configureren", "description": "Kies wanneer data wordt gesynchroniseerd — bij hire, contract, of handmatig." },
+        { "step": "4", "title": "Testen en live", "description": "Test met een dummy-kandidaat en ga live binnen een uur." }
+      ],
+      "requirementsHeadline": "Technische vereisten",
+      "requirements": [
+        "AFAS Profit met GetConnector/UpdateConnector licentie",
+        "API-toegang geactiveerd in AFAS",
+        "OneRooted Plus of Premium plan"
+      ],
+      "useCasesHeadline": "Veelvoorkomende use cases",
+      "useCases": [
+        { "title": "Hire-to-onboard automatisering", "description": "Van geselecteerde kandidaat naar medewerkerrecord zonder handwerk." },
+        { "title": "Contract generatie", "description": "Contractdata direct in AFAS voor digitale ondertekening." },
+        { "title": "Organisatiestructuur sync", "description": "Afdelingen en managers automatisch beschikbaar in vacatures." }
+      ]
+    },
+
+    "indeed-integratie": {
+      "metaTitle": "Indeed ATS Integratie: Automatisch Vacatures Publiceren",
+      "metaDescription": "Publiceer vacatures automatisch naar Indeed vanuit je ATS. Real-time sollicitaties, automatische status updates en performance tracking.",
+      "breadcrumb": "Indeed Integratie",
+      "label": "Indeed Koppeling",
+      "headline": "Indeed integratie",
+      "headlineHighlight": "voor meer bereik",
+      "subheadline": "Publiceer vacatures met één klik. Ontvang sollicitaties direct in je pipeline. Track wat werkt.",
+      "shortDescription": "Publiceer naar Indeed en ontvang sollicitaties direct in OneRooted.",
+      "benefitsHeadline": "Waarom Indeed koppelen?",
+      "benefits": [
+        "Publiceer vacatures met één klik",
+        "Sollicitaties direct in je ATS pipeline",
+        "Automatische status-sync naar Indeed",
+        "Zichtbaarheid in performance per vacature",
+        "Geen apart Indeed account beheer nodig"
+      ],
+      "stepsHeadline": "Hoe de integratie werkt",
+      "steps": [
+        { "step": "1", "title": "Indeed account verbinden", "description": "Log in met je Indeed werkgeversaccount en autoriseer OneRooted." },
+        { "step": "2", "title": "Vacature template instellen", "description": "Map je vacaturevelden naar Indeed-formaat." },
+        { "step": "3", "title": "Publiceer en ontvang", "description": "Publiceer vacatures en ontvang sollicitaties automatisch." },
+        { "step": "4", "title": "Monitor en optimaliseer", "description": "Bekijk performance en pas je vacatures aan." }
+      ],
+      "requirementsHeadline": "Technische vereisten",
+      "requirements": [
+        "Indeed werkgeversaccount",
+        "Geverifieerd bedrijfsprofiel op Indeed",
+        "OneRooted Base plan of hoger"
+      ],
+      "useCasesHeadline": "Veelvoorkomende use cases",
+      "useCases": [
+        { "title": "Multi-channel publiceren", "description": "Indeed als onderdeel van je bredere publicatiestrategie." },
+        { "title": "Volume recruitment", "description": "Veel vacatures tegelijk publiceren en beheren." },
+        { "title": "Source tracking", "description": "Meet welke vacatures het beste presteren op Indeed." }
+      ]
+    },
+
+    "linkedin-integratie": {
+      "metaTitle": "LinkedIn ATS Integratie: Recruiter Workflow Optimalisatie",
+      "metaDescription": "Integreer LinkedIn Recruiter met je ATS. Kandidaatprofielen importeren, InMail tracking en naadloze workflow tussen sourcing en pipeline.",
+      "breadcrumb": "LinkedIn Integratie",
+      "label": "LinkedIn Koppeling",
+      "headline": "LinkedIn integratie",
+      "headlineHighlight": "voor slimmer sourcen",
+      "subheadline": "Van LinkedIn profiel naar kandidaat in je pipeline. Geen copy-paste, geen verloren context.",
+      "shortDescription": "Koppel LinkedIn Recruiter aan OneRooted voor naadloze sourcing.",
+      "benefitsHeadline": "Waarom LinkedIn koppelen?",
+      "benefits": [
+        "Kandidaatprofielen met één klik importeren",
+        "Volledige LinkedIn-data in je ATS",
+        "InMail-geschiedenis bij kandidaatprofiel",
+        "Geen dubbele kandidaten door matching",
+        "Sourcing-activiteit meetbaar in rapportages"
+      ],
+      "stepsHeadline": "Hoe de integratie werkt",
+      "steps": [
+        { "step": "1", "title": "LinkedIn Recruiter verbinden", "description": "Autoriseer via LinkedIn's officiële RSC integratie." },
+        { "step": "2", "title": "Browser extensie installeren", "description": "Voeg kandidaten toe direct vanuit LinkedIn." },
+        { "step": "3", "title": "Profielen importeren", "description": "Klik om kandidaat toe te voegen aan vacature of talentpool." },
+        { "step": "4", "title": "Bijhouden en converteren", "description": "Track InMails en converteer naar actieve kandidaten." }
+      ],
+      "requirementsHeadline": "Technische vereisten",
+      "requirements": [
+        "LinkedIn Recruiter of Recruiter Lite",
+        "RSC (Recruiter System Connect) toegang",
+        "OneRooted Plus of Premium plan"
+      ],
+      "useCasesHeadline": "Veelvoorkomende use cases",
+      "useCases": [
+        { "title": "Active sourcing workflow", "description": "Van LinkedIn zoeken naar kandidaat in pipeline in seconden." },
+        { "title": "Talentpool opbouwen", "description": "Interessante profielen bewaren voor toekomstige vacatures." },
+        { "title": "Sourcing ROI meten", "description": "Welke sourcer vindt de beste kandidaten via LinkedIn?" }
+      ]
+    },
+
+    "teams-integratie": {
+      "metaTitle": "Microsoft Teams ATS Integratie: Interview Scheduling & Notificaties",
+      "metaDescription": "Integreer Microsoft Teams met je ATS voor automatische interview scheduling, team-notificaties en videogesprekken vanuit je recruitment workflow.",
+      "breadcrumb": "Teams Integratie",
+      "label": "Teams Koppeling",
+      "headline": "Microsoft Teams",
+      "headlineHighlight": "in je recruitment workflow",
+      "subheadline": "Plan interviews, stuur notificaties en houd videogesprekken — allemaal vanuit je ATS.",
+      "shortDescription": "Koppel Microsoft Teams voor interviews en team-communicatie.",
+      "benefitsHeadline": "Waarom Teams koppelen?",
+      "benefits": [
+        "Automatische Teams-meeting bij interview",
+        "Notificaties naar kanalen bij updates",
+        "Agenda-sync met Outlook",
+        "Videogesprekken zonder apart platform",
+        "Hiring manager feedback via Teams"
+      ],
+      "stepsHeadline": "Hoe de integratie werkt",
+      "steps": [
+        { "step": "1", "title": "Microsoft account verbinden", "description": "Log in met je organisatie Microsoft-account en autoriseer." },
+        { "step": "2", "title": "Kanalen selecteren", "description": "Kies welke Teams-kanalen notificaties ontvangen." },
+        { "step": "3", "title": "Interview settings", "description": "Configureer automatische Teams-meeting generatie." },
+        { "step": "4", "title": "Notificaties instellen", "description": "Bepaal welke events naar Teams worden gestuurd." }
+      ],
+      "requirementsHeadline": "Technische vereisten",
+      "requirements": [
+        "Microsoft 365 Business of Enterprise",
+        "Teams geactiveerd in je organisatie",
+        "Admin-consent voor OneRooted app"
+      ],
+      "useCasesHeadline": "Veelvoorkomende use cases",
+      "useCases": [
+        { "title": "Geautomatiseerde interview scheduling", "description": "Plan interviews en genereer automatisch Teams-links." },
+        { "title": "Hiring team alerts", "description": "Notificeer het team bij nieuwe kandidaten of statuswijzigingen." },
+        { "title": "Remote interviewing", "description": "Voer videogesprekken zonder extra tools." }
+      ]
+    },
+
+    "outlook-integratie": {
+      "metaTitle": "Outlook ATS Integratie: Email & Agenda Synchronisatie",
+      "metaDescription": "Integreer Outlook met je ATS voor email-tracking, agenda-sync en interview scheduling. Alle communicatie op één plek.",
+      "breadcrumb": "Outlook Integratie",
+      "label": "Outlook Koppeling",
+      "headline": "Outlook integratie",
+      "headlineHighlight": "voor complete communicatie",
+      "subheadline": "Emails automatisch bij kandidaatprofiel. Agenda-sync voor interviews. Eén inbox, nul gemiste berichten.",
+      "shortDescription": "Sync Outlook email en agenda met je recruitment workflow.",
+      "benefitsHeadline": "Waarom Outlook koppelen?",
+      "benefits": [
+        "Emails automatisch bij kandidaatprofiel",
+        "Agenda-sync voor interview planning",
+        "Verstuur emails vanuit ATS met je Outlook-adres",
+        "Open/click tracking op kandidaat-emails",
+        "Geen context meer kwijt in losse inboxen"
+      ],
+      "stepsHeadline": "Hoe de integratie werkt",
+      "steps": [
+        { "step": "1", "title": "Outlook verbinden", "description": "Autoriseer OneRooted om je inbox en agenda te lezen." },
+        { "step": "2", "title": "BCC instellen", "description": "Configureer automatische email-capture via BCC." },
+        { "step": "3", "title": "Agenda sync activeren", "description": "Interviews verschijnen automatisch in Outlook." },
+        { "step": "4", "title": "Templates koppelen", "description": "Gebruik email-templates direct vanuit Outlook of ATS." }
+      ],
+      "requirementsHeadline": "Technische vereisten",
+      "requirements": [
+        "Microsoft 365 of Outlook.com account",
+        "OAuth-toegang voor email en agenda",
+        "OneRooted Base plan of hoger"
+      ],
+      "useCasesHeadline": "Veelvoorkomende use cases",
+      "useCases": [
+        { "title": "Volledige communicatiehistorie", "description": "Elke email met een kandidaat automatisch gelogd." },
+        { "title": "Interview scheduling", "description": "Plan interviews met agenda-beschikbaarheid check." },
+        { "title": "Email performance", "description": "Meet open rates en responstijden per template." }
+      ]
+    },
+
+    "multiposting-integratie": {
+      "metaTitle": "Multiposting ATS Integratie: Vacatures naar 200+ Jobboards",
+      "metaDescription": "Publiceer vacatures naar 200+ jobboards met één klik. Automatische distributie, budget-optimalisatie en performance tracking.",
+      "breadcrumb": "Multiposting",
+      "label": "Multiposting",
+      "headline": "Multiposting",
+      "headlineHighlight": "naar 200+ jobboards",
+      "subheadline": "Één vacature, 200+ kanalen. Publiceer, optimaliseer en track performance vanuit je ATS.",
+      "shortDescription": "Publiceer vacatures naar alle relevante jobboards met één klik.",
+      "benefitsHeadline": "Waarom multiposting?",
+      "benefits": [
+        "200+ jobboards vanuit één plek",
+        "Automatische format-conversie per board",
+        "Budget-allocatie optimalisatie",
+        "Real-time performance per kanaal",
+        "Geen losse accounts per jobboard"
+      ],
+      "stepsHeadline": "Hoe multiposting werkt",
+      "steps": [
+        { "step": "1", "title": "Kanalen selecteren", "description": "Kies uit 200+ jobboards welke relevant zijn." },
+        { "step": "2", "title": "Vacature publiceren", "description": "Publiceer met één klik naar alle geselecteerde kanalen." },
+        { "step": "3", "title": "Performance monitoren", "description": "Bekijk clicks, sollicitaties en kosten per kanaal." },
+        { "step": "4", "title": "Optimaliseren", "description": "Verschuif budget naar best presterende kanalen." }
+      ],
+      "requirementsHeadline": "Technische vereisten",
+      "requirements": [
+        "OneRooted Base plan of hoger",
+        "Actieve accounts bij gewenste premium boards (optioneel)",
+        "Vacature-content in correct formaat"
+      ],
+      "useCasesHeadline": "Veelvoorkomende use cases",
+      "useCases": [
+        { "title": "Volume recruitment", "description": "Veel vacatures snel naar alle relevante kanalen." },
+        { "title": "Niche targeting", "description": "Specifieke boards voor specialistische functies." },
+        { "title": "Budget optimalisatie", "description": "Maximaal resultaat uit je recruitment media budget." }
+      ]
+    }
   }
 }
