@@ -1433,6 +1433,158 @@
         "Insights that grow with your sophistication",
         "Partner collaboration as a core feature"
       ]
+    },
+
+    "hiring-software": {
+      "metaTitle": "Hiring Software That Connects Every Decision",
+      "metaDescription": "Modern hiring software that goes beyond tracking. OneRooted connects candidates, workflows, and stakeholders in one intelligent system.",
+      "breadcrumb": "Hiring Software",
+      "label": "Hiring Software",
+      "headline": "Hiring software that",
+      "headlineHighlight": "actually works",
+      "subheadline": "Most hiring tools create silos. OneRooted connects them — bringing candidates, decisions, and teams into one intelligent workflow.",
+      "shortDescription": "Discover how OneRooted transforms hiring operations.",
+      "problemHeadline": "Why hiring software fails teams",
+      "painPoints": [
+        "Fragmented tools that don't talk to each other",
+        "Hiring managers working outside the system",
+        "No visibility into where candidates stall",
+        "Manual coordination eating up recruiter time",
+        "Reports that require hours of assembly",
+        "Decisions lost in email and Slack threads"
+      ],
+      "consequence": "Your tools should accelerate hiring. Instead, they create friction.",
+      "solutionHeadline": "Hiring reimagined as a system",
+      "solutionPoints": [
+        "One platform for everyone involved in hiring",
+        "Real-time visibility for recruiters and managers",
+        "Automated workflows that move candidates forward",
+        "Decisions tracked and traceable",
+        "Intelligence that surfaces without manual reporting",
+        "Collaboration built into every step"
+      ],
+      "uniqueAngle": "Stop coordinating around your tools. Start with tools that coordinate for you.",
+      "featuresHeadline": "Built for how you actually hire",
+      "features": [
+        { "icon": "ranking", "title": "Intelligent Ranking", "description": "Consistent scoring that brings objectivity to selection." },
+        { "icon": "pipeline", "title": "Visual Pipeline", "description": "See exactly where every candidate stands." },
+        { "icon": "automation", "title": "Workflow Automation", "description": "Triggers that move candidates without manual work." },
+        { "icon": "collaboration", "title": "Team Collaboration", "description": "Everyone works from the same source of truth." },
+        { "icon": "analytics", "title": "Hiring Intelligence", "description": "Metrics that tell you what to do next." },
+        { "icon": "security", "title": "Enterprise Security", "description": "GDPR compliant, built for scale." }
+      ]
+    },
+
+    "talent-acquisition-software": {
+      "metaTitle": "Talent Acquisition Software: The System Behind Better Hires",
+      "metaDescription": "Modern talent acquisition software that connects every hiring decision. OneRooted is the Hiring OS for teams that take recruiting seriously.",
+      "breadcrumb": "Talent Acquisition Software",
+      "label": "Talent Acquisition",
+      "headline": "Talent acquisition",
+      "headlineHighlight": "as it should work",
+      "subheadline": "Strategic hiring requires strategic tooling. OneRooted is the operating system that connects sourcing, selection, and decision-making.",
+      "shortDescription": "Discover the Hiring OS for talent acquisition.",
+      "problemHeadline": "TA tools that miss the point",
+      "painPoints": [
+        "Point solutions that solve one problem, create two more",
+        "No connection between sourcing and selection",
+        "Stakeholder feedback scattered across channels",
+        "Pipeline metrics that don't drive action",
+        "Integration headaches with every new tool",
+        "Reporting that's always retrospective, never predictive"
+      ],
+      "consequence": "Talent acquisition deserves infrastructure, not just tools.",
+      "solutionHeadline": "OneRooted: TA infrastructure",
+      "solutionPoints": [
+        "End-to-end visibility from source to hire",
+        "Structured evaluation at every touchpoint",
+        "Stakeholder alignment without manual coordination",
+        "Predictive insights that guide next actions",
+        "Simple integrations that connect your stack",
+        "One system that scales with your ambition"
+      ],
+      "uniqueAngle": "From tactical tools to strategic advantage.",
+      "featuresHeadline": "Enterprise TA capabilities",
+      "features": [
+        { "icon": "ranking", "title": "Structured Evaluation", "description": "Consistent criteria across all candidates and roles." },
+        { "icon": "pipeline", "title": "Pipeline Intelligence", "description": "Real-time visibility with predictive insights." },
+        { "icon": "automation", "title": "Process Automation", "description": "Workflows that adapt to role complexity." },
+        { "icon": "collaboration", "title": "Stakeholder Alignment", "description": "Everyone involved, everyone aligned." },
+        { "icon": "analytics", "title": "TA Analytics", "description": "Metrics that inform strategy, not just history." },
+        { "icon": "security", "title": "Enterprise Ready", "description": "SOC 2 ready, SSO, audit trails." }
+      ]
+    },
+
+    "recruitment-analytics": {
+      "metaTitle": "Recruitment Analytics: Insights That Drive Action",
+      "metaDescription": "Recruitment analytics that go beyond dashboards. OneRooted surfaces insights that tell you what to do, not just what happened.",
+      "breadcrumb": "Recruitment Analytics",
+      "label": "Recruitment Analytics",
+      "headline": "Recruitment analytics that",
+      "headlineHighlight": "drive action",
+      "subheadline": "Most analytics tell you what happened. OneRooted tells you what to do about it — with insights that surface automatically.",
+      "shortDescription": "Recruitment analytics that inform decisions, not just reports.",
+      "problemHeadline": "The analytics gap in recruitment",
+      "painPoints": [
+        "Reports that take hours to build",
+        "Data that's always retrospective",
+        "Dashboards that nobody looks at",
+        "Metrics that don't connect to action",
+        "No visibility into process bottlenecks",
+        "Manual exports for every stakeholder request"
+      ],
+      "solutionHeadline": "Intelligence that surfaces automatically",
+      "solutionPoints": [
+        "Real-time metrics that update themselves",
+        "Bottleneck detection that highlights where to intervene",
+        "Conversion analytics across the full funnel",
+        "Time-to-hire tracking by role, source, and team",
+        "Stakeholder dashboards that self-update",
+        "Predictive insights that guide decisions"
+      ],
+      "featuresHeadline": "Analytics capabilities",
+      "features": [
+        { "icon": "analytics", "title": "Real-Time Dashboards", "description": "Metrics that update as you work." },
+        { "icon": "pipeline", "title": "Funnel Analysis", "description": "See where candidates convert — and where they don't." },
+        { "icon": "automation", "title": "Automated Reporting", "description": "Reports that generate themselves." },
+        { "icon": "ranking", "title": "Quality Metrics", "description": "Track hiring quality, not just speed." }
+      ]
+    },
+
+    "pipeline-management": {
+      "metaTitle": "Candidate Pipeline Management: Visual Clarity for Better Hiring",
+      "metaDescription": "Visual candidate pipeline management that brings clarity to your hiring process. See every candidate, every stage, every decision.",
+      "breadcrumb": "Pipeline Management",
+      "label": "Pipeline Management",
+      "headline": "Candidate pipeline",
+      "headlineHighlight": "you can actually see",
+      "subheadline": "Stop digging through databases. Visual pipeline management that shows exactly where every candidate stands and what needs attention.",
+      "shortDescription": "Visual pipeline management for modern hiring teams.",
+      "problemHeadline": "Pipeline chaos",
+      "painPoints": [
+        "Candidates lost in spreadsheets and databases",
+        "No visibility into where people are stuck",
+        "Manual status updates that nobody makes",
+        "Hiring managers asking 'where are we on this role?'",
+        "Dropped candidates nobody noticed",
+        "Pipeline reviews that require prep work"
+      ],
+      "solutionHeadline": "Clarity at every stage",
+      "solutionPoints": [
+        "Kanban-style pipeline that updates in real-time",
+        "Stall detection that flags stuck candidates",
+        "Drag-and-drop stage management",
+        "At-a-glance role progress for every stakeholder",
+        "Automated stage transitions based on actions",
+        "Pipeline health metrics that highlight risks"
+      ],
+      "featuresHeadline": "Pipeline features",
+      "features": [
+        { "icon": "pipeline", "title": "Visual Kanban", "description": "See your entire pipeline at a glance." },
+        { "icon": "automation", "title": "Auto-Transitions", "description": "Candidates move forward based on actions." },
+        { "icon": "analytics", "title": "Health Metrics", "description": "Know which roles need attention." },
+        { "icon": "collaboration", "title": "Shared View", "description": "Everyone sees the same picture." }
+      ]
     }
   }
 }

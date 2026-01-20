@@ -213,6 +213,68 @@ export default function SEOLandingPage() {
           </>
         );
 
+      case "T-FEAT": // Feature pages
+        return (
+          <>
+            <SEOHero {...content.hero} />
+            {content.painPoints.length > 0 && (
+              <SEOPainPoints
+                headline={t(`${contentKey}.problemHeadline`, "Uitdagingen zonder deze feature")}
+                painPoints={content.painPoints}
+              />
+            )}
+            {content.solutionPoints.length > 0 && (
+              <SEOSolution
+                headline={t(`${contentKey}.solutionHeadline`, "Hoe OneRooted dit oplost")}
+                solutionPoints={content.solutionPoints}
+              />
+            )}
+            {content.features.length > 0 && (
+              <SEOFeatureHighlights
+                headline={t(`${contentKey}.featuresHeadline`, "Kernfunctionaliteit")}
+                features={content.features}
+              />
+            )}
+            <SEOCTA
+              headline={t("finalCta.headline")}
+              subheadline={t("finalCta.subheadline")}
+              ctaText={t("finalCta.cta")}
+              variant="dark"
+            />
+          </>
+        );
+
+      case "T-USE": // Use case pages
+        return (
+          <>
+            <SEOHero {...content.hero} />
+            {content.painPoints.length > 0 && (
+              <SEOPainPoints
+                headline={t(`${contentKey}.challengesHeadline`, "Specifieke uitdagingen")}
+                painPoints={content.painPoints}
+              />
+            )}
+            {content.solutionPoints.length > 0 && (
+              <SEOSolution
+                headline={t(`${contentKey}.solutionHeadline`, "Hoe OneRooted helpt")}
+                solutionPoints={content.solutionPoints}
+              />
+            )}
+            {content.features.length > 0 && (
+              <SEOFeatureHighlights
+                headline={t(`${contentKey}.featuresHeadline`, "Relevante features")}
+                features={content.features}
+              />
+            )}
+            <SEOCTA
+              headline={t("finalCta.headline")}
+              subheadline={t("finalCta.subheadline")}
+              ctaText={t("finalCta.cta")}
+              variant="dark"
+            />
+          </>
+        );
+
       default: // Fallback for other templates
         return (
           <>

@@ -1724,6 +1724,308 @@
         "Partner-samenwerking als het nodig wordt",
         "Optioneel: Homerun voor branding, OneRooted voor proces"
       ]
+    },
+
+    "ats-vergelijken": {
+      "metaTitle": "ATS Vergelijken: Objectieve Vergelijking van Recruitmentsystemen",
+      "metaDescription": "Vergelijk ATS-systemen op de criteria die écht tellen. Objectieve gids zonder vendor-bias voor het kiezen van de juiste recruitmentsoftware.",
+      "breadcrumb": "ATS Vergelijken",
+      "label": "ATS Vergelijken",
+      "headline": "ATS-systemen",
+      "headlineHighlight": "objectief vergelijken",
+      "subheadline": "Niet gebaseerd op feature-lijsten, maar op wat écht verschil maakt voor je team. De criteria die vendors liever niet zien.",
+      "shortDescription": "Objectieve vergelijking van ATS-systemen zonder vendor-bias.",
+      "criteriaHeadline": "Vergelijk op wat écht telt",
+      "criteria": [
+        { "title": "Snelheid van adoptie", "description": "Hoeveel tijd kost het voordat je team het systeem daadwerkelijk gebruikt? Weken of maanden?", "mustHave": true },
+        { "title": "Kandidaat-ranking kwaliteit", "description": "Gaat het systeem verder dan keyword-matching? Ondersteunt het gestructureerde evaluatie?", "mustHave": true },
+        { "title": "Workflow flexibiliteit", "description": "Kun je processen zelf aanpassen, of ben je afhankelijk van consultants?", "mustHave": true },
+        { "title": "Total Cost of Ownership", "description": "Wat kost het écht over 3 jaar, inclusief implementatie, training en support?", "mustHave": true },
+        { "title": "Partner-samenwerking", "description": "Kunnen externe recruiters in hetzelfde systeem werken zonder licentiekosten?", "mustHave": false },
+        { "title": "Rapportage diepte", "description": "Krijg je out-of-the-box inzicht, of moet je alles zelf bouwen?", "mustHave": true },
+        { "title": "Migratie ondersteuning", "description": "Hoe ziet de overstap eruit? Wie is verantwoordelijk voor data-migratie?", "mustHave": false },
+        { "title": "Product roadmap", "description": "Investeert de vendor in innovatie? Hoe vaak worden nieuwe features gereleased?", "mustHave": false }
+      ],
+      "solutionHeadline": "Waarom teams kiezen voor OneRooted",
+      "solutionPoints": [
+        "Productief binnen dagen, niet maanden",
+        "Intelligente ranking die écht differentieert",
+        "Zelf configureerbaar zonder afhankelijkheid",
+        "Transparante TCO zonder verrassingen",
+        "Ingebouwde partner-samenwerking"
+      ]
+    },
+
+    "beste-ats-software": {
+      "metaTitle": "Beste ATS Software 2025: Ranking op Wat Écht Telt",
+      "metaDescription": "Objectieve ranking van de beste ATS-software voor Nederlandse bedrijven. Gebaseerd op adoptie, flexibiliteit en daadwerkelijke resultaten.",
+      "breadcrumb": "Beste ATS Software",
+      "label": "Beste ATS Software",
+      "headline": "De beste",
+      "headlineHighlight": "ATS software van 2025",
+      "subheadline": "Niet gebaseerd op wie het beste marketing-budget heeft, maar op wat teams daadwerkelijk succesvol maakt in hiring.",
+      "shortDescription": "Objectieve ranking van de beste ATS-software voor 2025.",
+      "criteriaHeadline": "Onze selectiecriteria",
+      "criteria": [
+        { "title": "Gebruikersadoptie", "description": "Het beste systeem is waardeloos als niemand het gebruikt. We meten op daadwerkelijke adoptie.", "mustHave": true },
+        { "title": "Time-to-value", "description": "Hoe snel levert het systeem waarde? Maanden implementatie is een red flag.", "mustHave": true },
+        { "title": "Ranking intelligence", "description": "Gaat verder dan basic filtering — ondersteunt echte besluitvorming.", "mustHave": true },
+        { "title": "Schaalbaarheid", "description": "Groeit mee van 10 naar 100 naar 1000 hires per jaar.", "mustHave": true },
+        { "title": "Prijs-kwaliteit verhouding", "description": "Beste waarde is niet altijd goedkoopst — maar wel transparant.", "mustHave": true },
+        { "title": "Nederlandse support", "description": "Lokale ondersteuning en begrip van de Nederlandse markt.", "mustHave": false }
+      ],
+      "solutionHeadline": "Waarom OneRooted in de top staat",
+      "solutionPoints": [
+        "Hoogste adoptie-scores door intuïtieve interface",
+        "Live binnen weken, waarde vanaf dag 1",
+        "Intelligente ranking die teams daadwerkelijk gebruiken",
+        "Schaalbaar van startup tot enterprise",
+        "Transparante pricing, Nederlandse support"
+      ]
+    },
+
+    "recruitmentsoftware": {
+      "metaTitle": "Recruitment Software: Het Systeem Achter Betere Hires",
+      "metaDescription": "Moderne recruitment software die verder gaat dan CV-opslag. OneRooted verbindt data, workflows en beslissingen in één intelligent systeem.",
+      "breadcrumb": "Recruitment Software",
+      "label": "Recruitment Software",
+      "headline": "Recruitment software die",
+      "headlineHighlight": "meedenkt",
+      "subheadline": "De meeste recruitment tools slaan data op. OneRooted verbindt het — met inzichten, automatisering en betere beslissingen.",
+      "shortDescription": "Ontdek hoe OneRooted recruitment transformeert.",
+      "problemHeadline": "Waarom recruitment software faalt",
+      "painPoints": [
+        "Gebouwd om CV's op te slaan, niet om keuzes te ondersteunen",
+        "Workflows die je proces in rigide pipelines dwingen",
+        "Samenwerking die buiten het systeem plaatsvindt",
+        "Inzichten begraven in data die je zelf moet opgraven",
+        "Integratie-complexiteit die IT-support vereist",
+        "Pricing die groei afstraft"
+      ],
+      "consequence": "Je tools zouden hiring moeten versnellen. In plaats daarvan creëren ze overhead.",
+      "solutionHeadline": "Recruitment herontworpen als systeem",
+      "solutionPoints": [
+        "Beslissings-eerst ontwerp — elke feature ondersteunt betere keuzes",
+        "Adaptieve workflows die meebewegen met je team",
+        "Real-time samenwerking voor interne en externe stakeholders",
+        "Intelligence die vanzelf naar boven komt",
+        "Simpele integraties zonder IT-projecten",
+        "Transparante pricing die succes niet afstraft"
+      ],
+      "uniqueAngle": "Stop met je aan te passen aan je tools. Begin met tools die zich aanpassen aan jou.",
+      "featuresHeadline": "Gebouwd voor hoe je daadwerkelijk werft",
+      "features": [
+        { "icon": "ranking", "title": "Kandidaat Ranking", "description": "Gestructureerde evaluatie die consistentie brengt in je team." },
+        { "icon": "pipeline", "title": "Visuele Pipeline", "description": "Helderheid over elke kandidaat, elke fase, elke beslissing." },
+        { "icon": "automation", "title": "Slimme Automatisering", "description": "Workflows die kandidaten vooruit bewegen zonder handmatige acties." },
+        { "icon": "collaboration", "title": "Uniforme Samenwerking", "description": "Iedereen werkt vanuit dezelfde bron van waarheid." },
+        { "icon": "analytics", "title": "Proces Intelligence", "description": "Metrics die vertellen wat te doen, niet alleen wat gebeurd is." },
+        { "icon": "security", "title": "Enterprise Security", "description": "AVG-compliant, gebouwd voor schaal." }
+      ]
+    },
+
+    "kandidaat-ranking": {
+      "metaTitle": "Kandidaat Ranking Software: Objectieve Scoring voor Betere Hires",
+      "metaDescription": "Automatische kandidaat-ranking die subjectiviteit elimineert. Score kandidaten op dezelfde criteria voor consistente, verdedigbare beslissingen.",
+      "breadcrumb": "Kandidaat Ranking",
+      "label": "Kandidaat Ranking",
+      "headline": "Kandidaten ranken op",
+      "headlineHighlight": "wat écht telt",
+      "subheadline": "Weg met onderbuikgevoel. Intelligente ranking die elke kandidaat scoort op dezelfde criteria — consistent, objectief, verdedigbaar.",
+      "shortDescription": "Automatische kandidaat-ranking voor objectievere selectie.",
+      "problemHeadline": "Het probleem met handmatige selectie",
+      "painPoints": [
+        "Elke recruiter evalueert anders — geen consistentie",
+        "Onderbuikgevoel vermomd als 'ervaring'",
+        "Unconscious bias die onzichtbaar blijft",
+        "Geen verdedigbare audit trail bij afwijzingen",
+        "Topkandidaten die verdwijnen in de massa"
+      ],
+      "solutionHeadline": "Intelligente ranking met OneRooted",
+      "solutionPoints": [
+        "Eén scoringsmodel voor alle recruiters",
+        "Automatische ranking op basis van jouw criteria",
+        "Zichtbare weging die je kunt uitleggen",
+        "Consistente evaluatie over alle vacatures",
+        "Topkandidaten die automatisch naar boven komen"
+      ],
+      "featuresHeadline": "Hoe kandidaat-ranking werkt",
+      "features": [
+        { "icon": "ranking", "title": "Criteria-based Scoring", "description": "Definieer de criteria die tellen en laat het systeem scoren." },
+        { "icon": "automation", "title": "Automatische Ranking", "description": "Kandidaten worden automatisch gerangschikt zodra ze binnenkomen." },
+        { "icon": "analytics", "title": "Ranking Inzicht", "description": "Begrijp waarom iemand hoog of laag scoort." },
+        { "icon": "collaboration", "title": "Team Alignment", "description": "Iedereen gebruikt dezelfde meetlat." }
+      ]
+    },
+
+    "cv-screening": {
+      "metaTitle": "Automatische CV Screening: Van Inbox naar Shortlist in Minuten",
+      "metaDescription": "Automatische CV screening die uren admin-werk elimineert. OneRooted filtert en rankt kandidaten zodat je focust op de beste matches.",
+      "breadcrumb": "CV Screening",
+      "label": "CV Screening",
+      "headline": "CV screening die",
+      "headlineHighlight": "zichzelf doet",
+      "subheadline": "Stop met handmatig door CV's scrollen. Automatische screening die de beste matches naar boven haalt, zodat jij focust op gesprekken.",
+      "shortDescription": "Automatische CV screening voor snellere shortlists.",
+      "problemHeadline": "Handmatige screening kost te veel",
+      "painPoints": [
+        "Uren per dag besteed aan CV's doornemen",
+        "Goede kandidaten die je over het hoofd ziet",
+        "Inconsistente beoordeling tussen recruiters",
+        "Geen schaalbare methode bij hoge volumes",
+        "Admin-werk dat afleidt van relatie-bouwen"
+      ],
+      "solutionHeadline": "Automatische screening met OneRooted",
+      "solutionPoints": [
+        "Instant matching op basis van vacature-eisen",
+        "Automatische shortlist van beste kandidaten",
+        "Consistente criteria over alle sollicitaties",
+        "Schaalbaar van 10 naar 1000 sollicitanten",
+        "Meer tijd voor gesprekken, minder voor admin"
+      ],
+      "featuresHeadline": "CV screening functionaliteit",
+      "features": [
+        { "icon": "automation", "title": "Instant Matching", "description": "CV's worden direct gematcht tegen vacature-criteria." },
+        { "icon": "ranking", "title": "Automatische Shortlist", "description": "De beste matches komen automatisch bovenaan." },
+        { "icon": "analytics", "title": "Match Inzicht", "description": "Begrijp waarom iemand wel of niet past." },
+        { "icon": "pipeline", "title": "Bulk Verwerking", "description": "Verwerk honderden sollicitaties in minuten." }
+      ]
+    },
+
+    "ats-bureaus": {
+      "metaTitle": "ATS voor Bureaus: Multi-Client Recruitment Management",
+      "metaDescription": "ATS speciaal voor recruitment bureaus. Multi-client beheer, klant-portalen, commissie-tracking en bureau-specifieke workflows in één systeem.",
+      "breadcrumb": "ATS voor Bureaus",
+      "label": "ATS voor Bureaus",
+      "headline": "ATS gebouwd voor",
+      "headlineHighlight": "recruitment bureaus",
+      "subheadline": "Geen corporate ATS met bureau-plugins. Een systeem dat begrijpt hoe bureaus werken — multi-client, transparant, schaalbaar.",
+      "shortDescription": "ATS speciaal ontworpen voor recruitment bureaus.",
+      "challengesHeadline": "Unieke uitdagingen voor bureaus",
+      "painPoints": [
+        "Meerdere klanten, elk met eigen processen",
+        "Klanten die transparantie en inzicht verwachten",
+        "Commissie en fee-tracking die handwerk blijft",
+        "Kandidaten die bij meerdere klanten passen",
+        "Rapportages per klant die uren kosten"
+      ],
+      "solutionHeadline": "OneRooted voor bureaus",
+      "solutionPoints": [
+        "Multi-client beheer met gescheiden omgevingen",
+        "Klant-portalen die vertrouwen opbouwen",
+        "Automatische commissie-tracking",
+        "Cross-client kandidaat-matching",
+        "Per-klant rapportages die vanzelf ontstaan"
+      ],
+      "featuresHeadline": "Bureau-specifieke features",
+      "features": [
+        { "icon": "collaboration", "title": "Multi-Client Beheer", "description": "Elk klant krijgt een eigen omgeving, jij houdt overzicht." },
+        { "icon": "pipeline", "title": "Klant Portalen", "description": "Geef klanten real-time inzicht in hun processen." },
+        { "icon": "analytics", "title": "Commissie Tracking", "description": "Automatisch bijhouden van fees en plaatsingen." },
+        { "icon": "ranking", "title": "Cross-Client Matching", "description": "Eén kandidaat, meerdere kansen." }
+      ]
+    },
+
+    "ats-inhouse": {
+      "metaTitle": "ATS voor Inhouse Recruiters: Corporate Recruitment Beheren",
+      "metaDescription": "ATS voor interne recruitment teams. Hiring manager collaboration, gestructureerde processen en enterprise-grade compliance in één systeem.",
+      "breadcrumb": "ATS voor Inhouse",
+      "label": "ATS Inhouse",
+      "headline": "ATS voor",
+      "headlineHighlight": "inhouse recruiters",
+      "subheadline": "Gebouwd voor de complexiteit van corporate recruitment — hiring managers, compliance, volume en de uitdaging om iedereen aligned te houden.",
+      "shortDescription": "ATS speciaal voor interne recruitment teams.",
+      "challengesHeadline": "Uitdagingen bij interne werving",
+      "painPoints": [
+        "Hiring managers die niet reageren of anders evalueren",
+        "Compliance-eisen die documentatie verplichten",
+        "Geen zicht op waar kandidaten vastlopen",
+        "Externe bureaus die apart moeten worden beheerd",
+        "Rapportages voor management die handwerk zijn"
+      ],
+      "solutionHeadline": "OneRooted voor inhouse teams",
+      "solutionPoints": [
+        "Hiring manager portal voor structured feedback",
+        "Automatische compliance-documentatie",
+        "Real-time bottleneck-detectie",
+        "Bureau-integratie binnen hetzelfde systeem",
+        "Management dashboards die vanzelf updaten"
+      ],
+      "featuresHeadline": "Inhouse-specifieke features",
+      "features": [
+        { "icon": "collaboration", "title": "Hiring Manager Portal", "description": "Structured feedback zonder training." },
+        { "icon": "security", "title": "Compliance Tracking", "description": "Automatische audit trail voor elke beslissing." },
+        { "icon": "analytics", "title": "Process Intelligence", "description": "Zie waar je proces stagneert." },
+        { "icon": "pipeline", "title": "Partner Management", "description": "Bureaus werken in hetzelfde systeem." }
+      ]
+    },
+
+    "recruitment-mkb": {
+      "metaTitle": "Recruitment Software MKB: Enterprise Features, MKB Prijs",
+      "metaDescription": "Recruitment software voor het MKB. Professionele features zonder enterprise-complexiteit of -prijzen. Vanaf €99 per maand.",
+      "breadcrumb": "Recruitment MKB",
+      "label": "Recruitment MKB",
+      "headline": "Recruitment software voor",
+      "headlineHighlight": "het MKB",
+      "subheadline": "Je wilt professioneel werven, maar hebt geen budget voor enterprise-tools. OneRooted geeft je de features, niet de complexiteit.",
+      "shortDescription": "Professionele recruitment software voor MKB-bedrijven.",
+      "challengesHeadline": "De MKB-paradox bij recruitment",
+      "painPoints": [
+        "Enterprise-tools zijn te duur en te complex",
+        "Gratis tools missen essentiële functionaliteit",
+        "Excel en email werken niet meer bij groei",
+        "Geen dedicated recruitment-afdeling",
+        "Hiring moet naast andere verantwoordelijkheden"
+      ],
+      "solutionHeadline": "OneRooted voor MKB",
+      "solutionPoints": [
+        "Professionele features vanaf €99 per maand",
+        "Intuïtief genoeg om zonder training te starten",
+        "Schaalbaar wanneer je team groeit",
+        "Geen IT-afdeling nodig voor implementatie",
+        "Zelf configureerbaar, geen consultants"
+      ],
+      "featuresHeadline": "Wat je krijgt als MKB",
+      "features": [
+        { "icon": "ranking", "title": "Kandidaat Ranking", "description": "Professionele selectie zonder spreadsheets." },
+        { "icon": "pipeline", "title": "Visuele Pipeline", "description": "Overzicht dat past bij beperkte tijd." },
+        { "icon": "automation", "title": "Basis Automatisering", "description": "Minder admin, meer gesprekken." },
+        { "icon": "analytics", "title": "Simpele Rapportages", "description": "Inzicht zonder complexiteit." }
+      ]
+    },
+
+    "recruitment-enterprise": {
+      "metaTitle": "Enterprise Recruitment Software: Schaal Zonder Compromissen",
+      "metaDescription": "Enterprise recruitment software voor grootschalige hiring-operaties. SOC 2 ready, SSO, geavanceerde workflows en enterprise-grade support.",
+      "breadcrumb": "Recruitment Enterprise",
+      "label": "Enterprise",
+      "headline": "Enterprise recruitment",
+      "headlineHighlight": "zonder enterprise-complexiteit",
+      "subheadline": "Je hebt de features nodig, niet de bureaucratie. Enterprise-grade recruitment met de snelheid van een startup.",
+      "shortDescription": "Enterprise recruitment software voor grootschalige operaties.",
+      "challengesHeadline": "Enterprise hiring uitdagingen",
+      "painPoints": [
+        "Honderden vacatures tegelijk beheren",
+        "Security en compliance eisen die niet onderhandelbaar zijn",
+        "Meerdere landen, meerdere processen",
+        "Integration met bestaande HR-tech stack",
+        "Rollouts die maanden in beslag nemen"
+      ],
+      "solutionHeadline": "OneRooted voor enterprise",
+      "solutionPoints": [
+        "Onbeperkte vacatures en gebruikers",
+        "SOC 2 ready, SSO, enterprise security",
+        "Multi-entity ondersteuning met lokale workflows",
+        "Enterprise-grade API en integraties",
+        "Rollout in weken, niet kwartalen"
+      ],
+      "featuresHeadline": "Enterprise features",
+      "features": [
+        { "icon": "security", "title": "Enterprise Security", "description": "SOC 2 ready, SSO, audit logs." },
+        { "icon": "collaboration", "title": "Multi-Entity", "description": "Meerdere bedrijven, één systeem." },
+        { "icon": "automation", "title": "Advanced Workflows", "description": "Complexe processen, simpel beheer." },
+        { "icon": "analytics", "title": "Executive Reporting", "description": "Cross-entity analytics en dashboards." }
+      ]
     }
   }
 }
