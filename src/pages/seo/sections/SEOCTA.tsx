@@ -100,7 +100,7 @@ export function SEOCTA({
                 variant="outline" 
                 size="lg" 
                 asChild
-                className={isDark ? "border-primary/50 text-primary hover:bg-primary/10" : "border-primary/30 text-primary hover:bg-primary/5"}
+                className={isDark ? "border-background/40 text-background hover:bg-background/10 hover:border-background/60" : "border-primary/30 text-primary hover:bg-primary/5"}
               >
                 <Link to={getLocalizedHref("/pricing")}>
                   {ctaSecondaryText}
