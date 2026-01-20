@@ -1727,5 +1727,86 @@
         ]
       }
     ]
+  },
+
+  "atsComparison": {
+    "badge": "Objective Comparison",
+    "title": "ATS Systems",
+    "titleHighlight": "Compared",
+    "subtitle": "Compare the most important ATS systems on the criteria that matter.",
+    "selectSystems": "Select systems to compare:",
+    "criteria": "Criteria",
+    "ctaText": "Convinced? See OneRooted in action.",
+    "ctaButton": "Book a demo",
+    "ctaSecondary": "View pricing",
+    "legend": {
+      "full": "Fully supported",
+      "partial": "Partial / with limitations",
+      "none": "Not available"
+    },
+    "systems": [
+      { "id": "onerooted", "name": "OneRooted", "isHighlighted": true, "tagline": "Hiring OS" },
+      { "id": "recruitee", "name": "Recruitee", "tagline": "Tellent" },
+      { "id": "greenhouse", "name": "Greenhouse", "tagline": "Enterprise ATS" },
+      { "id": "lever", "name": "Lever", "tagline": "Modern ATS" },
+      { "id": "workday", "name": "Workday", "tagline": "HCM Suite" },
+      { "id": "breezy", "name": "Breezy HR", "tagline": "SMB ATS" }
+    ],
+    "categories": [
+      {
+        "id": "core",
+        "name": "Core Functionality",
+        "criteria": [
+          { "id": "pipeline", "name": "Visual kanban pipeline", "weight": 10, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "full" } },
+          { "id": "ranking", "name": "Candidate ranking", "tooltip": "Automatic candidate prioritization", "weight": 9, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "partial", "lever": "partial", "workday": "none", "breezy": "none" } },
+          { "id": "profiles", "name": "Centralized profiles", "weight": 8, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "full", "breezy": "full" } },
+          { "id": "jobmgmt", "name": "Job management", "weight": 7, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "full", "breezy": "full" } },
+          { "id": "multipost", "name": "Multi-channel posting", "weight": 5, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "full" } }
+        ]
+      },
+      {
+        "id": "collab",
+        "name": "Collaboration",
+        "criteria": [
+          { "id": "roles", "name": "Team roles and permissions", "weight": 8, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "full", "breezy": "partial" } },
+          { "id": "feedback", "name": "Structured feedback", "tooltip": "Scorecards and evaluation forms", "weight": 9, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "partial" } },
+          { "id": "partner", "name": "Partner/agency access", "tooltip": "External recruiters in the same system", "weight": 8, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "partial", "lever": "partial", "workday": "none", "breezy": "partial" } },
+          { "id": "activity", "name": "Real-time activity feed", "weight": 5, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "full" } },
+          { "id": "mentions", "name": "@mentions and notifications", "weight": 4, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "full" } }
+        ]
+      },
+      {
+        "id": "automation",
+        "name": "Automation",
+        "criteria": [
+          { "id": "templates", "name": "Email templates", "weight": 7, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "full", "breezy": "full" } },
+          { "id": "autostatus", "name": "Automatic status updates", "weight": 6, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "partial" } },
+          { "id": "scheduling", "name": "Interview scheduling", "tooltip": "Calendar integration and availability", "weight": 8, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "full" } },
+          { "id": "bulk", "name": "Bulk actions", "weight": 5, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "full", "breezy": "partial" } },
+          { "id": "triggers", "name": "Workflow triggers", "tooltip": "If-this-then-that without code", "weight": 7, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "none" } }
+        ]
+      },
+      {
+        "id": "analytics",
+        "name": "Reporting",
+        "criteria": [
+          { "id": "funnel", "name": "Funnel reports", "weight": 8, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "partial" } },
+          { "id": "tth", "name": "Time-to-hire metrics", "weight": 7, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "partial" } },
+          { "id": "source", "name": "Source effectiveness", "weight": 6, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "full" } },
+          { "id": "team", "name": "Team performance", "weight": 5, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "full", "lever": "full", "workday": "partial", "breezy": "none" } },
+          { "id": "api", "name": "Export and API access", "weight": 6, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "full", "lever": "full", "workday": "full", "breezy": "partial" } }
+        ]
+      },
+      {
+        "id": "pricing",
+        "name": "Pricing Model",
+        "criteria": [
+          { "id": "transparent", "name": "Transparent pricing", "tooltip": "No hidden costs", "weight": 8, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "none", "lever": "none", "workday": "none", "breezy": "full" } },
+          { "id": "noperseat", "name": "No per-seat costs", "weight": 7, "scores": { "onerooted": "full", "recruitee": "none", "greenhouse": "none", "lever": "none", "workday": "none", "breezy": "none" } },
+          { "id": "nosetup", "name": "No setup fees", "weight": 6, "scores": { "onerooted": "full", "recruitee": "partial", "greenhouse": "none", "lever": "none", "workday": "none", "breezy": "full" } },
+          { "id": "monthly", "name": "Monthly cancellation", "weight": 5, "scores": { "onerooted": "full", "recruitee": "full", "greenhouse": "none", "lever": "none", "workday": "none", "breezy": "full" } }
+        ]
+      }
+    ]
   }
 }

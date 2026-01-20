@@ -2142,5 +2142,86 @@
         ]
       }
     ]
+  },
+
+  "atsComparison": {
+    "badge": "Objectieve Vergelijking",
+    "title": "ATS Systemen",
+    "titleHighlight": "Vergeleken",
+    "subtitle": "Vergelijk de belangrijkste ATS-systemen op de criteria die er toe doen.",
+    "selectSystems": "Selecteer systemen om te vergelijken:",
+    "criteria": "Criteria",
+    "ctaText": "Overtuigd? Zie OneRooted in actie.",
+    "ctaButton": "Plan een demo",
+    "ctaSecondary": "Bekijk prijzen",
+    "legend": {
+      "full": "Volledig ondersteund",
+      "partial": "Gedeeltelijk / met beperkingen",
+      "none": "Niet beschikbaar"
+    },
+    "systems": [
+      { "id": "onerooted", "name": "OneRooted", "isHighlighted": true, "tagline": "Hiring OS" },
+      { "id": "recruitee", "name": "Recruitee", "tagline": "Tellent" },
+      { "id": "bullhorn", "name": "Bullhorn", "tagline": "Bureau ATS" },
+      { "id": "homerun", "name": "Homerun", "tagline": "Employer branding" },
+      { "id": "carerix", "name": "Carerix", "tagline": "Bureau software" },
+      { "id": "greenhouse", "name": "Greenhouse", "tagline": "Enterprise ATS" }
+    ],
+    "categories": [
+      {
+        "id": "core",
+        "name": "Kernfunctionaliteit",
+        "criteria": [
+          { "id": "pipeline", "name": "Visuele kanban pipeline", "weight": 10, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "partial", "homerun": "full", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "ranking", "name": "Kandidaat-ranking", "tooltip": "Automatische prioritering van kandidaten", "weight": 9, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "none", "homerun": "none", "carerix": "none", "greenhouse": "partial" } },
+          { "id": "profiles", "name": "Gecentraliseerde profielen", "weight": 8, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "full", "homerun": "full", "carerix": "full", "greenhouse": "full" } },
+          { "id": "jobmgmt", "name": "Vacaturebeheer", "weight": 7, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "full", "homerun": "full", "carerix": "full", "greenhouse": "full" } },
+          { "id": "multipost", "name": "Multi-channel posting", "weight": 5, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "partial", "homerun": "full", "carerix": "partial", "greenhouse": "full" } }
+        ]
+      },
+      {
+        "id": "collab",
+        "name": "Samenwerking",
+        "criteria": [
+          { "id": "roles", "name": "Team-rollen en rechten", "weight": 8, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "full", "homerun": "partial", "carerix": "full", "greenhouse": "full" } },
+          { "id": "feedback", "name": "Gestructureerde feedback", "tooltip": "Scorecards en evaluatieformulieren", "weight": 9, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "partial", "homerun": "partial", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "partner", "name": "Partner/bureau toegang", "tooltip": "Externe recruiters in hetzelfde systeem", "weight": 8, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "full", "homerun": "none", "carerix": "full", "greenhouse": "partial" } },
+          { "id": "activity", "name": "Real-time activiteitenfeed", "weight": 5, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "partial", "homerun": "full", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "mentions", "name": "@mentions en notificaties", "weight": 4, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "partial", "homerun": "full", "carerix": "none", "greenhouse": "full" } }
+        ]
+      },
+      {
+        "id": "automation",
+        "name": "Automatisering",
+        "criteria": [
+          { "id": "templates", "name": "Email templates", "weight": 7, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "full", "homerun": "full", "carerix": "full", "greenhouse": "full" } },
+          { "id": "autostatus", "name": "Automatische status-updates", "weight": 6, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "partial", "homerun": "partial", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "scheduling", "name": "Interview scheduling", "tooltip": "Agenda-integratie en beschikbaarheid", "weight": 8, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "partial", "homerun": "full", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "bulk", "name": "Bulk-acties", "weight": 5, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "full", "homerun": "partial", "carerix": "full", "greenhouse": "full" } },
+          { "id": "triggers", "name": "Workflow triggers", "tooltip": "If-this-then-that zonder code", "weight": 7, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "partial", "homerun": "none", "carerix": "partial", "greenhouse": "full" } }
+        ]
+      },
+      {
+        "id": "analytics",
+        "name": "Rapportage",
+        "criteria": [
+          { "id": "funnel", "name": "Funnel-rapportages", "weight": 8, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "partial", "homerun": "partial", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "tth", "name": "Time-to-hire metrics", "weight": 7, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "partial", "homerun": "partial", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "source", "name": "Source-effectiviteit", "weight": 6, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "partial", "homerun": "full", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "team", "name": "Team-performance", "weight": 5, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "partial", "homerun": "none", "carerix": "partial", "greenhouse": "full" } },
+          { "id": "api", "name": "Export en API-toegang", "weight": 6, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "full", "homerun": "partial", "carerix": "full", "greenhouse": "full" } }
+        ]
+      },
+      {
+        "id": "pricing",
+        "name": "Prijsmodel",
+        "criteria": [
+          { "id": "transparent", "name": "Transparante pricing", "tooltip": "Geen verborgen kosten", "weight": 8, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "none", "homerun": "full", "carerix": "none", "greenhouse": "none" } },
+          { "id": "noperseat", "name": "Geen per-seat kosten", "weight": 7, "scores": { "onerooted": "full", "recruitee": "none", "bullhorn": "none", "homerun": "none", "carerix": "none", "greenhouse": "none" } },
+          { "id": "nosetup", "name": "Geen setup fees", "weight": 6, "scores": { "onerooted": "full", "recruitee": "partial", "bullhorn": "none", "homerun": "full", "carerix": "none", "greenhouse": "none" } },
+          { "id": "monthly", "name": "Maandelijks opzegbaar", "weight": 5, "scores": { "onerooted": "full", "recruitee": "full", "bullhorn": "none", "homerun": "full", "carerix": "none", "greenhouse": "none" } }
+        ]
+      }
+    ]
   }
 }
