@@ -97,10 +97,13 @@ export function SEOCTA({
             </Button>
             {ctaSecondaryText && (
               <Button 
-                variant="outline" 
+                variant={isDark ? "ghost" : "outline"}
                 size="lg" 
                 asChild
-                className={isDark ? "border-background/40 text-background hover:bg-background/10" : "border-foreground/20 text-foreground hover:bg-foreground/5"}
+                className={isDark 
+                  ? "border border-white/40 text-white hover:bg-white/10" 
+                  : "border-foreground/20 text-foreground hover:bg-foreground/5"
+                }
               >
                 <Link to={getLocalizedHref("/pricing")}>
                   {ctaSecondaryText}
