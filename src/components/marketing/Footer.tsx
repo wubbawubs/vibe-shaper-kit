@@ -30,8 +30,10 @@ export function Footer() {
       { href: "/ats-checklist", label: "ATS Checklist" },
       { href: "/ats-kosten", label: "ATS Kosten" },
     ] : [
-      { href: "/recruitment-analytics", label: "Recruitment Analytics" },
-      { href: "/candidate-pipeline-management", label: "Pipeline Management" },
+      { href: "/ats-comparison", label: "ATS Comparison" },
+      { href: "/best-ats-software", label: "Best ATS Software" },
+      { href: "/ats-checklist", label: "ATS Checklist" },
+      { href: "/ats-cost-calculator", label: "ATS Costs" },
     ],
     alternatives: currentLang === "nl" ? [
       { href: "/bullhorn-alternatief", label: "Bullhorn" },
