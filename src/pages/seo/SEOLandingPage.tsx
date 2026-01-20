@@ -18,6 +18,12 @@ import { TCOCalculator } from "@/components/seo/TCOCalculator";
 import { ATSChecklist } from "@/components/seo/ATSChecklist";
 import { ATSComparisonMatrix } from "@/components/seo/ATSComparisonMatrix";
 
+// New template sections
+import { SEOIntegrationHowTo } from "./sections/SEOIntegrationHowTo";
+import { SEOIndustryWorkflow } from "./sections/SEOIndustryWorkflow";
+import { SEORoleStakeholder } from "./sections/SEORoleStakeholder";
+import { SEOGlossaryDefinition } from "./sections/SEOGlossaryDefinition";
+
 const BASE_URL = "https://onerooted.com";
 
 export default function SEOLandingPage() {
@@ -62,21 +68,24 @@ export default function SEOLandingPage() {
     } : null;
   }).filter(Boolean) as { slug: string; title: string; description: string }[];
 
+  // Common content extraction
+  const getCommonContent = () => ({
+    hero: {
+      label: t(`${contentKey}.label`, ""),
+      headline: t(`${contentKey}.headline`, pageData.primaryKeyword),
+      headlineHighlight: t(`${contentKey}.headlineHighlight`, ""),
+      subheadline: t(`${contentKey}.subheadline`, ""),
+      ctaText: t("finalCta.cta", "Demo aanvragen"),
+      ctaSecondaryText: t("finalCta.ctaSecondary", "Bekijk prijzen"),
+    },
+    painPoints: t(`${contentKey}.painPoints`, { returnObjects: true, defaultValue: [] }) as string[],
+    solutionPoints: t(`${contentKey}.solutionPoints`, { returnObjects: true, defaultValue: [] }) as string[],
+    features: t(`${contentKey}.features`, { returnObjects: true, defaultValue: [] }) as { icon: string; title: string; description: string }[],
+  });
+
   // Render based on template
   const renderContent = () => {
-    const content = {
-      hero: {
-        label: t(`${contentKey}.label`, ""),
-        headline: t(`${contentKey}.headline`, pageData.primaryKeyword),
-        headlineHighlight: t(`${contentKey}.headlineHighlight`, ""),
-        subheadline: t(`${contentKey}.subheadline`, ""),
-        ctaText: t("finalCta.cta", "Demo aanvragen"),
-        ctaSecondaryText: t("finalCta.ctaSecondary", "Bekijk prijzen"),
-      },
-      painPoints: t(`${contentKey}.painPoints`, { returnObjects: true, defaultValue: [] }) as string[],
-      solutionPoints: t(`${contentKey}.solutionPoints`, { returnObjects: true, defaultValue: [] }) as string[],
-      features: t(`${contentKey}.features`, { returnObjects: true, defaultValue: [] }) as { icon: string; title: string; description: string }[],
-    };
+    const content = getCommonContent();
 
     switch (pageData.template) {
       case "T-A": // Software Type
@@ -277,6 +286,131 @@ export default function SEOLandingPage() {
               subheadline={t("finalCta.subheadline")}
               ctaText={t("finalCta.cta")}
               variant="dark"
+            />
+          </>
+        );
+
+      case "T-INT": // Integration pages
+        const integrationSteps = t(`${contentKey}.integrationSteps`, { returnObjects: true, defaultValue: [] }) as { title: string; description: string; duration?: string }[];
+        const integrationBenefits = t(`${contentKey}.integrationBenefits`, { returnObjects: true, defaultValue: [] }) as string[];
+        const integrationName = pageData.primaryKeyword.replace("ATS ", "").replace(" integratie", "").replace(" koppeling", "");
+        
+        return (
+          <>
+            <SEOHero {...content.hero} />
+            <SEOIntegrationHowTo
+              headline={t(`${contentKey}.howToHeadline`, `Zo koppel je ${integrationName}`)}
+              subheadline={t(`${contentKey}.howToSubheadline`, "")}
+              integrationName={integrationName}
+              steps={integrationSteps}
+              benefits={integrationBenefits}
+              technicalNote={t(`${contentKey}.technicalNote`, "")}
+            />
+            {content.solutionPoints.length > 0 && (
+              <SEOSolution
+                headline={t(`${contentKey}.solutionHeadline`, "Wat de integratie oplevert")}
+                solutionPoints={content.solutionPoints}
+              />
+            )}
+            <SEOCTA
+              headline={t("finalCta.headline")}
+              subheadline={t("finalCta.subheadline")}
+              ctaText={t("finalCta.cta")}
+              variant="dark"
+            />
+          </>
+        );
+
+      case "T-IND": // Industry pages
+        const industryName = pageData.primaryKeyword.replace("ATS voor ", "").replace("ATS for ", "");
+        const challenges = t(`${contentKey}.challenges`, { returnObjects: true, defaultValue: [] }) as string[];
+        const workflowSteps = t(`${contentKey}.workflowSteps`, { returnObjects: true, defaultValue: [] }) as { stage: string; description: string; metric?: string }[];
+        const compliancePoints = t(`${contentKey}.compliancePoints`, { returnObjects: true, defaultValue: [] }) as string[];
+        const keyMetrics = t(`${contentKey}.keyMetrics`, { returnObjects: true, defaultValue: [] }) as { label: string; value: string }[];
+        
+        return (
+          <>
+            <SEOHero {...content.hero} />
+            <SEOIndustryWorkflow
+              headline={t(`${contentKey}.workflowHeadline`, `Recruitment in ${industryName}`)}
+              industryName={industryName}
+              challenges={challenges.length > 0 ? challenges : content.painPoints}
+              workflowSteps={workflowSteps}
+              compliancePoints={compliancePoints}
+              keyMetrics={keyMetrics}
+            />
+            {content.solutionPoints.length > 0 && (
+              <SEOSolution
+                headline={t(`${contentKey}.solutionHeadline`, `Hoe OneRooted helpt in ${industryName.toLowerCase()}`)}
+                solutionPoints={content.solutionPoints}
+              />
+            )}
+            {content.features.length > 0 && (
+              <SEOFeatureHighlights
+                headline={t(`${contentKey}.featuresHeadline`, "Relevante functionaliteit")}
+                features={content.features}
+              />
+            )}
+            <SEOCTA
+              headline={t("finalCta.headline")}
+              subheadline={t("finalCta.subheadline")}
+              ctaText={t("finalCta.cta")}
+              variant="dark"
+            />
+          </>
+        );
+
+      case "T-ROLE": // Stakeholder/Role pages
+        const roleName = pageData.primaryKeyword.replace("ATS voor ", "").replace("ATS for ", "");
+        const kpis = t(`${contentKey}.kpis`, { returnObjects: true, defaultValue: [] }) as { metric: string; description: string; howWeHelp: string }[];
+        const buyingObjections = t(`${contentKey}.buyingObjections`, { returnObjects: true, defaultValue: [] }) as { objection: string; response: string }[];
+        const valueProps = t(`${contentKey}.valueProps`, { returnObjects: true, defaultValue: [] }) as string[];
+        
+        return (
+          <>
+            <SEOHero {...content.hero} />
+            <SEORoleStakeholder
+              headline={t(`${contentKey}.stakeholderHeadline`, `Waarom ${roleName.toLowerCase()} kiezen voor OneRooted`)}
+              roleName={roleName}
+              painPoints={content.painPoints}
+              kpis={kpis}
+              buyingObjections={buyingObjections}
+              valueProps={valueProps.length > 0 ? valueProps : content.solutionPoints}
+            />
+            <SEOCTA
+              headline={t("finalCta.headline")}
+              subheadline={t("finalCta.subheadline")}
+              ctaText={t("finalCta.cta")}
+              variant="dark"
+            />
+          </>
+        );
+
+      case "T-GLOSS": // Glossary/Knowledge base pages
+        const term = t(`${contentKey}.term`, pageData.primaryKeyword);
+        const definition = t(`${contentKey}.definition`, "");
+        const explanation = t(`${contentKey}.explanation`, "");
+        const whyItMatters = t(`${contentKey}.whyItMatters`, "");
+        const examples = t(`${contentKey}.examples`, { returnObjects: true, defaultValue: [] }) as string[];
+        const relatedTerms = t(`${contentKey}.relatedTerms`, { returnObjects: true, defaultValue: [] }) as { slug: string; term: string }[];
+        const relatedFeature = t(`${contentKey}.relatedFeature`, { returnObjects: true, defaultValue: null }) as { slug: string; title: string; description: string } | null;
+        
+        return (
+          <>
+            <SEOGlossaryDefinition
+              term={term}
+              definition={definition}
+              explanation={explanation}
+              whyItMatters={whyItMatters}
+              examples={examples}
+              relatedTerms={relatedTerms}
+              relatedFeature={relatedFeature || undefined}
+            />
+            <SEOCTA
+              headline={t("finalCta.headline")}
+              subheadline={t("finalCta.subheadline")}
+              ctaText={t("finalCta.cta")}
+              variant="default"
             />
           </>
         );
