@@ -59,9 +59,17 @@ export function SEOSolution({
             </motion.p>
           )}
 
-          {/* Solution Points */}
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {solutionPoints.map((point, index) => (
+          {/* Solution Points - Always fill complete rows */}
+          <div className={`mt-10 grid gap-4 ${
+            solutionPoints.length <= 3 
+              ? 'sm:grid-cols-2 lg:grid-cols-3' 
+              : solutionPoints.length === 4 
+                ? 'sm:grid-cols-2' 
+                : solutionPoints.length === 5 
+                  ? 'sm:grid-cols-2 lg:grid-cols-3' 
+                  : 'sm:grid-cols-2 lg:grid-cols-3'
+          }`}>
+            {solutionPoints.slice(0, solutionPoints.length <= 3 ? 3 : solutionPoints.length === 4 ? 4 : solutionPoints.length === 5 ? 6 : 6).map((point, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
