@@ -2052,6 +2052,383 @@
         { "icon": "automation", "title": "Advanced Workflows", "description": "Complexe processen, simpel beheer." },
         { "icon": "analytics", "title": "Executive Reporting", "description": "Cross-entity analytics en dashboards." }
       ]
+    },
+
+    "ats-avg": {
+      "metaTitle": "ATS en AVG: GDPR-Compliant Recruitment Software",
+      "metaDescription": "Alles over AVG-compliance voor recruitment software. Bewaartermijnen, verwerkersovereenkomsten en auditpunten voor je ATS.",
+      "breadcrumb": "ATS AVG",
+      "label": "ATS & AVG",
+      "headline": "AVG-compliant",
+      "headlineHighlight": "recruitment",
+      "subheadline": "De AVG stelt strenge eisen aan kandidaatdata. Dit is wat je ATS moet kunnen — en wat jij moet regelen.",
+      "shortDescription": "Complete gids over AVG-compliance voor je ATS.",
+      "guideHeadline": "AVG-eisen voor recruitment",
+      "guideSteps": [
+        { "step": "1", "title": "Bewaartermijnen instellen", "description": "Sollicitantendata mag niet onbeperkt bewaard. Standaard: 4 weken na afwijzing, met toestemming tot 1 jaar." },
+        { "step": "2", "title": "Verwerkersovereenkomst afsluiten", "description": "Je ATS-leverancier verwerkt data namens jou. Een DPA is wettelijk verplicht." },
+        { "step": "3", "title": "Toestemming documenteren", "description": "Leg vast waarvoor kandidaten toestemming geven en wanneer." },
+        { "step": "4", "title": "Inzage- en verwijderrechten borgen", "description": "Kandidaten kunnen hun data opvragen of laten verwijderen." }
+      ],
+      "checklistHeadline": "AVG Checklist voor je ATS",
+      "checklist": [
+        { "item": "Automatische bewaartermijnen", "description": "Data wordt automatisch verwijderd na afloop termijn" },
+        { "item": "Consent management", "description": "Toestemming registreren en verlengen" },
+        { "item": "Data export mogelijkheid", "description": "Kandidaatdata exporteren op verzoek" },
+        { "item": "Audit logging", "description": "Wie heeft wanneer wat ingezien of gewijzigd" },
+        { "item": "EU-datacenter", "description": "Data opgeslagen binnen de EU" }
+      ],
+      "solutionHeadline": "OneRooted is volledig AVG-compliant",
+      "solutionPoints": [
+        "Automatische bewaartermijnen die je zelf configureert",
+        "Ingebouwd consent management",
+        "One-click data export voor kandidaatverzoeken",
+        "Complete audit trail voor compliance",
+        "Data opgeslagen in EU-datacenters",
+        "Verwerkersovereenkomst standaard beschikbaar"
+      ]
+    },
+
+    "ats-criteria": {
+      "metaTitle": "ATS Selectiecriteria: Waar Moet Je Op Letten?",
+      "metaDescription": "De belangrijkste selectiecriteria voor je ATS-keuze. Gewogen checklist per bedrijfstype en segment.",
+      "breadcrumb": "ATS Criteria",
+      "label": "ATS Criteria",
+      "headline": "ATS selectiecriteria",
+      "headlineHighlight": "die écht tellen",
+      "subheadline": "Niet alle criteria wegen even zwaar. Dit zijn de factoren die verschil maken — gewogen per segment.",
+      "shortDescription": "Gewogen selectiecriteria voor je ATS-keuze.",
+      "guideHeadline": "Criteria gewogen per segment",
+      "guideSteps": [
+        { "step": "1", "title": "Definieer je segment", "description": "MKB, enterprise of bureau? Elk segment heeft andere prioriteiten." },
+        { "step": "2", "title": "Bepaal must-haves", "description": "Wat is niet onderhandelbaar? Start daar met evalueren." },
+        { "step": "3", "title": "Weeg nice-to-haves", "description": "Geef punten aan wat belangrijk is, maar niet kritiek." },
+        { "step": "4", "title": "Score en vergelijk", "description": "Gebruik een scorecard om objectief te vergelijken." }
+      ],
+      "criteriaBySegment": {
+        "mkb": {
+          "title": "MKB",
+          "topCriteria": ["Prijs-kwaliteit", "Gebruiksgemak", "Snelle implementatie", "Nederlandse support"]
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "topCriteria": ["SSO/Security", "Schaalbaarheid", "Integraties", "Compliance"]
+        },
+        "bureau": {
+          "title": "Bureau",
+          "topCriteria": ["Multi-client", "Klant-portalen", "Commissie tracking", "Volume handling"]
+        }
+      },
+      "solutionHeadline": "OneRooted scoort hoog op alle segmenten",
+      "solutionPoints": [
+        "Prijzen vanaf €99, toegankelijk voor MKB",
+        "Enterprise security zonder enterprise-complexiteit",
+        "Native multi-client ondersteuning voor bureaus",
+        "Nederlandse support en interface"
+      ]
+    },
+
+    "ats-demo": {
+      "metaTitle": "ATS Demo Aanvragen: Wat Je Moet Weten",
+      "metaDescription": "Hoe vraag je effectief een ATS demo aan? Vragenlijst, evaluatiecriteria en tips om het maximale uit je demo te halen.",
+      "breadcrumb": "ATS Demo",
+      "label": "ATS Demo",
+      "headline": "ATS demo",
+      "headlineHighlight": "die écht informeert",
+      "subheadline": "Een demo is pas waardevol als je de juiste vragen stelt. Dit is hoe je het maximale uit elk gesprek haalt.",
+      "shortDescription": "Bereid je ATS demo voor met deze vragenlijst.",
+      "guideHeadline": "Voorbereiding voor je demo",
+      "guideSteps": [
+        { "step": "1", "title": "Ken je requirements", "description": "Maak een lijst van must-haves en nice-to-haves vóór de demo." },
+        { "step": "2", "title": "Bereid vragen voor", "description": "Vraag naar specifieke scenario's uit jouw praktijk." },
+        { "step": "3", "title": "Neem beslissers mee", "description": "Zorg dat alle stakeholders erbij zijn." },
+        { "step": "4", "title": "Evalueer achteraf", "description": "Score direct na de demo, niet dagen later." }
+      ],
+      "questionsHeadline": "Vragen die je moet stellen",
+      "questions": [
+        "Hoe lang duurt implementatie voor een bedrijf als het onze?",
+        "Wat kost het écht over 3 jaar, inclusief alles?",
+        "Kunnen we workflows zelf aanpassen of hebben we jullie nodig?",
+        "Hoe werkt samenwerking met externe recruiters?",
+        "Wat zijn de laatste 3 features die jullie gereleased hebben?",
+        "Kunnen we referenties spreken van vergelijkbare bedrijven?"
+      ],
+      "solutionHeadline": "Vraag een OneRooted demo aan",
+      "solutionPoints": [
+        "30 minuten, geen sales-theater",
+        "Toegespitst op jouw situatie",
+        "Eerlijk over of we passen",
+        "Direct toegang tot trial na de demo"
+      ]
+    },
+
+    "ats-implementatie": {
+      "metaTitle": "ATS Implementatie: Stappenplan voor Succesvolle Uitrol",
+      "metaDescription": "Complete gids voor ATS-implementatie. Rollen, risico's, timeline en checklist voor een succesvolle uitrol.",
+      "breadcrumb": "ATS Implementatie",
+      "label": "ATS Implementatie",
+      "headline": "ATS implementatie",
+      "headlineHighlight": "zonder chaos",
+      "subheadline": "Een nieuwe ATS uitrollen kan pijnlijk zijn. Of soepel. Het verschil zit in voorbereiding.",
+      "shortDescription": "Stappenplan voor succesvolle ATS-implementatie.",
+      "guideHeadline": "Implementatie in 6 stappen",
+      "guideSteps": [
+        { "step": "1", "title": "Projectteam samenstellen", "description": "Wijs een projectleider aan en betrek key users vroeg." },
+        { "step": "2", "title": "Huidige processen documenteren", "description": "Begrijp wat je wilt behouden en wat moet veranderen." },
+        { "step": "3", "title": "Data migratie plannen", "description": "Welke data moet mee? In welk format?" },
+        { "step": "4", "title": "Configuratie en setup", "description": "Workflows, velden en integraties inrichten." },
+        { "step": "5", "title": "Training en pilot", "description": "Train key users, start met pilot-vacatures." },
+        { "step": "6", "title": "Go-live en support", "description": "Volledig uitrollen met standby support." }
+      ],
+      "riskHeadline": "Veelvoorkomende risico's",
+      "risks": [
+        { "risk": "Scope creep", "mitigation": "Definieer scope vooraf, park nice-to-haves voor fase 2" },
+        { "risk": "Lage adoptie", "mitigation": "Betrek eindgebruikers vanaf het begin" },
+        { "risk": "Data kwaliteit", "mitigation": "Schoon data op vóór migratie, niet erna" },
+        { "risk": "Timeline uitloop", "mitigation": "Plan buffer, prioriteer must-haves" }
+      ],
+      "solutionHeadline": "OneRooted implementatie",
+      "solutionPoints": [
+        "Live binnen 2 weken, niet maanden",
+        "Dedicated implementation manager",
+        "Data migratie ondersteuning inclusief",
+        "Training voor alle gebruikersniveaus"
+      ]
+    },
+
+    "ats-migratie": {
+      "metaTitle": "ATS Migratie: Veilig Overstappen naar een Nieuw Systeem",
+      "metaDescription": "Complete gids voor ATS-migratie. Data export, mapping, risico's en timeline voor een veilige overstap.",
+      "breadcrumb": "ATS Migratie",
+      "label": "ATS Migratie",
+      "headline": "ATS migratie",
+      "headlineHighlight": "zonder dataverlies",
+      "subheadline": "Overstappen naar een nieuw ATS hoeft niet eng te zijn. Met de juiste aanpak behoud je alles wat belangrijk is.",
+      "shortDescription": "Complete gids voor veilige ATS-migratie.",
+      "guideHeadline": "Migratie in 5 stappen",
+      "guideSteps": [
+        { "step": "1", "title": "Data inventarisatie", "description": "Welke data moet mee? Kandidaten, vacatures, historie, documenten?" },
+        { "step": "2", "title": "Export uit huidige systeem", "description": "Exporteer in een schoon format (CSV, JSON of via API)." },
+        { "step": "3", "title": "Data cleaning", "description": "Verwijder duplicaten en corrigeer fouten vóór import." },
+        { "step": "4", "title": "Mapping en import", "description": "Velden mappen naar het nieuwe systeem en importeren." },
+        { "step": "5", "title": "Validatie en go-live", "description": "Controleer steekproefsgewijs en ga live." }
+      ],
+      "dataListHeadline": "Wat moet je migreren?",
+      "dataList": [
+        { "type": "Kandidaatprofielen", "priority": "Must-have", "notes": "Inclusief contact, CV's en tags" },
+        { "type": "Vacature-historie", "priority": "Must-have", "notes": "Wie solliciteerde waar" },
+        { "type": "Feedback en notes", "priority": "Nice-to-have", "notes": "Vaak lastig te structureren" },
+        { "type": "Email-historie", "priority": "Nice-to-have", "notes": "Check AVG-implicaties" },
+        { "type": "Rapportage-data", "priority": "Optioneel", "notes": "Vaak beter opnieuw beginnen" }
+      ],
+      "solutionHeadline": "Migratie naar OneRooted",
+      "solutionPoints": [
+        "Dedicated migratie-ondersteuning",
+        "Import templates voor veelgebruikte systemen",
+        "Parallelle run mogelijk tijdens transitie",
+        "Geen dataverlies garantie"
+      ]
+    },
+
+    "ats-prijzen": {
+      "metaTitle": "ATS Prijzen: Wat Kost Recruitmentsoftware?",
+      "metaDescription": "Complete breakdown van ATS-prijzen. Licentiemodellen, verborgen kosten en rekenvoorbeelden per bedrijfsgrootte.",
+      "breadcrumb": "ATS Prijzen",
+      "label": "ATS Prijzen",
+      "headline": "ATS prijzen",
+      "headlineHighlight": "doorgerekend",
+      "subheadline": "Licentiekosten vertellen maar de helft. Dit is de volledige breakdown per prijsmodel.",
+      "shortDescription": "Complete gids over ATS-prijzen en prijsmodellen.",
+      "guideHeadline": "Prijsmodellen vergeleken",
+      "guideSteps": [
+        { "step": "1", "title": "Per-seat pricing", "description": "Betaal per gebruiker. Risico: kosten schalen snel bij groei." },
+        { "step": "2", "title": "Per-vacature pricing", "description": "Betaal per actieve vacature. Risico: onvoorspelbare kosten." },
+        { "step": "3", "title": "Flat-fee pricing", "description": "Vast bedrag per maand. Voordeel: voorspelbaar, schaalbaar." },
+        { "step": "4", "title": "Usage-based pricing", "description": "Betaal per kandidaat of actie. Risico: verrassingsrekeningen." }
+      ],
+      "hiddenCostsHeadline": "Verborgen kosten om op te letten",
+      "hiddenCosts": [
+        { "cost": "Implementatiekosten", "range": "€5.000 - €50.000+", "notes": "Vaak 50-200% van jaarlicentie" },
+        { "cost": "Training", "range": "€1.000 - €10.000", "notes": "Per gebruikersgroep" },
+        { "cost": "Customization", "range": "€500 - €5.000 per aanpassing", "notes": "Elk veld, elke workflow" },
+        { "cost": "Integraties", "range": "€2.000 - €20.000", "notes": "Per koppeling" },
+        { "cost": "Support upgrades", "range": "10-20% van licentie", "notes": "Voor priority support" }
+      ],
+      "solutionHeadline": "OneRooted pricing",
+      "solutionPoints": [
+        "Flat-fee pricing vanaf €99/maand",
+        "Geen per-seat of per-vacature kosten",
+        "Implementatie inclusief",
+        "Geen verborgen kosten, geen verrassingen"
+      ]
+    },
+
+    "ats-roi": {
+      "metaTitle": "ATS ROI: Bereken de Waarde van Recruitmentsoftware",
+      "metaDescription": "Hoe bereken je de ROI van een ATS? Framework, formules en rekenvoorbeelden voor een overtuigende business case.",
+      "breadcrumb": "ATS ROI",
+      "label": "ATS ROI",
+      "headline": "ATS ROI",
+      "headlineHighlight": "berekenen",
+      "subheadline": "Een ATS is een investering. Dit is hoe je de terugverdientijd berekent en de business case bouwt.",
+      "shortDescription": "Framework voor ATS ROI-berekening.",
+      "guideHeadline": "ROI-framework in 4 stappen",
+      "guideSteps": [
+        { "step": "1", "title": "Bereken huidige kosten", "description": "Tijd × uurloon voor handmatige taken die wegvallen." },
+        { "step": "2", "title": "Kwantificeer time-to-hire impact", "description": "Snellere hires = eerder productieve medewerkers." },
+        { "step": "3", "title": "Reken quality of hire mee", "description": "Betere hires = lager verloop = minder kosten." },
+        { "step": "4", "title": "Tel het op", "description": "Besparingen - ATS-kosten = ROI." }
+      ],
+      "metricsHeadline": "KPI's die ROI bepalen",
+      "metrics": [
+        { "metric": "Uren admin per vacature", "benchmark": "8-12 uur", "impact": "Direct te besparen" },
+        { "metric": "Time-to-hire", "benchmark": "30-60 dagen", "impact": "€500-2.000 per dag vertraging" },
+        { "metric": "Cost per hire", "benchmark": "€3.000-8.000", "impact": "Significant reduceerbaar" },
+        { "metric": "Early turnover", "benchmark": "15-25%", "impact": "€15.000+ per vertrekker" }
+      ],
+      "solutionHeadline": "OneRooted ROI",
+      "solutionPoints": [
+        "Gemiddeld 40% snellere screening",
+        "8+ uur admin besparing per vacature",
+        "Aantoonbaar lagere cost per hire",
+        "ROI calculator beschikbaar in demo"
+      ]
+    },
+
+    "ats-selectieproces": {
+      "metaTitle": "ATS Selectieproces: Stappenplan voor de Juiste Keuze",
+      "metaDescription": "Complete gids voor het ATS-selectieproces. Van longlist naar keuze met scorecard, stakeholder alignment en evaluatiecriteria.",
+      "breadcrumb": "ATS Selectieproces",
+      "label": "ATS Selectieproces",
+      "headline": "ATS selectieproces",
+      "headlineHighlight": "dat werkt",
+      "subheadline": "Een ATS kiezen is een team-beslissing. Dit is het proces dat tot de juiste keuze leidt.",
+      "shortDescription": "Stappenplan voor een gestructureerd ATS-selectieproces.",
+      "guideHeadline": "Selectie in 6 stappen",
+      "guideSteps": [
+        { "step": "1", "title": "Requirements verzamelen", "description": "Interview stakeholders, documenteer must-haves en nice-to-haves." },
+        { "step": "2", "title": "Longlist maken", "description": "Identificeer 5-8 potentiële systemen die aan basiseisen voldoen." },
+        { "step": "3", "title": "Scorecard ontwikkelen", "description": "Weeg criteria en maak een objectieve scoringmethode." },
+        { "step": "4", "title": "Demo's plannen", "description": "Demo met alle stakeholders, stel voorbereide vragen." },
+        { "step": "5", "title": "Shortlist scoren", "description": "Vul scorecard in direct na elke demo." },
+        { "step": "6", "title": "Referenties en besluit", "description": "Spreek klanten, onderhandel en beslis." }
+      ],
+      "stakeholdersHeadline": "Stakeholders betrekken",
+      "stakeholders": [
+        { "role": "Recruiters", "involvement": "Dagelijkse gebruikers, usability focus" },
+        { "role": "Hiring managers", "involvement": "Feedback flows, collaboration features" },
+        { "role": "HR leadership", "involvement": "Strategie, budget, integraties" },
+        { "role": "IT", "involvement": "Security, integraties, data" }
+      ],
+      "solutionHeadline": "OneRooted in je selectieproces",
+      "solutionPoints": [
+        "Demo binnen 48 uur na aanvraag",
+        "Referenties van vergelijkbare bedrijven beschikbaar",
+        "Trial mogelijk voor hands-on evaluatie",
+        "Geen druk, eerlijk over fit"
+      ]
+    },
+
+    "ats-voor-recruiters": {
+      "metaTitle": "ATS voor Recruiters: Gebouwd voor Dagelijks Gebruik",
+      "metaDescription": "ATS dat recruiters daadwerkelijk willen gebruiken. Snelle workflows, slimme ranking en minder admin voor meer gesprekken.",
+      "breadcrumb": "ATS voor Recruiters",
+      "label": "Voor Recruiters",
+      "headline": "ATS dat recruiters",
+      "headlineHighlight": "écht gebruiken",
+      "subheadline": "De meeste ATS'en zijn gebouwd voor managers en compliance. Dit is wat recruiters nodig hebben.",
+      "shortDescription": "ATS gebouwd voor de dagelijkse praktijk van recruiters.",
+      "painPointsHeadline": "Frustraties van recruiters met hun ATS",
+      "painPoints": [
+        "Te veel klikken voor simpele taken",
+        "Zoeken en filteren dat niet werkt",
+        "Admin die afleidt van gesprekken",
+        "Ranking die niet helpt bij selectie",
+        "Mobiel werken dat niet kan"
+      ],
+      "kpisHeadline": "KPI's die recruiters raken",
+      "kpis": [
+        { "kpi": "Kandidaten per vacature", "description": "Hoeveel kandidaten verwerk je effectief?" },
+        { "kpi": "Time-to-shortlist", "description": "Hoe snel heb je een bruikbare shortlist?" },
+        { "kpi": "Response rate", "description": "Reageren kandidaten op je berichten?" },
+        { "kpi": "Plaatsingsratio", "description": "Hoeveel van je kandidaten worden aangenomen?" }
+      ],
+      "solutionHeadline": "OneRooted voor recruiters",
+      "solutionPoints": [
+        "Sneltoetsen voor veelgebruikte acties",
+        "Intelligente ranking die écht differentieert",
+        "Bulk-acties voor efficiëntie",
+        "Mobiele app voor onderweg",
+        "Minder admin, meer gesprekken"
+      ]
+    },
+
+    "ats-voor-hr-managers": {
+      "metaTitle": "ATS voor HR Managers: Overzicht Zonder Micromanagement",
+      "metaDescription": "ATS voor HR managers die overzicht willen zonder elk detail te hoeven volgen. Dashboards, compliance en strategische inzichten.",
+      "breadcrumb": "ATS voor HR Managers",
+      "label": "Voor HR Managers",
+      "headline": "ATS voor",
+      "headlineHighlight": "HR managers",
+      "subheadline": "Je wilt weten hoe hiring loopt zonder elk detail te hoeven volgen. Dit is het overzicht dat je nodig hebt.",
+      "shortDescription": "ATS met dashboards en inzichten voor HR managers.",
+      "painPointsHeadline": "Uitdagingen voor HR managers",
+      "painPoints": [
+        "Geen zicht op voortgang zonder navragen",
+        "Compliance-risico's die je niet ziet aankomen",
+        "Rapportages die handwerk blijven",
+        "Geen data voor strategische beslissingen",
+        "Teams die naast het systeem werken"
+      ],
+      "kpisHeadline": "KPI's voor HR managers",
+      "kpis": [
+        { "kpi": "Time-to-hire", "description": "Doorlooptijd van aanvraag tot start" },
+        { "kpi": "Cost per hire", "description": "Totale wervingskosten per aanname" },
+        { "kpi": "Quality of hire", "description": "Performance en retentie nieuwe hires" },
+        { "kpi": "Hiring plan realisatie", "description": "Voortgang versus forecast" }
+      ],
+      "solutionHeadline": "OneRooted voor HR managers",
+      "solutionPoints": [
+        "Executive dashboards die vanzelf updaten",
+        "Compliance tracking ingebouwd",
+        "One-click rapportages",
+        "Hiring analytics voor strategie",
+        "Bottleneck-detectie zonder navragen"
+      ]
+    },
+
+    "ats-voor-hiring-managers": {
+      "metaTitle": "ATS voor Hiring Managers: Simpele Samenwerking",
+      "metaDescription": "ATS dat hiring managers daadwerkelijk gebruiken. Structured feedback, kandidaat-overzicht en naadloze samenwerking met recruiters.",
+      "breadcrumb": "ATS voor Hiring Managers",
+      "label": "Voor Hiring Managers",
+      "headline": "ATS dat",
+      "headlineHighlight": "hiring managers gebruiken",
+      "subheadline": "Hiring managers willen goede mensen aannemen, niet met software vechten. Dit is hoe het wél werkt.",
+      "shortDescription": "ATS met simpele workflows voor hiring managers.",
+      "painPointsHeadline": "Frustraties van hiring managers",
+      "painPoints": [
+        "Weer een tool om in te loggen",
+        "Onduidelijk wie ik moet beoordelen",
+        "Feedback geven kost te veel tijd",
+        "Geen zicht op waar kandidaten staan",
+        "Recruiters die steeds om input vragen"
+      ],
+      "kpisHeadline": "Wat hiring managers belangrijk vinden",
+      "kpis": [
+        { "kpi": "Feedback doorlooptijd", "description": "Hoe snel kan ik input geven?" },
+        { "kpi": "Kandidaat kwaliteit", "description": "Zijn de voorgestelde kandidaten relevant?" },
+        { "kpi": "Time-to-fill mijn vacature", "description": "Hoe lang duurt het tot ik iemand heb?" },
+        { "kpi": "Alignment met recruiter", "description": "Begrijpen we elkaar over het profiel?" }
+      ],
+      "solutionHeadline": "OneRooted voor hiring managers",
+      "solutionPoints": [
+        "Simpele interface, geen training nodig",
+        "Duidelijke takenlijst: wie moet ik beoordelen?",
+        "Structured feedback in 2 minuten",
+        "Real-time zicht op je vacatures",
+        "Minder meetings, meer alignment"
+      ]
     }
   },
 
