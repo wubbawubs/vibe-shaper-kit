@@ -88,7 +88,7 @@ export function SEOCTA({
             <Button 
               size="lg" 
               asChild 
-              className={`group ${isDark ? "bg-background text-foreground hover:bg-background/90" : ""}`}
+              className="group bg-primary text-primary-foreground hover:bg-primary/90"
             >
               <Link to={getLocalizedHref("/demo")}>
                 {ctaText}
@@ -97,10 +97,10 @@ export function SEOCTA({
             </Button>
             {ctaSecondaryText && (
               <Button 
-                variant={isDark ? "outline" : "outline"} 
+                variant="outline" 
                 size="lg" 
                 asChild
-                className={isDark ? "border-background/30 text-background hover:bg-background/10" : ""}
+                className={isDark ? "border-primary/50 text-primary hover:bg-primary/10" : "border-primary/30 text-primary hover:bg-primary/5"}
               >
                 <Link to={getLocalizedHref("/pricing")}>
                   {ctaSecondaryText}
