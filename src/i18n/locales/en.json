@@ -1400,6 +1400,19 @@
         "Change management for simple workflow updates",
         "Enterprise pricing for focused needs"
       ],
+      "migrationHeadline": "Escape the enterprise trap",
+      "migrationSteps": [
+        { "title": "Data extraction", "description": "Export candidates, jobs, and hiring history from Workday.", "duration": "1-2 days" },
+        { "title": "Clean import", "description": "Data comes in structured with all relationships preserved.", "duration": "1 day" },
+        { "title": "Workflow simplification", "description": "Your processes rebuilt without enterprise overhead.", "duration": "2 days" },
+        { "title": "Team activation", "description": "Training and go-live for your hiring team.", "duration": "1 day" }
+      ],
+      "migrationBenefits": [
+        "Complete data migration from Workday",
+        "Dedicated migration support",
+        "Simplified workflows from day one",
+        "No enterprise consultants required"
+      ],
       "solutionHeadline": "Focused beats bundled",
       "solutionPoints": [
         "100% focused on hiring — nothing else",
@@ -1425,6 +1438,19 @@
         "Reporting that doesn't scale with your questions",
         "Partner features that feel bolted on",
         "Support tiers that gate essential features"
+      ],
+      "migrationHeadline": "Level up your hiring",
+      "migrationSteps": [
+        { "title": "Breezy export", "description": "Export candidates, jobs, and pipeline data from Breezy.", "duration": "1 day" },
+        { "title": "Enhanced import", "description": "Data comes in with structure and history preserved.", "duration": "1 day" },
+        { "title": "Workflow upgrade", "description": "Your processes get rebuilt with advanced capabilities.", "duration": "2 days" },
+        { "title": "Team training", "description": "Learn the new features that Breezy couldn't offer.", "duration": "1 day" }
+      ],
+      "migrationBenefits": [
+        "Keep all your candidate history",
+        "Immediate access to advanced features",
+        "Training on new capabilities",
+        "30-day money-back guarantee"
       ],
       "solutionHeadline": "The next level",
       "solutionPoints": [
