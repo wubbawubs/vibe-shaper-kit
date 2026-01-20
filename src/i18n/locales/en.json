@@ -1193,5 +1193,218 @@
         "website": "Website"
       }
     }
+  },
+  "seoPages": {
+    "relatedPages": "Related pages",
+    
+    "applicant-tracking-system": {
+      "metaTitle": "Applicant Tracking System That Ranks, Not Just Tracks",
+      "metaDescription": "Modern ATS software that goes beyond tracking. OneRooted ranks candidates intelligently, automates workflows, and accelerates hiring decisions.",
+      "breadcrumb": "Applicant Tracking System",
+      "label": "Applicant Tracking System",
+      "headline": "An ATS that",
+      "headlineHighlight": "actually works",
+      "subheadline": "Most applicant tracking systems are glorified databases. OneRooted is a Hiring OS that ranks candidates, automates workflows, and keeps your team aligned.",
+      "shortDescription": "Discover why OneRooted goes beyond traditional ATS software.",
+      "problemHeadline": "The problem with traditional ATS software",
+      "painPoints": [
+        "Your ATS is a digital filing cabinet — resumes go in, insight doesn't come out",
+        "Manual status updates cost hours of admin work per week",
+        "No consistent ranking — every recruiter evaluates differently",
+        "Reports you have to build yourself, every single time",
+        "Collaboration via Slack and email alongside the system",
+        "No visibility into where your hiring process stalls"
+      ],
+      "consequence": "The result: delayed hires, missed candidates, and frustrated teams.",
+      "solutionHeadline": "OneRooted isn't an ATS. It's a Hiring OS.",
+      "solutionPoints": [
+        "Intelligent ranking — every candidate scored on the same criteria",
+        "Automated workflows that adapt to your process",
+        "Real-time visibility into bottlenecks and conversion rates",
+        "One shared truth for recruiters, hiring managers, and partners",
+        "Decisions traceable — who did what, when",
+        "From intake to hire in one connected system"
+      ],
+      "uniqueAngle": "ATS tools help you track candidates. OneRooted helps you hire better people.",
+      "featuresHeadline": "What you get with OneRooted",
+      "features": [
+        { "icon": "ranking", "title": "Intelligent Ranking", "description": "Consistent scoring based on the same criteria. No more gut feelings." },
+        { "icon": "pipeline", "title": "Visual Pipeline", "description": "See exactly where every candidate stands and where the process stalls." },
+        { "icon": "automation", "title": "Workflow Automation", "description": "Triggers and actions that speed up your process without manual work." },
+        { "icon": "collaboration", "title": "Team Collaboration", "description": "Recruiters, hiring managers, and partners in one shared system." },
+        { "icon": "analytics", "title": "Hiring Intelligence", "description": "Real-time metrics that tell you where to intervene." },
+        { "icon": "security", "title": "GDPR Compliant", "description": "Enterprise-grade security and full GDPR compliance." }
+      ]
+    },
+
+    "recruitment-software": {
+      "metaTitle": "Recruitment Software That Thinks, Not Just Tracks",
+      "metaDescription": "Modern recruitment software for teams that take hiring seriously. OneRooted connects data, workflows, and decisions in one intelligent system.",
+      "breadcrumb": "Recruitment Software",
+      "label": "Recruitment Software",
+      "headline": "Recruitment software that",
+      "headlineHighlight": "thinks",
+      "subheadline": "Most recruitment tools store data. OneRooted connects it — surfacing insights, automating workflows, and driving better decisions.",
+      "shortDescription": "Discover how OneRooted transforms recruitment operations.",
+      "problemHeadline": "Why recruitment software fails",
+      "painPoints": [
+        "Built to store resumes, not to support decisions",
+        "Workflows that force your process into rigid pipelines",
+        "Collaboration happening outside the system",
+        "Insights buried in data you have to dig for",
+        "Integration complexity that requires IT support",
+        "Pricing that punishes growth"
+      ],
+      "consequence": "Your tools should accelerate hiring. Instead, they create overhead.",
+      "solutionHeadline": "Recruitment reimagined as a system",
+      "solutionPoints": [
+        "Decision-first design — every feature supports better choices",
+        "Adaptive workflows that flex with your team",
+        "Real-time collaboration for internal and external stakeholders",
+        "Intelligence that surfaces automatically, not after hours of reporting",
+        "Simple integrations that connect without IT projects",
+        "Transparent pricing that doesn't penalize success"
+      ],
+      "uniqueAngle": "Stop adapting to your tools. Start with tools that adapt to you.",
+      "featuresHeadline": "Built for how you actually hire",
+      "features": [
+        { "icon": "ranking", "title": "Candidate Ranking", "description": "Structured evaluation that brings consistency across your team." },
+        { "icon": "pipeline", "title": "Visual Pipeline", "description": "Clarity on every candidate, every stage, every decision." },
+        { "icon": "automation", "title": "Smart Automation", "description": "Workflows that move candidates forward without manual nudges." },
+        { "icon": "collaboration", "title": "Unified Collaboration", "description": "Everyone works from the same source of truth." },
+        { "icon": "analytics", "title": "Process Intelligence", "description": "Metrics that tell you what to do, not just what happened." },
+        { "icon": "security", "title": "Enterprise Security", "description": "SOC 2 ready, GDPR compliant, built for scale." }
+      ]
+    },
+
+    "greenhouse-alternative": {
+      "metaTitle": "Greenhouse Alternative: When Enterprise ATS Feels Like Overkill",
+      "metaDescription": "Looking for a Greenhouse alternative? Discover why growing teams choose OneRooted's focused Hiring OS over Greenhouse's complexity.",
+      "breadcrumb": "Greenhouse Alternative",
+      "label": "Greenhouse Alternative",
+      "headline": "Looking for a",
+      "headlineHighlight": "Greenhouse alternative?",
+      "subheadline": "Greenhouse is powerful. It's also complex, expensive, and built for enterprises. If that's not you, there's a better fit.",
+      "shortDescription": "Compare OneRooted with Greenhouse and find your right fit.",
+      "whySwitchHeadline": "Why teams look beyond Greenhouse",
+      "painPoints": [
+        "Enterprise pricing for mid-market needs",
+        "Complexity that requires dedicated admin resources",
+        "Implementation timelines measured in quarters, not weeks",
+        "Feature bloat that obscures what you actually need",
+        "Rigid workflows that require workarounds"
+      ],
+      "migrationHeadline": "Switching made simple",
+      "migrationSteps": [
+        { "title": "Data export from Greenhouse", "description": "We help you export candidates, jobs, and history in a clean format.", "duration": "1-2 days" },
+        { "title": "Structured import", "description": "Data comes in with relationships and history preserved.", "duration": "1 day" },
+        { "title": "Process optimization", "description": "Your workflows are rebuilt to match how your team actually works.", "duration": "2-3 days" },
+        { "title": "Team go-live", "description": "Training and launch. Hours, not months.", "duration": "1 day" }
+      ],
+      "migrationBenefits": [
+        "Full data migration without loss",
+        "Dedicated migration support from our team",
+        "Parallel run possible during transition",
+        "No downtime for your recruiters"
+      ],
+      "solutionHeadline": "What OneRooted does differently",
+      "solutionPoints": [
+        "Right-sized for growth-stage teams",
+        "Self-configurable without admin overhead",
+        "Live in weeks, not quarters",
+        "Features that focus, not overwhelm"
+      ]
+    },
+
+    "lever-alternative": {
+      "metaTitle": "Lever Alternative: Modern Hiring OS for Growing Teams",
+      "metaDescription": "Looking for a Lever alternative? Discover why teams switch to OneRooted for better ranking, simpler workflows, and transparent pricing.",
+      "breadcrumb": "Lever Alternative",
+      "label": "Lever Alternative",
+      "headline": "Looking for a",
+      "headlineHighlight": "Lever alternative?",
+      "subheadline": "Lever was innovative. But innovation stalled. If you've outgrown what Lever offers, here's what comes next.",
+      "shortDescription": "Compare OneRooted with Lever and discover the next step.",
+      "whySwitchHeadline": "Why teams move on from Lever",
+      "painPoints": [
+        "Product development has slowed since acquisition",
+        "Pricing increases without matching feature growth",
+        "Reporting that requires too much manual work",
+        "Limited partner collaboration features",
+        "Integration ecosystem that's showing its age"
+      ],
+      "migrationHeadline": "A smooth transition",
+      "migrationSteps": [
+        { "title": "Data export", "description": "Export candidates, opportunities, and feedback from Lever.", "duration": "1 day" },
+        { "title": "Clean import", "description": "Everything comes in structured and connected.", "duration": "1 day" },
+        { "title": "Workflow upgrade", "description": "Your processes get rebuilt and improved.", "duration": "2 days" },
+        { "title": "Launch", "description": "Team training and go-live.", "duration": "1 day" }
+      ],
+      "migrationBenefits": [
+        "Complete data preservation",
+        "Opportunity to optimize workflows",
+        "Training included for your team",
+        "30-day money-back guarantee"
+      ],
+      "solutionHeadline": "The evolution Lever didn't make",
+      "solutionPoints": [
+        "Active product development with monthly releases",
+        "Intelligent ranking that goes deeper",
+        "Built-in partner collaboration",
+        "Transparent, predictable pricing"
+      ]
+    },
+
+    "workday-alternative": {
+      "metaTitle": "Workday Alternative: Hiring OS Without the Enterprise Overhead",
+      "metaDescription": "Looking for a Workday Recruiting alternative? Discover OneRooted — focused hiring software without enterprise complexity.",
+      "breadcrumb": "Workday Alternative",
+      "label": "Workday Alternative",
+      "headline": "Need a",
+      "headlineHighlight": "Workday alternative?",
+      "subheadline": "Workday is built for enterprises managing everything. If you just need hiring to work, there's a focused alternative.",
+      "shortDescription": "Compare OneRooted with Workday Recruiting.",
+      "whySwitchHeadline": "When Workday becomes overkill",
+      "painPoints": [
+        "Part of a suite you don't fully use",
+        "Configuration requires specialized consultants",
+        "Recruiting is a module, not the focus",
+        "Change management for simple workflow updates",
+        "Enterprise pricing for focused needs"
+      ],
+      "solutionHeadline": "Focused beats bundled",
+      "solutionPoints": [
+        "100% focused on hiring — nothing else",
+        "Self-service configuration",
+        "Live in weeks, not enterprise timelines",
+        "Pricing that matches your actual usage"
+      ]
+    },
+
+    "breezy-alternative": {
+      "metaTitle": "Breezy HR Alternative: When Simple Isn't Enough",
+      "metaDescription": "Looking for a Breezy HR alternative? Discover why growing teams upgrade to OneRooted for deeper ranking and smarter workflows.",
+      "breadcrumb": "Breezy Alternative",
+      "label": "Breezy Alternative",
+      "headline": "Outgrowing",
+      "headlineHighlight": "Breezy HR?",
+      "subheadline": "Breezy is great for getting started. But as hiring becomes critical, you need more than a starting point.",
+      "shortDescription": "Compare OneRooted with Breezy HR.",
+      "whySwitchHeadline": "Signs you've outgrown Breezy",
+      "painPoints": [
+        "Ranking that's too basic for quality differentiation",
+        "Limited workflow automation as complexity grows",
+        "Reporting that doesn't scale with your questions",
+        "Partner features that feel bolted on",
+        "Support tiers that gate essential features"
+      ],
+      "solutionHeadline": "The next level",
+      "solutionPoints": [
+        "Ranking that actually differentiates candidates",
+        "Workflows that handle complexity gracefully",
+        "Insights that grow with your sophistication",
+        "Partner collaboration as a core feature"
+      ]
+    }
   }
 }
