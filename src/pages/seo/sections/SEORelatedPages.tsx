@@ -34,17 +34,20 @@ export function SEORelatedPages({ headline, pages }: SEORelatedPagesProps) {
   };
 
   return (
-    <section className="border-t bg-background py-12 md:py-16">
+    <section className="bg-muted/30 py-12 md:py-16">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          className="text-center mb-8"
         >
-          <h3 className="text-lg font-semibold text-foreground">{headline}</h3>
+          <span className="text-xs font-medium uppercase tracking-wider text-primary">
+            {headline}
+          </span>
         </motion.div>
 
-        <div className={`mt-6 grid gap-4 ${getGridCols()}`}>
+        <div className={`grid gap-4 mx-auto ${getGridCols()}`}>
           {pages.map((page, index) => (
             <motion.div
               key={page.slug}
