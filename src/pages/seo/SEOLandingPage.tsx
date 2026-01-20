@@ -16,6 +16,7 @@ import { SEOMigrationPath } from "./sections/SEOMigrationPath";
 import { SEOBuyingCriteria } from "./sections/SEOBuyingCriteria";
 import { TCOCalculator } from "@/components/seo/TCOCalculator";
 import { ATSChecklist } from "@/components/seo/ATSChecklist";
+import { ATSComparisonMatrix } from "@/components/seo/ATSComparisonMatrix";
 
 const BASE_URL = "https://onerooted.com";
 
@@ -160,11 +161,13 @@ export default function SEOLandingPage() {
 
       case "T-COMP": // Comparison
         const criteria = t(`${contentKey}.criteria`, { returnObjects: true, defaultValue: [] }) as { title: string; description: string; mustHave: boolean }[];
+        const showComparisonMatrix = seoSlug === "ats-vergelijken" || seoSlug === "beste-ats-software" || seoSlug === "best-ats-software" || seoSlug === "ats-comparison";
         
         return (
           <>
             <SEOHero {...content.hero} />
-            {criteria.length > 0 && (
+            {showComparisonMatrix && <ATSComparisonMatrix />}
+            {criteria.length > 0 && !showComparisonMatrix && (
               <SEOBuyingCriteria
                 headline={t(`${contentKey}.criteriaHeadline`, "Waar moet je op letten?")}
                 criteria={criteria}
