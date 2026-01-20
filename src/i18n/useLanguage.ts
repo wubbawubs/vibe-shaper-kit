@@ -1,21 +1,29 @@
 import { useEffect } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { supportedLanguages, defaultLanguage, type Language } from './config';
 
+// Extract language from URL pathname
+function getLanguageFromPath(pathname: string): Language {
+  const pathParts = pathname.split('/').filter(Boolean);
+  if (pathParts.length > 0 && supportedLanguages.includes(pathParts[0] as Language)) {
+    return pathParts[0] as Language;
+  }
+  return defaultLanguage;
+}
+
 export function useLanguageFromUrl() {
-  const { lang } = useParams<{ lang: string }>();
   const { i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+  
+  const currentLanguage = getLanguageFromPath(location.pathname);
 
   useEffect(() => {
-    if (lang && supportedLanguages.includes(lang as Language)) {
-      if (i18n.language !== lang) {
-        i18n.changeLanguage(lang);
-      }
+    if (i18n.language !== currentLanguage) {
+      i18n.changeLanguage(currentLanguage);
     }
-  }, [lang, i18n]);
+  }, [currentLanguage, i18n]);
 
   const changeLanguage = (newLang: Language) => {
     const currentPath = location.pathname;
@@ -32,8 +40,6 @@ export function useLanguageFromUrl() {
     navigate(newPath);
     i18n.changeLanguage(newLang);
   };
-
-  const currentLanguage = (lang as Language) || defaultLanguage;
 
   const localizedPath = (path: string) => getLocalizedPath(path, currentLanguage);
 
