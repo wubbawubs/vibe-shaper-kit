@@ -1224,6 +1224,12 @@
   },
   "seoPages": {
     "relatedPages": "Related pages",
+    "sectionLabels": {
+      "comparison": "Comparison",
+      "theProblem": "The problem",
+      "theSolution": "The solution",
+      "aspect": "Aspect"
+    },
     
     "applicant-tracking-system": {
       "metaTitle": "Applicant Tracking System That Ranks, Not Just Tracks",

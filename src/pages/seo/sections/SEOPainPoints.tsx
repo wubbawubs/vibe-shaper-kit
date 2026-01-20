@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { AlertTriangle, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface SEOPainPointsProps {
   headline: string;
@@ -14,6 +15,8 @@ export function SEOPainPoints({
   painPoints,
   consequence,
 }: SEOPainPointsProps) {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative bg-muted/30 py-16 md:py-24">
       <div className="container">
@@ -27,7 +30,7 @@ export function SEOPainPoints({
           >
             <span className="inline-flex items-center gap-2 text-destructive">
               <AlertTriangle className="h-5 w-5" />
-              <span className="text-sm font-medium uppercase tracking-wider">Het probleem</span>
+              <span className="text-sm font-medium uppercase tracking-wider">{t('seoPages.sectionLabels.theProblem', 'The problem')}</span>
             </span>
           </motion.div>
 
