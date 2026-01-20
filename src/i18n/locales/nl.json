@@ -1456,6 +1456,246 @@
         "Zelf configureerbaar, geen consultancy nodig",
         "Maandelijks opzegbaar, geen lock-in"
       ]
+    },
+
+    "afas-alternatief": {
+      "metaTitle": "AFAS Alternatief: Wanneer HR-software Geen ATS Is",
+      "metaDescription": "AFAS is krachtig voor HR, maar geen ATS. Ontdek waarom teams OneRooted toevoegen voor échte recruitment-functionaliteit.",
+      "breadcrumb": "AFAS Alternatief",
+      "label": "AFAS Alternatief",
+      "headline": "AFAS gebruiker?",
+      "headlineHighlight": "Je mist een ATS.",
+      "subheadline": "AFAS is uitstekend voor HR-administratie. Maar recruitment vraagt om andere tools. Dit is waarom teams OneRooted ernaast zetten.",
+      "shortDescription": "Ontdek waarom AFAS-gebruikers OneRooted toevoegen voor recruitment.",
+      "whySwitchHeadline": "Het AFAS-dilemma bij recruitment",
+      "painPoints": [
+        "AFAS is HR-software, geen recruitmentsysteem — kandidaatbeheer is een bijzaak",
+        "Geen visuele pipeline of kandidaat-ranking",
+        "Beperkte workflow-automatisering voor werving",
+        "Rapportages gericht op HR-metrics, niet op hiring-performance",
+        "Samenwerking met externe recruiters is niet ingebouwd"
+      ],
+      "migrationHeadline": "AFAS + OneRooted: het beste van twee werelden",
+      "migrationSteps": [
+        { "title": "Integratie mapping", "description": "We bepalen welke data tussen AFAS en OneRooted moet stromen.", "duration": "1 dag" },
+        { "title": "OneRooted setup", "description": "Je recruitment-processen worden ingericht in OneRooted.", "duration": "2 dagen" },
+        { "title": "Koppeling configureren", "description": "Kandidaten die worden aangenomen stromen door naar AFAS.", "duration": "1 dag" },
+        { "title": "Team training", "description": "Recruiters leren werken in OneRooted, HR blijft in AFAS.", "duration": "1 dag" }
+      ],
+      "migrationBenefits": [
+        "Geen vervanging nodig — OneRooted werkt naast AFAS",
+        "Hired candidates automatisch naar AFAS HR",
+        "Recruitment-data gescheiden van HR-administratie",
+        "Elk systeem doet waar het goed in is"
+      ],
+      "solutionHeadline": "Recruitment verdient een dedicated systeem",
+      "solutionPoints": [
+        "Visuele pipeline speciaal voor werving",
+        "Intelligente kandidaat-ranking",
+        "Workflow-automatisering voor recruitment",
+        "Partner portal voor bureaus",
+        "Naadloze overdracht naar AFAS bij hire"
+      ]
+    },
+
+    "carerix-alternatief": {
+      "metaTitle": "Carerix Alternatief: Modern Hiring OS voor Bureaus",
+      "metaDescription": "Op zoek naar een Carerix alternatief? Ontdek waarom recruitment bureaus overstappen naar OneRooted voor betere workflows en transparantie.",
+      "breadcrumb": "Carerix Alternatief",
+      "label": "Carerix Alternatief",
+      "headline": "Klaar voor een",
+      "headlineHighlight": "Carerix alternatief?",
+      "subheadline": "Carerix was lang de standaard voor bureaus. Maar de markt is veranderd. Klanten verwachten transparantie, recruiters verwachten moderne tools.",
+      "shortDescription": "Vergelijk OneRooted met Carerix voor recruitment bureaus.",
+      "whySwitchHeadline": "Waarom bureaus verder kijken dan Carerix",
+      "painPoints": [
+        "Interface die aanvoelt als 2010 — recruiters werken ernaast",
+        "Klant-portalen die niet aan moderne verwachtingen voldoen",
+        "Complexe configuratie die specialisten vereist",
+        "Integraties die moeizaam tot stand komen",
+        "Rapportages die handwerk blijven"
+      ],
+      "migrationHeadline": "Overstappen zonder chaos",
+      "migrationSteps": [
+        { "title": "Carerix data export", "description": "Kandidaten, klanten, vacatures en plaatsingshistorie exporteren.", "duration": "1-2 dagen" },
+        { "title": "Data cleaning & import", "description": "Opschonen en gestructureerd importeren met behoud van relaties.", "duration": "2 dagen" },
+        { "title": "Bureau-workflows inrichten", "description": "Multi-client setup, commissie-tracking, klant-specifieke processen.", "duration": "2-3 dagen" },
+        { "title": "Go-live & training", "description": "Team onboarding en parallelle run indien gewenst.", "duration": "1-2 dagen" }
+      ],
+      "migrationBenefits": [
+        "Volledige data-migratie inclusief plaatsingshistorie",
+        "Multi-client ondersteuning out-of-the-box",
+        "Moderne klant-portalen die vertrouwen wekken",
+        "Dedicated migratie-begeleiding"
+      ],
+      "solutionHeadline": "Gebouwd voor hoe bureaus vandaag werken",
+      "solutionPoints": [
+        "Moderne interface die recruiters daadwerkelijk gebruiken",
+        "Klant-portalen die transparantie bieden",
+        "Multi-client beheer zonder complexiteit",
+        "Rapportages die vanzelf ontstaan",
+        "Integraties die binnen dagen werken"
+      ]
+    },
+
+    "otys-alternatief": {
+      "metaTitle": "OTYS Alternatief: Van Legacy naar Modern Hiring OS",
+      "metaDescription": "Op zoek naar een OTYS alternatief? Ontdek waarom bureaus overstappen naar OneRooted voor moderne workflows en betere gebruikerservaring.",
+      "breadcrumb": "OTYS Alternatief",
+      "label": "OTYS Alternatief",
+      "headline": "OTYS Go voorbij?",
+      "headlineHighlight": "Dit is de volgende stap.",
+      "subheadline": "OTYS heeft jarenlang bureaus bediend. Maar als je team klaagt over de interface en klanten vragen om betere portalen, is het tijd voor verandering.",
+      "shortDescription": "Vergelijk OneRooted met OTYS voor recruitment bureaus.",
+      "whySwitchHeadline": "Signalen dat je OTYS ontgroeid bent",
+      "painPoints": [
+        "Recruiters die workarounds bouwen in Excel en Notion",
+        "Klanten die vragen: 'Hebben jullie geen beter portaal?'",
+        "Configuratie-aanpassingen die weken duren",
+        "Mobiele ervaring die niet meer van deze tijd is",
+        "Support-tickets die te lang open blijven"
+      ],
+      "migrationHeadline": "Van OTYS naar OneRooted",
+      "migrationSteps": [
+        { "title": "Data inventarisatie", "description": "Mapping van OTYS-velden naar OneRooted structuur.", "duration": "1 dag" },
+        { "title": "Export & transformatie", "description": "Data exporteren en klaarmaken voor import.", "duration": "1-2 dagen" },
+        { "title": "Import & validatie", "description": "Gecontroleerde import met checks op datakwaliteit.", "duration": "1 dag" },
+        { "title": "Proces-setup & training", "description": "Bureau-specifieke workflows en teamtraining.", "duration": "2 dagen" }
+      ],
+      "migrationBenefits": [
+        "Geen dataverlies — alles komt mee",
+        "Parallelle run mogelijk tijdens transitie",
+        "Training voor alle gebruikersniveaus",
+        "Dedicated migratie-manager"
+      ],
+      "solutionHeadline": "Modern bureau-systeem zonder compromissen",
+      "solutionPoints": [
+        "Interface die recruiters graag openen",
+        "Klant-portalen die professionaliteit uitstralen",
+        "Mobiel-first ontwerp",
+        "Zelf configureerbaar zonder wachten op support",
+        "Actieve productontwikkeling met maandelijkse releases"
+      ]
+    },
+
+    "hroffice-alternatief": {
+      "metaTitle": "HROffice Alternatief: Focus op Recruitment, niet HR-Admin",
+      "metaDescription": "HROffice combineert HR en recruitment, maar doet geen van beide uitstekend. Ontdek waarom teams kiezen voor een dedicated Hiring OS.",
+      "breadcrumb": "HROffice Alternatief",
+      "label": "HROffice Alternatief",
+      "headline": "HROffice voor recruitment?",
+      "headlineHighlight": "Er is een betere manier.",
+      "subheadline": "HROffice probeert HR én recruitment te combineren. Het resultaat: gemiddeld in beide. Als hiring kritisch wordt, heb je een dedicated systeem nodig.",
+      "shortDescription": "Ontdek waarom teams HROffice aanvullen met OneRooted.",
+      "whySwitchHeadline": "De beperkingen van all-in-one HR-software",
+      "painPoints": [
+        "Recruitment-module voelt als afterthought naast HR-kern",
+        "Kandidaatervaring die niet overtuigt",
+        "Beperkte mogelijkheden voor workflow-automatisering",
+        "Rapportages die meer gericht zijn op HR dan op hiring",
+        "Geen echte ondersteuning voor externe recruiters"
+      ],
+      "migrationHeadline": "HROffice + OneRooted: specialisatie wint",
+      "migrationSteps": [
+        { "title": "Scope bepaling", "description": "Welke data moet migreren, wat blijft in HROffice.", "duration": "1 dag" },
+        { "title": "Recruitment data export", "description": "Kandidaten en vacature-historie exporteren.", "duration": "1 dag" },
+        { "title": "OneRooted inrichting", "description": "Je hiring-processen worden opgezet.", "duration": "2 dagen" },
+        { "title": "Koppeling & go-live", "description": "Hired-flow naar HROffice en teamtraining.", "duration": "1 dag" }
+      ],
+      "migrationBenefits": [
+        "HROffice blijft voor HR-administratie",
+        "Recruitment krijgt dedicated tooling",
+        "Automatische overdracht bij hire",
+        "Elk systeem excelleert in zijn domein"
+      ],
+      "solutionHeadline": "Recruitment verdient focus",
+      "solutionPoints": [
+        "100% gefocust op hiring — geen HR-ballast",
+        "Kandidaatervaring die indruk maakt",
+        "Workflows die passen bij hoe je werft",
+        "Partner-samenwerking als kernfeature",
+        "Koppeling met HROffice voor naadloze overdracht"
+      ]
+    },
+
+    "ubeeo-alternatief": {
+      "metaTitle": "Ubeeo Alternatief: Van Simpel naar Schaalbaar Hiring OS",
+      "metaDescription": "Ubeeo ontgroeid? Ontdek waarom groeiende teams kiezen voor OneRooted's intelligente ranking en geavanceerde workflows.",
+      "breadcrumb": "Ubeeo Alternatief",
+      "label": "Ubeeo Alternatief",
+      "headline": "Ubeeo ontgroeid?",
+      "headlineHighlight": "Dit is wat daarna komt.",
+      "subheadline": "Ubeeo is toegankelijk voor starters. Maar als je team groeit en hiring complexer wordt, merk je de grenzen. Dit is de logische volgende stap.",
+      "shortDescription": "Vergelijk OneRooted met Ubeeo voor groeiende teams.",
+      "whySwitchHeadline": "Signalen dat je Ubeeo ontgroeid bent",
+      "painPoints": [
+        "Ranking die te basic is voor serieuze selectie",
+        "Workflows die niet meeschalen met complexiteit",
+        "Rapportages die oppervlakkig blijven",
+        "Integraties die beperkt zijn",
+        "Support die niet meegroeit met je behoeften"
+      ],
+      "migrationHeadline": "Naadloos upgraden",
+      "migrationSteps": [
+        { "title": "Ubeeo export", "description": "Kandidaten en vacatures exporteren.", "duration": "1 dag" },
+        { "title": "Gestructureerde import", "description": "Data komt binnen met behoud van historie.", "duration": "1 dag" },
+        { "title": "Workflow upgrade", "description": "Processen worden niet gekopieerd, maar verbeterd.", "duration": "2 dagen" },
+        { "title": "Training & go-live", "description": "Team leert de nieuwe mogelijkheden.", "duration": "1 dag" }
+      ],
+      "migrationBenefits": [
+        "Geen data-verlies bij overstap",
+        "Directe toegang tot geavanceerde features",
+        "Training op nieuwe functionaliteit",
+        "30 dagen geld-terug garantie"
+      ],
+      "solutionHeadline": "De volgende stap voor groeiende teams",
+      "solutionPoints": [
+        "Intelligente ranking die écht differentieert",
+        "Workflows die elke complexiteit aankunnen",
+        "Rapportages die groeien met je vragen",
+        "Enterprise-grade integraties",
+        "Support die past bij je niveau"
+      ]
+    },
+
+    "homerun-alternatief": {
+      "metaTitle": "Homerun Alternatief: Van Employer Branding naar Hiring OS",
+      "metaDescription": "Homerun is sterk in employer branding, maar beperkt als ATS. Ontdek waarom teams kiezen voor OneRooted's complete Hiring OS.",
+      "breadcrumb": "Homerun Alternatief",
+      "label": "Homerun Alternatief",
+      "headline": "Meer nodig dan",
+      "headlineHighlight": "Homerun biedt?",
+      "subheadline": "Homerun maakt je vacaturepagina's mooi. Maar als je hiring-volume groeit, heb je meer nodig dan branding. Je hebt een systeem nodig.",
+      "shortDescription": "Vergelijk OneRooted met Homerun voor serieuze hiring.",
+      "whySwitchHeadline": "Wanneer employer branding niet genoeg is",
+      "painPoints": [
+        "Sterk in presentatie, zwakker in proces",
+        "Beperkte kandidaat-ranking en scoring",
+        "Workflows die snel tegen grenzen lopen",
+        "Rapportages die basic blijven",
+        "Geen echte ondersteuning voor recruitment bureaus"
+      ],
+      "migrationHeadline": "Van branding naar systeem",
+      "migrationSteps": [
+        { "title": "Homerun export", "description": "Kandidaten en vacaturedata exporteren.", "duration": "1 dag" },
+        { "title": "Data import", "description": "Alles komt gestructureerd binnen.", "duration": "1 dag" },
+        { "title": "Hiring-processen opzetten", "description": "Van mooie pagina's naar werkend systeem.", "duration": "2 dagen" },
+        { "title": "Go-live", "description": "Team training en lancering.", "duration": "1 dag" }
+      ],
+      "migrationBenefits": [
+        "Kandidaathistorie blijft behouden",
+        "Vacatures kunnen blijven op Homerun (optional)",
+        "Proces-intelligence komt erbij",
+        "Training voor het hele team"
+      ],
+      "solutionHeadline": "Branding + Systeem = Resultaat",
+      "solutionPoints": [
+        "Intelligente ranking achter mooie voorkant",
+        "Workflows die meeschalen met je ambitie",
+        "Rapportages die je niet zelf hoeft te bouwen",
+        "Partner-samenwerking als het nodig wordt",
+        "Optioneel: Homerun voor branding, OneRooted voor proces"
+      ]
     }
   }
 }
