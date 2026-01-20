@@ -8,14 +8,111 @@ import { type Language } from "@/i18n/config";
 export function Footer() {
   const { t } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
+  const currentLang = lang || "en";
 
   const getLocalizedHref = (href: string) => {
     return lang ? getLocalizedPath(href, lang as Language) : href;
   };
 
+  // SEO Hub links - language-aware
+  const seoLinks = {
+    software: currentLang === "nl" ? [
+      { href: "/ats-software", label: "ATS Software" },
+      { href: "/recruitmentsoftware", label: "Recruitment Software" },
+    ] : [
+      { href: "/applicant-tracking-system", label: "Applicant Tracking System" },
+      { href: "/recruitment-software", label: "Recruitment Software" },
+      { href: "/hiring-software", label: "Hiring Software" },
+    ],
+    compare: currentLang === "nl" ? [
+      { href: "/ats-vergelijken", label: "ATS Vergelijken" },
+      { href: "/beste-ats-software", label: "Beste ATS Software" },
+      { href: "/ats-checklist", label: "ATS Checklist" },
+      { href: "/ats-kosten", label: "ATS Kosten" },
+    ] : [
+      { href: "/recruitment-analytics", label: "Recruitment Analytics" },
+      { href: "/candidate-pipeline-management", label: "Pipeline Management" },
+    ],
+    alternatives: currentLang === "nl" ? [
+      { href: "/bullhorn-alternatief", label: "Bullhorn" },
+      { href: "/recruitee-alternatief", label: "Recruitee" },
+      { href: "/afas-alternatief", label: "AFAS" },
+      { href: "/carerix-alternatief", label: "Carerix" },
+      { href: "/homerun-alternatief", label: "Homerun" },
+    ] : [
+      { href: "/greenhouse-alternative", label: "Greenhouse" },
+      { href: "/lever-alternative", label: "Lever" },
+      { href: "/workday-alternative", label: "Workday" },
+      { href: "/breezy-alternative", label: "Breezy HR" },
+    ],
+  };
+
   return (
     <footer className="bg-foreground text-background py-12 md:py-20">
       <div className="container">
+        {/* SEO Hub Section */}
+        <div className="border-b border-background/10 pb-10 mb-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            {/* Software */}
+            <div>
+              <h4 className="font-medium mb-3 text-xs uppercase tracking-wider text-background/80">
+                {currentLang === "nl" ? "Software" : "Software"}
+              </h4>
+              <ul className="space-y-2 text-sm text-background/50">
+                {seoLinks.software.map((link) => (
+                  <li key={link.href}>
+                    <Link 
+                      to={getLocalizedHref(link.href)} 
+                      className="hover:text-background/80 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Compare / Guides */}
+            <div>
+              <h4 className="font-medium mb-3 text-xs uppercase tracking-wider text-background/80">
+                {currentLang === "nl" ? "Vergelijken" : "Compare"}
+              </h4>
+              <ul className="space-y-2 text-sm text-background/50">
+                {seoLinks.compare.map((link) => (
+                  <li key={link.href}>
+                    <Link 
+                      to={getLocalizedHref(link.href)} 
+                      className="hover:text-background/80 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Alternatives */}
+            <div className="col-span-2 md:col-span-2">
+              <h4 className="font-medium mb-3 text-xs uppercase tracking-wider text-background/80">
+                {currentLang === "nl" ? "Alternatieven" : "Alternatives"}
+              </h4>
+              <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-background/50">
+                {seoLinks.alternatives.map((link) => (
+                  <li key={link.href}>
+                    <Link 
+                      to={getLocalizedHref(link.href)} 
+                      className="hover:text-background/80 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Footer */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12">
           {/* Brand */}
           <div className="col-span-2">
