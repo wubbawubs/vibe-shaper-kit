@@ -14,6 +14,7 @@ import { SEOCTA } from "./sections/SEOCTA";
 import { SEORelatedPages } from "./sections/SEORelatedPages";
 import { SEOMigrationPath } from "./sections/SEOMigrationPath";
 import { SEOBuyingCriteria } from "./sections/SEOBuyingCriteria";
+import { TCOCalculator } from "@/components/seo/TCOCalculator";
 
 const BASE_URL = "https://onerooted.com";
 
@@ -166,6 +167,35 @@ export default function SEOLandingPage() {
               <SEOBuyingCriteria
                 headline={t(`${contentKey}.criteriaHeadline`, "Waar moet je op letten?")}
                 criteria={criteria}
+              />
+            )}
+            {content.solutionPoints.length > 0 && (
+              <SEOSolution
+                headline={t(`${contentKey}.solutionHeadline`, "Waarom OneRooted")}
+                solutionPoints={content.solutionPoints}
+              />
+            )}
+            <SEOCTA
+              headline={t("finalCta.headline")}
+              subheadline={t("finalCta.subheadline")}
+              ctaText={t("finalCta.cta")}
+              variant="dark"
+            />
+          </>
+        );
+
+      case "T-GUIDE": // Guide pages (like ats-kosten)
+        const guideCriteria = t(`${contentKey}.criteria`, { returnObjects: true, defaultValue: [] }) as { title: string; description: string; mustHave: boolean }[];
+        const showTCOCalculator = seoSlug === "ats-kosten";
+        
+        return (
+          <>
+            <SEOHero {...content.hero} />
+            {showTCOCalculator && <TCOCalculator />}
+            {guideCriteria.length > 0 && (
+              <SEOBuyingCriteria
+                headline={t(`${contentKey}.criteriaHeadline`, "Waar moet je op letten?")}
+                criteria={guideCriteria}
               />
             )}
             {content.solutionPoints.length > 0 && (
