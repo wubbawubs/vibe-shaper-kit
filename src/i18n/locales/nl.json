@@ -1222,5 +1222,240 @@
         "website": "Website"
       }
     }
+  },
+  "seoPages": {
+    "relatedPages": "Gerelateerde pagina's",
+    
+    "ats-software": {
+      "metaTitle": "ATS Software die Kandidaten Rankt, niet Archiveert",
+      "metaDescription": "Moderne ATS software die verder gaat dan tracking. OneRooted rankt kandidaten intelligent, automatiseert workflows en versnelt je hiring decisions.",
+      "breadcrumb": "ATS Software",
+      "label": "ATS Software",
+      "headline": "ATS Software die",
+      "headlineHighlight": "écht werkt",
+      "subheadline": "De meeste ATS'en zijn glorified databases. OneRooted is een Hiring OS dat kandidaten rankt, workflows automatiseert en je team op één lijn houdt.",
+      "shortDescription": "Ontdek waarom OneRooted verder gaat dan traditionele ATS software.",
+      "problemHeadline": "Het probleem met traditionele ATS software",
+      "painPoints": [
+        "Je ATS is een digitale archiefkast — CV's gaan erin, maar inzicht komt er niet uit",
+        "Handmatige statusupdates kosten uren per week aan admin-werk",
+        "Geen consistente ranking — elke recruiter beoordeelt anders",
+        "Rapportages die je zelf moet bouwen, elke keer opnieuw",
+        "Samenwerking via Slack en e-mail naast het systeem",
+        "Geen inzicht in waar je hiring-proces vastloopt"
+      ],
+      "consequence": "Het resultaat: vertraagde hires, gemiste kandidaten, en gefrustreerde teams.",
+      "solutionHeadline": "OneRooted is geen ATS. Het is een Hiring OS.",
+      "solutionPoints": [
+        "Intelligente ranking — elke kandidaat gescoord op dezelfde criteria",
+        "Geautomatiseerde workflows die zich aanpassen aan je proces",
+        "Real-time inzicht in bottlenecks en conversieratio's",
+        "Eén gedeelde waarheid voor recruiters, hiring managers en partners",
+        "Beslissingen traceerbaar — wie deed wat, wanneer",
+        "Van intake tot hire in één connected systeem"
+      ],
+      "uniqueAngle": "ATS-tools helpen je kandidaten volgen. OneRooted helpt je betere mensen aannemen.",
+      "featuresHeadline": "Wat je krijgt met OneRooted",
+      "features": [
+        { "icon": "ranking", "title": "Intelligente Ranking", "description": "Consistente scoring op basis van dezelfde criteria. Geen onderbuikgevoel meer." },
+        { "icon": "pipeline", "title": "Visuele Pipeline", "description": "Zie precies waar elke kandidaat staat en waar het proces vastloopt." },
+        { "icon": "automation", "title": "Workflow Automatisering", "description": "Triggers en acties die je proces versnellen zonder handmatig werk." },
+        { "icon": "collaboration", "title": "Team Samenwerking", "description": "Recruiters, hiring managers en partners in één gedeeld systeem." },
+        { "icon": "analytics", "title": "Hiring Intelligence", "description": "Real-time metrics die zeggen waar je moet ingrijpen." },
+        { "icon": "security", "title": "GDPR Compliant", "description": "Enterprise-grade beveiliging en volledige AVG-compliance." }
+      ]
+    },
+
+    "ats-vergelijken": {
+      "metaTitle": "ATS Vergelijken: Objectief Selectiekader voor 2025",
+      "metaDescription": "Vergelijk ATS-systemen objectief. Ontdek welke criteria écht tellen en waarom de meeste vergelijkingen je op het verkeerde been zetten.",
+      "breadcrumb": "ATS Vergelijken",
+      "label": "ATS Vergelijken",
+      "headline": "ATS vergelijken?",
+      "headlineHighlight": "Kijk verder dan features.",
+      "subheadline": "De meeste ATS-vergelijkingen focussen op functionaliteit. Maar features zeggen niets over hoe je hiring écht verbetert.",
+      "shortDescription": "Objectief kader voor het vergelijken van ATS-systemen.",
+      "criteriaHeadline": "Waar moet je écht op letten?",
+      "criteria": [
+        { "title": "Ranking vs. Archivering", "description": "Helpt het systeem kandidaten te ordenen op kwaliteit, of slaat het ze alleen op? De meeste ATS'en zijn databases, geen beslissingstools.", "mustHave": true },
+        { "title": "Workflow Flexibiliteit", "description": "Kan het systeem meebewegen met hoe je team werkt? Statische pipelines dwingen processen af die niet passen.", "mustHave": true },
+        { "title": "Adoptie door het Team", "description": "Wordt het systeem daadwerkelijk gebruikt door iedereen, of werken mensen ernaast in Slack en Excel?", "mustHave": true },
+        { "title": "Real-time Inzicht", "description": "Kun je zien waar kandidaten vastlopen zonder rapporten te bouwen?", "mustHave": true },
+        { "title": "Samenwerking met Partners", "description": "Kunnen bureaus en externe recruiters in hetzelfde systeem werken?", "mustHave": false },
+        { "title": "Integratie-ecosysteem", "description": "Sluit het aan op je bestaande tools (kalender, e-mail, HRIS)?", "mustHave": false }
+      ],
+      "solutionHeadline": "Waarom teams kiezen voor OneRooted",
+      "solutionPoints": [
+        "Decision-first design — gebouwd om keuzes te ondersteunen, niet om data op te slaan",
+        "Flexibele workflows die meebewegen met je proces",
+        "Eén systeem voor interne teams én externe partners",
+        "Inzicht dat vanzelf ontstaat, geen rapporten bouwen"
+      ]
+    },
+
+    "beste-ats-software": {
+      "metaTitle": "Beste ATS Software 2025: Objectieve Selectiegids",
+      "metaDescription": "Welke ATS software past bij jouw organisatie? Objectief overzicht van criteria, valkuilen en waarom de 'beste' afhangt van hoe je werft.",
+      "breadcrumb": "Beste ATS Software",
+      "label": "Beste ATS 2025",
+      "headline": "Op zoek naar de",
+      "headlineHighlight": "beste ATS software?",
+      "subheadline": "Er is geen 'beste' ATS. Er is alleen de juiste fit voor hoe jouw team werft. Dit is hoe je die vindt.",
+      "shortDescription": "Selectiegids voor de beste ATS software in 2025.",
+      "criteriaHeadline": "Criteria die écht uitmaken",
+      "criteria": [
+        { "title": "Past bij je wervingsvolume", "description": "Een enterprise-ATS is overkill voor 10 hires per jaar. Een startup-tool schaalt niet mee naar 100.", "mustHave": true },
+        { "title": "Ondersteunt je werkwijze", "description": "Je proces aanpassen aan software is falen. De software moet buigen naar hoe je werkt.", "mustHave": true },
+        { "title": "Geeft inzicht, niet alleen data", "description": "Rapporten bouwen is 2015. Je wilt weten waar het vastloopt zonder te hoeven zoeken.", "mustHave": true },
+        { "title": "Wordt écht gebruikt", "description": "De beste ATS is degene die je team daadwerkelijk opent. Adoptie > features.", "mustHave": true },
+        { "title": "Groeit mee", "description": "Migreren is pijnlijk. Kies iets dat meegroeit met je ambitie.", "mustHave": false },
+        { "title": "Eerlijke pricing", "description": "Geen verborgen kosten per gebruiker of kandidaat. Voorspelbare maandlasten.", "mustHave": false }
+      ],
+      "solutionHeadline": "Waarom OneRooted vaak wint",
+      "solutionPoints": [
+        "Gebouwd voor teams die 10 tot 1000 hires per jaar doen",
+        "Workflows die je aanpast, niet andersom",
+        "Intelligente ranking die consistentie brengt",
+        "Transparante pricing zonder per-seat kosten"
+      ]
+    },
+
+    "bullhorn-alternatief": {
+      "metaTitle": "Bullhorn Alternatief: Waarom Teams Overstappen naar OneRooted",
+      "metaDescription": "Op zoek naar een Bullhorn alternatief? Ontdek waarom recruitment bureaus overstappen naar OneRooted en hoe de migratie werkt.",
+      "breadcrumb": "Bullhorn Alternatief",
+      "label": "Bullhorn Alternatief",
+      "headline": "Op zoek naar een",
+      "headlineHighlight": "Bullhorn alternatief?",
+      "subheadline": "Bullhorn is krachtig, maar complex. Als je team workaround op workaround bouwt, is het tijd voor iets dat wél past.",
+      "shortDescription": "Vergelijk OneRooted met Bullhorn en ontdek waarom teams overstappen.",
+      "whySwitchHeadline": "Waarom teams overstappen van Bullhorn",
+      "painPoints": [
+        "Complexe interface die maanden training vraagt",
+        "Hoge kosten die meeschalen met elke gebruiker",
+        "Customization die alleen met consultants kan",
+        "Gebouwd voor grote bureaus, niet voor wendbare teams",
+        "Rapportages die specialistische kennis vereisen"
+      ],
+      "migrationHeadline": "Overstappen in 4 stappen",
+      "migrationSteps": [
+        { "title": "Data export uit Bullhorn", "description": "We helpen je kandidaten, vacatures en history exporteren naar een schoon format.", "duration": "1-2 dagen" },
+        { "title": "Import en mapping", "description": "Data wordt geïmporteerd met behoud van relaties en historie.", "duration": "1 dag" },
+        { "title": "Workflow configuratie", "description": "Je processen worden ingericht zoals je team werkt — geen compromissen.", "duration": "2-3 dagen" },
+        { "title": "Team onboarding", "description": "Training voor je team. Geen maanden, maar uren.", "duration": "1 dag" }
+      ],
+      "migrationBenefits": [
+        "Volledige data-migratie zonder verlies",
+        "Dedicated migratie-support van ons team",
+        "Parallelle run mogelijk tijdens overgang",
+        "Geen downtime voor je recruiters"
+      ],
+      "solutionHeadline": "Wat OneRooted anders doet",
+      "solutionPoints": [
+        "Intuïtieve interface — productief binnen uren, niet maanden",
+        "Transparante pricing zonder per-gebruiker kosten",
+        "Zelf configureerbaar zonder consultants",
+        "Gebouwd voor teams van 5 tot 500"
+      ]
+    },
+
+    "recruitee-alternatief": {
+      "metaTitle": "Recruitee Alternatief: Van Feature-lijst naar Hiring Systeem",
+      "metaDescription": "Op zoek naar een Recruitee (Tellent) alternatief? Ontdek waarom groeiende teams kiezen voor OneRooted's Hiring OS.",
+      "breadcrumb": "Recruitee Alternatief",
+      "label": "Recruitee Alternatief",
+      "headline": "Op zoek naar een",
+      "headlineHighlight": "Recruitee alternatief?",
+      "subheadline": "Recruitee is toegankelijk en modern. Maar als je team groeit, merk je de grenzen. Dit is waar OneRooted begint.",
+      "shortDescription": "Vergelijk OneRooted met Recruitee en ontdek de volgende stap.",
+      "whySwitchHeadline": "Waarom teams verder kijken dan Recruitee",
+      "painPoints": [
+        "Basis-ranking mist de diepte voor serieuze selectie",
+        "Beperkte workflow-automatisering bij complexere processen",
+        "Rapportages die oppervlakkig blijven",
+        "Partner-samenwerking als afterthought",
+        "Pricing die snel oploopt bij groei"
+      ],
+      "migrationHeadline": "Naadloos overstappen",
+      "migrationSteps": [
+        { "title": "Data export", "description": "Kandidaten, vacatures en team-data exporteren uit Recruitee.", "duration": "1 dag" },
+        { "title": "Gestructureerde import", "description": "Alles komt netjes binnen met behoud van historie.", "duration": "1 dag" },
+        { "title": "Proces optimalisatie", "description": "Je workflows worden niet gekopieerd, maar verbeterd.", "duration": "2 dagen" },
+        { "title": "Go-live", "description": "Team training en live gaan.", "duration": "1 dag" }
+      ],
+      "migrationBenefits": [
+        "Geen data-verlies bij overstap",
+        "Begeleiding bij proces-optimalisatie",
+        "Training voor het hele team",
+        "30 dagen geld-terug garantie"
+      ],
+      "solutionHeadline": "De volgende stap in je hiring",
+      "solutionPoints": [
+        "Intelligente ranking die écht differentieert",
+        "Workflows die meeschalen met complexiteit",
+        "Inzicht dat acties suggereert, niet alleen data toont",
+        "Partner portal als first-class feature"
+      ]
+    },
+
+    "ats-checklist": {
+      "metaTitle": "ATS Checklist: Selectiecriteria voor de Juiste Keuze",
+      "metaDescription": "Gratis ATS selectie checklist. De criteria die écht tellen bij het kiezen van recruitmentsoftware — zonder vendor-bias.",
+      "breadcrumb": "ATS Checklist",
+      "label": "ATS Checklist",
+      "headline": "ATS Selectie",
+      "headlineHighlight": "Checklist",
+      "subheadline": "Een objectief kader voor het evalueren van ATS-systemen. Geen marketing, alleen de vragen die er toe doen.",
+      "shortDescription": "Download de ATS selectie checklist voor een objectieve evaluatie.",
+      "criteriaHeadline": "De checklist die vendors liever niet zien",
+      "criteria": [
+        { "title": "Wordt het systeem daadwerkelijk gebruikt?", "description": "Vraag om adoptie-cijfers bij bestaande klanten. Features betekenen niets als niemand ze gebruikt.", "mustHave": true },
+        { "title": "Hoe lang duurt onboarding?", "description": "Maanden is een red flag. Een goed systeem is intuïtief genoeg voor dagen, niet kwartalen.", "mustHave": true },
+        { "title": "Kun je workflows zelf aanpassen?", "description": "Of heb je consultants nodig voor elke wijziging? Flexibiliteit moet in-house kunnen.", "mustHave": true },
+        { "title": "Wat kost het écht?", "description": "Per-seat? Per-kandidaat? Implementation fees? Vraag om total cost of ownership over 3 jaar.", "mustHave": true },
+        { "title": "Hoe werkt samenwerking met externen?", "description": "Kunnen bureaus in hetzelfde systeem, of ontstaat er een parallelle werkelijkheid?", "mustHave": false },
+        { "title": "Welke inzichten krijg je out-of-the-box?", "description": "Moet je rapporten bouwen of zie je bottlenecks automatisch?", "mustHave": true },
+        { "title": "Hoe ziet migratie eruit?", "description": "Data-export, timeline, support — vraag om concrete migratieplannen van vergelijkbare klanten.", "mustHave": false },
+        { "title": "Wat is de roadmap?", "description": "Investeert de vendor in innovatie of in sales? Vraag om recent gereleasete features.", "mustHave": false }
+      ],
+      "solutionHeadline": "Hoe OneRooted scoort op deze checklist",
+      "solutionPoints": [
+        "Adoptie binnen dagen, niet maanden",
+        "Zelf configureerbare workflows zonder consultants",
+        "Transparante pricing zonder verborgen kosten",
+        "Ingebouwde partner-samenwerking",
+        "Real-time inzicht zonder rapport-bouwwerk"
+      ]
+    },
+
+    "ats-kosten": {
+      "metaTitle": "ATS Kosten: Wat Kost Recruitmentsoftware Écht?",
+      "metaDescription": "Complete breakdown van ATS kosten. Licenties, implementatie, training, verborgen kosten — en hoe je TCO berekent.",
+      "breadcrumb": "ATS Kosten",
+      "label": "ATS Kosten",
+      "headline": "Wat kost een",
+      "headlineHighlight": "ATS écht?",
+      "subheadline": "Licentiekosten zijn het topje van de ijsberg. Dit is de volledige breakdown van wat recruitmentsoftware je kost.",
+      "shortDescription": "Complete gids over ATS kosten en total cost of ownership.",
+      "criteriaHeadline": "De verborgen kosten die vendors verzwijgen",
+      "criteria": [
+        { "title": "Implementatie & setup", "description": "Vaak 50-200% van de jaarlijkse licentiekosten. Vraag vooraf om fixed-price offertes.", "mustHave": true },
+        { "title": "Training & onboarding", "description": "Uren × mensen × dagrate. Hoe complexer het systeem, hoe hoger deze post.", "mustHave": true },
+        { "title": "Customization & consultancy", "description": "Elke workflow-aanpassing, elk rapport, elke integratie — vraag wat dit kost.", "mustHave": true },
+        { "title": "Per-seat licenties", "description": "Klinkt goedkoop, tot je team groeit. Reken door naar je situatie over 3 jaar.", "mustHave": true },
+        { "title": "Per-kandidaat kosten", "description": "Volume-based pricing kan exploderen bij campagne-recruitment.", "mustHave": false },
+        { "title": "Integratie-kosten", "description": "API-toegang, middleware, development — vaak niet inbegrepen.", "mustHave": false },
+        { "title": "Support-tiers", "description": "Basis = email met 48u response. Premium = instant, maar 30% extra.", "mustHave": false },
+        { "title": "Exit-kosten", "description": "Data-export, contract-beëindiging. Vraag vooraf naar migratie-rechten.", "mustHave": false }
+      ],
+      "solutionHeadline": "OneRooted's transparante model",
+      "solutionPoints": [
+        "Vaste maandprijs vanaf €299 — geen per-seat of per-kandidaat",
+        "Implementatie inbegrepen, geen setup fees",
+        "Onbeperkte gebruikers en kandidaten",
+        "Zelf configureerbaar, geen consultancy nodig",
+        "Maandelijks opzegbaar, geen lock-in"
+      ]
+    }
   }
 }
