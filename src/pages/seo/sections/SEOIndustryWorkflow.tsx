@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building2, Users, Clock, CheckCircle2, AlertTriangle, TrendingUp } from "lucide-react";
+import { Building2, Users, Clock, CheckCircle2, AlertTriangle, TrendingUp, Briefcase } from "lucide-react";
 
 interface WorkflowStep {
   stage: string;
@@ -14,6 +14,7 @@ interface SEOIndustryWorkflowProps {
   workflowSteps?: WorkflowStep[];
   compliancePoints?: string[];
   keyMetrics?: { label: string; value: string }[];
+  commonRoles?: string[];
 }
 
 export function SEOIndustryWorkflow({
@@ -23,6 +24,7 @@ export function SEOIndustryWorkflow({
   workflowSteps = [],
   compliancePoints = [],
   keyMetrics = [],
+  commonRoles = [],
 }: SEOIndustryWorkflowProps) {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30">
@@ -166,6 +168,31 @@ export function SEOIndustryWorkflow({
             </motion.div>
           )}
         </div>
+
+        {/* Common Roles */}
+        {commonRoles.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-8"
+          >
+            <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+              <Briefcase className="h-5 w-5 text-primary" />
+              Veelvoorkomende functies in {industryName.toLowerCase()}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {commonRoles.map((role, index) => (
+                <span
+                  key={index}
+                  className="inline-flex items-center px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full"
+                >
+                  {role}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        )}
       </div>
     </section>
   );

@@ -41,7 +41,22 @@ export default function SEOLandingPage() {
     return <Navigate to="/" replace />;
   }
 
-  const contentKey = `seoPages.${pageData.contentKey}`;
+  // Determine content key based on page type
+  const getContentKeyPrefix = () => {
+    switch (pageData.pageType) {
+      case "industry":
+        return `seoPages.industries.${pageData.contentKey}`;
+      case "integration":
+        return `seoPages.integrations.${pageData.contentKey}`;
+      case "role":
+        return `seoPages.stakeholders.${pageData.contentKey}`;
+      case "glossary":
+        return `seoPages.glossary.${pageData.contentKey}`;
+      default:
+        return `seoPages.${pageData.contentKey}`;
+    }
+  };
+  const contentKey = getContentKeyPrefix();
   const langPrefix = lang ? `/${lang}` : "";
   const currentUrl = `${langPrefix}/${seoSlug}`;
   
@@ -322,11 +337,30 @@ export default function SEOLandingPage() {
         );
 
       case "T-IND": // Industry pages
-        const industryName = pageData.primaryKeyword.replace("ATS voor ", "").replace("ATS for ", "");
-        const challenges = t(`${contentKey}.challenges`, { returnObjects: true, defaultValue: [] }) as string[];
-        const workflowSteps = t(`${contentKey}.workflowSteps`, { returnObjects: true, defaultValue: [] }) as { stage: string; description: string; metric?: string }[];
-        const compliancePoints = t(`${contentKey}.compliancePoints`, { returnObjects: true, defaultValue: [] }) as string[];
-        const keyMetrics = t(`${contentKey}.keyMetrics`, { returnObjects: true, defaultValue: [] }) as { label: string; value: string }[];
+        const industryLabel = t(`${contentKey}.label`, "");
+        const industryName = industryLabel || pageData.primaryKeyword.replace("ATS voor ", "").replace("ATS for ", "");
+        
+        // Fetch raw translations for industry data with Array.isArray checks
+        const challengesRaw = t(`${contentKey}.challenges`, { returnObjects: true });
+        const challenges = Array.isArray(challengesRaw) ? challengesRaw : [];
+        
+        const workflowRaw = t(`${contentKey}.workflow`, { returnObjects: true });
+        const workflowSteps = Array.isArray(workflowRaw) ? workflowRaw as { stage: string; description: string; metric?: string }[] : [];
+        
+        const complianceRaw = t(`${contentKey}.compliance`, { returnObjects: true });
+        const compliancePoints = Array.isArray(complianceRaw) ? complianceRaw : [];
+        
+        const kpisRaw = t(`${contentKey}.kpis`, { returnObjects: true });
+        const keyMetrics = Array.isArray(kpisRaw) ? kpisRaw as { metric: string; target: string; description?: string }[] : [];
+        
+        const rolesRaw = t(`${contentKey}.roles`, { returnObjects: true });
+        const commonRoles = Array.isArray(rolesRaw) ? rolesRaw : [];
+        
+        // Transform kpis to keyMetrics format
+        const formattedMetrics = keyMetrics.map(kpi => ({
+          label: kpi.metric,
+          value: kpi.target
+        }));
         
         return (
           <>
@@ -337,7 +371,8 @@ export default function SEOLandingPage() {
               challenges={challenges.length > 0 ? challenges : content.painPoints}
               workflowSteps={workflowSteps}
               compliancePoints={compliancePoints}
-              keyMetrics={keyMetrics}
+              keyMetrics={formattedMetrics}
+              commonRoles={commonRoles}
             />
             {content.solutionPoints.length > 0 && (
               <SEOSolution
