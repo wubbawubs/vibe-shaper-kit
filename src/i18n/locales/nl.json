@@ -1253,6 +1253,12 @@
   },
   "seoPages": {
     "relatedPages": "Gerelateerde pagina's",
+    "sectionLabels": {
+      "comparison": "Vergelijking",
+      "theProblem": "Het probleem",
+      "theSolution": "De oplossing",
+      "aspect": "Aspect"
+    },
     
     "ats-software": {
       "metaTitle": "ATS Software die Kandidaten Rankt, niet Archiveert",

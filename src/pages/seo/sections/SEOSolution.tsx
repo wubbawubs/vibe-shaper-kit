@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, Zap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface SEOSolutionProps {
   headline: string;
@@ -14,6 +15,8 @@ export function SEOSolution({
   solutionPoints,
   uniqueAngle,
 }: SEOSolutionProps) {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative bg-background py-16 md:py-24">
       {/* Background accent */}
@@ -30,7 +33,7 @@ export function SEOSolution({
           >
             <span className="inline-flex items-center gap-2 text-primary">
               <Zap className="h-5 w-5" />
-              <span className="text-sm font-medium uppercase tracking-wider">De oplossing</span>
+              <span className="text-sm font-medium uppercase tracking-wider">{t('seoPages.sectionLabels.theSolution', 'The solution')}</span>
             </span>
           </motion.div>
 

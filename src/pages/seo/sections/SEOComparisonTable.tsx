@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, X, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface ComparisonRow {
   aspect: string;
@@ -27,6 +28,8 @@ export function SEOComparisonTable({
   rows,
   conclusion,
 }: SEOComparisonTableProps) {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative bg-muted/30 py-16 md:py-24">
       <div className="container">
@@ -39,7 +42,7 @@ export function SEOComparisonTable({
             className="text-center"
           >
             <span className="text-sm font-medium uppercase tracking-wider text-primary">
-              Vergelijking
+              {t('seoPages.sectionLabels.comparison', 'Comparison')}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               {headline}
@@ -59,8 +62,8 @@ export function SEOComparisonTable({
           >
             {/* Table Header */}
             <div className="grid grid-cols-3 border-b bg-muted/50">
-              <div className="p-4">
-                <span className="text-sm font-medium text-muted-foreground">Aspect</span>
+            <div className="p-4">
+                <span className="text-sm font-medium text-muted-foreground">{t('seoPages.sectionLabels.aspect', 'Aspect')}</span>
               </div>
               <div className="border-l p-4 text-center">
                 <span className="text-sm font-medium text-muted-foreground">
