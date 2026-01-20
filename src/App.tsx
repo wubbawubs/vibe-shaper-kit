@@ -32,6 +32,7 @@ import Light from "./pages/Light";
 import BrandGuide from "./pages/BrandGuide";
 import EmailTemplates from "./pages/EmailTemplates";
 import PitchDeck from "./pages/PitchDeck";
+import SEOLandingPage from "./pages/seo/SEOLandingPage";
 
 // Auth pages
 import Auth from "./pages/Auth";
@@ -116,6 +117,8 @@ const App = () => (
                     <Route path="terms" element={<Terms />} />
                     <Route path="light" element={<Light />} />
                     <Route path="pitch-deck" element={<PitchDeck />} />
+                    {/* SEO Landing Pages */}
+                    <Route path=":seoSlug" element={<SEOLandingPage />} />
                   </Route>
 
                   {/* Non-prefixed routes (default to English) */}
@@ -132,6 +135,8 @@ const App = () => (
                     <Route path="/terms" element={<Terms />} />
                     <Route path="/light" element={<Light />} />
                     <Route path="/pitch-deck" element={<PitchDeck />} />
+                    {/* SEO Landing Pages (EN default) */}
+                    <Route path="/:seoSlug" element={<SEOLandingPage />} />
                   </Route>
                   
                   {/* Utility Routes */}
