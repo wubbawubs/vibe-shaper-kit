@@ -2452,6 +2452,968 @@
         { "title": "Niche targeting", "description": "Specifieke boards voor specialistische functies." },
         { "title": "Budget optimalisatie", "description": "Maximaal resultaat uit je recruitment media budget." }
       ]
+    },
+
+    "industries": {
+      "ats-voor-accountancy": {
+        "metaTitle": "ATS voor Accountancy: Recruitment Software voor Accountantskantoren",
+        "metaDescription": "Ontdek het beste ATS voor accountantskantoren. Werf accountants, auditors en fiscalisten efficiënter met sector-specifieke workflows.",
+        "breadcrumb": "ATS voor Accountancy",
+        "label": "Accountancy",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "accountantskantoren",
+        "subheadline": "Werf accountants, auditors en fiscalisten met workflows die aansluiten bij de realiteit van financiële dienstverlening.",
+        "shortDescription": "Recruitment software specifiek voor de accountancy sector.",
+        "challengesHeadline": "Recruitment uitdagingen in accountancy",
+        "challenges": [
+          "Seizoensgebonden piekmomenten (aangifteseizoenen)",
+          "Concurrentie om schaars talent met specifieke certificeringen",
+          "Combinatie van ervaren professionals en trainees",
+          "Sterke employer branding nodig in krappe markt"
+        ],
+        "workflowHeadline": "Recruitment workflow voor accountancy",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Target RA/AA-gecertificeerden via LinkedIn en vakplatforms" },
+          { "stage": "Screening", "description": "Check certificeringen, PE-punten en relevante ervaring" },
+          { "stage": "Assessment", "description": "Technische case en cultuurfit gesprek" },
+          { "stage": "Aanbod", "description": "Competitief pakket met opleidingsbudget" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Verificatie RA/AA-registratie",
+          "PE-punten tracking voor certificering",
+          "AVG-compliant kandidaatbeheer",
+          "Audit-trail voor hiring beslissingen"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 35 dagen", "description": "Van sollicitatie tot contract" },
+          { "metric": "Quality of hire", "target": "> 85%", "description": "Nieuwe hires die eerste jaar blijven" },
+          { "metric": "Cost per hire", "target": "< €4.000", "description": "Totale wervingskosten" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Accountant", "Auditor", "Fiscalist", "Controller", "Adviseur"]
+      },
+
+      "ats-voor-bouw": {
+        "metaTitle": "ATS voor Bouw: Recruitment Software voor Bouwbedrijven",
+        "metaDescription": "Het beste ATS voor bouwbedrijven. Werf projectleiders, uitvoerders en vakmensen met workflows voor de bouwsector.",
+        "breadcrumb": "ATS voor Bouw",
+        "label": "Bouw",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de bouwsector",
+        "subheadline": "Werf projectleiders, uitvoerders en vakmensen met workflows die passen bij projectmatig werken.",
+        "shortDescription": "Recruitment software specifiek voor bouw en infra.",
+        "challengesHeadline": "Recruitment uitdagingen in de bouw",
+        "challenges": [
+          "Extreme schaarste aan technisch personeel",
+          "Projectgebonden werving met wisselende bezetting",
+          "Combinatie ZZP'ers en vast personeel",
+          "Geografische spreiding van projecten"
+        ],
+        "workflowHeadline": "Recruitment workflow voor bouw",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Actief sourcen via netwerken en vakbeurzen" },
+          { "stage": "Screening", "description": "VCA-certificering en relevante projectervaring" },
+          { "stage": "Interview", "description": "Praktijkgesprek met uitvoerder of projectleider" },
+          { "stage": "Inzet", "description": "Match met project en team" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "VCA/VOL certificering verificatie",
+          "Keuringsverklaringen en diploma's",
+          "Wet Arbeidsmarkt in Balans naleving",
+          "ID en werkvergunning controle"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 21 dagen", "description": "Van aanvraag tot startdatum" },
+          { "metric": "Uitval eerste maand", "target": "< 10%", "description": "Medewerkers die blijven" },
+          { "metric": "Projectbezetting", "target": "> 95%", "description": "Gevulde posities op projecten" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Projectleider", "Uitvoerder", "Werkvoorbereider", "Timmerman", "Calculator"]
+      },
+
+      "ats-voor-callcenter": {
+        "metaTitle": "ATS voor Callcenter: Recruitment Software voor Klantcontact",
+        "metaDescription": "Het beste ATS voor callcenters en klantcontactcentra. High-volume werving met efficiënte screening en snelle onboarding.",
+        "breadcrumb": "ATS voor Callcenter",
+        "label": "Callcenter",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "klantcontactcentra",
+        "subheadline": "High-volume werving van klantenservice medewerkers met snelle screening en efficiënte onboarding flows.",
+        "shortDescription": "Recruitment software voor callcenters en klantenservice.",
+        "challengesHeadline": "Recruitment uitdagingen in callcenters",
+        "challenges": [
+          "Hoog verloop vraagt continue werving",
+          "Volume: tientallen vacatures tegelijk",
+          "Snelle time-to-productivity vereist",
+          "Flexibele contractvormen en planning"
+        ],
+        "workflowHeadline": "Recruitment workflow voor callcenter",
+        "workflow": [
+          { "stage": "Attract", "description": "Jobboards, social media en employee referral" },
+          { "stage": "Screen", "description": "Automatische taal- en beschikbaarheidscheck" },
+          { "stage": "Assess", "description": "Telefonische screening of video-interview" },
+          { "stage": "Onboard", "description": "Snel naar training en eerste calls" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "AVG-compliant gespreksregistratie",
+          "Flexwerk regelgeving",
+          "Cao klantcontactcentra naleving",
+          "VOG waar vereist"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 10 dagen", "description": "Van sollicitatie tot start" },
+          { "metric": "Trainings slagingspercentage", "target": "> 80%", "description": "Die training succesvol afronden" },
+          { "metric": "90-dagen retentie", "target": "> 70%", "description": "Nog werkzaam na 3 maanden" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Klantenservice medewerker", "Teamleider", "Workforce planner", "Quality coach", "Trainer"]
+      },
+
+      "ats-voor-energie": {
+        "metaTitle": "ATS voor Energie: Recruitment Software voor Energiesector",
+        "metaDescription": "Het beste ATS voor energiebedrijven. Werf monteurs, engineers en projectmanagers met sector-specifieke workflows.",
+        "breadcrumb": "ATS voor Energie",
+        "label": "Energie",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de energiesector",
+        "subheadline": "Werf monteurs, engineers en projectmanagers voor de energietransitie met efficiënte workflows.",
+        "shortDescription": "Recruitment software voor energie en utilities.",
+        "challengesHeadline": "Recruitment uitdagingen in energie",
+        "challenges": [
+          "Energietransitie creëert explosieve vraag",
+          "Technisch geschoold personeel zeer schaars",
+          "Veiligheidscertificeringen verplicht",
+          "Projectmatig werken met wisselende locaties"
+        ],
+        "workflowHeadline": "Recruitment workflow voor energie",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Technische vakplatforms en opleiding partnerships" },
+          { "stage": "Screening", "description": "Certificering en veiligheidstraining verificatie" },
+          { "stage": "Assessment", "description": "Technische test en veldgesprek" },
+          { "stage": "Onboarding", "description": "Veiligheidstraining en projecttoewijzing" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "VCA/VOL en BEI/VIAG certificering",
+          "Medische keuringen voor veldwerk",
+          "Veiligheidsinstructies en PBM",
+          "Rijbewijs en eventueel ADR"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 30 dagen", "description": "Voor technische functies" },
+          { "metric": "Certificering compleet", "target": "100%", "description": "Bij start werkzaamheden" },
+          { "metric": "Eerste-jaars retentie", "target": "> 85%", "description": "Behoud van talent" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Monteur", "Elektrotechnicus", "Projectmanager", "Engineer", "Inspecteur"]
+      },
+
+      "ats-voor-engineering": {
+        "metaTitle": "ATS voor Engineering: Recruitment Software voor Ingenieursbureaus",
+        "metaDescription": "Het beste ATS voor ingenieursbureaus. Werf engineers, consultants en technisch specialisten met gerichte workflows.",
+        "breadcrumb": "ATS voor Engineering",
+        "label": "Engineering",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "ingenieursbureaus",
+        "subheadline": "Werf engineers en technisch consultants met workflows die aansluiten bij projectmatige organisaties.",
+        "shortDescription": "Recruitment software voor engineering en consultancy.",
+        "challengesHeadline": "Recruitment uitdagingen in engineering",
+        "challenges": [
+          "Specialistische profielen zeer schaars",
+          "Internationale concurrentie om talent",
+          "Lange beslissingstrajecten bij kandidaten",
+          "Projectgebonden capaciteitsplanning"
+        ],
+        "workflowHeadline": "Recruitment workflow voor engineering",
+        "workflow": [
+          { "stage": "Sourcing", "description": "LinkedIn, technische communities en universiteiten" },
+          { "stage": "Pre-screening", "description": "Portfolio review en referentie check" },
+          { "stage": "Technical interview", "description": "Casestudy met senior engineer" },
+          { "stage": "Cultural fit", "description": "Gesprek met team en management" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Diploma verificatie (ir., ing.)",
+          "Vakregistraties waar relevant",
+          "Geheimhoudingsverklaringen",
+          "Export control bij defensie-gerelateerd werk"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 45 dagen", "description": "Voor senior engineers" },
+          { "metric": "Offer acceptance", "target": "> 75%", "description": "Geaccepteerde aanbiedingen" },
+          { "metric": "Hiring manager satisfaction", "target": "> 4.0/5", "description": "Kwaliteit nieuwe hires" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Constructeur", "Projectingenieur", "Consultant", "Specialist", "Teamlead"]
+      },
+
+      "ats-voor-finance": {
+        "metaTitle": "ATS voor Finance: Recruitment Software voor Financiële Dienstverlening",
+        "metaDescription": "Het beste ATS voor financiële instellingen. Werf analisten, traders en risk managers met compliance-ready workflows.",
+        "breadcrumb": "ATS voor Finance",
+        "label": "Finance",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "financiële dienstverlening",
+        "subheadline": "Werf financiële professionals met workflows die voldoen aan strenge compliance eisen.",
+        "shortDescription": "Recruitment software voor banks, verzekeraars en asset managers.",
+        "challengesHeadline": "Recruitment uitdagingen in finance",
+        "challenges": [
+          "Strenge compliance en screening vereisten",
+          "Concurrentie om top talent met fintechs",
+          "Lange screening trajecten voor gevoelige functies",
+          "Internationale mobiliteit en vergunningen"
+        ],
+        "workflowHeadline": "Recruitment workflow voor finance",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Headhunting en executive search voor senior rollen" },
+          { "stage": "Pre-screening", "description": "CV review en initiële compliance check" },
+          { "stage": "Assessment", "description": "Technische test en gedragsinterview" },
+          { "stage": "Background check", "description": "Uitgebreide screening en referenties" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "DNB/AFM geschiktheidstoets waar vereist",
+          "Pre-employment screening (PES)",
+          "Sanctielijst en PEP controle",
+          "Diploma en certificering verificatie"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 60 dagen", "description": "Inclusief screening" },
+          { "metric": "Screening pass rate", "target": "> 90%", "description": "Die background check doorstaan" },
+          { "metric": "Regulator-approved", "target": "100%", "description": "Goedkeuring waar vereist" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Analist", "Risk manager", "Compliance officer", "Trader", "Accountmanager"]
+      },
+
+      "ats-voor-gemeenten": {
+        "metaTitle": "ATS voor Gemeenten: Recruitment Software voor Lokale Overheid",
+        "metaDescription": "Het beste ATS voor gemeenten. Werf beleidsmedewerkers, juristen en BOA's met workflows voor de publieke sector.",
+        "breadcrumb": "ATS voor Gemeenten",
+        "label": "Gemeenten",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "gemeenten",
+        "subheadline": "Werf voor de publieke sector met transparante processen en workflows die passen bij overheidsorganisaties.",
+        "shortDescription": "Recruitment software voor gemeentelijke organisaties.",
+        "challengesHeadline": "Recruitment uitdagingen bij gemeenten",
+        "challenges": [
+          "Concurrentie met private sector op salaris",
+          "Lange besluitvormingstrajecten",
+          "Transparantie en gelijke behandeling verplicht",
+          "Breed scala aan functies en niveaus"
+        ],
+        "workflowHeadline": "Recruitment workflow voor gemeenten",
+        "workflow": [
+          { "stage": "Publicatie", "description": "Openbare vacature via gemeente website en werkenvoornederland.nl" },
+          { "stage": "Selectie", "description": "Gestructureerde briefselectie door commissie" },
+          { "stage": "Gesprekken", "description": "Eerste en tweede ronde met selectiecommissie" },
+          { "stage": "Benoeming", "description": "Formele aanstelling via college of directie" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Gelijke behandeling en non-discriminatie",
+          "VOG voor alle medewerkers",
+          "Wet Normering Topinkomens",
+          "AVG-compliant proces"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 60 dagen", "description": "Van publicatie tot start" },
+          { "metric": "Diversiteit", "target": "Conform doelstelling", "description": "Diverse kandidatenpool" },
+          { "metric": "Interne doorstroom", "target": "> 30%", "description": "Interne mobiliteit" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Beleidsmedewerker", "Jurist", "BOA", "Klantmanager", "Projectleider"]
+      },
+
+      "ats-voor-horeca": {
+        "metaTitle": "ATS voor Horeca: Recruitment Software voor Restaurants en Hotels",
+        "metaDescription": "Het beste ATS voor horeca. Werf koks, bediening en hotelmedewerkers met high-volume workflows en snelle onboarding.",
+        "breadcrumb": "ATS voor Horeca",
+        "label": "Horeca",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de horeca",
+        "subheadline": "Werf koks, bediening en hotelmedewerkers met snelle processen voor een sector met hoog verloop.",
+        "shortDescription": "Recruitment software voor restaurants, hotels en catering.",
+        "challengesHeadline": "Recruitment uitdagingen in horeca",
+        "challenges": [
+          "Extreem hoog verloop in de sector",
+          "Seizoensgebonden pieken en dalen",
+          "Veel parttime en flexwerkers",
+          "Snelle beschikbaarheid noodzakelijk"
+        ],
+        "workflowHeadline": "Recruitment workflow voor horeca",
+        "workflow": [
+          { "stage": "Attract", "description": "Social media, jobboards en walk-ins" },
+          { "stage": "Quick screen", "description": "Beschikbaarheid en ervaring check" },
+          { "stage": "Proefdag", "description": "Praktische beoordeling op de werkvloer" },
+          { "stage": "Indiensttreding", "description": "Snelle contractafhandeling en start" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Hygiënecertificaat waar vereist",
+          "Leeftijdscontrole voor alcoholschenken",
+          "Werkvergunning controle",
+          "Cao horeca naleving"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 7 dagen", "description": "Van sollicitatie tot start" },
+          { "metric": "Proefdag conversie", "target": "> 60%", "description": "Die doorgaan na proefdag" },
+          { "metric": "Seizoenspiek bezetting", "target": "100%", "description": "Volledig bezet in hoogseizoen" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Kok", "Sous-chef", "Bediening", "Receptionist", "Barmedewerker"]
+      },
+
+      "ats-voor-industrie": {
+        "metaTitle": "ATS voor Industrie: Recruitment Software voor Maakindustrie",
+        "metaDescription": "Het beste ATS voor de maakindustrie. Werf operators, technici en productieleiders met sector-specifieke workflows.",
+        "breadcrumb": "ATS voor Industrie",
+        "label": "Industrie",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de maakindustrie",
+        "subheadline": "Werf operators, technici en productieleiders met workflows die aansluiten bij productieomgevingen.",
+        "shortDescription": "Recruitment software voor manufacturing en productie.",
+        "challengesHeadline": "Recruitment uitdagingen in industrie",
+        "challenges": [
+          "Technisch geschoold personeel schaars",
+          "Concurrentie met logistiek en bouw om vakmensen",
+          "Ploegendiensten maken werving complexer",
+          "Automatisering vraagt nieuwe skills"
+        ],
+        "workflowHeadline": "Recruitment workflow voor industrie",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Technische opleidingen en vakbeurzen" },
+          { "stage": "Screening", "description": "Certificeringen en fysieke geschiktheid" },
+          { "stage": "Praktijktest", "description": "Vaardigheden demonstratie of meeloopdag" },
+          { "stage": "Inzet", "description": "Team en ploeg toewijzing" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "VCA en machine-specifieke certificeringen",
+          "Medische keuring voor ploegendienst",
+          "Veiligheidsinstructies en PBM",
+          "Heftruckcertificaat waar nodig"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 21 dagen", "description": "Voor productierollen" },
+          { "metric": "Productiviteit week 4", "target": "> 80%", "description": "Op niveau na 4 weken" },
+          { "metric": "Verzuim eerste kwartaal", "target": "< 5%", "description": "Lage uitval nieuwe hires" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Operator", "CNC-frezer", "Lasser", "Productieleider", "Onderhoudsmonteur"]
+      },
+
+      "ats-voor-it": {
+        "metaTitle": "ATS voor IT: Recruitment Software voor Tech Bedrijven",
+        "metaDescription": "Het beste ATS voor IT en tech. Werf developers, engineers en product managers met workflows voor de tech sector.",
+        "breadcrumb": "ATS voor IT",
+        "label": "IT",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de tech sector",
+        "subheadline": "Werf developers, engineers en product managers met workflows die tech talent verwacht.",
+        "shortDescription": "Recruitment software voor IT en software bedrijven.",
+        "challengesHeadline": "Recruitment uitdagingen in IT",
+        "challenges": [
+          "War for talent met internationale concurrentie",
+          "Kandidaten hebben meerdere aanbiedingen",
+          "Snelheid is cruciaal in het proces",
+          "Remote work verwachtingen hoog"
+        ],
+        "workflowHeadline": "Recruitment workflow voor IT",
+        "workflow": [
+          { "stage": "Sourcing", "description": "LinkedIn, GitHub, Stack Overflow en communities" },
+          { "stage": "Tech screen", "description": "Coding challenge of portfolio review" },
+          { "stage": "Interview", "description": "Technisch interview met senior developer" },
+          { "stage": "Team fit", "description": "Gesprek met team en final round" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "GDPR voor kandidaatdata",
+          "Werkvergunning voor internationals",
+          "IP en NDA agreements",
+          "Security clearance waar vereist"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 25 dagen", "description": "Van eerste contact tot offer" },
+          { "metric": "Offer acceptance", "target": "> 80%", "description": "Geaccepteerde aanbiedingen" },
+          { "metric": "Candidate NPS", "target": "> 50", "description": "Kandidaatervaring score" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Software Developer", "DevOps Engineer", "Product Manager", "Data Scientist", "UX Designer"]
+      },
+
+      "ats-voor-logistiek": {
+        "metaTitle": "ATS voor Logistiek: Recruitment Software voor Warehouse en Transport",
+        "metaDescription": "Het beste ATS voor logistiek. Werf magazijnmedewerkers, chauffeurs en planners met high-volume workflows.",
+        "breadcrumb": "ATS voor Logistiek",
+        "label": "Logistiek",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "logistiek & transport",
+        "subheadline": "Werf magazijnmedewerkers, chauffeurs en planners met workflows voor high-volume recruitment.",
+        "shortDescription": "Recruitment software voor warehousing en transport.",
+        "challengesHeadline": "Recruitment uitdagingen in logistiek",
+        "challenges": [
+          "Seizoenspieken vragen flexibele capaciteit",
+          "Hoge concurrentie om chauffeurs",
+          "24/7 operaties met ploegendiensten",
+          "Fysiek zwaar werk beperkt kandidaatpool"
+        ],
+        "workflowHeadline": "Recruitment workflow voor logistiek",
+        "workflow": [
+          { "stage": "Attract", "description": "Jobboards, bureaus en employee referral" },
+          { "stage": "Quick screen", "description": "Beschikbaarheid, rijbewijs en certificaten" },
+          { "stage": "Assessment", "description": "Fysieke geschiktheid en praktijktest" },
+          { "stage": "Onboarding", "description": "Veiligheidstraining en team introductie" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Rijbewijs C/CE en code 95",
+          "Heftruckcertificaat",
+          "Medische keuring voor chauffeurs",
+          "Tachograaf instructie"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 14 dagen", "description": "Voor operationele rollen" },
+          { "metric": "Piekbezetting", "target": "100%", "description": "Volledig bezet tijdens pieken" },
+          { "metric": "Verloop eerste 90 dagen", "target": "< 20%", "description": "Retentie nieuwe hires" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Magazijnmedewerker", "Orderpicker", "Chauffeur", "Planner", "Teamleider"]
+      },
+
+      "ats-voor-non-profit": {
+        "metaTitle": "ATS voor Non-profit: Recruitment Software voor Goede Doelen",
+        "metaDescription": "Het beste ATS voor non-profits. Werf met beperkt budget en trek missie-gedreven talent aan.",
+        "breadcrumb": "ATS voor Non-profit",
+        "label": "Non-profit",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "non-profit organisaties",
+        "subheadline": "Werf missie-gedreven talent met efficiënte processen die passen bij organisaties met beperkt budget.",
+        "shortDescription": "Recruitment software voor goede doelen en NGO's.",
+        "challengesHeadline": "Recruitment uitdagingen in non-profit",
+        "challenges": [
+          "Beperkt budget voor recruitment",
+          "Concurrentie met private sector op salaris",
+          "Motivatie en missie-fit cruciaal",
+          "Vrijwilligers en betaalde krachten combineren"
+        ],
+        "workflowHeadline": "Recruitment workflow voor non-profit",
+        "workflow": [
+          { "stage": "Attract", "description": "Mission-driven employer branding" },
+          { "stage": "Screening", "description": "Motivatie en waarden alignment" },
+          { "stage": "Interview", "description": "Cultuurfit en praktijkervaring" },
+          { "stage": "Onboarding", "description": "Introductie missie en stakeholders" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "VOG voor kwetsbare doelgroepen",
+          "CBF-keurmerk compliance",
+          "ANBI-regels voor governance",
+          "Transparante werving"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Cost per hire", "target": "< €1.500", "description": "Efficiënte besteding" },
+          { "metric": "Missie-alignment", "target": "> 90%", "description": "Past bij organisatie waarden" },
+          { "metric": "2-jaars retentie", "target": "> 75%", "description": "Langdurige betrokkenheid" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Programmamanager", "Fondsenwerver", "Communicatiemedewerker", "Projectcoördinator", "Directeur"]
+      },
+
+      "ats-voor-onderwijs": {
+        "metaTitle": "ATS voor Onderwijs: Recruitment Software voor Scholen",
+        "metaDescription": "Het beste ATS voor onderwijs. Werf docenten, ondersteunend personeel en schoolleiders met sector-specifieke workflows.",
+        "breadcrumb": "ATS voor Onderwijs",
+        "label": "Onderwijs",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "het onderwijs",
+        "subheadline": "Werf docenten en ondersteunend personeel met workflows die aansluiten bij de onderwijssector.",
+        "shortDescription": "Recruitment software voor primair, voortgezet en hoger onderwijs.",
+        "challengesHeadline": "Recruitment uitdagingen in onderwijs",
+        "challenges": [
+          "Lerarentekort is structureel probleem",
+          "Seizoensgebonden werving rond schooljaar",
+          "Combinatie vaste aanstelling en invallers",
+          "Regio-specifieke schaarste verschillen"
+        ],
+        "workflowHeadline": "Recruitment workflow voor onderwijs",
+        "workflow": [
+          { "stage": "Attract", "description": "Vacatures via onderwijs jobboards en netwerken" },
+          { "stage": "Screening", "description": "Bevoegdheid en ervaring verificatie" },
+          { "stage": "Les observatie", "description": "Praktijkbeoordeling in de klas" },
+          { "stage": "Benoeming", "description": "Aanstelling conform cao en bestuur" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Onderwijsbevoegdheid verificatie",
+          "VOG verplicht voor onderwijs",
+          "Registerleraar check",
+          "Cao primair/voortgezet onderwijs"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Vacatures gevuld voor schooljaar", "target": "> 95%", "description": "Tijdig ingevuld" },
+          { "metric": "Invalbezetting", "target": "> 90%", "description": "Ziektevervanging gedekt" },
+          { "metric": "Doorstroom naar vast", "target": "> 60%", "description": "Van tijdelijk naar vast" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Docent", "Onderwijsassistent", "Schoolleider", "Intern begeleider", "Conciërge"]
+      },
+
+      "ats-voor-overheid": {
+        "metaTitle": "ATS voor Overheid: Recruitment Software voor Rijksoverheid",
+        "metaDescription": "Het beste ATS voor de rijksoverheid. Werf met transparante processen en workflows voor de publieke sector.",
+        "breadcrumb": "ATS voor Overheid",
+        "label": "Overheid",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de rijksoverheid",
+        "subheadline": "Werf voor ministeries en uitvoeringsorganisaties met transparante, compliant processen.",
+        "shortDescription": "Recruitment software voor rijksoverheid en ZBO's.",
+        "challengesHeadline": "Recruitment uitdagingen bij de overheid",
+        "challenges": [
+          "Imago-uitdaging versus private sector",
+          "Lange procedures en commissies",
+          "Strenge integriteit en screening",
+          "Diversiteit en inclusie doelstellingen"
+        ],
+        "workflowHeadline": "Recruitment workflow voor overheid",
+        "workflow": [
+          { "stage": "Publicatie", "description": "Werken voor Nederland en specifieke kanalen" },
+          { "stage": "Selectie", "description": "Objectieve briefselectie op criteria" },
+          { "stage": "Assessment", "description": "Gesprekken en eventueel assessment center" },
+          { "stage": "Screening & benoeming", "description": "VOG, integriteit en formele aanstelling" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "ARAR en sectorale regelgeving",
+          "VOG en integriteitsscreening",
+          "Wet Normering Topinkomens",
+          "Diversiteit en gelijke behandeling"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 90 dagen", "description": "Inclusief screening" },
+          { "metric": "Diversiteit instroom", "target": "Conform streefcijfers", "description": "Inclusieve werving" },
+          { "metric": "Kandidaattevredenheid", "target": "> 7.5", "description": "Procesevaring" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Beleidsadviseur", "Inspecteur", "ICT-specialist", "Jurist", "Directeur"]
+      },
+
+      "ats-voor-productie": {
+        "metaTitle": "ATS voor Productie: Recruitment Software voor Productiebedrijven",
+        "metaDescription": "Het beste ATS voor productiebedrijven. Werf operators en productiemedewerkers met efficiënte high-volume workflows.",
+        "breadcrumb": "ATS voor Productie",
+        "label": "Productie",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "productiebedrijven",
+        "subheadline": "Werf operators en productiemedewerkers met workflows voor high-volume recruitment in productie.",
+        "shortDescription": "Recruitment software voor productiebedrijven en fabrieken.",
+        "challengesHeadline": "Recruitment uitdagingen in productie",
+        "challenges": [
+          "Krappe arbeidsmarkt voor productierollen",
+          "Wisselende capaciteitsbehoefte",
+          "Ploegendiensten maken werving complex",
+          "Onboarding voor veilig werken essentieel"
+        ],
+        "workflowHeadline": "Recruitment workflow voor productie",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Uitzendpartners, jobboards en referral" },
+          { "stage": "Screening", "description": "Beschikbaarheid en basis vaardigheden" },
+          { "stage": "Praktijkdag", "description": "Meedraaien in productie" },
+          { "stage": "Indiensttreding", "description": "Veiligheidstraining en teamindeling" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "VCA basis veiligheidscertificering",
+          "Medische geschiktheid ploegendienst",
+          "Machine-specifieke opleidingen",
+          "HACCP voor voedselproductie"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 14 dagen", "description": "Snelle invulling" },
+          { "metric": "First-week no-show", "target": "< 5%", "description": "Die daadwerkelijk starten" },
+          { "metric": "90-dagen retentie", "target": "> 80%", "description": "Behoud nieuwe medewerkers" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Productiemedewerker", "Machine operator", "Inpakker", "Ploegchef", "Kwaliteitscontroleur"]
+      },
+
+      "ats-voor-retail": {
+        "metaTitle": "ATS voor Retail: Recruitment Software voor Winkels",
+        "metaDescription": "Het beste ATS voor retail. Werf winkelmedewerkers en filiaalmanagers met high-volume workflows en snelle onboarding.",
+        "breadcrumb": "ATS voor Retail",
+        "label": "Retail",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de retailsector",
+        "subheadline": "Werf winkelmedewerkers en managers met workflows voor seizoenspieken en high-volume recruitment.",
+        "shortDescription": "Recruitment software voor retail en winkels.",
+        "challengesHeadline": "Recruitment uitdagingen in retail",
+        "challenges": [
+          "Hoog verloop in winkelpersoneel",
+          "Seizoenspieken (feestdagen, sales)",
+          "Veel parttime en flexibele contracten",
+          "Multi-locatie werving en planning"
+        ],
+        "workflowHeadline": "Recruitment workflow voor retail",
+        "workflow": [
+          { "stage": "Attract", "description": "Jobboards, social en winkel-recruitment" },
+          { "stage": "Quick screen", "description": "Beschikbaarheid en lokatie check" },
+          { "stage": "Gesprek", "description": "Interview met filiaalmanager" },
+          { "stage": "Onboarding", "description": "Kassa-training en winkelintroductie" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Leeftijdsverificatie voor bepaalde producten",
+          "Flexwerk en oproepcontracten",
+          "Cao retail",
+          "ID-controle voor arbeidsrecht"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 10 dagen", "description": "Van sollicitatie tot start" },
+          { "metric": "Piekbezetting", "target": "100%", "description": "Volledig bezet tijdens sales" },
+          { "metric": "Eerste-maand retentie", "target": "> 85%", "description": "Die eerste maand blijven" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Winkelmedewerker", "Kassamedewerker", "Filiaalmanager", "Visual merchandiser", "Voorraadbeheerder"]
+      },
+
+      "ats-voor-sales": {
+        "metaTitle": "ATS voor Sales: Recruitment Software voor Verkoopteams",
+        "metaDescription": "Het beste ATS voor sales teams. Werf accountmanagers en sales reps met workflows voor performance-gedreven werving.",
+        "breadcrumb": "ATS voor Sales",
+        "label": "Sales",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "sales teams",
+        "subheadline": "Werf accountmanagers en sales professionals met workflows die focussen op performance en potentieel.",
+        "shortDescription": "Recruitment software voor commerciële teams.",
+        "challengesHeadline": "Recruitment uitdagingen in sales",
+        "challenges": [
+          "Hoog verloop in sales functies",
+          "Performance voorspellen is lastig",
+          "Kandidaten willen snelle processen",
+          "Concurrentie om top performers"
+        ],
+        "workflowHeadline": "Recruitment workflow voor sales",
+        "workflow": [
+          { "stage": "Sourcing", "description": "LinkedIn, referral en competitie-mapping" },
+          { "stage": "Phone screen", "description": "Eerste gesprek en motivatie check" },
+          { "stage": "Role play", "description": "Sales pitch of case presentatie" },
+          { "stage": "Final interview", "description": "Gesprek met sales director" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Referentie checks op track record",
+          "Non-compete verificatie",
+          "Rijbewijs voor field sales",
+          "Relevante marktkennis"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-productivity", "target": "< 90 dagen", "description": "Tijd tot eerste deal" },
+          { "metric": "Quota attainment Y1", "target": "> 80%", "description": "Behalen target jaar 1" },
+          { "metric": "12-maanden retentie", "target": "> 75%", "description": "Behoud sales talent" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Account Executive", "Sales Development Rep", "Sales Manager", "Key Account Manager", "Inside Sales"]
+      },
+
+      "ats-voor-schaalups": {
+        "metaTitle": "ATS voor Scale-ups: Recruitment Software voor Snelgroeiende Bedrijven",
+        "metaDescription": "Het beste ATS voor scale-ups. Werf snel en effectief met workflows die meegroeien met je organisatie.",
+        "breadcrumb": "ATS voor Scale-ups",
+        "label": "Scale-ups",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "scale-ups",
+        "subheadline": "Werf snel en effectief met workflows die meegroeien van 20 naar 200 medewerkers.",
+        "shortDescription": "Recruitment software voor snelgroeiende bedrijven.",
+        "challengesHeadline": "Recruitment uitdagingen bij scale-ups",
+        "challenges": [
+          "Groeitempo vraagt constante hiring",
+          "Structuur moet meegroeien met team",
+          "Culture fit behouden tijdens groei",
+          "Employer brand nog in opbouw"
+        ],
+        "workflowHeadline": "Recruitment workflow voor scale-ups",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Actief sourcen en netwerk activeren" },
+          { "stage": "Speed screening", "description": "Snelle eerste beoordeling" },
+          { "stage": "Culture interview", "description": "Team en values fit" },
+          { "stage": "Offer", "description": "Snel en competitief aanbod" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Standaard arbeidscontracten",
+          "Stock option administration",
+          "Werkvergunningen voor internationals",
+          "AVG-compliant proces"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 21 dagen", "description": "Snelheid is concurrentievoordeel" },
+          { "metric": "Offer acceptance", "target": "> 85%", "description": "Winnen van andere aanbiedingen" },
+          { "metric": "Culture fit score", "target": "> 4.0/5", "description": "Team feedback op nieuwe hires" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Software Engineer", "Product Manager", "Growth Marketer", "Operations Manager", "Customer Success"]
+      },
+
+      "ats-voor-security": {
+        "metaTitle": "ATS voor Security: Recruitment Software voor Beveiligingsbedrijven",
+        "metaDescription": "Het beste ATS voor beveiligingsbedrijven. Werf beveiligers met workflows voor screening en certificering.",
+        "breadcrumb": "ATS voor Security",
+        "label": "Security",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "beveiligingsbedrijven",
+        "subheadline": "Werf beveiligers en security professionals met workflows voor strenge screening en certificering.",
+        "shortDescription": "Recruitment software voor beveiliging en security.",
+        "challengesHeadline": "Recruitment uitdagingen in security",
+        "challenges": [
+          "Strenge screening en betrouwbaarheid",
+          "Certificeringsvereisten wettelijk",
+          "24/7 operatie met ploegendiensten",
+          "Hoog verloop in de sector"
+        ],
+        "workflowHeadline": "Recruitment workflow voor security",
+        "workflow": [
+          { "stage": "Attract", "description": "Jobboards en gerichte werving" },
+          { "stage": "Pre-screening", "description": "Strafblad check en referenties" },
+          { "stage": "Opleiding", "description": "Beveiliger diploma traject" },
+          { "stage": "Inzet", "description": "Object en team toewijzing" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Beveiliger diploma (Particuliere Beveiliging)",
+          "VOG en screening door Justis",
+          "EHBO en BHV certificaat",
+          "Legitimatiebewijs beveiliger"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Screening pass rate", "target": "> 70%", "description": "Die screening doorstaan" },
+          { "metric": "Certificering binnen", "target": "< 12 weken", "description": "Van start tot gediplomeerd" },
+          { "metric": "Object-bezetting", "target": "> 98%", "description": "Alle shifts gevuld" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Beveiliger", "Receptionist/beveiliger", "Mobiele surveillance", "Objectleider", "Security manager"]
+      },
+
+      "ats-voor-startups": {
+        "metaTitle": "ATS voor Startups: Recruitment Software voor Jonge Bedrijven",
+        "metaDescription": "Het beste ATS voor startups. Werf je eerste team met efficiënte, betaalbare workflows.",
+        "breadcrumb": "ATS voor Startups",
+        "label": "Startups",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "startups",
+        "subheadline": "Werf je eerste team met workflows die passen bij founders en kleine teams met grote ambities.",
+        "shortDescription": "Recruitment software voor early-stage startups.",
+        "challengesHeadline": "Recruitment uitdagingen bij startups",
+        "challenges": [
+          "Beperkt budget voor recruitment",
+          "Geen employer brand bekendheid",
+          "Founders doen zelf de hiring",
+          "Elke hire heeft grote impact"
+        ],
+        "workflowHeadline": "Recruitment workflow voor startups",
+        "workflow": [
+          { "stage": "Netwerk", "description": "Founders activeren eigen netwerk" },
+          { "stage": "Screen", "description": "Snelle call met founder" },
+          { "stage": "Work session", "description": "Samen aan een mini-project" },
+          { "stage": "Offer", "description": "Equity + salaris gesprek" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Basis arbeidscontracten",
+          "ESOP/VSOP documentatie",
+          "AVG-basis op orde",
+          "Werkvergunning voor internationals"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Cost per hire", "target": "< €1.000", "description": "Efficiënt met beperkt budget" },
+          { "metric": "Time-to-hire", "target": "< 14 dagen", "description": "Snel beslissen" },
+          { "metric": "Founder-fit", "target": "100%", "description": "Alignment met visie" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Full-stack Developer", "Growth Hacker", "Product Designer", "Operations", "Sales"]
+      },
+
+      "ats-voor-techniek": {
+        "metaTitle": "ATS voor Techniek: Recruitment Software voor Technische Bedrijven",
+        "metaDescription": "Het beste ATS voor technische bedrijven. Werf monteurs en technici met sector-specifieke workflows.",
+        "breadcrumb": "ATS voor Techniek",
+        "label": "Techniek",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "technische bedrijven",
+        "subheadline": "Werf monteurs, technici en installateurs met workflows die passen bij technische organisaties.",
+        "shortDescription": "Recruitment software voor installatie en techniek.",
+        "challengesHeadline": "Recruitment uitdagingen in techniek",
+        "challenges": [
+          "Extreem krappe arbeidsmarkt",
+          "Vergrijzing in technische beroepen",
+          "Concurrentie met bouw en industrie",
+          "Certificeringen en vakbekwaamheid cruciaal"
+        ],
+        "workflowHeadline": "Recruitment workflow voor techniek",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Technische opleidingen en vakbeurzen" },
+          { "stage": "Screening", "description": "Diploma's en certificeringen check" },
+          { "stage": "Praktijktest", "description": "Technische vaardigheden demonstratie" },
+          { "stage": "Indiensttreding", "description": "Opleidingstraject en team" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Vakdiploma's en certificeringen",
+          "VCA voor veilig werken",
+          "Rijbewijs voor servicemonteurs",
+          "Eventueel NEN/ISO training"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 30 dagen", "description": "Voor technische vacatures" },
+          { "metric": "Vakbekwaamheid bij start", "target": "> 80%", "description": "Direct inzetbaar" },
+          { "metric": "Eerste-jaars retentie", "target": "> 85%", "description": "Behoud van schaars talent" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Servicemonteur", "Installateur", "Elektricien", "Werktuigbouwkundige", "Technisch adviseur"]
+      },
+
+      "ats-voor-transport": {
+        "metaTitle": "ATS voor Transport: Recruitment Software voor Transportbedrijven",
+        "metaDescription": "Het beste ATS voor transport. Werf chauffeurs en planners met workflows voor de transportsector.",
+        "breadcrumb": "ATS voor Transport",
+        "label": "Transport",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "transportbedrijven",
+        "subheadline": "Werf chauffeurs en planners met workflows specifiek voor de transport en distributie sector.",
+        "shortDescription": "Recruitment software voor transport en distributie.",
+        "challengesHeadline": "Recruitment uitdagingen in transport",
+        "challenges": [
+          "Chronisch chauffeurstekort",
+          "Vergrijzing in de sector",
+          "Internationale concurrentie om chauffeurs",
+          "Wet- en regelgeving rondom rijtijden"
+        ],
+        "workflowHeadline": "Recruitment workflow voor transport",
+        "workflow": [
+          { "stage": "Attract", "description": "Gerichte campagnes en bureaus" },
+          { "stage": "Screening", "description": "Rijbewijs, code 95 en ervaring" },
+          { "stage": "Rijtest", "description": "Praktische beoordeling op de weg" },
+          { "stage": "Onboarding", "description": "Route introductie en systemen" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "Rijbewijs C/CE en chauffeurskaart",
+          "Code 95 nascholing",
+          "Medische keuring",
+          "Digitale tachograaf training"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-road", "target": "< 14 dagen", "description": "Van contract tot eerste rit" },
+          { "metric": "Chauffeursbezetting", "target": "> 95%", "description": "Voertuigen met chauffeur" },
+          { "metric": "6-maanden retentie", "target": "> 80%", "description": "Behoud nieuwe chauffeurs" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Vrachtwagenchauffeur", "Koerier", "Planner", "Dispatcher", "Chauffeur internationaal"]
+      },
+
+      "ats-voor-uitzendbranche": {
+        "metaTitle": "ATS voor Uitzendbranche: Recruitment Software voor Uitzendbureaus",
+        "metaDescription": "Het beste ATS voor uitzendbureaus. Beheer kandidaten, opdrachtgevers en plaatsingen in één systeem.",
+        "breadcrumb": "ATS voor Uitzendbranche",
+        "label": "Uitzendbranche",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de uitzendbranche",
+        "subheadline": "Beheer kandidaten, opdrachtgevers en plaatsingen met workflows specifiek voor uitzendbureaus.",
+        "shortDescription": "Recruitment software voor uitzendbureaus en flexbedrijven.",
+        "challengesHeadline": "Recruitment uitdagingen in uitzendbranche",
+        "challenges": [
+          "Volume: duizenden kandidaten beheren",
+          "Snelle matching tussen vraag en aanbod",
+          "Administratie en compliance intensief",
+          "Relatiebeheer kandidaat én opdrachtgever"
+        ],
+        "workflowHeadline": "Recruitment workflow voor uitzendbureaus",
+        "workflow": [
+          { "stage": "Instroom", "description": "Kandidaten werven en registreren" },
+          { "stage": "Kwalificeren", "description": "Skills, beschikbaarheid en voorkeuren" },
+          { "stage": "Matchen", "description": "Kandidaat aan opdracht koppelen" },
+          { "stage": "Plaatsen", "description": "Contract, inzet en begeleiding" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "SNA-certificering",
+          "ABU/NBBU cao naleving",
+          "WAB en ketenaansprakelijkheid",
+          "ID en werkvergunning controle"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Fill rate", "target": "> 80%", "description": "Succesvolle plaatsingen" },
+          { "metric": "Time-to-match", "target": "< 24 uur", "description": "Van opdracht tot voordracht" },
+          { "metric": "Opdrachtgever tevredenheid", "target": "> 8.0", "description": "NPS opdrachtgevers" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Intercedent", "Vestigingsmanager", "Recruiter", "Relatiebeheerder", "Flexconsultant"]
+      },
+
+      "ats-voor-zorg": {
+        "metaTitle": "ATS voor Zorg: Recruitment Software voor Zorginstellingen",
+        "metaDescription": "Het beste ATS voor de zorgsector. Werf verpleegkundigen, artsen en zorgpersoneel met sector-specifieke workflows.",
+        "breadcrumb": "ATS voor Zorg",
+        "label": "Zorg",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "de zorgsector",
+        "subheadline": "Werf verpleegkundigen, artsen en zorgpersoneel met workflows die aansluiten bij de complexiteit van zorgorganisaties.",
+        "shortDescription": "Recruitment software voor ziekenhuizen, VVT en GGZ.",
+        "challengesHeadline": "Recruitment uitdagingen in de zorg",
+        "challenges": [
+          "Structureel personeelstekort",
+          "BIG-registratie en diploma verificatie",
+          "Combinatie vast, flex en zzp",
+          "Hoge werkdruk beïnvloedt candidate experience"
+        ],
+        "workflowHeadline": "Recruitment workflow voor zorg",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Zorg-jobboards, LinkedIn en opleidingen" },
+          { "stage": "Screening", "description": "BIG-registratie en diploma check" },
+          { "stage": "Gesprekken", "description": "Met teamleider en HR" },
+          { "stage": "Onboarding", "description": "Introductie protocollen en team" }
+        ],
+        "complianceHeadline": "Compliance & vereisten",
+        "compliance": [
+          "BIG-registratie verificatie",
+          "VOG verplicht",
+          "Diploma erkenning (DUO/Nuffic)",
+          "Cao ziekenhuizen/VVT/GGZ"
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 45 dagen", "description": "Voor verplegend personeel" },
+          { "metric": "Vacature-vulling", "target": "> 90%", "description": "Formatie gevuld" },
+          { "metric": "Quality of hire", "target": "> 4.0/5", "description": "Manager tevredenheid" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Verpleegkundige", "Verzorgende IG", "Arts", "Fysiotherapeut", "Teamleider"]
+      }
     }
   }
 }
