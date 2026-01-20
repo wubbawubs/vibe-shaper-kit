@@ -1326,7 +1326,8 @@
         "Complexity that requires dedicated admin resources",
         "Implementation timelines measured in quarters, not weeks",
         "Feature bloat that obscures what you actually need",
-        "Rigid workflows that require workarounds"
+        "Rigid workflows that require workarounds",
+        "Reporting that needs specialized knowledge to build"
       ],
       "migrationHeadline": "Switching made simple",
       "migrationSteps": [
@@ -1346,7 +1347,9 @@
         "Right-sized for growth-stage teams",
         "Self-configurable without admin overhead",
         "Live in weeks, not quarters",
-        "Features that focus, not overwhelm"
+        "Features that focus, not overwhelm",
+        "Transparent pricing without enterprise markups",
+        "Dedicated support from day one"
       ]
     },
 
@@ -1365,7 +1368,8 @@
         "Pricing increases without matching feature growth",
         "Reporting that requires too much manual work",
         "Limited partner collaboration features",
-        "Integration ecosystem that's showing its age"
+        "Integration ecosystem that's showing its age",
+        "Support response times that have declined"
       ],
       "migrationHeadline": "A smooth transition",
       "migrationSteps": [
@@ -1385,7 +1389,9 @@
         "Active product development with monthly releases",
         "Intelligent ranking that goes deeper",
         "Built-in partner collaboration",
-        "Transparent, predictable pricing"
+        "Transparent, predictable pricing",
+        "Real-time pipeline visibility",
+        "Dedicated support that responds in hours"
       ]
     },
 
@@ -1404,7 +1410,8 @@
         "Configuration requires specialized consultants",
         "Recruiting is a module, not the focus",
         "Change management for simple workflow updates",
-        "Enterprise pricing for focused needs"
+        "Enterprise pricing for focused needs",
+        "Support tickets instead of direct help"
       ],
       "migrationHeadline": "Escape the enterprise trap",
       "migrationSteps": [
@@ -1424,7 +1431,9 @@
         "100% focused on hiring — nothing else",
         "Self-service configuration",
         "Live in weeks, not enterprise timelines",
-        "Pricing that matches your actual usage"
+        "Pricing that matches your actual usage",
+        "Direct support without ticket queues",
+        "Updates that ship monthly, not yearly"
       ]
     },
 
@@ -1443,7 +1452,8 @@
         "Limited workflow automation as complexity grows",
         "Reporting that doesn't scale with your questions",
         "Partner features that feel bolted on",
-        "Support tiers that gate essential features"
+        "Support tiers that gate essential features",
+        "Customization options that hit a ceiling"
       ],
       "migrationHeadline": "Level up your hiring",
       "migrationSteps": [
@@ -1463,7 +1473,9 @@
         "Ranking that actually differentiates candidates",
         "Workflows that handle complexity gracefully",
         "Insights that grow with your sophistication",
-        "Partner collaboration as a core feature"
+        "Partner collaboration as a core feature",
+        "Transparent pricing without tier restrictions",
+        "Support that's included, not upsold"
       ]
     },
 
