@@ -636,6 +636,22 @@ export const seoPages: SEOPage[] = [
     schemaTypes: ["BreadcrumbList", "HowTo", "WebPage"],
     lastUpdated: "2026-01-20",
   },
+  {
+    slug: "homerun-alternative",
+    priority: "P1",
+    language: "en",
+    pageType: "alternative",
+    template: "T-ALT",
+    primaryKeyword: "Homerun alternative",
+    secondaryKeywords: ["Homerun replacement", "switch from Homerun", "Homerun ATS alternative"],
+    searchIntent: "switching",
+    contentKey: "homerun-alternative",
+    parentSlugs: ["applicant-tracking-system"],
+    childSlugs: [],
+    relatedSlugs: ["breezy-alternative", "lever-alternative"],
+    schemaTypes: ["BreadcrumbList", "HowTo", "WebPage"],
+    lastUpdated: "2026-01-20",
+  },
   
   // --- NL Alternative Pages (T-ALT) P1 ---
   {
