@@ -15,6 +15,7 @@ import { SEORelatedPages } from "./sections/SEORelatedPages";
 import { SEOMigrationPath } from "./sections/SEOMigrationPath";
 import { SEOBuyingCriteria } from "./sections/SEOBuyingCriteria";
 import { TCOCalculator } from "@/components/seo/TCOCalculator";
+import { ATSChecklist } from "@/components/seo/ATSChecklist";
 
 const BASE_URL = "https://onerooted.com";
 
@@ -184,15 +185,17 @@ export default function SEOLandingPage() {
           </>
         );
 
-      case "T-GUIDE": // Guide pages (like ats-kosten)
+      case "T-GUIDE": // Guide pages (like ats-kosten, ats-checklist)
         const guideCriteria = t(`${contentKey}.criteria`, { returnObjects: true, defaultValue: [] }) as { title: string; description: string; mustHave: boolean }[];
         const showTCOCalculator = seoSlug === "ats-kosten";
+        const showATSChecklist = seoSlug === "ats-checklist";
         
         return (
           <>
             <SEOHero {...content.hero} />
             {showTCOCalculator && <TCOCalculator />}
-            {guideCriteria.length > 0 && (
+            {showATSChecklist && <ATSChecklist />}
+            {guideCriteria.length > 0 && !showATSChecklist && (
               <SEOBuyingCriteria
                 headline={t(`${contentKey}.criteriaHeadline`, "Waar moet je op letten?")}
                 criteria={guideCriteria}
