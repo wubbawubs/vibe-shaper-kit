@@ -114,50 +114,30 @@ export default function SEOAudit() {
   const filteredSeoPages = seoPages.filter(p => p.language === currentLang);
   
   const seoAuditResults = filteredSeoPages.map((page: SEOPage) => {
-    // Build all possible key patterns based on page type
-    const keyPatterns: string[] = [];
+    // The nl.json and en.json store all SEO page metadata directly under seoPages.{contentKey}
+    // regardless of pageType. Try the direct key first, then fallback patterns.
+    const titleKeys = [
+      `seoPages.${page.contentKey}.metaTitle`,
+      `seoPages.${page.contentKey}.meta.title`,
+      // Alternative nested structures for certain page types
+      `seoPages.industries.${page.contentKey}.metaTitle`,
+      `seoPages.industries.${page.contentKey}.meta.title`,
+      `integrations.${page.contentKey}.metaTitle`,
+      `integrations.${page.contentKey}.meta.title`,
+      `seoPages.features.${page.contentKey}.metaTitle`,
+      `seoPages.roles.${page.contentKey}.metaTitle`,
+    ];
     
-    // Page type specific keys
-    switch (page.pageType) {
-      case "industry":
-        keyPatterns.push(`seoPages.industries.${page.contentKey}`);
-        break;
-      case "integration":
-        keyPatterns.push(`integrations.${page.contentKey}`);
-        break;
-      case "feature":
-        keyPatterns.push(`seoPages.features.${page.contentKey}`);
-        break;
-      case "role":
-        keyPatterns.push(`seoPages.roles.${page.contentKey}`);
-        break;
-      case "guide":
-        keyPatterns.push(`seoPages.guides.${page.contentKey}`);
-        break;
-      case "usecase":
-        keyPatterns.push(`seoPages.usecases.${page.contentKey}`);
-        break;
-      case "alternative":
-        keyPatterns.push(`seoPages.alternatives.${page.contentKey}`);
-        break;
-      case "comparison":
-        keyPatterns.push(`seoPages.comparisons.${page.contentKey}`);
-        break;
-    }
-    
-    // Always try the direct seoPages.{contentKey} pattern as fallback
-    keyPatterns.push(`seoPages.${page.contentKey}`);
-    
-    // Build all possible title and description keys
-    const titleKeys: string[] = [];
-    const descKeys: string[] = [];
-    
-    for (const baseKey of keyPatterns) {
-      titleKeys.push(`${baseKey}.metaTitle`);
-      titleKeys.push(`${baseKey}.meta.title`);
-      descKeys.push(`${baseKey}.metaDescription`);
-      descKeys.push(`${baseKey}.meta.description`);
-    }
+    const descKeys = [
+      `seoPages.${page.contentKey}.metaDescription`,
+      `seoPages.${page.contentKey}.meta.description`,
+      `seoPages.industries.${page.contentKey}.metaDescription`,
+      `seoPages.industries.${page.contentKey}.meta.description`,
+      `integrations.${page.contentKey}.metaDescription`,
+      `integrations.${page.contentKey}.meta.description`,
+      `seoPages.features.${page.contentKey}.metaDescription`,
+      `seoPages.roles.${page.contentKey}.metaDescription`,
+    ];
     
     let title = "";
     for (const key of titleKeys) {
