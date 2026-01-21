@@ -113,15 +113,27 @@ export default function SEOAudit() {
   // SEO pages audit - filter by current language
   const filteredSeoPages = seoPages.filter(p => p.language === currentLang);
   
+  // Helper function to get the correct i18n key based on pageType
+  // Industry pages are nested under seoPages.industries.{contentKey}
+  // All other pages are directly under seoPages.{contentKey}
+  const getMetaKey = (page: SEOPage, field: "metaTitle" | "metaDescription"): string => {
+    if (page.pageType === "industry") {
+      return `seoPages.industries.${page.contentKey}.${field}`;
+    }
+    return `seoPages.${page.contentKey}.${field}`;
+  };
+  
   const seoAuditResults = filteredSeoPages.map((page: SEOPage) => {
-    // All SEO page metadata is stored directly under seoPages.{contentKey} in the translation files.
-    // Structure: seoPages.{contentKey}.metaTitle and seoPages.{contentKey}.metaDescription
-    // Example: seoPages.ats-software.metaTitle
-    const titleKey = `seoPages.${page.contentKey}.metaTitle`;
-    const descKey = `seoPages.${page.contentKey}.metaDescription`;
+    const titleKey = getMetaKey(page, "metaTitle");
+    const descKey = getMetaKey(page, "metaDescription");
     
-    const title = getTranslatedValue(titleKey);
-    const desc = getTranslatedValue(descKey);
+    // Use i18next's t function - if key doesn't exist, it returns the key itself
+    const rawTitle = t(titleKey, { defaultValue: "" }) as string;
+    const rawDesc = t(descKey, { defaultValue: "" }) as string;
+    
+    // Check if translation was actually found (not empty and not the key itself)
+    const title = rawTitle && rawTitle !== titleKey ? rawTitle : "";
+    const desc = rawDesc && rawDesc !== descKey ? rawDesc : "";
     
     return {
       ...page,
