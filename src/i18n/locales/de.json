@@ -176,8 +176,8 @@
   },
   "product": {
     "seo": {
-      "title": "Produktfunktionen | Wie One Rooted funktioniert",
-      "description": "Entdecken Sie One Rooteds intelligentes Kandidaten-Ranking, visuelle Hiring-Pipeline und Echtzeit-Kollaborationstools. Sehen Sie, wie unser Hiring OS das Recruiting transformiert."
+      "title": "Hiring OS Features & Funktionen",
+      "description": "Intelligentes Kandidaten-Ranking, visuelle Pipelines, Echtzeit-Zusammenarbeit. So ersetzt One Rooted verstreute Tools."
     },
     "hero": {
       "label": "Wie es funktioniert",
@@ -290,14 +290,14 @@
   },
 "seo": {
     "home": {
-      "title": "Das Hiring OS für Teams, die Recruiting ernst nehmen",
-      "description": "Ersetzen Sie verstreute Recruiting-Tools durch ein intelligentes System. One Rooted bewertet Kandidaten, optimiert Workflows und ermöglicht bessere Einstellungsentscheidungen."
+      "title": "One Rooted | Das Hiring OS",
+      "description": "Ersetzen Sie verstreute ATS, Slack und Excel durch ein intelligentes Hiring-System. Kandidaten ranken, Workflows optimieren, bessere Entscheidungen."
     }
   },
   "pricingPage": {
     "seo": {
-      "title": "Preise | Transparente Hiring OS Preise",
-      "description": "Einfache, transparente Preise ab €299/Monat. Wählen Sie Base, Plus oder Premium. Keine versteckten Gebühren, unbegrenzte Benutzer, jederzeit kündbar."
+      "title": "Preise | Ab €299/Monat",
+      "description": "Transparente Preise. Base, Plus oder Premium mit unbegrenzten Benutzern. Keine versteckten Kosten, 30 Tage Geld-zurück, monatlich kündbar."
     },
     "hero": {
       "label": "Preise",
@@ -420,8 +420,8 @@
   },
   "useCasesPage": {
     "seo": {
-      "title": "Anwendungsfälle | Hiring-Lösungen für wachsende Teams",
-      "description": "Sehen Sie, wie Teams One Rooted für schnelles Skalieren, Multi-Stakeholder-Hiring und Partner-Zusammenarbeit nutzen. Echte Szenarien mit messbaren Ergebnissen."
+      "title": "Use Cases | Hiring OS in der Praxis",
+      "description": "Schnell skalieren, Stakeholder abstimmen, mit Partnern zusammenarbeiten. Echte Hiring-Szenarien mit messbaren Ergebnissen."
     },
     "hero": {
       "label": "Anwendungsfälle",
@@ -475,8 +475,8 @@
   },
   "whyPage": {
     "seo": {
-      "title": "Warum One Rooted | Die Geschichte hinter dem Hiring OS",
-      "description": "Warum traditionelle ATS-Systeme moderne Hiring-Teams enttäuschen. Erfahren Sie, wie One Rooted Recruiting-Software mit einem Hiring-OS-Ansatz neu denkt."
+      "title": "Warum Wir ein Hiring OS Gebaut Haben",
+      "description": "Ein ATS speichert CVs, keine Entscheidungen. One Rooted verbindet jede Hiring-Entscheidung in einem System. Unsere Geschichte."
     },
     "hero": {
       "label": "Unsere Geschichte",
@@ -542,8 +542,8 @@
   },
   "partnersPage": {
     "seo": {
-      "title": "Für Recruiter & Agenturen",
-      "description": "Arbeiten Sie nahtlos mit Kunden über One Rooted zusammen. Erhalten Sie Echtzeit-Sichtbarkeit, sofortiges Feedback und bessere Ergebnisse. Kostenlos für Recruiter."
+      "title": "Für Personalagenturen & Partner",
+      "description": "Kostenlos für Recruiter. Echtzeit-Sichtbarkeit bei Kunden, direktes Feedback, bessere Besetzungen. Infrastruktur, die stärker macht."
     },
     "hero": {
       "label": "Für Recruiter",
@@ -619,8 +619,8 @@
   },
   "teamPage": {
     "seo": {
-      "title": "Über Uns | Lernen Sie das One Rooted-Team kennen",
-      "description": "Lernen Sie das Team hinter One Rooted kennen. 25+ Jahre Recruiting-Expertise, die die Zukunft des Hirings baut. Teil der One Group."
+      "title": "Team | Lernen Sie die Gründer Kennen",
+      "description": "25+ Jahre Recruiting-Expertise. Gebaut von Praktikern, die Hiring-Probleme gelebt haben, nicht Produktmanager, die geraten haben."
     },
     "hero": {
       "label": "Das Team kennenlernen",
@@ -666,8 +666,8 @@
   },
   "demoPage": {
     "seo": {
-      "title": "Demo anfragen | One Rooted in Aktion sehen",
-      "description": "Buchen Sie eine kostenlose 30-Minuten-Demo. Sehen Sie, wie One Rooteds Hiring OS Ihr Recruiting optimieren, Zusammenarbeit verbessern und bessere Einstellungen ermöglichen kann."
+      "title": "Demo Buchen | 30 Minuten, Kein Verkaufsgespräch",
+      "description": "Kostenlose 30-Minuten-Demo. Sehen Sie, wie One Rooted für Ihren Hiring-Prozess funktioniert. Kein Theater, nur klarer Walkthrough."
     },
     "hero": {
       "label": "Loslegen",
@@ -720,8 +720,8 @@
   },
   "privacyPage": {
     "seo": {
-      "title": "Datenschutzrichtlinie | Datenschutz bei One Rooted",
-      "description": "Erfahren Sie, wie One Rooted Ihre personenbezogenen Daten sammelt, verwendet und schützt. DSGVO-konform. Ihr Datenschutz ist unsere Priorität."
+      "title": "Datenschutzrichtlinie | DSGVO Konform",
+      "description": "Wie One Rooted Daten sammelt, verwendet und schützt. Vollständig DSGVO-konform. Verschlüsselte Speicherung, transparente Praktiken."
     },
     "title": "Datenschutzrichtlinie",
     "lastUpdated": "Zuletzt aktualisiert:",
@@ -757,8 +757,8 @@
   },
   "termsPage": {
     "seo": {
-      "title": "Allgemeine Geschäftsbedingungen | One Rooted Nutzungsvereinbarung",
-      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen von One Rooted. Verstehen Sie Ihre Rechte und Pflichten bei der Nutzung unserer Hiring OS-Plattform."
+      "title": "Allgemeine Geschäftsbedingungen",
+      "description": "One Rooted AGB. Ihre Rechte und Pflichten bei der Nutzung der Hiring OS Plattform."
     },
     "title": "Allgemeine Geschäftsbedingungen",
     "lastUpdated": "Zuletzt aktualisiert:",
@@ -829,8 +829,8 @@
     },
     "page": {
       "seo": {
-        "title": "One Rooted Light | Starten Sie mit einer Stelle für €99/Monat",
-        "description": "Erleben Sie One Rooted mit unserem Light-Plan: 1 Stelle, 100 Kandidaten aus unserem Talent-Pool für nur €99/Monat. Perfekt zum Starten ohne Verpflichtung."
+        "title": "Light Plan | 1 Stelle für €99/Monat",
+        "description": "Klein starten, klug einstellen. 1 Stelle, 100 vorqualifizierte Kandidaten, voller Systemzugang. Idealer erster Schritt zu smarterem Hiring."
       },
       "hero": {
         "label": "One Rooted Light",
@@ -1113,8 +1113,8 @@
   },
   "pitchDeck": {
     "seo": {
-      "title": "Pitch Deck | OneRooted - Das Hiring OS",
-      "description": "OneRooted Pitch Deck: Entdecken Sie das Hiring Operating System, das jede Einstellungsentscheidung auf einer intelligenten Plattform verbindet."
+      "title": "Pitch Deck | Investor Overview",
+      "description": "One Rooted Investor Pitch Deck. Das Hiring OS, das jede Einstellungsentscheidung auf einer intelligenten Plattform verbindet."
     },
     "exportButton": "PDF herunterladen",
     "cover": {
