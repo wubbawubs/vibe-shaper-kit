@@ -113,27 +113,46 @@ export default function SEOAudit() {
   // SEO pages audit - filter by current language
   const filteredSeoPages = seoPages.filter(p => p.language === currentLang);
   
-  // Helper function to get the correct i18n key based on pageType
-  // Industry pages are nested under seoPages.industries.{contentKey}
-  // All other pages are directly under seoPages.{contentKey}
-  const getMetaKey = (page: SEOPage, field: "metaTitle" | "metaDescription"): string => {
-    if (page.pageType === "industry") {
-      return `seoPages.industries.${page.contentKey}.${field}`;
+  // Helper to try multiple i18n paths and return first valid result
+  const tryTranslationPaths = (paths: string[]): string => {
+    for (const path of paths) {
+      const value = t(path, { defaultValue: "" }) as string;
+      if (value && value !== path) {
+        return value;
+      }
     }
-    return `seoPages.${page.contentKey}.${field}`;
+    return "";
+  };
+  
+  // Build lookup paths based on pageType - nl.json has complex nesting
+  const getMetaPaths = (page: SEOPage, field: "metaTitle" | "metaDescription"): string[] => {
+    const paths: string[] = [];
+    
+    // Industry pages are nested under integrations.industries
+    if (page.pageType === "industry") {
+      paths.push(`integrations.industries.${page.contentKey}.${field}`);
+      paths.push(`seoPages.industries.${page.contentKey}.${field}`);
+    }
+    
+    // Integration pages use integrations.{contentKey}
+    if (page.pageType === "integration") {
+      paths.push(`integrations.${page.contentKey}.${field}`);
+    }
+    
+    // All pages: try seoPages.{contentKey} as primary/fallback
+    paths.push(`seoPages.${page.contentKey}.${field}`);
+    
+    // Also try integrations.{contentKey} for comparison, feature, etc.
+    if (page.pageType !== "integration") {
+      paths.push(`integrations.${page.contentKey}.${field}`);
+    }
+    
+    return paths;
   };
   
   const seoAuditResults = filteredSeoPages.map((page: SEOPage) => {
-    const titleKey = getMetaKey(page, "metaTitle");
-    const descKey = getMetaKey(page, "metaDescription");
-    
-    // Use i18next's t function - if key doesn't exist, it returns the key itself
-    const rawTitle = t(titleKey, { defaultValue: "" }) as string;
-    const rawDesc = t(descKey, { defaultValue: "" }) as string;
-    
-    // Check if translation was actually found (not empty and not the key itself)
-    const title = rawTitle && rawTitle !== titleKey ? rawTitle : "";
-    const desc = rawDesc && rawDesc !== descKey ? rawDesc : "";
+    const title = tryTranslationPaths(getMetaPaths(page, "metaTitle"));
+    const desc = tryTranslationPaths(getMetaPaths(page, "metaDescription"));
     
     return {
       ...page,
@@ -145,6 +164,7 @@ export default function SEOAudit() {
       descStatus: (desc.length === 0 ? "fail" : desc.length > 160 ? "warn" : "pass") as StatusType,
     };
   });
+
 
   // Stats for core pages
   const corePassCount = coreAuditResults.filter(r => r.titleStatus === "pass" && r.descStatus === "pass").length;
