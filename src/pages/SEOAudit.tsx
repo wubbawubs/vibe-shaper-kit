@@ -114,42 +114,10 @@ export default function SEOAudit() {
   const filteredSeoPages = seoPages.filter(p => p.language === currentLang);
   
   const seoAuditResults = filteredSeoPages.map((page: SEOPage) => {
-    // The nl.json and en.json store all SEO page metadata directly under seoPages.{contentKey}
-    // regardless of pageType. Try the direct key first, then fallback patterns.
-    const titleKeys = [
-      `seoPages.${page.contentKey}.metaTitle`,
-      `seoPages.${page.contentKey}.meta.title`,
-      // Alternative nested structures for certain page types
-      `seoPages.industries.${page.contentKey}.metaTitle`,
-      `seoPages.industries.${page.contentKey}.meta.title`,
-      `integrations.${page.contentKey}.metaTitle`,
-      `integrations.${page.contentKey}.meta.title`,
-      `seoPages.features.${page.contentKey}.metaTitle`,
-      `seoPages.roles.${page.contentKey}.metaTitle`,
-    ];
-    
-    const descKeys = [
-      `seoPages.${page.contentKey}.metaDescription`,
-      `seoPages.${page.contentKey}.meta.description`,
-      `seoPages.industries.${page.contentKey}.metaDescription`,
-      `seoPages.industries.${page.contentKey}.meta.description`,
-      `integrations.${page.contentKey}.metaDescription`,
-      `integrations.${page.contentKey}.meta.description`,
-      `seoPages.features.${page.contentKey}.metaDescription`,
-      `seoPages.roles.${page.contentKey}.metaDescription`,
-    ];
-    
-    let title = "";
-    for (const key of titleKeys) {
-      title = getTranslatedValue(key);
-      if (title) break;
-    }
-    
-    let desc = "";
-    for (const key of descKeys) {
-      desc = getTranslatedValue(key);
-      if (desc) break;
-    }
+    // All SEO page metadata is stored under seoPages.{contentKey} in the translation files.
+    // The primary pattern is seoPages.{contentKey}.metaTitle/metaDescription
+    const title = getTranslatedValue(`seoPages.${page.contentKey}.metaTitle`);
+    const desc = getTranslatedValue(`seoPages.${page.contentKey}.metaDescription`);
     
     return {
       ...page,
