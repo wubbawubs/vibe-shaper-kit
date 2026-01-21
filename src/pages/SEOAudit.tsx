@@ -114,52 +114,14 @@ export default function SEOAudit() {
   const filteredSeoPages = seoPages.filter(p => p.language === currentLang);
   
   const seoAuditResults = filteredSeoPages.map((page: SEOPage) => {
-    // SEO page metadata can be stored in different locations based on pageType:
-    // - Most pages: seoPages.{contentKey}.metaTitle
-    // - Industry pages: seoPages.industries.{contentKey}.metaTitle
-    // - Feature pages: seoPages.features.{contentKey}.metaTitle (or direct)
-    // - Role pages: seoPages.roles.{contentKey}.metaTitle
-    // - Integration pages: seoPages.integrations.{contentKey}.metaTitle (or direct)
-    // - Guide pages: seoPages.guides.{contentKey}.metaTitle (or direct)
-    // - Use case pages: seoPages.usecases.{contentKey}.metaTitle (or direct)
-    // - Comparison pages: seoPages.comparisons.{contentKey}.metaTitle (or direct)
-    // - Alternative pages: seoPages.alternatives.{contentKey}.metaTitle (or direct)
+    // All SEO page metadata is stored directly under seoPages.{contentKey} in the translation files.
+    // Structure: seoPages.{contentKey}.metaTitle and seoPages.{contentKey}.metaDescription
+    // Example: seoPages.ats-software.metaTitle
+    const titleKey = `seoPages.${page.contentKey}.metaTitle`;
+    const descKey = `seoPages.${page.contentKey}.metaDescription`;
     
-    const titlePaths = [
-      `seoPages.${page.contentKey}.metaTitle`,
-      `seoPages.industries.${page.contentKey}.metaTitle`,
-      `seoPages.features.${page.contentKey}.metaTitle`,
-      `seoPages.roles.${page.contentKey}.metaTitle`,
-      `seoPages.integrations.${page.contentKey}.metaTitle`,
-      `seoPages.guides.${page.contentKey}.metaTitle`,
-      `seoPages.usecases.${page.contentKey}.metaTitle`,
-      `seoPages.comparisons.${page.contentKey}.metaTitle`,
-      `seoPages.alternatives.${page.contentKey}.metaTitle`,
-    ];
-    
-    const descPaths = [
-      `seoPages.${page.contentKey}.metaDescription`,
-      `seoPages.industries.${page.contentKey}.metaDescription`,
-      `seoPages.features.${page.contentKey}.metaDescription`,
-      `seoPages.roles.${page.contentKey}.metaDescription`,
-      `seoPages.integrations.${page.contentKey}.metaDescription`,
-      `seoPages.guides.${page.contentKey}.metaDescription`,
-      `seoPages.usecases.${page.contentKey}.metaDescription`,
-      `seoPages.comparisons.${page.contentKey}.metaDescription`,
-      `seoPages.alternatives.${page.contentKey}.metaDescription`,
-    ];
-    
-    let title = "";
-    for (const path of titlePaths) {
-      title = getTranslatedValue(path);
-      if (title) break;
-    }
-    
-    let desc = "";
-    for (const path of descPaths) {
-      desc = getTranslatedValue(path);
-      if (desc) break;
-    }
+    const title = getTranslatedValue(titleKey);
+    const desc = getTranslatedValue(descKey);
     
     return {
       ...page,
