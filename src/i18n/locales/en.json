@@ -204,8 +204,8 @@
   },
   "product": {
     "seo": {
-      "title": "Product Features | How One Rooted Works",
-      "description": "Discover One Rooted's intelligent candidate ranking, visual hiring pipeline, and real-time collaboration tools. See how our Hiring OS transforms recruitment."
+      "title": "Hiring OS Features & How It Works",
+      "description": "Intelligent candidate ranking, visual pipelines, real-time collaboration. See how One Rooted replaces scattered tools with one hiring system."
     },
     "hero": {
       "label": "How it works",
@@ -318,14 +318,14 @@
   },
 "seo": {
     "home": {
-      "title": "The Hiring OS for Teams That Take Hiring Seriously",
-      "description": "Replace scattered recruitment tools with one intelligent system. One Rooted ranks candidates, streamlines workflows, and drives better hiring decisions."
+      "title": "One Rooted | The Hiring OS",
+      "description": "Replace scattered ATS, Slack, and Excel with one intelligent hiring system. Rank candidates, streamline workflows, make better decisions."
     }
   },
   "pricingPage": {
     "seo": {
-      "title": "Pricing Plans | Transparent Hiring OS Pricing",
-      "description": "Simple, transparent pricing starting at €299/month. Choose Base, Plus, or Premium plans. No hidden fees, unlimited users, cancel anytime."
+      "title": "Pricing | From €299/month",
+      "description": "Transparent pricing. Base, Plus, or Premium plans with unlimited users. No hidden fees, 30-day money-back guarantee, cancel anytime."
     },
     "hero": {
       "label": "Pricing",
@@ -448,8 +448,8 @@
   },
   "useCasesPage": {
     "seo": {
-      "title": "Use Cases | Hiring Solutions for Growing Teams",
-      "description": "See how teams use One Rooted for scaling fast, multi-stakeholder hiring, and partner collaboration. Real scenarios with measurable results."
+      "title": "Use Cases | Hiring OS in Action",
+      "description": "Scale fast, align stakeholders, collaborate with partners. Real hiring scenarios with measurable results from One Rooted users."
     },
     "hero": {
       "label": "Use cases",
@@ -503,8 +503,8 @@
   },
   "whyPage": {
     "seo": {
-      "title": "Why OneRooted | The Story Behind the Hiring OS",
-      "description": "Why traditional ATS systems fall short. Discover how OneRooted rethinks hiring with a Hiring OS approach."
+      "title": "Why We Built a Hiring OS",
+      "description": "Traditional ATS stores CVs, not decisions. One Rooted was built to connect every hiring choice in one system. Our story."
     },
     "hero": {
       "label": "Our story",
@@ -575,8 +575,8 @@
   },
   "partnersPage": {
     "seo": {
-      "title": "For Recruiters & Agencies",
-      "description": "Collaborate seamlessly with clients using One Rooted. Get real-time visibility, instant feedback, and better outcomes. Free for recruiters."
+      "title": "For Recruitment Agencies & Partners",
+      "description": "Free access for recruiters. Real-time client visibility, instant feedback, better placements. Infrastructure that makes you stronger."
     },
     "hero": {
       "label": "For recruiters",
@@ -652,8 +652,8 @@
   },
   "teamPage": {
     "seo": {
-      "title": "About Us | Meet the One Rooted Team",
-      "description": "Meet the team behind One Rooted. 25+ years of recruitment expertise building the future of hiring. Part of the One Group."
+      "title": "Team | Meet the Founders",
+      "description": "25+ years of recruitment expertise. Built by operators who lived hiring problems, not product managers who guessed at them."
     },
     "hero": {
       "label": "Meet the team",
@@ -699,8 +699,8 @@
   },
   "demoPage": {
     "seo": {
-      "title": "Request a Demo | See OneRooted in Action",
-      "description": "Book a free 30-minute demo. No sales theatrics. Just a clear view of how hiring actually works with OneRooted."
+      "title": "Book a Demo | 30 Minutes, No Sales Pitch",
+      "description": "Free 30-minute demo. See how One Rooted works for your hiring process. No theatrics, just a clear walkthrough."
     },
     "hero": {
       "label": "Get started",
@@ -754,8 +754,8 @@
   },
   "privacyPage": {
     "seo": {
-      "title": "Privacy Policy | Data Protection at OneRooted",
-      "description": "Learn how OneRooted collects, uses, and protects your personal data. GDPR compliant. Your privacy is our priority."
+      "title": "Privacy Policy | GDPR Compliant",
+      "description": "How One Rooted collects, uses, and protects your data. Fully GDPR compliant. Encrypted storage, transparent practices."
     },
     "title": "Privacy Policy",
     "lastUpdated": "Last updated:",
@@ -791,8 +791,8 @@
   },
   "termsPage": {
     "seo": {
-      "title": "Terms of Service | One Rooted User Agreement",
-      "description": "Read One Rooted's Terms of Service. Understand your rights and responsibilities when using our Hiring OS platform."
+      "title": "Terms of Service",
+      "description": "One Rooted terms and conditions. Your rights and responsibilities when using the Hiring OS platform."
     },
     "title": "Terms of Service",
     "lastUpdated": "Last updated:",
@@ -863,8 +863,8 @@
     },
     "page": {
         "seo": {
-          "title": "One Rooted Light | Start with one vacancy for €99/month",
-          "description": "Experience One Rooted with our Light plan: 1 vacancy, 100 candidates from our talent pool for just €99/month. Perfect to get started without commitment."
+          "title": "Light Plan | 1 Vacancy for €99/month",
+          "description": "Start small, hire smart. 1 vacancy, 100 pre-qualified candidates, full system access. Perfect first step into smarter hiring."
       },
       "hero": {
           "label": "One Rooted Light",
@@ -1147,8 +1147,8 @@
   },
   "pitchDeck": {
     "seo": {
-      "title": "Pitch Deck | OneRooted - The Hiring OS",
-      "description": "OneRooted pitch deck: discover the Hiring Operating System that connects every hiring decision in one intelligent platform."
+      "title": "Pitch Deck | Investor Overview",
+      "description": "One Rooted investor pitch deck. The Hiring OS connecting every hiring decision in one intelligent platform."
     },
     "exportButton": "Download PDF",
     "cover": {

@@ -204,8 +204,8 @@
   },
   "product": {
     "seo": {
-      "title": "Product | Zo werkt een Hiring OS",
-      "description": "Ontdek hoe OneRooted kandidaten structureert, keuzes ondersteunt en teams synchroon laat werken. Geen losse tools, één intelligent systeem."
+      "title": "Hiring OS Features & Werking",
+      "description": "Kandidaten rangschikken, visuele pipelines, realtime samenwerking. Zie hoe One Rooted verspreide tools vervangt door één systeem."
     },
     "hero": {
       "label": "Zo werkt een Hiring OS",
@@ -348,14 +348,14 @@
   },
 "seo": {
     "home": {
-      "title": "Het Hiring OS voor Teams die Recruitment Serieus Nemen",
-      "description": "Vervang verspreide recruitment tools door één intelligent systeem. One Rooted rangschikt kandidaten, stroomlijnt workflows en stimuleert betere hiring keuzes."
+      "title": "One Rooted | Het Hiring OS",
+      "description": "Vervang losse ATS, Slack en Excel door één intelligent hiring systeem. Rangschik kandidaten, stroomlijn workflows, neem betere beslissingen."
     }
   },
   "pricingPage": {
     "seo": {
-      "title": "Prijzen | Heldere Hiring OS Prijzen",
-      "description": "Heldere prijzen vanaf €299/maand. Kies Base, Plus of Premium. Geen verborgen kosten, maandelijks opzegbaar, 30 dagen geld-terug-garantie."
+      "title": "Prijzen | Vanaf €299/maand",
+      "description": "Transparante prijzen. Base, Plus of Premium met onbeperkte gebruikers. Geen verborgen kosten, 30 dagen geld-terug, maandelijks opzegbaar."
     },
     "hero": {
       "label": "Prijzen",
@@ -478,8 +478,8 @@
   },
   "useCasesPage": {
     "seo": {
-      "title": "Toepassingen | Hiring Oplossingen voor Groeiende Teams",
-      "description": "Zie hoe teams One Rooted gebruiken voor snel schalen, hiring met meerdere stakeholders en partner samenwerking. Echte scenario's met meetbare resultaten."
+      "title": "Use Cases | Hiring OS in de Praktijk",
+      "description": "Snel schalen, stakeholders alignen, samenwerken met partners. Echte hiring scenario's met meetbare resultaten van One Rooted gebruikers."
     },
     "hero": {
       "label": "Toepassingen",
@@ -533,8 +533,8 @@
   },
   "whyPage": {
     "seo": {
-      "title": "Waarom OneRooted | Het Verhaal Achter het Hiring OS",
-      "description": "Waarom traditionele ATS-systemen tekortschieten. Ontdek hoe OneRooted hiring herdenkt met een Hiring OS aanpak."
+      "title": "Waarom We een Hiring OS Bouwden",
+      "description": "Een ATS slaat cv's op, geen beslissingen. One Rooted verbindt elke hiring-keuze in één systeem. Ons verhaal."
     },
     "hero": {
       "label": "Ons verhaal",
@@ -605,8 +605,8 @@
   },
   "partnersPage": {
     "seo": {
-      "title": "Voor Recruiters | OneRooted",
-      "description": "OneRooted is infrastructuur, geen concurrent. Wanneer je klanten met OneRooted werken, krijg jij meer grip op het proces, betere tools in handen en een sterkere relatie met je klant."
+      "title": "Voor Recruitmentbureaus & Partners",
+      "description": "Gratis voor recruiters. Realtime zichtbaarheid bij klanten, directe feedback, betere plaatsingen. Infrastructuur die je sterker maakt."
     },
     "hero": {
       "label": "Voor recruiters",
@@ -682,8 +682,8 @@
   },
   "teamPage": {
     "seo": {
-      "title": "Over Ons | Maak Kennis met het One Rooted Team",
-      "description": "Maak kennis met het team achter One Rooted. 25+ jaar recruitment expertise die de toekomst van hiring bouwt. Onderdeel van de One Group."
+      "title": "Team | Ontmoet de Oprichters",
+      "description": "25+ jaar recruitment expertise. Gebouwd door operators die hiring-problemen hebben geleefd, niet productmanagers die gokten."
     },
     "hero": {
       "label": "Ontmoet het team",
@@ -729,8 +729,8 @@
   },
   "demoPage": {
     "seo": {
-      "title": "Demo Aanvragen | Zie OneRooted in Actie",
-      "description": "Boek een gratis 30-minuten demo. Geen salespraat, geen demo-theater. Gewoon laten zien hoe hiring werkt als alles samenkomt."
+      "title": "Demo Boeken | 30 Minuten, Geen Salespraat",
+      "description": "Gratis 30 minuten demo. Zie hoe One Rooted werkt voor jouw hiring proces. Geen theater, gewoon een heldere walkthrough."
     },
     "hero": {
       "label": "Aan de slag",
@@ -783,8 +783,8 @@
   },
   "privacyPage": {
     "seo": {
-      "title": "Privacybeleid | Gegevensbescherming bij One Rooted",
-      "description": "Ontdek hoe One Rooted uw persoonsgegevens verzamelt, gebruikt en beschermt. AVG-conform. Uw privacy is onze prioriteit."
+      "title": "Privacybeleid | AVG Conform",
+      "description": "Hoe One Rooted gegevens verzamelt, gebruikt en beschermt. Volledig AVG-conform. Versleutelde opslag, transparante praktijken."
     },
     "title": "Privacybeleid",
     "lastUpdated": "Laatst bijgewerkt:",
@@ -820,8 +820,8 @@
   },
   "termsPage": {
     "seo": {
-      "title": "Algemene Voorwaarden | One Rooted Gebruikersovereenkomst",
-      "description": "Lees de Algemene Voorwaarden van One Rooted. Begrijp uw rechten en verantwoordelijkheden bij het gebruik van ons Hiring OS-platform."
+      "title": "Algemene Voorwaarden",
+      "description": "One Rooted algemene voorwaarden. Uw rechten en verantwoordelijkheden bij gebruik van het Hiring OS platform."
     },
     "title": "Algemene Voorwaarden",
     "lastUpdated": "Laatst bijgewerkt:",
@@ -892,8 +892,8 @@
     },
     "page": {
       "seo": {
-        "title": "One Rooted Light | Start met één vacature voor €99/maand",
-        "description": "Ervaar One Rooted met ons Light plan: 1 vacature, 100 kandidaten uit onze talentpool voor slechts €99/maand. Perfect om te starten zonder commitment."
+        "title": "Light Plan | 1 Vacature voor €99/maand",
+        "description": "Start klein, hire slim. 1 vacature, 100 pre-gekwalificeerde kandidaten, volledige systeemtoegang. Ideale eerste stap naar slimmer werven."
       },
       "hero": {
         "label": "One Rooted Light",
@@ -1176,8 +1176,8 @@
   },
   "pitchDeck": {
     "seo": {
-      "title": "Pitch Deck | OneRooted - Het Hiring OS",
-      "description": "OneRooted pitch deck: ontdek het Hiring Operating System dat elke hiring-beslissing verbindt in één intelligent platform."
+      "title": "Pitch Deck | Investor Overview",
+      "description": "One Rooted investor pitch deck. Het Hiring OS dat elke hiring-beslissing verbindt in één intelligent platform."
     },
     "exportButton": "Download PDF",
     "cover": {
