@@ -114,17 +114,40 @@ export default function SEOAudit() {
   const filteredSeoPages = seoPages.filter(p => p.language === currentLang);
   
   const seoAuditResults = filteredSeoPages.map((page: SEOPage) => {
-    // Try both naming conventions: metaTitle/metaDescription and meta.title/meta.description
-    const titleKey1 = `seoPages.${page.contentKey}.metaTitle`;
-    const titleKey2 = `seoPages.${page.contentKey}.meta.title`;
-    const descKey1 = `seoPages.${page.contentKey}.metaDescription`;
-    const descKey2 = `seoPages.${page.contentKey}.meta.description`;
+    // Try multiple naming conventions based on page type
+    const pageTypeKeyMap: Record<string, string> = {
+      industry: `seoPages.industries.${page.contentKey}`,
+      integration: `integrations.${page.contentKey}`,
+    };
     
-    let title = getTranslatedValue(titleKey1);
-    if (!title) title = getTranslatedValue(titleKey2);
+    const baseKey = pageTypeKeyMap[page.pageType] || `seoPages.${page.contentKey}`;
     
-    let desc = getTranslatedValue(descKey1);
-    if (!desc) desc = getTranslatedValue(descKey2);
+    // Try different key patterns
+    const titleKeys = [
+      `${baseKey}.metaTitle`,
+      `${baseKey}.meta.title`,
+      `seoPages.${page.contentKey}.metaTitle`,
+      `seoPages.${page.contentKey}.meta.title`,
+    ];
+    
+    const descKeys = [
+      `${baseKey}.metaDescription`,
+      `${baseKey}.meta.description`,
+      `seoPages.${page.contentKey}.metaDescription`,
+      `seoPages.${page.contentKey}.meta.description`,
+    ];
+    
+    let title = "";
+    for (const key of titleKeys) {
+      title = getTranslatedValue(key);
+      if (title) break;
+    }
+    
+    let desc = "";
+    for (const key of descKeys) {
+      desc = getTranslatedValue(key);
+      if (desc) break;
+    }
     
     return {
       ...page,
