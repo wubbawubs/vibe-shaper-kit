@@ -33,6 +33,7 @@ import BrandGuide from "./pages/BrandGuide";
 import EmailTemplates from "./pages/EmailTemplates";
 import PitchDeck from "./pages/PitchDeck";
 import SEOLandingPage from "./pages/seo/SEOLandingPage";
+import SEOAudit from "./pages/SEOAudit";
 
 // Auth pages
 import Auth from "./pages/Auth";
@@ -142,6 +143,7 @@ const App = () => (
                   {/* Utility Routes */}
                   <Route path="/brand-guide" element={<BrandGuide />} />
                   <Route path="/email-templates" element={<EmailTemplates />} />
+                  <Route path="/seo-audit" element={<SEOAudit />} />
                   
                   {/* Fallback */}
                   <Route path="*" element={<Navigate to="/" replace />} />
