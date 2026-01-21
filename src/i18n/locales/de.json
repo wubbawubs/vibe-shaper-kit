@@ -620,7 +620,7 @@
   "teamPage": {
     "seo": {
       "title": "Über Uns | Lernen Sie das One Rooted-Team kennen",
-      "description": "Lernen Sie das Team hinter One Rooted kennen. 25+ Jahre Recruiting-Expertise, die die Zukunft des Hirings baut. Teil der One-Time Group."
+      "description": "Lernen Sie das Team hinter One Rooted kennen. 25+ Jahre Recruiting-Expertise, die die Zukunft des Hirings baut. Teil der One Group."
     },
     "hero": {
       "label": "Das Team kennenlernen",
@@ -647,8 +647,8 @@
     },
     "story": {
       "label": "Unsere Geschichte",
-      "headline": "Teil der One-Time Group",
-      "description": "One Rooted wurde aus der Mission der One-Time Group geboren, zu transformieren, wie Organisationen Talente finden und fördern. Mit tiefen Wurzeln in Recruiting und HR-Technologie bringen wir Jahrzehnte kombinierter Erfahrung in jedes Feature, das wir bauen.",
+      "headline": "Teil der One Group",
+      "description": "One Rooted wurde aus der Mission der One Group geboren, zu transformieren, wie Organisationen Talente finden und fördern. Mit tiefen Wurzeln in Recruiting und HR-Technologie bringen wir Jahrzehnte kombinierter Erfahrung in jedes Feature, das wir bauen.",
       "location": "Mit Sitz in den Niederlanden bauen wir ein globales Produkt für Teams überall."
     },
     "joinUs": {
@@ -657,7 +657,7 @@
       "button": "Kontakt aufnehmen"
     },
     "cta": {
-      "trustBadge": "Teil der One-Time Group",
+      "trustBadge": "Teil der One Group",
       "headline": "Bereit, Ihr Hiring zu transformieren?",
       "description": "Schließen Sie sich den Teams an, die bereits von fragmentierten Tools zu einem vereinheitlichten Hiring OS gewechselt sind.",
       "button": "Warum wir das gebaut haben",

@@ -401,7 +401,7 @@ export default function PitchDeck() {
               <p style={{ fontSize: '9px', color: 'rgba(255,255,255,0.7)', marginBottom: '3px' }}>
                 {t("pitchDeck.team.partOf")}
               </p>
-              <p style={{ fontSize: '15px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '10px' }}>One-Time Group</p>
+              <p style={{ fontSize: '15px', fontWeight: 600, color: colors.primaryForeground, marginBottom: '10px' }}>One Group</p>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px' }}>
                 <a href="mailto:info@onerooted.nl" style={{ color: colors.white, textDecoration: 'none', fontSize: '12px' }}>info@onerooted.nl</a>
                 <span style={{ color: 'rgba(255,255,255,0.5)' }}>|</span>
