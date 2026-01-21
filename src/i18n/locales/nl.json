@@ -2429,6 +2429,40 @@
         "Real-time zicht op je vacatures",
         "Minder meetings, meer alignment"
       ]
+    },
+
+    "ats-voor-it-afdeling": {
+      "metaTitle": "ATS voor IT-afdelingen: Security en Integratie Requirements",
+      "metaDescription": "ATS dat voldoet aan IT-eisen. SSO, API, data residency en security compliance voor enterprise-ready recruitment software.",
+      "breadcrumb": "ATS voor IT",
+      "label": "Voor IT-afdelingen",
+      "headline": "ATS dat",
+      "headlineHighlight": "IT goedkeurt",
+      "subheadline": "IT-afdelingen beoordelen software op security, integratie en beheer. Dit is hoe OneRooted scoort op IT-criteria.",
+      "shortDescription": "ATS met enterprise IT-requirements in focus.",
+      "painPointsHeadline": "IT-zorgen bij ATS-selectie",
+      "painPoints": [
+        "Security en data-bescherming",
+        "SSO en identity management",
+        "API en integratiemogelijkheden",
+        "Data residency en compliance",
+        "Vendor lock-in en exit-strategie"
+      ],
+      "kpisHeadline": "IT-evaluatiecriteria",
+      "kpis": [
+        { "kpi": "Security posture", "description": "SOC 2, penetration tests, encryptie" },
+        { "kpi": "Integratie-capabilities", "description": "REST API, webhooks, voorgebouwde connectoren" },
+        { "kpi": "Identity management", "description": "SAML, OIDC, SCIM provisioning" },
+        { "kpi": "Data governance", "description": "EU residency, export, bewaartermijnen" }
+      ],
+      "solutionHeadline": "OneRooted IT-specs",
+      "solutionPoints": [
+        "SSO via SAML 2.0 en OpenID Connect",
+        "REST API met uitgebreide documentatie",
+        "EU datacenter (data residency)",
+        "Jaarlijkse security audits",
+        "Volledige data-export mogelijkheid"
+      ]
     }
   },
 
@@ -2854,6 +2888,167 @@
         { "title": "Volume recruitment", "description": "Veel vacatures snel naar alle relevante kanalen." },
         { "title": "Niche targeting", "description": "Specifieke boards voor specialistische functies." },
         { "title": "Budget optimalisatie", "description": "Maximaal resultaat uit je recruitment media budget." }
+      ]
+    },
+
+    "integratie-api": {
+      "metaTitle": "ATS API: REST API voor Recruitment Integraties",
+      "metaDescription": "ATS met volledige REST API. Bouw custom integraties, automatiseer workflows en verbind je recruitment met elk systeem.",
+      "breadcrumb": "API Integratie",
+      "label": "API Integratie",
+      "headline": "ATS met",
+      "headlineHighlight": "open API",
+      "subheadline": "Soms heb je meer nodig dan standaard integraties. Met onze REST API bouw je precies wat je nodig hebt.",
+      "shortDescription": "REST API voor custom recruitment integraties.",
+      "integrationSteps": [
+        { "step": "1", "title": "API credentials aanmaken", "description": "Genereer API keys in je admin panel." },
+        { "step": "2", "title": "Documentatie lezen", "description": "Uitgebreide API docs met voorbeelden." },
+        { "step": "3", "title": "Endpoints testen", "description": "Sandbox-omgeving voor development." },
+        { "step": "4", "title": "Integratie bouwen", "description": "Bouw je custom workflow of koppeling." }
+      ],
+      "benefits": [
+        "Volledige REST API met alle entiteiten",
+        "Webhooks voor real-time events",
+        "Rate limiting en retry-handling",
+        "Sandbox voor testen"
+      ]
+    },
+
+    "integratie-google-calendar": {
+      "metaTitle": "ATS Google Calendar Integratie: Interview Scheduling",
+      "metaDescription": "Koppel je ATS aan Google Calendar. Beschikbaarheid checken, interviews plannen en automatische uitnodigingen versturen.",
+      "breadcrumb": "Google Calendar",
+      "label": "Google Calendar",
+      "headline": "Google Calendar",
+      "headlineHighlight": "in je recruitment",
+      "subheadline": "Als je team Google Workspace gebruikt, wil je interview-planning die naadloos integreert.",
+      "shortDescription": "Google Calendar integratie voor interview scheduling.",
+      "integrationSteps": [
+        { "step": "1", "title": "Google Workspace koppelen", "description": "OAuth-verbinding met je organisatie." },
+        { "step": "2", "title": "Beschikbaarheid instellen", "description": "Bepaal wanneer je beschikbaar bent voor interviews." },
+        { "step": "3", "title": "Interview plannen", "description": "Plan interviews direct vanuit je ATS." },
+        { "step": "4", "title": "Automatische sync", "description": "Wijzigingen syncen real-time." }
+      ],
+      "benefits": [
+        "Real-time beschikbaarheid van interviewers",
+        "Automatische calendar blocks",
+        "Google Meet links in uitnodigingen",
+        "Timezone-aware scheduling"
+      ]
+    },
+
+    "integratie-loket": {
+      "metaTitle": "ATS Loket.nl Koppeling: HR en Recruitment Verbonden",
+      "metaDescription": "Koppel je ATS aan Loket.nl. Hired candidates automatisch naar je HR-systeem, geen dubbele invoer meer.",
+      "breadcrumb": "Loket.nl",
+      "label": "Loket.nl",
+      "headline": "Loket.nl en ATS",
+      "headlineHighlight": "verbonden",
+      "subheadline": "Loket.nl voor HR-admin, OneRooted voor recruitment. Samen zorgen ze voor een naadloze candidate-to-employee flow.",
+      "shortDescription": "Loket.nl integratie voor HR-sync.",
+      "integrationSteps": [
+        { "step": "1", "title": "Loket API koppelen", "description": "Veilige verbinding met je Loket-omgeving." },
+        { "step": "2", "title": "Velden mappen", "description": "Bepaal welke data naar Loket stroomt." },
+        { "step": "3", "title": "Trigger instellen", "description": "Automatisch bij hire of handmatig." },
+        { "step": "4", "title": "Valideren", "description": "Test de flow voor go-live." }
+      ],
+      "benefits": [
+        "Geen dubbele data-invoer",
+        "Hired kandidaten naar Loket medewerkersdossier",
+        "Foutreductie door automatisering",
+        "Snel live zonder IT-project"
+      ]
+    },
+
+    "integratie-nationale-vacaturebank": {
+      "metaTitle": "ATS Nationale Vacaturebank Integratie: NL Jobboard Posting",
+      "metaDescription": "Publiceer vacatures naar Nationale Vacaturebank vanuit je ATS. One-click posting en sollicitaties direct in je pipeline.",
+      "breadcrumb": "Nationale Vacaturebank",
+      "label": "NVB",
+      "headline": "Nationale Vacaturebank",
+      "headlineHighlight": "geïntegreerd",
+      "subheadline": "Nationale Vacaturebank is een van de grootste Nederlandse jobboards. Publiceer met één klik vanuit je ATS.",
+      "shortDescription": "Nationale Vacaturebank integratie voor vacature posting.",
+      "integrationSteps": [
+        { "step": "1", "title": "NVB account koppelen", "description": "Verbind je werkgeversaccount." },
+        { "step": "2", "title": "Vacatures publiceren", "description": "One-click posting naar NVB." },
+        { "step": "3", "title": "Sollicitaties ontvangen", "description": "NVB-sollicitaties in je pipeline." },
+        { "step": "4", "title": "Performance tracken", "description": "Zie welke vacatures converteren." }
+      ],
+      "benefits": [
+        "Groot NL bereik met één klik",
+        "Sollicitaties direct in je ATS",
+        "Source tracking per kandidaat",
+        "Budget-inzicht per vacature"
+      ]
+    },
+
+    "integratie-nmbrs": {
+      "metaTitle": "ATS Nmbrs Koppeling: Salarisadministratie Verbonden",
+      "metaDescription": "Koppel je ATS aan Nmbrs. Van hired candidate naar medewerker in je salarisadministratie zonder handmatige invoer.",
+      "breadcrumb": "Nmbrs",
+      "label": "Nmbrs",
+      "headline": "Nmbrs en ATS",
+      "headlineHighlight": "naadloos verbonden",
+      "subheadline": "Nmbrs voor salaris, OneRooted voor recruitment. Samen zorgen ze dat nieuwe medewerkers direct goed staan.",
+      "shortDescription": "Nmbrs integratie voor salarisadministratie sync.",
+      "integrationSteps": [
+        { "step": "1", "title": "Nmbrs API koppelen", "description": "Veilige verbinding met je Nmbrs-omgeving." },
+        { "step": "2", "title": "Velden mappen", "description": "Kandidaatdata naar medewerkervelden." },
+        { "step": "3", "title": "Trigger configureren", "description": "Automatisch bij hire of handmatig pushen." },
+        { "step": "4", "title": "Go-live", "description": "Test en activeer de sync." }
+      ],
+      "benefits": [
+        "Nieuwe medewerkers automatisch in Nmbrs",
+        "Geen dubbele invoer van BSN, adres, etc.",
+        "Foutloos door automatisering",
+        "Snellere first-day experience"
+      ]
+    },
+
+    "integratie-visma-raet": {
+      "metaTitle": "ATS Visma Raet Koppeling: HR Suite Integratie",
+      "metaDescription": "Koppel je ATS aan Visma Raet (Youforce). Candidate-to-employee flow naar je complete HR-suite.",
+      "breadcrumb": "Visma Raet",
+      "label": "Visma Raet",
+      "headline": "Visma Raet en ATS",
+      "headlineHighlight": "geïntegreerd",
+      "subheadline": "Visma Raet (Youforce) is de HR-backbone voor veel Nederlandse organisaties. Verbind recruitment met je HR-suite.",
+      "shortDescription": "Visma Raet integratie voor HR-sync.",
+      "integrationSteps": [
+        { "step": "1", "title": "API-toegang regelen", "description": "Visma Raet API-credentials verkrijgen." },
+        { "step": "2", "title": "Koppeling configureren", "description": "Velden mappen naar Youforce-structuur." },
+        { "step": "3", "title": "Workflow bepalen", "description": "Wanneer stroomt data naar Visma Raet?" },
+        { "step": "4", "title": "Testen en live", "description": "Valideer met testrecord." }
+      ],
+      "benefits": [
+        "Naadloze overdracht naar Youforce",
+        "Compatibel met EasyCruit-migraties",
+        "Enterprise-grade security",
+        "Geen dubbele data-invoer"
+      ]
+    },
+
+    "integratie-zapier": {
+      "metaTitle": "ATS Zapier Integratie: No-Code Workflow Automatisering",
+      "metaDescription": "Verbind je ATS met 5000+ apps via Zapier. Automatiseer recruitment workflows zonder code.",
+      "breadcrumb": "Zapier",
+      "label": "Zapier",
+      "headline": "Zapier-powered",
+      "headlineHighlight": "recruitment workflows",
+      "subheadline": "Soms wil je een koppeling die (nog) niet standaard bestaat. Met Zapier bouw je die zelf, zonder code.",
+      "shortDescription": "Zapier integratie voor no-code automatisering.",
+      "integrationSteps": [
+        { "step": "1", "title": "OneRooted app in Zapier", "description": "Zoek OneRooted in de Zapier app directory." },
+        { "step": "2", "title": "Trigger kiezen", "description": "Wat moet een Zap starten? Nieuwe kandidaat, status-wijziging, etc." },
+        { "step": "3", "title": "Action configureren", "description": "Wat moet er gebeuren? Slack-bericht, Google Sheet-update, etc." },
+        { "step": "4", "title": "Zap activeren", "description": "Test en zet live." }
+      ],
+      "benefits": [
+        "5000+ app-koppelingen mogelijk",
+        "No-code automatisering",
+        "Snelle opzet, zelf te beheren",
+        "Ideal voor custom workflows"
       ]
     },
 
@@ -3816,6 +4011,72 @@
         ],
         "rolesHeadline": "Veelvoorkomende functies",
         "roles": ["Verpleegkundige", "Verzorgende IG", "Arts", "Fysiotherapeut", "Teamleider"]
+      },
+
+      "ats-voor-zorginstellingen": {
+        "metaTitle": "ATS voor Zorginstellingen: VVT en Ouderenzorg Recruitment",
+        "metaDescription": "Het beste ATS voor zorginstellingen. Werf verzorgenden en verpleegkundigen met workflows voor VVT en ouderenzorg.",
+        "breadcrumb": "ATS voor Zorginstellingen",
+        "label": "Zorginstellingen",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "zorginstellingen",
+        "subheadline": "Werf zorgpersoneel voor VVT, ouderenzorg en GGZ met workflows die aansluiten bij de zorgsector.",
+        "shortDescription": "Recruitment software voor VVT en ouderenzorg.",
+        "challengesHeadline": "Recruitment uitdagingen in zorginstellingen",
+        "challenges": [
+          "Chronisch personeelstekort in de zorg",
+          "Combinatie vast, flex en zzp personeel",
+          "Strikte compliance en BIG-registratie",
+          "Hoge werkdruk beïnvloedt employer brand"
+        ],
+        "workflowHeadline": "Recruitment workflow voor zorginstellingen",
+        "workflow": [
+          { "stage": "Sourcing", "description": "Zorg-jobboards en ROC-partnerships" },
+          { "stage": "Screening", "description": "BIG-check en diploma verificatie" },
+          { "stage": "Gesprekken", "description": "Met teamleider en HR" },
+          { "stage": "Onboarding", "description": "Introductie protocollen" }
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-fill", "target": "< 35 dagen", "description": "Voor zorgpersoneel" },
+          { "metric": "Formatie-bezetting", "target": "> 92%", "description": "Gevulde formatie" },
+          { "metric": "Retentie jaar 1", "target": "> 80%", "description": "Behoud nieuw personeel" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Verzorgende IG", "Verpleegkundige", "Helpende", "Begeleider", "Teamleider"]
+      },
+
+      "ats-voor-vastgoed": {
+        "metaTitle": "ATS voor Vastgoed: Recruitment Software voor Makelaars",
+        "metaDescription": "Het beste ATS voor vastgoedbedrijven. Werf makelaars, taxateurs en property managers met sector-specifieke workflows.",
+        "breadcrumb": "ATS voor Vastgoed",
+        "label": "Vastgoed",
+        "headline": "ATS gebouwd voor",
+        "headlineHighlight": "vastgoedbedrijven",
+        "subheadline": "Werf makelaars, taxateurs en property managers met workflows voor de vastgoedsector.",
+        "shortDescription": "Recruitment software voor vastgoed en makelaardij.",
+        "challengesHeadline": "Recruitment uitdagingen in vastgoed",
+        "challenges": [
+          "Commercieel talent is schaars",
+          "Hoge provisie-gedreven concurrentie",
+          "Sterke netwerk- en relatievaardigheden vereist",
+          "Lokale marktkennis essentieel"
+        ],
+        "workflowHeadline": "Recruitment workflow voor vastgoed",
+        "workflow": [
+          { "stage": "Sourcing", "description": "LinkedIn en netwerk activeren" },
+          { "stage": "Screening", "description": "Track record en certificering check" },
+          { "stage": "Interview", "description": "Case en netwerk assessment" },
+          { "stage": "Offer", "description": "Competitief pakket met provisiemodel" }
+        ],
+        "kpisHeadline": "KPI's die ertoe doen",
+        "kpis": [
+          { "metric": "Time-to-hire", "target": "< 28 dagen", "description": "Voor commerciële functies" },
+          { "metric": "Offer acceptance", "target": "> 80%", "description": "Geaccepteerde aanbiedingen" },
+          { "metric": "6-maanden retentie", "target": "> 85%", "description": "Behoud nieuwe medewerkers" }
+        ],
+        "rolesHeadline": "Veelvoorkomende functies",
+        "roles": ["Makelaar", "Taxateur", "Property Manager", "Commercieel adviseur", "Vestigingsmanager"]
       }
     },
 
