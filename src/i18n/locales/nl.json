@@ -3817,6 +3817,1013 @@
         "rolesHeadline": "Veelvoorkomende functies",
         "roles": ["Verpleegkundige", "Verzorgende IG", "Arts", "Fysiotherapeut", "Teamleider"]
       }
+    },
+
+    "comparisons": {
+      "ats-vs-hris": {
+        "metaTitle": "ATS vs HRIS: Wat Is het Verschil en Wat Heb Je Nodig?",
+        "metaDescription": "ATS of HRIS? Begrijp het verschil, wanneer je welk systeem nodig hebt, en hoe ze samenwerken voor optimale recruitment.",
+        "breadcrumb": "ATS vs HRIS",
+        "label": "ATS vs HRIS",
+        "headline": "ATS vs HRIS:",
+        "headlineHighlight": "wat is het verschil?",
+        "subheadline": "Twee systemen die vaak verward worden. Dit is wanneer je welk systeem nodig hebt — en waarom de meeste bedrijven beide nodig hebben.",
+        "shortDescription": "Het verschil tussen ATS en HRIS uitgelegd.",
+        "comparisonHeadline": "De kernverschillen",
+        "comparison": [
+          { "aspect": "Primair doel", "ats": "Kandidaten aantrekken en selecteren", "hris": "Medewerkers administreren en beheren" },
+          { "aspect": "Gebruikers", "ats": "Recruiters, hiring managers", "hris": "HR-afdeling, leidinggevenden" },
+          { "aspect": "Data focus", "ats": "Kandidaatprofielen, sollicitaties", "hris": "Medewerkerdossiers, contracten" },
+          { "aspect": "Proces", "ats": "Van vacature tot aanname", "hris": "Van aanname tot uitstroom" },
+          { "aspect": "Integraties", "ats": "Jobboards, LinkedIn, assessments", "hris": "Salarisadmin, verlof, verzuim" }
+        ],
+        "whenToUseHeadline": "Wanneer welk systeem?",
+        "whenToUse": [
+          { "scenario": "< 10 hires per jaar", "recommendation": "HRIS met recruitment-module kan voldoende zijn" },
+          { "scenario": "10-50 hires per jaar", "recommendation": "Dedicated ATS wordt waardevol voor efficiëntie" },
+          { "scenario": "> 50 hires per jaar", "recommendation": "ATS is essentieel, HRIS voor onboarding/HR" },
+          { "scenario": "Recruitment bureau", "recommendation": "ATS is primair, HRIS irrelevant" }
+        ],
+        "solutionHeadline": "OneRooted: ATS dat samenwerkt met je HRIS",
+        "solutionPoints": [
+          "Focus op wat een ATS excellent moet doen",
+          "Naadloze overdracht naar HRIS bij hire",
+          "Integraties met AFAS, Nmbrs, Loket",
+          "Geen overlap, geen dubbele data-invoer"
+        ]
+      },
+
+      "ats-vs-mailbox": {
+        "metaTitle": "ATS vs Gedeelde Mailbox: Waarom Email Geen Recruitment Tool Is",
+        "metaDescription": "Nog steeds werven via een gedeelde mailbox? Ontdek waarom dit je hiring schaadt en hoe een ATS structuur brengt.",
+        "breadcrumb": "ATS vs Mailbox",
+        "label": "ATS vs Mailbox",
+        "headline": "Gedeelde mailbox",
+        "headlineHighlight": "is geen ATS",
+        "subheadline": "vacatures@bedrijf.nl werkt. Tot het niet meer werkt. Dit is wat je mist met email als recruitment-tool.",
+        "shortDescription": "Waarom email geen vervanging is voor een ATS.",
+        "problemHeadline": "Het probleem met de gedeelde mailbox",
+        "painPoints": [
+          "Kandidaten die tussen wal en schip vallen",
+          "Geen zicht op wie wat oppakt",
+          "Dubbele reacties of geen reactie",
+          "Geen historie — wie mailde deze kandidaat vorig jaar?",
+          "Geen rapportages over je proces",
+          "Onmogelijk te schalen bij groei"
+        ],
+        "comparisonHeadline": "Email vs ATS",
+        "comparison": [
+          { "aspect": "Kandidaatoverzicht", "mailbox": "Zoeken in inbox", "ats": "Visuele pipeline" },
+          { "aspect": "Statusbeheer", "mailbox": "Labels of mapjes", "ats": "Automatische fases" },
+          { "aspect": "Team samenwerking", "mailbox": "CC en BCC chaos", "ats": "Gedeelde context" },
+          { "aspect": "Rapportages", "mailbox": "Niet bestaand", "ats": "Real-time dashboards" },
+          { "aspect": "Kandidaat ervaring", "mailbox": "Wisselend", "ats": "Consistent en snel" }
+        ],
+        "solutionHeadline": "Upgrade naar structuur met OneRooted",
+        "solutionPoints": [
+          "Elke kandidaat in beeld, niets valt weg",
+          "Duidelijk wie wat doet",
+          "Automatische statusupdates",
+          "Volledige historie per kandidaat",
+          "Rapportages die vanzelf ontstaan",
+          "Schaalbaar van 5 naar 500 sollicitaties"
+        ]
+      },
+
+      "ats-vs-spreadsheet": {
+        "metaTitle": "ATS vs Excel: Waarom Spreadsheets Je Hiring Vertragen",
+        "metaDescription": "Werven met Excel? Ontdek waarom spreadsheets je hiring ondermijnen en hoeveel tijd en kwaliteit je verliest.",
+        "breadcrumb": "ATS vs Excel",
+        "label": "ATS vs Excel",
+        "headline": "Excel is geen",
+        "headlineHighlight": "recruitment tool",
+        "subheadline": "Kandidaten in Excel werkt. Tot iemand vergeet op te slaan. Of een versie overschrijft. Of de formule kapot is. Dit is wat je mist.",
+        "shortDescription": "Waarom spreadsheets niet werken voor recruitment.",
+        "problemHeadline": "Het probleem met recruitment in Excel",
+        "painPoints": [
+          "Geen real-time samenwerking — wie heeft de laatste versie?",
+          "Geen notificaties — kandidaten wachten zonder dat je het weet",
+          "Geen audit trail — wie wijzigde wat en wanneer?",
+          "Geen automatisering — alles is handwerk",
+          "Geen kandidaatervaring — communicatie buiten het systeem",
+          "Geen schaalbaarheid — chaos bij meer dan 50 kandidaten"
+        ],
+        "costHeadline": "De verborgen kosten van Excel-recruitment",
+        "costs": [
+          { "item": "Uren admin per vacature", "excel": "8-12 uur", "ats": "2-4 uur" },
+          { "item": "Gemiste kandidaten", "excel": "10-15%", "ats": "< 2%" },
+          { "item": "Dubbele data-invoer", "excel": "Constant", "ats": "Geen" },
+          { "item": "Rapportage maken", "excel": "Uren werk", "ats": "Real-time" }
+        ],
+        "solutionHeadline": "Van spreadsheet naar systeem",
+        "solutionPoints": [
+          "Real-time samenwerking — iedereen ziet hetzelfde",
+          "Automatische notificaties bij elke statuswijziging",
+          "Complete audit trail voor compliance",
+          "Workflows die kandidaten vooruit bewegen",
+          "Kandidaatcommunicatie in één plek",
+          "Schaalt moeiteloos van 10 naar 1000"
+        ]
+      },
+
+      "beste-ats-bureau": {
+        "metaTitle": "Beste ATS voor Bureaus: Ranking voor Recruitment Agencies",
+        "metaDescription": "Welke ATS past bij jouw bureau? Objectieve vergelijking van ATS-systemen voor uitzendbureaus, detacheerders en werving & selectie.",
+        "breadcrumb": "Beste ATS Bureau",
+        "label": "Beste ATS Bureau",
+        "headline": "Het beste ATS voor",
+        "headlineHighlight": "recruitment bureaus",
+        "subheadline": "Niet elk ATS begrijpt hoe bureaus werken. Dit is wat je écht nodig hebt — en welke systemen dat leveren.",
+        "shortDescription": "ATS-vergelijking specifiek voor bureaus.",
+        "requirementsHeadline": "Wat bureaus nodig hebben",
+        "requirements": [
+          { "feature": "Multi-client beheer", "description": "Gescheiden omgevingen per opdrachtgever", "mustHave": true },
+          { "feature": "Klant-portalen", "description": "Opdrachtgevers real-time inzicht geven", "mustHave": true },
+          { "feature": "Commissie tracking", "description": "Automatisch fees en plaatsingen bijhouden", "mustHave": true },
+          { "feature": "Cross-client matching", "description": "Één kandidaat, meerdere kansen", "mustHave": false },
+          { "feature": "Volume handling", "description": "Honderden kandidaten efficiënt beheren", "mustHave": true },
+          { "feature": "Bureau rapportages", "description": "Per klant en overall performance", "mustHave": true }
+        ],
+        "solutionHeadline": "Waarom bureaus kiezen voor OneRooted",
+        "solutionPoints": [
+          "Native multi-client ondersteuning",
+          "Klant-portalen die transparantie bieden",
+          "Automatische commissie-tracking",
+          "Cross-client kandidaat-matching",
+          "Volume-proof performance",
+          "Per-bureau en per-klant rapportages"
+        ]
+      },
+
+      "beste-ats-enterprise": {
+        "metaTitle": "Beste ATS voor Enterprise: Security, Schaal en Governance",
+        "metaDescription": "Welke ATS past bij enterprise-organisaties? Evaluatie op security, schaalbaarheid, integraties en governance.",
+        "breadcrumb": "Beste ATS Enterprise",
+        "label": "Beste ATS Enterprise",
+        "headline": "Het beste ATS voor",
+        "headlineHighlight": "enterprise organisaties",
+        "subheadline": "Enterprise-recruitment vraagt meer dan features. Security, governance en schaalbaarheid maken het verschil.",
+        "shortDescription": "ATS-evaluatie voor grote organisaties.",
+        "requirementsHeadline": "Enterprise vereisten",
+        "requirements": [
+          { "feature": "SSO / SAML", "description": "Single Sign-On integratie met identity provider", "mustHave": true },
+          { "feature": "RBAC", "description": "Granulaire rechten per rol en entiteit", "mustHave": true },
+          { "feature": "Audit logging", "description": "Complete trail van alle acties", "mustHave": true },
+          { "feature": "Multi-entity", "description": "Meerdere BV's of landen in één systeem", "mustHave": false },
+          { "feature": "Enterprise integraties", "description": "Workday, SAP SuccessFactors, ServiceNow", "mustHave": true },
+          { "feature": "SLA & uptime", "description": "Gegarandeerde beschikbaarheid en support", "mustHave": true }
+        ],
+        "governanceHeadline": "Governance overwegingen",
+        "governance": [
+          "Data residency: waar staat je data?",
+          "Compliance: ISO 27001, SOC 2, AVG",
+          "Vendor stability: financiële gezondheid leverancier",
+          "Exit strategy: data-export en portabiliteit"
+        ],
+        "solutionHeadline": "OneRooted Enterprise",
+        "solutionPoints": [
+          "SSO via SAML 2.0 en OpenID Connect",
+          "Granulaire RBAC met custom rollen",
+          "Complete audit logging en exports",
+          "Multi-entity support out-of-the-box",
+          "Enterprise-grade integraties",
+          "99.9% uptime SLA beschikbaar"
+        ]
+      },
+
+      "beste-ats-mkb": {
+        "metaTitle": "Beste ATS voor MKB: Professioneel Zonder Complexiteit",
+        "metaDescription": "Welke ATS past bij het MKB? Evaluatie van gebruiksvriendelijke, betaalbare recruitment software voor middelgrote bedrijven.",
+        "breadcrumb": "Beste ATS MKB",
+        "label": "Beste ATS MKB",
+        "headline": "Het beste ATS voor",
+        "headlineHighlight": "het MKB",
+        "subheadline": "Enterprise-features zonder enterprise-complexiteit. Dit is wat MKB-bedrijven nodig hebben van hun recruitment software.",
+        "shortDescription": "ATS-evaluatie voor middelgrote bedrijven.",
+        "requirementsHeadline": "MKB vereisten",
+        "requirements": [
+          { "feature": "Gebruiksgemak", "description": "Intuïtief zonder uitgebreide training", "mustHave": true },
+          { "feature": "Betaalbaar", "description": "Transparante prijzen zonder verrassingen", "mustHave": true },
+          { "feature": "Snelle implementatie", "description": "Live binnen weken, niet maanden", "mustHave": true },
+          { "feature": "Nederlandse support", "description": "Lokale ondersteuning in je eigen taal", "mustHave": false },
+          { "feature": "Groeipotentieel", "description": "Schaalbaar wanneer je groeit", "mustHave": true },
+          { "feature": "Standaard integraties", "description": "LinkedIn, Indeed, email werken direct", "mustHave": true }
+        ],
+        "pitfallsHeadline": "Valkuilen bij MKB ATS-keuze",
+        "pitfalls": [
+          "Te complex: enterprise-features die je niet gebruikt",
+          "Per-seat pricing: kosten die exploderen bij groei",
+          "Lange implementatie: maanden voordat je live bent",
+          "Verborgen kosten: training, customization, integraties"
+        ],
+        "solutionHeadline": "OneRooted voor MKB",
+        "solutionPoints": [
+          "Intuïtief: productief vanaf dag 1",
+          "Vanaf €99/maand — transparant en voorspelbaar",
+          "Live binnen 2 weken",
+          "Nederlandse support team",
+          "Groeit mee van 5 naar 500 hires",
+          "Standaard integraties inclusief"
+        ]
+      }
+    },
+
+    "features": {
+      "audit-logging": {
+        "metaTitle": "ATS Audit Logging: Complete Traceerbaarheid voor Compliance",
+        "metaDescription": "Audit logging in je ATS voor AVG-compliance en transparante besluitvorming. Wie deed wat, wanneer en waarom.",
+        "breadcrumb": "Audit Logging",
+        "label": "Audit Logging",
+        "headline": "Elke actie",
+        "headlineHighlight": "gedocumenteerd",
+        "subheadline": "Compliance vraagt traceerbaarheid. Audit logging legt elke wijziging vast — automatisch en permanent.",
+        "shortDescription": "Complete audit trail voor recruitment compliance.",
+        "benefitsHeadline": "Waarom audit logging essentieel is",
+        "benefits": [
+          "AVG-compliance: aantonen wie data inzag of wijzigde",
+          "Verantwoording: beslissingen onderbouwen bij audits",
+          "Transparantie: inzicht in wie wat deed en wanneer",
+          "Security: detectie van verdacht gedrag",
+          "Training: begrijpen hoe het systeem gebruikt wordt"
+        ],
+        "featuresHeadline": "Audit logging functionaliteit",
+        "featureList": [
+          { "feature": "User activity logs", "description": "Elke login, view en actie per gebruiker" },
+          { "feature": "Data change logs", "description": "Wijzigingen in kandidaat- en vacaturedata" },
+          { "feature": "Access logs", "description": "Wie bekeek welke kandidaat wanneer" },
+          { "feature": "Export logs", "description": "Wanneer data werd geëxporteerd" },
+          { "feature": "Retention", "description": "Logs bewaard volgens je compliance-eisen" }
+        ],
+        "solutionHeadline": "Audit logging in OneRooted",
+        "solutionPoints": [
+          "Automatische logging van alle relevante acties",
+          "Filterbaar op gebruiker, tijdperiode of actie-type",
+          "Exporteerbaar voor audits en rapportages",
+          "Configureerbare retentieperiode",
+          "Geen impact op systeemperformance"
+        ]
+      },
+
+      "automatische-emails": {
+        "metaTitle": "Automatische Recruitment Emails: Templates die Converteren",
+        "metaDescription": "Automatiseer kandidaatcommunicatie met slimme email templates. Bespaar uren per week terwijl je candidate experience verbetert.",
+        "breadcrumb": "Automatische Emails",
+        "label": "Email Automatisering",
+        "headline": "Kandidaatcommunicatie",
+        "headlineHighlight": "die zichzelf doet",
+        "subheadline": "Elke kandidaat verdient een snelle, persoonlijke reactie. Email automatisering maakt dat schaalbaar.",
+        "shortDescription": "Automatische emails voor efficiëntere recruitment.",
+        "benefitsHeadline": "Voordelen van email automatisering",
+        "benefits": [
+          "Snellere responstijd — binnen minuten in plaats van dagen",
+          "Consistente communicatie — elke kandidaat dezelfde kwaliteit",
+          "Minder admin — focus op gesprekken, niet typen",
+          "Betere candidate experience — niemand blijft wachten",
+          "Tracking — zie wie opent, klikt en reageert"
+        ],
+        "templatesHeadline": "Template types",
+        "templates": [
+          { "type": "Ontvangstbevestiging", "trigger": "Bij sollicitatie", "description": "Direct, persoonlijk, met verwachtingen" },
+          { "type": "Status update", "trigger": "Bij fase-wijziging", "description": "Kandidaat weet waar ze staan" },
+          { "type": "Interview uitnodiging", "trigger": "Handmatig of automatisch", "description": "Met calendar link en voorbereiding" },
+          { "type": "Afwijzing", "trigger": "Bij afwijzen", "description": "Respectvol, met feedback indien mogelijk" },
+          { "type": "Offer", "trigger": "Bij aanbod", "description": "Enthousiast, met alle details" }
+        ],
+        "solutionHeadline": "Email automatisering in OneRooted",
+        "solutionPoints": [
+          "Library van bewezen templates",
+          "Personalisatie met kandidaat- en vacaturedata",
+          "Automatische triggers op basis van acties",
+          "Open en click tracking",
+          "A/B testing voor optimalisatie"
+        ]
+      },
+
+      "candidate-experience": {
+        "metaTitle": "Candidate Experience: Solliciteren Zoals het Hoort",
+        "metaDescription": "Verbeter je candidate experience met snelle processen, transparante communicatie en respect voor kandidaten's tijd.",
+        "breadcrumb": "Candidate Experience",
+        "label": "Candidate Experience",
+        "headline": "Solliciteren",
+        "headlineHighlight": "zoals het hoort",
+        "subheadline": "Kandidaten zijn ook consumenten. Ze verwachten dezelfde ervaring als bij hun favoriete merken. Dit is hoe je die levert.",
+        "shortDescription": "Bouw een sollicitatie-ervaring die converteert.",
+        "problemHeadline": "Wat kandidaten ervaren bij de meeste bedrijven",
+        "painPoints": [
+          "Solliciteren kost 20+ minuten",
+          "Geen bevestiging — is het aangekomen?",
+          "Weken stilte — waar sta ik?",
+          "Afwijzing per formulier-email — na 6 gesprekken",
+          "Hiring manager weet niets van eerdere gesprekken"
+        ],
+        "solutionHeadline": "Candidate experience met OneRooted",
+        "solutionPoints": [
+          "Solliciteren in < 2 minuten met LinkedIn apply",
+          "Directe ontvangstbevestiging met verwachtingen",
+          "Automatische updates bij elke fase-wijziging",
+          "Persoonlijke feedback, ook bij afwijzing",
+          "Volledige context voor elke stakeholder"
+        ],
+        "metricsHeadline": "Candidate experience meten",
+        "metrics": [
+          { "metric": "Application drop-off", "benchmark": "< 20%", "description": "Hoeveel starten maar voltooien niet" },
+          { "metric": "Time to first response", "benchmark": "< 24 uur", "description": "Eerste reactie na sollicitatie" },
+          { "metric": "Candidate NPS", "benchmark": "> 50", "description": "Net Promoter Score van kandidaten" },
+          { "metric": "Offer acceptance rate", "benchmark": "> 85%", "description": "Aanbiedingen die geaccepteerd worden" }
+        ]
+      },
+
+      "cv-parsing": {
+        "metaTitle": "CV Parsing Software: Automatisch CV's Uitlezen en Structureren",
+        "metaDescription": "CV parsing die CV's automatisch uitleest en structureert. Bespaar uren handmatig invoeren en verbeter je data-kwaliteit.",
+        "breadcrumb": "CV Parsing",
+        "label": "CV Parsing",
+        "headline": "CV's automatisch",
+        "headlineHighlight": "uitlezen",
+        "subheadline": "Stop met handmatig CV's invoeren. Parsing extraheert contactgegevens, werkervaring en skills — automatisch.",
+        "shortDescription": "Automatische CV parsing voor snellere verwerking.",
+        "benefitsHeadline": "Voordelen van CV parsing",
+        "benefits": [
+          "Geen handmatige data-invoer meer",
+          "Consistente, gestructureerde kandidaatprofielen",
+          "Snellere verwerking van sollicitaties",
+          "Doorzoekbaar op skills en ervaring",
+          "Minder fouten door automatisering"
+        ],
+        "howItWorksHeadline": "Hoe CV parsing werkt",
+        "howItWorks": [
+          { "step": "1", "title": "Upload of email", "description": "CV komt binnen via sollicitatie, email of upload" },
+          { "step": "2", "title": "Extractie", "description": "AI leest en herkent velden: naam, contact, ervaring, opleiding" },
+          { "step": "3", "title": "Structurering", "description": "Data wordt gestandaardiseerd en opgeslagen" },
+          { "step": "4", "title": "Verrijking", "description": "LinkedIn en andere bronnen kunnen profiel aanvullen" }
+        ],
+        "solutionHeadline": "CV parsing in OneRooted",
+        "solutionPoints": [
+          "Multi-format support: PDF, Word, afbeeldingen",
+          "Nederlandse en Engelse CV's",
+          "Nauwkeurigheid > 95%",
+          "Handmatige correctie waar nodig",
+          "Automatische deduplicatie"
+        ]
+      },
+
+      "gdpr-bewaartermijnen": {
+        "metaTitle": "ATS Bewaartermijnen AVG: Data Retention voor Recruitment",
+        "metaDescription": "AVG-compliant bewaartermijnen voor kandidaatdata. Automatische verwijdering, consent management en audit-proof documentatie.",
+        "breadcrumb": "Bewaartermijnen",
+        "label": "GDPR Bewaartermijnen",
+        "headline": "Bewaartermijnen",
+        "headlineHighlight": "automatisch geregeld",
+        "subheadline": "De AVG stelt grenzen aan hoe lang je kandidaatdata mag bewaren. Automatisering voorkomt fouten en boetes.",
+        "shortDescription": "Automatische AVG-compliant bewaartermijnen.",
+        "rulesHeadline": "Bewaartermijn regels",
+        "rules": [
+          { "situation": "Afgewezen kandidaat", "default": "4 weken", "withConsent": "Tot 1 jaar", "notes": "Na afloop automatisch verwijderen" },
+          { "situation": "Sollicitant in proces", "default": "Duur proces + 4 weken", "withConsent": "Tot 1 jaar na proces", "notes": "Duidelijk communiceren" },
+          { "situation": "Talentpool kandidaat", "default": "N/A", "withConsent": "Tot 1 jaar, verlengbaar", "notes": "Actief opt-in vereist" },
+          { "situation": "Hired kandidaat", "default": "Overdracht naar HR", "withConsent": "N/A", "notes": "ATS data niet langer nodig" }
+        ],
+        "featuresHeadline": "Functionaliteit voor bewaartermijnen",
+        "featureList": [
+          { "feature": "Automatische verwijdering", "description": "Data verdwijnt na afloop termijn" },
+          { "feature": "Consent tracking", "description": "Registreren wanneer toestemming gegeven is" },
+          { "feature": "Herinneringen", "description": "Kandidaat herinneren aan verlopen consent" },
+          { "feature": "Audit logging", "description": "Aantoonbaar dat data correct verwijderd is" },
+          { "feature": "Configureerbaar", "description": "Termijnen aanpassen aan je beleid" }
+        ],
+        "solutionHeadline": "Bewaartermijnen in OneRooted",
+        "solutionPoints": [
+          "Automatische verwijdering op basis van configureerbare regels",
+          "Consent management met verlengings-reminders",
+          "Audit trail van alle verwijderingen",
+          "EU-datacenter voor data residency",
+          "Verwerkersovereenkomst standaard beschikbaar"
+        ]
+      },
+
+      "goedkeuringen": {
+        "metaTitle": "Hiring Approvals: Gestructureerde Goedkeuringsflows",
+        "metaDescription": "Goedkeuringsworkflows voor hiring. Van vacature-opening tot aanbod — iedereen aligned, niets gemist.",
+        "breadcrumb": "Goedkeuringen",
+        "label": "Goedkeuringen",
+        "headline": "Hiring approvals",
+        "headlineHighlight": "zonder flessenhalzen",
+        "subheadline": "Vacatures openen, kandidaten doorzetten, aanbiedingen doen — allemaal met de juiste goedkeuringen, automatisch geëscaleerd.",
+        "shortDescription": "Gestructureerde goedkeuringsworkflows voor hiring.",
+        "typesHeadline": "Goedkeuringstypen",
+        "types": [
+          { "type": "Vacature opening", "approvers": "Manager, Finance, HR", "description": "Budget en headcount goedkeuring" },
+          { "type": "Kandidaat doorzetten", "approvers": "Hiring manager", "description": "Na screening naar interview" },
+          { "type": "Aanbod maken", "approvers": "Manager, HR, evt. directie", "description": "Salaris en voorwaarden" },
+          { "type": "Contract ondertekening", "approvers": "HR/Legal", "description": "Finale contractgoedkeuring" }
+        ],
+        "featuresHeadline": "Goedkeuringsfunctionaliteit",
+        "featureList": [
+          { "feature": "Multi-level approvals", "description": "Meerdere goedkeurders in volgorde" },
+          { "feature": "Parallelle approvals", "description": "Tegelijkertijd door meerdere partijen" },
+          { "feature": "Automatische escalatie", "description": "Bij uitblijven reactie" },
+          { "feature": "Mobile approvals", "description": "Goedkeuren via app of email" },
+          { "feature": "Audit trail", "description": "Wie keurde wat wanneer goed" }
+        ],
+        "solutionHeadline": "Goedkeuringen in OneRooted",
+        "solutionPoints": [
+          "Configureerbare goedkeuringsflows per vacature-type",
+          "Notificaties via email en in-app",
+          "Escalatie na configureerbare tijd",
+          "One-click goedkeuring vanuit email",
+          "Complete audit trail voor compliance"
+        ]
+      },
+
+      "interview-planning": {
+        "metaTitle": "Interview Planning Software: Scheduling Zonder Stress",
+        "metaDescription": "Interview scheduling dat werkt. Automatische beschikbaarheid, calendar sync en geen eindeloze email-threads.",
+        "breadcrumb": "Interview Planning",
+        "label": "Interview Planning",
+        "headline": "Interview planning",
+        "headlineHighlight": "die zichzelf doet",
+        "subheadline": "Geen eindeloze email-threads over beschikbaarheid. Slimme scheduling die calendars leest en interviews plant.",
+        "shortDescription": "Automatische interview scheduling.",
+        "problemHeadline": "Het probleem met handmatige planning",
+        "painPoints": [
+          "10+ emails om één interview te plannen",
+          "Hiring manager calendar niet zichtbaar",
+          "Dubbele boekingen en vergeten uitnodigingen",
+          "Geen-shows door gemiste bevestigingen",
+          "Timezone verwarring bij remote interviews"
+        ],
+        "featuresHeadline": "Interview planning functionaliteit",
+        "featureList": [
+          { "feature": "Self-scheduling", "description": "Kandidaat kiest uit beschikbare slots" },
+          { "feature": "Calendar sync", "description": "Realtime beschikbaarheid van interviewers" },
+          { "feature": "Panel scheduling", "description": "Automatisch slot vinden voor meerdere personen" },
+          { "feature": "Reminders", "description": "Automatische herinneringen aan alle partijen" },
+          { "feature": "Video links", "description": "Automatisch Teams/Zoom/Meet links toevoegen" }
+        ],
+        "solutionHeadline": "Interview planning in OneRooted",
+        "solutionPoints": [
+          "Integratie met Outlook en Google Calendar",
+          "Self-scheduling portal voor kandidaten",
+          "Automatische panel-beschikbaarheid check",
+          "Reminder emails voor alle deelnemers",
+          "Automatische video-link generatie"
+        ]
+      },
+
+      "kandidaat-communicatie": {
+        "metaTitle": "Kandidaat Communicatie: Centraal, Consistent, Snel",
+        "metaDescription": "Alle kandidaatcommunicatie in één plek. Email, notities en updates — consistent en traceerbaar.",
+        "breadcrumb": "Kandidaat Communicatie",
+        "label": "Kandidaat Communicatie",
+        "headline": "Communicatie",
+        "headlineHighlight": "die niet verloren gaat",
+        "subheadline": "Geen losse emails, geen gemiste berichten. Alle communicatie met kandidaten centraal en traceerbaar.",
+        "shortDescription": "Centrale kandidaatcommunicatie in je ATS.",
+        "problemHeadline": "Waar communicatie misgaat",
+        "painPoints": [
+          "Emails in persoonlijke inbox die niemand anders kan zien",
+          "Kandidaat belt — wie sprak laatst met ze?",
+          "Feedback van hiring manager nooit gedocumenteerd",
+          "Dubbele of tegenstrijdige communicatie",
+          "Geen zicht op response rates en timing"
+        ],
+        "featuresHeadline": "Communicatie features",
+        "featureList": [
+          { "feature": "Centrale inbox", "description": "Alle emails in het kandidaatdossier" },
+          { "feature": "Email templates", "description": "Consistente messaging met personalisatie" },
+          { "feature": "Notities", "description": "Interne communicatie over kandidaat" },
+          { "feature": "Mentions", "description": "Collega's taggen voor input" },
+          { "feature": "Tracking", "description": "Open rates, response times, engagement" }
+        ],
+        "solutionHeadline": "Communicatie in OneRooted",
+        "solutionPoints": [
+          "Email sync — alles automatisch in het dossier",
+          "Template library met bewezen messaging",
+          "Real-time notificaties bij respons",
+          "Team mentions voor snelle alignment",
+          "Communicatie-analytics per vacature"
+        ]
+      },
+
+      "mobile-solliciteren": {
+        "metaTitle": "Mobile Apply: Solliciteren op je Telefoon",
+        "metaDescription": "Mobile-first solliciteren voor hogere conversie. Optimaal voor kandidaten die op hun telefoon zoeken en solliciteren.",
+        "breadcrumb": "Mobile Solliciteren",
+        "label": "Mobile Apply",
+        "headline": "Solliciteren",
+        "headlineHighlight": "vanaf elke telefoon",
+        "subheadline": "70% van de kandidaten begint hun zoektocht op mobiel. Als solliciteren niet werkt op een telefoon, verlies je talent.",
+        "shortDescription": "Mobile-first sollicitatie-ervaring.",
+        "statsHeadline": "Mobiel gedrag van kandidaten",
+        "stats": [
+          { "stat": "70%", "description": "begint zoektocht op mobiel" },
+          { "stat": "50%", "description": "solliciteert direct vanaf telefoon" },
+          { "stat": "3x", "description": "hogere drop-off bij niet-mobile-friendly" },
+          { "stat": "< 2 min", "description": "acceptabele sollicitatietijd op mobiel" }
+        ],
+        "featuresHeadline": "Mobile apply features",
+        "featureList": [
+          { "feature": "One-tap apply", "description": "Solliciteren met LinkedIn of opgeslagen profiel" },
+          { "feature": "Responsive design", "description": "Optimale ervaring op elk schermformaat" },
+          { "feature": "Minimale velden", "description": "Alleen wat echt nodig is" },
+          { "feature": "Auto-save", "description": "Voortgang opslaan bij onderbreking" },
+          { "feature": "Touch-optimized", "description": "Grote knoppen, makkelijke navigatie" }
+        ],
+        "solutionHeadline": "Mobile apply met OneRooted",
+        "solutionPoints": [
+          "LinkedIn one-click apply geïntegreerd",
+          "Volledig responsive sollicitatieformulieren",
+          "Configureerbare velden per vacature-type",
+          "Auto-save en hervatten",
+          "Mobile-first ontwerp, niet aangepast achteraf"
+        ]
+      },
+
+      "onboarding-overdracht": {
+        "metaTitle": "ATS naar HR Overdracht: Naadloze Onboarding Handoff",
+        "metaDescription": "Van kandidaat naar medewerker zonder dubbele invoer. Automatische overdracht van ATS naar HR-systeem bij hire.",
+        "breadcrumb": "Onboarding Overdracht",
+        "label": "Onboarding Overdracht",
+        "headline": "Van kandidaat naar",
+        "headlineHighlight": "medewerker",
+        "subheadline": "Hiring eindigt niet bij het contract. Een naadloze overdracht naar onboarding bepaalt de eerste indruk als werkgever.",
+        "shortDescription": "Automatische overdracht van ATS naar HR-systeem.",
+        "problemHeadline": "Waar de overdracht misgaat",
+        "painPoints": [
+          "Dubbele data-invoer in ATS en HR-systeem",
+          "Informatie die verloren gaat tussen systemen",
+          "Onboarding die wacht op HR-invoer",
+          "Nieuwe medewerker zonder voorbereide werkplek",
+          "Geen zicht op onboarding-status vanuit recruitment"
+        ],
+        "featuresHeadline": "Overdracht functionaliteit",
+        "featureList": [
+          { "feature": "Data sync", "description": "Kandidaatdata automatisch naar HR-systeem" },
+          { "feature": "Document overdracht", "description": "CV, diploma's, certificaten mee" },
+          { "feature": "Onboarding triggers", "description": "Automatisch onboarding-proces starten" },
+          { "feature": "Status feedback", "description": "Onboarding-status zichtbaar in ATS" },
+          { "feature": "Compliance check", "description": "Verificatie dat alle docs compleet zijn" }
+        ],
+        "solutionHeadline": "Overdracht met OneRooted",
+        "solutionPoints": [
+          "Native integraties met AFAS, Nmbrs, Loket",
+          "Automatische data sync bij hire",
+          "Document-overdracht inclusief",
+          "Trigger onboarding-workflow in HR-systeem",
+          "Zichtbare onboarding-status in kandidaatdossier"
+        ]
+      },
+
+      "permissions-rbac": {
+        "metaTitle": "ATS Rechten en Rollen: RBAC voor Recruitment",
+        "metaDescription": "Role-based access control voor je ATS. Granulaire rechten per rol, team en vacature voor security en compliance.",
+        "breadcrumb": "Rechten & Rollen",
+        "label": "Permissions & RBAC",
+        "headline": "Wie mag wat zien",
+        "headlineHighlight": "en doen",
+        "subheadline": "Niet iedereen mag alles zien. Granulaire rechten zorgen voor security, privacy en compliance.",
+        "shortDescription": "Role-based access control voor recruitment.",
+        "rolesHeadline": "Typische rollen en rechten",
+        "roles": [
+          { "role": "Recruiter", "permissions": ["Kandidaten beheren", "Vacatures beheren", "Communicatie", "Rapportages eigen vacatures"] },
+          { "role": "Hiring Manager", "permissions": ["Kandidaten bekijken", "Feedback geven", "Interview scheduling"] },
+          { "role": "HR Admin", "permissions": ["Alle vacatures", "Gebruikersbeheer", "Instellingen", "Alle rapportages"] },
+          { "role": "Bureau recruiter", "permissions": ["Eigen kandidaten", "Toegewezen vacatures", "Communicatie"] },
+          { "role": "Viewer", "permissions": ["Alleen lezen", "Geen wijzigingen"] }
+        ],
+        "featuresHeadline": "RBAC functionaliteit",
+        "featureList": [
+          { "feature": "Pre-defined roles", "description": "Standaard rollen direct beschikbaar" },
+          { "feature": "Custom roles", "description": "Eigen rollen aanmaken indien nodig" },
+          { "feature": "Team-based access", "description": "Rechten per team of afdeling" },
+          { "feature": "Vacancy-based access", "description": "Toegang tot specifieke vacatures" },
+          { "feature": "Audit logging", "description": "Wie had wanneer welke rechten" }
+        ],
+        "solutionHeadline": "RBAC in OneRooted",
+        "solutionPoints": [
+          "Pre-configured rollen voor recruitment",
+          "Custom roles voor specifieke behoeften",
+          "Team en vacancy-based access control",
+          "Zichtbaar in audit logs",
+          "Simpel beheer via admin panel"
+        ]
+      },
+
+      "referral-recruitment": {
+        "metaTitle": "Referral Recruitment Software: Medewerkers als Recruiters",
+        "metaDescription": "Employee referral programma in je ATS. Track referrals, automatiseer beloningen en maak medewerkers je beste recruiters.",
+        "breadcrumb": "Referral Recruitment",
+        "label": "Referral Recruitment",
+        "headline": "Medewerkers als",
+        "headlineHighlight": "beste recruiters",
+        "subheadline": "Referrals zijn sneller, goedkoper en blijven langer. Dit is hoe je referral recruitment structureel maakt.",
+        "shortDescription": "Employee referral programma in je ATS.",
+        "statsHeadline": "Waarom referrals werken",
+        "stats": [
+          { "stat": "55%", "description": "snellere time-to-hire via referrals" },
+          { "stat": "25%", "description": "lager verloop in eerste jaar" },
+          { "stat": "50%", "description": "lagere cost per hire" },
+          { "stat": "4x", "description": "vaker hired dan via jobboards" }
+        ],
+        "featuresHeadline": "Referral functionaliteit",
+        "featureList": [
+          { "feature": "Referral portal", "description": "Medewerkers delen vacatures met hun netwerk" },
+          { "feature": "Tracking", "description": "Van referral naar hire, automatisch gelogd" },
+          { "feature": "Reward automation", "description": "Automatische notificatie bij bonus-moment" },
+          { "feature": "Leaderboard", "description": "Gamification voor engagement" },
+          { "feature": "Analytics", "description": "ROI van referral programma" }
+        ],
+        "solutionHeadline": "Referrals in OneRooted",
+        "solutionPoints": [
+          "Dedicated referral portal voor medewerkers",
+          "Automatische tracking van bron tot hire",
+          "Configureerbare beloningsregels",
+          "Integratie met interne communicatie",
+          "Referral-specifieke rapportages"
+        ]
+      },
+
+      "reporting-dashboards": {
+        "metaTitle": "Recruitment Dashboards: Real-Time Inzicht in je Hiring",
+        "metaDescription": "Recruitment analytics die vanzelf ontstaan. Dashboards die laten zien wat werkt, wat niet, en waar je moet ingrijpen.",
+        "breadcrumb": "Dashboards",
+        "label": "Reporting & Dashboards",
+        "headline": "Inzicht zonder",
+        "headlineHighlight": "rapport-bouwwerk",
+        "subheadline": "Geen uren in Excel. Dashboards die real-time laten zien hoe je hiring presteert — en waar het beter kan.",
+        "shortDescription": "Real-time recruitment dashboards.",
+        "metricsHeadline": "Metrics die ertoe doen",
+        "metrics": [
+          { "metric": "Time-to-hire", "description": "Van sollicitatie tot contract" },
+          { "metric": "Source effectiveness", "description": "Welke kanalen leveren beste kandidaten" },
+          { "metric": "Conversion rates", "description": "Per fase van je funnel" },
+          { "metric": "Cost per hire", "description": "Totale kosten per aanname" },
+          { "metric": "Pipeline health", "description": "Voldoende kandidaten per fase" },
+          { "metric": "Hiring velocity", "description": "Snelheid door het proces" }
+        ],
+        "dashboardsHeadline": "Dashboard types",
+        "dashboards": [
+          { "type": "Executive dashboard", "audience": "Leadership", "focus": "Overall performance, trends, kosten" },
+          { "type": "Recruiter dashboard", "audience": "Recruiters", "focus": "Eigen pipeline, taken, productiviteit" },
+          { "type": "Vacancy dashboard", "audience": "Hiring managers", "focus": "Specifieke vacature voortgang" },
+          { "type": "Source dashboard", "audience": "HR/Marketing", "focus": "Kanaal performance en ROI" }
+        ],
+        "solutionHeadline": "Dashboards in OneRooted",
+        "solutionPoints": [
+          "Real-time data, geen handmatig verversen",
+          "Pre-built dashboards per rol",
+          "Drill-down van overview naar detail",
+          "Export naar PDF en Excel",
+          "Scheduled email reports"
+        ]
+      },
+
+      "scorecards": {
+        "metaTitle": "Interview Scorecards: Gestructureerde Evaluatie",
+        "metaDescription": "Interview scorecards voor objectieve kandidaat-evaluatie. Consistente criteria, verdedigbare beslissingen, betere hires.",
+        "breadcrumb": "Scorecards",
+        "label": "Scorecards",
+        "headline": "Interviews evalueren",
+        "headlineHighlight": "met structuur",
+        "subheadline": "Van 'goed gevoel' naar gestructureerde evaluatie. Scorecards brengen consistentie en kwaliteit in je selectie.",
+        "shortDescription": "Gestructureerde interview evaluatie met scorecards.",
+        "problemHeadline": "Zonder scorecards",
+        "painPoints": [
+          "Elke interviewer evalueert anders",
+          "Onderbuikgevoel vermomd als assessment",
+          "Geen vergelijkbaarheid tussen kandidaten",
+          "Bias die onzichtbaar blijft",
+          "Moeilijk verdedigbaar bij afwijzing"
+        ],
+        "featuresHeadline": "Scorecard functionaliteit",
+        "featureList": [
+          { "feature": "Template library", "description": "Pre-built scorecards per functie-type" },
+          { "feature": "Custom criteria", "description": "Eigen evaluatiecriteria toevoegen" },
+          { "feature": "Rating scales", "description": "1-5 sterren, pass/fail of open feedback" },
+          { "feature": "Mandatory fields", "description": "Forceer complete evaluaties" },
+          { "feature": "Aggregate view", "description": "Overall score per kandidaat" }
+        ],
+        "solutionHeadline": "Scorecards in OneRooted",
+        "solutionPoints": [
+          "Template library met bewezen scorecards",
+          "Custom templates per vacature-type",
+          "Flexibele rating opties",
+          "Automatische score-aggregatie",
+          "Vergelijking tussen kandidaten"
+        ]
+      },
+
+      "single-sign-on": {
+        "metaTitle": "ATS Single Sign-On (SSO): Veilig en Eenvoudig Inloggen",
+        "metaDescription": "SSO voor je ATS. Login met je corporate credentials, minder wachtwoorden, betere security.",
+        "breadcrumb": "Single Sign-On",
+        "label": "SSO",
+        "headline": "Eén login voor",
+        "headlineHighlight": "alles",
+        "subheadline": "Geen aparte accounts en wachtwoorden. Login met je corporate credentials voor betere security en minder frictie.",
+        "shortDescription": "Single Sign-On integratie voor je ATS.",
+        "benefitsHeadline": "Voordelen van SSO",
+        "benefits": [
+          "Geen extra wachtwoord om te onthouden",
+          "Centraal gebruikersbeheer via IT",
+          "Automatische toegang bij nieuwe medewerkers",
+          "Directe off-boarding bij vertrek",
+          "Sterkere security via MFA op identity provider"
+        ],
+        "supportedHeadline": "Ondersteunde identity providers",
+        "supported": [
+          { "provider": "Azure AD / Entra ID", "protocol": "SAML 2.0, OpenID Connect" },
+          { "provider": "Google Workspace", "protocol": "SAML 2.0, OpenID Connect" },
+          { "provider": "Okta", "protocol": "SAML 2.0, OpenID Connect" },
+          { "provider": "OneLogin", "protocol": "SAML 2.0" },
+          { "provider": "Custom SAML", "protocol": "SAML 2.0" }
+        ],
+        "solutionHeadline": "SSO in OneRooted",
+        "solutionPoints": [
+          "Ondersteuning voor alle major identity providers",
+          "SAML 2.0 en OpenID Connect",
+          "Self-service configuratie voor IT",
+          "Automatic provisioning en deprovisioning",
+          "MFA enforcement via identity provider"
+        ]
+      },
+
+      "sourcing": {
+        "metaTitle": "Candidate Sourcing Tools: Vind Talent Voordat Ze Solliciteren",
+        "metaDescription": "Sourcing tools in je ATS. Vind passieve kandidaten, bouw pijplijnen en wees klaar voordat de vacature opent.",
+        "breadcrumb": "Sourcing",
+        "label": "Sourcing",
+        "headline": "Kandidaten vinden",
+        "headlineHighlight": "voordat ze solliciteren",
+        "subheadline": "De beste kandidaten solliciteren niet. Sourcing helpt je passief talent te vinden en te engageren.",
+        "shortDescription": "Proactieve candidate sourcing tools.",
+        "channelsHeadline": "Sourcing kanalen",
+        "channels": [
+          { "channel": "LinkedIn", "description": "Directe integratie met Recruiter" },
+          { "channel": "Talentpool", "description": "Eerdere kandidaten en silver medalists" },
+          { "channel": "Boolean search", "description": "Geavanceerd zoeken in externe bronnen" },
+          { "channel": "Referrals", "description": "Netwerk van je medewerkers" },
+          { "channel": "Events", "description": "Carrière-events en meetups" }
+        ],
+        "featuresHeadline": "Sourcing functionaliteit",
+        "featureList": [
+          { "feature": "LinkedIn integratie", "description": "Sourced kandidaten direct in je ATS" },
+          { "feature": "Talentpool search", "description": "Doorzoek je eigen database" },
+          { "feature": "Campaigns", "description": "Outreach sequences en tracking" },
+          { "feature": "Engagement tracking", "description": "Wie opent, klikt, reageert" },
+          { "feature": "Pipeline building", "description": "Kandidaten voor toekomstige vacatures" }
+        ],
+        "solutionHeadline": "Sourcing met OneRooted",
+        "solutionPoints": [
+          "LinkedIn Recruiter integratie",
+          "Slimme talentpool search",
+          "Email sequences met tracking",
+          "Candidate engagement scores",
+          "Proactieve pipeline per functiegroep"
+        ]
+      },
+
+      "talentpool-crm": {
+        "metaTitle": "Recruitment CRM: Talentpool Beheer dat Werkt",
+        "metaDescription": "Bouw en beheer je talentpool. CRM-functionaliteit voor recruitment: nurture kandidaten voor toekomstige vacatures.",
+        "breadcrumb": "Talentpool CRM",
+        "label": "Talentpool CRM",
+        "headline": "Een talentpool die",
+        "headlineHighlight": "daadwerkelijk werkt",
+        "subheadline": "De meeste talentpools zijn kandidaat-kerkhoven. Dit is hoe je een pool bouwt die daadwerkelijk hires oplevert.",
+        "shortDescription": "CRM-functionaliteit voor recruitment.",
+        "problemHeadline": "Waarom talentpools falen",
+        "painPoints": [
+          "Kandidaten komen erin, maar worden nooit benaderd",
+          "Geen segmentatie — iedereen in één bak",
+          "Geen nurture — stilte tot de volgende vacature",
+          "Verouderde data — kandidaten zijn allang ergens anders",
+          "Geen inzicht — wie is engaged, wie is koud?"
+        ],
+        "featuresHeadline": "Talentpool CRM features",
+        "featureList": [
+          { "feature": "Smart segmentatie", "description": "Automatische tags op basis van profiel en gedrag" },
+          { "feature": "Nurture campaigns", "description": "Blijf top-of-mind met content en updates" },
+          { "feature": "Engagement scoring", "description": "Zie wie warm is en wie koud" },
+          { "feature": "Automated matching", "description": "Pool kandidaten matchen aan nieuwe vacatures" },
+          { "feature": "Re-activation", "description": "Dormant kandidaten weer activeren" }
+        ],
+        "solutionHeadline": "Talentpool in OneRooted",
+        "solutionPoints": [
+          "Automatische segmentatie op skills en ervaring",
+          "Nurture campaigns met templates",
+          "Engagement tracking en scoring",
+          "Instant matching bij nieuwe vacature",
+          "AVG-compliant met consent management"
+        ]
+      },
+
+      "vacature-intake": {
+        "metaTitle": "Vacature Intake: Van Behoefte naar Briefing",
+        "metaDescription": "Gestructureerde vacature intake. Alle informatie van hiring managers in één format voor snellere, betere vacatures.",
+        "breadcrumb": "Vacature Intake",
+        "label": "Vacature Intake",
+        "headline": "Vacature intake",
+        "headlineHighlight": "die werkt",
+        "subheadline": "Een goede vacature begint met een goede briefing. Gestructureerde intake voorkomt misverstanden en versnelt het proces.",
+        "shortDescription": "Gestructureerde vacature intake formulieren.",
+        "problemHeadline": "Zonder gestructureerde intake",
+        "painPoints": [
+          "Hiring manager heeft andere verwachtingen dan de vacature",
+          "Must-haves vs nice-to-haves niet duidelijk",
+          "Proces en timeline onduidelijk",
+          "Budget en goedkeuring achteraf pas geregeld",
+          "Kandidaten afgewezen op criteria die niet besproken waren"
+        ],
+        "templateHeadline": "Intake template onderdelen",
+        "template": [
+          { "section": "Rol overview", "items": ["Titel", "Team", "Rapporteert aan", "Directe reports"] },
+          { "section": "Requirements", "items": ["Must-have skills", "Nice-to-have skills", "Ervaring niveau", "Opleiding"] },
+          { "section": "Cultuur", "items": ["Team dynamiek", "Werkstijl", "Groeipotentieel"] },
+          { "section": "Proces", "items": ["Interviewstappen", "Interviewers", "Timeline verwachting"] },
+          { "section": "Commercieel", "items": ["Salaris range", "Benefits", "Budget goedkeuring"] }
+        ],
+        "solutionHeadline": "Intake in OneRooted",
+        "solutionPoints": [
+          "Configureerbare intake templates per functie-type",
+          "Digital intake direct in het systeem",
+          "Automatische workflow naar goedkeuring",
+          "Link intake aan vacature voor context",
+          "Intake als referentie tijdens selectie"
+        ]
+      },
+
+      "vacature-multiposting": {
+        "metaTitle": "Vacature Multiposting: Publiceer naar 200+ Kanalen",
+        "metaDescription": "Multiposting in je ATS. Publiceer vacatures naar alle relevante jobboards met één klik en track performance per kanaal.",
+        "breadcrumb": "Multiposting",
+        "label": "Multiposting",
+        "headline": "Eén vacature,",
+        "headlineHighlight": "200+ kanalen",
+        "subheadline": "Stop met handmatig vacatures plaatsen op elk jobboard. Multiposting publiceert overal tegelijk met één klik.",
+        "shortDescription": "Vacatures verspreiden naar alle jobboards.",
+        "benefitsHeadline": "Voordelen van multiposting",
+        "benefits": [
+          "Uren besparen per vacature",
+          "Consistente vacaturetekst overal",
+          "Automatische format-conversie per board",
+          "Performance tracking per kanaal",
+          "Budget-optimalisatie op basis van data"
+        ],
+        "channelsHeadline": "Ondersteunde kanalen",
+        "channels": [
+          { "type": "Generieke jobboards", "examples": "Indeed, LinkedIn, Glassdoor" },
+          { "type": "Niche boards", "examples": "Stack Overflow, Dribbble, Werkenbij.." },
+          { "type": "Gratis boards", "examples": "Google Jobs, Jooble, Adzuna" },
+          { "type": "Social", "examples": "Facebook Jobs, Twitter" },
+          { "type": "Eigen site", "examples": "Careers page, werkenbij-site" }
+        ],
+        "solutionHeadline": "Multiposting in OneRooted",
+        "solutionPoints": [
+          "200+ jobboards aangesloten",
+          "Publiceer en pauzeer met één klik",
+          "Automatische format-conversie",
+          "Real-time performance metrics per board",
+          "Budget tracking en optimalisatie"
+        ]
+      },
+
+      "werkenbij-site-software": {
+        "metaTitle": "Werkenbij Site Software: Careers Page die Converteert",
+        "metaDescription": "Bouw een werkenbij-site die kandidaten overtuigt. No-code career site builder geïntegreerd in je ATS.",
+        "breadcrumb": "Werkenbij Site",
+        "label": "Werkenbij Site",
+        "headline": "Een werkenbij-site die",
+        "headlineHighlight": "converteert",
+        "subheadline": "Je careers page is vaak het eerste contactpunt. Maak een site die je employer brand uitstraalt en kandidaten converteert.",
+        "shortDescription": "Career site builder in je ATS.",
+        "featuresHeadline": "Career site features",
+        "featureList": [
+          { "feature": "No-code builder", "description": "Drag-and-drop zonder developers" },
+          { "feature": "Custom branding", "description": "Je eigen kleuren, fonts, logo's" },
+          { "feature": "Automatische vacature sync", "description": "Vacatures direct uit je ATS" },
+          { "feature": "SEO-optimized", "description": "Gevonden worden in Google for Jobs" },
+          { "feature": "Mobile-first", "description": "Perfect op elk device" },
+          { "feature": "Analytics", "description": "Wie bezoekt, wie solliciteert" }
+        ],
+        "contentHeadline": "Content voor je careers page",
+        "content": [
+          { "element": "Vacature overzicht", "description": "Alle openstaande posities" },
+          { "element": "Bedrijfscultuur", "description": "Wie zijn jullie, hoe werken jullie" },
+          { "element": "Team", "description": "De mensen achter het bedrijf" },
+          { "element": "Benefits", "description": "Wat krijg je als medewerker" },
+          { "element": "Proces", "description": "Hoe verloopt solliciteren" }
+        ],
+        "solutionHeadline": "Career site met OneRooted",
+        "solutionPoints": [
+          "No-code builder voor snelle setup",
+          "Volledig custom branding",
+          "Automatische vacature synchronisatie",
+          "SEO en Google for Jobs optimalisatie",
+          "Ingebouwde analytics en tracking"
+        ]
+      }
+    },
+
+    "guides": {
+      "ats-offerte": {
+        "metaTitle": "ATS Offerte Aanvragen: Wat Je Moet Weten",
+        "metaDescription": "Tips voor het aanvragen van een ATS-offerte. Welke informatie je moet geven en welke vragen je moet stellen.",
+        "breadcrumb": "ATS Offerte",
+        "label": "ATS Offerte",
+        "headline": "ATS offerte",
+        "headlineHighlight": "die je kunt vergelijken",
+        "subheadline": "Een goede offerte begint met een goede briefing. Dit is wat je moet delen — en wat je moet vragen.",
+        "shortDescription": "Tips voor het aanvragen van een ATS-offerte.",
+        "guideHeadline": "Voorbereiding offerte-aanvraag",
+        "guideSteps": [
+          { "step": "1", "title": "Ken je requirements", "description": "Must-haves en nice-to-haves gedocumenteerd" },
+          { "step": "2", "title": "Bepaal scope", "description": "Aantal gebruikers, vacatures, kandidaten" },
+          { "step": "3", "title": "Identificeer integraties", "description": "Welke systemen moeten koppelen" },
+          { "step": "4", "title": "Plan timeline", "description": "Wanneer wil je live zijn" }
+        ],
+        "questionsHeadline": "Vragen om te stellen",
+        "questions": [
+          "Wat is de TCO over 3 jaar, inclusief alles?",
+          "Welke implementatiekosten zijn er?",
+          "Wat kost training en voor wie?",
+          "Hoe worden integraties geprijsd?",
+          "Wat zijn de exit-kosten?"
+        ],
+        "solutionHeadline": "Offerte van OneRooted",
+        "solutionPoints": [
+          "Transparante pricing, geen verrassingen",
+          "Implementatie en training inclusief",
+          "Geen per-seat of per-vacature kosten",
+          "Maandelijks opzegbaar, geen lock-in"
+        ]
+      },
+
+      "ats-rfp-template": {
+        "metaTitle": "ATS RFP Template: Request for Proposal voor Recruitment Software",
+        "metaDescription": "Download onze ATS RFP template. Gestructureerde requirements documentatie voor het selecteren van recruitment software.",
+        "breadcrumb": "RFP Template",
+        "label": "ATS RFP",
+        "headline": "ATS selectie met",
+        "headlineHighlight": "gestructureerde RFP",
+        "subheadline": "Een RFP dwingt leveranciers tot vergelijkbare antwoorden. Dit is het framework dat werkt.",
+        "shortDescription": "RFP template voor ATS-selectie.",
+        "sectionsHeadline": "RFP onderdelen",
+        "sections": [
+          { "section": "Bedrijfsprofiel", "items": ["Organisatie overview", "Hiring volumes", "Huidige tooling", "Toekomstplannen"] },
+          { "section": "Functionele requirements", "items": ["Core ATS functionaliteit", "Workflow vereisten", "Rapportage behoeften", "Integratie requirements"] },
+          { "section": "Technische requirements", "items": ["Security en compliance", "Data residency", "SSO en identity", "API mogelijkheden"] },
+          { "section": "Commercieel", "items": ["Prijsmodel", "Implementatie aanpak", "Support model", "Contract voorwaarden"] }
+        ],
+        "tipsHeadline": "RFP tips",
+        "tips": [
+          "Focus op outcomes, niet features",
+          "Vraag om concrete scenario's en demo's",
+          "Neem referentie-eisen op",
+          "Stel deadline en evaluatiecriteria vooraf vast"
+        ],
+        "solutionHeadline": "OneRooted RFP response",
+        "solutionPoints": [
+          "Snelle, complete RFP respons",
+          "Concrete antwoorden, geen marketing-speak",
+          "Demo op basis van jouw scenario's",
+          "Referenties van vergelijkbare organisaties"
+        ]
+      },
+
+      "ats-security": {
+        "metaTitle": "ATS Security: Beveiligingseisen voor Recruitment Software",
+        "metaDescription": "Security checklist voor je ATS. SSO, encryptie, audit logging en compliance vereisten voor veilige recruitment.",
+        "breadcrumb": "ATS Security",
+        "label": "ATS Security",
+        "headline": "ATS security",
+        "headlineHighlight": "die standhoudt",
+        "subheadline": "Kandidaatdata is gevoelig. Dit zijn de security-eisen waaraan je ATS moet voldoen.",
+        "shortDescription": "Security checklist voor recruitment software.",
+        "checklistHeadline": "Security checklist",
+        "checklist": [
+          { "category": "Authentication", "items": ["SSO/SAML support", "MFA enforcement", "Password policies", "Session management"] },
+          { "category": "Authorization", "items": ["Role-based access control", "Granulaire permissions", "Data isolation", "Audit logging"] },
+          { "category": "Data protection", "items": ["Encryption at rest", "Encryption in transit", "Data residency (EU)", "Backup en recovery"] },
+          { "category": "Compliance", "items": ["AVG compliance", "ISO 27001", "SOC 2 (optional)", "Penetration testing"] }
+        ],
+        "questionsHeadline": "Vragen aan vendors",
+        "questions": [
+          "Waar staat de data opgeslagen?",
+          "Hoe is data versleuteld?",
+          "Welke certificeringen hebben jullie?",
+          "Hoe vaak worden security audits uitgevoerd?",
+          "Wat is het incident response proces?"
+        ],
+        "solutionHeadline": "Security in OneRooted",
+        "solutionPoints": [
+          "SSO via SAML 2.0 en OpenID Connect",
+          "MFA enforcement mogelijk",
+          "End-to-end encryptie",
+          "EU datacenter (data residency)",
+          "Jaarlijkse security audits"
+        ]
+      }
     }
   }
 }
