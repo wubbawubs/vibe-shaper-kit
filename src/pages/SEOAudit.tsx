@@ -114,10 +114,17 @@ export default function SEOAudit() {
   const filteredSeoPages = seoPages.filter(p => p.language === currentLang);
   
   const seoAuditResults = filteredSeoPages.map((page: SEOPage) => {
-    const titleKey = `seoPages.${page.contentKey}.meta.title`;
-    const descKey = `seoPages.${page.contentKey}.meta.description`;
-    const title = getTranslatedValue(titleKey);
-    const desc = getTranslatedValue(descKey);
+    // Try both naming conventions: metaTitle/metaDescription and meta.title/meta.description
+    const titleKey1 = `seoPages.${page.contentKey}.metaTitle`;
+    const titleKey2 = `seoPages.${page.contentKey}.meta.title`;
+    const descKey1 = `seoPages.${page.contentKey}.metaDescription`;
+    const descKey2 = `seoPages.${page.contentKey}.meta.description`;
+    
+    let title = getTranslatedValue(titleKey1);
+    if (!title) title = getTranslatedValue(titleKey2);
+    
+    let desc = getTranslatedValue(descKey1);
+    if (!desc) desc = getTranslatedValue(descKey2);
     
     return {
       ...page,
