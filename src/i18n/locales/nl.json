@@ -4652,6 +4652,144 @@
         "EU datacenter (data residency)",
         "Jaarlijkse security audits"
       ]
+    },
+
+    "integratie-afas": {
+      "metaTitle": "ATS AFAS Koppeling: HR en Recruitment Verbinden",
+      "metaDescription": "Koppel je ATS aan AFAS. Automatische data-sync van hired candidates naar je HR-systeem. Eén keer invoeren, nooit meer kopiëren.",
+      "breadcrumb": "AFAS Integratie",
+      "label": "AFAS Integratie",
+      "headline": "AFAS en ATS",
+      "headlineHighlight": "naadloos verbonden",
+      "subheadline": "Als je AFAS gebruikt voor HR, wil je geen dubbele invoer. OneRooted koppelt recruitment aan je HR-kern.",
+      "shortDescription": "ATS-AFAS integratie voor naadloze HR-sync.",
+      "integrationSteps": [
+        { "step": "1", "title": "Koppeling configureren", "description": "Veilige API-verbinding tussen OneRooted en AFAS opzetten." },
+        { "step": "2", "title": "Velden mappen", "description": "Bepaal welke kandidaatdata naar welke AFAS-velden stroomt." },
+        { "step": "3", "title": "Trigger instellen", "description": "Automatisch syncen bij status 'Hired' of handmatig pushen." },
+        { "step": "4", "title": "Valideren", "description": "Test de flow met een testrecord voordat je live gaat." }
+      ],
+      "benefits": [
+        "Geen dubbele data-invoer meer",
+        "Hired candidates automatisch naar AFAS medewerkersdossier",
+        "Foutreductie door automatisering",
+        "IT-vriendelijke implementatie"
+      ]
+    },
+
+    "integratie-indeed": {
+      "metaTitle": "ATS Indeed Integratie: Vacatures en Sollicitaties Verbinden",
+      "metaDescription": "Koppel je ATS aan Indeed. Vacatures automatisch publiceren, sollicitaties direct in je pipeline. Geen handmatig kopiëren meer.",
+      "breadcrumb": "Indeed Integratie",
+      "label": "Indeed Integratie",
+      "headline": "Indeed en je ATS",
+      "headlineHighlight": "verbonden",
+      "subheadline": "Vacatures plaatsen op Indeed en sollicitaties handmatig importeren is verleden tijd.",
+      "shortDescription": "Indeed-ATS integratie voor geautomatiseerde recruitment.",
+      "integrationSteps": [
+        { "step": "1", "title": "Indeed account koppelen", "description": "OAuth-verbinding met je Indeed employer account." },
+        { "step": "2", "title": "Vacature publiceren", "description": "One-click posting naar Indeed vanuit je ATS." },
+        { "step": "3", "title": "Sollicitaties ontvangen", "description": "Indeed-sollicitaties stromen direct je pipeline in." },
+        { "step": "4", "title": "Tracking & analytics", "description": "Zie welke Indeed-vacatures converteren." }
+      ],
+      "benefits": [
+        "Vacatures met één klik op Indeed",
+        "Sollicitaties direct in je pipeline",
+        "Source tracking per kandidaat",
+        "ROI-inzicht per job board"
+      ]
+    },
+
+    "integratie-multiposting": {
+      "metaTitle": "Vacature Multiposting Software: Één Klik, Alle Jobboards",
+      "metaDescription": "Publiceer vacatures naar alle jobboards tegelijk. OneRooted multiposting bespaart uren admin en zorgt voor consistente branding.",
+      "breadcrumb": "Multiposting",
+      "label": "Multiposting",
+      "headline": "Vacatures publiceren",
+      "headlineHighlight": "overal tegelijk",
+      "subheadline": "Stop met handmatig kopiëren naar elk jobboard. Eén vacature, alle kanalen, met één klik.",
+      "shortDescription": "Multiposting voor efficiënte vacatureverspreiding.",
+      "integrationSteps": [
+        { "step": "1", "title": "Kanalen selecteren", "description": "Kies je jobboards, social media en niche-sites." },
+        { "step": "2", "title": "Vacature opstellen", "description": "Eenmalig invoeren met alle details." },
+        { "step": "3", "title": "Publiceren", "description": "Met één klik naar alle geselecteerde kanalen." },
+        { "step": "4", "title": "Beheren", "description": "Centraal aanpassen, overal bijgewerkt." }
+      ],
+      "benefits": [
+        "Uren besparen op handmatig posten",
+        "Consistente vacatureteksten overal",
+        "Centraal beheer van alle publicaties",
+        "Source tracking per kanaal"
+      ]
+    },
+
+    "integratie-linkedin": {
+      "metaTitle": "ATS LinkedIn Integratie: Sourcing en Posting Verbonden",
+      "metaDescription": "Koppel je ATS aan LinkedIn. Kandidaten sourcen, vacatures posten en sollicitaties ontvangen in één systeem.",
+      "breadcrumb": "LinkedIn Integratie",
+      "label": "LinkedIn Integratie",
+      "headline": "LinkedIn en ATS",
+      "headlineHighlight": "in één flow",
+      "subheadline": "LinkedIn is waar je kandidaten vindt. Je ATS is waar je ze beheert. Verbind de twee.",
+      "shortDescription": "LinkedIn-ATS integratie voor sourcing en posting.",
+      "integrationSteps": [
+        { "step": "1", "title": "LinkedIn koppelen", "description": "Verbind je recruiter-account of bedrijfspagina." },
+        { "step": "2", "title": "Vacatures posten", "description": "Publiceer direct op LinkedIn Jobs vanuit je ATS." },
+        { "step": "3", "title": "Kandidaten importeren", "description": "Gesourcete profielen direct in je pipeline." },
+        { "step": "4", "title": "Easy Apply ontvangen", "description": "LinkedIn-sollicitaties automatisch in je ATS." }
+      ],
+      "benefits": [
+        "Sourcing zonder copy-paste",
+        "Vacatures direct op LinkedIn",
+        "Easy Apply in je pipeline",
+        "Activiteit-tracking per kandidaat"
+      ]
+    },
+
+    "integratie-teams": {
+      "metaTitle": "ATS Microsoft Teams Integratie: Video-Interviews Geautomatiseerd",
+      "metaDescription": "Koppel je ATS aan Microsoft Teams. Interview-links automatisch genereren, uitnodigingen syncen, opnames koppelen.",
+      "breadcrumb": "Teams Integratie",
+      "label": "Teams Integratie",
+      "headline": "Teams-interviews",
+      "headlineHighlight": "direct vanuit je ATS",
+      "subheadline": "Stop met handmatig Teams-links kopiëren. Automatische meeting-creatie bij elke interview-uitnodiging.",
+      "shortDescription": "Microsoft Teams integratie voor geautomatiseerde interviews.",
+      "integrationSteps": [
+        { "step": "1", "title": "Microsoft 365 koppelen", "description": "OAuth-verbinding met je organisatie." },
+        { "step": "2", "title": "Interview inplannen", "description": "Plan een interview in je ATS." },
+        { "step": "3", "title": "Automatische Teams-link", "description": "Meeting wordt automatisch aangemaakt en gekoppeld." },
+        { "step": "4", "title": "Uitnodiging versturen", "description": "Kandidaat en team ontvangen uitnodiging met link." }
+      ],
+      "benefits": [
+        "Automatische Teams-meetings bij interviews",
+        "Geen handmatig links kopiëren",
+        "Calendar sync voor alle deelnemers",
+        "Interview-context direct beschikbaar"
+      ]
+    },
+
+    "integratie-outlook": {
+      "metaTitle": "ATS Outlook Integratie: Email en Kalender Verbonden",
+      "metaDescription": "Koppel je ATS aan Outlook. Kandidaat-emails automatisch gelogd, interviews in je kalender, templates direct beschikbaar.",
+      "breadcrumb": "Outlook Integratie",
+      "label": "Outlook Integratie",
+      "headline": "Outlook en ATS",
+      "headlineHighlight": "perfect verbonden",
+      "subheadline": "Je email en kalender zijn je dagelijkse tools. Laat ze naadloos samenwerken met je recruitment.",
+      "shortDescription": "Outlook integratie voor email en kalender sync.",
+      "integrationSteps": [
+        { "step": "1", "title": "Outlook koppelen", "description": "Veilige OAuth-verbinding met je mailbox." },
+        { "step": "2", "title": "Email sync activeren", "description": "Kandidaat-correspondentie automatisch loggen." },
+        { "step": "3", "title": "Kalender koppelen", "description": "Beschikbaarheid en interviews syncen." },
+        { "step": "4", "title": "Templates gebruiken", "description": "Email-templates direct vanuit Outlook." }
+      ],
+      "benefits": [
+        "Alle kandidaat-emails automatisch gelogd",
+        "Interviews direct in je Outlook-kalender",
+        "Email-templates met merge-velden",
+        "Beschikbaarheid-check in scheduling"
+      ]
     }
   }
 }

@@ -1671,6 +1671,119 @@
         { "icon": "analytics", "title": "Health Metrics", "description": "Know which roles need attention." },
         { "icon": "collaboration", "title": "Shared View", "description": "Everyone sees the same picture." }
       ]
+    },
+
+    "ats-comparison": {
+      "metaTitle": "ATS Comparison: How to Evaluate Recruitment Software",
+      "metaDescription": "Compare ATS systems objectively. The criteria that actually matter when choosing recruitment software — without vendor bias.",
+      "breadcrumb": "ATS Comparison",
+      "label": "ATS Comparison",
+      "headline": "Compare ATS systems",
+      "headlineHighlight": "objectively",
+      "subheadline": "Not based on feature lists, but on what actually makes a difference for your team. The criteria vendors don't want you to see.",
+      "shortDescription": "Objective ATS comparison without vendor bias.",
+      "criteriaHeadline": "Compare on what matters",
+      "criteria": [
+        { "title": "Speed of adoption", "description": "How long until your team actually uses the system? Weeks or months?", "mustHave": true },
+        { "title": "Candidate ranking quality", "description": "Does it go beyond keyword matching? Does it support structured evaluation?", "mustHave": true },
+        { "title": "Workflow flexibility", "description": "Can you adjust processes yourself, or do you need consultants?", "mustHave": true },
+        { "title": "Total Cost of Ownership", "description": "What does it really cost over 3 years, including implementation, training, and support?", "mustHave": true },
+        { "title": "Partner collaboration", "description": "Can external recruiters work in the same system without license costs?", "mustHave": false },
+        { "title": "Reporting depth", "description": "Do you get insight out-of-the-box, or do you have to build everything yourself?", "mustHave": true }
+      ],
+      "solutionHeadline": "Why teams choose OneRooted",
+      "solutionPoints": [
+        "Productive within days, not months",
+        "Intelligent ranking that actually differentiates",
+        "Self-configurable without dependencies",
+        "Transparent TCO without surprises",
+        "Built-in partner collaboration"
+      ]
+    },
+
+    "best-ats-software": {
+      "metaTitle": "Best ATS Software 2025: Ranked on What Matters",
+      "metaDescription": "Objective ranking of the best ATS software. Based on adoption, flexibility, and actual results — not marketing budgets.",
+      "breadcrumb": "Best ATS Software",
+      "label": "Best ATS Software",
+      "headline": "The best",
+      "headlineHighlight": "ATS software of 2025",
+      "subheadline": "Not based on who has the best marketing budget, but on what actually makes teams successful in hiring.",
+      "shortDescription": "Objective ranking of the best ATS software for 2025.",
+      "criteriaHeadline": "Our selection criteria",
+      "criteria": [
+        { "title": "User adoption", "description": "The best system is worthless if nobody uses it. We measure actual adoption.", "mustHave": true },
+        { "title": "Time-to-value", "description": "How quickly does the system deliver value? Months of implementation is a red flag.", "mustHave": true },
+        { "title": "Ranking intelligence", "description": "Goes beyond basic filtering — supports real decision-making.", "mustHave": true },
+        { "title": "Scalability", "description": "Grows with you from 10 to 100 to 1000 hires per year.", "mustHave": true },
+        { "title": "Price-quality ratio", "description": "Best value isn't always cheapest — but it is transparent.", "mustHave": true }
+      ],
+      "solutionHeadline": "Why OneRooted ranks at the top",
+      "solutionPoints": [
+        "Highest adoption scores due to intuitive interface",
+        "Live within weeks, value from day 1",
+        "Intelligent ranking that teams actually use",
+        "Scalable from startup to enterprise",
+        "Transparent pricing, dedicated support"
+      ]
+    },
+
+    "ats-checklist": {
+      "metaTitle": "ATS Checklist: Selection Criteria for the Right Choice",
+      "metaDescription": "Free ATS selection checklist. The criteria that really matter when choosing recruitment software — without vendor bias.",
+      "breadcrumb": "ATS Checklist",
+      "label": "ATS Checklist",
+      "headline": "ATS Selection",
+      "headlineHighlight": "Checklist",
+      "subheadline": "An objective framework for evaluating ATS systems. No marketing, just the questions that matter.",
+      "shortDescription": "Download the ATS selection checklist for objective evaluation.",
+      "criteriaHeadline": "The checklist vendors don't want you to see",
+      "criteria": [
+        { "title": "Is the system actually used?", "description": "Ask for adoption metrics from existing customers. Features mean nothing if nobody uses them.", "mustHave": true },
+        { "title": "How long does onboarding take?", "description": "Months is a red flag. A good system is intuitive enough for days, not quarters.", "mustHave": true },
+        { "title": "Can you customize workflows yourself?", "description": "Or do you need consultants for every change? Flexibility should be in-house.", "mustHave": true },
+        { "title": "What does it really cost?", "description": "Per-seat? Per-candidate? Implementation fees? Ask for total cost of ownership over 3 years.", "mustHave": true },
+        { "title": "How does collaboration with externals work?", "description": "Can agencies work in the same system, or does a parallel reality emerge?", "mustHave": false },
+        { "title": "What insights do you get out-of-the-box?", "description": "Do you have to build reports or do you see bottlenecks automatically?", "mustHave": true }
+      ],
+      "solutionHeadline": "How OneRooted scores on this checklist",
+      "solutionPoints": [
+        "Adoption within days, not months",
+        "Self-configurable workflows without consultants",
+        "Transparent pricing without hidden costs",
+        "Built-in partner collaboration",
+        "Real-time insight without report building",
+        "Monthly cancellation, no lock-in"
+      ]
+    },
+
+    "ats-cost-calculator": {
+      "metaTitle": "ATS Cost Calculator: What Does Recruitment Software Really Cost?",
+      "metaDescription": "Complete breakdown of ATS costs. Licenses, implementation, training, hidden costs — and how to calculate TCO.",
+      "breadcrumb": "ATS Costs",
+      "label": "ATS Costs",
+      "headline": "What does an",
+      "headlineHighlight": "ATS really cost?",
+      "subheadline": "License costs are just the tip of the iceberg. This is the complete breakdown of what recruitment software actually costs.",
+      "shortDescription": "Complete guide to ATS costs and total cost of ownership.",
+      "criteriaHeadline": "The hidden costs vendors hide",
+      "criteria": [
+        { "title": "Implementation & setup", "description": "Often 50-200% of annual license costs. Ask for fixed-price quotes upfront.", "mustHave": true },
+        { "title": "Training & onboarding", "description": "Hours × people × day rate. The more complex the system, the higher this cost.", "mustHave": true },
+        { "title": "Customization & consultancy", "description": "Every workflow change, every report, every integration — ask what this costs.", "mustHave": true },
+        { "title": "Per-seat licenses", "description": "Sounds cheap until your team grows. Calculate to your situation in 3 years.", "mustHave": true },
+        { "title": "Per-candidate costs", "description": "Volume-based pricing can explode during campaign recruitment.", "mustHave": false },
+        { "title": "Exit costs", "description": "Data export, contract termination. Ask about migration rights upfront.", "mustHave": false }
+      ],
+      "solutionHeadline": "OneRooted's transparent model",
+      "solutionPoints": [
+        "Fixed monthly price from €299 — no per-seat or per-candidate",
+        "Implementation included, no setup fees",
+        "Unlimited users and candidates",
+        "Self-configurable, no consultancy needed",
+        "Monthly cancellation, no lock-in",
+        "Full support included, no premium tiers"
+      ]
     }
   },
 
