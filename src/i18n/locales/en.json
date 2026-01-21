@@ -653,7 +653,7 @@
   "teamPage": {
     "seo": {
       "title": "About Us | Meet the One Rooted Team",
-      "description": "Meet the team behind One Rooted. 25+ years of recruitment expertise building the future of hiring. Part of the One-Time Group."
+      "description": "Meet the team behind One Rooted. 25+ years of recruitment expertise building the future of hiring. Part of the One Group."
     },
     "hero": {
       "label": "Meet the team",
@@ -680,8 +680,8 @@
     },
     "story": {
       "label": "Our story",
-      "headline": "Part of the One-Time Group",
-      "description": "One Rooted was born from the One-Time Group's mission to transform how organizations find and nurture talent. With deep roots in recruitment and HR technology, we bring decades of combined experience to every feature we build.",
+      "headline": "Part of the One Group",
+      "description": "One Rooted was born from the One Group's mission to transform how organizations find and nurture talent. With deep roots in recruitment and HR technology, we bring decades of combined experience to every feature we build.",
       "location": "Based in the Netherlands, we're building a global product for teams everywhere."
     },
     "joinUs": {
@@ -690,7 +690,7 @@
       "button": "Get in touch"
     },
     "cta": {
-      "trustBadge": "Part of the One-Time Group",
+      "trustBadge": "Part of the One Group",
       "headline": "Ready to transform your hiring?",
       "description": "Join the teams that have already upgraded from fragmented tools to a unified Hiring OS.",
       "button": "Why we built this",
