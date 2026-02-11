@@ -3,24 +3,24 @@
   <!-- Core marketing pages -->
   <sitemap>
     <loc>https://onerooted.com/sitemap_pages.xml</loc>
-    <lastmod>2025-01-20</lastmod>
+    <lastmod>2026-02-11</lastmod>
   </sitemap>
   
   <!-- SEO Landing Pages - English -->
   <sitemap>
     <loc>https://onerooted.com/sitemap_seo_en.xml</loc>
-    <lastmod>2025-01-20</lastmod>
+    <lastmod>2026-02-11</lastmod>
   </sitemap>
   
   <!-- SEO Landing Pages - Dutch -->
   <sitemap>
     <loc>https://onerooted.com/sitemap_seo_nl.xml</loc>
-    <lastmod>2025-01-20</lastmod>
+    <lastmod>2026-02-11</lastmod>
   </sitemap>
   
   <!-- SEO Landing Pages - German -->
   <sitemap>
     <loc>https://onerooted.com/sitemap_seo_de.xml</loc>
-    <lastmod>2025-01-20</lastmod>
+    <lastmod>2026-02-11</lastmod>
   </sitemap>
 </sitemapindex>
