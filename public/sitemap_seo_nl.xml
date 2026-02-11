@@ -728,21 +728,6 @@
   <!-- P2: LONG-TAIL (Indexable only - noindex pages excluded) -->
   <!-- ============================================================ -->
   
-  <!-- Feature Pages (T-FEAT) P2 -->
-  <url>
-    <loc>https://onerooted.com/nl/recruitment-analytics</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://onerooted.com/nl/candidate-pipeline-management</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
   <!-- Comparison Pages (T-COMP) P2 -->
   <url>
     <loc>https://onerooted.com/nl/ats-vs-crm</loc>
