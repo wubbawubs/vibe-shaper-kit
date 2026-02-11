@@ -20,7 +20,7 @@ export function SEORelatedPages({ headline, pages }: SEORelatedPagesProps) {
   
   const getLocalizedHref = (slug: string) => {
     const path = `/${slug}`;
-    return lang ? getLocalizedPath(path, lang as Language) : path;
+    return getLocalizedPath(path, (lang as Language) || "en");
   };
 
   if (pages.length === 0) return null;
