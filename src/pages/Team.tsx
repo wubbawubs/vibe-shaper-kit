@@ -38,7 +38,7 @@ const Team = () => {
   const { lang } = useParams<{ lang: string }>();
 
   const getLocalizedHref = (href: string) => {
-    return lang ? getLocalizedPath(href, lang as Language) : href;
+    return getLocalizedPath(href, (lang as Language) || "en");
   };
 
   const membersData = t('teamPage.members', { returnObjects: true }) as { name: string; role: string; tagline: string; bio: string }[];

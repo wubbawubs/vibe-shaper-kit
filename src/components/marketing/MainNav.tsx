@@ -31,7 +31,7 @@ export function MainNav() {
   ];
 
   const getLocalizedHref = (href: string) => {
-    return lang ? getLocalizedPath(href, lang as Language) : href;
+    return getLocalizedPath(href, (lang as Language) || "en");
   };
 
   const isActive = (href: string) => {

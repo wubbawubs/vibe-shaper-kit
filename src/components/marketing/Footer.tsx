@@ -11,7 +11,7 @@ export function Footer() {
   const currentLang = lang || "en";
 
   const getLocalizedHref = (href: string) => {
-    return lang ? getLocalizedPath(href, lang as Language) : href;
+    return getLocalizedPath(href, (lang as Language) || "en");
   };
 
   // SEO Hub links - language-aware

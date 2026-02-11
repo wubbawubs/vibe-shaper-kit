@@ -11,7 +11,7 @@ export function FinalCTASection() {
   const { lang } = useParams<{ lang: string }>();
 
   const getLocalizedHref = (href: string) => {
-    return lang ? getLocalizedPath(href, lang as Language) : href;
+    return getLocalizedPath(href, (lang as Language) || "en");
   };
 
   return (
