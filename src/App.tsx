@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 import { supportedLanguages, defaultLanguage, type Language } from "@/i18n/config";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ProtectedRoute } from "@/components/auth/ProtectedRoute";
+import { CookieConsent } from "@/components/CookieConsent";
 import { SidebarProvider } from "@/contexts/SidebarContext";
 
 // i18n
@@ -89,6 +90,7 @@ const App = () => (
             <TooltipProvider>
               <Toaster />
               <Sonner />
+              <CookieConsent />
               <BrowserRouter>
                 <ScrollToTop />
                 <Routes>
