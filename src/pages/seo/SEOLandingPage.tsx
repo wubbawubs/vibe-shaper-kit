@@ -24,7 +24,7 @@ import { SEOIndustryWorkflow } from "./sections/SEOIndustryWorkflow";
 import { SEORoleStakeholder } from "./sections/SEORoleStakeholder";
 import { SEOGlossaryDefinition } from "./sections/SEOGlossaryDefinition";
 
-const BASE_URL = "https://onerooted.com";
+const BASE_URL = "https://onerooted.nl";
 
 export default function SEOLandingPage() {
   const { seoSlug, lang } = useParams<{ seoSlug: string; lang?: string }>();

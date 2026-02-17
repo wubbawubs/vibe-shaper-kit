@@ -30,7 +30,7 @@ interface SEOHeadProps {
   softwareCategory?: string;
 }
 
-const BASE_URL = "https://onerooted.com";
+const BASE_URL = "https://onerooted.nl";
 
 // Organization schema (site-wide)
 const organizationSchema = {

@@ -57,7 +57,7 @@ const Light = () => {
       <SEO 
         title={t('lightOffer.page.seo.title')}
         description={t('lightOffer.page.seo.description')}
-        url="https://onerooted.com/light"
+        url="https://onerooted.nl/light"
       />
 
       {/* Hero Section */}

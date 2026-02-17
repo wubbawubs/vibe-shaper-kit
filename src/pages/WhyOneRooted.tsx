@@ -29,7 +29,7 @@ const WhyOneRooted = () => {
       <SEO 
         title={t('whyPage.seo.title')}
         description={t('whyPage.seo.description')}
-        url="https://onerooted.com/why-onerooted"
+        url="https://onerooted.nl/why-onerooted"
       />
       {/* Hero */}
       <section className="py-16 md:py-24 relative overflow-hidden">

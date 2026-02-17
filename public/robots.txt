@@ -14,4 +14,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://onerooted.com/sitemap_index.xml
+Sitemap: https://onerooted.nl/sitemap_index.xml
