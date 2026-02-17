@@ -61,7 +61,7 @@ const Team = () => {
       <SEO 
         title={t('teamPage.seo.title')}
         description={t('teamPage.seo.description')}
-        url="https://onerooted.com/team"
+        url="https://onerooted.nl/team"
       />
       {/* Hero */}
       <section className="py-12 md:py-28 relative overflow-hidden">

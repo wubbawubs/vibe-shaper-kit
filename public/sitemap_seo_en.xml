@@ -8,23 +8,23 @@
   
   <!-- Software Type Pages (T-A) P0 -->
   <url>
-    <loc>https://onerooted.com/en/applicant-tracking-system</loc>
+    <loc>https://onerooted.nl/en/applicant-tracking-system</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://onerooted.com/en/applicant-tracking-system"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://onerooted.com/nl/ats-software"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://onerooted.com/en/applicant-tracking-system"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onerooted.nl/en/applicant-tracking-system"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://onerooted.nl/nl/ats-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onerooted.nl/en/applicant-tracking-system"/>
   </url>
   
   <url>
-    <loc>https://onerooted.com/en/recruitment-software</loc>
+    <loc>https://onerooted.nl/en/recruitment-software</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://onerooted.com/en/recruitment-software"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://onerooted.com/nl/recruitmentsoftware"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://onerooted.com/en/recruitment-software"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onerooted.nl/en/recruitment-software"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://onerooted.nl/nl/recruitmentsoftware"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onerooted.nl/en/recruitment-software"/>
   </url>
   
   <!-- ============================================================ -->
@@ -33,14 +33,14 @@
   
   <!-- Software Type Pages (T-A) P1 -->
   <url>
-    <loc>https://onerooted.com/en/hiring-software</loc>
+    <loc>https://onerooted.nl/en/hiring-software</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://onerooted.com/en/talent-acquisition-software</loc>
+    <loc>https://onerooted.nl/en/talent-acquisition-software</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -48,28 +48,28 @@
   
   <!-- Alternative Pages (T-ALT) P1 -->
   <url>
-    <loc>https://onerooted.com/en/greenhouse-alternative</loc>
+    <loc>https://onerooted.nl/en/greenhouse-alternative</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://onerooted.com/en/lever-alternative</loc>
+    <loc>https://onerooted.nl/en/lever-alternative</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://onerooted.com/en/workday-alternative</loc>
+    <loc>https://onerooted.nl/en/workday-alternative</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://onerooted.com/en/homerun-alternative</loc>
+    <loc>https://onerooted.nl/en/homerun-alternative</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -81,14 +81,14 @@
   
   <!-- Feature Pages (T-FEAT) P2 -->
   <url>
-    <loc>https://onerooted.com/en/recruitment-analytics</loc>
+    <loc>https://onerooted.nl/en/recruitment-analytics</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://onerooted.com/en/candidate-pipeline-management</loc>
+    <loc>https://onerooted.nl/en/candidate-pipeline-management</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -13,15 +13,15 @@ const defaultMeta = {
   title: "One Rooted | The Hiring OS for Teams That Take Hiring Seriously",
   description: "Replace scattered tools with one intelligent system that ranks candidates, streamlines workflows, and drives better hiring decisions.",
   image: "/og-image.png",
-  url: "https://onerooted.com",
+  url: "https://onerooted.nl",
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "One Rooted",
-  "url": "https://onerooted.com",
-  "logo": "https://onerooted.com/og-image.png",
+  "url": "https://onerooted.nl",
+  "logo": "https://onerooted.nl/og-image.png",
   "description": "The Hiring OS for Teams That Take Hiring Seriously. Replace scattered tools with one intelligent system.",
   "sameAs": [
     "https://linkedin.com/company/110167349"
@@ -29,7 +29,7 @@ const organizationSchema = {
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "sales",
-    "url": "https://onerooted.com/demo"
+    "url": "https://onerooted.nl/demo"
   }
 };
 

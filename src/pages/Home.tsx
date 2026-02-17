@@ -17,7 +17,7 @@ const Home = () => {
       <SEO 
         title="The Hiring OS for Teams That Take Hiring Seriously"
         description="Replace scattered recruitment tools with one intelligent system. OneRooted ranks candidates, streamlines workflows, and drives better hiring decisions."
-        url="https://onerooted.com"
+        url="https://onerooted.nl"
       />
       <HeroSection />
       <ProblemSection />
