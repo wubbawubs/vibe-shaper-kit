@@ -9,7 +9,7 @@
   <!-- Software Type Pages (T-A) -->
   <url>
     <loc>https://onerooted.nl/nl/ats-software</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://onerooted.nl/nl/ats-software"/>
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://onerooted.nl/nl/recruitmentsoftware</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://onerooted.nl/nl/recruitmentsoftware"/>
@@ -30,14 +30,14 @@
   <!-- Comparison Pages (T-COMP) P0 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-vergelijken</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/beste-ats-software</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -45,14 +45,14 @@
   <!-- Alternative Pages (T-ALT) P0 -->
   <url>
     <loc>https://onerooted.nl/nl/bullhorn-alternatief</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/recruitee-alternatief</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -60,70 +60,70 @@
   <!-- Guide Pages (T-GUIDE) P0 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-checklist</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-kosten</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-avg</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-criteria</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-demo</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-implementatie</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-migratie</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-prijzen</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-roi</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-selectieproces</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -131,42 +131,42 @@
   <!-- Integration Pages (T-INT) P0 -->
   <url>
     <loc>https://onerooted.nl/nl/integratie-afas</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-indeed</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-jobboard-multiposting</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-linkedin</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-microsoft-teams</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-outlook</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -174,7 +174,7 @@
   <!-- Role Pages (T-ROLE) P0 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-recruiters</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -182,21 +182,21 @@
   <!-- Use Case Pages (T-USE) P0 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-bureaus</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-inhouse</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/recruitment-mkb</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -208,42 +208,42 @@
   <!-- Alternative Pages (T-ALT) P1 -->
   <url>
     <loc>https://onerooted.nl/nl/afas-alternatief</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/carerix-alternatief</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/otys-alternatief</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/hroffice-alternatief</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ubeeo-alternatief</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/homerun-alternatief</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -251,42 +251,42 @@
   <!-- Comparison Pages (T-COMP) P1 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-vs-hris</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-vs-mailbox</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-vs-spreadsheet</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/beste-ats-bureau</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/beste-ats-enterprise</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/beste-ats-mkb</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -294,154 +294,154 @@
   <!-- Feature Pages (T-FEAT) P1 -->
   <url>
     <loc>https://onerooted.nl/nl/audit-logging</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/automatische-emails</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/candidate-experience</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/cv-parsing</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/cv-screening</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/gdpr-bewaartermijnen</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/goedkeuringen</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/interview-planning</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kandidaat-communicatie</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kandidaat-ranking-software</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/mobile-solliciteren</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/onboarding-overdracht</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/permissions-rbac</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/referral-recruitment</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/reporting-dashboards</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/scorecards</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/single-sign-on</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/sourcing</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/talentpool-crm</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/vacature-intake</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/vacature-multiposting</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/werkenbij-site-software</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -449,21 +449,21 @@
   <!-- Guide Pages (T-GUIDE) P1 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-offerte</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-rfp-template</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-security</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -471,175 +471,175 @@
   <!-- Industry Pages (T-IND) P1 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-accountancy</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-bouw</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-callcenter</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-energie</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-engineering</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-finance</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-gemeenten</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-horeca</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-industrie</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-it</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-logistiek</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-non-profit</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-onderwijs</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-overheid</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-productie</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-retail</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-sales-teams</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-schaalups</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-security</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-startups</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-techniek</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-transport</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-vastgoed</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-zorg</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-zorginstellingen</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -647,49 +647,49 @@
   <!-- Integration Pages (T-INT) P1 -->
   <url>
     <loc>https://onerooted.nl/nl/integratie-api</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-google-calendar</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-loket</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-nationale-vacaturebank</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-nmbrs</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-visma-raet</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-zapier</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -697,21 +697,21 @@
   <!-- Role Pages (T-ROLE) P1 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-hiring-managers</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-hr-managers</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-it-afdeling</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -719,7 +719,7 @@
   <!-- Use Case Pages (T-USE) P1 -->
   <url>
     <loc>https://onerooted.nl/nl/recruitment-enterprise</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -731,14 +731,14 @@
   <!-- Comparison Pages (T-COMP) P2 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-vs-crm</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-vs-recruitmentsoftware</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -746,42 +746,42 @@
   <!-- Integration Pages (T-INT) P2 -->
   <url>
     <loc>https://onerooted.nl/nl/integratie-calendly</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-hubspot</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-slack</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-testgorilla</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-harver</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/integratie-zoom</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -789,21 +789,21 @@
   <!-- Role Pages (T-ROLE) P2 -->
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-cfo</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-directie</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/ats-voor-operations</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -811,56 +811,56 @@
   <!-- Glossary Pages (T-GLOSS) P2 -->
   <url>
     <loc>https://onerooted.nl/nl/kennisbank/wat-is-een-ats</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kennisbank/time-to-hire</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kennisbank/quality-of-hire</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kennisbank/candidate-experience</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kennisbank/recruitment-funnel</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kennisbank/source-of-hire</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kennisbank/bewaartermijnen-sollicitaties</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://onerooted.nl/nl/kennisbank/verwerkersovereenkomst</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
