@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom
 import { ThemeProvider } from "next-themes";
 import { HelmetProvider } from "react-helmet-async";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { supportedLanguages, defaultLanguage, type Language } from "@/i18n/config";
@@ -18,37 +18,48 @@ import { SidebarProvider } from "@/contexts/SidebarContext";
 // i18n
 import "@/i18n/config";
 
-// Marketing pages
+// Critical path - loaded eagerly
 import Home from "./pages/Home";
-import Product from "./pages/Product";
-import UseCases from "./pages/UseCases";
-import Partners from "./pages/Partners";
-import Pricing from "./pages/Pricing";
-import WhyOneRooted from "./pages/WhyOneRooted";
-import Team from "./pages/Team";
-import Demo from "./pages/Demo";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import Light from "./pages/Light";
-import BrandGuide from "./pages/BrandGuide";
-import EmailTemplates from "./pages/EmailTemplates";
-import PitchDeck from "./pages/PitchDeck";
-import SEOLandingPage from "./pages/seo/SEOLandingPage";
-import SEOAudit from "./pages/SEOAudit";
+
+// Marketing pages - lazy loaded
+const Product = lazy(() => import("./pages/Product"));
+const UseCases = lazy(() => import("./pages/UseCases"));
+const Partners = lazy(() => import("./pages/Partners"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const WhyOneRooted = lazy(() => import("./pages/WhyOneRooted"));
+const Team = lazy(() => import("./pages/Team"));
+const Demo = lazy(() => import("./pages/Demo"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Terms = lazy(() => import("./pages/Terms"));
+const Light = lazy(() => import("./pages/Light"));
+const BrandGuide = lazy(() => import("./pages/BrandGuide"));
+const EmailTemplates = lazy(() => import("./pages/EmailTemplates"));
+const PitchDeck = lazy(() => import("./pages/PitchDeck"));
+const SEOLandingPage = lazy(() => import("./pages/seo/SEOLandingPage"));
+const SEOAudit = lazy(() => import("./pages/SEOAudit"));
 
 // Auth pages
-import Auth from "./pages/Auth";
+const Auth = lazy(() => import("./pages/Auth"));
 
 // Dashboard pages
-import Dashboard from "./pages/Dashboard";
-import Vacatures from "./pages/Vacatures";
-import VacancyDetail from "./pages/VacancyDetail";
-import Kandidaten from "./pages/Kandidaten";
-import Pipeline from "./pages/Pipeline";
-import Rapportages from "./pages/Rapportages";
-import Instellingen from "./pages/Instellingen";
+const Dashboard = lazy(() => import("./pages/Dashboard"));
+const Vacatures = lazy(() => import("./pages/Vacatures"));
+const VacancyDetail = lazy(() => import("./pages/VacancyDetail"));
+const Kandidaten = lazy(() => import("./pages/Kandidaten"));
+const Pipeline = lazy(() => import("./pages/Pipeline"));
+const Rapportages = lazy(() => import("./pages/Rapportages"));
+const Instellingen = lazy(() => import("./pages/Instellingen"));
 
 const queryClient = new QueryClient();
+
+// Minimal loading fallback
+function PageLoader() {
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+    </div>
+  );
+}
 
 // Language wrapper component that syncs URL lang param with i18n
 function LanguageWrapper() {
@@ -93,63 +104,65 @@ const App = () => (
               <CookieConsent />
               <BrowserRouter>
                 <ScrollToTop />
-                <Routes>
-                  {/* Auth routes */}
-                  <Route path="/auth" element={<Auth />} />
+                <Suspense fallback={<PageLoader />}>
+                  <Routes>
+                    {/* Auth routes */}
+                    <Route path="/auth" element={<Auth />} />
 
-                  {/* Protected Dashboard Routes */}
-                  <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-                  <Route path="/vacatures" element={<ProtectedRoute><Vacatures /></ProtectedRoute>} />
-                  <Route path="/vacatures/:id" element={<ProtectedRoute><VacancyDetail /></ProtectedRoute>} />
-                  <Route path="/kandidaten" element={<ProtectedRoute><Kandidaten /></ProtectedRoute>} />
-                  <Route path="/pipeline" element={<ProtectedRoute><Pipeline /></ProtectedRoute>} />
-                  <Route path="/rapportages" element={<ProtectedRoute><Rapportages /></ProtectedRoute>} />
-                  <Route path="/instellingen" element={<ProtectedRoute><Instellingen /></ProtectedRoute>} />
+                    {/* Protected Dashboard Routes */}
+                    <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+                    <Route path="/vacatures" element={<ProtectedRoute><Vacatures /></ProtectedRoute>} />
+                    <Route path="/vacatures/:id" element={<ProtectedRoute><VacancyDetail /></ProtectedRoute>} />
+                    <Route path="/kandidaten" element={<ProtectedRoute><Kandidaten /></ProtectedRoute>} />
+                    <Route path="/pipeline" element={<ProtectedRoute><Pipeline /></ProtectedRoute>} />
+                    <Route path="/rapportages" element={<ProtectedRoute><Rapportages /></ProtectedRoute>} />
+                    <Route path="/instellingen" element={<ProtectedRoute><Instellingen /></ProtectedRoute>} />
 
-                  {/* Language-prefixed Marketing Routes */}
-                  <Route path="/:lang" element={<LanguageWrapper />}>
-                    <Route index element={<Home />} />
-                    <Route path="product" element={<Product />} />
-                    <Route path="use-cases" element={<UseCases />} />
-                    <Route path="partners" element={<Partners />} />
-                    <Route path="pricing" element={<Pricing />} />
-                    <Route path="why-onerooted" element={<WhyOneRooted />} />
-                    <Route path="team" element={<Team />} />
-                    <Route path="demo" element={<Demo />} />
-                    <Route path="privacy" element={<Privacy />} />
-                    <Route path="terms" element={<Terms />} />
-                    <Route path="light" element={<Light />} />
-                    <Route path="pitch-deck" element={<PitchDeck />} />
-                    {/* SEO Landing Pages */}
-                    <Route path=":seoSlug" element={<SEOLandingPage />} />
-                  </Route>
+                    {/* Language-prefixed Marketing Routes */}
+                    <Route path="/:lang" element={<LanguageWrapper />}>
+                      <Route index element={<Home />} />
+                      <Route path="product" element={<Product />} />
+                      <Route path="use-cases" element={<UseCases />} />
+                      <Route path="partners" element={<Partners />} />
+                      <Route path="pricing" element={<Pricing />} />
+                      <Route path="why-onerooted" element={<WhyOneRooted />} />
+                      <Route path="team" element={<Team />} />
+                      <Route path="demo" element={<Demo />} />
+                      <Route path="privacy" element={<Privacy />} />
+                      <Route path="terms" element={<Terms />} />
+                      <Route path="light" element={<Light />} />
+                      <Route path="pitch-deck" element={<PitchDeck />} />
+                      {/* SEO Landing Pages */}
+                      <Route path=":seoSlug" element={<SEOLandingPage />} />
+                    </Route>
 
-                  {/* Non-prefixed routes (default to English) */}
-                  <Route element={<DefaultLanguageWrapper />}>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/product" element={<Product />} />
-                    <Route path="/use-cases" element={<UseCases />} />
-                    <Route path="/partners" element={<Partners />} />
-                    <Route path="/pricing" element={<Pricing />} />
-                    <Route path="/why-onerooted" element={<WhyOneRooted />} />
-                    <Route path="/team" element={<Team />} />
-                    <Route path="/demo" element={<Demo />} />
-                    <Route path="/privacy" element={<Privacy />} />
-                    <Route path="/terms" element={<Terms />} />
-                    <Route path="/light" element={<Light />} />
-                    <Route path="/pitch-deck" element={<PitchDeck />} />
-                    {/* SEO Landing Pages (EN default) */}
-                    <Route path="/:seoSlug" element={<SEOLandingPage />} />
-                  </Route>
-                  
-                  {/* Utility Routes */}
-                  <Route path="/brand-guide" element={<BrandGuide />} />
-                  <Route path="/email-templates" element={<EmailTemplates />} />
-                  <Route path="/seo-audit" element={<SEOAudit />} />
-                  
-                  {/* Fallback */}
-                  <Route path="*" element={<Navigate to="/" replace />} />
-                </Routes>
+                    {/* Non-prefixed routes (default to English) */}
+                    <Route element={<DefaultLanguageWrapper />}>
+                      <Route path="/" element={<Home />} />
+                      <Route path="/product" element={<Product />} />
+                      <Route path="/use-cases" element={<UseCases />} />
+                      <Route path="/partners" element={<Partners />} />
+                      <Route path="/pricing" element={<Pricing />} />
+                      <Route path="/why-onerooted" element={<WhyOneRooted />} />
+                      <Route path="/team" element={<Team />} />
+                      <Route path="/demo" element={<Demo />} />
+                      <Route path="/privacy" element={<Privacy />} />
+                      <Route path="/terms" element={<Terms />} />
+                      <Route path="/light" element={<Light />} />
+                      <Route path="/pitch-deck" element={<PitchDeck />} />
+                      {/* SEO Landing Pages (EN default) */}
+                      <Route path="/:seoSlug" element={<SEOLandingPage />} />
+                    </Route>
+                    
+                    {/* Utility Routes */}
+                    <Route path="/brand-guide" element={<BrandGuide />} />
+                    <Route path="/email-templates" element={<EmailTemplates />} />
+                    <Route path="/seo-audit" element={<SEOAudit />} />
+                    
+                    {/* Fallback */}
+                    <Route path="*" element={<Navigate to="/" replace />} />
+                  </Routes>
+                </Suspense>
               </BrowserRouter>
             </TooltipProvider>
           </SidebarProvider>
