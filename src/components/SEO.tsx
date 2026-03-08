@@ -74,7 +74,8 @@ export function SEO({
   image = defaultMeta.image,
   url,
   type = "website",
-  jsonLd = "both"
+  jsonLd = "both",
+  faqItems
 }: SEOProps) {
   const { lang } = useParams<{ lang: string }>();
   const location = useLocation();
