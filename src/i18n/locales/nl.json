@@ -5069,6 +5069,10 @@
         "Sollicitaties direct in je pipeline",
         "Source tracking per kandidaat",
         "ROI-inzicht per job board"
+      ],
+      "faq": [
+        { "question": "Kan ik vanuit mijn ATS vacatures op Indeed plaatsen?", "answer": "Ja, OneRooted biedt one-click posting naar Indeed. Sollicitaties stromen automatisch terug in je pipeline." },
+        { "question": "Hoe meet ik de ROI van Indeed?", "answer": "OneRooted trackt per kandidaat de bron. Je ziet exact hoeveel sollicitaties, interviews en hires via Indeed binnenkomen." }
       ]
     },
 
