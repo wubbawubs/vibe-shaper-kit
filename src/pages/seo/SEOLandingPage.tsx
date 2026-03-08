@@ -606,7 +606,6 @@ export default function SEOLandingPage() {
         noindex={pageData.noindex}
         faqItems={faqItems.length > 0 ? faqItems : undefined}
       />
-      />
       
       {renderContent()}
       
