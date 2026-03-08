@@ -2068,6 +2068,11 @@
         { "icon": "pipeline", "title": "Visuele Pipeline", "description": "Overzicht dat past bij beperkte tijd." },
         { "icon": "automation", "title": "Basis Automatisering", "description": "Minder admin, meer gesprekken." },
         { "icon": "analytics", "title": "Simpele Rapportages", "description": "Inzicht zonder complexiteit." }
+      ],
+      "faq": [
+        { "question": "Welke recruitment software is geschikt voor het MKB?", "answer": "MKB-bedrijven hebben software nodig die betaalbaar, intuïtief en snel implementeerbaar is. OneRooted biedt professionele features vanaf €99/maand." },
+        { "question": "Heb ik als MKB een ATS nodig?", "answer": "Vanaf 5-10 hires per jaar loont een ATS. Het bespaart admin-tijd, voorkomt gemiste kandidaten en professionaliseert je hiring." },
+        { "question": "Kan ik starten zonder IT-afdeling?", "answer": "Ja, OneRooted is volledig zelf-configureerbaar. Geen IT-kennis of consultants nodig voor implementatie." }
       ]
     },
 
