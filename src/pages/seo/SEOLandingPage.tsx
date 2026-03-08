@@ -24,6 +24,12 @@ import { SEOIndustryWorkflow } from "./sections/SEOIndustryWorkflow";
 import { SEORoleStakeholder } from "./sections/SEORoleStakeholder";
 import { SEOGlossaryDefinition } from "./sections/SEOGlossaryDefinition";
 
+// Content rendering sections
+import { SEOComparisonGrid } from "./sections/SEOComparisonGrid";
+import { SEOBenefitsList } from "./sections/SEOBenefitsList";
+import { SEOHowItWorks } from "./sections/SEOHowItWorks";
+import { SEOCostTable } from "./sections/SEOCostTable";
+
 const BASE_URL = "https://onerooted.nl";
 
 export default function SEOLandingPage() {
