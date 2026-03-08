@@ -1297,6 +1297,13 @@
         { "icon": "collaboration", "title": "Team Samenwerking", "description": "Recruiters, hiring managers en partners in één gedeeld systeem." },
         { "icon": "analytics", "title": "Hiring Intelligence", "description": "Real-time metrics die zeggen waar je moet ingrijpen." },
         { "icon": "security", "title": "GDPR Compliant", "description": "Enterprise-grade beveiliging en volledige AVG-compliance." }
+      ],
+      "faq": [
+        { "question": "Wat is het verschil tussen een ATS en een Hiring OS?", "answer": "Een ATS (Applicant Tracking System) slaat kandidaten op en volgt statussen. Een Hiring OS zoals OneRooted gaat verder: het rankt kandidaten intelligent, automatiseert workflows en geeft real-time inzicht in waar je proces vastloopt." },
+        { "question": "Hoeveel kost ATS software gemiddeld?", "answer": "ATS-prijzen variëren van €50/maand voor basis-tools tot €1.000+/maand voor enterprise-systemen. OneRooted begint vanaf €99/maand met onbeperkte gebruikers en kandidaten." },
+        { "question": "Kan ik mijn huidige ATS data migreren?", "answer": "Ja, OneRooted biedt dedicated migratie-ondersteuning. Kandidaatdata, vacature-historie en documenten worden veilig overgezet zonder dataverlies." },
+        { "question": "Is ATS software AVG-compliant?", "answer": "Niet alle ATS-systemen zijn automatisch AVG-compliant. OneRooted biedt ingebouwde bewaartermijnen, consent management en EU-dataopslag." },
+        { "question": "Hoe lang duurt de implementatie van ATS software?", "answer": "Bij OneRooted ben je live binnen 2 weken. Veel traditionele ATS-systemen kosten 2-6 maanden aan implementatietijd." }
       ]
     },
 
@@ -1324,6 +1331,12 @@
         "Flexibele workflows die meebewegen met je proces",
         "Eén systeem voor interne teams én externe partners",
         "Inzicht dat vanzelf ontstaat, geen rapporten bouwen"
+      ],
+      "faq": [
+        { "question": "Hoe vergelijk je ATS-systemen objectief?", "answer": "Focus niet op feature-lijsten maar op adoptie, workflow-flexibiliteit, TCO over 3 jaar en of het systeem daadwerkelijk betere hiring-beslissingen ondersteunt." },
+        { "question": "Welke criteria zijn het belangrijkst bij een ATS-vergelijking?", "answer": "De vier must-haves: kandidaat-ranking kwaliteit, workflow flexibiliteit, team-adoptie en real-time inzicht. Features zijn pas relevant als deze basis klopt." },
+        { "question": "Waarom focussen de meeste ATS-vergelijkingen op de verkeerde dingen?", "answer": "Omdat vergelijkingssites vaak betaald worden door vendors. Ze vergelijken features in plaats van uitkomsten — terwijl het gaat om betere hires, niet meer functies." },
+        { "question": "Hoeveel ATS-systemen moet ik vergelijken?", "answer": "Start met een longlist van 5-8 systemen, evalueer op must-haves en houd 2-3 over voor een demo. Meer vergelijken leidt tot beslissingsmoeheid." }
       ]
     },
 
@@ -1351,6 +1364,12 @@
         "Workflows die je aanpast, niet andersom",
         "Intelligente ranking die consistentie brengt",
         "Transparante pricing zonder per-seat kosten"
+      ],
+      "faq": [
+        { "question": "Wat is de beste ATS software voor het MKB?", "answer": "De beste ATS voor MKB combineert professionele features met een toegankelijke prijs en snelle implementatie. OneRooted biedt enterprise-grade features vanaf €99/maand." },
+        { "question": "Hoe bepaal je of een ATS bij je organisatie past?", "answer": "Kijk naar je wervingsvolume, werkwijze en groeiverwachting. Een ATS moet meebewegen met je team, niet andersom. Vraag om adoptie-cijfers bij vergelijkbare klanten." },
+        { "question": "Wat maakt OneRooted anders dan andere ATS-systemen?", "answer": "OneRooted is een Hiring OS dat kandidaten intelligent rankt, workflows automatiseert en één gedeelde waarheid creëert voor het hele team — inclusief externe partners." },
+        { "question": "Hoe vaak veranderen de 'beste' ATS-rankings?", "answer": "De markt verschuift snel. Legacy-systemen verliezen terrein aan moderne platforms. Evalueer op basis van huidige innovatie-snelheid, niet op naam of marktaandeel." }
       ]
     },
 
@@ -1393,6 +1412,12 @@
         "Gebouwd voor teams van 5 tot 500",
         "Intelligente kandidaat-ranking in plaats van alleen tracking",
         "Real-time inzicht in je hele hiring funnel"
+      ],
+      "faq": [
+        { "question": "Waarom stappen teams over van Bullhorn?", "answer": "Veelgenoemde redenen: complexe interface, hoge per-user kosten, afhankelijkheid van consultants voor customization en trage support via tickets." },
+        { "question": "Hoe lang duurt de migratie van Bullhorn naar OneRooted?", "answer": "Gemiddeld 5-7 werkdagen. Data-export, import, workflow-configuratie en team-onboarding worden door ons begeleid." },
+        { "question": "Verlies ik data bij overstappen van Bullhorn?", "answer": "Nee. We bieden volledige data-migratie inclusief kandidaten, vacatures en plaatsingshistorie. Een parallelle run is ook mogelijk." },
+        { "question": "Is OneRooted geschikt voor recruitment bureaus?", "answer": "Ja, OneRooted is gebouwd voor bureaus met multi-client beheer, klant-portalen en cross-client kandidaat-matching." }
       ]
     },
 
@@ -1435,6 +1460,11 @@
         "Partner portal als first-class feature",
         "Transparante pricing zonder verrassingen",
         "Onboarding in dagen, niet maanden"
+      ],
+      "faq": [
+        { "question": "Wat zijn de belangrijkste beperkingen van Recruitee?", "answer": "Recruitee (nu Tellent) biedt basale ranking, beperkte workflow-automatisering en oppervlakkige rapportages. Bij groei lopen teams tegen plafonds aan." },
+        { "question": "Kan ik van Recruitee naar OneRooted overstappen?", "answer": "Ja, de migratie duurt gemiddeld 5 dagen. Kandidaatdata, vacatures en historie worden overgezet met behoud van alle relaties." },
+        { "question": "Wat kost OneRooted vergeleken met Recruitee?", "answer": "OneRooted biedt transparante flat-fee pricing zonder per-seat kosten. Vaak voordeliger bij groeiende teams door onbeperkte gebruikers." }
       ]
     },
 
@@ -1466,6 +1496,11 @@
         "Ingebouwde partner-samenwerking",
         "Real-time inzicht zonder rapport-bouwwerk",
         "Maandelijks opzegbaar, geen lock-in"
+      ],
+      "faq": [
+        { "question": "Welke vragen moet ik stellen tijdens een ATS-demo?", "answer": "Vraag naar implementatieduur, total cost of ownership over 3 jaar, zelf-configureerbare workflows, partner-samenwerking en recent gereleasete features." },
+        { "question": "Hoe weet ik of een ATS écht wordt gebruikt door teams?", "answer": "Vraag de vendor om adoptie-cijfers van bestaande klanten. Een hoge adoptie betekent dat het systeem intuïtief genoeg is voor dagelijks gebruik." },
+        { "question": "Is een gratis ATS checklist betrouwbaar?", "answer": "Alleen als deze niet door een vendor is gesponsord. Onze checklist focust op objectieve criteria zonder vendor-bias." }
       ]
     },
 
@@ -1497,6 +1532,12 @@
         "Zelf configureerbaar, geen consultancy nodig",
         "Maandelijks opzegbaar, geen lock-in",
         "Full support inbegrepen, geen premium tiers"
+      ],
+      "faq": [
+        { "question": "Wat kost een ATS gemiddeld per jaar?", "answer": "Afhankelijk van het model: per-seat €100-300/gebruiker/maand, per-vacature €50-150/vacature/maand, flat-fee €99-999/maand. Tel implementatie, training en support erbij op voor de echte TCO." },
+        { "question": "Welke verborgen kosten zitten er bij ATS-software?", "answer": "Veelvoorkomend: implementatiekosten (50-200% van licentie), training, customization per aanpassing, integratie-development en premium support-tiers." },
+        { "question": "Wat is de goedkoopste ATS?", "answer": "Goedkoop is niet altijd voordelig. Reken TCO over 3 jaar inclusief alle kosten. OneRooted biedt flat-fee pricing vanaf €99/maand zonder verborgen kosten." },
+        { "question": "Zijn er ATS-systemen zonder per-seat kosten?", "answer": "Ja, OneRooted hanteert flat-fee pricing met onbeperkte gebruikers en kandidaten. Geen verrassingen bij groei." }
       ]
     },
 
@@ -1838,6 +1879,12 @@
         "Simpele integraties zonder IT-projecten",
         "Transparante pricing die succes niet afstraft"
       ],
+      "faq": [
+        { "question": "Wat is het verschil tussen recruitment software en een ATS?", "answer": "Een ATS is gericht op kandidaat-tracking. Recruitment software is een bredere categorie die ook workflow-automatisering, ranking en analytics omvat. OneRooted combineert alles in één Hiring OS." },
+        { "question": "Welke recruitment software is het beste voor Nederlandse bedrijven?", "answer": "Kijk naar Nederlandse support, AVG-compliance, integraties met lokale tools (AFAS, Indeed NL) en of het systeem past bij je wervingsvolume." },
+        { "question": "Kan recruitment software hiring-beslissingen verbeteren?", "answer": "Ja, als het systeem gestructureerde evaluatie en ranking biedt. OneRooted scoort kandidaten op dezelfde criteria, waardoor betere en consistentere beslissingen ontstaan." },
+        { "question": "Hoe snel kan ik starten met recruitment software?", "answer": "Met OneRooted ben je live binnen 2 weken. Training duurt uren, niet maanden." }
+      ],
       "uniqueAngle": "Stop met je aan te passen aan je tools. Begin met tools die zich aanpassen aan jou.",
       "featuresHeadline": "Gebouwd voor hoe je daadwerkelijk werft",
       "features": [
@@ -1949,6 +1996,11 @@
         { "icon": "pipeline", "title": "Klant Portalen", "description": "Geef klanten real-time inzicht in hun processen." },
         { "icon": "analytics", "title": "Commissie Tracking", "description": "Automatisch bijhouden van fees en plaatsingen." },
         { "icon": "ranking", "title": "Cross-Client Matching", "description": "Eén kandidaat, meerdere kansen." }
+      ],
+      "faq": [
+        { "question": "Welk ATS is het beste voor recruitment bureaus?", "answer": "Een goed bureau-ATS biedt multi-client beheer, klant-portalen, commissie-tracking en cross-client matching. OneRooted is specifiek hiervoor ontworpen." },
+        { "question": "Kunnen klanten meekijken in het ATS?", "answer": "Ja, OneRooted biedt klant-portalen waarmee opdrachtgevers real-time inzicht hebben in hun processen zonder aparte licentiekosten." },
+        { "question": "Hoe werkt commissie-tracking in OneRooted?", "answer": "Plaatsingen worden automatisch bijgehouden inclusief fee-afspraken per klant. Rapportages tonen omzet, plaatsingen en conversie per klant." }
       ]
     },
 
@@ -1983,6 +2035,11 @@
         { "icon": "security", "title": "Compliance Tracking", "description": "Automatische audit trail voor elke beslissing." },
         { "icon": "analytics", "title": "Process Intelligence", "description": "Zie waar je proces stagneert." },
         { "icon": "pipeline", "title": "Partner Management", "description": "Bureaus werken in hetzelfde systeem." }
+      ],
+      "faq": [
+        { "question": "Wat is het verschil tussen een ATS voor bureaus en inhouse?", "answer": "Bureau-ATS'en focussen op multi-client beheer en klant-transparantie. Inhouse-ATS'en focussen op hiring manager collaboration, compliance en interne processen." },
+        { "question": "Hoe betrek ik hiring managers in het ATS?", "answer": "OneRooted biedt een hiring manager portal voor structured feedback. Geen training nodig — intuitief genoeg voor sporadisch gebruik." },
+        { "question": "Is OneRooted geschikt voor compliance-intensieve sectoren?", "answer": "Ja, met automatische audit trails, bewaartermijnen en complete documentatie van elke beslissing." }
       ]
     },
 
@@ -2017,6 +2074,11 @@
         { "icon": "pipeline", "title": "Visuele Pipeline", "description": "Overzicht dat past bij beperkte tijd." },
         { "icon": "automation", "title": "Basis Automatisering", "description": "Minder admin, meer gesprekken." },
         { "icon": "analytics", "title": "Simpele Rapportages", "description": "Inzicht zonder complexiteit." }
+      ],
+      "faq": [
+        { "question": "Welke recruitment software is geschikt voor het MKB?", "answer": "MKB-bedrijven hebben software nodig die betaalbaar, intuïtief en snel implementeerbaar is. OneRooted biedt professionele features vanaf €99/maand." },
+        { "question": "Heb ik als MKB een ATS nodig?", "answer": "Vanaf 5-10 hires per jaar loont een ATS. Het bespaart admin-tijd, voorkomt gemiste kandidaten en professionaliseert je hiring." },
+        { "question": "Kan ik starten zonder IT-afdeling?", "answer": "Ja, OneRooted is volledig zelf-configureerbaar. Geen IT-kennis of consultants nodig voor implementatie." }
       ]
     },
 
@@ -2086,6 +2148,11 @@
         "Complete audit trail voor compliance",
         "Data opgeslagen in EU-datacenters",
         "Verwerkersovereenkomst standaard beschikbaar"
+      ],
+      "faq": [
+        { "question": "Is mijn ATS AVG-compliant?", "answer": "Controleer: automatische bewaartermijnen, consent management, data export mogelijkheden, EU-dataopslag en verwerkersovereenkomst. OneRooted voldoet aan alle eisen." },
+        { "question": "Hoe lang mag ik kandidaatdata bewaren?", "answer": "Standaard 4 weken na afwijzing. Met expliciete toestemming tot maximaal 1 jaar. Je ATS moet dit automatisch afdwingen." },
+        { "question": "Wat als een kandidaat zijn data wil laten verwijderen?", "answer": "Je bent wettelijk verplicht dit binnen 30 dagen te doen. OneRooted biedt one-click verwijdering met complete audit trail." }
       ]
     },
 
@@ -2125,6 +2192,11 @@
         "Enterprise security zonder enterprise-complexiteit",
         "Native multi-client ondersteuning voor bureaus",
         "Nederlandse support en interface"
+      ],
+      "faq": [
+        { "question": "Welke ATS-criteria zijn het belangrijkst voor het MKB?", "answer": "Prijs-kwaliteit, gebruiksgemak, snelle implementatie en Nederlandse support. Enterprise-features zoals SSO zijn voor MKB minder relevant." },
+        { "question": "Hoe maak ik een objectieve ATS-scorecard?", "answer": "Definieer 6-8 criteria, geef elk een gewicht (1-5), score elke vendor direct na de demo en vergelijk de totaalscore." },
+        { "question": "Moet ik mijn ATS-criteria per segment aanpassen?", "answer": "Ja, MKB, enterprise en bureaus hebben fundamenteel andere prioriteiten. Gebruik segmentspecifieke wegingen." }
       ]
     },
 
@@ -2159,6 +2231,11 @@
         "Toegespitst op jouw situatie",
         "Eerlijk over of we passen",
         "Direct toegang tot trial na de demo"
+      ],
+      "faq": [
+        { "question": "Hoe bereid ik me voor op een ATS-demo?", "answer": "Maak een lijst van must-haves, bereid scenario's voor uit je dagelijkse praktijk en zorg dat alle stakeholders (recruiter, hiring manager, HR) aanwezig zijn." },
+        { "question": "Hoeveel ATS-demo's moet ik plannen?", "answer": "Optimaal 2-3 demo's van je shortlist. Meer leidt tot beslissingsmoeheid, minder geeft onvoldoende vergelijkingsmateriaal." },
+        { "question": "Hoe lang duurt een OneRooted demo?", "answer": "30 minuten, toegespitst op jouw situatie. Geen standaard sales-verhaal maar een eerlijk gesprek over fit." }
       ]
     },
 
@@ -2193,6 +2270,11 @@
         "Dedicated implementation manager",
         "Data migratie ondersteuning inclusief",
         "Training voor alle gebruikersniveaus"
+      ],
+      "faq": [
+        { "question": "Hoe lang duurt een ATS-implementatie?", "answer": "Bij OneRooted 2 weken. Traditionele enterprise-ATS'en kosten 2-6 maanden. Het verschil zit in complexiteit en afhankelijkheid van consultants." },
+        { "question": "Wat zijn de grootste risico's bij ATS-implementatie?", "answer": "Scope creep, lage adoptie, slechte datakwaliteit en timeline-uitloop. Mitigeer door scope vooraf te definiëren en eindgebruikers vroeg te betrekken." },
+        { "question": "Moet ik een projectmanager aanstellen voor de implementatie?", "answer": "Bij complexe migraties wel. OneRooted levert een dedicated implementation manager die het proces begeleidt." }
       ]
     },
 
@@ -2227,6 +2309,11 @@
         "Import templates voor veelgebruikte systemen",
         "Parallelle run mogelijk tijdens transitie",
         "Geen dataverlies garantie"
+      ],
+      "faq": [
+        { "question": "Verlies ik data bij het overstappen van ATS?", "answer": "Niet als je migratie goed plant. OneRooted biedt import-templates voor veelgebruikte systemen en dedicated migratie-ondersteuning." },
+        { "question": "Hoe lang duurt een ATS-migratie?", "answer": "Gemiddeld 5-10 werkdagen afhankelijk van datavolume. Een parallelle run is mogelijk zodat je team niet zonder systeem zit." },
+        { "question": "Welke data moet ik meenemen naar mijn nieuwe ATS?", "answer": "Must-haves: kandidaatprofielen en vacature-historie. Nice-to-haves: feedback, notes en email-historie. Rapportage-data kun je vaak beter opnieuw opbouwen." }
       ]
     },
 
@@ -2260,6 +2347,11 @@
         "Geen per-seat of per-vacature kosten",
         "Implementatie inclusief",
         "Geen verborgen kosten, geen verrassingen"
+      ],
+      "faq": [
+        { "question": "Welk ATS-prijsmodel is het voordeligst?", "answer": "Flat-fee pricing is het meest voorspelbaar en voordeligst bij groei. Per-seat en per-vacature modellen worden snel duur bij schaalvergroting." },
+        { "question": "Wat kost ATS-implementatie?", "answer": "Vaak 50-200% van de jaarlijkse licentiekosten bij traditionele systemen. Bij OneRooted is implementatie inbegrepen." },
+        { "question": "Zijn er ATS-systemen zonder implementatiekosten?", "answer": "Ja, OneRooted rekent geen setup fees. Implementatie, training en migratie zijn inbegrepen in het abonnement." }
       ]
     },
 
@@ -2292,6 +2384,11 @@
         "8+ uur admin besparing per vacature",
         "Aantoonbaar lagere cost per hire",
         "ROI calculator beschikbaar in demo"
+      ],
+      "faq": [
+        { "question": "Hoe bereken ik de ROI van een ATS?", "answer": "Tel de besparingen op admin-uren, snellere time-to-hire en lager verloop. Trek de ATS-kosten ervan af. OneRooted klanten zien gemiddeld 40% snellere screening." },
+        { "question": "Wat is een goede terugverdientijd voor ATS-software?", "answer": "6-12 maanden is realistisch. Bij OneRooted zien veel klanten breakeven binnen 3-6 maanden door directe admin-besparing." },
+        { "question": "Welke KPI's bepalen de ATS ROI?", "answer": "Admin-uren per vacature, time-to-hire, cost per hire en early turnover. Een verbetering op elk van deze KPI's draagt bij aan de ROI." }
       ]
     },
 
@@ -2326,6 +2423,11 @@
         "Referenties van vergelijkbare bedrijven beschikbaar",
         "Trial mogelijk voor hands-on evaluatie",
         "Geen druk, eerlijk over fit"
+      ],
+      "faq": [
+        { "question": "Hoe lang duurt een ATS-selectieproces?", "answer": "Gemiddeld 4-8 weken van requirements tot besluit. Met een gestructureerd proces (longlist, scorecard, demo's) kun je sneller tot een goede keuze komen." },
+        { "question": "Wie moet betrokken zijn bij de ATS-selectie?", "answer": "Recruiters (dagelijks gebruik), hiring managers (samenwerking), HR leadership (strategie/budget) en IT (security/integraties)." },
+        { "question": "Hoe voorkom ik een verkeerde ATS-keuze?", "answer": "Gebruik een gewogen scorecard, vraag referenties van vergelijkbare bedrijven en doe een hands-on trial voordat je tekent." }
       ]
     },
 
@@ -2360,6 +2462,11 @@
         "Bulk-acties voor efficiëntie",
         "Mobiele app voor onderweg",
         "Minder admin, meer gesprekken"
+      ],
+      "faq": [
+        { "question": "Welk ATS is het beste voor recruiters?", "answer": "Een ATS dat snel werkt, intelligente ranking biedt en admin minimaliseert. OneRooted is specifiek ontworpen voor de dagelijkse workflow van recruiters." },
+        { "question": "Hoeveel tijd bespaar ik met een goed ATS?", "answer": "Gemiddeld 8+ uur per vacature aan admin-werk. Bij hoge volumes loopt dit op tot tientallen uren per week." },
+        { "question": "Kan ik OneRooted mobiel gebruiken?", "answer": "Ja, OneRooted is mobiel-first ontworpen zodat je ook onderweg kandidaten kunt bekijken en acties kunt uitvoeren." }
       ]
     },
 
@@ -4935,6 +5042,10 @@
         "Hired candidates automatisch naar AFAS medewerkersdossier",
         "Foutreductie door automatisering",
         "IT-vriendelijke implementatie"
+      ],
+      "faq": [
+        { "question": "Kan OneRooted koppelen met AFAS?", "answer": "Ja, via een veilige API-verbinding. Hired candidates worden automatisch gesynchroniseerd naar je AFAS medewerkersdossier." },
+        { "question": "Moet ik AFAS vervangen?", "answer": "Nee, OneRooted werkt naast AFAS. AFAS blijft je HR-kern, OneRooted doet recruitment." }
       ]
     },
 
@@ -4958,6 +5069,10 @@
         "Sollicitaties direct in je pipeline",
         "Source tracking per kandidaat",
         "ROI-inzicht per job board"
+      ],
+      "faq": [
+        { "question": "Kan ik vanuit mijn ATS vacatures op Indeed plaatsen?", "answer": "Ja, OneRooted biedt one-click posting naar Indeed. Sollicitaties stromen automatisch terug in je pipeline." },
+        { "question": "Hoe meet ik de ROI van Indeed?", "answer": "OneRooted trackt per kandidaat de bron. Je ziet exact hoeveel sollicitaties, interviews en hires via Indeed binnenkomen." }
       ]
     },
 
@@ -4981,6 +5096,10 @@
         "Consistente vacatureteksten overal",
         "Centraal beheer van alle publicaties",
         "Source tracking per kanaal"
+      ],
+      "faq": [
+        { "question": "Wat is multiposting?", "answer": "Multiposting is het automatisch publiceren van één vacature naar meerdere jobboards en kanalen tegelijk, met centraal beheer." },
+        { "question": "Hoeveel tijd bespaar ik met multiposting?", "answer": "Gemiddeld 30-60 minuten per vacature. Bij meerdere vacatures per week loopt dit op tot uren." }
       ]
     },
 
@@ -5004,6 +5123,10 @@
         "Vacatures direct op LinkedIn",
         "Easy Apply in je pipeline",
         "Activiteit-tracking per kandidaat"
+      ],
+      "faq": [
+        { "question": "Kan ik LinkedIn Easy Apply koppelen aan mijn ATS?", "answer": "Ja, met OneRooted stromen LinkedIn Easy Apply sollicitaties automatisch je pipeline in met volledige profieldata." },
+        { "question": "Kan ik vanuit mijn ATS LinkedIn-profielen sourcen?", "answer": "Ja, gesourcete profielen worden direct geïmporteerd in je pipeline met alle relevante informatie." }
       ]
     },
 
@@ -5027,6 +5150,10 @@
         "Geen handmatig links kopiëren",
         "Calendar sync voor alle deelnemers",
         "Interview-context direct beschikbaar"
+      ],
+      "faq": [
+        { "question": "Worden Teams-links automatisch aangemaakt?", "answer": "Ja, zodra je een interview inplant in OneRooted wordt automatisch een Teams-meeting aangemaakt en gekoppeld." },
+        { "question": "Werkt dit ook met Google Meet?", "answer": "OneRooted ondersteunt meerdere video-platforms. Neem contact op voor de laatste integratie-opties." }
       ]
     },
 
@@ -5050,6 +5177,10 @@
         "Interviews direct in je Outlook-kalender",
         "Email-templates met merge-velden",
         "Beschikbaarheid-check in scheduling"
+      ],
+      "faq": [
+        { "question": "Worden emails automatisch gelogd in het ATS?", "answer": "Ja, alle kandidaat-correspondentie wordt automatisch gekoppeld aan het juiste profiel in OneRooted." },
+        { "question": "Kan ik email-templates gebruiken in Outlook?", "answer": "Ja, OneRooted templates met merge-velden zijn direct beschikbaar in je Outlook-omgeving." }
       ]
     }
   }
