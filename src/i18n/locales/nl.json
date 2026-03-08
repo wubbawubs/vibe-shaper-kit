@@ -1364,6 +1364,12 @@
         "Workflows die je aanpast, niet andersom",
         "Intelligente ranking die consistentie brengt",
         "Transparante pricing zonder per-seat kosten"
+      ],
+      "faq": [
+        { "question": "Wat is de beste ATS software voor het MKB?", "answer": "De beste ATS voor MKB combineert professionele features met een toegankelijke prijs en snelle implementatie. OneRooted biedt enterprise-grade features vanaf €99/maand." },
+        { "question": "Hoe bepaal je of een ATS bij je organisatie past?", "answer": "Kijk naar je wervingsvolume, werkwijze en groeiverwachting. Een ATS moet meebewegen met je team, niet andersom. Vraag om adoptie-cijfers bij vergelijkbare klanten." },
+        { "question": "Wat maakt OneRooted anders dan andere ATS-systemen?", "answer": "OneRooted is een Hiring OS dat kandidaten intelligent rankt, workflows automatiseert en één gedeelde waarheid creëert voor het hele team — inclusief externe partners." },
+        { "question": "Hoe vaak veranderen de 'beste' ATS-rankings?", "answer": "De markt verschuift snel. Legacy-systemen verliezen terrein aan moderne platforms. Evalueer op basis van huidige innovatie-snelheid, niet op naam of marktaandeel." }
       ]
     },
 
