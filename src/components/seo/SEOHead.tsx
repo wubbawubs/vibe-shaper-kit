@@ -12,6 +12,11 @@ interface AlternateLanguage {
   url: string;
 }
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 interface SEOHeadProps {
   title: string;
   description: string;
@@ -24,6 +29,7 @@ interface SEOHeadProps {
   // Structured data
   breadcrumbs?: BreadcrumbItem[];
   alternateLanguages?: AlternateLanguage[];
+  faqItems?: FAQItem[];
   
   // Software schema
   includeSoftwareSchema?: boolean;
@@ -104,6 +110,7 @@ export function SEOHead({
   noindex = false,
   breadcrumbs,
   alternateLanguages,
+  faqItems,
   includeSoftwareSchema = false,
   softwareCategory,
 }: SEOHeadProps) {
@@ -122,6 +129,21 @@ export function SEOHead({
   
   if (includeSoftwareSchema) {
     schemas.push(generateSoftwareSchema(softwareCategory));
+  }
+
+  if (faqItems && faqItems.length > 0) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqItems.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+        }
+      }))
+    });
   }
 
   return (

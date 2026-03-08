@@ -10,13 +10,23 @@ import { FAQSection } from "@/components/marketing/home/FAQSection";
 import { FinalCTASection } from "@/components/marketing/home/FinalCTASection";
 import { DemoCTAPopup } from "@/components/marketing/DemoCTAPopup";
 import { SEO } from "@/components/SEO";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
+  
+  // Extract FAQ items for structured data
+  const faqItems = t("faq.items", { returnObjects: true }) as Array<{
+    question: string;
+    answer: string;
+  }>;
+
   return (
     <MarketingLayout>
       <SEO 
         title="The Hiring OS for Teams That Take Hiring Seriously"
         description="Replace scattered recruitment tools with one intelligent system. OneRooted ranks candidates, streamlines workflows, and drives better hiring decisions."
+        faqItems={Array.isArray(faqItems) ? faqItems : []}
       />
       <HeroSection />
       <ProblemSection />
