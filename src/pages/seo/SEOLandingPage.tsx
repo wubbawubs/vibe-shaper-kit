@@ -294,6 +294,22 @@ export default function SEOLandingPage() {
         );
 
       case "T-FEAT": // Feature pages
+        // Custom content sections that exist in translations
+        const featBenefitsRaw = t(`${contentKey}.benefits`, { returnObjects: true });
+        const featBenefits = Array.isArray(featBenefitsRaw) ? featBenefitsRaw as string[] : [];
+        
+        const featHowItWorksRaw = t(`${contentKey}.howItWorks`, { returnObjects: true });
+        const featHowItWorks = Array.isArray(featHowItWorksRaw) ? featHowItWorksRaw as { step?: string; title: string; description: string }[] : [];
+        
+        const featTemplatesRaw = t(`${contentKey}.templates`, { returnObjects: true });
+        const featTemplates = Array.isArray(featTemplatesRaw) ? featTemplatesRaw as { type: string; trigger: string; description: string }[] : [];
+        
+        const featFeatureListRaw = t(`${contentKey}.featureList`, { returnObjects: true });
+        const featFeatureList = Array.isArray(featFeatureListRaw) ? featFeatureListRaw as { feature: string; description: string }[] : [];
+        
+        const featRulesRaw = t(`${contentKey}.rules`, { returnObjects: true });
+        const featRules = Array.isArray(featRulesRaw) ? featRulesRaw : [];
+        
         return (
           <>
             <SEOHero {...content.hero} />
@@ -301,6 +317,43 @@ export default function SEOLandingPage() {
               <SEOPainPoints
                 headline={t(`${contentKey}.problemHeadline`, "Uitdagingen zonder deze feature")}
                 painPoints={content.painPoints}
+              />
+            )}
+            {featBenefits.length > 0 && (
+              <SEOBenefitsList
+                headline={t(`${contentKey}.benefitsHeadline`, "Voordelen")}
+                benefits={featBenefits}
+              />
+            )}
+            {featHowItWorks.length > 0 && (
+              <SEOHowItWorks
+                headline={t(`${contentKey}.howItWorksHeadline`, "Hoe het werkt")}
+                steps={featHowItWorks}
+              />
+            )}
+            {featTemplates.length > 0 && (
+              <SEOHowItWorks
+                headline={t(`${contentKey}.templatesHeadline`, "Template types")}
+                steps={featTemplates.map(tmpl => ({
+                  title: tmpl.type,
+                  description: `${tmpl.trigger} — ${tmpl.description}`
+                }))}
+              />
+            )}
+            {featFeatureList.length > 0 && (
+              <SEOBenefitsList
+                headline={t(`${contentKey}.featuresHeadline`, "Functionaliteit")}
+                benefits={featFeatureList.map(f => `${f.feature}: ${f.description}`)}
+              />
+            )}
+            {featRules.length > 0 && (
+              <SEOComparisonGrid
+                headline={t(`${contentKey}.rulesHeadline`, "Regels")}
+                rows={featRules.map((r: { situation: string; default: string; withConsent: string }) => ({
+                  aspect: r.situation,
+                  Standaard: r.default,
+                  "Met toestemming": r.withConsent
+                }))}
               />
             )}
             {content.solutionPoints.length > 0 && (
