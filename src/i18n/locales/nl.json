@@ -1990,6 +1990,11 @@
         { "icon": "pipeline", "title": "Klant Portalen", "description": "Geef klanten real-time inzicht in hun processen." },
         { "icon": "analytics", "title": "Commissie Tracking", "description": "Automatisch bijhouden van fees en plaatsingen." },
         { "icon": "ranking", "title": "Cross-Client Matching", "description": "Eén kandidaat, meerdere kansen." }
+      ],
+      "faq": [
+        { "question": "Welk ATS is het beste voor recruitment bureaus?", "answer": "Een goed bureau-ATS biedt multi-client beheer, klant-portalen, commissie-tracking en cross-client matching. OneRooted is specifiek hiervoor ontworpen." },
+        { "question": "Kunnen klanten meekijken in het ATS?", "answer": "Ja, OneRooted biedt klant-portalen waarmee opdrachtgevers real-time inzicht hebben in hun processen zonder aparte licentiekosten." },
+        { "question": "Hoe werkt commissie-tracking in OneRooted?", "answer": "Plaatsingen worden automatisch bijgehouden inclusief fee-afspraken per klant. Rapportages tonen omzet, plaatsingen en conversie per klant." }
       ]
     },
 
