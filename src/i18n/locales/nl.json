@@ -1532,6 +1532,12 @@
         "Zelf configureerbaar, geen consultancy nodig",
         "Maandelijks opzegbaar, geen lock-in",
         "Full support inbegrepen, geen premium tiers"
+      ],
+      "faq": [
+        { "question": "Wat kost een ATS gemiddeld per jaar?", "answer": "Afhankelijk van het model: per-seat €100-300/gebruiker/maand, per-vacature €50-150/vacature/maand, flat-fee €99-999/maand. Tel implementatie, training en support erbij op voor de echte TCO." },
+        { "question": "Welke verborgen kosten zitten er bij ATS-software?", "answer": "Veelvoorkomend: implementatiekosten (50-200% van licentie), training, customization per aanpassing, integratie-development en premium support-tiers." },
+        { "question": "Wat is de goedkoopste ATS?", "answer": "Goedkoop is niet altijd voordelig. Reken TCO over 3 jaar inclusief alle kosten. OneRooted biedt flat-fee pricing vanaf €99/maand zonder verborgen kosten." },
+        { "question": "Zijn er ATS-systemen zonder per-seat kosten?", "answer": "Ja, OneRooted hanteert flat-fee pricing met onbeperkte gebruikers en kandidaten. Geen verrassingen bij groei." }
       ]
     },
 
