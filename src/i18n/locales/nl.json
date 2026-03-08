@@ -2225,6 +2225,11 @@
         "Toegespitst op jouw situatie",
         "Eerlijk over of we passen",
         "Direct toegang tot trial na de demo"
+      ],
+      "faq": [
+        { "question": "Hoe bereid ik me voor op een ATS-demo?", "answer": "Maak een lijst van must-haves, bereid scenario's voor uit je dagelijkse praktijk en zorg dat alle stakeholders (recruiter, hiring manager, HR) aanwezig zijn." },
+        { "question": "Hoeveel ATS-demo's moet ik plannen?", "answer": "Optimaal 2-3 demo's van je shortlist. Meer leidt tot beslissingsmoeheid, minder geeft onvoldoende vergelijkingsmateriaal." },
+        { "question": "Hoe lang duurt een OneRooted demo?", "answer": "30 minuten, toegespitst op jouw situatie. Geen standaard sales-verhaal maar een eerlijk gesprek over fit." }
       ]
     },
 
