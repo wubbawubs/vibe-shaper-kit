@@ -2029,6 +2029,11 @@
         { "icon": "security", "title": "Compliance Tracking", "description": "Automatische audit trail voor elke beslissing." },
         { "icon": "analytics", "title": "Process Intelligence", "description": "Zie waar je proces stagneert." },
         { "icon": "pipeline", "title": "Partner Management", "description": "Bureaus werken in hetzelfde systeem." }
+      ],
+      "faq": [
+        { "question": "Wat is het verschil tussen een ATS voor bureaus en inhouse?", "answer": "Bureau-ATS'en focussen op multi-client beheer en klant-transparantie. Inhouse-ATS'en focussen op hiring manager collaboration, compliance en interne processen." },
+        { "question": "Hoe betrek ik hiring managers in het ATS?", "answer": "OneRooted biedt een hiring manager portal voor structured feedback. Geen training nodig — intuitief genoeg voor sporadisch gebruik." },
+        { "question": "Is OneRooted geschikt voor compliance-intensieve sectoren?", "answer": "Ja, met automatische audit trails, bewaartermijnen en complete documentatie van elke beslissing." }
       ]
     },
 
