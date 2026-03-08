@@ -2142,6 +2142,11 @@
         "Complete audit trail voor compliance",
         "Data opgeslagen in EU-datacenters",
         "Verwerkersovereenkomst standaard beschikbaar"
+      ],
+      "faq": [
+        { "question": "Is mijn ATS AVG-compliant?", "answer": "Controleer: automatische bewaartermijnen, consent management, data export mogelijkheden, EU-dataopslag en verwerkersovereenkomst. OneRooted voldoet aan alle eisen." },
+        { "question": "Hoe lang mag ik kandidaatdata bewaren?", "answer": "Standaard 4 weken na afwijzing. Met expliciete toestemming tot maximaal 1 jaar. Je ATS moet dit automatisch afdwingen." },
+        { "question": "Wat als een kandidaat zijn data wil laten verwijderen?", "answer": "Je bent wettelijk verplicht dit binnen 30 dagen te doen. OneRooted biedt one-click verwijdering met complete audit trail." }
       ]
     },
 
