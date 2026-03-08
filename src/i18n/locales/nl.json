@@ -5042,6 +5042,10 @@
         "Hired candidates automatisch naar AFAS medewerkersdossier",
         "Foutreductie door automatisering",
         "IT-vriendelijke implementatie"
+      ],
+      "faq": [
+        { "question": "Kan OneRooted koppelen met AFAS?", "answer": "Ja, via een veilige API-verbinding. Hired candidates worden automatisch gesynchroniseerd naar je AFAS medewerkersdossier." },
+        { "question": "Moet ik AFAS vervangen?", "answer": "Nee, OneRooted werkt naast AFAS. AFAS blijft je HR-kern, OneRooted doet recruitment." }
       ]
     },
 
