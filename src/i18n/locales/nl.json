@@ -2456,6 +2456,11 @@
         "Bulk-acties voor efficiëntie",
         "Mobiele app voor onderweg",
         "Minder admin, meer gesprekken"
+      ],
+      "faq": [
+        { "question": "Welk ATS is het beste voor recruiters?", "answer": "Een ATS dat snel werkt, intelligente ranking biedt en admin minimaliseert. OneRooted is specifiek ontworpen voor de dagelijkse workflow van recruiters." },
+        { "question": "Hoeveel tijd bespaar ik met een goed ATS?", "answer": "Gemiddeld 8+ uur per vacature aan admin-werk. Bij hoge volumes loopt dit op tot tientallen uren per week." },
+        { "question": "Kan ik OneRooted mobiel gebruiken?", "answer": "Ja, OneRooted is mobiel-first ontworpen zodat je ook onderweg kandidaten kunt bekijken en acties kunt uitvoeren." }
       ]
     },
 
