@@ -2303,6 +2303,11 @@
         "Import templates voor veelgebruikte systemen",
         "Parallelle run mogelijk tijdens transitie",
         "Geen dataverlies garantie"
+      ],
+      "faq": [
+        { "question": "Verlies ik data bij het overstappen van ATS?", "answer": "Niet als je migratie goed plant. OneRooted biedt import-templates voor veelgebruikte systemen en dedicated migratie-ondersteuning." },
+        { "question": "Hoe lang duurt een ATS-migratie?", "answer": "Gemiddeld 5-10 werkdagen afhankelijk van datavolume. Een parallelle run is mogelijk zodat je team niet zonder systeem zit." },
+        { "question": "Welke data moet ik meenemen naar mijn nieuwe ATS?", "answer": "Must-haves: kandidaatprofielen en vacature-historie. Nice-to-haves: feedback, notes en email-historie. Rapportage-data kun je vaak beter opnieuw opbouwen." }
       ]
     },
 
