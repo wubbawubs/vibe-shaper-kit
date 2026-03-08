@@ -2186,6 +2186,11 @@
         "Enterprise security zonder enterprise-complexiteit",
         "Native multi-client ondersteuning voor bureaus",
         "Nederlandse support en interface"
+      ],
+      "faq": [
+        { "question": "Welke ATS-criteria zijn het belangrijkst voor het MKB?", "answer": "Prijs-kwaliteit, gebruiksgemak, snelle implementatie en Nederlandse support. Enterprise-features zoals SSO zijn voor MKB minder relevant." },
+        { "question": "Hoe maak ik een objectieve ATS-scorecard?", "answer": "Definieer 6-8 criteria, geef elk een gewicht (1-5), score elke vendor direct na de demo en vergelijk de totaalscore." },
+        { "question": "Moet ik mijn ATS-criteria per segment aanpassen?", "answer": "Ja, MKB, enterprise en bureaus hebben fundamenteel andere prioriteiten. Gebruik segmentspecifieke wegingen." }
       ]
     },
 
