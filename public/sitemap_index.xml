@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core marketing pages -->
+  <!-- Core marketing pages (all languages with hreflang) -->
   <sitemap>
     <loc>https://onerooted.nl/sitemap_pages.xml</loc>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </sitemap>
   
   <!-- SEO Landing Pages - English -->
   <sitemap>
     <loc>https://onerooted.nl/sitemap_seo_en.xml</loc>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </sitemap>
   
   <!-- SEO Landing Pages - Dutch -->
   <sitemap>
     <loc>https://onerooted.nl/sitemap_seo_nl.xml</loc>
-    <lastmod>2026-02-17</lastmod>
-  </sitemap>
-  
-  <!-- SEO Landing Pages - German -->
-  <sitemap>
-    <loc>https://onerooted.nl/sitemap_seo_de.xml</loc>
-    <lastmod>2026-02-11</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </sitemap>
 </sitemapindex>
