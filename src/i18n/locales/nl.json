@@ -1412,6 +1412,12 @@
         "Gebouwd voor teams van 5 tot 500",
         "Intelligente kandidaat-ranking in plaats van alleen tracking",
         "Real-time inzicht in je hele hiring funnel"
+      ],
+      "faq": [
+        { "question": "Waarom stappen teams over van Bullhorn?", "answer": "Veelgenoemde redenen: complexe interface, hoge per-user kosten, afhankelijkheid van consultants voor customization en trage support via tickets." },
+        { "question": "Hoe lang duurt de migratie van Bullhorn naar OneRooted?", "answer": "Gemiddeld 5-7 werkdagen. Data-export, import, workflow-configuratie en team-onboarding worden door ons begeleid." },
+        { "question": "Verlies ik data bij overstappen van Bullhorn?", "answer": "Nee. We bieden volledige data-migratie inclusief kandidaten, vacatures en plaatsingshistorie. Een parallelle run is ook mogelijk." },
+        { "question": "Is OneRooted geschikt voor recruitment bureaus?", "answer": "Ja, OneRooted is gebouwd voor bureaus met multi-client beheer, klant-portalen en cross-client kandidaat-matching." }
       ]
     },
 
