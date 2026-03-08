@@ -120,7 +120,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2">
             <Link to={getLocalizedHref("/")} className="flex items-center gap-3 mb-4 md:mb-6">
-              <img src={onerootedLogoWhite} alt="One Rooted" className="h-7 md:h-8 w-auto" />
+              <img src={onerootedLogoWhite} alt="One Rooted" loading="lazy" className="h-7 md:h-8 w-auto" />
               <span className="font-semibold text-base md:text-lg">One Rooted</span>
             </Link>
             <p className="text-background/60 max-w-sm leading-relaxed text-sm md:text-base">

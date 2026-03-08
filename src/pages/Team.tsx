@@ -137,6 +137,7 @@ const Team = () => {
                       <img 
                         src={member.photo} 
                         alt={member.name}
+                        loading="lazy"
                         className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover mb-4 sm:mb-6"
                       />
                     ) : (
