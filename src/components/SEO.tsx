@@ -95,13 +95,32 @@ export function SEO({
     : defaultMeta.title;
 
   const getJsonLdScripts = () => {
-    if (jsonLd === "organization") {
-      return JSON.stringify(organizationSchema);
+    const schemas: object[] = [];
+    
+    if (jsonLd === "organization" || jsonLd === "both") {
+      schemas.push(organizationSchema);
     }
-    if (jsonLd === "product") {
-      return JSON.stringify(productSchema);
+    if (jsonLd === "product" || jsonLd === "both") {
+      schemas.push(productSchema);
     }
-    return JSON.stringify([organizationSchema, productSchema]);
+    
+    // FAQ schema for rich snippets
+    if (faqItems && faqItems.length > 0) {
+      schemas.push({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqItems.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer
+          }
+        }))
+      });
+    }
+    
+    return JSON.stringify(schemas.length === 1 ? schemas[0] : schemas);
   };
 
   // Generate hreflang alternates
