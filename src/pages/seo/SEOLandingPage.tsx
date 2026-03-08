@@ -193,14 +193,58 @@ export default function SEOLandingPage() {
         const criteria = t(`${contentKey}.criteria`, { returnObjects: true, defaultValue: [] }) as { title: string; description: string; mustHave: boolean }[];
         const showComparisonMatrix = seoSlug === "ats-vergelijken" || seoSlug === "beste-ats-software" || seoSlug === "best-ats-software" || seoSlug === "ats-comparison";
         
+        // Custom comparison grid data (ats-vs-hris, ats-vs-mailbox, etc.)
+        const comparisonGridRaw = t(`${contentKey}.comparison`, { returnObjects: true });
+        const comparisonGrid = Array.isArray(comparisonGridRaw) ? comparisonGridRaw : [];
+        
+        // Custom requirements (beste-ats-bureau, etc.)
+        const requirementsRaw = t(`${contentKey}.requirements`, { returnObjects: true });
+        const requirements = Array.isArray(requirementsRaw) ? requirementsRaw : [];
+        
+        // When-to-use scenarios (ats-vs-hris)
+        const whenToUseRaw = t(`${contentKey}.whenToUse`, { returnObjects: true });
+        const whenToUse = Array.isArray(whenToUseRaw) ? whenToUseRaw : [];
+        
+        // Cost table (ats-vs-spreadsheet)
+        const costsRaw = t(`${contentKey}.costs`, { returnObjects: true });
+        const costs = Array.isArray(costsRaw) ? costsRaw : [];
+        
         return (
           <>
             <SEOHero {...content.hero} />
             {showComparisonMatrix && <ATSComparisonMatrix />}
+            {content.painPoints.length > 0 && (
+              <SEOPainPoints
+                headline={t(`${contentKey}.problemHeadline`, t(`${contentKey}.comparisonHeadline`, "Het probleem"))}
+                painPoints={content.painPoints}
+              />
+            )}
+            {comparisonGrid.length > 0 && (
+              <SEOComparisonGrid
+                headline={t(`${contentKey}.comparisonHeadline`, "Vergelijking")}
+                rows={comparisonGrid}
+              />
+            )}
+            {costs.length > 0 && (
+              <SEOCostTable
+                headline={t(`${contentKey}.costHeadline`, "De verborgen kosten")}
+                rows={costs}
+              />
+            )}
             {criteria.length > 0 && !showComparisonMatrix && (
               <SEOBuyingCriteria
                 headline={t(`${contentKey}.criteriaHeadline`, "Waar moet je op letten?")}
                 criteria={criteria}
+              />
+            )}
+            {requirements.length > 0 && (
+              <SEOBuyingCriteria
+                headline={t(`${contentKey}.requirementsHeadline`, "Wat je nodig hebt")}
+                criteria={requirements.map((r: { feature: string; description: string; mustHave: boolean }) => ({
+                  title: r.feature,
+                  description: r.description,
+                  mustHave: r.mustHave
+                }))}
               />
             )}
             {content.solutionPoints.length > 0 && (
