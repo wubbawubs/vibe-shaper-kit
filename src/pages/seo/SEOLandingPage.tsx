@@ -604,6 +604,8 @@ export default function SEOLandingPage() {
         includeSoftwareSchema={pageData.schemaTypes.includes("SoftwareApplication")}
         softwareCategory={pageData.primaryKeyword}
         noindex={pageData.noindex}
+        faqItems={faqItems.length > 0 ? faqItems : undefined}
+      />
       />
       
       {renderContent()}
