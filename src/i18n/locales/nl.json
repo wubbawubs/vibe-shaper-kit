@@ -1496,6 +1496,11 @@
         "Ingebouwde partner-samenwerking",
         "Real-time inzicht zonder rapport-bouwwerk",
         "Maandelijks opzegbaar, geen lock-in"
+      ],
+      "faq": [
+        { "question": "Welke vragen moet ik stellen tijdens een ATS-demo?", "answer": "Vraag naar implementatieduur, total cost of ownership over 3 jaar, zelf-configureerbare workflows, partner-samenwerking en recent gereleasete features." },
+        { "question": "Hoe weet ik of een ATS écht wordt gebruikt door teams?", "answer": "Vraag de vendor om adoptie-cijfers van bestaande klanten. Een hoge adoptie betekent dat het systeem intuïtief genoeg is voor dagelijks gebruik." },
+        { "question": "Is een gratis ATS checklist betrouwbaar?", "answer": "Alleen als deze niet door een vendor is gesponsord. Onze checklist focust op objectieve criteria zonder vendor-bias." }
       ]
     },
 
