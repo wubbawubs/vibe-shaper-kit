@@ -2,6 +2,11 @@ import { Helmet } from "react-helmet-async";
 import { useParams, useLocation } from "react-router-dom";
 import { defaultLanguage, type Language, supportedLanguages } from "@/i18n/config";
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 interface SEOProps {
   title?: string;
   description?: string;
@@ -9,6 +14,7 @@ interface SEOProps {
   url?: string;
   type?: "website" | "article";
   jsonLd?: "organization" | "product" | "both";
+  faqItems?: FAQItem[];
 }
 
 const BASE_URL = "https://onerooted.nl";
