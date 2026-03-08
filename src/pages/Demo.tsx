@@ -31,7 +31,6 @@ const Demo = () => {
       <SEO 
         title={t('demoPage.seo.title')}
         description={t('demoPage.seo.description')}
-        url="https://onerooted.nl/demo"
       />
       {/* Hero */}
       <section className="py-16 md:py-24 relative overflow-hidden">

@@ -30,7 +30,6 @@ const Product = () => {
       <SEO 
         title={t("product.seo.title")}
         description={t("product.seo.description")}
-        url="https://onerooted.nl/product"
       />
       {/* Hero */}
       <section className="py-12 md:py-24 relative overflow-hidden">
