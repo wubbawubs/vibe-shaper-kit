@@ -5177,6 +5177,10 @@
         "Interviews direct in je Outlook-kalender",
         "Email-templates met merge-velden",
         "Beschikbaarheid-check in scheduling"
+      ],
+      "faq": [
+        { "question": "Worden emails automatisch gelogd in het ATS?", "answer": "Ja, alle kandidaat-correspondentie wordt automatisch gekoppeld aan het juiste profiel in OneRooted." },
+        { "question": "Kan ik email-templates gebruiken in Outlook?", "answer": "Ja, OneRooted templates met merge-velden zijn direct beschikbaar in je Outlook-omgeving." }
       ]
     }
   }
