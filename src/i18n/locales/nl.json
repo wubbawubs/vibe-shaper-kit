@@ -1460,6 +1460,11 @@
         "Partner portal als first-class feature",
         "Transparante pricing zonder verrassingen",
         "Onboarding in dagen, niet maanden"
+      ],
+      "faq": [
+        { "question": "Wat zijn de belangrijkste beperkingen van Recruitee?", "answer": "Recruitee (nu Tellent) biedt basale ranking, beperkte workflow-automatisering en oppervlakkige rapportages. Bij groei lopen teams tegen plafonds aan." },
+        { "question": "Kan ik van Recruitee naar OneRooted overstappen?", "answer": "Ja, de migratie duurt gemiddeld 5 dagen. Kandidaatdata, vacatures en historie worden overgezet met behoud van alle relaties." },
+        { "question": "Wat kost OneRooted vergeleken met Recruitee?", "answer": "OneRooted biedt transparante flat-fee pricing zonder per-seat kosten. Vaak voordeliger bij groeiende teams door onbeperkte gebruikers." }
       ]
     },
 
