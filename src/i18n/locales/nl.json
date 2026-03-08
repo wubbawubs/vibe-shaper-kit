@@ -5150,6 +5150,10 @@
         "Geen handmatig links kopiëren",
         "Calendar sync voor alle deelnemers",
         "Interview-context direct beschikbaar"
+      ],
+      "faq": [
+        { "question": "Worden Teams-links automatisch aangemaakt?", "answer": "Ja, zodra je een interview inplant in OneRooted wordt automatisch een Teams-meeting aangemaakt en gekoppeld." },
+        { "question": "Werkt dit ook met Google Meet?", "answer": "OneRooted ondersteunt meerdere video-platforms. Neem contact op voor de laatste integratie-opties." }
       ]
     },
 
