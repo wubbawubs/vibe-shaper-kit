@@ -24,6 +24,12 @@ import { SEOIndustryWorkflow } from "./sections/SEOIndustryWorkflow";
 import { SEORoleStakeholder } from "./sections/SEORoleStakeholder";
 import { SEOGlossaryDefinition } from "./sections/SEOGlossaryDefinition";
 
+// Content rendering sections
+import { SEOComparisonGrid } from "./sections/SEOComparisonGrid";
+import { SEOBenefitsList } from "./sections/SEOBenefitsList";
+import { SEOHowItWorks } from "./sections/SEOHowItWorks";
+import { SEOCostTable } from "./sections/SEOCostTable";
+
 const BASE_URL = "https://onerooted.nl";
 
 export default function SEOLandingPage() {
@@ -187,14 +193,58 @@ export default function SEOLandingPage() {
         const criteria = t(`${contentKey}.criteria`, { returnObjects: true, defaultValue: [] }) as { title: string; description: string; mustHave: boolean }[];
         const showComparisonMatrix = seoSlug === "ats-vergelijken" || seoSlug === "beste-ats-software" || seoSlug === "best-ats-software" || seoSlug === "ats-comparison";
         
+        // Custom comparison grid data (ats-vs-hris, ats-vs-mailbox, etc.)
+        const comparisonGridRaw = t(`${contentKey}.comparison`, { returnObjects: true });
+        const comparisonGrid = Array.isArray(comparisonGridRaw) ? comparisonGridRaw : [];
+        
+        // Custom requirements (beste-ats-bureau, etc.)
+        const requirementsRaw = t(`${contentKey}.requirements`, { returnObjects: true });
+        const requirements = Array.isArray(requirementsRaw) ? requirementsRaw : [];
+        
+        // When-to-use scenarios (ats-vs-hris)
+        const whenToUseRaw = t(`${contentKey}.whenToUse`, { returnObjects: true });
+        const whenToUse = Array.isArray(whenToUseRaw) ? whenToUseRaw : [];
+        
+        // Cost table (ats-vs-spreadsheet)
+        const costsRaw = t(`${contentKey}.costs`, { returnObjects: true });
+        const costs = Array.isArray(costsRaw) ? costsRaw : [];
+        
         return (
           <>
             <SEOHero {...content.hero} />
             {showComparisonMatrix && <ATSComparisonMatrix />}
+            {content.painPoints.length > 0 && (
+              <SEOPainPoints
+                headline={t(`${contentKey}.problemHeadline`, t(`${contentKey}.comparisonHeadline`, "Het probleem"))}
+                painPoints={content.painPoints}
+              />
+            )}
+            {comparisonGrid.length > 0 && (
+              <SEOComparisonGrid
+                headline={t(`${contentKey}.comparisonHeadline`, "Vergelijking")}
+                rows={comparisonGrid}
+              />
+            )}
+            {costs.length > 0 && (
+              <SEOCostTable
+                headline={t(`${contentKey}.costHeadline`, "De verborgen kosten")}
+                rows={costs}
+              />
+            )}
             {criteria.length > 0 && !showComparisonMatrix && (
               <SEOBuyingCriteria
                 headline={t(`${contentKey}.criteriaHeadline`, "Waar moet je op letten?")}
                 criteria={criteria}
+              />
+            )}
+            {requirements.length > 0 && (
+              <SEOBuyingCriteria
+                headline={t(`${contentKey}.requirementsHeadline`, "Wat je nodig hebt")}
+                criteria={requirements.map((r: { feature: string; description: string; mustHave: boolean }) => ({
+                  title: r.feature,
+                  description: r.description,
+                  mustHave: r.mustHave
+                }))}
               />
             )}
             {content.solutionPoints.length > 0 && (
@@ -244,6 +294,22 @@ export default function SEOLandingPage() {
         );
 
       case "T-FEAT": // Feature pages
+        // Custom content sections that exist in translations
+        const featBenefitsRaw = t(`${contentKey}.benefits`, { returnObjects: true });
+        const featBenefits = Array.isArray(featBenefitsRaw) ? featBenefitsRaw as string[] : [];
+        
+        const featHowItWorksRaw = t(`${contentKey}.howItWorks`, { returnObjects: true });
+        const featHowItWorks = Array.isArray(featHowItWorksRaw) ? featHowItWorksRaw as { step?: string; title: string; description: string }[] : [];
+        
+        const featTemplatesRaw = t(`${contentKey}.templates`, { returnObjects: true });
+        const featTemplates = Array.isArray(featTemplatesRaw) ? featTemplatesRaw as { type: string; trigger: string; description: string }[] : [];
+        
+        const featFeatureListRaw = t(`${contentKey}.featureList`, { returnObjects: true });
+        const featFeatureList = Array.isArray(featFeatureListRaw) ? featFeatureListRaw as { feature: string; description: string }[] : [];
+        
+        const featRulesRaw = t(`${contentKey}.rules`, { returnObjects: true });
+        const featRules = Array.isArray(featRulesRaw) ? featRulesRaw : [];
+        
         return (
           <>
             <SEOHero {...content.hero} />
@@ -251,6 +317,43 @@ export default function SEOLandingPage() {
               <SEOPainPoints
                 headline={t(`${contentKey}.problemHeadline`, "Uitdagingen zonder deze feature")}
                 painPoints={content.painPoints}
+              />
+            )}
+            {featBenefits.length > 0 && (
+              <SEOBenefitsList
+                headline={t(`${contentKey}.benefitsHeadline`, "Voordelen")}
+                benefits={featBenefits}
+              />
+            )}
+            {featHowItWorks.length > 0 && (
+              <SEOHowItWorks
+                headline={t(`${contentKey}.howItWorksHeadline`, "Hoe het werkt")}
+                steps={featHowItWorks}
+              />
+            )}
+            {featTemplates.length > 0 && (
+              <SEOHowItWorks
+                headline={t(`${contentKey}.templatesHeadline`, "Template types")}
+                steps={featTemplates.map(tmpl => ({
+                  title: tmpl.type,
+                  description: `${tmpl.trigger} — ${tmpl.description}`
+                }))}
+              />
+            )}
+            {featFeatureList.length > 0 && (
+              <SEOBenefitsList
+                headline={t(`${contentKey}.featuresHeadline`, "Functionaliteit")}
+                benefits={featFeatureList.map(f => `${f.feature}: ${f.description}`)}
+              />
+            )}
+            {featRules.length > 0 && (
+              <SEOComparisonGrid
+                headline={t(`${contentKey}.rulesHeadline`, "Regels")}
+                rows={featRules.map((r: { situation: string; default: string; withConsent: string }) => ({
+                  aspect: r.situation,
+                  Standaard: r.default,
+                  "Met toestemming": r.withConsent
+                }))}
               />
             )}
             {content.solutionPoints.length > 0 && (
