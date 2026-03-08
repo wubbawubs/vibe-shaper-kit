@@ -5123,6 +5123,10 @@
         "Vacatures direct op LinkedIn",
         "Easy Apply in je pipeline",
         "Activiteit-tracking per kandidaat"
+      ],
+      "faq": [
+        { "question": "Kan ik LinkedIn Easy Apply koppelen aan mijn ATS?", "answer": "Ja, met OneRooted stromen LinkedIn Easy Apply sollicitaties automatisch je pipeline in met volledige profieldata." },
+        { "question": "Kan ik vanuit mijn ATS LinkedIn-profielen sourcen?", "answer": "Ja, gesourcete profielen worden direct geïmporteerd in je pipeline met alle relevante informatie." }
       ]
     },
 
