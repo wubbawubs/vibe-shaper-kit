@@ -27,7 +27,7 @@ const Privacy = () => {
       <SEO 
         title={t('privacyPage.seo.title')}
         description={t('privacyPage.seo.description')}
-        url="https://onerooted.nl/privacy"
+        
       />
       <section className="py-20 md:py-28">
         <div className="container">

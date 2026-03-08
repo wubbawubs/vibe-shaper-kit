@@ -27,7 +27,7 @@ const Terms = () => {
       <SEO 
         title={t('termsPage.seo.title')}
         description={t('termsPage.seo.description')}
-        url="https://onerooted.nl/terms"
+        
       />
       <section className="py-20 md:py-28">
         <div className="container">

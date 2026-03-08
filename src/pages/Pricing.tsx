@@ -87,7 +87,7 @@ const Pricing = () => {
       <SEO 
         title={t('pricingPage.seo.title')}
         description={t('pricingPage.seo.description')}
-        url="https://onerooted.nl/pricing"
+        
       />
       {/* Hero */}
       <section className="py-16 md:py-24 relative overflow-hidden">

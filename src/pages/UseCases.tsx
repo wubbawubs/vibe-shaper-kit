@@ -48,7 +48,7 @@ const UseCases = () => {
       <SEO 
         title={t('useCasesPage.seo.title')}
         description={t('useCasesPage.seo.description')}
-        url="https://onerooted.nl/use-cases"
+        
       />
       {/* Hero */}
       <section className="py-16 md:py-24 relative overflow-hidden" aria-labelledby="usecases-hero-title">
