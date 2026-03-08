@@ -79,15 +79,39 @@ export default function SEOLandingPage() {
     { name: t(`${contentKey}.breadcrumb`, pageData.primaryKeyword), url: currentUrl },
   ];
 
-  // Get related pages for internal linking
-  const relatedPages = pageData.relatedSlugs.slice(0, 3).map(slug => {
+  // Get related pages for internal linking (parents + children + related for stronger topical authority)
+  const allLinkedSlugs = [
+    ...pageData.parentSlugs,
+    ...pageData.childSlugs,
+    ...pageData.relatedSlugs,
+  ].filter((slug, index, self) => self.indexOf(slug) === index); // dedupe
+  
+  const resolveContentKey = (slug: string) => {
     const related = getSEOPageBySlug(slug);
-    return related ? {
+    if (!related) return null;
+    switch (related.pageType) {
+      case "industry": return `seoPages.industries.${related.contentKey}`;
+      case "integration": return `seoPages.integrations.${related.contentKey}`;
+      case "role": return `seoPages.stakeholders.${related.contentKey}`;
+      case "glossary": return `seoPages.glossary.${related.contentKey}`;
+      default: return `seoPages.${related.contentKey}`;
+    }
+  };
+
+  const relatedPages = allLinkedSlugs.slice(0, 6).map(slug => {
+    const related = getSEOPageBySlug(slug);
+    if (!related) return null;
+    const relKey = resolveContentKey(slug);
+    return {
       slug,
-      title: t(`seoPages.${related.contentKey}.title`, related.primaryKeyword),
-      description: t(`seoPages.${related.contentKey}.shortDescription`, ""),
-    } : null;
+      title: t(`${relKey}.title`, t(`seoPages.${related.contentKey}.title`, related.primaryKeyword)),
+      description: t(`${relKey}.shortDescription`, t(`seoPages.${related.contentKey}.shortDescription`, "")),
+    };
   }).filter(Boolean) as { slug: string; title: string; description: string }[];
+
+  // Extract FAQ items for JSON-LD structured data
+  const faqItemsRaw = t(`${contentKey}.faq`, { returnObjects: true });
+  const faqItems = Array.isArray(faqItemsRaw) ? faqItemsRaw as { question: string; answer: string }[] : [];
 
   // Common content extraction
   const getCommonContent = () => ({
@@ -580,6 +604,7 @@ export default function SEOLandingPage() {
         includeSoftwareSchema={pageData.schemaTypes.includes("SoftwareApplication")}
         softwareCategory={pageData.primaryKeyword}
         noindex={pageData.noindex}
+        faqItems={faqItems.length > 0 ? faqItems : undefined}
       />
       
       {renderContent()}
