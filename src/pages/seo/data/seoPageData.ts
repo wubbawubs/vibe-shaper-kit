@@ -1,6 +1,6 @@
 // SEO Landing Pages Data Model - Based on research-driven programmatic SEO plan
 // Priority: P0 = immediate, P1 = NL market capture, P2 = long-tail
-// Updated: 2026-01-20 from OneRooted NL SEO Dominance Roadmap
+// Updated: 2026-03-08 - All lastmod dates refreshed
 
 export type PageType = 
   | "software_type" 
