@@ -1879,6 +1879,12 @@
         "Simpele integraties zonder IT-projecten",
         "Transparante pricing die succes niet afstraft"
       ],
+      "faq": [
+        { "question": "Wat is het verschil tussen recruitment software en een ATS?", "answer": "Een ATS is gericht op kandidaat-tracking. Recruitment software is een bredere categorie die ook workflow-automatisering, ranking en analytics omvat. OneRooted combineert alles in één Hiring OS." },
+        { "question": "Welke recruitment software is het beste voor Nederlandse bedrijven?", "answer": "Kijk naar Nederlandse support, AVG-compliance, integraties met lokale tools (AFAS, Indeed NL) en of het systeem past bij je wervingsvolume." },
+        { "question": "Kan recruitment software hiring-beslissingen verbeteren?", "answer": "Ja, als het systeem gestructureerde evaluatie en ranking biedt. OneRooted scoort kandidaten op dezelfde criteria, waardoor betere en consistentere beslissingen ontstaan." },
+        { "question": "Hoe snel kan ik starten met recruitment software?", "answer": "Met OneRooted ben je live binnen 2 weken. Training duurt uren, niet maanden." }
+      ],
       "uniqueAngle": "Stop met je aan te passen aan je tools. Begin met tools die zich aanpassen aan jou.",
       "featuresHeadline": "Gebouwd voor hoe je daadwerkelijk werft",
       "features": [
