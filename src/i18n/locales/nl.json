@@ -2341,6 +2341,11 @@
         "Geen per-seat of per-vacature kosten",
         "Implementatie inclusief",
         "Geen verborgen kosten, geen verrassingen"
+      ],
+      "faq": [
+        { "question": "Welk ATS-prijsmodel is het voordeligst?", "answer": "Flat-fee pricing is het meest voorspelbaar en voordeligst bij groei. Per-seat en per-vacature modellen worden snel duur bij schaalvergroting." },
+        { "question": "Wat kost ATS-implementatie?", "answer": "Vaak 50-200% van de jaarlijkse licentiekosten bij traditionele systemen. Bij OneRooted is implementatie inbegrepen." },
+        { "question": "Zijn er ATS-systemen zonder implementatiekosten?", "answer": "Ja, OneRooted rekent geen setup fees. Implementatie, training en migratie zijn inbegrepen in het abonnement." }
       ]
     },
 
