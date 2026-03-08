@@ -131,6 +131,21 @@ export function SEOHead({
     schemas.push(generateSoftwareSchema(softwareCategory));
   }
 
+  if (faqItems && faqItems.length > 0) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqItems.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+        }
+      }))
+    });
+  }
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
