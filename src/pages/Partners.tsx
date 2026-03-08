@@ -44,7 +44,7 @@ const Partners = () => {
       <SEO 
         title={t('partnersPage.seo.title')}
         description={t('partnersPage.seo.description')}
-        url="https://onerooted.nl/partners"
+        
       />
       
       {/* Hero */}

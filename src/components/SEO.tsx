@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import { useParams, useLocation } from "react-router-dom";
+import { defaultLanguage, type Language, supportedLanguages } from "@/i18n/config";
 
 interface SEOProps {
   title?: string;
@@ -9,19 +11,21 @@ interface SEOProps {
   jsonLd?: "organization" | "product" | "both";
 }
 
+const BASE_URL = "https://onerooted.nl";
+
 const defaultMeta = {
   title: "One Rooted | The Hiring OS for Teams That Take Hiring Seriously",
   description: "Replace scattered tools with one intelligent system that ranks candidates, streamlines workflows, and drives better hiring decisions.",
   image: "/og-image.png",
-  url: "https://onerooted.nl",
+  url: BASE_URL,
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "One Rooted",
-  "url": "https://onerooted.nl",
-  "logo": "https://onerooted.nl/og-image.png",
+  "url": BASE_URL,
+  "logo": `${BASE_URL}/og-image.png`,
   "description": "The Hiring OS for Teams That Take Hiring Seriously. Replace scattered tools with one intelligent system.",
   "sameAs": [
     "https://linkedin.com/company/110167349"
@@ -29,7 +33,7 @@ const organizationSchema = {
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "sales",
-    "url": "https://onerooted.nl/demo"
+    "url": `${BASE_URL}/demo`
   }
 };
 
@@ -42,32 +46,43 @@ const productSchema = {
   "description": "Intelligent hiring operating system that ranks candidates, streamlines workflows, and drives better hiring decisions.",
   "offers": {
     "@type": "Offer",
-    "price": "0",
+    "price": "299",
     "priceCurrency": "EUR",
-    "description": "Free trial available"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "ratingCount": "150"
+    "priceValidUntil": new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+    "availability": "https://schema.org/InStock"
   },
   "featureList": [
-    "Candidate Ranking System",
+    "Intelligent Candidate Ranking",
+    "Visual Hiring Pipeline",
     "Automated Workflow Management",
     "Team Collaboration Tools",
     "Analytics & Reporting",
-    "Integration Ecosystem"
-  ]
+    "Partner Portal"
+  ],
+  "url": BASE_URL
 };
 
 export function SEO({ 
   title, 
   description = defaultMeta.description, 
   image = defaultMeta.image,
-  url = defaultMeta.url,
+  url,
   type = "website",
   jsonLd = "both"
 }: SEOProps) {
+  const { lang } = useParams<{ lang: string }>();
+  const location = useLocation();
+  const currentLang = (lang && supportedLanguages.includes(lang as Language)) ? lang : defaultLanguage;
+  
+  // Build canonical URL from current path, stripping language prefix for default lang
+  const pathWithoutLang = location.pathname.replace(/^\/(en|nl|de)/, '') || '/';
+  const canonicalUrl = currentLang === defaultLanguage
+    ? `${BASE_URL}${pathWithoutLang}`
+    : `${BASE_URL}/${currentLang}${pathWithoutLang}`;
+  
+  const fullUrl = url || canonicalUrl;
+  const fullImage = image.startsWith("http") ? image : `${BASE_URL}${image}`;
+  
   const fullTitle = title 
     ? `${title} | One Rooted` 
     : defaultMeta.title;
@@ -82,6 +97,20 @@ export function SEO({
     return JSON.stringify([organizationSchema, productSchema]);
   };
 
+  // Generate hreflang alternates
+  const generateAlternates = () => {
+    const basePath = pathWithoutLang === '/' ? '' : pathWithoutLang;
+    return supportedLanguages.map(supportedLang => ({
+      lang: supportedLang,
+      url: supportedLang === defaultLanguage
+        ? `${BASE_URL}${basePath || '/'}`
+        : `${BASE_URL}/${supportedLang}${basePath}`
+    }));
+  };
+
+  const alternates = generateAlternates();
+  const xDefaultUrl = `${BASE_URL}${pathWithoutLang === '/' ? '/' : pathWithoutLang}`;
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
@@ -89,23 +118,33 @@ export function SEO({
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
 
+      {/* Language */}
+      <html lang={currentLang} />
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={fullUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={fullImage} />
+      <meta property="og:locale" content={currentLang === "nl" ? "nl_NL" : currentLang === "de" ? "de_DE" : "en_US"} />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={url} />
+      <meta property="twitter:url" content={fullUrl} />
       <meta property="twitter:title" content={fullTitle} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={image} />
+      <meta property="twitter:image" content={fullImage} />
 
       {/* Additional SEO */}
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={fullUrl} />
+
+      {/* Hreflang Alternates */}
+      {alternates.map(alt => (
+        <link key={alt.lang} rel="alternate" hrefLang={alt.lang} href={alt.url} />
+      ))}
+      <link rel="alternate" hrefLang="x-default" href={xDefaultUrl} />
 
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json">
