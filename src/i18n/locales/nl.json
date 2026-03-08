@@ -5096,6 +5096,10 @@
         "Consistente vacatureteksten overal",
         "Centraal beheer van alle publicaties",
         "Source tracking per kanaal"
+      ],
+      "faq": [
+        { "question": "Wat is multiposting?", "answer": "Multiposting is het automatisch publiceren van één vacature naar meerdere jobboards en kanalen tegelijk, met centraal beheer." },
+        { "question": "Hoeveel tijd bespaar ik met multiposting?", "answer": "Gemiddeld 30-60 minuten per vacature. Bij meerdere vacatures per week loopt dit op tot uren." }
       ]
     },
 
