@@ -1297,6 +1297,13 @@
         { "icon": "collaboration", "title": "Team Samenwerking", "description": "Recruiters, hiring managers en partners in één gedeeld systeem." },
         { "icon": "analytics", "title": "Hiring Intelligence", "description": "Real-time metrics die zeggen waar je moet ingrijpen." },
         { "icon": "security", "title": "GDPR Compliant", "description": "Enterprise-grade beveiliging en volledige AVG-compliance." }
+      ],
+      "faq": [
+        { "question": "Wat is het verschil tussen een ATS en een Hiring OS?", "answer": "Een ATS (Applicant Tracking System) slaat kandidaten op en volgt statussen. Een Hiring OS zoals OneRooted gaat verder: het rankt kandidaten intelligent, automatiseert workflows en geeft real-time inzicht in waar je proces vastloopt." },
+        { "question": "Hoeveel kost ATS software gemiddeld?", "answer": "ATS-prijzen variëren van €50/maand voor basis-tools tot €1.000+/maand voor enterprise-systemen. OneRooted begint vanaf €99/maand met onbeperkte gebruikers en kandidaten." },
+        { "question": "Kan ik mijn huidige ATS data migreren?", "answer": "Ja, OneRooted biedt dedicated migratie-ondersteuning. Kandidaatdata, vacature-historie en documenten worden veilig overgezet zonder dataverlies." },
+        { "question": "Is ATS software AVG-compliant?", "answer": "Niet alle ATS-systemen zijn automatisch AVG-compliant. OneRooted biedt ingebouwde bewaartermijnen, consent management en EU-dataopslag." },
+        { "question": "Hoe lang duurt de implementatie van ATS software?", "answer": "Bij OneRooted ben je live binnen 2 weken. Veel traditionele ATS-systemen kosten 2-6 maanden aan implementatietijd." }
       ]
     },
 
