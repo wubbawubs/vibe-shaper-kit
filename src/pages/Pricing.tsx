@@ -87,7 +87,7 @@ const Pricing = () => {
       <SEO 
         title={t('pricingPage.seo.title')}
         description={t('pricingPage.seo.description')}
-        
+        faqItems={Array.isArray(faqs) ? faqs : []}
       />
       {/* Hero */}
       <section className="py-16 md:py-24 relative overflow-hidden">
