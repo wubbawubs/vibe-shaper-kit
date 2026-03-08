@@ -2264,6 +2264,11 @@
         "Dedicated implementation manager",
         "Data migratie ondersteuning inclusief",
         "Training voor alle gebruikersniveaus"
+      ],
+      "faq": [
+        { "question": "Hoe lang duurt een ATS-implementatie?", "answer": "Bij OneRooted 2 weken. Traditionele enterprise-ATS'en kosten 2-6 maanden. Het verschil zit in complexiteit en afhankelijkheid van consultants." },
+        { "question": "Wat zijn de grootste risico's bij ATS-implementatie?", "answer": "Scope creep, lage adoptie, slechte datakwaliteit en timeline-uitloop. Mitigeer door scope vooraf te definiëren en eindgebruikers vroeg te betrekken." },
+        { "question": "Moet ik een projectmanager aanstellen voor de implementatie?", "answer": "Bij complexe migraties wel. OneRooted levert een dedicated implementation manager die het proces begeleidt." }
       ]
     },
 
