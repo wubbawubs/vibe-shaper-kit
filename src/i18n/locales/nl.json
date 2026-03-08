@@ -2417,6 +2417,11 @@
         "Referenties van vergelijkbare bedrijven beschikbaar",
         "Trial mogelijk voor hands-on evaluatie",
         "Geen druk, eerlijk over fit"
+      ],
+      "faq": [
+        { "question": "Hoe lang duurt een ATS-selectieproces?", "answer": "Gemiddeld 4-8 weken van requirements tot besluit. Met een gestructureerd proces (longlist, scorecard, demo's) kun je sneller tot een goede keuze komen." },
+        { "question": "Wie moet betrokken zijn bij de ATS-selectie?", "answer": "Recruiters (dagelijks gebruik), hiring managers (samenwerking), HR leadership (strategie/budget) en IT (security/integraties)." },
+        { "question": "Hoe voorkom ik een verkeerde ATS-keuze?", "answer": "Gebruik een gewogen scorecard, vraag referenties van vergelijkbare bedrijven en doe een hands-on trial voordat je tekent." }
       ]
     },
 
