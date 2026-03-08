@@ -1331,6 +1331,12 @@
         "Flexibele workflows die meebewegen met je proces",
         "Eén systeem voor interne teams én externe partners",
         "Inzicht dat vanzelf ontstaat, geen rapporten bouwen"
+      ],
+      "faq": [
+        { "question": "Hoe vergelijk je ATS-systemen objectief?", "answer": "Focus niet op feature-lijsten maar op adoptie, workflow-flexibiliteit, TCO over 3 jaar en of het systeem daadwerkelijk betere hiring-beslissingen ondersteunt." },
+        { "question": "Welke criteria zijn het belangrijkst bij een ATS-vergelijking?", "answer": "De vier must-haves: kandidaat-ranking kwaliteit, workflow flexibiliteit, team-adoptie en real-time inzicht. Features zijn pas relevant als deze basis klopt." },
+        { "question": "Waarom focussen de meeste ATS-vergelijkingen op de verkeerde dingen?", "answer": "Omdat vergelijkingssites vaak betaald worden door vendors. Ze vergelijken features in plaats van uitkomsten — terwijl het gaat om betere hires, niet meer functies." },
+        { "question": "Hoeveel ATS-systemen moet ik vergelijken?", "answer": "Start met een longlist van 5-8 systemen, evalueer op must-haves en houd 2-3 over voor een demo. Meer vergelijken leidt tot beslissingsmoeheid." }
       ]
     },
 
