@@ -2378,6 +2378,11 @@
         "8+ uur admin besparing per vacature",
         "Aantoonbaar lagere cost per hire",
         "ROI calculator beschikbaar in demo"
+      ],
+      "faq": [
+        { "question": "Hoe bereken ik de ROI van een ATS?", "answer": "Tel de besparingen op admin-uren, snellere time-to-hire en lager verloop. Trek de ATS-kosten ervan af. OneRooted klanten zien gemiddeld 40% snellere screening." },
+        { "question": "Wat is een goede terugverdientijd voor ATS-software?", "answer": "6-12 maanden is realistisch. Bij OneRooted zien veel klanten breakeven binnen 3-6 maanden door directe admin-besparing." },
+        { "question": "Welke KPI's bepalen de ATS ROI?", "answer": "Admin-uren per vacature, time-to-hire, cost per hire en early turnover. Een verbetering op elk van deze KPI's draagt bij aan de ROI." }
       ]
     },
 
