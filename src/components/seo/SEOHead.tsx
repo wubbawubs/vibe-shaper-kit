@@ -110,6 +110,7 @@ export function SEOHead({
   noindex = false,
   breadcrumbs,
   alternateLanguages,
+  faqItems,
   includeSoftwareSchema = false,
   softwareCategory,
 }: SEOHeadProps) {
